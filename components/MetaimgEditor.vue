@@ -1,41 +1,33 @@
 <script setup lang="ts">
-import type { ExifFields } from '~/composables/useExif'
+import type { ExifTag, ExifTagDef } from '~/composables/useExif'
 
 const { t } = useI18n()
-const { read, write, strip, empty } = useExif()
+const { read, write, strip, allDefinedTags, newTagFromDef } = useExif()
 
 const fileInput = ref<HTMLInputElement | null>(null)
 const isDragOver = ref(false)
 const sourceFile = ref<File | null>(null)
-const fields = ref<ExifFields>(empty())
+const tags = ref<ExifTag[]>([])
 const isProcessing = ref(false)
 const errorMessage = ref<string | null>(null)
 const resultUrl = ref<string | null>(null)
 const resultBytes = ref(0)
 
-const orientationOptions = [
-  { value: 1, label: '1 — Normal' },
-  { value: 2, label: '2 — Flip H' },
-  { value: 3, label: '3 — 180°' },
-  { value: 4, label: '4 — Flip V' },
-  { value: 5, label: '5 — Transpose' },
-  { value: 6, label: '6 — 90° CW' },
-  { value: 7, label: '7 — Transverse' },
-  { value: 8, label: '8 — 90° CCW' },
-]
+const showAddPicker = ref(false)
+const addQuery = ref('')
+const selectedDefKey = ref<string>('')
 
-const fieldDefs: { key: keyof ExifFields; type: 'text' | 'select' }[] = [
-  { key: 'make', type: 'text' },
-  { key: 'model', type: 'text' },
-  { key: 'lensModel', type: 'text' },
-  { key: 'software', type: 'text' },
-  { key: 'artist', type: 'text' },
-  { key: 'copyright', type: 'text' },
-  { key: 'imageDescription', type: 'text' },
-  { key: 'dateTime', type: 'text' },
-  { key: 'dateTimeOriginal', type: 'text' },
-  { key: 'orientation', type: 'select' },
-]
+const tagDefs = computed<ExifTagDef[]>(() => allDefinedTags())
+const presentKeys = computed(() => new Set(tags.value.map((t) => `${t.ifd}:${t.id}`)))
+
+const filteredDefs = computed(() => {
+  const q = addQuery.value.trim().toLowerCase()
+  return tagDefs.value.filter((def) => {
+    if (presentKeys.value.has(`${def.ifd}:${def.id}`)) return false
+    if (!q) return true
+    return def.name.toLowerCase().includes(q) || def.ifd.toLowerCase().includes(q)
+  })
+})
 
 const onPickFiles = () => fileInput.value?.click()
 
@@ -55,7 +47,7 @@ const handleFiles = async (files: FileList | null) => {
   try {
     const data = await read(file)
     sourceFile.value = file
-    fields.value = data
+    tags.value = data
   } catch (err) {
     if ((err as Error).message === 'not-jpeg') {
       errorMessage.value = t('metaimg.errors.notJpeg')
@@ -63,7 +55,7 @@ const handleFiles = async (files: FileList | null) => {
       errorMessage.value = (err as Error).message
     }
     sourceFile.value = null
-    fields.value = empty()
+    tags.value = []
   }
 }
 
@@ -76,6 +68,23 @@ const onDrop = (event: DragEvent) => {
   event.preventDefault()
   isDragOver.value = false
   handleFiles(event.dataTransfer?.files ?? null)
+}
+
+const removeTag = (tag: ExifTag) => {
+  tags.value = tags.value.filter((t) => !(t.ifd === tag.ifd && t.id === tag.id))
+}
+
+const addSelectedTag = () => {
+  const [ifd, idStr] = selectedDefKey.value.split(':')
+  if (!ifd || !idStr) return
+  const def = tagDefs.value.find(
+    (d) => d.ifd === ifd && d.id === Number(idStr),
+  )
+  if (!def) return
+  tags.value = [...tags.value, newTagFromDef(def)]
+  selectedDefKey.value = ''
+  addQuery.value = ''
+  showAddPicker.value = false
 }
 
 const setResultFromBlob = (blob: Blob) => {
@@ -91,7 +100,7 @@ const onStrip = async () => {
   try {
     const blob = await strip(sourceFile.value)
     setResultFromBlob(blob)
-    fields.value = empty()
+    tags.value = []
   } catch (err) {
     errorMessage.value = (err as Error).message
   } finally {
@@ -104,10 +113,16 @@ const onApply = async () => {
   isProcessing.value = true
   errorMessage.value = null
   try {
-    const blob = await write(sourceFile.value, fields.value)
+    const blob = await write(sourceFile.value, tags.value)
     setResultFromBlob(blob)
   } catch (err) {
-    errorMessage.value = (err as Error).message
+    const msg = (err as Error).message
+    if (msg.startsWith('invalid-value:')) {
+      const tagName = msg.split(':')[1]
+      errorMessage.value = t('metaimg.errors.invalidValue', { tag: tagName })
+    } else {
+      errorMessage.value = msg
+    }
   } finally {
     isProcessing.value = false
   }
@@ -158,31 +173,80 @@ onBeforeUnmount(releaseResult)
     </div>
 
     <div v-if="sourceFile" class="card form">
-      <h2>{{ t('metaimg.fields.title') }}</h2>
-      <p class="hint">{{ t('metaimg.fields.hint') }}</p>
+      <header class="form-header">
+        <h2>{{ t('metaimg.tags.title', { count: tags.length }) }}</h2>
+        <p class="hint">{{ t('metaimg.tags.hint') }}</p>
+      </header>
 
-      <div class="grid">
-        <label v-for="def in fieldDefs" :key="def.key" class="field">
-          <span>{{ t(`metaimg.fields.${def.key}`) }}</span>
-          <select
-            v-if="def.type === 'select'"
-            v-model.number="fields.orientation"
+      <p v-if="tags.length === 0" class="empty">{{ t('metaimg.tags.empty') }}</p>
+
+      <ul v-else class="tag-list">
+        <li v-for="tag in tags" :key="`${tag.ifd}:${tag.id}`" class="tag-row">
+          <div class="tag-meta">
+            <span class="tag-name">{{ tag.name }}</span>
+            <span class="tag-sub">{{ tag.ifd }} · {{ tag.type }}</span>
+          </div>
+          <input
+            v-if="tag.editable"
+            v-model="tag.display"
+            class="tag-value"
+            type="text"
+          />
+          <span v-else class="tag-value tag-value-readonly">{{ tag.display }}</span>
+          <button
+            type="button"
+            class="tag-remove"
+            :aria-label="t('metaimg.tags.remove')"
+            @click="removeTag(tag)"
           >
+            ×
+          </button>
+        </li>
+      </ul>
+
+      <div class="add-block">
+        <button
+          v-if="!showAddPicker"
+          type="button"
+          class="btn btn-ghost"
+          @click="showAddPicker = true"
+        >
+          + {{ t('metaimg.tags.add') }}
+        </button>
+        <div v-else class="add-picker">
+          <input
+            v-model="addQuery"
+            type="text"
+            :placeholder="t('metaimg.tags.searchPlaceholder')"
+            class="add-search"
+          />
+          <select v-model="selectedDefKey" size="6" class="add-select">
             <option
-              v-for="o in orientationOptions"
-              :key="o.value"
-              :value="o.value"
+              v-for="def in filteredDefs.slice(0, 200)"
+              :key="`${def.ifd}:${def.id}`"
+              :value="`${def.ifd}:${def.id}`"
             >
-              {{ o.label }}
+              {{ def.name }} ({{ def.ifd }} · {{ def.type }})
             </option>
           </select>
-          <input
-            v-else
-            v-model="fields[def.key] as string"
-            type="text"
-            :placeholder="t(`metaimg.fields.placeholder.${def.key}`)"
-          />
-        </label>
+          <div class="add-actions">
+            <button
+              type="button"
+              class="btn btn-ghost"
+              @click="(showAddPicker = false), (selectedDefKey = ''), (addQuery = '')"
+            >
+              {{ t('metaimg.actions.cancel') }}
+            </button>
+            <button
+              type="button"
+              class="btn"
+              :disabled="!selectedDefKey"
+              @click="addSelectedTag"
+            >
+              {{ t('metaimg.tags.confirmAdd') }}
+            </button>
+          </div>
+        </div>
       </div>
 
       <div class="actions">
@@ -229,6 +293,11 @@ onBeforeUnmount(releaseResult)
   flex-direction: column;
   gap: 0.9rem;
 }
+.form-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
 .form h2 {
   margin: 0;
   font-size: 1.1rem;
@@ -238,18 +307,112 @@ onBeforeUnmount(releaseResult)
   color: var(--muted);
   font-size: 0.85rem;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 0.85rem;
+.empty {
+  margin: 0;
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+  padding: 1rem 0;
 }
-.field input[type='text'],
-.field select {
+.tag-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.tag-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 2fr auto;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 0.45rem 0.6rem;
   border: 1px solid var(--border);
   border-radius: 6px;
+  background: var(--bg);
+}
+.tag-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.tag-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.tag-sub {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.tag-value {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  font: inherit;
+  font-size: 0.88rem;
+  background: var(--surface);
+  width: 100%;
+  min-width: 0;
+}
+.tag-value-readonly {
+  background: transparent;
+  border-color: transparent;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+  padding: 0.3rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tag-remove {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 0.25rem;
+  border-radius: 4px;
+}
+.tag-remove:hover {
+  color: #b53a1f;
+  background: var(--accent-soft);
+}
+.add-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.add-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+}
+.add-search {
+  border: 1px solid var(--border);
+  border-radius: 4px;
   padding: 0.4rem 0.55rem;
   font: inherit;
-  background: var(--bg);
+  background: var(--surface);
+}
+.add-select {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.3rem;
+  font: inherit;
+  font-size: 0.85rem;
+  background: var(--surface);
+}
+.add-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
 }
 .actions {
   display: flex;

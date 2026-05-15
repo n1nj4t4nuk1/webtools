@@ -20,37 +20,23 @@
   },
   "metaimg": {
     "dropzone": "Trascina un JPEG qui o clicca per selezionarlo",
-    "fields": {
-      "title": "Metadati EXIF",
-      "hint": "Lascia un campo vuoto per non scriverlo. Usa 'Rimuovi tutto' per pulire l'immagine.",
-      "make": "Produttore",
-      "model": "Modello fotocamera",
-      "lensModel": "Modello obiettivo",
-      "software": "Software",
-      "artist": "Autore",
-      "copyright": "Copyright",
-      "imageDescription": "Descrizione",
-      "dateTime": "Data (modifica)",
-      "dateTimeOriginal": "Data originale della foto",
-      "orientation": "Orientamento",
-      "placeholder": {
-        "make": "Canon, Sony, Apple…",
-        "model": "EOS R5, iPhone 15…",
-        "lensModel": "RF 24-70mm F2.8…",
-        "software": "Lightroom 12.0, Photoshop…",
-        "artist": "Nome dell'autore",
-        "copyright": "© 2026 Autore",
-        "imageDescription": "Breve descrizione",
-        "dateTime": "2024:01:15 18:30:00",
-        "dateTimeOriginal": "2024:01:15 18:30:00"
-      }
+    "tags": {
+      "title": "Metadati rilevati ({count})",
+      "hint": "Ogni tag mostra nome, IFD e tipo. Modifica il valore, rimuovi con × o aggiungi nuovi tag.",
+      "empty": "Questa immagine non contiene metadati EXIF.",
+      "add": "Aggiungi tag",
+      "confirmAdd": "Aggiungi",
+      "remove": "Rimuovi tag",
+      "searchPlaceholder": "Cerca tag (nome o IFD)…"
     },
     "actions": {
-      "strip": "Rimuovi tutto l'EXIF",
-      "apply": "Applica e scarica"
+      "strip": "Rimuovi tutti i metadati",
+      "apply": "Applica e scarica",
+      "cancel": "Annulla"
     },
     "errors": {
-      "notJpeg": "Sono supportati solo file JPEG (.jpg / .jpeg)."
+      "notJpeg": "Sono supportati solo file JPEG (.jpg / .jpeg).",
+      "invalidValue": "Valore non valido per il tag {tag}."
     }
   },
   "dropzone": {

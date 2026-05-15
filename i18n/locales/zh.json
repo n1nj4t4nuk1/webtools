@@ -20,37 +20,23 @@
   },
   "metaimg": {
     "dropzone": "将 JPEG 拖到此处，或点击选择",
-    "fields": {
-      "title": "EXIF 元数据",
-      "hint": "留空的字段不会被写入。使用「全部清除」来清理图片。",
-      "make": "厂商",
-      "model": "相机型号",
-      "lensModel": "镜头型号",
-      "software": "软件",
-      "artist": "作者",
-      "copyright": "版权",
-      "imageDescription": "描述",
-      "dateTime": "日期（修改）",
-      "dateTimeOriginal": "拍摄日期",
-      "orientation": "方向",
-      "placeholder": {
-        "make": "Canon, Sony, Apple…",
-        "model": "EOS R5, iPhone 15…",
-        "lensModel": "RF 24-70mm F2.8…",
-        "software": "Lightroom 12.0, Photoshop…",
-        "artist": "作者姓名",
-        "copyright": "© 2026 作者",
-        "imageDescription": "简短描述",
-        "dateTime": "2024:01:15 18:30:00",
-        "dateTimeOriginal": "2024:01:15 18:30:00"
-      }
+    "tags": {
+      "title": "检测到的元数据 ({count})",
+      "hint": "每个标签显示其名称、IFD 和类型。编辑值，用 × 删除，或添加新标签。",
+      "empty": "此图片没有 EXIF 元数据。",
+      "add": "添加标签",
+      "confirmAdd": "添加",
+      "remove": "删除标签",
+      "searchPlaceholder": "搜索标签（名称或 IFD）…"
     },
     "actions": {
-      "strip": "清除所有 EXIF",
-      "apply": "应用并下载"
+      "strip": "清除所有元数据",
+      "apply": "应用并下载",
+      "cancel": "取消"
     },
     "errors": {
-      "notJpeg": "仅支持 JPEG 文件（.jpg / .jpeg）。"
+      "notJpeg": "仅支持 JPEG 文件（.jpg / .jpeg）。",
+      "invalidValue": "标签 {tag} 的值无效。"
     }
   },
   "dropzone": {

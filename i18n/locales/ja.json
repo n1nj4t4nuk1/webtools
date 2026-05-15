@@ -20,37 +20,23 @@
   },
   "metaimg": {
     "dropzone": "JPEGをここにドラッグするか、クリックして選択",
-    "fields": {
-      "title": "EXIFメタデータ",
-      "hint": "空のフィールドは書き込まれません。'すべて削除' で画像をクリーンにします。",
-      "make": "メーカー",
-      "model": "カメラ機種",
-      "lensModel": "レンズ機種",
-      "software": "ソフトウェア",
-      "artist": "作者",
-      "copyright": "著作権",
-      "imageDescription": "説明",
-      "dateTime": "日時（変更）",
-      "dateTimeOriginal": "撮影日時",
-      "orientation": "向き",
-      "placeholder": {
-        "make": "Canon, Sony, Apple…",
-        "model": "EOS R5, iPhone 15…",
-        "lensModel": "RF 24-70mm F2.8…",
-        "software": "Lightroom 12.0, Photoshop…",
-        "artist": "作者名",
-        "copyright": "© 2026 作者",
-        "imageDescription": "簡単な説明",
-        "dateTime": "2024:01:15 18:30:00",
-        "dateTimeOriginal": "2024:01:15 18:30:00"
-      }
+    "tags": {
+      "title": "検出されたメタデータ ({count})",
+      "hint": "各タグは名前、IFD、型を表示します。値を編集、× で削除、または新しいタグを追加できます。",
+      "empty": "この画像にはEXIFメタデータがありません。",
+      "add": "タグを追加",
+      "confirmAdd": "追加",
+      "remove": "タグを削除",
+      "searchPlaceholder": "タグを検索（名前またはIFD）…"
     },
     "actions": {
-      "strip": "EXIFをすべて削除",
-      "apply": "適用してダウンロード"
+      "strip": "すべてのメタデータを削除",
+      "apply": "適用してダウンロード",
+      "cancel": "キャンセル"
     },
     "errors": {
-      "notJpeg": "JPEGファイル（.jpg / .jpeg）のみ対応しています。"
+      "notJpeg": "JPEGファイル（.jpg / .jpeg）のみ対応しています。",
+      "invalidValue": "タグ {tag} の値が無効です。"
     }
   },
   "dropzone": {

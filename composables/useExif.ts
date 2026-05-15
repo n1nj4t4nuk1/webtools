@@ -1,30 +1,34 @@
 import piexif from 'piexifjs'
 
-export interface ExifFields {
-  make: string
-  model: string
-  software: string
-  artist: string
-  copyright: string
-  imageDescription: string
-  dateTime: string
-  dateTimeOriginal: string
-  lensModel: string
-  orientation: number
+export type ExifIfdName = '0th' | 'Exif' | 'GPS' | 'Interop' | '1st'
+
+export interface ExifTagDef {
+  ifd: ExifIfdName
+  id: number
+  name: string
+  type: string
 }
 
-const emptyFields = (): ExifFields => ({
-  make: '',
-  model: '',
-  software: '',
-  artist: '',
-  copyright: '',
-  imageDescription: '',
-  dateTime: '',
-  dateTimeOriginal: '',
-  lensModel: '',
-  orientation: 1,
-})
+export interface ExifTag extends ExifTagDef {
+  value: unknown
+  display: string
+  editable: boolean
+}
+
+const IFD_ORDER: ExifIfdName[] = ['0th', 'Exif', 'GPS', 'Interop', '1st']
+
+const NUMERIC_TYPES = new Set([
+  'Byte',
+  'Short',
+  'Long',
+  'SByte',
+  'SShort',
+  'SLong',
+  'Float',
+  'DFloat',
+])
+
+const RATIONAL_TYPES = new Set(['Rational', 'SRational'])
 
 const fileToDataUrl = (file: File): Promise<string> =>
   new Promise((resolve, reject) => {
@@ -44,69 +48,164 @@ const dataUrlToBlob = (dataUrl: string): Blob => {
   return new Blob([bytes], { type: mime })
 }
 
-const Image = piexif.ImageIFD
-const Exif = piexif.ExifIFD
+const tagDefs = (): Record<ExifIfdName, Record<number, { name: string; type: string }>> => {
+  const tags = (piexif as unknown as {
+    TAGS: Record<ExifIfdName, Record<number, { name: string; type: string }>>
+  }).TAGS
+  return tags
+}
 
-const readField = (
-  ifd: Record<number, unknown> | undefined,
-  tag: number,
-): string => {
-  if (!ifd) return ''
-  const value = ifd[tag]
-  return value == null ? '' : String(value)
+const lookupDef = (
+  ifd: ExifIfdName,
+  id: number,
+): { name: string; type: string } => {
+  const entry = tagDefs()[ifd]?.[id]
+  if (entry) return entry
+  return { name: `Tag${id}`, type: 'Undefined' }
+}
+
+const isPrintableAscii = (s: string) =>
+  // accept printable ASCII + common whitespace
+  /^[\x20-\x7E\n\r\t]*$/.test(s)
+
+const isRationalPair = (v: unknown): v is [number, number] =>
+  Array.isArray(v) && v.length === 2 && typeof v[0] === 'number' && typeof v[1] === 'number'
+
+const formatRational = ([n, d]: [number, number]) =>
+  d === 0 ? '0' : Number.isInteger(n / d) ? String(n / d) : (n / d).toFixed(4).replace(/0+$/, '').replace(/\.$/, '')
+
+const formatValue = (value: unknown, type: string): { display: string; editable: boolean } => {
+  if (value == null) return { display: '', editable: true }
+
+  if (type === 'Ascii') {
+    return { display: String(value), editable: true }
+  }
+
+  if (RATIONAL_TYPES.has(type)) {
+    if (Array.isArray(value) && value.length > 0 && Array.isArray(value[0])) {
+      const arr = value as [number, number][]
+      return { display: arr.map(formatRational).join(', '), editable: true }
+    }
+    if (isRationalPair(value)) {
+      return { display: formatRational(value), editable: true }
+    }
+  }
+
+  if (NUMERIC_TYPES.has(type)) {
+    if (Array.isArray(value)) {
+      return { display: value.join(', '), editable: true }
+    }
+    return { display: String(value), editable: true }
+  }
+
+  // Undefined / Byte binarios
+  if (typeof value === 'string') {
+    if (isPrintableAscii(value) && value.length < 200) {
+      return { display: value, editable: true }
+    }
+    const bytes = Array.from(value).slice(0, 16).map((c) => c.charCodeAt(0).toString(16).padStart(2, '0'))
+    const hex = bytes.join(' ')
+    return {
+      display: `<${value.length} bytes: ${hex}${value.length > 16 ? '…' : ''}>`,
+      editable: false,
+    }
+  }
+
+  if (Array.isArray(value)) {
+    return { display: value.join(', '), editable: false }
+  }
+
+  return { display: String(value), editable: false }
+}
+
+const toRational = (n: number): [number, number] => {
+  if (!Number.isFinite(n)) return [0, 1]
+  if (Number.isInteger(n)) return [n, 1]
+  const denom = 1000000
+  return [Math.round(n * denom), denom]
+}
+
+const parseValue = (input: string, type: string): unknown => {
+  if (type === 'Ascii') return input
+
+  if (RATIONAL_TYPES.has(type)) {
+    const parts = input.split(',').map((s) => s.trim()).filter(Boolean)
+    const rationals = parts.map((p) => toRational(Number(p)))
+    return rationals.length > 1 ? rationals : rationals[0]
+  }
+
+  if (NUMERIC_TYPES.has(type)) {
+    const parts = input.split(',').map((s) => s.trim()).filter(Boolean)
+    const nums = parts.map((p) => Number(p))
+    if (nums.some((n) => !Number.isFinite(n))) {
+      throw new Error('invalid-number')
+    }
+    return nums.length > 1 ? nums : nums[0]
+  }
+
+  // Undefined / unknown — pass through as string
+  return input
 }
 
 export const useExif = () => {
   const isJpeg = (file: File) =>
     file.type === 'image/jpeg' || /\.jpe?g$/i.test(file.name)
 
-  const read = async (file: File): Promise<ExifFields> => {
+  const read = async (file: File): Promise<ExifTag[]> => {
     if (!isJpeg(file)) throw new Error('not-jpeg')
     const dataUrl = await fileToDataUrl(file)
-    const exif = piexif.load(dataUrl)
-    const zeroth = exif['0th'] as Record<number, unknown>
-    const exifIfd = exif['Exif'] as Record<number, unknown>
+    const exif = piexif.load(dataUrl) as Record<ExifIfdName, Record<number, unknown>>
 
-    const orientationRaw = zeroth?.[Image.Orientation]
-    const orientation =
-      typeof orientationRaw === 'number' ? orientationRaw : 1
-
-    return {
-      make: readField(zeroth, Image.Make),
-      model: readField(zeroth, Image.Model),
-      software: readField(zeroth, Image.Software),
-      artist: readField(zeroth, Image.Artist),
-      copyright: readField(zeroth, Image.Copyright),
-      imageDescription: readField(zeroth, Image.ImageDescription),
-      dateTime: readField(zeroth, Image.DateTime),
-      dateTimeOriginal: readField(exifIfd, Exif.DateTimeOriginal),
-      lensModel: readField(exifIfd, Exif.LensModel),
-      orientation,
+    const tags: ExifTag[] = []
+    for (const ifd of IFD_ORDER) {
+      const block = exif[ifd]
+      if (!block) continue
+      for (const idStr of Object.keys(block)) {
+        const id = Number(idStr)
+        const def = lookupDef(ifd, id)
+        const value = block[id]
+        const formatted = formatValue(value, def.type)
+        tags.push({
+          ifd,
+          id,
+          name: def.name,
+          type: def.type,
+          value,
+          display: formatted.display,
+          editable: formatted.editable,
+        })
+      }
     }
+    return tags
   }
 
-  const write = async (file: File, fields: ExifFields): Promise<Blob> => {
+  const write = async (file: File, tags: ExifTag[]): Promise<Blob> => {
     if (!isJpeg(file)) throw new Error('not-jpeg')
     const dataUrl = await fileToDataUrl(file)
 
-    const zeroth: Record<number, unknown> = {}
-    const exifIfd: Record<number, unknown> = {}
+    const exifObj: Record<ExifIfdName, Record<number, unknown>> & {
+      thumbnail: string | null
+    } = {
+      '0th': {},
+      Exif: {},
+      GPS: {},
+      Interop: {},
+      '1st': {},
+      thumbnail: null,
+    }
 
-    if (fields.make) zeroth[Image.Make] = fields.make
-    if (fields.model) zeroth[Image.Model] = fields.model
-    if (fields.software) zeroth[Image.Software] = fields.software
-    if (fields.artist) zeroth[Image.Artist] = fields.artist
-    if (fields.copyright) zeroth[Image.Copyright] = fields.copyright
-    if (fields.imageDescription)
-      zeroth[Image.ImageDescription] = fields.imageDescription
-    if (fields.dateTime) zeroth[Image.DateTime] = fields.dateTime
-    if (fields.orientation && fields.orientation !== 1)
-      zeroth[Image.Orientation] = fields.orientation
-    if (fields.dateTimeOriginal)
-      exifIfd[Exif.DateTimeOriginal] = fields.dateTimeOriginal
-    if (fields.lensModel) exifIfd[Exif.LensModel] = fields.lensModel
+    for (const tag of tags) {
+      let value = tag.value
+      if (tag.editable) {
+        try {
+          value = parseValue(tag.display, tag.type)
+        } catch {
+          throw new Error(`invalid-value:${tag.name}`)
+        }
+      }
+      exifObj[tag.ifd][tag.id] = value
+    }
 
-    const exifObj = { '0th': zeroth, Exif: exifIfd, GPS: {}, Interop: {}, '1st': {}, thumbnail: null }
     const exifBytes = piexif.dump(exifObj)
     const cleanedDataUrl = piexif.remove(dataUrl)
     const newDataUrl = piexif.insert(exifBytes, cleanedDataUrl)
@@ -120,5 +219,29 @@ export const useExif = () => {
     return dataUrlToBlob(cleanedDataUrl)
   }
 
-  return { read, write, strip, empty: emptyFields }
+  const allDefinedTags = (): ExifTagDef[] => {
+    const defs = tagDefs()
+    const out: ExifTagDef[] = []
+    for (const ifd of IFD_ORDER) {
+      const block = defs[ifd]
+      if (!block) continue
+      for (const idStr of Object.keys(block)) {
+        const id = Number(idStr)
+        const def = block[id]
+        out.push({ ifd, id, name: def.name, type: def.type })
+      }
+    }
+    return out.sort((a, b) =>
+      a.ifd === b.ifd ? a.name.localeCompare(b.name) : IFD_ORDER.indexOf(a.ifd) - IFD_ORDER.indexOf(b.ifd),
+    )
+  }
+
+  const newTagFromDef = (def: ExifTagDef): ExifTag => ({
+    ...def,
+    value: '',
+    display: '',
+    editable: true,
+  })
+
+  return { read, write, strip, allDefinedTags, newTagFromDef }
 }
