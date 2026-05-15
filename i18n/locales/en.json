@@ -174,7 +174,7 @@
         },
         "contact": {
           "title": "8. Contact",
-          "body": "<p>For any privacy-related questions: <a href='mailto:hola@tanukibox.com'>hola@tanukibox.com</a>.</p>"
+          "body": "<p>For any privacy-related questions: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
         }
       }
     },
