@@ -1,8 +1,16 @@
 <script setup lang="ts">
-import type { ExifTag, ExifTagDef } from '~/composables/useExif'
+import type { ExifIfdName, ExifTag, ExifTagDef } from '~/composables/useExif'
 
 const { t } = useI18n()
-const { read, write, strip, allDefinedTags, newTagFromDef } = useExif()
+const {
+  read,
+  write,
+  strip,
+  allDefinedTags,
+  newTagFromDef,
+  newCustomTag,
+  customTagTypes,
+} = useExif()
 
 const fileInput = ref<HTMLInputElement | null>(null)
 const isDragOver = ref(false)
@@ -14,8 +22,17 @@ const resultUrl = ref<string | null>(null)
 const resultBytes = ref(0)
 
 const showAddPicker = ref(false)
+const addMode = ref<'standard' | 'custom'>('standard')
 const addQuery = ref('')
 const selectedDefKey = ref<string>('')
+
+const customId = ref<number | null>(null)
+const customIfd = ref<ExifIfdName>('0th')
+const customType = ref<(typeof customTagTypes)[number]>('Ascii')
+const customName = ref('')
+const customError = ref<string | null>(null)
+
+const ifdOptions: ExifIfdName[] = ['0th', 'Exif', 'GPS', 'Interop', '1st']
 
 const tagDefs = computed<ExifTagDef[]>(() => allDefinedTags())
 const presentKeys = computed(() => new Set(tags.value.map((t) => `${t.ifd}:${t.id}`)))
@@ -74,6 +91,16 @@ const removeTag = (tag: ExifTag) => {
   tags.value = tags.value.filter((t) => !(t.ifd === tag.ifd && t.id === tag.id))
 }
 
+const closePicker = () => {
+  showAddPicker.value = false
+  selectedDefKey.value = ''
+  addQuery.value = ''
+  customId.value = null
+  customName.value = ''
+  customError.value = null
+  addMode.value = 'standard'
+}
+
 const addSelectedTag = () => {
   const [ifd, idStr] = selectedDefKey.value.split(':')
   if (!ifd || !idStr) return
@@ -82,9 +109,35 @@ const addSelectedTag = () => {
   )
   if (!def) return
   tags.value = [...tags.value, newTagFromDef(def)]
-  selectedDefKey.value = ''
-  addQuery.value = ''
-  showAddPicker.value = false
+  closePicker()
+}
+
+const addCustomTag = () => {
+  customError.value = null
+  if (customId.value == null) {
+    customError.value = t('metaimg.tags.custom.idRequired')
+    return
+  }
+  if (presentKeys.value.has(`${customIfd.value}:${customId.value}`)) {
+    customError.value = t('metaimg.tags.custom.duplicate')
+    return
+  }
+  try {
+    const tag = newCustomTag({
+      ifd: customIfd.value,
+      id: customId.value,
+      type: customType.value,
+      name: customName.value.trim() || undefined,
+    })
+    tags.value = [...tags.value, tag]
+    closePicker()
+  } catch (err) {
+    if ((err as Error).message === 'invalid-id') {
+      customError.value = t('metaimg.tags.custom.invalidId')
+    } else {
+      customError.value = (err as Error).message
+    }
+  }
 }
 
 const setResultFromBlob = (blob: Blob) => {
@@ -214,38 +267,107 @@ onBeforeUnmount(releaseResult)
           + {{ t('metaimg.tags.add') }}
         </button>
         <div v-else class="add-picker">
-          <input
-            v-model="addQuery"
-            type="text"
-            :placeholder="t('metaimg.tags.searchPlaceholder')"
-            class="add-search"
-          />
-          <select v-model="selectedDefKey" size="6" class="add-select">
-            <option
-              v-for="def in filteredDefs.slice(0, 200)"
-              :key="`${def.ifd}:${def.id}`"
-              :value="`${def.ifd}:${def.id}`"
-            >
-              {{ def.name }} ({{ def.ifd }} · {{ def.type }})
-            </option>
-          </select>
-          <div class="add-actions">
+          <div class="mode-toggle" role="tablist">
             <button
               type="button"
-              class="btn btn-ghost"
-              @click="(showAddPicker = false), (selectedDefKey = ''), (addQuery = '')"
+              role="tab"
+              :aria-selected="addMode === 'standard'"
+              class="mode-btn"
+              :class="{ active: addMode === 'standard' }"
+              @click="addMode = 'standard'"
             >
-              {{ t('metaimg.actions.cancel') }}
+              {{ t('metaimg.tags.modeStandard') }}
             </button>
             <button
               type="button"
-              class="btn"
-              :disabled="!selectedDefKey"
-              @click="addSelectedTag"
+              role="tab"
+              :aria-selected="addMode === 'custom'"
+              class="mode-btn"
+              :class="{ active: addMode === 'custom' }"
+              @click="addMode = 'custom'"
             >
-              {{ t('metaimg.tags.confirmAdd') }}
+              {{ t('metaimg.tags.modeCustom') }}
             </button>
           </div>
+
+          <template v-if="addMode === 'standard'">
+            <input
+              v-model="addQuery"
+              type="text"
+              :placeholder="t('metaimg.tags.searchPlaceholder')"
+              class="add-search"
+            />
+            <select v-model="selectedDefKey" size="6" class="add-select">
+              <option
+                v-for="def in filteredDefs.slice(0, 200)"
+                :key="`${def.ifd}:${def.id}`"
+                :value="`${def.ifd}:${def.id}`"
+              >
+                {{ def.name }} ({{ def.ifd }} · {{ def.type }})
+              </option>
+            </select>
+            <div class="add-actions">
+              <button type="button" class="btn btn-ghost" @click="closePicker">
+                {{ t('metaimg.actions.cancel') }}
+              </button>
+              <button
+                type="button"
+                class="btn"
+                :disabled="!selectedDefKey"
+                @click="addSelectedTag"
+              >
+                {{ t('metaimg.tags.confirmAdd') }}
+              </button>
+            </div>
+          </template>
+
+          <template v-else>
+            <p class="custom-note">{{ t('metaimg.tags.custom.note') }}</p>
+            <div class="custom-grid">
+              <label class="field">
+                <span>{{ t('metaimg.tags.custom.id') }}</span>
+                <input
+                  v-model.number="customId"
+                  type="number"
+                  min="1"
+                  max="65535"
+                />
+              </label>
+              <label class="field">
+                <span>{{ t('metaimg.tags.custom.ifd') }}</span>
+                <select v-model="customIfd">
+                  <option v-for="ifd in ifdOptions" :key="ifd" :value="ifd">
+                    {{ ifd }}
+                  </option>
+                </select>
+              </label>
+              <label class="field">
+                <span>{{ t('metaimg.tags.custom.type') }}</span>
+                <select v-model="customType">
+                  <option v-for="ty in customTagTypes" :key="ty" :value="ty">
+                    {{ ty }}
+                  </option>
+                </select>
+              </label>
+              <label class="field">
+                <span>{{ t('metaimg.tags.custom.name') }}</span>
+                <input
+                  v-model="customName"
+                  type="text"
+                  :placeholder="t('metaimg.tags.custom.namePlaceholder')"
+                />
+              </label>
+            </div>
+            <p v-if="customError" class="error">{{ customError }}</p>
+            <div class="add-actions">
+              <button type="button" class="btn btn-ghost" @click="closePicker">
+                {{ t('metaimg.actions.cancel') }}
+              </button>
+              <button type="button" class="btn" @click="addCustomTag">
+                {{ t('metaimg.tags.confirmAdd') }}
+              </button>
+            </div>
+          </template>
         </div>
       </div>
 
@@ -413,6 +535,48 @@ onBeforeUnmount(releaseResult)
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;
+}
+.mode-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  padding: 2px;
+  align-self: flex-start;
+}
+.mode-btn {
+  border: 0;
+  background: transparent;
+  padding: 0.3rem 0.85rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 999px;
+}
+.mode-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+.custom-note {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: italic;
+}
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+}
+.custom-grid .field input,
+.custom-grid .field select {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.35rem 0.5rem;
+  font: inherit;
+  font-size: 0.85rem;
+  background: var(--surface);
 }
 .actions {
   display: flex;

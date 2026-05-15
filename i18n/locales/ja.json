@@ -27,7 +27,20 @@
       "add": "タグを追加",
       "confirmAdd": "追加",
       "remove": "タグを削除",
-      "searchPlaceholder": "タグを検索（名前またはIFD）…"
+      "searchPlaceholder": "タグを検索（名前またはIFD）…",
+      "modeStandard": "標準",
+      "modeCustom": "カスタム",
+      "custom": {
+        "note": "EXIFはタグを数値IDで識別します。他のリーダーではこのタグが「Unknown {id}」と表示される可能性があります。",
+        "id": "ID（1–65535）",
+        "ifd": "IFD",
+        "type": "型",
+        "name": "名前（表示のみ）",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "IDを指定してください。",
+        "invalidId": "IDは1〜65535の整数である必要があります。",
+        "duplicate": "そのタグはすでに画像に存在します。"
+      }
     },
     "actions": {
       "strip": "すべてのメタデータを削除",

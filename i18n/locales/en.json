@@ -27,7 +27,20 @@
       "add": "Add tag",
       "confirmAdd": "Add",
       "remove": "Remove tag",
-      "searchPlaceholder": "Search tag (name or IFD)…"
+      "searchPlaceholder": "Search tag (name or IFD)…",
+      "modeStandard": "Standard",
+      "modeCustom": "Custom",
+      "custom": {
+        "note": "EXIF identifies tags by numeric ID. Other readers may display this tag as 'Unknown {id}'.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "Type",
+        "name": "Name (display only)",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "Provide an ID.",
+        "invalidId": "ID must be an integer between 1 and 65535.",
+        "duplicate": "That tag already exists in the image."
+      }
     },
     "actions": {
       "strip": "Strip all metadata",

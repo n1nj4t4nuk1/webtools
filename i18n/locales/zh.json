@@ -27,7 +27,20 @@
       "add": "添加标签",
       "confirmAdd": "添加",
       "remove": "删除标签",
-      "searchPlaceholder": "搜索标签（名称或 IFD）…"
+      "searchPlaceholder": "搜索标签（名称或 IFD）…",
+      "modeStandard": "标准",
+      "modeCustom": "自定义",
+      "custom": {
+        "note": "EXIF 通过数字 ID 识别标签。其他读取器可能会将此标签显示为 'Unknown {id}'。",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "类型",
+        "name": "名称（仅显示）",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "请提供一个 ID。",
+        "invalidId": "ID 必须是 1 到 65535 之间的整数。",
+        "duplicate": "该标签已存在于图片中。"
+      }
     },
     "actions": {
       "strip": "清除所有元数据",

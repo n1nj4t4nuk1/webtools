@@ -27,7 +27,20 @@
       "add": "Añadir tag",
       "confirmAdd": "Añadir",
       "remove": "Eliminar tag",
-      "searchPlaceholder": "Buscar tag (nombre o IFD)…"
+      "searchPlaceholder": "Buscar tag (nombre o IFD)…",
+      "modeStandard": "Estándar",
+      "modeCustom": "Custom",
+      "custom": {
+        "note": "EXIF identifica los tags por ID numérico. Otros lectores pueden mostrar este tag como 'Unknown {id}'.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "Tipo",
+        "name": "Nombre (solo display)",
+        "namePlaceholder": "MiTagCustom",
+        "idRequired": "Indica un ID.",
+        "invalidId": "El ID debe ser un entero entre 1 y 65535.",
+        "duplicate": "Ese tag ya existe en la imagen."
+      }
     },
     "actions": {
       "strip": "Eliminar todos los metadatos",

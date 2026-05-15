@@ -243,5 +243,58 @@ export const useExif = () => {
     editable: true,
   })
 
-  return { read, write, strip, allDefinedTags, newTagFromDef }
+  const customTagTypes = [
+    'Ascii',
+    'Short',
+    'Long',
+    'SShort',
+    'SLong',
+    'Rational',
+    'SRational',
+    'Undefined',
+  ] as const
+
+  const newCustomTag = (input: {
+    ifd: ExifIfdName
+    id: number
+    type: (typeof customTagTypes)[number]
+    name?: string
+  }): ExifTag => {
+    if (!Number.isInteger(input.id) || input.id < 1 || input.id > 65535) {
+      throw new Error('invalid-id')
+    }
+
+    const defs = tagDefs()
+    const existing = defs[input.ifd]?.[input.id]
+    const name =
+      existing?.name ??
+      (input.name && input.name.trim()) ??
+      `Custom${input.id}`
+    const type = existing?.type ?? input.type
+
+    // Register in piexif.TAGS so piexif.dump knows how to serialize it.
+    if (!existing) {
+      defs[input.ifd][input.id] = { name, type }
+    }
+
+    return {
+      ifd: input.ifd,
+      id: input.id,
+      name,
+      type,
+      value: '',
+      display: '',
+      editable: true,
+    }
+  }
+
+  return {
+    read,
+    write,
+    strip,
+    allDefinedTags,
+    newTagFromDef,
+    newCustomTag,
+    customTagTypes,
+  }
 }
