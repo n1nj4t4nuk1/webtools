@@ -27,6 +27,12 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro: {
+    output: {
+      publicDir: 'dist',
+    },
+  },
+
   i18n: {
     defaultLocale: 'es',
     strategy: 'prefix_except_default',
