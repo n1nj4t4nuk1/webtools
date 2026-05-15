@@ -3,7 +3,7 @@ const { t } = useI18n()
 const localePath = useLocalePath()
 
 const tools = [
-  { id: 'mochi', icon: '🖼️', to: '/mochi' },
+  { id: 'mochi', to: '/mochi' },
 ] as const
 
 useHead({
@@ -23,7 +23,6 @@ useHead({
       <ToolCard
         v-for="tool in tools"
         :key="tool.id"
-        :icon="tool.icon"
         :to="localePath(tool.to)"
         :name="t(`tools.${tool.id}.name`)"
         :tagline="t(`tools.${tool.id}.tagline`)"

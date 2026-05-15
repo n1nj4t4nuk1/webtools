@@ -208,10 +208,6 @@ a {
   border-color: var(--accent);
   transform: translateY(-2px);
 }
-.tool-card-icon {
-  font-size: 1.6rem;
-  line-height: 1;
-}
 .tool-card-name {
   font-weight: 700;
   font-size: 1.05rem;
