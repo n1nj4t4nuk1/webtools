@@ -132,6 +132,10 @@
     "notAnImage": "该文件不是有效的图片。"
   },
   "footer": {
-    "tagline": "Tanukibox · 在浏览器中运行的工具"
+    "tagline": "Tanukibox · 在浏览器中运行的工具",
+    "legalLinks": "法律链接",
+    "privacy": "隐私",
+    "terms": "条款",
+    "cookies": "Cookies"
   }
 }

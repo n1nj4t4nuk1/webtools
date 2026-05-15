@@ -132,6 +132,10 @@
     "notAnImage": "そのファイルは有効な画像ではありません。"
   },
   "footer": {
-    "tagline": "Tanukibox · ブラウザで動くツール"
+    "tagline": "Tanukibox · ブラウザで動くツール",
+    "legalLinks": "法的リンク",
+    "privacy": "プライバシー",
+    "terms": "利用規約",
+    "cookies": "Cookie"
   }
 }

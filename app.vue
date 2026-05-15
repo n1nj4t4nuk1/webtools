@@ -38,7 +38,12 @@ const onChangeLocale = (event: Event) => {
     </main>
 
     <footer class="app-footer">
-      <small>{{ t('footer.tagline') }}</small>
+      <small class="footer-tagline">{{ t('footer.tagline') }}</small>
+      <nav class="footer-links" :aria-label="t('footer.legalLinks')">
+        <NuxtLink :to="useLocalePath()('/privacy')">{{ t('footer.privacy') }}</NuxtLink>
+        <NuxtLink :to="useLocalePath()('/terms')">{{ t('footer.terms') }}</NuxtLink>
+        <NuxtLink :to="useLocalePath()('/cookies')">{{ t('footer.cookies') }}</NuxtLink>
+      </nav>
     </footer>
   </div>
 </template>

@@ -132,6 +132,10 @@
     "notAnImage": "Esse arquivo não é uma imagem válida."
   },
   "footer": {
-    "tagline": "Tanukibox · ferramentas que rodam no seu navegador"
+    "tagline": "Tanukibox · ferramentas que rodam no seu navegador",
+    "legalLinks": "Links legais",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "cookies": "Cookies"
   }
 }

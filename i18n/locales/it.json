@@ -132,6 +132,10 @@
     "notAnImage": "Il file non è un'immagine valida."
   },
   "footer": {
-    "tagline": "Tanukibox · strumenti che girano nel tuo browser"
+    "tagline": "Tanukibox · strumenti che girano nel tuo browser",
+    "legalLinks": "Link legali",
+    "privacy": "Privacy",
+    "terms": "Termini",
+    "cookies": "Cookie"
   }
 }
