@@ -25,6 +25,11 @@
       "name": "Createpass",
       "tagline": "Generate strong passwords",
       "description": "Create random passwords using browser cryptography. They never leave your device."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Compute hashes and verify integrity",
+      "description": "SHA-1, SHA-256, SHA-384 and SHA-512 of text or files. Compare against an expected hash to verify downloads."
     }
   },
   "createpass": {
@@ -47,6 +52,27 @@
     },
     "errors": {
       "noCharset": "Pick at least one character type.",
+      "clipboard": "Could not copy to clipboard."
+    }
+  },
+  "hashy": {
+    "modeText": "Text",
+    "modeFile": "File",
+    "textPlaceholder": "Paste or type text to hash…",
+    "dropzone": "Drag a file here or click to select one",
+    "processing": "Computing…",
+    "actions": {
+      "copy": "Copy",
+      "copied": "Copied!"
+    },
+    "verify": {
+      "label": "Verify against an expected hash",
+      "placeholder": "Paste the hex hash (40, 64, 96 or 128 chars)…",
+      "unknownLength": "Unrecognized length. Must match SHA-1 (40), SHA-256 (64), SHA-384 (96) or SHA-512 (128).",
+      "match": "Matches {algo}.",
+      "mismatch": "{algo} hash does not match."
+    },
+    "errors": {
       "clipboard": "Could not copy to clipboard."
     }
   },

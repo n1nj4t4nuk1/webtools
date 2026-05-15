@@ -25,6 +25,11 @@
       "name": "Createpass",
       "tagline": "Genera contraseñas seguras",
       "description": "Crea contraseñas aleatorias usando criptografía del navegador. Nunca salen de tu dispositivo."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Calcula hashes y verifica integridad",
+      "description": "SHA-1, SHA-256, SHA-384 y SHA-512 de texto o archivos. Compara con un hash esperado para verificar descargas."
     }
   },
   "createpass": {
@@ -47,6 +52,27 @@
     },
     "errors": {
       "noCharset": "Selecciona al menos un tipo de carácter.",
+      "clipboard": "No se pudo copiar al portapapeles."
+    }
+  },
+  "hashy": {
+    "modeText": "Texto",
+    "modeFile": "Archivo",
+    "textPlaceholder": "Pega o escribe el texto a hashear…",
+    "dropzone": "Arrastra un archivo o haz clic para seleccionarlo",
+    "processing": "Calculando…",
+    "actions": {
+      "copy": "Copiar",
+      "copied": "¡Copiado!"
+    },
+    "verify": {
+      "label": "Verificar contra un hash esperado",
+      "placeholder": "Pega el hash hex (40, 64, 96 o 128 caracteres)…",
+      "unknownLength": "Longitud no reconocida. Debe coincidir con SHA-1 (40), SHA-256 (64), SHA-384 (96) o SHA-512 (128).",
+      "match": "Coincide con {algo}.",
+      "mismatch": "El hash {algo} no coincide."
+    },
+    "errors": {
       "clipboard": "No se pudo copiar al portapapeles."
     }
   },

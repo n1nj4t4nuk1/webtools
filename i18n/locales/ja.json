@@ -25,6 +25,11 @@
       "name": "Createpass",
       "tagline": "強力なパスワードを生成",
       "description": "ブラウザの暗号化機能でランダムなパスワードを作成。デバイスから出ることはありません。"
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "ハッシュを計算し整合性を検証",
+      "description": "テキストやファイルのSHA-1、SHA-256、SHA-384、SHA-512を計算。期待値と比較してダウンロードを検証できます。"
     }
   },
   "createpass": {
@@ -47,6 +52,27 @@
     },
     "errors": {
       "noCharset": "少なくとも1つの文字種を選択してください。",
+      "clipboard": "クリップボードにコピーできませんでした。"
+    }
+  },
+  "hashy": {
+    "modeText": "テキスト",
+    "modeFile": "ファイル",
+    "textPlaceholder": "ハッシュ化するテキストを貼り付けまたは入力…",
+    "dropzone": "ファイルをここにドラッグするか、クリックして選択",
+    "processing": "計算中…",
+    "actions": {
+      "copy": "コピー",
+      "copied": "コピーしました！"
+    },
+    "verify": {
+      "label": "期待されるハッシュと照合",
+      "placeholder": "16進ハッシュを貼り付け（40, 64, 96, または128文字）…",
+      "unknownLength": "認識できない長さです。SHA-1 (40)、SHA-256 (64)、SHA-384 (96)、SHA-512 (128) のいずれかと一致する必要があります。",
+      "match": "{algo} と一致します。",
+      "mismatch": "{algo} ハッシュが一致しません。"
+    },
+    "errors": {
       "clipboard": "クリップボードにコピーできませんでした。"
     }
   },

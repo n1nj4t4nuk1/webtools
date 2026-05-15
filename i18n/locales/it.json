@@ -25,6 +25,11 @@
       "name": "Createpass",
       "tagline": "Genera password sicure",
       "description": "Crea password casuali usando la crittografia del browser. Non lasciano mai il tuo dispositivo."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Calcola hash e verifica l'integrità",
+      "description": "SHA-1, SHA-256, SHA-384 e SHA-512 di testo o file. Confronta con un hash atteso per verificare i download."
     }
   },
   "createpass": {
@@ -47,6 +52,27 @@
     },
     "errors": {
       "noCharset": "Seleziona almeno un tipo di carattere.",
+      "clipboard": "Impossibile copiare negli appunti."
+    }
+  },
+  "hashy": {
+    "modeText": "Testo",
+    "modeFile": "File",
+    "textPlaceholder": "Incolla o digita il testo da hashare…",
+    "dropzone": "Trascina un file qui o clicca per selezionarlo",
+    "processing": "Calcolo in corso…",
+    "actions": {
+      "copy": "Copia",
+      "copied": "Copiato!"
+    },
+    "verify": {
+      "label": "Verifica con un hash atteso",
+      "placeholder": "Incolla l'hash hex (40, 64, 96 o 128 caratteri)…",
+      "unknownLength": "Lunghezza non riconosciuta. Deve corrispondere a SHA-1 (40), SHA-256 (64), SHA-384 (96) o SHA-512 (128).",
+      "match": "Corrisponde a {algo}.",
+      "mismatch": "L'hash {algo} non corrisponde."
+    },
+    "errors": {
       "clipboard": "Impossibile copiare negli appunti."
     }
   },

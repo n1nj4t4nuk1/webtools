@@ -25,6 +25,11 @@
       "name": "Createpass",
       "tagline": "生成强密码",
       "description": "使用浏览器加密技术创建随机密码。它们永远不会离开您的设备。"
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "计算哈希并验证完整性",
+      "description": "计算文本或文件的 SHA-1、SHA-256、SHA-384 和 SHA-512 哈希。与期望的哈希值比较以验证下载。"
     }
   },
   "createpass": {
@@ -47,6 +52,27 @@
     },
     "errors": {
       "noCharset": "请至少选择一种字符类型。",
+      "clipboard": "无法复制到剪贴板。"
+    }
+  },
+  "hashy": {
+    "modeText": "文本",
+    "modeFile": "文件",
+    "textPlaceholder": "粘贴或输入要哈希的文本…",
+    "dropzone": "将文件拖到此处，或点击选择",
+    "processing": "计算中…",
+    "actions": {
+      "copy": "复制",
+      "copied": "已复制！"
+    },
+    "verify": {
+      "label": "与期望的哈希值比较",
+      "placeholder": "粘贴十六进制哈希（40、64、96 或 128 个字符）…",
+      "unknownLength": "无法识别的长度。必须匹配 SHA-1 (40)、SHA-256 (64)、SHA-384 (96) 或 SHA-512 (128)。",
+      "match": "与 {algo} 匹配。",
+      "mismatch": "{algo} 哈希不匹配。"
+    },
+    "errors": {
       "clipboard": "无法复制到剪贴板。"
     }
   },

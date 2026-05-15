@@ -25,6 +25,11 @@
       "name": "Createpass",
       "tagline": "Gere senhas seguras",
       "description": "Crie senhas aleatórias usando criptografia do navegador. Elas nunca saem do seu dispositivo."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Calcule hashes e verifique integridade",
+      "description": "SHA-1, SHA-256, SHA-384 e SHA-512 de texto ou arquivos. Compare com um hash esperado para verificar downloads."
     }
   },
   "createpass": {
@@ -47,6 +52,27 @@
     },
     "errors": {
       "noCharset": "Selecione pelo menos um tipo de caractere.",
+      "clipboard": "Não foi possível copiar para a área de transferência."
+    }
+  },
+  "hashy": {
+    "modeText": "Texto",
+    "modeFile": "Arquivo",
+    "textPlaceholder": "Cole ou digite o texto para gerar o hash…",
+    "dropzone": "Arraste um arquivo aqui ou clique para selecionar",
+    "processing": "Calculando…",
+    "actions": {
+      "copy": "Copiar",
+      "copied": "Copiado!"
+    },
+    "verify": {
+      "label": "Verificar com um hash esperado",
+      "placeholder": "Cole o hash hex (40, 64, 96 ou 128 caracteres)…",
+      "unknownLength": "Comprimento não reconhecido. Deve corresponder a SHA-1 (40), SHA-256 (64), SHA-384 (96) ou SHA-512 (128).",
+      "match": "Corresponde a {algo}.",
+      "mismatch": "O hash {algo} não corresponde."
+    },
+    "errors": {
       "clipboard": "Não foi possível copiar para a área de transferência."
     }
   },
