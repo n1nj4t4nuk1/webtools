@@ -11,6 +11,46 @@
       "name": "Mochi",
       "tagline": "Resize images",
       "description": "Shrink the pixel size of your images right in the browser. No uploads, no server."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "Edit EXIF metadata",
+      "description": "Read, edit or strip EXIF metadata from your JPEG photos. All in your browser."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Drag a JPEG here or click to select one",
+    "fields": {
+      "title": "EXIF metadata",
+      "hint": "Leave a field empty to skip writing it. Use 'Strip all' to clean the image.",
+      "make": "Camera make",
+      "model": "Camera model",
+      "lensModel": "Lens model",
+      "software": "Software",
+      "artist": "Author",
+      "copyright": "Copyright",
+      "imageDescription": "Description",
+      "dateTime": "Date (modified)",
+      "dateTimeOriginal": "Original capture date",
+      "orientation": "Orientation",
+      "placeholder": {
+        "make": "Canon, Sony, Apple…",
+        "model": "EOS R5, iPhone 15…",
+        "lensModel": "RF 24-70mm F2.8…",
+        "software": "Lightroom 12.0, Photoshop…",
+        "artist": "Author name",
+        "copyright": "© 2026 Author",
+        "imageDescription": "Short description",
+        "dateTime": "2024:01:15 18:30:00",
+        "dateTimeOriginal": "2024:01:15 18:30:00"
+      }
+    },
+    "actions": {
+      "strip": "Strip all EXIF",
+      "apply": "Apply and download"
+    },
+    "errors": {
+      "notJpeg": "Only JPEG files (.jpg / .jpeg) are supported."
     }
   },
   "dropzone": {

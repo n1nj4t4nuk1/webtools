@@ -4,6 +4,7 @@ const localePath = useLocalePath()
 
 const tools = [
   { id: 'mochi', to: '/mochi' },
+  { id: 'metaimg', to: '/metaimg' },
 ] as const
 
 useHead({

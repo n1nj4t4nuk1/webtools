@@ -11,6 +11,46 @@
       "name": "Mochi",
       "tagline": "调整图片尺寸",
       "description": "直接在浏览器中减小图片的像素尺寸。无需上传，无需服务器。"
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "编辑 EXIF 元数据",
+      "description": "读取、修改或删除 JPEG 照片的 EXIF 元数据。一切都在浏览器中完成。"
+    }
+  },
+  "metaimg": {
+    "dropzone": "将 JPEG 拖到此处，或点击选择",
+    "fields": {
+      "title": "EXIF 元数据",
+      "hint": "留空的字段不会被写入。使用「全部清除」来清理图片。",
+      "make": "厂商",
+      "model": "相机型号",
+      "lensModel": "镜头型号",
+      "software": "软件",
+      "artist": "作者",
+      "copyright": "版权",
+      "imageDescription": "描述",
+      "dateTime": "日期（修改）",
+      "dateTimeOriginal": "拍摄日期",
+      "orientation": "方向",
+      "placeholder": {
+        "make": "Canon, Sony, Apple…",
+        "model": "EOS R5, iPhone 15…",
+        "lensModel": "RF 24-70mm F2.8…",
+        "software": "Lightroom 12.0, Photoshop…",
+        "artist": "作者姓名",
+        "copyright": "© 2026 作者",
+        "imageDescription": "简短描述",
+        "dateTime": "2024:01:15 18:30:00",
+        "dateTimeOriginal": "2024:01:15 18:30:00"
+      }
+    },
+    "actions": {
+      "strip": "清除所有 EXIF",
+      "apply": "应用并下载"
+    },
+    "errors": {
+      "notJpeg": "仅支持 JPEG 文件（.jpg / .jpeg）。"
     }
   },
   "dropzone": {

@@ -11,6 +11,46 @@
       "name": "Mochi",
       "tagline": "画像のリサイズ",
       "description": "ブラウザで画像のピクセルサイズを直接縮小できます。アップロード不要、サーバー不要。"
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "EXIFメタデータを編集",
+      "description": "JPEG写真のEXIFメタデータを読み取り、編集、削除できます。すべてブラウザで完結。"
+    }
+  },
+  "metaimg": {
+    "dropzone": "JPEGをここにドラッグするか、クリックして選択",
+    "fields": {
+      "title": "EXIFメタデータ",
+      "hint": "空のフィールドは書き込まれません。'すべて削除' で画像をクリーンにします。",
+      "make": "メーカー",
+      "model": "カメラ機種",
+      "lensModel": "レンズ機種",
+      "software": "ソフトウェア",
+      "artist": "作者",
+      "copyright": "著作権",
+      "imageDescription": "説明",
+      "dateTime": "日時（変更）",
+      "dateTimeOriginal": "撮影日時",
+      "orientation": "向き",
+      "placeholder": {
+        "make": "Canon, Sony, Apple…",
+        "model": "EOS R5, iPhone 15…",
+        "lensModel": "RF 24-70mm F2.8…",
+        "software": "Lightroom 12.0, Photoshop…",
+        "artist": "作者名",
+        "copyright": "© 2026 作者",
+        "imageDescription": "簡単な説明",
+        "dateTime": "2024:01:15 18:30:00",
+        "dateTimeOriginal": "2024:01:15 18:30:00"
+      }
+    },
+    "actions": {
+      "strip": "EXIFをすべて削除",
+      "apply": "適用してダウンロード"
+    },
+    "errors": {
+      "notJpeg": "JPEGファイル（.jpg / .jpeg）のみ対応しています。"
     }
   },
   "dropzone": {

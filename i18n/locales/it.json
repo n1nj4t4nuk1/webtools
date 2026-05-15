@@ -11,6 +11,46 @@
       "name": "Mochi",
       "tagline": "Ridimensiona immagini",
       "description": "Riduci la dimensione in pixel delle tue immagini direttamente nel browser. Niente upload, niente server."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "Modifica i metadati EXIF",
+      "description": "Leggi, modifica o rimuovi i metadati EXIF dalle tue foto JPEG. Tutto nel browser."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Trascina un JPEG qui o clicca per selezionarlo",
+    "fields": {
+      "title": "Metadati EXIF",
+      "hint": "Lascia un campo vuoto per non scriverlo. Usa 'Rimuovi tutto' per pulire l'immagine.",
+      "make": "Produttore",
+      "model": "Modello fotocamera",
+      "lensModel": "Modello obiettivo",
+      "software": "Software",
+      "artist": "Autore",
+      "copyright": "Copyright",
+      "imageDescription": "Descrizione",
+      "dateTime": "Data (modifica)",
+      "dateTimeOriginal": "Data originale della foto",
+      "orientation": "Orientamento",
+      "placeholder": {
+        "make": "Canon, Sony, Apple…",
+        "model": "EOS R5, iPhone 15…",
+        "lensModel": "RF 24-70mm F2.8…",
+        "software": "Lightroom 12.0, Photoshop…",
+        "artist": "Nome dell'autore",
+        "copyright": "© 2026 Autore",
+        "imageDescription": "Breve descrizione",
+        "dateTime": "2024:01:15 18:30:00",
+        "dateTimeOriginal": "2024:01:15 18:30:00"
+      }
+    },
+    "actions": {
+      "strip": "Rimuovi tutto l'EXIF",
+      "apply": "Applica e scarica"
+    },
+    "errors": {
+      "notJpeg": "Sono supportati solo file JPEG (.jpg / .jpeg)."
     }
   },
   "dropzone": {
