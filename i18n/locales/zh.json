@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "languageSwitcher": "语言切换"
+  },
+  "landing": {
+    "title": "在浏览器中运行的工具",
+    "description": "一系列无需服务器的网络实用工具。您的文件永远不会离开您的设备。"
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "调整图片尺寸",
+      "description": "直接在浏览器中减小图片的像素尺寸。无需上传，无需服务器。"
+    }
+  },
+  "dropzone": {
+    "empty": "将图片拖到此处，或点击选择"
+  },
+  "controls": {
+    "width": "宽度 (px)",
+    "height": "高度 (px)",
+    "keepRatio": "保持宽高比",
+    "format": "格式",
+    "quality": "质量"
+  },
+  "actions": {
+    "resize": "调整尺寸",
+    "processing": "处理中…",
+    "download": "下载"
+  },
+  "result": {
+    "title": "结果"
+  },
+  "errors": {
+    "notAnImage": "该文件不是有效的图片。"
+  },
+  "footer": {
+    "tagline": "Tanukibox · 在浏览器中运行的工具"
+  }
+}

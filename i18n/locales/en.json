@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "languageSwitcher": "Language switcher"
+  },
+  "landing": {
+    "title": "Tools that run in your browser",
+    "description": "A collection of serverless web utilities. Your files never leave your device."
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Resize images",
+      "description": "Shrink the pixel size of your images right in the browser. No uploads, no server."
+    }
+  },
+  "dropzone": {
+    "empty": "Drag an image here or click to select one"
+  },
+  "controls": {
+    "width": "Width (px)",
+    "height": "Height (px)",
+    "keepRatio": "Keep aspect ratio",
+    "format": "Format",
+    "quality": "Quality"
+  },
+  "actions": {
+    "resize": "Resize",
+    "processing": "Processing…",
+    "download": "Download"
+  },
+  "result": {
+    "title": "Result"
+  },
+  "errors": {
+    "notAnImage": "That file is not a valid image."
+  },
+  "footer": {
+    "tagline": "Tanukibox · tools that run in your browser"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "languageSwitcher": "Selector de idioma"
+  },
+  "landing": {
+    "title": "Herramientas que se ejecutan en tu navegador",
+    "description": "Colección de utilidades web sin servidor. Tus archivos nunca salen de tu dispositivo."
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Redimensiona imágenes",
+      "description": "Reduce el tamaño en píxeles de tus imágenes directamente en el navegador. Sin subidas, sin servidor."
+    }
+  },
+  "dropzone": {
+    "empty": "Arrastra una imagen o haz clic para seleccionarla"
+  },
+  "controls": {
+    "width": "Ancho (px)",
+    "height": "Alto (px)",
+    "keepRatio": "Mantener proporción",
+    "format": "Formato",
+    "quality": "Calidad"
+  },
+  "actions": {
+    "resize": "Redimensionar",
+    "processing": "Procesando…",
+    "download": "Descargar"
+  },
+  "result": {
+    "title": "Resultado"
+  },
+  "errors": {
+    "notAnImage": "El archivo no es una imagen válida."
+  },
+  "footer": {
+    "tagline": "Tanukibox · herramientas que se ejecutan en tu navegador"
+  }
+}

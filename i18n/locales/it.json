@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "languageSwitcher": "Selettore di lingua"
+  },
+  "landing": {
+    "title": "Strumenti che girano nel tuo browser",
+    "description": "Una raccolta di utilità web senza server. I tuoi file non lasciano mai il tuo dispositivo."
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Ridimensiona immagini",
+      "description": "Riduci la dimensione in pixel delle tue immagini direttamente nel browser. Niente upload, niente server."
+    }
+  },
+  "dropzone": {
+    "empty": "Trascina un'immagine qui o clicca per selezionarla"
+  },
+  "controls": {
+    "width": "Larghezza (px)",
+    "height": "Altezza (px)",
+    "keepRatio": "Mantieni proporzioni",
+    "format": "Formato",
+    "quality": "Qualità"
+  },
+  "actions": {
+    "resize": "Ridimensiona",
+    "processing": "Elaborazione…",
+    "download": "Scarica"
+  },
+  "result": {
+    "title": "Risultato"
+  },
+  "errors": {
+    "notAnImage": "Il file non è un'immagine valida."
+  },
+  "footer": {
+    "tagline": "Tanukibox · strumenti che girano nel tuo browser"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "languageSwitcher": "言語切替"
+  },
+  "landing": {
+    "title": "ブラウザで動くツール",
+    "description": "サーバー不要のウェブユーティリティ集。ファイルがデバイスから出ることはありません。"
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "画像のリサイズ",
+      "description": "ブラウザで画像のピクセルサイズを直接縮小できます。アップロード不要、サーバー不要。"
+    }
+  },
+  "dropzone": {
+    "empty": "画像をここにドラッグするか、クリックして選択"
+  },
+  "controls": {
+    "width": "幅 (px)",
+    "height": "高さ (px)",
+    "keepRatio": "縦横比を維持",
+    "format": "形式",
+    "quality": "品質"
+  },
+  "actions": {
+    "resize": "リサイズ",
+    "processing": "処理中…",
+    "download": "ダウンロード"
+  },
+  "result": {
+    "title": "結果"
+  },
+  "errors": {
+    "notAnImage": "そのファイルは有効な画像ではありません。"
+  },
+  "footer": {
+    "tagline": "Tanukibox · ブラウザで動くツール"
+  }
+}
