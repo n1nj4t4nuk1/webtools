@@ -7,7 +7,8 @@
     "description": "一系列无需服务器的网络实用工具。您的文件永远不会离开您的设备。",
     "categories": {
       "imageEdit": "图片编辑",
-      "privacy": "隐私"
+      "privacy": "隐私",
+      "generators": "生成器"
     }
   },
   "tools": {

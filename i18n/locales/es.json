@@ -7,7 +7,8 @@
     "description": "Colección de utilidades web sin servidor. Tus archivos nunca salen de tu dispositivo.",
     "categories": {
       "imageEdit": "Edición de imágenes",
-      "privacy": "Privacidad"
+      "privacy": "Privacidad",
+      "generators": "Generadores"
     }
   },
   "tools": {
@@ -30,6 +31,11 @@
       "name": "Hashy",
       "tagline": "Calcula hashes y verifica integridad",
       "description": "SHA-1, SHA-256, SHA-384 y SHA-512 de texto o archivos. Compara con un hash esperado para verificar descargas."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Genera identificadores únicos",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID y NanoID. Generación criptográficamente segura en tu navegador."
     }
   },
   "createpass": {
@@ -52,6 +58,36 @@
     },
     "errors": {
       "noCharset": "Selecciona al menos un tipo de carácter.",
+      "clipboard": "No se pudo copiar al portapapeles."
+    }
+  },
+  "idkun": {
+    "format": "Formato",
+    "count": "¿Cuántos?",
+    "nanoidSize": "Longitud NanoID",
+    "uppercase": "Mayúsculas",
+    "hyphens": "Con guiones",
+    "formats": {
+      "uuidv4": "UUID v4 (random)",
+      "uuidv7": "UUID v7 (timestamp + random)",
+      "uuidNil": "UUID NIL (todos ceros)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (URL-safe)"
+    },
+    "about": {
+      "uuidv4": "El UUID estándar más común. 122 bits de aleatoriedad. RFC 4122.",
+      "uuidv7": "Combina timestamp + random. Es ordenable lexicográficamente. RFC 9562 (2024).",
+      "uuidNil": "El UUID nulo, todo ceros. Útil como valor por defecto o sentinel.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. 26 caracteres en Crockford Base32.",
+      "nanoid": "Identificador URL-safe corto y popular. Tamaño configurable."
+    },
+    "actions": {
+      "generate": "Generar",
+      "copy": "Copiar",
+      "copyAll": "Copiar todos",
+      "copied": "¡Copiado!"
+    },
+    "errors": {
       "clipboard": "No se pudo copiar al portapapeles."
     }
   },

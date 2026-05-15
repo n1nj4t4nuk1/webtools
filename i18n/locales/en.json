@@ -7,7 +7,8 @@
     "description": "A collection of serverless web utilities. Your files never leave your device.",
     "categories": {
       "imageEdit": "Image editing",
-      "privacy": "Privacy"
+      "privacy": "Privacy",
+      "generators": "Generators"
     }
   },
   "tools": {
@@ -30,6 +31,11 @@
       "name": "Hashy",
       "tagline": "Compute hashes and verify integrity",
       "description": "SHA-1, SHA-256, SHA-384 and SHA-512 of text or files. Compare against an expected hash to verify downloads."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Generate unique identifiers",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID and NanoID. Cryptographically secure generation in your browser."
     }
   },
   "createpass": {
@@ -52,6 +58,36 @@
     },
     "errors": {
       "noCharset": "Pick at least one character type.",
+      "clipboard": "Could not copy to clipboard."
+    }
+  },
+  "idkun": {
+    "format": "Format",
+    "count": "How many?",
+    "nanoidSize": "NanoID length",
+    "uppercase": "Uppercase",
+    "hyphens": "With hyphens",
+    "formats": {
+      "uuidv4": "UUID v4 (random)",
+      "uuidv7": "UUID v7 (timestamp + random)",
+      "uuidNil": "UUID NIL (all zeros)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (URL-safe)"
+    },
+    "about": {
+      "uuidv4": "The most common standard UUID. 122 random bits. RFC 4122.",
+      "uuidv7": "Combines timestamp + random. Lexicographically sortable. RFC 9562 (2024).",
+      "uuidNil": "The nil UUID, all zeros. Useful as a default or sentinel value.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. 26 chars in Crockford Base32.",
+      "nanoid": "Short and popular URL-safe identifier. Configurable size."
+    },
+    "actions": {
+      "generate": "Generate",
+      "copy": "Copy",
+      "copyAll": "Copy all",
+      "copied": "Copied!"
+    },
+    "errors": {
       "clipboard": "Could not copy to clipboard."
     }
   },

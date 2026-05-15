@@ -7,7 +7,8 @@
     "description": "Coleção de utilitários web sem servidor. Seus arquivos nunca saem do seu dispositivo.",
     "categories": {
       "imageEdit": "Edição de imagens",
-      "privacy": "Privacidade"
+      "privacy": "Privacidade",
+      "generators": "Geradores"
     }
   },
   "tools": {
