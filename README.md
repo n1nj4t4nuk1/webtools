@@ -34,10 +34,18 @@ npm run generate
 
 Output: `.output/public/`.
 
+## Ramas
+
+| Rama | Rol |
+|---|---|
+| `dev` | Default. Desarrollo diario y PRs. |
+| `main` | Producción. Netlify la observa para desplegar. Sólo recibe merges desde `dev`. |
+
 ## Netlify
 
 | Campo | Valor |
 |---|---|
+| Branch to deploy | `main` |
 | Build command | `npm run generate` |
 | Publish directory | `.output/public` |
 | Node version | desde `.nvmrc` (20) |
