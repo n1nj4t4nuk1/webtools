@@ -16,7 +16,7 @@ const onChangeLocale = (event: Event) => {
   <div class="app-shell">
     <header class="app-header">
       <NuxtLink :to="localePath('/')" class="brand">
-        <span class="brand-mark">tanukibox</span>
+        <span class="brand-mark">TanukiBox</span>
       </NuxtLink>
 
       <label class="lang-switcher" :aria-label="t('nav.languageSwitcher')">
