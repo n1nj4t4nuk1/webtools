@@ -31,7 +31,7 @@
     "length": "Comprimento",
     "count": "Quantas?",
     "excludeSimilar": "Excluir semelhantes (l, I, 1, O, 0)",
-    "excludeAmbiguous": "Excluir ambíguos ({}[]/\\…)",
+    "excludeAmbiguous": "Excluir ambíguos (colchetes, aspas e similares)",
     "bits": "bits",
     "strength": {
       "veryWeak": "Muito fraca",

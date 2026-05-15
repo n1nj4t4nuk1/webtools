@@ -31,7 +31,7 @@
     "length": "Μήκος",
     "count": "Πόσοι;",
     "excludeSimilar": "Εξαίρεση παρόμοιων (l, I, 1, O, 0)",
-    "excludeAmbiguous": "Εξαίρεση διφορούμενων ({}[]/\\…)",
+    "excludeAmbiguous": "Εξαίρεση διφορούμενων (αγκύλες, εισαγωγικά κ.λπ.)",
     "bits": "bits",
     "strength": {
       "veryWeak": "Πολύ αδύναμος",

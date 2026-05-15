@@ -31,7 +31,7 @@
     "length": "Length",
     "count": "How many?",
     "excludeSimilar": "Exclude similar (l, I, 1, O, 0)",
-    "excludeAmbiguous": "Exclude ambiguous ({}[]/\\…)",
+    "excludeAmbiguous": "Exclude ambiguous (brackets, quotes and similar)",
     "bits": "bits",
     "strength": {
       "veryWeak": "Very weak",

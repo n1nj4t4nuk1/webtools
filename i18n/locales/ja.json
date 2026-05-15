@@ -31,7 +31,7 @@
     "length": "長さ",
     "count": "何個？",
     "excludeSimilar": "類似文字を除外 (l, I, 1, O, 0)",
-    "excludeAmbiguous": "曖昧な文字を除外 ({}[]/\\…)",
+    "excludeAmbiguous": "曖昧な文字を除外（括弧、引用符など）",
     "bits": "ビット",
     "strength": {
       "veryWeak": "非常に弱い",

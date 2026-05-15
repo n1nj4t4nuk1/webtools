@@ -31,7 +31,7 @@
     "length": "长度",
     "count": "多少个？",
     "excludeSimilar": "排除相似字符 (l, I, 1, O, 0)",
-    "excludeAmbiguous": "排除模糊字符 ({}[]/\\…)",
+    "excludeAmbiguous": "排除模糊字符（括号、引号等）",
     "bits": "位",
     "strength": {
       "veryWeak": "非常弱",
