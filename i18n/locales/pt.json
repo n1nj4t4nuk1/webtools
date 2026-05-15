@@ -4,7 +4,11 @@
   },
   "landing": {
     "title": "Ferramentas que rodam no seu navegador",
-    "description": "Coleção de utilitários web sem servidor. Seus arquivos nunca saem do seu dispositivo."
+    "description": "Coleção de utilitários web sem servidor. Seus arquivos nunca saem do seu dispositivo.",
+    "categories": {
+      "imageEdit": "Edição de imagens",
+      "privacy": "Privacidade"
+    }
   },
   "tools": {
     "mochi": {

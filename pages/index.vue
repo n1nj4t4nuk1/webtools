@@ -1,11 +1,25 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
-const tools = [
-  { id: 'mochi', to: '/mochi' },
-  { id: 'metaimg', to: '/metaimg' },
+const categoriesRaw = [
+  { id: 'imageEdit', tools: ['mochi', 'metaimg'] },
+  { id: 'privacy', tools: ['metaimg'] },
 ] as const
+
+const toolPaths: Record<string, string> = {
+  mochi: '/mochi',
+  metaimg: '/metaimg',
+}
+
+const categories = computed(() =>
+  categoriesRaw.map((cat) => ({
+    id: cat.id,
+    tools: [...cat.tools].sort((a, b) =>
+      t(`tools.${a}.name`).localeCompare(t(`tools.${b}.name`), locale.value),
+    ),
+  })),
+)
 
 useHead({
   title: () => `Tanukibox · ${t('landing.title')}`,
@@ -20,14 +34,40 @@ useHead({
       <p class="lead">{{ t('landing.description') }}</p>
     </header>
 
-    <div class="tool-grid">
-      <ToolCard
-        v-for="tool in tools"
-        :key="tool.id"
-        :to="localePath(tool.to)"
-        :name="t(`tools.${tool.id}.name`)"
-        :tagline="t(`tools.${tool.id}.tagline`)"
-      />
-    </div>
+    <section
+      v-for="cat in categories"
+      :key="cat.id"
+      class="category"
+    >
+      <h2 class="category-title">{{ t(`landing.categories.${cat.id}`) }}</h2>
+      <div class="tool-grid">
+        <ToolCard
+          v-for="toolId in cat.tools"
+          :key="toolId"
+          :to="localePath(toolPaths[toolId])"
+          :name="t(`tools.${toolId}.name`)"
+          :tagline="t(`tools.${toolId}.tagline`)"
+        />
+      </div>
+    </section>
   </section>
 </template>
+
+<style scoped>
+.category {
+  margin-top: 2rem;
+}
+.category:first-of-type {
+  margin-top: 0;
+}
+.category-title {
+  margin: 0 0 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+</style>

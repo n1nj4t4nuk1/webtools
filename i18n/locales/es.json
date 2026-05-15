@@ -4,7 +4,11 @@
   },
   "landing": {
     "title": "Herramientas que se ejecutan en tu navegador",
-    "description": "Colección de utilidades web sin servidor. Tus archivos nunca salen de tu dispositivo."
+    "description": "Colección de utilidades web sin servidor. Tus archivos nunca salen de tu dispositivo.",
+    "categories": {
+      "imageEdit": "Edición de imágenes",
+      "privacy": "Privacidad"
+    }
   },
   "tools": {
     "mochi": {

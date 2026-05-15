@@ -4,7 +4,11 @@
   },
   "landing": {
     "title": "Tools that run in your browser",
-    "description": "A collection of serverless web utilities. Your files never leave your device."
+    "description": "A collection of serverless web utilities. Your files never leave your device.",
+    "categories": {
+      "imageEdit": "Image editing",
+      "privacy": "Privacy"
+    }
   },
   "tools": {
     "mochi": {

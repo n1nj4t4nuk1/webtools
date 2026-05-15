@@ -4,7 +4,11 @@
   },
   "landing": {
     "title": "Strumenti che girano nel tuo browser",
-    "description": "Una raccolta di utilità web senza server. I tuoi file non lasciano mai il tuo dispositivo."
+    "description": "Una raccolta di utilità web senza server. I tuoi file non lasciano mai il tuo dispositivo.",
+    "categories": {
+      "imageEdit": "Modifica immagini",
+      "privacy": "Privacy"
+    }
   },
   "tools": {
     "mochi": {
