@@ -20,6 +20,34 @@
       "name": "Metaimg",
       "tagline": "Edit EXIF metadata",
       "description": "Read, edit or strip EXIF metadata from your JPEG photos. All in your browser."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Generate strong passwords",
+      "description": "Create random passwords using browser cryptography. They never leave your device."
+    }
+  },
+  "createpass": {
+    "length": "Length",
+    "count": "How many?",
+    "excludeSimilar": "Exclude similar (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Exclude ambiguous ({}[]/\\…)",
+    "bits": "bits",
+    "strength": {
+      "veryWeak": "Very weak",
+      "weak": "Weak",
+      "reasonable": "Reasonable",
+      "strong": "Strong",
+      "veryStrong": "Very strong"
+    },
+    "actions": {
+      "generate": "Generate",
+      "copy": "Copy",
+      "copied": "Copied!"
+    },
+    "errors": {
+      "noCharset": "Pick at least one character type.",
+      "clipboard": "Could not copy to clipboard."
     }
   },
   "metaimg": {

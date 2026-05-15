@@ -20,6 +20,34 @@
       "name": "Metaimg",
       "tagline": "EXIFメタデータを編集",
       "description": "JPEG写真のEXIFメタデータを読み取り、編集、削除できます。すべてブラウザで完結。"
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "強力なパスワードを生成",
+      "description": "ブラウザの暗号化機能でランダムなパスワードを作成。デバイスから出ることはありません。"
+    }
+  },
+  "createpass": {
+    "length": "長さ",
+    "count": "何個？",
+    "excludeSimilar": "類似文字を除外 (l, I, 1, O, 0)",
+    "excludeAmbiguous": "曖昧な文字を除外 ({}[]/\\…)",
+    "bits": "ビット",
+    "strength": {
+      "veryWeak": "非常に弱い",
+      "weak": "弱い",
+      "reasonable": "普通",
+      "strong": "強い",
+      "veryStrong": "非常に強い"
+    },
+    "actions": {
+      "generate": "生成",
+      "copy": "コピー",
+      "copied": "コピー済み！"
+    },
+    "errors": {
+      "noCharset": "少なくとも1つの文字種を選択してください。",
+      "clipboard": "クリップボードにコピーできませんでした。"
     }
   },
   "metaimg": {

@@ -20,6 +20,34 @@
       "name": "Metaimg",
       "tagline": "Edita los metadatos EXIF",
       "description": "Lee, modifica o elimina los metadatos EXIF de tus fotos JPEG. Todo en tu navegador."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Genera contraseñas seguras",
+      "description": "Crea contraseñas aleatorias usando criptografía del navegador. Nunca salen de tu dispositivo."
+    }
+  },
+  "createpass": {
+    "length": "Longitud",
+    "count": "¿Cuántas?",
+    "excludeSimilar": "Excluir similares (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Excluir ambiguos ({}[]/\\…)",
+    "bits": "bits",
+    "strength": {
+      "veryWeak": "Muy débil",
+      "weak": "Débil",
+      "reasonable": "Aceptable",
+      "strong": "Fuerte",
+      "veryStrong": "Muy fuerte"
+    },
+    "actions": {
+      "generate": "Generar",
+      "copy": "Copiar",
+      "copied": "¡Copiado!"
+    },
+    "errors": {
+      "noCharset": "Selecciona al menos un tipo de carácter.",
+      "clipboard": "No se pudo copiar al portapapeles."
     }
   },
   "metaimg": {

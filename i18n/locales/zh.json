@@ -20,6 +20,34 @@
       "name": "Metaimg",
       "tagline": "编辑 EXIF 元数据",
       "description": "读取、修改或删除 JPEG 照片的 EXIF 元数据。一切都在浏览器中完成。"
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "生成强密码",
+      "description": "使用浏览器加密技术创建随机密码。它们永远不会离开您的设备。"
+    }
+  },
+  "createpass": {
+    "length": "长度",
+    "count": "多少个？",
+    "excludeSimilar": "排除相似字符 (l, I, 1, O, 0)",
+    "excludeAmbiguous": "排除模糊字符 ({}[]/\\…)",
+    "bits": "位",
+    "strength": {
+      "veryWeak": "非常弱",
+      "weak": "弱",
+      "reasonable": "可接受",
+      "strong": "强",
+      "veryStrong": "非常强"
+    },
+    "actions": {
+      "generate": "生成",
+      "copy": "复制",
+      "copied": "已复制！"
+    },
+    "errors": {
+      "noCharset": "请至少选择一种字符类型。",
+      "clipboard": "无法复制到剪贴板。"
     }
   },
   "metaimg": {
