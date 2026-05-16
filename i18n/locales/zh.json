@@ -11,7 +11,8 @@
       "privacy": "隐私",
       "generators": "生成器",
       "dev": "开发",
-      "design": "设计"
+      "design": "设计",
+      "converters": "转换器"
     }
   },
   "tools": {
@@ -95,6 +96,16 @@
       "tagline": "CSS 单位转换器",
       "description": "使用可配置的基础大小在 px、rem、em、pt 和 % 间转换。编辑任何单位都会重新计算其他单位。"
     },
+    "timely": {
+      "name": "Timely",
+      "tagline": "时间戳和日期转换",
+      "description": "编辑任意格式（UNIX 秒/毫秒、ISO 8601 UTC/本地、RFC 2822），其他会自动更新。显示星期、相对时间和时区。"
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "数字进制转换器",
+      "description": "在二进制、八进制、十进制和十六进制之间转换。支持任意大小的整数（BigInt）。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
@@ -158,6 +169,62 @@
     "actions": {
       "copy": "复制",
       "copied": "已复制！"
+    }
+  },
+  "timely": {
+    "formats": "格式",
+    "fmt": {
+      "unixS": "UNIX（秒）",
+      "unixMs": "UNIX（毫秒）",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 本地",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "星期",
+      "relative": "相对时间",
+      "tz": "您的时区"
+    },
+    "actions": {
+      "now": "现在",
+      "copy": "复制",
+      "copied": "已复制！"
+    },
+    "errors": {
+      "invalid": "无效格式。"
+    }
+  },
+  "basey": {
+    "title": "数字进制",
+    "bases": {
+      "bin": "二进制",
+      "oct": "八进制",
+      "dec": "十进制",
+      "hex": "十六进制"
+    },
+    "customLabel": "{radix} 进制",
+    "placeholders": {
+      "bin": "例如：101010",
+      "oct": "例如：52",
+      "dec": "例如：42",
+      "hex": "例如：2A"
+    },
+    "addCustom": {
+      "title": "添加自定义进制",
+      "label": "Radix",
+      "placeholder": "2–36",
+      "hint": "数字 0-9 之后是 a-z。例如 36 进制使用 0-9 和 a-z。"
+    },
+    "actions": {
+      "clear": "清除",
+      "copy": "复制",
+      "copied": "已复制！",
+      "addBase": "添加",
+      "removeBase": "移除进制"
+    },
+    "errors": {
+      "invalid": "{base} 的值无效。",
+      "invalidRadix": "Radix 必须是 2 到 36 之间的整数。"
     }
   },
   "unity": {

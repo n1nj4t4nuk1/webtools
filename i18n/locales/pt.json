@@ -11,7 +11,8 @@
       "privacy": "Privacidade",
       "generators": "Geradores",
       "dev": "Desenvolvimento",
-      "design": "Design"
+      "design": "Design",
+      "converters": "Conversores"
     }
   },
   "tools": {
@@ -95,6 +96,16 @@
       "tagline": "Conversor de unidades CSS",
       "description": "Converta entre px, rem, em, pt e % usando um tamanho base configurável. Editar qualquer unidade recalcula as outras."
     },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Converte timestamps e datas",
+      "description": "Edite qualquer formato (UNIX segundos/ms, ISO 8601 UTC/local, RFC 2822) e os outros se atualizam. Mostra dia da semana, relativo e fuso horário."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Conversor entre bases numéricas",
+      "description": "Converta entre binário, octal, decimal e hexadecimal. Suporta inteiros de qualquer tamanho (BigInt)."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formate e valide JSON",
@@ -158,6 +169,62 @@
     "actions": {
       "copy": "Copiar",
       "copied": "Copiado!"
+    }
+  },
+  "timely": {
+    "formats": "Formatos",
+    "fmt": {
+      "unixS": "UNIX (segundos)",
+      "unixMs": "UNIX (milissegundos)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 local",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Dia da semana",
+      "relative": "Relativo",
+      "tz": "Seu fuso horário"
+    },
+    "actions": {
+      "now": "Agora",
+      "copy": "Copiar",
+      "copied": "Copiado!"
+    },
+    "errors": {
+      "invalid": "Formato inválido."
+    }
+  },
+  "basey": {
+    "title": "Bases numéricas",
+    "bases": {
+      "bin": "Binário",
+      "oct": "Octal",
+      "dec": "Decimal",
+      "hex": "Hexadecimal"
+    },
+    "customLabel": "Base {radix}",
+    "placeholders": {
+      "bin": "ex. 101010",
+      "oct": "ex. 52",
+      "dec": "ex. 42",
+      "hex": "ex. 2A"
+    },
+    "addCustom": {
+      "title": "Adicionar base personalizada",
+      "label": "Radix",
+      "placeholder": "2–36",
+      "hint": "Os dígitos vão de 0 a 9 e depois a-z. Por exemplo, base 36 usa 0-9 e a-z."
+    },
+    "actions": {
+      "clear": "Limpar",
+      "copy": "Copiar",
+      "copied": "Copiado!",
+      "addBase": "Adicionar",
+      "removeBase": "Remover base"
+    },
+    "errors": {
+      "invalid": "Valor inválido para {base}.",
+      "invalidRadix": "Radix deve ser um inteiro entre 2 e 36."
     }
   },
   "unity": {

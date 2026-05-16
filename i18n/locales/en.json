@@ -11,7 +11,8 @@
       "privacy": "Privacy",
       "generators": "Generators",
       "dev": "Development",
-      "design": "Design"
+      "design": "Design",
+      "converters": "Converters"
     }
   },
   "tools": {
@@ -100,6 +101,16 @@
       "tagline": "CSS unit converter",
       "description": "Convert between px, rem, em, pt and % using a configurable base size. Editing any unit recalculates the rest."
     },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Convert timestamps and dates",
+      "description": "Edit any format (UNIX seconds/ms, ISO 8601 UTC/local, RFC 2822) and the others update. Shows weekday, relative time and timezone."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Convert between number bases",
+      "description": "Convert between binary, octal, decimal and hexadecimal. Supports integers of any size (BigInt)."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format and validate JSON",
@@ -163,6 +174,62 @@
     "actions": {
       "copy": "Copy",
       "copied": "Copied!"
+    }
+  },
+  "timely": {
+    "formats": "Formats",
+    "fmt": {
+      "unixS": "UNIX (seconds)",
+      "unixMs": "UNIX (milliseconds)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 local",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Day of week",
+      "relative": "Relative",
+      "tz": "Your timezone"
+    },
+    "actions": {
+      "now": "Now",
+      "copy": "Copy",
+      "copied": "Copied!"
+    },
+    "errors": {
+      "invalid": "Invalid format."
+    }
+  },
+  "basey": {
+    "title": "Number bases",
+    "bases": {
+      "bin": "Binary",
+      "oct": "Octal",
+      "dec": "Decimal",
+      "hex": "Hexadecimal"
+    },
+    "customLabel": "Base {radix}",
+    "placeholders": {
+      "bin": "e.g. 101010",
+      "oct": "e.g. 52",
+      "dec": "e.g. 42",
+      "hex": "e.g. 2A"
+    },
+    "addCustom": {
+      "title": "Add a custom base",
+      "label": "Radix",
+      "placeholder": "2–36",
+      "hint": "Digits run 0-9, then a-z. For example, base 36 uses 0-9 and a-z."
+    },
+    "actions": {
+      "clear": "Clear",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "addBase": "Add",
+      "removeBase": "Remove base"
+    },
+    "errors": {
+      "invalid": "Invalid value for {base}.",
+      "invalidRadix": "Radix must be an integer between 2 and 36."
     }
   },
   "unity": {

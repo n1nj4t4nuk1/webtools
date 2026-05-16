@@ -11,7 +11,8 @@
       "privacy": "プライバシー",
       "generators": "ジェネレーター",
       "dev": "開発",
-      "design": "デザイン"
+      "design": "デザイン",
+      "converters": "コンバーター"
     }
   },
   "tools": {
@@ -95,6 +96,16 @@
       "tagline": "CSS単位コンバーター",
       "description": "設定可能なベースサイズを使用して、px、rem、em、pt、%間で変換。どの単位を編集しても他がすべて再計算されます。"
     },
+    "timely": {
+      "name": "Timely",
+      "tagline": "タイムスタンプと日付を変換",
+      "description": "任意の形式（UNIX秒/ms、ISO 8601 UTC/ローカル、RFC 2822）を編集すると他が更新されます。曜日、相対時間、タイムゾーンも表示。"
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "数値基数の相互変換",
+      "description": "2進数、8進数、10進数、16進数間で変換。任意のサイズの整数をサポート（BigInt）。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSONをフォーマット・検証",
@@ -158,6 +169,62 @@
     "actions": {
       "copy": "コピー",
       "copied": "コピーしました！"
+    }
+  },
+  "timely": {
+    "formats": "形式",
+    "fmt": {
+      "unixS": "UNIX（秒）",
+      "unixMs": "UNIX（ミリ秒）",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 ローカル",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "曜日",
+      "relative": "相対",
+      "tz": "タイムゾーン"
+    },
+    "actions": {
+      "now": "今",
+      "copy": "コピー",
+      "copied": "コピーしました！"
+    },
+    "errors": {
+      "invalid": "無効な形式です。"
+    }
+  },
+  "basey": {
+    "title": "数値基数",
+    "bases": {
+      "bin": "2進数",
+      "oct": "8進数",
+      "dec": "10進数",
+      "hex": "16進数"
+    },
+    "customLabel": "{radix}進数",
+    "placeholders": {
+      "bin": "例：101010",
+      "oct": "例：52",
+      "dec": "例：42",
+      "hex": "例：2A"
+    },
+    "addCustom": {
+      "title": "カスタム基数を追加",
+      "label": "Radix",
+      "placeholder": "2–36",
+      "hint": "桁は0-9、続いてa-z。例えば36進数は0-9とa-zを使用します。"
+    },
+    "actions": {
+      "clear": "クリア",
+      "copy": "コピー",
+      "copied": "コピーしました！",
+      "addBase": "追加",
+      "removeBase": "基数を削除"
+    },
+    "errors": {
+      "invalid": "{base}の値が無効です。",
+      "invalidRadix": "Radixは2から36の整数である必要があります。"
     }
   },
   "unity": {

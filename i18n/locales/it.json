@@ -11,7 +11,8 @@
       "privacy": "Privacy",
       "generators": "Generatori",
       "dev": "Sviluppo",
-      "design": "Design"
+      "design": "Design",
+      "converters": "Convertitori"
     }
   },
   "tools": {
@@ -95,6 +96,16 @@
       "tagline": "Convertitore di unità CSS",
       "description": "Converti tra px, rem, em, pt e % usando una dimensione base configurabile. Modificare qualunque unità ricalcola le altre."
     },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Converte timestamp e date",
+      "description": "Modifica qualsiasi formato (UNIX secondi/ms, ISO 8601 UTC/locale, RFC 2822) e gli altri si aggiornano. Mostra giorno della settimana, relativo e fuso orario."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Convertitore tra basi numeriche",
+      "description": "Converti tra binario, ottale, decimale ed esadecimale. Supporta interi di qualsiasi dimensione (BigInt)."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatta e valida JSON",
@@ -158,6 +169,62 @@
     "actions": {
       "copy": "Copia",
       "copied": "Copiato!"
+    }
+  },
+  "timely": {
+    "formats": "Formati",
+    "fmt": {
+      "unixS": "UNIX (secondi)",
+      "unixMs": "UNIX (millisecondi)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 locale",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Giorno della settimana",
+      "relative": "Relativo",
+      "tz": "Il tuo fuso orario"
+    },
+    "actions": {
+      "now": "Ora",
+      "copy": "Copia",
+      "copied": "Copiato!"
+    },
+    "errors": {
+      "invalid": "Formato non valido."
+    }
+  },
+  "basey": {
+    "title": "Basi numeriche",
+    "bases": {
+      "bin": "Binario",
+      "oct": "Ottale",
+      "dec": "Decimale",
+      "hex": "Esadecimale"
+    },
+    "customLabel": "Base {radix}",
+    "placeholders": {
+      "bin": "es. 101010",
+      "oct": "es. 52",
+      "dec": "es. 42",
+      "hex": "es. 2A"
+    },
+    "addCustom": {
+      "title": "Aggiungi base personalizzata",
+      "label": "Radix",
+      "placeholder": "2–36",
+      "hint": "Le cifre vanno da 0 a 9, poi a-z. Per esempio, base 36 usa 0-9 e a-z."
+    },
+    "actions": {
+      "clear": "Pulisci",
+      "copy": "Copia",
+      "copied": "Copiato!",
+      "addBase": "Aggiungi",
+      "removeBase": "Rimuovi base"
+    },
+    "errors": {
+      "invalid": "Valore non valido per {base}.",
+      "invalidRadix": "Il radix deve essere un intero tra 2 e 36."
     }
   },
   "unity": {
