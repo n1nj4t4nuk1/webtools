@@ -8,6 +8,7 @@ const categoriesRaw = [
   { id: 'privacy', tools: ['metaimg', 'createpass', 'hashy'] },
   { id: 'generators', tools: ['createpass', 'idkun', 'combiny', 'lorempad'] },
   { id: 'dev', tools: ['csvjson', 'jsonpad', 'regexpad', 'yamljson', 'idkun'] },
+  { id: 'design', tools: ['gradienty', 'shadowy', 'colory', 'unity'] },
 ] as const
 
 const toolPaths: Record<string, string> = {
@@ -25,6 +26,10 @@ const toolPaths: Record<string, string> = {
   lorempad: '/lorempad',
   regexpad: '/regexpad',
   yamljson: '/yamljson',
+  gradienty: '/gradienty',
+  shadowy: '/shadowy',
+  colory: '/colory',
+  unity: '/unity',
 }
 
 const categories = computed(() =>

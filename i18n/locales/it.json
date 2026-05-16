@@ -10,7 +10,8 @@
       "documents": "Documenti",
       "privacy": "Privacy",
       "generators": "Generatori",
-      "dev": "Sviluppo"
+      "dev": "Sviluppo",
+      "design": "Design"
     }
   },
   "tools": {
@@ -74,10 +75,104 @@
       "tagline": "Converti tra YAML e JSON",
       "description": "Incolla YAML o JSON e ottieni l'altro formato all'istante. Rileva il formato automaticamente e mostra errori con riga e colonna. Tutto nel tuo browser."
     },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "Generatore di gradienti CSS",
+      "description": "Crea gradienti linear, radial e conic con più stop, vedi l'anteprima dal vivo e copia il CSS."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "Generatore di box-shadow",
+      "description": "Ombre con offset, blur, spread, colore, alpha e inset. Più livelli con anteprima dal vivo."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Color picker, palette e contrasto WCAG",
+      "description": "Scegli un colore, converti tra HEX/RGB/HSL, genera una palette e misura il contrasto WCAG contro bianco e nero."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "Convertitore di unità CSS",
+      "description": "Converti tra px, rem, em, pt e % usando una dimensione base configurabile. Modificare qualunque unità ricalcola le altre."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatta e valida JSON",
       "description": "Incolla JSON, validalo e formattalo con l'indentazione che preferisci. Minifica, ordina chiavi e mostra statistiche. Tutto nel tuo browser."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Tipo",
+      "linear": "Lineare",
+      "radial": "Radiale",
+      "conic": "Conico"
+    },
+    "angle": "Angolo",
+    "shape": {
+      "label": "Forma",
+      "circle": "Cerchio",
+      "ellipse": "Ellisse"
+    },
+    "position": {
+      "label": "Posizione"
+    },
+    "stops": {
+      "title": "Stop",
+      "add": "Aggiungi stop"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Copia",
+      "copied": "Copiato!"
+    }
+  },
+  "shadowy": {
+    "title": "Ombre",
+    "layer": "Livello {n}",
+    "offsetX": "Offset X",
+    "offsetY": "Offset Y",
+    "blur": "Blur",
+    "spread": "Spread",
+    "color": "Colore",
+    "alpha": "Opacità",
+    "inset": "Interno (inset)",
+    "css": "CSS",
+    "actions": {
+      "add": "Aggiungi ombra",
+      "remove": "Rimuovi ombra",
+      "copy": "Copia",
+      "copied": "Copiato!"
+    }
+  },
+  "colory": {
+    "palette": "Palette",
+    "contrast": {
+      "label": "Contrasto WCAG",
+      "sample": "Aa",
+      "withWhite": "su bianco",
+      "withBlack": "su nero",
+      "normal": "Testo normale",
+      "large": "Testo grande"
+    },
+    "actions": {
+      "copy": "Copia",
+      "copied": "Copiato!"
+    }
+  },
+  "unity": {
+    "baseFont": "Dimensione base",
+    "baseHint": "1rem = base. 1em = relativo al padre (qui assunto = base). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "pixel",
+      "rem": "root em",
+      "em": "em relativo",
+      "pt": "punti",
+      "percent": "percentuale"
+    },
+    "actions": {
+      "copy": "Copia",
+      "copied": "Copiato!"
     }
   },
   "yamljson": {

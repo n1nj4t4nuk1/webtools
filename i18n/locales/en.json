@@ -10,7 +10,8 @@
       "documents": "Documents",
       "privacy": "Privacy",
       "generators": "Generators",
-      "dev": "Development"
+      "dev": "Development",
+      "design": "Design"
     }
   },
   "tools": {
@@ -79,10 +80,104 @@
       "tagline": "Convert between YAML and JSON",
       "description": "Paste YAML or JSON and get the other format instantly. Auto-detects format and shows errors with line and column. All in your browser."
     },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "CSS gradient generator",
+      "description": "Build linear, radial and conic gradients with multiple stops, see a live preview, and copy the CSS."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "box-shadow generator",
+      "description": "Shadows with offset, blur, spread, color, alpha and inset. Multiple layers with live preview."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Color picker, palette and WCAG contrast",
+      "description": "Pick a color, convert between HEX/RGB/HSL, generate a palette and measure WCAG contrast against white and black."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "CSS unit converter",
+      "description": "Convert between px, rem, em, pt and % using a configurable base size. Editing any unit recalculates the rest."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format and validate JSON",
       "description": "Paste JSON, validate it and pretty-print with the indent you like. Minify, sort keys and see stats. All in your browser."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Type",
+      "linear": "Linear",
+      "radial": "Radial",
+      "conic": "Conic"
+    },
+    "angle": "Angle",
+    "shape": {
+      "label": "Shape",
+      "circle": "Circle",
+      "ellipse": "Ellipse"
+    },
+    "position": {
+      "label": "Position"
+    },
+    "stops": {
+      "title": "Stops",
+      "add": "Add stop"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Copy",
+      "copied": "Copied!"
+    }
+  },
+  "shadowy": {
+    "title": "Shadows",
+    "layer": "Layer {n}",
+    "offsetX": "Offset X",
+    "offsetY": "Offset Y",
+    "blur": "Blur",
+    "spread": "Spread",
+    "color": "Color",
+    "alpha": "Opacity",
+    "inset": "Inset",
+    "css": "CSS",
+    "actions": {
+      "add": "Add shadow",
+      "remove": "Remove shadow",
+      "copy": "Copy",
+      "copied": "Copied!"
+    }
+  },
+  "colory": {
+    "palette": "Palette",
+    "contrast": {
+      "label": "WCAG contrast",
+      "sample": "Aa",
+      "withWhite": "on white",
+      "withBlack": "on black",
+      "normal": "Normal text",
+      "large": "Large text"
+    },
+    "actions": {
+      "copy": "Copy",
+      "copied": "Copied!"
+    }
+  },
+  "unity": {
+    "baseFont": "Base size",
+    "baseHint": "1rem = base. 1em = relative to parent (here assumed = base). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "pixels",
+      "rem": "root em",
+      "em": "relative em",
+      "pt": "points",
+      "percent": "percent"
+    },
+    "actions": {
+      "copy": "Copy",
+      "copied": "Copied!"
     }
   },
   "yamljson": {

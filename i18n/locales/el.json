@@ -10,7 +10,8 @@
       "documents": "Έγγραφα",
       "privacy": "Απόρρητο",
       "generators": "Γεννήτριες",
-      "dev": "Ανάπτυξη"
+      "dev": "Ανάπτυξη",
+      "design": "Σχεδίαση"
     }
   },
   "tools": {
@@ -74,10 +75,104 @@
       "tagline": "Μετατροπή μεταξύ YAML και JSON",
       "description": "Επικολλήστε YAML ή JSON και αποκτήστε άμεσα το άλλο φορμά. Ανιχνεύει αυτόματα το φορμά και εμφανίζει σφάλματα με γραμμή και στήλη. Όλα στο πρόγραμμα περιήγησης."
     },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "Γεννήτρια διαβαθμίσεων CSS",
+      "description": "Δημιουργήστε γραμμικές, ακτινικές και κωνικές διαβαθμίσεις με πολλαπλά stops, δείτε live preview και αντιγράψτε το CSS."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "Γεννήτρια box-shadow",
+      "description": "Σκιές με offset, blur, spread, χρώμα, alpha και inset. Πολλαπλά επίπεδα με live preview."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Color picker, παλέτα και αντίθεση WCAG",
+      "description": "Επιλέξτε χρώμα, μετατρέψτε μεταξύ HEX/RGB/HSL, δημιουργήστε παλέτα και μετρήστε την αντίθεση WCAG με λευκό και μαύρο."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "Μετατροπέας μονάδων CSS",
+      "description": "Μετατρέψτε μεταξύ px, rem, em, pt και % χρησιμοποιώντας ρυθμιζόμενο βασικό μέγεθος. Η επεξεργασία οποιασδήποτε μονάδας υπολογίζει ξανά τις υπόλοιπες."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Μορφοποίηση και επικύρωση JSON",
       "description": "Επικολλήστε JSON, επικυρώστε και μορφοποιήστε με την εσοχή που θέλετε. Minify, ταξινόμηση κλειδιών και στατιστικά. Όλα στο πρόγραμμα περιήγησης."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Τύπος",
+      "linear": "Γραμμική",
+      "radial": "Ακτινική",
+      "conic": "Κωνική"
+    },
+    "angle": "Γωνία",
+    "shape": {
+      "label": "Σχήμα",
+      "circle": "Κύκλος",
+      "ellipse": "Έλλειψη"
+    },
+    "position": {
+      "label": "Θέση"
+    },
+    "stops": {
+      "title": "Stops",
+      "add": "Προσθήκη stop"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Αντιγραφή",
+      "copied": "Αντιγράφηκε!"
+    }
+  },
+  "shadowy": {
+    "title": "Σκιές",
+    "layer": "Επίπεδο {n}",
+    "offsetX": "Offset X",
+    "offsetY": "Offset Y",
+    "blur": "Blur",
+    "spread": "Spread",
+    "color": "Χρώμα",
+    "alpha": "Διαφάνεια",
+    "inset": "Εσωτερική (inset)",
+    "css": "CSS",
+    "actions": {
+      "add": "Προσθήκη σκιάς",
+      "remove": "Αφαίρεση σκιάς",
+      "copy": "Αντιγραφή",
+      "copied": "Αντιγράφηκε!"
+    }
+  },
+  "colory": {
+    "palette": "Παλέτα",
+    "contrast": {
+      "label": "Αντίθεση WCAG",
+      "sample": "Aa",
+      "withWhite": "σε λευκό",
+      "withBlack": "σε μαύρο",
+      "normal": "Κανονικό κείμενο",
+      "large": "Μεγάλο κείμενο"
+    },
+    "actions": {
+      "copy": "Αντιγραφή",
+      "copied": "Αντιγράφηκε!"
+    }
+  },
+  "unity": {
+    "baseFont": "Βασικό μέγεθος",
+    "baseHint": "1rem = βασικό. 1em = σχετικό με γονέα (εδώ υποτίθεται = βασικό). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "pixels",
+      "rem": "root em",
+      "em": "σχετικό em",
+      "pt": "στιγμές",
+      "percent": "ποσοστό"
+    },
+    "actions": {
+      "copy": "Αντιγραφή",
+      "copied": "Αντιγράφηκε!"
     }
   },
   "yamljson": {

@@ -10,7 +10,8 @@
       "documents": "ドキュメント",
       "privacy": "プライバシー",
       "generators": "ジェネレーター",
-      "dev": "開発"
+      "dev": "開発",
+      "design": "デザイン"
     }
   },
   "tools": {
@@ -74,10 +75,104 @@
       "tagline": "YAMLとJSONを相互変換",
       "description": "YAMLまたはJSONを貼り付けると、もう一方の形式に即座に変換します。形式を自動検出し、行と列でエラーを表示。すべてブラウザで処理。"
     },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "CSSグラデーションジェネレーター",
+      "description": "linear、radial、conicグラデーションを複数のstopで作成、ライブプレビュー、CSSコピー。"
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "box-shadowジェネレーター",
+      "description": "offset、blur、spread、color、alpha、insetを設定できるシャドウ。複数レイヤーとライブプレビュー。"
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "カラーピッカー、パレット、WCAGコントラスト",
+      "description": "色を選び、HEX/RGB/HSLで変換、パレットを生成、白と黒に対するWCAGコントラストを測定。"
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "CSS単位コンバーター",
+      "description": "設定可能なベースサイズを使用して、px、rem、em、pt、%間で変換。どの単位を編集しても他がすべて再計算されます。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSONをフォーマット・検証",
       "description": "JSONを貼り付けて検証し、好みのインデントで整形。圧縮、キーのソート、統計表示が可能。すべてブラウザで処理。"
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "種類",
+      "linear": "線形",
+      "radial": "放射",
+      "conic": "コニック"
+    },
+    "angle": "角度",
+    "shape": {
+      "label": "形状",
+      "circle": "円",
+      "ellipse": "楕円"
+    },
+    "position": {
+      "label": "位置"
+    },
+    "stops": {
+      "title": "ストップ",
+      "add": "ストップを追加"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "コピー",
+      "copied": "コピーしました！"
+    }
+  },
+  "shadowy": {
+    "title": "シャドウ",
+    "layer": "レイヤー {n}",
+    "offsetX": "オフセット X",
+    "offsetY": "オフセット Y",
+    "blur": "ぼかし",
+    "spread": "拡散",
+    "color": "色",
+    "alpha": "不透明度",
+    "inset": "内側 (inset)",
+    "css": "CSS",
+    "actions": {
+      "add": "シャドウを追加",
+      "remove": "シャドウを削除",
+      "copy": "コピー",
+      "copied": "コピーしました！"
+    }
+  },
+  "colory": {
+    "palette": "パレット",
+    "contrast": {
+      "label": "WCAGコントラスト",
+      "sample": "Aa",
+      "withWhite": "白背景",
+      "withBlack": "黒背景",
+      "normal": "通常テキスト",
+      "large": "大きなテキスト"
+    },
+    "actions": {
+      "copy": "コピー",
+      "copied": "コピーしました！"
+    }
+  },
+  "unity": {
+    "baseFont": "ベースサイズ",
+    "baseHint": "1rem = ベース。1em = 親要素相対（ここではベースと同じと仮定）。1pt = 1.333px（96dpi）。",
+    "units": {
+      "px": "ピクセル",
+      "rem": "ルートem",
+      "em": "相対em",
+      "pt": "ポイント",
+      "percent": "パーセント"
+    },
+    "actions": {
+      "copy": "コピー",
+      "copied": "コピーしました！"
     }
   },
   "yamljson": {

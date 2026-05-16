@@ -10,7 +10,8 @@
       "documents": "文档",
       "privacy": "隐私",
       "generators": "生成器",
-      "dev": "开发"
+      "dev": "开发",
+      "design": "设计"
     }
   },
   "tools": {
@@ -74,10 +75,104 @@
       "tagline": "在 YAML 和 JSON 之间转换",
       "description": "粘贴 YAML 或 JSON，立即获得另一种格式。自动检测格式并显示带行列号的错误。所有处理都在您的浏览器中完成。"
     },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "CSS 渐变生成器",
+      "description": "使用多个色标创建线性、径向和锥形渐变，实时预览并复制 CSS。"
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "box-shadow 生成器",
+      "description": "可配置 offset、blur、spread、color、alpha 和 inset 的阴影。支持多层和实时预览。"
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "色彩选择器、调色板和 WCAG 对比度",
+      "description": "选择颜色，在 HEX/RGB/HSL 间转换，生成调色板并测量与白色和黑色的 WCAG 对比度。"
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "CSS 单位转换器",
+      "description": "使用可配置的基础大小在 px、rem、em、pt 和 % 间转换。编辑任何单位都会重新计算其他单位。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
       "description": "粘贴 JSON，验证并按您喜欢的缩进格式化。压缩、排序键和显示统计信息。所有处理都在您的浏览器中完成。"
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "类型",
+      "linear": "线性",
+      "radial": "径向",
+      "conic": "锥形"
+    },
+    "angle": "角度",
+    "shape": {
+      "label": "形状",
+      "circle": "圆形",
+      "ellipse": "椭圆"
+    },
+    "position": {
+      "label": "位置"
+    },
+    "stops": {
+      "title": "色标",
+      "add": "添加色标"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "复制",
+      "copied": "已复制！"
+    }
+  },
+  "shadowy": {
+    "title": "阴影",
+    "layer": "层 {n}",
+    "offsetX": "偏移 X",
+    "offsetY": "偏移 Y",
+    "blur": "模糊",
+    "spread": "扩散",
+    "color": "颜色",
+    "alpha": "不透明度",
+    "inset": "内阴影 (inset)",
+    "css": "CSS",
+    "actions": {
+      "add": "添加阴影",
+      "remove": "移除阴影",
+      "copy": "复制",
+      "copied": "已复制！"
+    }
+  },
+  "colory": {
+    "palette": "调色板",
+    "contrast": {
+      "label": "WCAG 对比度",
+      "sample": "Aa",
+      "withWhite": "白底",
+      "withBlack": "黑底",
+      "normal": "常规文本",
+      "large": "大号文本"
+    },
+    "actions": {
+      "copy": "复制",
+      "copied": "已复制！"
+    }
+  },
+  "unity": {
+    "baseFont": "基础大小",
+    "baseHint": "1rem = 基础。1em = 相对于父元素（此处假设 = 基础）。1pt = 1.333px (96dpi)。",
+    "units": {
+      "px": "像素",
+      "rem": "根 em",
+      "em": "相对 em",
+      "pt": "磅",
+      "percent": "百分比"
+    },
+    "actions": {
+      "copy": "复制",
+      "copied": "已复制！"
     }
   },
   "yamljson": {
