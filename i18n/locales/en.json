@@ -69,10 +69,51 @@
       "tagline": "Generate Lorem ipsum text",
       "description": "Placeholder text in paragraphs, sentences or words. Option to start with the classic \"Lorem ipsum dolor sit amet…\" and output as plain text or HTML."
     },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Test regex and replace text",
+      "description": "Build a regular expression, see matches highlighted, and apply a replacement (supports $1, $2…). All in your browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format and validate JSON",
       "description": "Paste JSON, validate it and pretty-print with the indent you like. Minify, sort keys and see stats. All in your browser."
+    }
+  },
+  "regexpad": {
+    "pattern": "Pattern",
+    "patternPlaceholder": "e.g. \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Replacement",
+    "replacementPlaceholder": "Replacement text (use $1, $2… for groups)",
+    "replacementHint": "Use $& for the whole match, $1, $2… for capture groups.",
+    "source": "Source text",
+    "sourcePlaceholder": "Paste the text you want to search here…",
+    "preview": "Highlighted matches",
+    "previewEmpty": "Type some text above to see matches.",
+    "output": "Replacement result",
+    "outputPlaceholder": "The text with the replacement applied will appear here.",
+    "flags": {
+      "label": "Flags",
+      "g": "global",
+      "i": "ignore case",
+      "m": "multiline",
+      "s": "dot matches newlines",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Waiting for pattern…",
+      "count": "{n} matches",
+      "none": "No matches"
+    },
+    "actions": {
+      "example": "Example",
+      "clear": "Clear",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "download": "Download"
+    },
+    "errors": {
+      "invalidRegex": "Invalid regex"
     }
   },
   "lorempad": {

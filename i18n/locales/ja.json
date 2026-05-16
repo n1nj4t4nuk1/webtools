@@ -64,10 +64,51 @@
       "tagline": "Lorem ipsumテキストを生成",
       "description": "段落、文、または単語でプレースホルダーテキストを生成。クラシックな「Lorem ipsum dolor sit amet…」で始めるオプション、プレーンテキストまたはHTMLで出力。"
     },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "正規表現でテストと置換",
+      "description": "正規表現を作成し、マッチをハイライト表示、置換を適用（$1、$2…をサポート）。すべてブラウザで処理。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSONをフォーマット・検証",
       "description": "JSONを貼り付けて検証し、好みのインデントで整形。圧縮、キーのソート、統計表示が可能。すべてブラウザで処理。"
+    }
+  },
+  "regexpad": {
+    "pattern": "パターン",
+    "patternPlaceholder": "例：\\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "置換",
+    "replacementPlaceholder": "置換テキスト（グループには $1、$2… を使用）",
+    "replacementHint": "$& は全マッチ、$1、$2… はキャプチャグループ。",
+    "source": "ソーステキスト",
+    "sourcePlaceholder": "検索するテキストをここに貼り付け…",
+    "preview": "ハイライトされたマッチ",
+    "previewEmpty": "上にテキストを入力するとマッチが表示されます。",
+    "output": "置換結果",
+    "outputPlaceholder": "置換が適用されたテキストがここに表示されます。",
+    "flags": {
+      "label": "フラグ",
+      "g": "グローバル",
+      "i": "大文字小文字を無視",
+      "m": "複数行",
+      "s": ". が改行を含む",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "パターン待機中…",
+      "count": "{n}件のマッチ",
+      "none": "マッチなし"
+    },
+    "actions": {
+      "example": "例",
+      "clear": "クリア",
+      "copy": "コピー",
+      "copied": "コピーしました！",
+      "download": "ダウンロード"
+    },
+    "errors": {
+      "invalidRegex": "無効な正規表現"
     }
   },
   "lorempad": {

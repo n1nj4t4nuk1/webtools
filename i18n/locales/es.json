@@ -69,10 +69,51 @@
       "tagline": "Genera texto Lorem ipsum",
       "description": "Texto placeholder en párrafos, oraciones o palabras. Opción de empezar con el clásico \"Lorem ipsum dolor sit amet…\" y salida en texto plano o HTML."
     },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Prueba regex y reemplaza texto",
+      "description": "Construye una expresión regular, ve las coincidencias resaltadas y aplica un reemplazo (soporta $1, $2…). Todo en tu navegador."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatea y valida JSON",
       "description": "Pega JSON, valídalo y formatéalo con la indentación que quieras. Minifica, ordena claves y muestra estadísticas. Todo en tu navegador."
+    }
+  },
+  "regexpad": {
+    "pattern": "Patrón",
+    "patternPlaceholder": "Ej.: \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Reemplazo",
+    "replacementPlaceholder": "Texto de reemplazo (usa $1, $2… para los grupos)",
+    "replacementHint": "Usa $& para todo el match, $1, $2… para grupos de captura.",
+    "source": "Texto",
+    "sourcePlaceholder": "Pega aquí el texto donde buscar…",
+    "preview": "Coincidencias resaltadas",
+    "previewEmpty": "Escribe un texto arriba para ver las coincidencias.",
+    "output": "Resultado del reemplazo",
+    "outputPlaceholder": "El texto con el reemplazo aplicado aparecerá aquí.",
+    "flags": {
+      "label": "Flags",
+      "g": "global",
+      "i": "ignorar mayúsculas",
+      "m": "multilínea",
+      "s": "punto incluye saltos",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Esperando patrón…",
+      "count": "{n} coincidencias",
+      "none": "Sin coincidencias"
+    },
+    "actions": {
+      "example": "Ejemplo",
+      "clear": "Limpiar",
+      "copy": "Copiar",
+      "copied": "¡Copiado!",
+      "download": "Descargar"
+    },
+    "errors": {
+      "invalidRegex": "Regex no válida"
     }
   },
   "lorempad": {

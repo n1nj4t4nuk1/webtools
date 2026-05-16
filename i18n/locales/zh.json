@@ -64,10 +64,51 @@
       "tagline": "生成 Lorem ipsum 文本",
       "description": "以段落、句子或单词生成占位文本。可选择以经典的 \"Lorem ipsum dolor sit amet…\" 开头，输出为纯文本或 HTML。"
     },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "测试正则表达式并替换文本",
+      "description": "构建正则表达式，查看高亮匹配，并应用替换（支持 $1, $2…）。所有处理都在您的浏览器中完成。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
       "description": "粘贴 JSON，验证并按您喜欢的缩进格式化。压缩、排序键和显示统计信息。所有处理都在您的浏览器中完成。"
+    }
+  },
+  "regexpad": {
+    "pattern": "模式",
+    "patternPlaceholder": "例如：\\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "替换",
+    "replacementPlaceholder": "替换文本（组使用 $1, $2…）",
+    "replacementHint": "使用 $& 表示整个匹配，$1, $2… 表示捕获组。",
+    "source": "源文本",
+    "sourcePlaceholder": "在此粘贴要搜索的文本…",
+    "preview": "高亮匹配",
+    "previewEmpty": "在上方输入文本以查看匹配。",
+    "output": "替换结果",
+    "outputPlaceholder": "应用替换后的文本将显示在此处。",
+    "flags": {
+      "label": "标志",
+      "g": "全局",
+      "i": "忽略大小写",
+      "m": "多行",
+      "s": ". 匹配换行",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "等待模式…",
+      "count": "{n} 个匹配",
+      "none": "无匹配"
+    },
+    "actions": {
+      "example": "示例",
+      "clear": "清除",
+      "copy": "复制",
+      "copied": "已复制！",
+      "download": "下载"
+    },
+    "errors": {
+      "invalidRegex": "无效的正则表达式"
     }
   },
   "lorempad": {

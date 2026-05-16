@@ -64,10 +64,51 @@
       "tagline": "Gere texto Lorem ipsum",
       "description": "Texto placeholder em parágrafos, frases ou palavras. Opção de começar com o clássico \"Lorem ipsum dolor sit amet…\" e saída em texto simples ou HTML."
     },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Teste regex e substitua texto",
+      "description": "Construa uma expressão regular, veja correspondências destacadas e aplique uma substituição (suporta $1, $2…). Tudo no seu navegador."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formate e valide JSON",
       "description": "Cole JSON, valide e formate com a indentação que quiser. Minifique, ordene chaves e veja estatísticas. Tudo no seu navegador."
+    }
+  },
+  "regexpad": {
+    "pattern": "Padrão",
+    "patternPlaceholder": "Ex.: \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Substituição",
+    "replacementPlaceholder": "Texto de substituição (use $1, $2… para grupos)",
+    "replacementHint": "Use $& para a correspondência completa, $1, $2… para grupos de captura.",
+    "source": "Texto",
+    "sourcePlaceholder": "Cole aqui o texto onde buscar…",
+    "preview": "Correspondências destacadas",
+    "previewEmpty": "Digite um texto acima para ver as correspondências.",
+    "output": "Resultado da substituição",
+    "outputPlaceholder": "O texto com a substituição aparecerá aqui.",
+    "flags": {
+      "label": "Flags",
+      "g": "global",
+      "i": "ignorar maiúsculas",
+      "m": "multilinha",
+      "s": "ponto inclui quebras",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Aguardando padrão…",
+      "count": "{n} correspondências",
+      "none": "Sem correspondências"
+    },
+    "actions": {
+      "example": "Exemplo",
+      "clear": "Limpar",
+      "copy": "Copiar",
+      "copied": "Copiado!",
+      "download": "Baixar"
+    },
+    "errors": {
+      "invalidRegex": "Regex inválida"
     }
   },
   "lorempad": {
