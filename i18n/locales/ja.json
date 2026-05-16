@@ -58,6 +58,38 @@
       "name": "CsvJson",
       "tagline": "CSVとJSONを相互変換",
       "description": "CSVまたはJSONを貼り付けると、もう一方の形式に即座に変換します。区切り文字と形式を自動検出。すべてブラウザで処理。"
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "JSONをフォーマット・検証",
+      "description": "JSONを貼り付けて検証し、好みのインデントで整形。圧縮、キーのソート、統計表示が可能。すべてブラウザで処理。"
+    }
+  },
+  "jsonpad": {
+    "editor": "エディタ",
+    "placeholder": "ここにJSONを貼り付け…",
+    "indent": "インデント（スペース数）",
+    "actions": {
+      "format": "整形",
+      "minify": "圧縮",
+      "sortKeys": "キーをソート",
+      "example": "例",
+      "clear": "クリア",
+      "copy": "コピー",
+      "copied": "コピーしました！",
+      "download": "ダウンロード"
+    },
+    "status": {
+      "empty": "JSONを待機中…",
+      "valid": "有効なJSON",
+      "error": "無効なJSON",
+      "errorAt": "{line}行{col}列でエラー"
+    },
+    "stats": {
+      "keys": "{n}個のキー",
+      "depth": "深さ {n}",
+      "objects": "{n}個のオブジェクト",
+      "arrays": "{n}個の配列"
     }
   },
   "csvjson": {

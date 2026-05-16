@@ -58,6 +58,38 @@
       "name": "CsvJson",
       "tagline": "在 CSV 和 JSON 之间转换",
       "description": "粘贴 CSV 或 JSON，立即获得另一种格式。自动检测分隔符和格式。所有处理都在您的浏览器中完成。"
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "格式化和验证 JSON",
+      "description": "粘贴 JSON，验证并按您喜欢的缩进格式化。压缩、排序键和显示统计信息。所有处理都在您的浏览器中完成。"
+    }
+  },
+  "jsonpad": {
+    "editor": "编辑器",
+    "placeholder": "在此粘贴您的 JSON…",
+    "indent": "缩进（空格数）",
+    "actions": {
+      "format": "格式化",
+      "minify": "压缩",
+      "sortKeys": "排序键",
+      "example": "示例",
+      "clear": "清除",
+      "copy": "复制",
+      "copied": "已复制！",
+      "download": "下载"
+    },
+    "status": {
+      "empty": "等待 JSON…",
+      "valid": "有效的 JSON",
+      "error": "无效的 JSON",
+      "errorAt": "第 {line} 行第 {col} 列错误"
+    },
+    "stats": {
+      "keys": "{n} 个键",
+      "depth": "深度 {n}",
+      "objects": "{n} 个对象",
+      "arrays": "{n} 个数组"
     }
   },
   "csvjson": {

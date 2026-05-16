@@ -58,6 +58,38 @@
       "name": "CsvJson",
       "tagline": "Converta entre CSV e JSON",
       "description": "Cole CSV ou JSON e obtenha o outro formato instantaneamente. Detecta o delimitador e o formato automaticamente. Tudo no seu navegador."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "Formate e valide JSON",
+      "description": "Cole JSON, valide e formate com a indentação que quiser. Minifique, ordene chaves e veja estatísticas. Tudo no seu navegador."
+    }
+  },
+  "jsonpad": {
+    "editor": "Editor",
+    "placeholder": "Cole seu JSON aqui…",
+    "indent": "Indentação (espaços)",
+    "actions": {
+      "format": "Formatar",
+      "minify": "Minificar",
+      "sortKeys": "Ordenar chaves",
+      "example": "Exemplo",
+      "clear": "Limpar",
+      "copy": "Copiar",
+      "copied": "Copiado!",
+      "download": "Baixar"
+    },
+    "status": {
+      "empty": "Aguardando JSON…",
+      "valid": "JSON válido",
+      "error": "JSON inválido",
+      "errorAt": "Erro na linha {line}, coluna {col}"
+    },
+    "stats": {
+      "keys": "{n} chaves",
+      "depth": "profundidade {n}",
+      "objects": "{n} objetos",
+      "arrays": "{n} arrays"
     }
   },
   "csvjson": {
