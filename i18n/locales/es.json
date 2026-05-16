@@ -52,6 +52,44 @@
       "name": "Scissor",
       "tagline": "Extrae páginas de un PDF",
       "description": "Selecciona páginas o rangos de un PDF y descárgalas como un nuevo archivo. Todo en tu navegador."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Combina campos en variantes (emails, usernames…)",
+      "description": "Genera combinaciones de varios campos con un separador y sufijo configurable. Útil para listas de emails, nombres de usuario, slugs o IDs."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Campos",
+      "valuePlaceholder": "Valor",
+      "examples": "ej. María|ej. Pérez|ej. Acme|ej. 2024|ej. dev|ej. eu",
+      "add": "Añadir campo",
+      "remove": "Eliminar campo",
+      "mode": {
+        "full": "Completo",
+        "initial": "Inicial",
+        "both": "Ambos"
+      }
+    },
+    "options": {
+      "separator": "Separador",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Prefijo",
+      "prefixPlaceholder": "https://www. (opcional)",
+      "suffix": "Sufijo",
+      "suffixPlaceholder": "{'@'}example.com (opcional)",
+      "permute": "Permutar el orden de los campos",
+      "permuteHint": "Si lo activas, también se prueban combinaciones con los campos en distinto orden (apellido.nombre, etc.).",
+      "subsets": "Incluir subconjuntos (combinaciones con menos campos)",
+      "subsetsHint": "Si lo activas, también se generan variantes usando solo algunos de los campos rellenados (solo nombre, solo apellido, nombre+compañía, etc.)."
+    },
+    "results": {
+      "title": "Resultados ({count})",
+      "empty": "Rellena al menos un campo para generar combinaciones.",
+      "limited": "Se muestran las primeras {limit} de {total} combinaciones.",
+      "copyAll": "Copiar todas",
+      "copied": "¡Copiado!"
     }
   },
   "scissor": {

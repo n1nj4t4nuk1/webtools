@@ -47,6 +47,44 @@
       "name": "Scissor",
       "tagline": "Estrai pagine da un PDF",
       "description": "Seleziona pagine o intervalli da un PDF e scaricale come nuovo file. Tutto nel tuo browser."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Combina campi in varianti (email, username…)",
+      "description": "Genera combinazioni di più campi con separatore e suffisso configurabili. Utile per liste di email, username, slug o ID."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Campi",
+      "valuePlaceholder": "Valore",
+      "examples": "es. Maria|es. Rossi|es. Acme|es. 2024|es. dev|es. eu",
+      "add": "Aggiungi campo",
+      "remove": "Rimuovi campo",
+      "mode": {
+        "full": "Completo",
+        "initial": "Iniziale",
+        "both": "Entrambi"
+      }
+    },
+    "options": {
+      "separator": "Separatore",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Prefisso",
+      "prefixPlaceholder": "https://www. (opzionale)",
+      "suffix": "Suffisso",
+      "suffixPlaceholder": "{'@'}example.com (opzionale)",
+      "permute": "Permuta l'ordine dei campi",
+      "permuteHint": "Quando attivo, genera anche combinazioni con i campi in ordini diversi (cognome.nome, ecc.).",
+      "subsets": "Includi sottoinsiemi (combinazioni con meno campi)",
+      "subsetsHint": "Quando attivo, genera anche varianti usando solo alcuni dei campi compilati (solo nome, solo cognome, nome+azienda, ecc.)."
+    },
+    "results": {
+      "title": "Risultati ({count})",
+      "empty": "Compila almeno un campo per generare combinazioni.",
+      "limited": "Mostrate le prime {limit} di {total} combinazioni.",
+      "copyAll": "Copia tutte",
+      "copied": "Copiato!"
     }
   },
   "scissor": {

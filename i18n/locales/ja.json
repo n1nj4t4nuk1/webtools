@@ -47,6 +47,44 @@
       "name": "Scissor",
       "tagline": "PDFからページを抽出",
       "description": "PDFからページや範囲を選んで新しいファイルとしてダウンロード。すべてブラウザで処理されます。"
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "フィールドを組み合わせてバリアントを生成（メール、ユーザー名など）",
+      "description": "区切り文字と接尾辞をカスタマイズして複数フィールドの組み合わせを生成。メールリスト、ユーザー名、スラッグ、IDに便利。"
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "フィールド",
+      "valuePlaceholder": "値",
+      "examples": "例：太郎|例：山田|例：Acme|例：2024|例：dev|例：jp",
+      "add": "フィールドを追加",
+      "remove": "フィールドを削除",
+      "mode": {
+        "full": "完全",
+        "initial": "イニシャル",
+        "both": "両方"
+      }
+    },
+    "options": {
+      "separator": "区切り文字",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "接頭辞",
+      "prefixPlaceholder": "https://www.（任意）",
+      "suffix": "接尾辞",
+      "suffixPlaceholder": "{'@'}example.com（任意）",
+      "permute": "フィールドの順序を入れ替える",
+      "permuteHint": "有効にすると、フィールドの順序を変えた組み合わせも生成します（姓.名 など）。",
+      "subsets": "サブセットを含める（一部のフィールドだけの組み合わせ）",
+      "subsetsHint": "有効にすると、入力されたフィールドの一部のみを使った組み合わせも生成します（名前のみ、姓のみ、名前+会社 など）。"
+    },
+    "results": {
+      "title": "結果（{count}）",
+      "empty": "少なくとも1つのフィールドを入力すると組み合わせが生成されます。",
+      "limited": "{total}件中の最初の{limit}件を表示しています。",
+      "copyAll": "すべてコピー",
+      "copied": "コピーしました！"
     }
   },
   "scissor": {

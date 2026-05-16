@@ -47,6 +47,44 @@
       "name": "Scissor",
       "tagline": "从 PDF 提取页面",
       "description": "从 PDF 中选择页面或范围并下载为新文件。所有处理都在您的浏览器中完成。"
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "组合字段生成变体（邮箱、用户名…）",
+      "description": "使用可配置的分隔符和后缀生成多个字段的组合。适用于邮箱列表、用户名、slug 或 ID。"
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "字段",
+      "valuePlaceholder": "值",
+      "examples": "例如：小明|例如：张|例如：Acme|例如：2024|例如：dev|例如：cn",
+      "add": "添加字段",
+      "remove": "移除字段",
+      "mode": {
+        "full": "完整",
+        "initial": "首字母",
+        "both": "两者"
+      }
+    },
+    "options": {
+      "separator": "分隔符",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "前缀",
+      "prefixPlaceholder": "https://www.（可选）",
+      "suffix": "后缀",
+      "suffixPlaceholder": "{'@'}example.com（可选）",
+      "permute": "排列字段顺序",
+      "permuteHint": "启用后，也会生成以不同顺序排列字段的组合（姓.名 等）。",
+      "subsets": "包括子集（仅使用部分字段的组合）",
+      "subsetsHint": "启用后，也会生成仅使用部分已填字段的变体（仅名、仅姓、名+公司 等）。"
+    },
+    "results": {
+      "title": "结果 ({count})",
+      "empty": "至少填写一个字段以生成组合。",
+      "limited": "显示 {total} 个组合中的前 {limit} 个。",
+      "copyAll": "复制全部",
+      "copied": "已复制！"
     }
   },
   "scissor": {

@@ -6,7 +6,7 @@ const categoriesRaw = [
   { id: 'imageEdit', tools: ['mochi', 'metaimg'] },
   { id: 'documents', tools: ['stapler', 'scissor', 'wordy'] },
   { id: 'privacy', tools: ['metaimg', 'createpass', 'hashy'] },
-  { id: 'generators', tools: ['createpass', 'idkun'] },
+  { id: 'generators', tools: ['createpass', 'idkun', 'combiny'] },
 ] as const
 
 const toolPaths: Record<string, string> = {
@@ -18,6 +18,7 @@ const toolPaths: Record<string, string> = {
   stapler: '/stapler',
   scissor: '/scissor',
   wordy: '/wordy',
+  combiny: '/combiny',
 }
 
 const categories = computed(() =>

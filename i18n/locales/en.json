@@ -52,6 +52,44 @@
       "name": "Scissor",
       "tagline": "Extract pages from a PDF",
       "description": "Pick pages or ranges from a PDF and download them as a new file. Everything in your browser."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Combine fields into variants (emails, usernames…)",
+      "description": "Generate combinations of multiple fields with a configurable separator and suffix. Handy for email lists, usernames, slugs or IDs."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Fields",
+      "valuePlaceholder": "Value",
+      "examples": "e.g. Maria|e.g. Perez|e.g. Acme|e.g. 2024|e.g. dev|e.g. eu",
+      "add": "Add field",
+      "remove": "Remove field",
+      "mode": {
+        "full": "Full",
+        "initial": "Initial",
+        "both": "Both"
+      }
+    },
+    "options": {
+      "separator": "Separator",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Prefix",
+      "prefixPlaceholder": "https://www. (optional)",
+      "suffix": "Suffix",
+      "suffixPlaceholder": "{'@'}example.com (optional)",
+      "permute": "Permute field order",
+      "permuteHint": "When enabled, also generates combinations with fields in different orders (last.first, etc.).",
+      "subsets": "Include subsets (combinations using fewer fields)",
+      "subsetsHint": "When enabled, also generates variants using only some of the filled fields (just first name, just last name, first+company, etc.)."
+    },
+    "results": {
+      "title": "Results ({count})",
+      "empty": "Fill in at least one field to generate combinations.",
+      "limited": "Showing the first {limit} of {total} combinations.",
+      "copyAll": "Copy all",
+      "copied": "Copied!"
     }
   },
   "scissor": {
