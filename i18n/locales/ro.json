@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "languageSwitcher": "Selector de limbă"
+  },
+  "landing": {
+    "title": "Unelte care rulează în browserul tău",
+    "description": "O colecție de utilitare web fără server. Fișierele tale nu părăsesc niciodată dispozitivul.",
+    "categories": {
+      "imageEdit": "Editare imagini",
+      "documents": "Documente",
+      "privacy": "Confidențialitate",
+      "generators": "Generatoare",
+      "dev": "Dezvoltare",
+      "design": "Design",
+      "converters": "Convertoare"
+    }
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Redimensionează imagini",
+      "description": "Reduce dimensiunea în pixeli a imaginilor direct în browser. Fără încărcări, fără server."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "Editează metadate EXIF",
+      "description": "Citește, editează sau elimină metadatele EXIF din fotografiile tale JPEG. Totul în browser."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Generează parole puternice",
+      "description": "Creează parole aleatorii folosind criptografia browserului. Nu părăsesc niciodată dispozitivul."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Calculează hash-uri și verifică integritatea",
+      "description": "SHA-1, SHA-256, SHA-384 și SHA-512 pentru text sau fișiere. Compară cu un hash așteptat pentru a verifica descărcările."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Generează identificatori unici",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID și NanoID. Generare criptografic sigură în browserul tău."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Combină mai multe PDF-uri într-unul singur",
+      "description": "Unește mai multe fișiere PDF într-unul singur, în orice ordine. Totul este procesat în browserul tău."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Numără cuvinte și caractere",
+      "description": "Analizează un text sau un fișier text: cuvinte, caractere, linii, paragrafe și timp estimat de citire."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "Extrage pagini dintr-un PDF",
+      "description": "Alege pagini sau intervale dintr-un PDF și descarcă-le ca fișier nou. Totul în browserul tău."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Combină câmpuri în variante (e-mailuri, nume de utilizator…)",
+      "description": "Generează combinații din mai multe câmpuri cu separator și sufix configurabile. Util pentru liste de e-mail, nume de utilizator, slug-uri sau ID-uri."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Convertește între CSV și JSON",
+      "description": "Lipește CSV sau JSON și obține instantaneu celălalt format. Detectează automat separatorul și formatul. Totul în browserul tău."
+    },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Generează text Lorem ipsum",
+      "description": "Text de umplere în paragrafe, propoziții sau cuvinte. Opțiunea de a începe cu clasicul \"Lorem ipsum dolor sit amet…\" și de a livra ca text simplu sau HTML."
+    },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Testează expresii regulate și înlocuiește text",
+      "description": "Construiește o expresie regulată, vezi potrivirile evidențiate și aplică o înlocuire (suportă $1, $2…). Totul în browserul tău."
+    },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "Convertește între YAML și JSON",
+      "description": "Lipește YAML sau JSON și obține instantaneu celălalt format. Detectează automat formatul și afișează erorile cu linie și coloană. Totul în browserul tău."
+    },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "Generator de gradiente CSS",
+      "description": "Construiește gradiente liniare, radiale și conice cu mai multe puncte, vezi o previzualizare live și copiază CSS-ul."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "Generator box-shadow",
+      "description": "Umbre cu offset, blur, spread, culoare, alpha și inset. Mai multe straturi cu previzualizare live."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Selector de culoare, paletă și contrast WCAG",
+      "description": "Alege o culoare, convertește între HEX/RGB/HSL, generează o paletă și măsoară contrastul WCAG pe alb și pe negru."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "Convertor de unități CSS",
+      "description": "Convertește între px, rem, em, pt și % folosind o dimensiune de bază configurabilă. Editarea oricărei unități recalculează restul."
+    },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Convertește timestamp-uri și date",
+      "description": "Editează orice format (UNIX secunde/ms, ISO 8601 UTC/local, RFC 2822) și celelalte se actualizează. Afișează ziua săptămânii, timpul relativ și fusul orar."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Convertește între baze numerice",
+      "description": "Convertește între binar, octal, zecimal și hexazecimal. Suportă numere întregi de orice dimensiune (BigInt)."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "Formatează și validează JSON",
+      "description": "Lipește JSON, validează-l și formatează-l cu indentarea dorită. Minifică, sortează cheile și vezi statistici. Totul în browserul tău."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Tip",
+      "linear": "Liniar",
+      "radial": "Radial",
+      "conic": "Conic"
+    },
+    "angle": "Unghi",
+    "shape": {
+      "label": "Formă",
+      "circle": "Cerc",
+      "ellipse": "Elipsă"
+    },
+    "position": {
+      "label": "Poziție"
+    },
+    "stops": {
+      "title": "Puncte",
+      "add": "Adaugă punct"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Copiază",
+      "copied": "Copiat!"
+    }
+  },
+  "shadowy": {
+    "title": "Umbre",
+    "layer": "Strat {n}",
+    "offsetX": "Offset X",
+    "offsetY": "Offset Y",
+    "blur": "Estompare",
+    "spread": "Răspândire",
+    "color": "Culoare",
+    "alpha": "Opacitate",
+    "inset": "Interior",
+    "css": "CSS",
+    "actions": {
+      "add": "Adaugă umbră",
+      "remove": "Elimină umbra",
+      "copy": "Copiază",
+      "copied": "Copiat!"
+    }
+  },
+  "colory": {
+    "palette": "Paletă",
+    "contrast": {
+      "label": "Contrast WCAG",
+      "sample": "Aa",
+      "withWhite": "pe alb",
+      "withBlack": "pe negru",
+      "normal": "Text normal",
+      "large": "Text mare"
+    },
+    "actions": {
+      "copy": "Copiază",
+      "copied": "Copiat!"
+    }
+  },
+  "timely": {
+    "formats": "Formate",
+    "fmt": {
+      "unixS": "UNIX (secunde)",
+      "unixMs": "UNIX (milisecunde)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 local",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Ziua săptămânii",
+      "relative": "Relativ",
+      "tz": "Fusul tău orar"
+    },
+    "actions": {
+      "now": "Acum",
+      "copy": "Copiază",
+      "copied": "Copiat!"
+    },
+    "errors": {
+      "invalid": "Format nevalid."
+    }
+  },
+  "basey": {
+    "title": "Baze numerice",
+    "bases": {
+      "bin": "Binar",
+      "oct": "Octal",
+      "dec": "Zecimal",
+      "hex": "Hexazecimal"
+    },
+    "customLabel": "Baza {radix}",
+    "placeholders": {
+      "bin": "ex. 101010",
+      "oct": "ex. 52",
+      "dec": "ex. 42",
+      "hex": "ex. 2A"
+    },
+    "addCustom": {
+      "title": "Adaugă o bază personalizată",
+      "label": "Radix",
+      "placeholder": "2–36",
+      "hint": "Cifrele merg de la 0-9, apoi a-z. De exemplu, baza 36 folosește 0-9 și a-z."
+    },
+    "actions": {
+      "clear": "Șterge",
+      "copy": "Copiază",
+      "copied": "Copiat!",
+      "addBase": "Adaugă",
+      "removeBase": "Elimină baza"
+    },
+    "errors": {
+      "invalid": "Valoare nevalidă pentru {base}.",
+      "invalidRadix": "Radixul trebuie să fie un întreg între 2 și 36."
+    }
+  },
+  "unity": {
+    "baseFont": "Dimensiune de bază",
+    "baseHint": "1rem = bază. 1em = relativ la părinte (aici presupus = bază). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "pixeli",
+      "rem": "root em",
+      "em": "em relativ",
+      "pt": "puncte",
+      "percent": "procent"
+    },
+    "actions": {
+      "copy": "Copiază",
+      "copied": "Copiat!"
+    }
+  },
+  "yamljson": {
+    "input": "Intrare",
+    "output": "Ieșire",
+    "inputPlaceholder": "Lipește YAML sau JSON aici…",
+    "outputPlaceholder": "Rezultatul va apărea aici.",
+    "indent": "Indentare",
+    "direction": {
+      "label": "Direcție",
+      "auto": "Automat",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "Detectat",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "Necunoscut"
+    },
+    "actions": {
+      "example": "Exemplu",
+      "clear": "Șterge",
+      "copy": "Copiază",
+      "copied": "Copiat!",
+      "download": "Descarcă",
+      "useAsInput": "Folosește ca intrare"
+    },
+    "errors": {
+      "unknownInput": "Nu s-a putut detecta formatul. Alege manual direcția.",
+      "invalidYaml": "YAML nevalid",
+      "invalidJson": "JSON nevalid",
+      "atLine": "linia {line}, coloana {col}"
+    }
+  },
+  "regexpad": {
+    "pattern": "Tipar",
+    "patternPlaceholder": "ex. \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Înlocuire",
+    "replacementPlaceholder": "Textul de înlocuire (folosește $1, $2… pentru grupuri)",
+    "replacementHint": "Folosește $& pentru întreaga potrivire, $1, $2… pentru grupurile de capturare.",
+    "source": "Text sursă",
+    "sourcePlaceholder": "Lipește aici textul în care vrei să cauți…",
+    "preview": "Potriviri evidențiate",
+    "previewEmpty": "Scrie un text mai sus pentru a vedea potrivirile.",
+    "output": "Rezultatul înlocuirii",
+    "outputPlaceholder": "Textul cu înlocuirea aplicată va apărea aici.",
+    "flags": {
+      "label": "Flag-uri",
+      "g": "global",
+      "i": "ignoră majusculele",
+      "m": "multilinie",
+      "s": "punctul include linii noi",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Se așteaptă un tipar…",
+      "count": "{n} potriviri",
+      "none": "Nicio potrivire"
+    },
+    "actions": {
+      "example": "Exemplu",
+      "clear": "Șterge",
+      "copy": "Copiază",
+      "copied": "Copiat!",
+      "download": "Descarcă"
+    },
+    "errors": {
+      "invalidRegex": "Regex nevalid"
+    }
+  },
+  "lorempad": {
+    "output": "Ieșire",
+    "count": "Cantitate",
+    "wordsPerSentence": "Cuvinte pe propoziție",
+    "wordsPerParagraph": "Cuvinte pe paragraf",
+    "wordsHint": "0 = aleatoriu. Minim 3 când e fix.",
+    "classic": "Începe cu \"Lorem ipsum dolor sit amet…\"",
+    "mode": {
+      "label": "Mod",
+      "paragraphs": "Paragrafe",
+      "sentences": "Propoziții",
+      "words": "Cuvinte"
+    },
+    "format": {
+      "label": "Format",
+      "plain": "Text simplu",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Regenerează",
+      "copy": "Copiază",
+      "copied": "Copiat!",
+      "download": "Descarcă"
+    }
+  },
+  "jsonpad": {
+    "editor": "Editor",
+    "placeholder": "Lipește JSON-ul tău aici…",
+    "indent": "Indentare (spații)",
+    "actions": {
+      "format": "Formatează",
+      "minify": "Minifică",
+      "sortKeys": "Sortează cheile",
+      "example": "Exemplu",
+      "clear": "Șterge",
+      "copy": "Copiază",
+      "copied": "Copiat!",
+      "download": "Descarcă"
+    },
+    "status": {
+      "empty": "Se așteaptă JSON…",
+      "valid": "JSON valid",
+      "error": "JSON nevalid",
+      "errorAt": "Eroare la linia {line}, coloana {col}"
+    },
+    "stats": {
+      "keys": "{n} chei",
+      "depth": "adâncime {n}",
+      "objects": "{n} obiecte",
+      "arrays": "{n} array-uri"
+    }
+  },
+  "csvjson": {
+    "input": "Intrare",
+    "output": "Ieșire",
+    "inputPlaceholder": "Lipește CSV sau JSON aici…",
+    "outputPlaceholder": "Rezultatul va apărea aici.",
+    "hasHeader": "CSV-ul are un rând de antet",
+    "pretty": "Formatează JSON-ul",
+    "direction": {
+      "label": "Direcție",
+      "auto": "Automat",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Separator",
+      "auto": "Automat",
+      "comma": "Virgulă (,)",
+      "semicolon": "Punct și virgulă (;)",
+      "tab": "Tab",
+      "pipe": "Bară verticală (|)"
+    },
+    "detected": {
+      "label": "Detectat",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Necunoscut"
+    },
+    "actions": {
+      "example": "Exemplu",
+      "clear": "Șterge",
+      "copy": "Copiază",
+      "copied": "Copiat!",
+      "download": "Descarcă",
+      "useAsInput": "Folosește ca intrare"
+    },
+    "errors": {
+      "unknownInput": "Nu s-a putut detecta formatul. Alege manual direcția.",
+      "invalidJson": "JSON nevalid: {msg}",
+      "notTabular": "JSON-ul trebuie să fie un array (sau obiect) pentru a fi convertit în CSV.",
+      "mixedShape": "Array-ul amestecă tipuri de elemente. Trebuie să conțină doar obiecte sau doar array-uri."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Câmpuri",
+      "valuePlaceholder": "Valoare",
+      "examples": "ex. Maria|ex. Popescu|ex. Acme|ex. 2024|ex. dev|ex. eu",
+      "add": "Adaugă câmp",
+      "remove": "Elimină câmpul",
+      "mode": {
+        "full": "Complet",
+        "initial": "Inițială",
+        "both": "Ambele"
+      }
+    },
+    "options": {
+      "separator": "Separator",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Prefix",
+      "prefixPlaceholder": "https://www. (opțional)",
+      "suffix": "Sufix",
+      "suffixPlaceholder": "{'@'}example.com (opțional)",
+      "permute": "Permută ordinea câmpurilor",
+      "permuteHint": "Când e activat, generează și combinații cu câmpurile în ordini diferite (last.first, etc.).",
+      "subsets": "Include subseturi (combinații cu mai puține câmpuri)",
+      "subsetsHint": "Când e activat, generează și variante folosind doar o parte dintre câmpurile completate (doar prenume, doar nume, prenume+companie, etc.).",
+      "downloadOnly": "Doar descărcare (nu afișa lista)",
+      "downloadOnlyHint": "Util când există mii de combinații și afișarea listei încetinește browserul. Ridică limita la 100.000 de rezultate."
+    },
+    "results": {
+      "title": "Rezultate ({count})",
+      "empty": "Completează cel puțin un câmp pentru a genera combinații.",
+      "limited": "Se afișează primele {limit} din {total} combinații.",
+      "copyAll": "Copiază toate",
+      "copied": "Copiat!",
+      "download": "Descarcă .txt",
+      "downloadHint": "Lista este ascunsă pentru a nu încetini browserul. Apasă Descarcă pentru a obține un .txt cu toate cele {count} combinații."
+    }
+  },
+  "scissor": {
+    "dropzone": "Trage un PDF aici sau apasă pentru a selecta unul",
+    "totalPages": "{n} pagini",
+    "rangesLabel": "Pagini de extras",
+    "rangesPlaceholder": "Ex. 1-3, 5, 8-10",
+    "hint": "Separă cu virgule. Folosește cratima pentru intervale (1-5). Toate paginile sunt preselectate implicit.",
+    "preview": {
+      "pages": "Selecție",
+      "count": "Total",
+      "none": "Niciuna"
+    },
+    "actions": {
+      "extract": "Extrage și descarcă",
+      "processing": "Se extrage…",
+      "change": "Schimbă PDF-ul"
+    },
+    "errors": {
+      "notPdf": "{name} nu este un PDF.",
+      "invalidPdf": "{name} nu este un PDF valid sau este corupt.",
+      "encrypted": "Acest PDF este protejat cu parolă.",
+      "invalidTokens": "Nu s-a putut interpreta: {tokens}.",
+      "outOfRange": "În afara intervalului (max {max}): {tokens}.",
+      "generic": "Nu s-au putut extrage paginile."
+    }
+  },
+  "wordy": {
+    "modeText": "Text",
+    "modeFile": "Fișier",
+    "textPlaceholder": "Lipește sau scrie textul de analizat…",
+    "dropzone": "Trage un fișier text (.txt, .md, .csv…) sau apasă pentru a selecta unul",
+    "stats": {
+      "words": "Cuvinte",
+      "charsWithSpaces": "Caractere (cu spații)",
+      "charsNoSpaces": "Caractere (fără spații)",
+      "lines": "Linii",
+      "paragraphs": "Paragrafe",
+      "sentences": "Propoziții",
+      "readingTime": "Timp de citire",
+      "minutes": "{n} min",
+      "minutesSeconds": "{m} min {s} s",
+      "seconds": "{n} s"
+    },
+    "actions": {
+      "clear": "Șterge"
+    },
+    "errors": {
+      "notText": "Sunt acceptate doar fișiere de tip text simplu (.txt, .md, .csv, etc.).",
+      "read": "Nu s-a putut citi fișierul."
+    }
+  },
+  "stapler": {
+    "dropzone": "Trage PDF-uri aici sau apasă pentru a le selecta",
+    "list": {
+      "title": "{count} fișiere · {pages} pagini în total",
+      "pages": "{n} pagini"
+    },
+    "actions": {
+      "merge": "Combină PDF-urile",
+      "processing": "Se combină…",
+      "clear": "Elimină tot",
+      "moveUp": "Mută în sus",
+      "moveDown": "Mută în jos",
+      "remove": "Elimină"
+    },
+    "errors": {
+      "notPdf": "{name} nu este un PDF.",
+      "invalidPdf": "{name} nu este un PDF valid sau este corupt.",
+      "encrypted": "{name} este protejat cu parolă.",
+      "generic": "Nu s-au putut combina PDF-urile."
+    }
+  },
+  "createpass": {
+    "length": "Lungime",
+    "count": "Câte?",
+    "excludeSimilar": "Exclude similare (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Exclude ambigue (paranteze, ghilimele și similare)",
+    "bits": "biți",
+    "strength": {
+      "veryWeak": "Foarte slabă",
+      "weak": "Slabă",
+      "reasonable": "Acceptabilă",
+      "strong": "Puternică",
+      "veryStrong": "Foarte puternică"
+    },
+    "actions": {
+      "generate": "Generează",
+      "copy": "Copiază",
+      "copied": "Copiat!"
+    },
+    "errors": {
+      "noCharset": "Alege cel puțin un tip de caracter.",
+      "clipboard": "Nu s-a putut copia în clipboard."
+    }
+  },
+  "idkun": {
+    "format": "Format",
+    "count": "Câte?",
+    "nanoidSize": "Lungimea NanoID",
+    "uppercase": "Majuscule",
+    "hyphens": "Cu cratime",
+    "formats": {
+      "uuidv4": "UUID v4 (aleatoriu)",
+      "uuidv7": "UUID v7 (timestamp + aleatoriu)",
+      "uuidNil": "UUID NIL (toate zerouri)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (sigur pentru URL)"
+    },
+    "about": {
+      "uuidv4": "Cel mai comun UUID standard. 122 de biți aleatorii. RFC 4122.",
+      "uuidv7": "Combină timestamp + aleatoriu. Sortabil lexicografic. RFC 9562 (2024).",
+      "uuidNil": "UUID-ul nil, doar zerouri. Util ca valoare implicită sau santinelă.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. 26 de caractere în Crockford Base32.",
+      "nanoid": "Identificator scurt și popular, sigur pentru URL. Cu dimensiune configurabilă."
+    },
+    "actions": {
+      "generate": "Generează",
+      "copy": "Copiază",
+      "copyAll": "Copiază toate",
+      "copied": "Copiat!"
+    },
+    "errors": {
+      "clipboard": "Nu s-a putut copia în clipboard."
+    }
+  },
+  "hashy": {
+    "modeText": "Text",
+    "modeFile": "Fișier",
+    "textPlaceholder": "Lipește sau scrie textul pentru hash…",
+    "dropzone": "Trage un fișier aici sau apasă pentru a selecta unul",
+    "processing": "Se calculează…",
+    "actions": {
+      "copy": "Copiază",
+      "copied": "Copiat!"
+    },
+    "verify": {
+      "label": "Verifică în raport cu un hash așteptat",
+      "placeholder": "Lipește hash-ul hex (40, 64, 96 sau 128 de caractere)…",
+      "unknownLength": "Lungime nerecunoscută. Trebuie să corespundă SHA-1 (40), SHA-256 (64), SHA-384 (96) sau SHA-512 (128).",
+      "match": "Corespunde {algo}.",
+      "mismatch": "Hash-ul {algo} nu corespunde."
+    },
+    "errors": {
+      "clipboard": "Nu s-a putut copia în clipboard."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Trage un JPEG aici sau apasă pentru a selecta unul",
+    "tags": {
+      "title": "Metadate detectate ({count})",
+      "hint": "Fiecare etichetă afișează numele, IFD-ul și tipul. Editează valoarea, elimină cu × sau adaugă etichete noi.",
+      "empty": "Această imagine nu are metadate EXIF.",
+      "add": "Adaugă etichetă",
+      "confirmAdd": "Adaugă",
+      "remove": "Elimină eticheta",
+      "searchPlaceholder": "Caută etichetă (nume sau IFD)…",
+      "modeStandard": "Standard",
+      "modeCustom": "Personalizat",
+      "custom": {
+        "note": "EXIF identifică etichetele după ID numeric. Alte cititoare ar putea afișa această etichetă ca 'Unknown {id}'.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "Tip",
+        "name": "Nume (doar pentru afișare)",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "Furnizează un ID.",
+        "invalidId": "ID-ul trebuie să fie un întreg între 1 și 65535.",
+        "duplicate": "Această etichetă există deja în imagine."
+      }
+    },
+    "actions": {
+      "strip": "Elimină toate metadatele",
+      "apply": "Aplică și descarcă",
+      "cancel": "Anulează"
+    },
+    "errors": {
+      "notJpeg": "Sunt acceptate doar fișiere JPEG (.jpg / .jpeg).",
+      "invalidValue": "Valoare nevalidă pentru eticheta {tag}."
+    }
+  },
+  "dropzone": {
+    "empty": "Trage o imagine aici sau apasă pentru a selecta una"
+  },
+  "controls": {
+    "width": "Lățime (px)",
+    "height": "Înălțime (px)",
+    "keepRatio": "Păstrează raportul",
+    "format": "Format",
+    "quality": "Calitate"
+  },
+  "actions": {
+    "resize": "Redimensionează",
+    "processing": "Se procesează…",
+    "download": "Descarcă"
+  },
+  "result": {
+    "title": "Rezultat"
+  },
+  "errors": {
+    "notAnImage": "Acest fișier nu este o imagine validă."
+  },
+  "footer": {
+    "tagline": "Tanukibox · unelte care rulează în browserul tău",
+    "legalLinks": "Linkuri legale",
+    "privacy": "Confidențialitate",
+    "terms": "Termeni",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "lastUpdated": "Ultima actualizare: 15 mai 2026",
+    "privacy": {
+      "title": "Politica de confidențialitate",
+      "intro": "<p>La Tanukibox credem că fișierele dumneavoastră vă aparțin. De aceea, toate uneltele noastre rulează <strong>integral în browserul dumneavoastră</strong>: imaginile, PDF-urile, textul sau orice fișier procesat nu părăsesc niciodată dispozitivul.</p>",
+      "sections": {
+        "scope": {
+          "title": "1. Domeniu de aplicare",
+          "body": "<p>Această politică se aplică pentru tanukibox.com și pentru fiecare unealtă găzduită sub acest domeniu. Descrie ce informații sunt colectate atunci când vizitați site-ul și ce facem cu ele.</p>"
+        },
+        "data": {
+          "title": "2. Datele pe care le colectăm",
+          "body": "<p>Nu avem un server care primește fișierele dumneavoastră. Uneltele (Mochi, Metaimg, Createpass, Hashy, etc.) procesează datele direct în browser folosind API-uri native (Canvas, Web Crypto, etc.). Prin urmare:</p><ul><li><strong>Nu colectăm</strong> fișierele pe care le procesați, conținutul lor sau rezultatele.</li><li><strong>Nu există conturi de utilizator</strong>, parole sau profiluri.</li><li>Serverul Tanukibox livrează doar resursele statice ale site-ului (HTML, CSS, JS).</li></ul><p>Singurul lucru stocat este descris în secțiunea Cookies.</p>"
+        },
+        "cookies": {
+          "title": "3. Cookies și stocare locală",
+          "body": "<p>Folosim un singur cookie tehnic numit <code>tanukibox_lang</code> pentru a reține preferința de limbă. Nu identifică utilizatorul și nu este partajat cu terți.</p><p>Mai multe detalii în <a href='/cookies'>politica de cookies</a>.</p>"
+        },
+        "tracking": {
+          "title": "4. Analitice și publicitate",
+          "body": "<p>În prezent nu folosim analitice sau publicitate afișată. Dacă în viitor integrăm servicii precum Google AdSense sau un furnizor de analitice, această politică va fi actualizată pentru a reflecta acest lucru, iar consimțământul dumneavoastră va fi solicitat atunci când legea o cere (GDPR/UE).</p>"
+        },
+        "gdpr": {
+          "title": "5. Drepturile dumneavoastră (GDPR)",
+          "body": "<p>Întrucât nu stocăm informații personale identificabile pe serverele noastre, majoritatea drepturilor din GDPR (acces, rectificare, ștergere, portabilitate) nu se aplică, deoarece nu există date asupra cărora să se aplice.</p><p>Cu toate acestea, puteți exercita orice drept contactându-ne la adresa indicată la finalul acestei politici.</p>"
+        },
+        "children": {
+          "title": "6. Minori",
+          "body": "<p>Site-ul nu se adresează minorilor sub 14 ani. Nu colectăm cu bună știință date despre minori.</p>"
+        },
+        "changes": {
+          "title": "7. Modificări ale acestei politici",
+          "body": "<p>Putem actualiza această politică atunci când adăugăm funcționalități noi sau din motive legale. Data ultimei actualizări este afișată în antetul documentului.</p>"
+        },
+        "contact": {
+          "title": "8. Contact",
+          "body": "<p>Pentru orice întrebări legate de confidențialitate: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
+        }
+      }
+    },
+    "terms": {
+      "title": "Termeni de utilizare",
+      "intro": "<p>Bine ați venit la Tanukibox. Prin utilizarea acestui site acceptați condițiile descrise mai jos. Dacă nu sunteți de acord, vă rugăm să nu folosiți serviciul.</p>",
+      "sections": {
+        "acceptance": {
+          "title": "1. Acceptare",
+          "body": "<p>Accesarea și utilizarea tanukibox.com implică acceptarea integrală a acestor termeni. Aceștia pot fi actualizați oricând; utilizarea continuă după modificări implică acceptarea lor.</p>"
+        },
+        "service": {
+          "title": "2. Descrierea serviciului",
+          "body": "<p>Tanukibox oferă un set de utilitare care rulează integral în browserul dumneavoastră (procesare locală). Serviciul este oferit <strong>gratuit și \"așa cum este\"</strong>, fără garanții privind disponibilitatea, acuratețea sau adecvarea la un scop anume.</p>"
+        },
+        "use": {
+          "title": "3. Utilizare permisă",
+          "body": "<p>Puteți folosi uneltele în orice scop legal, personal sau profesional. Nu aveți voie să:</p><ul><li>Încercați să compromiteți securitatea sau disponibilitatea site-ului.</li><li>Folosiți serviciul pentru a procesa conținut ilegal.</li><li>Copiați sau redistribuiți codul site-ului fără autorizare.</li></ul>"
+        },
+        "responsibility": {
+          "title": "4. Responsabilitatea utilizatorului",
+          "body": "<p>Sunteți responsabil pentru validarea rezultatelor fiecărei unelte înainte de a lua decizii pe baza lor. De exemplu, verificarea manuală a unui hash, validarea unei parole generate într-un manager de încredere sau revizuirea metadatelor eliminate înainte de publicarea unei imagini.</p>"
+        },
+        "ip": {
+          "title": "5. Proprietate intelectuală",
+          "body": "<p>Numele Tanukibox, logo-ul și designul site-ului sunt proprietatea autorului. Codul sursă poate fi disponibil sub o licență open în depozitul său public; consultați depozitul pentru termenii exacți.</p>"
+        },
+        "liability": {
+          "title": "6. Limitarea răspunderii",
+          "body": "<p>În măsura maximă permisă de lege, Tanukibox nu va fi răspunzător pentru daune directe, indirecte, accidentale sau consecutive care decurg din utilizarea sau imposibilitatea utilizării serviciului, inclusiv pierderea de date.</p>"
+        },
+        "changes": {
+          "title": "7. Modificări",
+          "body": "<p>Ne rezervăm dreptul de a modifica, suspenda sau întrerupe orice unealtă în orice moment, fără preaviz.</p>"
+        },
+        "jurisdiction": {
+          "title": "8. Lege aplicabilă și jurisdicție",
+          "body": "<p>Acești termeni sunt guvernați de legea spaniolă. Pentru orice litigiu, părțile se supun instanțelor de la domiciliul utilizatorului sau, dacă utilizatorul nu este consumator, celor din Madrid.</p>"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Politica de cookies",
+      "intro": "<p>Această pagină descrie ce cookies și mecanisme de stocare folosește tanukibox.com.</p>",
+      "sections": {
+        "what": {
+          "title": "1. Ce sunt cookies",
+          "body": "<p>Cookies sunt fișiere mici pe care un site le stochează pe dispozitivul dumneavoastră pentru a reține informații între vizite (preferințe, sesiune, etc.). Tanukibox folosește strictul necesar.</p>"
+        },
+        "used": {
+          "title": "2. Cookies pe care le folosim",
+          "body": "<ul><li><strong><code>tanukibox_lang</code></strong> — cookie tehnic de preferință. Stochează limba selectată pentru a nu o solicita la fiecare vizită. Expiră într-un an. Nu identifică utilizatorul.</li></ul><p>Nu folosim cookies de urmărire sau publicitate în acest moment.</p>"
+        },
+        "thirdParty": {
+          "title": "3. Cookies de la terți",
+          "body": "<p>În prezent, Tanukibox nu încarcă scripturi terțe care instalează cookies. Dacă în viitor integrăm servicii precum Google AdSense sau o unealtă de analitice, această secțiune va fi actualizată, iar consimțământul dumneavoastră va fi solicitat printr-un banner.</p>"
+        },
+        "manage": {
+          "title": "4. Cum gestionați cookies",
+          "body": "<p>Puteți șterge sau bloca cookies din setările browserului. Dacă blocați <code>tanukibox_lang</code>, site-ul va funcționa, dar nu va reține preferința dumneavoastră de limbă.</p>"
+        },
+        "changes": {
+          "title": "5. Modificări ale acestei politici",
+          "body": "<p>Dacă adăugăm cookies noi sau servicii terțe, vom actualiza această pagină și data din antet.</p>"
+        }
+      }
+    }
+  }
+}

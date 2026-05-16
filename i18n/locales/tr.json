@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "languageSwitcher": "Dil seçici"
+  },
+  "landing": {
+    "title": "Tarayıcınızda çalışan araçlar",
+    "description": "Sunucusuz web yardımcı programları koleksiyonu. Dosyalarınız asla cihazınızdan ayrılmaz.",
+    "categories": {
+      "imageEdit": "Görüntü düzenleme",
+      "documents": "Belgeler",
+      "privacy": "Gizlilik",
+      "generators": "Üreteçler",
+      "dev": "Geliştirme",
+      "design": "Tasarım",
+      "converters": "Dönüştürücüler"
+    }
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Görüntüleri yeniden boyutlandır",
+      "description": "Görüntülerinizin piksel boyutunu doğrudan tarayıcınızda küçültün. Yükleme yok, sunucu yok."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "EXIF meta verilerini düzenle",
+      "description": "JPEG fotoğraflarınızdaki EXIF meta verilerini okuyun, düzenleyin veya silin. Hepsi tarayıcınızda."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Güçlü parolalar oluştur",
+      "description": "Tarayıcı kriptografisini kullanarak rastgele parolalar oluşturun. Asla cihazınızdan ayrılmazlar."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Hash hesapla ve bütünlüğü doğrula",
+      "description": "Metnin veya dosyaların SHA-1, SHA-256, SHA-384 ve SHA-512 değerleri. İndirmeleri doğrulamak için beklenen hash ile karşılaştırın."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Benzersiz tanımlayıcılar oluştur",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID ve NanoID. Tarayıcınızda kriptografik olarak güvenli üretim."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Birden fazla PDF'yi tek dosyada birleştir",
+      "description": "Birden fazla PDF dosyasını istediğiniz sırayla tek bir dosyada birleştirin. Her şey tarayıcınızda işlenir."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Kelime ve karakter say",
+      "description": "Bir metni veya metin dosyasını analiz edin: kelime, karakter, satır, paragraf ve tahmini okuma süresi."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "PDF'den sayfa çıkar",
+      "description": "Bir PDF'den sayfa veya aralık seçin ve yeni bir dosya olarak indirin. Her şey tarayıcınızda."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Alanları varyantlar halinde birleştir (e-postalar, kullanıcı adları…)",
+      "description": "Yapılandırılabilir bir ayırıcı ve son ek ile birden fazla alanın kombinasyonlarını oluşturun. E-posta listeleri, kullanıcı adları, slug'lar veya ID'ler için kullanışlı."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "CSV ve JSON arasında dönüştür",
+      "description": "CSV veya JSON yapıştırın ve diğer formatı anında alın. Ayırıcıyı ve formatı otomatik algılar. Hepsi tarayıcınızda."
+    },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Lorem ipsum metni oluştur",
+      "description": "Paragraflar, cümleler veya kelimeler halinde yer tutucu metin. Klasik \"Lorem ipsum dolor sit amet…\" ile başlama seçeneği ve düz metin veya HTML olarak çıktı."
+    },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Regex test et ve metin değiştir",
+      "description": "Bir düzenli ifade oluşturun, eşleşmeleri vurgulanmış görün ve bir değişiklik uygulayın ($1, $2… destekler). Hepsi tarayıcınızda."
+    },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "YAML ve JSON arasında dönüştür",
+      "description": "YAML veya JSON yapıştırın ve diğer formatı anında alın. Formatı otomatik algılar ve hataları satır ve sütun ile gösterir. Hepsi tarayıcınızda."
+    },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "CSS gradyan üreteci",
+      "description": "Birden fazla durak ile doğrusal, radyal ve konik gradyanlar oluşturun, canlı önizleme görün ve CSS'yi kopyalayın."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "box-shadow üreteci",
+      "description": "Ofset, bulanıklık, yayılma, renk, alfa ve iç gölgeler. Canlı önizleme ile birden fazla katman."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Renk seçici, palet ve WCAG kontrastı",
+      "description": "Bir renk seçin, HEX/RGB/HSL arasında dönüştürün, bir palet oluşturun ve beyaza ve siyaha karşı WCAG kontrastını ölçün."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "CSS birim dönüştürücü",
+      "description": "Yapılandırılabilir bir taban boyutu kullanarak px, rem, em, pt ve % arasında dönüştürün. Herhangi bir birimi düzenlemek diğerlerini yeniden hesaplar."
+    },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Zaman damgalarını ve tarihleri dönüştür",
+      "description": "Herhangi bir formatı düzenleyin (UNIX saniye/ms, ISO 8601 UTC/yerel, RFC 2822) ve diğerleri güncellenir. Haftanın gününü, göreli zamanı ve saat dilimini gösterir."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Sayı tabanları arasında dönüştür",
+      "description": "İkili, sekizli, ondalık ve onaltılı arasında dönüştürün. Herhangi bir boyuttaki tamsayıları destekler (BigInt)."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "JSON'u biçimlendir ve doğrula",
+      "description": "JSON yapıştırın, doğrulayın ve istediğiniz girinti ile güzelce yazdırın. Küçültün, anahtarları sıralayın ve istatistikleri görün. Hepsi tarayıcınızda."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Tür",
+      "linear": "Doğrusal",
+      "radial": "Radyal",
+      "conic": "Konik"
+    },
+    "angle": "Açı",
+    "shape": {
+      "label": "Şekil",
+      "circle": "Daire",
+      "ellipse": "Elips"
+    },
+    "position": {
+      "label": "Konum"
+    },
+    "stops": {
+      "title": "Duraklar",
+      "add": "Durak ekle"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    }
+  },
+  "shadowy": {
+    "title": "Gölgeler",
+    "layer": "Katman {n}",
+    "offsetX": "Ofset X",
+    "offsetY": "Ofset Y",
+    "blur": "Bulanıklık",
+    "spread": "Yayılma",
+    "color": "Renk",
+    "alpha": "Opaklık",
+    "inset": "İç",
+    "css": "CSS",
+    "actions": {
+      "add": "Gölge ekle",
+      "remove": "Gölge kaldır",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    }
+  },
+  "colory": {
+    "palette": "Palet",
+    "contrast": {
+      "label": "WCAG kontrastı",
+      "sample": "Aa",
+      "withWhite": "beyaz üzerinde",
+      "withBlack": "siyah üzerinde",
+      "normal": "Normal metin",
+      "large": "Büyük metin"
+    },
+    "actions": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    }
+  },
+  "timely": {
+    "formats": "Formatlar",
+    "fmt": {
+      "unixS": "UNIX (saniye)",
+      "unixMs": "UNIX (milisaniye)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 yerel",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Haftanın günü",
+      "relative": "Göreli",
+      "tz": "Saat diliminiz"
+    },
+    "actions": {
+      "now": "Şimdi",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "errors": {
+      "invalid": "Geçersiz format."
+    }
+  },
+  "basey": {
+    "title": "Sayı tabanları",
+    "bases": {
+      "bin": "İkili",
+      "oct": "Sekizli",
+      "dec": "Ondalık",
+      "hex": "Onaltılı"
+    },
+    "customLabel": "Taban {radix}",
+    "placeholders": {
+      "bin": "örn. 101010",
+      "oct": "örn. 52",
+      "dec": "örn. 42",
+      "hex": "örn. 2A"
+    },
+    "addCustom": {
+      "title": "Özel bir taban ekle",
+      "label": "Taban",
+      "placeholder": "2–36",
+      "hint": "Rakamlar 0-9, sonra a-z şeklinde sıralanır. Örneğin, 36 tabanı 0-9 ve a-z kullanır."
+    },
+    "actions": {
+      "clear": "Temizle",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "addBase": "Ekle",
+      "removeBase": "Tabanı kaldır"
+    },
+    "errors": {
+      "invalid": "{base} için geçersiz değer.",
+      "invalidRadix": "Taban 2 ile 36 arasında bir tamsayı olmalıdır."
+    }
+  },
+  "unity": {
+    "baseFont": "Taban boyutu",
+    "baseHint": "1rem = taban. 1em = üst öğeye göre (burada taban olarak varsayılır). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "piksel",
+      "rem": "kök em",
+      "em": "göreli em",
+      "pt": "puntolar",
+      "percent": "yüzde"
+    },
+    "actions": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    }
+  },
+  "yamljson": {
+    "input": "Giriş",
+    "output": "Çıkış",
+    "inputPlaceholder": "Buraya YAML veya JSON yapıştırın…",
+    "outputPlaceholder": "Sonuç burada görünecek.",
+    "indent": "Girinti",
+    "direction": {
+      "label": "Yön",
+      "auto": "Otomatik",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "Algılanan",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "Bilinmiyor"
+    },
+    "actions": {
+      "example": "Örnek",
+      "clear": "Temizle",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "download": "İndir",
+      "useAsInput": "Giriş olarak kullan"
+    },
+    "errors": {
+      "unknownInput": "Format algılanamadı. Yönü manuel olarak seçin.",
+      "invalidYaml": "Geçersiz YAML",
+      "invalidJson": "Geçersiz JSON",
+      "atLine": "satır {line}, sütun {col}"
+    }
+  },
+  "regexpad": {
+    "pattern": "Desen",
+    "patternPlaceholder": "örn. \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Değiştirme",
+    "replacementPlaceholder": "Değiştirme metni (gruplar için $1, $2… kullanın)",
+    "replacementHint": "Tam eşleşme için $&, yakalama grupları için $1, $2… kullanın.",
+    "source": "Kaynak metin",
+    "sourcePlaceholder": "Aramak istediğiniz metni buraya yapıştırın…",
+    "preview": "Vurgulanmış eşleşmeler",
+    "previewEmpty": "Eşleşmeleri görmek için yukarıya metin yazın.",
+    "output": "Değiştirme sonucu",
+    "outputPlaceholder": "Değiştirme uygulanmış metin burada görünecek.",
+    "flags": {
+      "label": "Bayraklar",
+      "g": "global",
+      "i": "büyük/küçük harf duyarsız",
+      "m": "çok satırlı",
+      "s": "nokta yeni satırla eşleşir",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Desen bekleniyor…",
+      "count": "{n} eşleşme",
+      "none": "Eşleşme yok"
+    },
+    "actions": {
+      "example": "Örnek",
+      "clear": "Temizle",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "download": "İndir"
+    },
+    "errors": {
+      "invalidRegex": "Geçersiz regex"
+    }
+  },
+  "lorempad": {
+    "output": "Çıkış",
+    "count": "Miktar",
+    "wordsPerSentence": "Cümle başına kelime",
+    "wordsPerParagraph": "Paragraf başına kelime",
+    "wordsHint": "0 = rastgele. Sabit olduğunda minimum 3.",
+    "classic": "\"Lorem ipsum dolor sit amet…\" ile başla",
+    "mode": {
+      "label": "Mod",
+      "paragraphs": "Paragraflar",
+      "sentences": "Cümleler",
+      "words": "Kelimeler"
+    },
+    "format": {
+      "label": "Format",
+      "plain": "Düz metin",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Yeniden oluştur",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "download": "İndir"
+    }
+  },
+  "jsonpad": {
+    "editor": "Düzenleyici",
+    "placeholder": "JSON'unuzu buraya yapıştırın…",
+    "indent": "Girinti (boşluklar)",
+    "actions": {
+      "format": "Biçimlendir",
+      "minify": "Küçült",
+      "sortKeys": "Anahtarları sırala",
+      "example": "Örnek",
+      "clear": "Temizle",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "download": "İndir"
+    },
+    "status": {
+      "empty": "JSON bekleniyor…",
+      "valid": "Geçerli JSON",
+      "error": "Geçersiz JSON",
+      "errorAt": "Satır {line}, sütun {col} konumunda hata"
+    },
+    "stats": {
+      "keys": "{n} anahtar",
+      "depth": "derinlik {n}",
+      "objects": "{n} nesne",
+      "arrays": "{n} dizi"
+    }
+  },
+  "csvjson": {
+    "input": "Giriş",
+    "output": "Çıkış",
+    "inputPlaceholder": "Buraya CSV veya JSON yapıştırın…",
+    "outputPlaceholder": "Sonuç burada görünecek.",
+    "hasHeader": "CSV'de başlık satırı var",
+    "pretty": "JSON'u güzel yazdır",
+    "direction": {
+      "label": "Yön",
+      "auto": "Otomatik",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Ayırıcı",
+      "auto": "Otomatik",
+      "comma": "Virgül (,)",
+      "semicolon": "Noktalı virgül (;)",
+      "tab": "Sekme",
+      "pipe": "Boru (|)"
+    },
+    "detected": {
+      "label": "Algılanan",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Bilinmiyor"
+    },
+    "actions": {
+      "example": "Örnek",
+      "clear": "Temizle",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "download": "İndir",
+      "useAsInput": "Giriş olarak kullan"
+    },
+    "errors": {
+      "unknownInput": "Format algılanamadı. Yönü manuel olarak seçin.",
+      "invalidJson": "Geçersiz JSON: {msg}",
+      "notTabular": "CSV'ye dönüştürmek için JSON bir dizi (veya nesne) olmalıdır.",
+      "mixedShape": "Dizi karışık eleman tiplerine sahip. Tümü nesne veya tümü dizi olmalıdır."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Alanlar",
+      "valuePlaceholder": "Değer",
+      "examples": "örn. Maria|örn. Perez|örn. Acme|örn. 2024|örn. dev|örn. eu",
+      "add": "Alan ekle",
+      "remove": "Alanı kaldır",
+      "mode": {
+        "full": "Tam",
+        "initial": "Baş harf",
+        "both": "Her ikisi"
+      }
+    },
+    "options": {
+      "separator": "Ayırıcı",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Önek",
+      "prefixPlaceholder": "https://www. (isteğe bağlı)",
+      "suffix": "Sonek",
+      "suffixPlaceholder": "{'@'}example.com (isteğe bağlı)",
+      "permute": "Alan sırasını değiştir",
+      "permuteHint": "Etkinleştirildiğinde, alanları farklı sıralarda da kombinasyonlar üretir (last.first, vb.).",
+      "subsets": "Alt kümeleri dahil et (daha az alan kullanan kombinasyonlar)",
+      "subsetsHint": "Etkinleştirildiğinde, doldurulan alanların yalnızca bazılarını kullanan varyantlar da üretir (sadece ad, sadece soyad, ad+şirket, vb.).",
+      "downloadOnly": "Yalnızca indir (listeyi gösterme)",
+      "downloadOnlyHint": "Binlerce kombinasyon olduğunda ve listenin çizilmesi tarayıcıyı yavaşlattığında kullanışlıdır. Sınırı 100.000 sonuca yükseltir."
+    },
+    "results": {
+      "title": "Sonuçlar ({count})",
+      "empty": "Kombinasyon oluşturmak için en az bir alan doldurun.",
+      "limited": "{total} kombinasyondan ilk {limit} tanesi gösteriliyor.",
+      "copyAll": "Tümünü kopyala",
+      "copied": "Kopyalandı!",
+      "download": ".txt indir",
+      "downloadHint": "Tarayıcının yavaşlamaması için liste gizlendi. Tüm {count} kombinasyonlu bir .txt almak için İndir'e basın."
+    }
+  },
+  "scissor": {
+    "dropzone": "Buraya bir PDF sürükleyin veya seçmek için tıklayın",
+    "totalPages": "{n} sayfa",
+    "rangesLabel": "Çıkarılacak sayfalar",
+    "rangesPlaceholder": "Örn. 1-3, 5, 8-10",
+    "hint": "Virgülle ayırın. Aralıklar için tire kullanın (1-5). Varsayılan olarak tüm sayfalar önceden seçilidir.",
+    "preview": {
+      "pages": "Seçim",
+      "count": "Toplam",
+      "none": "Yok"
+    },
+    "actions": {
+      "extract": "Çıkar ve indir",
+      "processing": "Çıkarılıyor…",
+      "change": "PDF değiştir"
+    },
+    "errors": {
+      "notPdf": "{name} bir PDF değil.",
+      "invalidPdf": "{name} geçerli bir PDF değil veya bozuk.",
+      "encrypted": "Bu PDF parola korumalı.",
+      "invalidTokens": "Çözümlenemedi: {tokens}.",
+      "outOfRange": "Aralık dışı (maksimum {max}): {tokens}.",
+      "generic": "Sayfalar çıkarılamadı."
+    }
+  },
+  "wordy": {
+    "modeText": "Metin",
+    "modeFile": "Dosya",
+    "textPlaceholder": "Analiz edilecek metni yapıştırın veya yazın…",
+    "dropzone": "Bir metin dosyası (.txt, .md, .csv…) sürükleyin veya seçmek için tıklayın",
+    "stats": {
+      "words": "Kelimeler",
+      "charsWithSpaces": "Karakterler (boşluklarla)",
+      "charsNoSpaces": "Karakterler (boşluksuz)",
+      "lines": "Satırlar",
+      "paragraphs": "Paragraflar",
+      "sentences": "Cümleler",
+      "readingTime": "Okuma süresi",
+      "minutes": "{n} dk",
+      "minutesSeconds": "{m} dk {s} sn",
+      "seconds": "{n} sn"
+    },
+    "actions": {
+      "clear": "Temizle"
+    },
+    "errors": {
+      "notText": "Yalnızca düz metin dosyaları (.txt, .md, .csv, vb.) desteklenir.",
+      "read": "Dosya okunamadı."
+    }
+  },
+  "stapler": {
+    "dropzone": "Buraya PDF'leri sürükleyin veya seçmek için tıklayın",
+    "list": {
+      "title": "{count} dosya · toplam {pages} sayfa",
+      "pages": "{n} sayfa"
+    },
+    "actions": {
+      "merge": "PDF'leri birleştir",
+      "processing": "Birleştiriliyor…",
+      "clear": "Tümünü kaldır",
+      "moveUp": "Yukarı taşı",
+      "moveDown": "Aşağı taşı",
+      "remove": "Kaldır"
+    },
+    "errors": {
+      "notPdf": "{name} bir PDF değil.",
+      "invalidPdf": "{name} geçerli bir PDF değil veya bozuk.",
+      "encrypted": "{name} parola korumalı.",
+      "generic": "PDF'ler birleştirilemedi."
+    }
+  },
+  "createpass": {
+    "length": "Uzunluk",
+    "count": "Kaç tane?",
+    "excludeSimilar": "Benzerleri hariç tut (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Belirsizleri hariç tut (parantezler, tırnaklar ve benzerleri)",
+    "bits": "bit",
+    "strength": {
+      "veryWeak": "Çok zayıf",
+      "weak": "Zayıf",
+      "reasonable": "Makul",
+      "strong": "Güçlü",
+      "veryStrong": "Çok güçlü"
+    },
+    "actions": {
+      "generate": "Oluştur",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "errors": {
+      "noCharset": "En az bir karakter türü seçin.",
+      "clipboard": "Panoya kopyalanamadı."
+    }
+  },
+  "idkun": {
+    "format": "Format",
+    "count": "Kaç tane?",
+    "nanoidSize": "NanoID uzunluğu",
+    "uppercase": "Büyük harf",
+    "hyphens": "Tire ile",
+    "formats": {
+      "uuidv4": "UUID v4 (rastgele)",
+      "uuidv7": "UUID v7 (zaman damgası + rastgele)",
+      "uuidNil": "UUID NIL (tümü sıfır)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (URL-güvenli)"
+    },
+    "about": {
+      "uuidv4": "En yaygın standart UUID. 122 rastgele bit. RFC 4122.",
+      "uuidv7": "Zaman damgası + rastgele birleştirir. Sözlük sırasına göre sıralanabilir. RFC 9562 (2024).",
+      "uuidNil": "Tümü sıfır olan nil UUID. Varsayılan veya sentinel değer olarak kullanışlıdır.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. Crockford Base32'de 26 karakter.",
+      "nanoid": "Kısa ve popüler URL-güvenli tanımlayıcı. Yapılandırılabilir boyut."
+    },
+    "actions": {
+      "generate": "Oluştur",
+      "copy": "Kopyala",
+      "copyAll": "Tümünü kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "errors": {
+      "clipboard": "Panoya kopyalanamadı."
+    }
+  },
+  "hashy": {
+    "modeText": "Metin",
+    "modeFile": "Dosya",
+    "textPlaceholder": "Hash'lemek için metin yapıştırın veya yazın…",
+    "dropzone": "Buraya bir dosya sürükleyin veya seçmek için tıklayın",
+    "processing": "Hesaplanıyor…",
+    "actions": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "verify": {
+      "label": "Beklenen bir hash ile doğrula",
+      "placeholder": "Hex hash'i yapıştırın (40, 64, 96 veya 128 karakter)…",
+      "unknownLength": "Tanınmayan uzunluk. SHA-1 (40), SHA-256 (64), SHA-384 (96) veya SHA-512 (128) ile eşleşmelidir.",
+      "match": "{algo} ile eşleşiyor.",
+      "mismatch": "{algo} hash'i eşleşmiyor."
+    },
+    "errors": {
+      "clipboard": "Panoya kopyalanamadı."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Buraya bir JPEG sürükleyin veya seçmek için tıklayın",
+    "tags": {
+      "title": "Algılanan meta veri ({count})",
+      "hint": "Her etiket adını, IFD'sini ve türünü gösterir. Değeri düzenleyin, × ile kaldırın veya yeni etiketler ekleyin.",
+      "empty": "Bu görüntüde EXIF meta verisi yok.",
+      "add": "Etiket ekle",
+      "confirmAdd": "Ekle",
+      "remove": "Etiketi kaldır",
+      "searchPlaceholder": "Etiket ara (ad veya IFD)…",
+      "modeStandard": "Standart",
+      "modeCustom": "Özel",
+      "custom": {
+        "note": "EXIF etiketleri sayısal ID ile tanımlar. Diğer okuyucular bu etiketi 'Unknown {id}' olarak görüntüleyebilir.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "Tür",
+        "name": "Ad (yalnızca gösterim)",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "Bir ID girin.",
+        "invalidId": "ID 1 ile 65535 arasında bir tamsayı olmalıdır.",
+        "duplicate": "Bu etiket zaten görüntüde mevcut."
+      }
+    },
+    "actions": {
+      "strip": "Tüm meta verileri kaldır",
+      "apply": "Uygula ve indir",
+      "cancel": "İptal"
+    },
+    "errors": {
+      "notJpeg": "Yalnızca JPEG dosyaları (.jpg / .jpeg) desteklenir.",
+      "invalidValue": "{tag} etiketi için geçersiz değer."
+    }
+  },
+  "dropzone": {
+    "empty": "Buraya bir görüntü sürükleyin veya seçmek için tıklayın"
+  },
+  "controls": {
+    "width": "Genişlik (px)",
+    "height": "Yükseklik (px)",
+    "keepRatio": "En boy oranını koru",
+    "format": "Format",
+    "quality": "Kalite"
+  },
+  "actions": {
+    "resize": "Yeniden boyutlandır",
+    "processing": "İşleniyor…",
+    "download": "İndir"
+  },
+  "result": {
+    "title": "Sonuç"
+  },
+  "errors": {
+    "notAnImage": "Bu dosya geçerli bir görüntü değil."
+  },
+  "footer": {
+    "tagline": "Tanukibox · tarayıcınızda çalışan araçlar",
+    "legalLinks": "Yasal bağlantılar",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar",
+    "cookies": "Çerezler"
+  },
+  "legal": {
+    "lastUpdated": "Son güncelleme: 15 Mayıs 2026",
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "intro": "<p>Tanukibox'ta dosyalarınızın size ait olduğuna inanıyoruz. Bu nedenle tüm araçlarımız <strong>tamamen tarayıcınızda</strong> çalışır: işlediğiniz görüntüler, PDF'ler, metinler veya herhangi bir dosya asla cihazınızdan ayrılmaz.</p>",
+      "sections": {
+        "scope": {
+          "title": "1. Kapsam",
+          "body": "<p>Bu politika tanukibox.com ve bu alan adı altında barındırılan her araç için geçerlidir. Siteyi ziyaret ettiğinizde hangi bilgilerin toplandığını ve bunlarla ne yaptığımızı açıklar.</p>"
+        },
+        "data": {
+          "title": "2. Topladığımız veriler",
+          "body": "<p>Dosyalarınızı alan bir sunucumuz yok. Araçlar (Mochi, Metaimg, Createpass, Hashy, vb.) yerel API'leri (Canvas, Web Crypto, vb.) kullanarak verileri doğrudan tarayıcınızda işler. Bu nedenle:</p><ul><li>İşlediğiniz dosyaları, içeriklerini veya sonuçları <strong>toplamıyoruz</strong>.</li><li><strong>Kullanıcı hesabı</strong>, parola veya profil yoktur.</li><li>Tanukibox sunucusu yalnızca sitenin statik varlıklarını (HTML, CSS, JS) sunar.</li></ul><p>Saklanan tek şey Çerezler bölümünde açıklanmıştır.</p>"
+        },
+        "cookies": {
+          "title": "3. Çerezler ve yerel depolama",
+          "body": "<p>Dil tercihinizi hatırlamak için <code>tanukibox_lang</code> adlı tek bir teknik çerez kullanıyoruz. Kullanıcıyı tanımlamaz ve üçüncü taraflarla paylaşılmaz.</p><p>Daha fazla ayrıntı <a href='/cookies'>çerezler politikasında</a>.</p>"
+        },
+        "tracking": {
+          "title": "4. Analitik ve reklamcılık",
+          "body": "<p>Şu anda analitik veya görüntülü reklam kullanmıyoruz. Gelecekte Google AdSense veya bir analitik sağlayıcı gibi hizmetleri entegre edersek, bu politika bunu yansıtacak şekilde güncellenecek ve yasa (GDPR/AB) gerektirdiğinde rızanız istenecektir.</p>"
+        },
+        "gdpr": {
+          "title": "5. Haklarınız (GDPR)",
+          "body": "<p>Sunucularımızda kişisel olarak tanımlanabilir bilgiler saklamadığımız için GDPR'nin haklarının çoğu (erişim, düzeltme, silme, taşınabilirlik) uygulanacak veri olmadığından geçerli değildir.</p><p>Yine de, bu politikanın altında listelenen adresten bizimle iletişime geçerek herhangi bir hakkı kullanabilirsiniz.</p>"
+        },
+        "children": {
+          "title": "6. Çocuklar",
+          "body": "<p>Site 14 yaşın altındaki çocuklara yönelik değildir. Reşit olmayanlar hakkında bilerek veri toplamıyoruz.</p>"
+        },
+        "changes": {
+          "title": "7. Bu politikadaki değişiklikler",
+          "body": "<p>Yeni özellikler eklediğimizde veya yasal nedenlerle bu politikayı güncelleyebiliriz. Son güncellemenin tarihi belge başlığında gösterilir.</p>"
+        },
+        "contact": {
+          "title": "8. İletişim",
+          "body": "<p>Gizlilikle ilgili herhangi bir soru için: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
+        }
+      }
+    },
+    "terms": {
+      "title": "Kullanım Şartları",
+      "intro": "<p>Tanukibox'a hoş geldiniz. Bu siteyi kullanarak aşağıda açıklanan koşulları kabul etmiş olursunuz. Kabul etmiyorsanız, lütfen hizmeti kullanmayın.</p>",
+      "sections": {
+        "acceptance": {
+          "title": "1. Kabul",
+          "body": "<p>tanukibox.com'a erişmek ve kullanmak bu şartların tam kabulü anlamına gelir. Bunlar herhangi bir zamanda güncellenebilir; değişikliklerden sonra devam eden kullanım bunların kabulü anlamına gelir.</p>"
+        },
+        "service": {
+          "title": "2. Hizmet açıklaması",
+          "body": "<p>Tanukibox tamamen tarayıcınızda çalışan (yerel işleme) bir dizi yardımcı program sağlar. Hizmet <strong>ücretsiz ve \"olduğu gibi\"</strong> sağlanır, kullanılabilirlik, doğruluk veya belirli bir amaca uygunluk garantisi yoktur.</p>"
+        },
+        "use": {
+          "title": "3. İzin verilen kullanım",
+          "body": "<p>Araçları kişisel veya profesyonel, yasal herhangi bir amaç için kullanabilirsiniz. Şunları yapamazsınız:</p><ul><li>Sitenin güvenliğini veya kullanılabilirliğini tehlikeye atmaya çalışmak.</li><li>Yasadışı içerik işlemek için hizmeti kullanmak.</li><li>İzinsiz site kodunu kopyalamak veya yeniden dağıtmak.</li></ul>"
+        },
+        "responsibility": {
+          "title": "4. Kullanıcı sorumluluğu",
+          "body": "<p>Her aracın sonuçlarına dayalı kararlar almadan önce bunları doğrulamaktan siz sorumlusunuz. Örneğin, bir hash'i manuel olarak doğrulamak, üretilen bir parolayı güvenilir bir yöneticide kontrol etmek veya bir görüntü yayınlamadan önce kaldırılan meta verileri incelemek.</p>"
+        },
+        "ip": {
+          "title": "5. Fikri mülkiyet",
+          "body": "<p>Tanukibox adı, logosu ve site tasarımı yazarının mülkiyetindedir. Kaynak kodu, herkese açık deposunda açık bir lisans altında mevcut olabilir; kesin şartlar için depoyu kontrol edin.</p>"
+        },
+        "liability": {
+          "title": "6. Sorumluluk sınırlaması",
+          "body": "<p>Yasanın izin verdiği azami ölçüde, Tanukibox veri kaybı dahil olmak üzere hizmetin kullanımından veya kullanılamamasından kaynaklanan doğrudan, dolaylı, arızi veya sonuç olarak ortaya çıkan zararlardan sorumlu tutulamaz.</p>"
+        },
+        "changes": {
+          "title": "7. Değişiklikler",
+          "body": "<p>Önceden bildirimde bulunmaksızın herhangi bir zamanda herhangi bir aracı değiştirme, askıya alma veya durdurma hakkını saklı tutarız.</p>"
+        },
+        "jurisdiction": {
+          "title": "8. Uygulanacak hukuk ve yargı yetkisi",
+          "body": "<p>Bu şartlar İspanyol hukukuna tabidir. Herhangi bir uyuşmazlık için taraflar kullanıcının ikamet yerindeki, kullanıcı tüketici değilse Madrid'deki mahkemelere ve hakimlere tabidir.</p>"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Çerezler Politikası",
+      "intro": "<p>Bu sayfa tanukibox.com'un hangi çerezleri ve depolama mekanizmalarını kullandığını açıklar.</p>",
+      "sections": {
+        "what": {
+          "title": "1. Çerezler nedir",
+          "body": "<p>Çerezler, bir web sitesinin ziyaretler arasında bilgileri (tercihler, oturum, vb.) hatırlamak için cihazınızda sakladığı küçük dosyalardır. Tanukibox en azını kullanır.</p>"
+        },
+        "used": {
+          "title": "2. Kullandığımız çerezler",
+          "body": "<ul><li><strong><code>tanukibox_lang</code></strong> — teknik tercih çerezi. Her ziyarette sormamamız için seçilen dili saklar. 1 yıl içinde sona erer. Kullanıcıyı tanımlamaz.</li></ul><p>Şu anda izleme veya reklam çerezleri kullanmıyoruz.</p>"
+        },
+        "thirdParty": {
+          "title": "3. Üçüncü taraf çerezleri",
+          "body": "<p>Tanukibox şu anda çerez yükleyen üçüncü taraf komut dosyaları yüklemiyor. Gelecekte Google AdSense veya bir analitik aracı gibi hizmetleri entegre edersek, bu bölüm güncellenecek ve bir afiş aracılığıyla rızanız istenecektir.</p>"
+        },
+        "manage": {
+          "title": "4. Çerezler nasıl yönetilir",
+          "body": "<p>Çerezleri tarayıcı ayarlarınızdan silebilir veya engelleyebilirsiniz. <code>tanukibox_lang</code>'i engellerseniz, site çalışacak ancak dil tercihinizi hatırlamayacaktır.</p>"
+        },
+        "changes": {
+          "title": "5. Bu politikadaki değişiklikler",
+          "body": "<p>Yeni çerezler veya üçüncü taraf hizmetleri eklersek, bu sayfayı ve başlık tarihini güncelleyeceğiz.</p>"
+        }
+      }
+    }
+  }
+}

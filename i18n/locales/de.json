@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "languageSwitcher": "Sprachauswahl"
+  },
+  "landing": {
+    "title": "Tools, die in Ihrem Browser laufen",
+    "description": "Eine Sammlung serverloser Web-Utilities. Ihre Dateien verlassen niemals Ihr Gerät.",
+    "categories": {
+      "imageEdit": "Bildbearbeitung",
+      "documents": "Dokumente",
+      "privacy": "Datenschutz",
+      "generators": "Generatoren",
+      "dev": "Entwicklung",
+      "design": "Design",
+      "converters": "Konverter"
+    }
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Bilder skalieren",
+      "description": "Reduzieren Sie die Pixelgröße Ihrer Bilder direkt im Browser. Kein Upload, kein Server."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "EXIF-Metadaten bearbeiten",
+      "description": "Lesen, bearbeiten oder entfernen Sie EXIF-Metadaten Ihrer JPEG-Fotos. Alles in Ihrem Browser."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Starke Passwörter generieren",
+      "description": "Erstellen Sie zufällige Passwörter mit der Browser-Kryptografie. Sie verlassen niemals Ihr Gerät."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Hashes berechnen und Integrität prüfen",
+      "description": "SHA-1, SHA-256, SHA-384 und SHA-512 von Text oder Dateien. Vergleichen Sie mit einem erwarteten Hash, um Downloads zu verifizieren."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Eindeutige Bezeichner generieren",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID und NanoID. Kryptografisch sichere Erzeugung in Ihrem Browser."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Mehrere PDFs zu einem zusammenfügen",
+      "description": "Kombinieren Sie mehrere PDF-Dateien in beliebiger Reihenfolge zu einer einzigen. Alles wird in Ihrem Browser verarbeitet."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Wörter und Zeichen zählen",
+      "description": "Analysieren Sie Text oder eine Textdatei: Wörter, Zeichen, Zeilen, Absätze und geschätzte Lesezeit."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "Seiten aus einer PDF extrahieren",
+      "description": "Wählen Sie Seiten oder Bereiche aus einer PDF aus und laden Sie sie als neue Datei herunter. Alles im Browser."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Felder zu Varianten kombinieren (E-Mails, Benutzernamen…)",
+      "description": "Erzeugen Sie Kombinationen mehrerer Felder mit konfigurierbarem Trennzeichen und Suffix. Praktisch für E-Mail-Listen, Benutzernamen, Slugs oder IDs."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Zwischen CSV und JSON konvertieren",
+      "description": "Fügen Sie CSV oder JSON ein und erhalten Sie das andere Format sofort. Erkennt Trennzeichen und Format automatisch. Alles in Ihrem Browser."
+    },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Lorem-ipsum-Text generieren",
+      "description": "Platzhaltertext in Absätzen, Sätzen oder Wörtern. Option, mit dem klassischen \"Lorem ipsum dolor sit amet…\" zu beginnen und als reinen Text oder HTML auszugeben."
+    },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Regex testen und Text ersetzen",
+      "description": "Erstellen Sie einen regulären Ausdruck, sehen Sie hervorgehobene Treffer und wenden Sie eine Ersetzung an (unterstützt $1, $2…). Alles in Ihrem Browser."
+    },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "Zwischen YAML und JSON konvertieren",
+      "description": "Fügen Sie YAML oder JSON ein und erhalten Sie das andere Format sofort. Erkennt das Format automatisch und zeigt Fehler mit Zeile und Spalte. Alles in Ihrem Browser."
+    },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "CSS-Verlaufsgenerator",
+      "description": "Erstellen Sie lineare, radiale und konische Verläufe mit mehreren Stopps, sehen Sie eine Live-Vorschau und kopieren Sie das CSS."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "box-shadow-Generator",
+      "description": "Schatten mit Versatz, Weichzeichnung, Ausdehnung, Farbe, Alpha und Inset. Mehrere Ebenen mit Live-Vorschau."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Farbwähler, Palette und WCAG-Kontrast",
+      "description": "Wählen Sie eine Farbe, konvertieren Sie zwischen HEX/RGB/HSL, erzeugen Sie eine Palette und messen Sie den WCAG-Kontrast gegen Weiß und Schwarz."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "CSS-Einheitenkonverter",
+      "description": "Konvertieren Sie zwischen px, rem, em, pt und % mit konfigurierbarer Basisgröße. Das Bearbeiten einer Einheit berechnet die anderen neu."
+    },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Zeitstempel und Datumsangaben konvertieren",
+      "description": "Bearbeiten Sie ein beliebiges Format (UNIX Sekunden/ms, ISO 8601 UTC/lokal, RFC 2822), und die anderen werden aktualisiert. Zeigt Wochentag, relative Zeit und Zeitzone."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Zwischen Zahlenbasen konvertieren",
+      "description": "Konvertieren Sie zwischen Binär, Oktal, Dezimal und Hexadezimal. Unterstützt Ganzzahlen beliebiger Größe (BigInt)."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "JSON formatieren und validieren",
+      "description": "Fügen Sie JSON ein, validieren Sie es und formatieren Sie es mit der gewünschten Einrückung. Minimieren, Schlüssel sortieren und Statistiken einsehen. Alles in Ihrem Browser."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Typ",
+      "linear": "Linear",
+      "radial": "Radial",
+      "conic": "Konisch"
+    },
+    "angle": "Winkel",
+    "shape": {
+      "label": "Form",
+      "circle": "Kreis",
+      "ellipse": "Ellipse"
+    },
+    "position": {
+      "label": "Position"
+    },
+    "stops": {
+      "title": "Stopps",
+      "add": "Stopp hinzufügen"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Kopieren",
+      "copied": "Kopiert!"
+    }
+  },
+  "shadowy": {
+    "title": "Schatten",
+    "layer": "Ebene {n}",
+    "offsetX": "Versatz X",
+    "offsetY": "Versatz Y",
+    "blur": "Weichzeichnen",
+    "spread": "Ausdehnung",
+    "color": "Farbe",
+    "alpha": "Deckkraft",
+    "inset": "Inset",
+    "css": "CSS",
+    "actions": {
+      "add": "Schatten hinzufügen",
+      "remove": "Schatten entfernen",
+      "copy": "Kopieren",
+      "copied": "Kopiert!"
+    }
+  },
+  "colory": {
+    "palette": "Palette",
+    "contrast": {
+      "label": "WCAG-Kontrast",
+      "sample": "Aa",
+      "withWhite": "auf Weiß",
+      "withBlack": "auf Schwarz",
+      "normal": "Normaler Text",
+      "large": "Großer Text"
+    },
+    "actions": {
+      "copy": "Kopieren",
+      "copied": "Kopiert!"
+    }
+  },
+  "timely": {
+    "formats": "Formate",
+    "fmt": {
+      "unixS": "UNIX (Sekunden)",
+      "unixMs": "UNIX (Millisekunden)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 lokal",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Wochentag",
+      "relative": "Relativ",
+      "tz": "Ihre Zeitzone"
+    },
+    "actions": {
+      "now": "Jetzt",
+      "copy": "Kopieren",
+      "copied": "Kopiert!"
+    },
+    "errors": {
+      "invalid": "Ungültiges Format."
+    }
+  },
+  "basey": {
+    "title": "Zahlenbasen",
+    "bases": {
+      "bin": "Binär",
+      "oct": "Oktal",
+      "dec": "Dezimal",
+      "hex": "Hexadezimal"
+    },
+    "customLabel": "Basis {radix}",
+    "placeholders": {
+      "bin": "z. B. 101010",
+      "oct": "z. B. 52",
+      "dec": "z. B. 42",
+      "hex": "z. B. 2A"
+    },
+    "addCustom": {
+      "title": "Benutzerdefinierte Basis hinzufügen",
+      "label": "Radix",
+      "placeholder": "2–36",
+      "hint": "Ziffern reichen von 0-9, dann a-z. Zum Beispiel verwendet Basis 36 0-9 und a-z."
+    },
+    "actions": {
+      "clear": "Leeren",
+      "copy": "Kopieren",
+      "copied": "Kopiert!",
+      "addBase": "Hinzufügen",
+      "removeBase": "Basis entfernen"
+    },
+    "errors": {
+      "invalid": "Ungültiger Wert für {base}.",
+      "invalidRadix": "Radix muss eine Ganzzahl zwischen 2 und 36 sein."
+    }
+  },
+  "unity": {
+    "baseFont": "Basisgröße",
+    "baseHint": "1rem = Basis. 1em = relativ zum Elternelement (hier angenommen = Basis). 1pt = 1,333px (96dpi).",
+    "units": {
+      "px": "Pixel",
+      "rem": "root em",
+      "em": "relative em",
+      "pt": "Punkte",
+      "percent": "Prozent"
+    },
+    "actions": {
+      "copy": "Kopieren",
+      "copied": "Kopiert!"
+    }
+  },
+  "yamljson": {
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "inputPlaceholder": "YAML oder JSON hier einfügen…",
+    "outputPlaceholder": "Das Ergebnis erscheint hier.",
+    "indent": "Einrückung",
+    "direction": {
+      "label": "Richtung",
+      "auto": "Automatisch",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "Erkannt",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "Unbekannt"
+    },
+    "actions": {
+      "example": "Beispiel",
+      "clear": "Leeren",
+      "copy": "Kopieren",
+      "copied": "Kopiert!",
+      "download": "Herunterladen",
+      "useAsInput": "Als Eingabe verwenden"
+    },
+    "errors": {
+      "unknownInput": "Format konnte nicht erkannt werden. Wählen Sie die Richtung manuell.",
+      "invalidYaml": "Ungültiges YAML",
+      "invalidJson": "Ungültiges JSON",
+      "atLine": "Zeile {line}, Spalte {col}"
+    }
+  },
+  "regexpad": {
+    "pattern": "Muster",
+    "patternPlaceholder": "z. B. \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Ersetzung",
+    "replacementPlaceholder": "Ersatztext (verwenden Sie $1, $2… für Gruppen)",
+    "replacementHint": "Verwenden Sie $& für die gesamte Übereinstimmung, $1, $2… für Erfassungsgruppen.",
+    "source": "Quelltext",
+    "sourcePlaceholder": "Fügen Sie hier den zu durchsuchenden Text ein…",
+    "preview": "Hervorgehobene Treffer",
+    "previewEmpty": "Geben Sie oben Text ein, um Treffer zu sehen.",
+    "output": "Ergebnis der Ersetzung",
+    "outputPlaceholder": "Der Text mit angewendeter Ersetzung erscheint hier.",
+    "flags": {
+      "label": "Flags",
+      "g": "global",
+      "i": "Groß-/Kleinschreibung ignorieren",
+      "m": "mehrzeilig",
+      "s": "Punkt trifft Zeilenumbrüche",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Warten auf Muster…",
+      "count": "{n} Treffer",
+      "none": "Keine Treffer"
+    },
+    "actions": {
+      "example": "Beispiel",
+      "clear": "Leeren",
+      "copy": "Kopieren",
+      "copied": "Kopiert!",
+      "download": "Herunterladen"
+    },
+    "errors": {
+      "invalidRegex": "Ungültige Regex"
+    }
+  },
+  "lorempad": {
+    "output": "Ausgabe",
+    "count": "Menge",
+    "wordsPerSentence": "Wörter pro Satz",
+    "wordsPerParagraph": "Wörter pro Absatz",
+    "wordsHint": "0 = zufällig. Mindestens 3 bei fester Anzahl.",
+    "classic": "Mit \"Lorem ipsum dolor sit amet…\" beginnen",
+    "mode": {
+      "label": "Modus",
+      "paragraphs": "Absätze",
+      "sentences": "Sätze",
+      "words": "Wörter"
+    },
+    "format": {
+      "label": "Format",
+      "plain": "Reiner Text",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Neu generieren",
+      "copy": "Kopieren",
+      "copied": "Kopiert!",
+      "download": "Herunterladen"
+    }
+  },
+  "jsonpad": {
+    "editor": "Editor",
+    "placeholder": "Fügen Sie Ihr JSON hier ein…",
+    "indent": "Einrückung (Leerzeichen)",
+    "actions": {
+      "format": "Formatieren",
+      "minify": "Minimieren",
+      "sortKeys": "Schlüssel sortieren",
+      "example": "Beispiel",
+      "clear": "Leeren",
+      "copy": "Kopieren",
+      "copied": "Kopiert!",
+      "download": "Herunterladen"
+    },
+    "status": {
+      "empty": "Warten auf JSON…",
+      "valid": "Gültiges JSON",
+      "error": "Ungültiges JSON",
+      "errorAt": "Fehler in Zeile {line}, Spalte {col}"
+    },
+    "stats": {
+      "keys": "{n} Schlüssel",
+      "depth": "Tiefe {n}",
+      "objects": "{n} Objekte",
+      "arrays": "{n} Arrays"
+    }
+  },
+  "csvjson": {
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "inputPlaceholder": "CSV oder JSON hier einfügen…",
+    "outputPlaceholder": "Das Ergebnis erscheint hier.",
+    "hasHeader": "CSV hat eine Kopfzeile",
+    "pretty": "JSON formatieren",
+    "direction": {
+      "label": "Richtung",
+      "auto": "Automatisch",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Trennzeichen",
+      "auto": "Automatisch",
+      "comma": "Komma (,)",
+      "semicolon": "Semikolon (;)",
+      "tab": "Tabulator",
+      "pipe": "Pipe (|)"
+    },
+    "detected": {
+      "label": "Erkannt",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Unbekannt"
+    },
+    "actions": {
+      "example": "Beispiel",
+      "clear": "Leeren",
+      "copy": "Kopieren",
+      "copied": "Kopiert!",
+      "download": "Herunterladen",
+      "useAsInput": "Als Eingabe verwenden"
+    },
+    "errors": {
+      "unknownInput": "Format konnte nicht erkannt werden. Wählen Sie die Richtung manuell.",
+      "invalidJson": "Ungültiges JSON: {msg}",
+      "notTabular": "JSON muss ein Array (oder Objekt) sein, um in CSV konvertiert zu werden.",
+      "mixedShape": "Das Array mischt Elementtypen. Es muss entweder nur Objekte oder nur Arrays enthalten."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Felder",
+      "valuePlaceholder": "Wert",
+      "examples": "z. B. Maria|z. B. Müller|z. B. Acme|z. B. 2024|z. B. dev|z. B. eu",
+      "add": "Feld hinzufügen",
+      "remove": "Feld entfernen",
+      "mode": {
+        "full": "Vollständig",
+        "initial": "Initial",
+        "both": "Beide"
+      }
+    },
+    "options": {
+      "separator": "Trennzeichen",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Präfix",
+      "prefixPlaceholder": "https://www. (optional)",
+      "suffix": "Suffix",
+      "suffixPlaceholder": "{'@'}example.com (optional)",
+      "permute": "Reihenfolge der Felder permutieren",
+      "permuteHint": "Wenn aktiviert, werden auch Kombinationen mit Feldern in unterschiedlicher Reihenfolge erzeugt (nachname.vorname usw.).",
+      "subsets": "Teilmengen einbeziehen (Kombinationen mit weniger Feldern)",
+      "subsetsHint": "Wenn aktiviert, werden auch Varianten erzeugt, die nur einige der ausgefüllten Felder verwenden (nur Vorname, nur Nachname, Vorname+Firma usw.).",
+      "downloadOnly": "Nur herunterladen (Liste nicht anzeigen)",
+      "downloadOnlyHint": "Nützlich, wenn es Tausende von Kombinationen gibt und das Zeichnen der Liste den Browser verlangsamt. Erhöht das Limit auf 100.000 Ergebnisse."
+    },
+    "results": {
+      "title": "Ergebnisse ({count})",
+      "empty": "Füllen Sie mindestens ein Feld aus, um Kombinationen zu erzeugen.",
+      "limited": "Zeige die ersten {limit} von {total} Kombinationen.",
+      "copyAll": "Alle kopieren",
+      "copied": "Kopiert!",
+      "download": "Als .txt herunterladen",
+      "downloadHint": "Liste ausgeblendet, um den Browser nicht zu verlangsamen. Klicken Sie auf Herunterladen, um eine .txt mit allen {count} Kombinationen zu erhalten."
+    }
+  },
+  "scissor": {
+    "dropzone": "Ziehen Sie eine PDF hierher oder klicken Sie, um eine auszuwählen",
+    "totalPages": "{n} Seiten",
+    "rangesLabel": "Zu extrahierende Seiten",
+    "rangesPlaceholder": "Z. B. 1-3, 5, 8-10",
+    "hint": "Mit Kommas trennen. Bindestriche für Bereiche verwenden (1-5). Standardmäßig sind alle Seiten ausgewählt.",
+    "preview": {
+      "pages": "Auswahl",
+      "count": "Gesamt",
+      "none": "Keine"
+    },
+    "actions": {
+      "extract": "Extrahieren und herunterladen",
+      "processing": "Extrahiere…",
+      "change": "PDF wechseln"
+    },
+    "errors": {
+      "notPdf": "{name} ist keine PDF.",
+      "invalidPdf": "{name} ist keine gültige PDF oder ist beschädigt.",
+      "encrypted": "Diese PDF ist passwortgeschützt.",
+      "invalidTokens": "Konnte nicht analysiert werden: {tokens}.",
+      "outOfRange": "Außerhalb des Bereichs (max {max}): {tokens}.",
+      "generic": "Seiten konnten nicht extrahiert werden."
+    }
+  },
+  "wordy": {
+    "modeText": "Text",
+    "modeFile": "Datei",
+    "textPlaceholder": "Fügen Sie den zu analysierenden Text ein oder geben Sie ihn ein…",
+    "dropzone": "Ziehen Sie eine Textdatei (.txt, .md, .csv…) hierher oder klicken Sie, um eine auszuwählen",
+    "stats": {
+      "words": "Wörter",
+      "charsWithSpaces": "Zeichen (mit Leerzeichen)",
+      "charsNoSpaces": "Zeichen (ohne Leerzeichen)",
+      "lines": "Zeilen",
+      "paragraphs": "Absätze",
+      "sentences": "Sätze",
+      "readingTime": "Lesezeit",
+      "minutes": "{n} Min.",
+      "minutesSeconds": "{m} Min. {s} s",
+      "seconds": "{n} s"
+    },
+    "actions": {
+      "clear": "Leeren"
+    },
+    "errors": {
+      "notText": "Es werden nur reine Textdateien (.txt, .md, .csv usw.) unterstützt.",
+      "read": "Datei konnte nicht gelesen werden."
+    }
+  },
+  "stapler": {
+    "dropzone": "Ziehen Sie PDFs hierher oder klicken Sie, um sie auszuwählen",
+    "list": {
+      "title": "{count} Dateien · {pages} Seiten insgesamt",
+      "pages": "{n} Seiten"
+    },
+    "actions": {
+      "merge": "PDFs zusammenführen",
+      "processing": "Zusammenführen…",
+      "clear": "Alle entfernen",
+      "moveUp": "Nach oben",
+      "moveDown": "Nach unten",
+      "remove": "Entfernen"
+    },
+    "errors": {
+      "notPdf": "{name} ist keine PDF.",
+      "invalidPdf": "{name} ist keine gültige PDF oder ist beschädigt.",
+      "encrypted": "{name} ist passwortgeschützt.",
+      "generic": "PDFs konnten nicht zusammengeführt werden."
+    }
+  },
+  "createpass": {
+    "length": "Länge",
+    "count": "Wie viele?",
+    "excludeSimilar": "Ähnliche ausschließen (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Mehrdeutige ausschließen (Klammern, Anführungszeichen und Ähnliches)",
+    "bits": "Bit",
+    "strength": {
+      "veryWeak": "Sehr schwach",
+      "weak": "Schwach",
+      "reasonable": "Angemessen",
+      "strong": "Stark",
+      "veryStrong": "Sehr stark"
+    },
+    "actions": {
+      "generate": "Generieren",
+      "copy": "Kopieren",
+      "copied": "Kopiert!"
+    },
+    "errors": {
+      "noCharset": "Wählen Sie mindestens einen Zeichentyp aus.",
+      "clipboard": "Konnte nicht in die Zwischenablage kopiert werden."
+    }
+  },
+  "idkun": {
+    "format": "Format",
+    "count": "Wie viele?",
+    "nanoidSize": "NanoID-Länge",
+    "uppercase": "Großbuchstaben",
+    "hyphens": "Mit Bindestrichen",
+    "formats": {
+      "uuidv4": "UUID v4 (zufällig)",
+      "uuidv7": "UUID v7 (Zeitstempel + zufällig)",
+      "uuidNil": "UUID NIL (nur Nullen)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (URL-safe)"
+    },
+    "about": {
+      "uuidv4": "Die häufigste Standard-UUID. 122 Zufallsbits. RFC 4122.",
+      "uuidv7": "Kombiniert Zeitstempel + Zufall. Lexikografisch sortierbar. RFC 9562 (2024).",
+      "uuidNil": "Die Nil-UUID, nur Nullen. Nützlich als Standard- oder Sentinel-Wert.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. 26 Zeichen in Crockford Base32.",
+      "nanoid": "Kurzer und beliebter URL-sicherer Bezeichner. Konfigurierbare Größe."
+    },
+    "actions": {
+      "generate": "Generieren",
+      "copy": "Kopieren",
+      "copyAll": "Alle kopieren",
+      "copied": "Kopiert!"
+    },
+    "errors": {
+      "clipboard": "Konnte nicht in die Zwischenablage kopiert werden."
+    }
+  },
+  "hashy": {
+    "modeText": "Text",
+    "modeFile": "Datei",
+    "textPlaceholder": "Text zum Hashen einfügen oder eingeben…",
+    "dropzone": "Ziehen Sie eine Datei hierher oder klicken Sie, um eine auszuwählen",
+    "processing": "Berechne…",
+    "actions": {
+      "copy": "Kopieren",
+      "copied": "Kopiert!"
+    },
+    "verify": {
+      "label": "Mit einem erwarteten Hash vergleichen",
+      "placeholder": "Hex-Hash einfügen (40, 64, 96 oder 128 Zeichen)…",
+      "unknownLength": "Unbekannte Länge. Muss SHA-1 (40), SHA-256 (64), SHA-384 (96) oder SHA-512 (128) entsprechen.",
+      "match": "Stimmt mit {algo} überein.",
+      "mismatch": "{algo}-Hash stimmt nicht überein."
+    },
+    "errors": {
+      "clipboard": "Konnte nicht in die Zwischenablage kopiert werden."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Ziehen Sie ein JPEG hierher oder klicken Sie, um eines auszuwählen",
+    "tags": {
+      "title": "Erkannte Metadaten ({count})",
+      "hint": "Jedes Tag zeigt seinen Namen, seine IFD und seinen Typ. Bearbeiten Sie den Wert, entfernen Sie mit × oder fügen Sie neue Tags hinzu.",
+      "empty": "Dieses Bild hat keine EXIF-Metadaten.",
+      "add": "Tag hinzufügen",
+      "confirmAdd": "Hinzufügen",
+      "remove": "Tag entfernen",
+      "searchPlaceholder": "Tag suchen (Name oder IFD)…",
+      "modeStandard": "Standard",
+      "modeCustom": "Benutzerdefiniert",
+      "custom": {
+        "note": "EXIF identifiziert Tags über eine numerische ID. Andere Reader zeigen dieses Tag möglicherweise als „Unknown {id}\" an.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "Typ",
+        "name": "Name (nur Anzeige)",
+        "namePlaceholder": "MeinEigenesTag",
+        "idRequired": "Geben Sie eine ID an.",
+        "invalidId": "Die ID muss eine Ganzzahl zwischen 1 und 65535 sein.",
+        "duplicate": "Dieses Tag existiert bereits im Bild."
+      }
+    },
+    "actions": {
+      "strip": "Alle Metadaten entfernen",
+      "apply": "Anwenden und herunterladen",
+      "cancel": "Abbrechen"
+    },
+    "errors": {
+      "notJpeg": "Es werden nur JPEG-Dateien (.jpg / .jpeg) unterstützt.",
+      "invalidValue": "Ungültiger Wert für Tag {tag}."
+    }
+  },
+  "dropzone": {
+    "empty": "Ziehen Sie ein Bild hierher oder klicken Sie, um eines auszuwählen"
+  },
+  "controls": {
+    "width": "Breite (px)",
+    "height": "Höhe (px)",
+    "keepRatio": "Seitenverhältnis beibehalten",
+    "format": "Format",
+    "quality": "Qualität"
+  },
+  "actions": {
+    "resize": "Skalieren",
+    "processing": "Verarbeite…",
+    "download": "Herunterladen"
+  },
+  "result": {
+    "title": "Ergebnis"
+  },
+  "errors": {
+    "notAnImage": "Diese Datei ist kein gültiges Bild."
+  },
+  "footer": {
+    "tagline": "Tanukibox · Tools, die in Ihrem Browser laufen",
+    "legalLinks": "Rechtliche Links",
+    "privacy": "Datenschutz",
+    "terms": "Bedingungen",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "lastUpdated": "Zuletzt aktualisiert: 15. Mai 2026",
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "intro": "<p>Bei Tanukibox glauben wir, dass Ihre Dateien Ihnen gehören. Deshalb laufen alle unsere Tools <strong>vollständig in Ihrem Browser</strong>: die Bilder, PDFs, Texte oder andere Dateien, die Sie verarbeiten, verlassen niemals Ihr Gerät.</p>",
+      "sections": {
+        "scope": {
+          "title": "1. Geltungsbereich",
+          "body": "<p>Diese Erklärung gilt für tanukibox.com und jedes unter dieser Domain gehostete Tool. Sie beschreibt, welche Informationen beim Besuch der Website erhoben werden und was wir damit tun.</p>"
+        },
+        "data": {
+          "title": "2. Erhobene Daten",
+          "body": "<p>Wir haben keinen Server, der Ihre Dateien empfängt. Die Tools (Mochi, Metaimg, Createpass, Hashy usw.) verarbeiten Daten direkt in Ihrem Browser über native APIs (Canvas, Web Crypto usw.). Daher:</p><ul><li><strong>Wir erheben weder</strong> die Dateien, die Sie verarbeiten, noch deren Inhalt oder Ergebnisse.</li><li><strong>Es gibt keine Benutzerkonten</strong>, Passwörter oder Profile.</li><li>Der Tanukibox-Server liefert lediglich die statischen Assets der Website aus (HTML, CSS, JS).</li></ul><p>Das Einzige, was gespeichert wird, ist im Abschnitt Cookies beschrieben.</p>"
+        },
+        "cookies": {
+          "title": "3. Cookies und lokaler Speicher",
+          "body": "<p>Wir verwenden ein einziges technisches Cookie namens <code>tanukibox_lang</code>, um Ihre Spracheinstellung zu speichern. Es identifiziert den Nutzer nicht und wird nicht an Dritte weitergegeben.</p><p>Weitere Details in der <a href='/cookies'>Cookie-Richtlinie</a>.</p>"
+        },
+        "tracking": {
+          "title": "4. Analyse und Werbung",
+          "body": "<p>Wir verwenden derzeit weder Analyse- noch Displaywerbung. Sollten wir in Zukunft Dienste wie Google AdSense oder einen Analyseanbieter einbinden, wird diese Erklärung entsprechend aktualisiert und Ihre Einwilligung wird eingeholt, sofern das Gesetz dies vorschreibt (DSGVO/EU).</p>"
+        },
+        "gdpr": {
+          "title": "5. Ihre Rechte (DSGVO)",
+          "body": "<p>Da wir keine personenbezogenen Daten auf unseren Servern speichern, treffen die meisten Rechte der DSGVO (Auskunft, Berichtigung, Löschung, Übertragbarkeit) nicht zu, weil es keine Daten gibt, auf die sie angewandt werden können.</p><p>Dennoch können Sie jedes Recht ausüben, indem Sie uns über die am Ende dieser Erklärung angegebene Adresse kontaktieren.</p>"
+        },
+        "children": {
+          "title": "6. Kinder",
+          "body": "<p>Die Website richtet sich nicht an Kinder unter 14 Jahren. Wir erheben nicht wissentlich Daten über Minderjährige.</p>"
+        },
+        "changes": {
+          "title": "7. Änderungen dieser Erklärung",
+          "body": "<p>Wir können diese Erklärung aktualisieren, wenn wir neue Funktionen hinzufügen oder aus rechtlichen Gründen. Das Datum der letzten Aktualisierung wird im Dokumentkopf angezeigt.</p>"
+        },
+        "contact": {
+          "title": "8. Kontakt",
+          "body": "<p>Für Fragen zum Datenschutz: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
+        }
+      }
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "intro": "<p>Willkommen bei Tanukibox. Durch die Nutzung dieser Website akzeptieren Sie die nachstehend beschriebenen Bedingungen. Wenn Sie nicht einverstanden sind, nutzen Sie den Dienst bitte nicht.</p>",
+      "sections": {
+        "acceptance": {
+          "title": "1. Annahme",
+          "body": "<p>Der Zugriff auf und die Nutzung von tanukibox.com bedeutet die vollständige Annahme dieser Bedingungen. Sie können jederzeit aktualisiert werden; die fortgesetzte Nutzung nach den Änderungen bedeutet deren Annahme.</p>"
+        },
+        "service": {
+          "title": "2. Beschreibung des Dienstes",
+          "body": "<p>Tanukibox stellt eine Reihe von Utilities bereit, die vollständig in Ihrem Browser ausgeführt werden (lokale Verarbeitung). Der Dienst wird <strong>kostenlos und „wie besehen\"</strong> bereitgestellt, ohne Garantien für Verfügbarkeit, Genauigkeit oder Eignung für einen bestimmten Zweck.</p>"
+        },
+        "use": {
+          "title": "3. Erlaubte Nutzung",
+          "body": "<p>Sie dürfen die Tools für jeden rechtmäßigen Zweck nutzen, persönlich oder beruflich. Sie dürfen nicht:</p><ul><li>versuchen, die Sicherheit oder Verfügbarkeit der Website zu beeinträchtigen.</li><li>den Dienst zur Verarbeitung illegaler Inhalte verwenden.</li><li>den Quellcode der Website ohne Genehmigung kopieren oder weiterverbreiten.</li></ul>"
+        },
+        "responsibility": {
+          "title": "4. Nutzerverantwortung",
+          "body": "<p>Sie sind dafür verantwortlich, die Ergebnisse jedes Tools zu prüfen, bevor Sie Entscheidungen darauf stützen. Zum Beispiel das manuelle Verifizieren eines Hashes, das Prüfen eines erzeugten Passworts in einem vertrauenswürdigen Manager oder das Überprüfen der entfernten Metadaten vor der Veröffentlichung eines Bildes.</p>"
+        },
+        "ip": {
+          "title": "5. Geistiges Eigentum",
+          "body": "<p>Der Name Tanukibox, das Logo und das Design der Website sind Eigentum des Autors. Der Quellcode kann unter einer Open-Source-Lizenz in seinem öffentlichen Repository verfügbar sein; prüfen Sie das Repository für die genauen Bedingungen.</p>"
+        },
+        "liability": {
+          "title": "6. Haftungsbeschränkung",
+          "body": "<p>Soweit gesetzlich zulässig, haftet Tanukibox nicht für direkte, indirekte, zufällige oder Folgeschäden, die sich aus der Nutzung oder der Unmöglichkeit der Nutzung des Dienstes ergeben, einschließlich Datenverlust.</p>"
+        },
+        "changes": {
+          "title": "7. Änderungen",
+          "body": "<p>Wir behalten uns das Recht vor, jedes Tool jederzeit ohne Vorankündigung zu ändern, auszusetzen oder einzustellen.</p>"
+        },
+        "jurisdiction": {
+          "title": "8. Anwendbares Recht und Gerichtsstand",
+          "body": "<p>Diese Bedingungen unterliegen dem spanischen Recht. Für etwaige Streitigkeiten unterwerfen sich die Parteien den Gerichten am Wohnsitz des Nutzers oder, wenn der Nutzer kein Verbraucher ist, denen von Madrid.</p>"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "intro": "<p>Diese Seite beschreibt, welche Cookies und Speichermechanismen tanukibox.com verwendet.</p>",
+      "sections": {
+        "what": {
+          "title": "1. Was Cookies sind",
+          "body": "<p>Cookies sind kleine Dateien, die eine Website auf Ihrem Gerät speichert, um Informationen zwischen den Besuchen zu speichern (Einstellungen, Sitzung usw.). Tanukibox verwendet das absolute Minimum.</p>"
+        },
+        "used": {
+          "title": "2. Verwendete Cookies",
+          "body": "<ul><li><strong><code>tanukibox_lang</code></strong> — technisches Präferenz-Cookie. Speichert die gewählte Sprache, damit wir nicht bei jedem Besuch danach fragen. Läuft nach 1 Jahr ab. Identifiziert den Nutzer nicht.</li></ul><p>Wir verwenden derzeit keine Tracking- oder Werbe-Cookies.</p>"
+        },
+        "thirdParty": {
+          "title": "3. Cookies von Dritten",
+          "body": "<p>Tanukibox lädt derzeit keine Drittanbieter-Skripte, die Cookies installieren. Wenn wir in Zukunft Dienste wie Google AdSense oder ein Analysetool einbinden, wird dieser Abschnitt aktualisiert und Ihre Einwilligung über ein Banner eingeholt.</p>"
+        },
+        "manage": {
+          "title": "4. Wie man Cookies verwaltet",
+          "body": "<p>Sie können Cookies in den Einstellungen Ihres Browsers löschen oder blockieren. Wenn Sie <code>tanukibox_lang</code> blockieren, wird die Seite funktionieren, sich aber Ihre Spracheinstellung nicht merken.</p>"
+        },
+        "changes": {
+          "title": "5. Änderungen dieser Richtlinie",
+          "body": "<p>Wenn wir neue Cookies oder Drittanbieterdienste hinzufügen, aktualisieren wir diese Seite und das Datum im Kopfbereich.</p>"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "languageSwitcher": "Språkväljare"
+  },
+  "landing": {
+    "title": "Verktyg som körs i din webbläsare",
+    "description": "En samling serverlösa webbverktyg. Dina filer lämnar aldrig din enhet.",
+    "categories": {
+      "imageEdit": "Bildredigering",
+      "documents": "Dokument",
+      "privacy": "Integritet",
+      "generators": "Generatorer",
+      "dev": "Utveckling",
+      "design": "Design",
+      "converters": "Konverterare"
+    }
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Ändra storlek på bilder",
+      "description": "Krymp pixelstorleken på dina bilder direkt i webbläsaren. Inga uppladdningar, ingen server."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "Redigera EXIF-metadata",
+      "description": "Läs, redigera eller ta bort EXIF-metadata från dina JPEG-foton. Allt i din webbläsare."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Skapa starka lösenord",
+      "description": "Skapa slumpmässiga lösenord med webbläsarens kryptografi. De lämnar aldrig din enhet."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Beräkna hashar och verifiera integritet",
+      "description": "SHA-1, SHA-256, SHA-384 och SHA-512 av text eller filer. Jämför med en förväntad hash för att verifiera nedladdningar."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Skapa unika identifierare",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID och NanoID. Kryptografiskt säker generering i din webbläsare."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Slå ihop flera PDF-filer till en",
+      "description": "Kombinera flera PDF-filer till en enda, i valfri ordning. Allt bearbetas i din webbläsare."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Räkna ord och tecken",
+      "description": "Analysera text eller en textfil: ord, tecken, rader, stycken och uppskattad lästid."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "Extrahera sidor från en PDF",
+      "description": "Välj sidor eller intervall från en PDF och ladda ner dem som en ny fil. Allt i din webbläsare."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Kombinera fält till varianter (e-post, användarnamn…)",
+      "description": "Skapa kombinationer av flera fält med konfigurerbar avgränsare och suffix. Praktiskt för e-postlistor, användarnamn, slugs eller ID:n."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Konvertera mellan CSV och JSON",
+      "description": "Klistra in CSV eller JSON och få det andra formatet direkt. Identifierar avgränsare och format automatiskt. Allt i din webbläsare."
+    },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Skapa Lorem ipsum-text",
+      "description": "Platshållartext i stycken, meningar eller ord. Möjlighet att börja med klassiska \"Lorem ipsum dolor sit amet…\" och få utdata som vanlig text eller HTML."
+    },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Testa regex och ersätt text",
+      "description": "Bygg ett reguljärt uttryck, se träffarna markerade och tillämpa en ersättning (stöder $1, $2…). Allt i din webbläsare."
+    },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "Konvertera mellan YAML och JSON",
+      "description": "Klistra in YAML eller JSON och få det andra formatet direkt. Identifierar formatet automatiskt och visar fel med rad och kolumn. Allt i din webbläsare."
+    },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "CSS-gradientgenerator",
+      "description": "Bygg linjära, radiella och koniska gradienter med flera stopp, se en livförhandsgranskning och kopiera CSS-koden."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "box-shadow-generator",
+      "description": "Skuggor med offset, oskärpa, spridning, färg, alfa och inset. Flera lager med livförhandsgranskning."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Färgväljare, palett och WCAG-kontrast",
+      "description": "Välj en färg, konvertera mellan HEX/RGB/HSL, skapa en palett och mät WCAG-kontrast mot vitt och svart."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "CSS-enhetskonverterare",
+      "description": "Konvertera mellan px, rem, em, pt och % med en konfigurerbar basstorlek. Att redigera en enhet räknar om resten."
+    },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Konvertera tidsstämplar och datum",
+      "description": "Redigera valfritt format (UNIX sekunder/ms, ISO 8601 UTC/lokal, RFC 2822) så uppdateras de andra. Visar veckodag, relativ tid och tidszon."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Konvertera mellan talsystem",
+      "description": "Konvertera mellan binärt, oktalt, decimalt och hexadecimalt. Stöder heltal av valfri storlek (BigInt)."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "Formatera och validera JSON",
+      "description": "Klistra in JSON, validera och snyggformatera med önskat indrag. Minifiera, sortera nycklar och se statistik. Allt i din webbläsare."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Typ",
+      "linear": "Linjär",
+      "radial": "Radiell",
+      "conic": "Konisk"
+    },
+    "angle": "Vinkel",
+    "shape": {
+      "label": "Form",
+      "circle": "Cirkel",
+      "ellipse": "Ellips"
+    },
+    "position": {
+      "label": "Position"
+    },
+    "stops": {
+      "title": "Stopp",
+      "add": "Lägg till stopp"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Kopiera",
+      "copied": "Kopierat!"
+    }
+  },
+  "shadowy": {
+    "title": "Skuggor",
+    "layer": "Lager {n}",
+    "offsetX": "Offset X",
+    "offsetY": "Offset Y",
+    "blur": "Oskärpa",
+    "spread": "Spridning",
+    "color": "Färg",
+    "alpha": "Opacitet",
+    "inset": "Inset",
+    "css": "CSS",
+    "actions": {
+      "add": "Lägg till skugga",
+      "remove": "Ta bort skugga",
+      "copy": "Kopiera",
+      "copied": "Kopierat!"
+    }
+  },
+  "colory": {
+    "palette": "Palett",
+    "contrast": {
+      "label": "WCAG-kontrast",
+      "sample": "Aa",
+      "withWhite": "på vitt",
+      "withBlack": "på svart",
+      "normal": "Normal text",
+      "large": "Stor text"
+    },
+    "actions": {
+      "copy": "Kopiera",
+      "copied": "Kopierat!"
+    }
+  },
+  "timely": {
+    "formats": "Format",
+    "fmt": {
+      "unixS": "UNIX (sekunder)",
+      "unixMs": "UNIX (millisekunder)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 lokal",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Veckodag",
+      "relative": "Relativ",
+      "tz": "Din tidszon"
+    },
+    "actions": {
+      "now": "Nu",
+      "copy": "Kopiera",
+      "copied": "Kopierat!"
+    },
+    "errors": {
+      "invalid": "Ogiltigt format."
+    }
+  },
+  "basey": {
+    "title": "Talsystem",
+    "bases": {
+      "bin": "Binärt",
+      "oct": "Oktalt",
+      "dec": "Decimalt",
+      "hex": "Hexadecimalt"
+    },
+    "customLabel": "Bas {radix}",
+    "placeholders": {
+      "bin": "t.ex. 101010",
+      "oct": "t.ex. 52",
+      "dec": "t.ex. 42",
+      "hex": "t.ex. 2A"
+    },
+    "addCustom": {
+      "title": "Lägg till en anpassad bas",
+      "label": "Radix",
+      "placeholder": "2–36",
+      "hint": "Siffrorna går från 0-9 och sedan a-z. Till exempel använder bas 36 0-9 och a-z."
+    },
+    "actions": {
+      "clear": "Rensa",
+      "copy": "Kopiera",
+      "copied": "Kopierat!",
+      "addBase": "Lägg till",
+      "removeBase": "Ta bort bas"
+    },
+    "errors": {
+      "invalid": "Ogiltigt värde för {base}.",
+      "invalidRadix": "Radix måste vara ett heltal mellan 2 och 36."
+    }
+  },
+  "unity": {
+    "baseFont": "Basstorlek",
+    "baseHint": "1rem = bas. 1em = relativt till föräldern (antas här = bas). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "pixlar",
+      "rem": "root em",
+      "em": "relativ em",
+      "pt": "punkter",
+      "percent": "procent"
+    },
+    "actions": {
+      "copy": "Kopiera",
+      "copied": "Kopierat!"
+    }
+  },
+  "yamljson": {
+    "input": "Indata",
+    "output": "Utdata",
+    "inputPlaceholder": "Klistra in YAML eller JSON här…",
+    "outputPlaceholder": "Resultatet visas här.",
+    "indent": "Indrag",
+    "direction": {
+      "label": "Riktning",
+      "auto": "Automatisk",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "Identifierad",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "Okänd"
+    },
+    "actions": {
+      "example": "Exempel",
+      "clear": "Rensa",
+      "copy": "Kopiera",
+      "copied": "Kopierat!",
+      "download": "Ladda ner",
+      "useAsInput": "Använd som indata"
+    },
+    "errors": {
+      "unknownInput": "Kunde inte identifiera formatet. Välj riktningen manuellt.",
+      "invalidYaml": "Ogiltig YAML",
+      "invalidJson": "Ogiltig JSON",
+      "atLine": "rad {line}, kolumn {col}"
+    }
+  },
+  "regexpad": {
+    "pattern": "Mönster",
+    "patternPlaceholder": "t.ex. \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Ersättning",
+    "replacementPlaceholder": "Ersättningstext (använd $1, $2… för grupper)",
+    "replacementHint": "Använd $& för hela träffen, $1, $2… för fångstgrupper.",
+    "source": "Källtext",
+    "sourcePlaceholder": "Klistra in texten du vill söka i här…",
+    "preview": "Markerade träffar",
+    "previewEmpty": "Skriv lite text ovan för att se träffar.",
+    "output": "Ersättningsresultat",
+    "outputPlaceholder": "Texten med ersättningen tillämpad visas här.",
+    "flags": {
+      "label": "Flaggor",
+      "g": "global",
+      "i": "ignorera versaler",
+      "m": "flerradigt",
+      "s": "punkten matchar radbrytningar",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Väntar på mönster…",
+      "count": "{n} träffar",
+      "none": "Inga träffar"
+    },
+    "actions": {
+      "example": "Exempel",
+      "clear": "Rensa",
+      "copy": "Kopiera",
+      "copied": "Kopierat!",
+      "download": "Ladda ner"
+    },
+    "errors": {
+      "invalidRegex": "Ogiltigt regex"
+    }
+  },
+  "lorempad": {
+    "output": "Utdata",
+    "count": "Antal",
+    "wordsPerSentence": "Ord per mening",
+    "wordsPerParagraph": "Ord per stycke",
+    "wordsHint": "0 = slumpmässigt. Minst 3 om fast.",
+    "classic": "Börja med \"Lorem ipsum dolor sit amet…\"",
+    "mode": {
+      "label": "Läge",
+      "paragraphs": "Stycken",
+      "sentences": "Meningar",
+      "words": "Ord"
+    },
+    "format": {
+      "label": "Format",
+      "plain": "Vanlig text",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Generera igen",
+      "copy": "Kopiera",
+      "copied": "Kopierat!",
+      "download": "Ladda ner"
+    }
+  },
+  "jsonpad": {
+    "editor": "Redigerare",
+    "placeholder": "Klistra in din JSON här…",
+    "indent": "Indrag (mellanslag)",
+    "actions": {
+      "format": "Formatera",
+      "minify": "Minifiera",
+      "sortKeys": "Sortera nycklar",
+      "example": "Exempel",
+      "clear": "Rensa",
+      "copy": "Kopiera",
+      "copied": "Kopierat!",
+      "download": "Ladda ner"
+    },
+    "status": {
+      "empty": "Väntar på JSON…",
+      "valid": "Giltig JSON",
+      "error": "Ogiltig JSON",
+      "errorAt": "Fel på rad {line}, kolumn {col}"
+    },
+    "stats": {
+      "keys": "{n} nycklar",
+      "depth": "djup {n}",
+      "objects": "{n} objekt",
+      "arrays": "{n} arrayer"
+    }
+  },
+  "csvjson": {
+    "input": "Indata",
+    "output": "Utdata",
+    "inputPlaceholder": "Klistra in CSV eller JSON här…",
+    "outputPlaceholder": "Resultatet visas här.",
+    "hasHeader": "CSV har en rubrikrad",
+    "pretty": "Snyggformatera JSON",
+    "direction": {
+      "label": "Riktning",
+      "auto": "Automatisk",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Avgränsare",
+      "auto": "Automatisk",
+      "comma": "Komma (,)",
+      "semicolon": "Semikolon (;)",
+      "tab": "Tabb",
+      "pipe": "Lodstreck (|)"
+    },
+    "detected": {
+      "label": "Identifierad",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Okänd"
+    },
+    "actions": {
+      "example": "Exempel",
+      "clear": "Rensa",
+      "copy": "Kopiera",
+      "copied": "Kopierat!",
+      "download": "Ladda ner",
+      "useAsInput": "Använd som indata"
+    },
+    "errors": {
+      "unknownInput": "Kunde inte identifiera formatet. Välj riktningen manuellt.",
+      "invalidJson": "Ogiltig JSON: {msg}",
+      "notTabular": "JSON måste vara en array (eller ett objekt) för att konverteras till CSV.",
+      "mixedShape": "Arrayen blandar elementtyper. Den måste bestå enbart av objekt eller enbart av arrayer."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Fält",
+      "valuePlaceholder": "Värde",
+      "examples": "t.ex. Maria|t.ex. Andersson|t.ex. Acme|t.ex. 2024|t.ex. dev|t.ex. eu",
+      "add": "Lägg till fält",
+      "remove": "Ta bort fält",
+      "mode": {
+        "full": "Fullständigt",
+        "initial": "Initial",
+        "both": "Båda"
+      }
+    },
+    "options": {
+      "separator": "Avgränsare",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Prefix",
+      "prefixPlaceholder": "https://www. (valfritt)",
+      "suffix": "Suffix",
+      "suffixPlaceholder": "{'@'}example.com (valfritt)",
+      "permute": "Permutera fältordning",
+      "permuteHint": "När det är aktiverat genereras även kombinationer med fält i olika ordningar (last.first, etc.).",
+      "subsets": "Inkludera delmängder (kombinationer med färre fält)",
+      "subsetsHint": "När det är aktiverat genereras även varianter som bara använder några av de ifyllda fälten (bara förnamn, bara efternamn, förnamn+företag, etc.).",
+      "downloadOnly": "Endast nedladdning (visa inte listan)",
+      "downloadOnlyHint": "Användbart när det finns tusentals kombinationer och att rita listan saktar ner webbläsaren. Höjer taket till 100 000 resultat."
+    },
+    "results": {
+      "title": "Resultat ({count})",
+      "empty": "Fyll i minst ett fält för att generera kombinationer.",
+      "limited": "Visar de första {limit} av {total} kombinationer.",
+      "copyAll": "Kopiera alla",
+      "copied": "Kopierat!",
+      "download": "Ladda ner .txt",
+      "downloadHint": "Listan är dold för att inte sakta ner webbläsaren. Tryck på Ladda ner för att få en .txt med alla {count} kombinationer."
+    }
+  },
+  "scissor": {
+    "dropzone": "Dra en PDF hit eller klicka för att välja en",
+    "totalPages": "{n} sidor",
+    "rangesLabel": "Sidor att extrahera",
+    "rangesPlaceholder": "T.ex. 1-3, 5, 8-10",
+    "hint": "Separera med kommatecken. Använd bindestreck för intervall (1-5). Alla sidor är förvalda som standard.",
+    "preview": {
+      "pages": "Urval",
+      "count": "Totalt",
+      "none": "Inga"
+    },
+    "actions": {
+      "extract": "Extrahera och ladda ner",
+      "processing": "Extraherar…",
+      "change": "Byt PDF"
+    },
+    "errors": {
+      "notPdf": "{name} är inte en PDF.",
+      "invalidPdf": "{name} är inte en giltig PDF eller är skadad.",
+      "encrypted": "Den här PDF:en är lösenordsskyddad.",
+      "invalidTokens": "Kunde inte tolka: {tokens}.",
+      "outOfRange": "Utanför intervallet (max {max}): {tokens}.",
+      "generic": "Kunde inte extrahera sidorna."
+    }
+  },
+  "wordy": {
+    "modeText": "Text",
+    "modeFile": "Fil",
+    "textPlaceholder": "Klistra in eller skriv texten som ska analyseras…",
+    "dropzone": "Dra en textfil (.txt, .md, .csv…) eller klicka för att välja en",
+    "stats": {
+      "words": "Ord",
+      "charsWithSpaces": "Tecken (med mellanslag)",
+      "charsNoSpaces": "Tecken (utan mellanslag)",
+      "lines": "Rader",
+      "paragraphs": "Stycken",
+      "sentences": "Meningar",
+      "readingTime": "Lästid",
+      "minutes": "{n} min",
+      "minutesSeconds": "{m} min {s} s",
+      "seconds": "{n} s"
+    },
+    "actions": {
+      "clear": "Rensa"
+    },
+    "errors": {
+      "notText": "Endast vanliga textfiler (.txt, .md, .csv, etc.) stöds.",
+      "read": "Kunde inte läsa filen."
+    }
+  },
+  "stapler": {
+    "dropzone": "Dra PDF-filer hit eller klicka för att välja dem",
+    "list": {
+      "title": "{count} filer · {pages} sidor totalt",
+      "pages": "{n} sidor"
+    },
+    "actions": {
+      "merge": "Slå ihop PDF-filer",
+      "processing": "Slår ihop…",
+      "clear": "Ta bort alla",
+      "moveUp": "Flytta upp",
+      "moveDown": "Flytta ner",
+      "remove": "Ta bort"
+    },
+    "errors": {
+      "notPdf": "{name} är inte en PDF.",
+      "invalidPdf": "{name} är inte en giltig PDF eller är skadad.",
+      "encrypted": "{name} är lösenordsskyddad.",
+      "generic": "Kunde inte slå ihop PDF-filerna."
+    }
+  },
+  "createpass": {
+    "length": "Längd",
+    "count": "Hur många?",
+    "excludeSimilar": "Uteslut liknande (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Uteslut tvetydiga (parenteser, citattecken och liknande)",
+    "bits": "bitar",
+    "strength": {
+      "veryWeak": "Mycket svagt",
+      "weak": "Svagt",
+      "reasonable": "Rimligt",
+      "strong": "Starkt",
+      "veryStrong": "Mycket starkt"
+    },
+    "actions": {
+      "generate": "Generera",
+      "copy": "Kopiera",
+      "copied": "Kopierat!"
+    },
+    "errors": {
+      "noCharset": "Välj minst en teckentyp.",
+      "clipboard": "Kunde inte kopiera till urklipp."
+    }
+  },
+  "idkun": {
+    "format": "Format",
+    "count": "Hur många?",
+    "nanoidSize": "NanoID-längd",
+    "uppercase": "Versaler",
+    "hyphens": "Med bindestreck",
+    "formats": {
+      "uuidv4": "UUID v4 (slumpmässig)",
+      "uuidv7": "UUID v7 (tidsstämpel + slumpmässig)",
+      "uuidNil": "UUID NIL (alla nollor)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (URL-säker)"
+    },
+    "about": {
+      "uuidv4": "Den vanligaste standard-UUID:n. 122 slumpmässiga bitar. RFC 4122.",
+      "uuidv7": "Kombinerar tidsstämpel + slump. Lexikografiskt sorterbar. RFC 9562 (2024).",
+      "uuidNil": "Nil-UUID:n, bara nollor. Användbar som standard- eller sentinelvärde.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. 26 tecken i Crockford Base32.",
+      "nanoid": "Kort och populär URL-säker identifierare. Konfigurerbar storlek."
+    },
+    "actions": {
+      "generate": "Generera",
+      "copy": "Kopiera",
+      "copyAll": "Kopiera alla",
+      "copied": "Kopierat!"
+    },
+    "errors": {
+      "clipboard": "Kunde inte kopiera till urklipp."
+    }
+  },
+  "hashy": {
+    "modeText": "Text",
+    "modeFile": "Fil",
+    "textPlaceholder": "Klistra in eller skriv text att hasha…",
+    "dropzone": "Dra en fil hit eller klicka för att välja en",
+    "processing": "Beräknar…",
+    "actions": {
+      "copy": "Kopiera",
+      "copied": "Kopierat!"
+    },
+    "verify": {
+      "label": "Verifiera mot en förväntad hash",
+      "placeholder": "Klistra in hex-hashen (40, 64, 96 eller 128 tecken)…",
+      "unknownLength": "Okänd längd. Måste matcha SHA-1 (40), SHA-256 (64), SHA-384 (96) eller SHA-512 (128).",
+      "match": "Matchar {algo}.",
+      "mismatch": "{algo}-hashen matchar inte."
+    },
+    "errors": {
+      "clipboard": "Kunde inte kopiera till urklipp."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Dra en JPEG hit eller klicka för att välja en",
+    "tags": {
+      "title": "Identifierad metadata ({count})",
+      "hint": "Varje tagg visar sitt namn, IFD och typ. Redigera värdet, ta bort med × eller lägg till nya taggar.",
+      "empty": "Den här bilden har ingen EXIF-metadata.",
+      "add": "Lägg till tagg",
+      "confirmAdd": "Lägg till",
+      "remove": "Ta bort tagg",
+      "searchPlaceholder": "Sök tagg (namn eller IFD)…",
+      "modeStandard": "Standard",
+      "modeCustom": "Anpassad",
+      "custom": {
+        "note": "EXIF identifierar taggar med numeriskt ID. Andra läsare kan visa den här taggen som 'Unknown {id}'.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "Typ",
+        "name": "Namn (endast visning)",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "Ange ett ID.",
+        "invalidId": "ID måste vara ett heltal mellan 1 och 65535.",
+        "duplicate": "Den här taggen finns redan i bilden."
+      }
+    },
+    "actions": {
+      "strip": "Ta bort all metadata",
+      "apply": "Tillämpa och ladda ner",
+      "cancel": "Avbryt"
+    },
+    "errors": {
+      "notJpeg": "Endast JPEG-filer (.jpg / .jpeg) stöds.",
+      "invalidValue": "Ogiltigt värde för taggen {tag}."
+    }
+  },
+  "dropzone": {
+    "empty": "Dra en bild hit eller klicka för att välja en"
+  },
+  "controls": {
+    "width": "Bredd (px)",
+    "height": "Höjd (px)",
+    "keepRatio": "Behåll proportioner",
+    "format": "Format",
+    "quality": "Kvalitet"
+  },
+  "actions": {
+    "resize": "Ändra storlek",
+    "processing": "Bearbetar…",
+    "download": "Ladda ner"
+  },
+  "result": {
+    "title": "Resultat"
+  },
+  "errors": {
+    "notAnImage": "Den filen är inte en giltig bild."
+  },
+  "footer": {
+    "tagline": "Tanukibox · verktyg som körs i din webbläsare",
+    "legalLinks": "Juridiska länkar",
+    "privacy": "Integritet",
+    "terms": "Villkor",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "lastUpdated": "Senast uppdaterad: 15 maj 2026",
+    "privacy": {
+      "title": "Integritetspolicy",
+      "intro": "<p>På Tanukibox tror vi att dina filer är dina. Därför körs alla våra verktyg <strong>helt i din webbläsare</strong>: bilderna, PDF-filerna, texten eller vilken fil du än bearbetar lämnar aldrig din enhet.</p>",
+      "sections": {
+        "scope": {
+          "title": "1. Omfattning",
+          "body": "<p>Denna policy gäller för tanukibox.com och varje verktyg som finns under denna domän. Den beskriver vilken information som samlas in när du besöker webbplatsen och vad vi gör med den.</p>"
+        },
+        "data": {
+          "title": "2. Data vi samlar in",
+          "body": "<p>Vi har ingen server som tar emot dina filer. Verktygen (Mochi, Metaimg, Createpass, Hashy, etc.) bearbetar data direkt i din webbläsare med inbyggda API:er (Canvas, Web Crypto, etc.). Därför:</p><ul><li><strong>Vi samlar inte in</strong> filerna du bearbetar, deras innehåll eller resultaten.</li><li><strong>Det finns inga användarkonton</strong>, lösenord eller profiler.</li><li>Tanukibox-servern levererar bara webbplatsens statiska resurser (HTML, CSS, JS).</li></ul><p>Det enda som lagras beskrivs i Cookies-avsnittet.</p>"
+        },
+        "cookies": {
+          "title": "3. Cookies och lokal lagring",
+          "body": "<p>Vi använder en enda teknisk cookie som heter <code>tanukibox_lang</code> för att komma ihåg din språkinställning. Den identifierar inte användaren och delas inte med tredje part.</p><p>Mer detaljer i <a href='/cookies'>cookies-policyn</a>.</p>"
+        },
+        "tracking": {
+          "title": "4. Analys och annonsering",
+          "body": "<p>Vi använder för närvarande inte analys eller displayannonsering. Om vi i framtiden integrerar tjänster som Google AdSense eller en analystjänst kommer denna policy att uppdateras för att återspegla det och ditt samtycke kommer att begäras när lagen kräver det (GDPR/EU).</p>"
+        },
+        "gdpr": {
+          "title": "5. Dina rättigheter (GDPR)",
+          "body": "<p>Eftersom vi inte lagrar personligt identifierbar information på våra servrar gäller de flesta rättigheter enligt GDPR (åtkomst, rättelse, radering, dataportabilitet) inte, eftersom det inte finns några data att tillämpa dem på.</p><p>Du kan ändå utöva vilken rättighet som helst genom att kontakta oss på den adress som anges längst ner i denna policy.</p>"
+        },
+        "children": {
+          "title": "6. Barn",
+          "body": "<p>Webbplatsen riktar sig inte till barn under 14 år. Vi samlar inte medvetet in data om minderåriga.</p>"
+        },
+        "changes": {
+          "title": "7. Ändringar av denna policy",
+          "body": "<p>Vi kan uppdatera denna policy när vi lägger till nya funktioner eller av juridiska skäl. Datumet för den senaste uppdateringen visas i dokumentets sidhuvud.</p>"
+        },
+        "contact": {
+          "title": "8. Kontakt",
+          "body": "<p>För eventuella frågor om integritet: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
+        }
+      }
+    },
+    "terms": {
+      "title": "Användarvillkor",
+      "intro": "<p>Välkommen till Tanukibox. Genom att använda denna webbplats accepterar du villkoren som beskrivs nedan. Om du inte godkänner dem, vänligen använd inte tjänsten.</p>",
+      "sections": {
+        "acceptance": {
+          "title": "1. Godkännande",
+          "body": "<p>Åtkomst till och användning av tanukibox.com innebär ett fullständigt godkännande av dessa villkor. De kan uppdateras när som helst; fortsatt användning efter ändringarna innebär att de godkänns.</p>"
+        },
+        "service": {
+          "title": "2. Tjänstebeskrivning",
+          "body": "<p>Tanukibox tillhandahåller en uppsättning verktyg som körs helt i din webbläsare (lokal bearbetning). Tjänsten tillhandahålls <strong>gratis och \"i befintligt skick\"</strong>, utan garantier för tillgänglighet, noggrannhet eller lämplighet för ett visst ändamål.</p>"
+        },
+        "use": {
+          "title": "3. Tillåten användning",
+          "body": "<p>Du får använda verktygen för alla lagliga ändamål, personliga eller professionella. Du får inte:</p><ul><li>Försöka äventyra webbplatsens säkerhet eller tillgänglighet.</li><li>Använda tjänsten för att bearbeta olagligt innehåll.</li><li>Kopiera eller återdistribuera webbplatsens kod utan tillstånd.</li></ul>"
+        },
+        "responsibility": {
+          "title": "4. Användarens ansvar",
+          "body": "<p>Du ansvarar för att validera resultaten från varje verktyg innan du fattar beslut baserat på dem. Till exempel att manuellt verifiera en hash, kontrollera ett genererat lösenord i en pålitlig hanterare eller granska borttagen metadata innan du publicerar en bild.</p>"
+        },
+        "ip": {
+          "title": "5. Immateriella rättigheter",
+          "body": "<p>Namnet Tanukibox, logotypen och webbplatsens design tillhör dess upphovsperson. Källkoden kan vara tillgänglig under en öppen licens i dess offentliga repository; kontrollera repository för de exakta villkoren.</p>"
+        },
+        "liability": {
+          "title": "6. Ansvarsbegränsning",
+          "body": "<p>I den utsträckning som lagen tillåter ska Tanukibox inte vara ansvarig för direkta, indirekta, oavsiktliga eller följdriktiga skador som uppstår från användningen eller oförmågan att använda tjänsten, inklusive dataförlust.</p>"
+        },
+        "changes": {
+          "title": "7. Ändringar",
+          "body": "<p>Vi förbehåller oss rätten att när som helst ändra, avbryta eller upphöra med vilket verktyg som helst utan förvarning.</p>"
+        },
+        "jurisdiction": {
+          "title": "8. Tillämplig lag och jurisdiktion",
+          "body": "<p>Dessa villkor regleras av spansk lag. Vid tvister underkastar sig parterna domstolarna i användarens hemvist, eller i Madrid om användaren inte är konsument.</p>"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookies-policy",
+      "intro": "<p>Den här sidan beskriver vilka cookies och lagringsmekanismer tanukibox.com använder.</p>",
+      "sections": {
+        "what": {
+          "title": "1. Vad cookies är",
+          "body": "<p>Cookies är små filer som en webbplats lagrar på din enhet för att komma ihåg information mellan besök (inställningar, session, etc.). Tanukibox använder det absoluta minimum.</p>"
+        },
+        "used": {
+          "title": "2. Cookies vi använder",
+          "body": "<ul><li><strong><code>tanukibox_lang</code></strong> — teknisk cookie för inställningar. Lagrar det valda språket så att vi inte behöver fråga vid varje besök. Upphör efter 1 år. Identifierar inte användaren.</li></ul><p>Vi använder för närvarande inga spårnings- eller annonscookies.</p>"
+        },
+        "thirdParty": {
+          "title": "3. Cookies från tredje part",
+          "body": "<p>Tanukibox laddar för närvarande inte tredjepartsskript som installerar cookies. Om vi i framtiden integrerar tjänster som Google AdSense eller ett analysverktyg kommer detta avsnitt att uppdateras och ditt samtycke kommer att begäras via en banner.</p>"
+        },
+        "manage": {
+          "title": "4. Hur du hanterar cookies",
+          "body": "<p>Du kan radera eller blockera cookies från din webbläsares inställningar. Om du blockerar <code>tanukibox_lang</code> kommer webbplatsen att fungera men inte komma ihåg din språkinställning.</p>"
+        },
+        "changes": {
+          "title": "5. Ändringar av denna policy",
+          "body": "<p>Om vi lägger till nya cookies eller tredjepartstjänster kommer vi att uppdatera den här sidan och datumet i sidhuvudet.</p>"
+        }
+      }
+    }
+  }
+}

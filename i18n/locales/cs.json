@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "languageSwitcher": "Přepínač jazyka"
+  },
+  "landing": {
+    "title": "Nástroje, které běží ve vašem prohlížeči",
+    "description": "Sbírka bezserverových webových nástrojů. Vaše soubory nikdy neopustí vaše zařízení.",
+    "categories": {
+      "imageEdit": "Úpravy obrázků",
+      "documents": "Dokumenty",
+      "privacy": "Soukromí",
+      "generators": "Generátory",
+      "dev": "Vývoj",
+      "design": "Design",
+      "converters": "Převodníky"
+    }
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Změna velikosti obrázků",
+      "description": "Zmenšete velikost pixelů svých obrázků přímo v prohlížeči. Žádné nahrávání, žádný server."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "Úprava EXIF metadat",
+      "description": "Čtěte, upravujte nebo odstraňujte EXIF metadata ze svých JPEG fotografií. Vše ve vašem prohlížeči."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Generování silných hesel",
+      "description": "Vytvářejte náhodná hesla pomocí kryptografie prohlížeče. Nikdy neopustí vaše zařízení."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Výpočet hashů a ověření integrity",
+      "description": "SHA-1, SHA-256, SHA-384 a SHA-512 textu nebo souborů. Porovnejte s očekávaným hashem pro ověření stahování."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Generování jedinečných identifikátorů",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID a NanoID. Kryptograficky bezpečné generování ve vašem prohlížeči."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Sloučení více PDF do jednoho",
+      "description": "Spojte několik PDF souborů do jednoho v libovolném pořadí. Vše se zpracovává ve vašem prohlížeči."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Počítání slov a znaků",
+      "description": "Analyzujte text nebo textový soubor: slova, znaky, řádky, odstavce a odhadovaný čas čtení."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "Extrahování stránek z PDF",
+      "description": "Vyberte stránky nebo rozsahy z PDF a stáhněte je jako nový soubor. Vše ve vašem prohlížeči."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Kombinování polí do variant (e-maily, uživatelská jména…)",
+      "description": "Generujte kombinace více polí s nastavitelným oddělovačem a příponou. Užitečné pro seznamy e-mailů, uživatelská jména, slugy nebo ID."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Převod mezi CSV a JSON",
+      "description": "Vložte CSV nebo JSON a okamžitě získáte druhý formát. Automaticky detekuje oddělovač a formát. Vše ve vašem prohlížeči."
+    },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Generování Lorem ipsum textu",
+      "description": "Zástupný text v odstavcích, větách nebo slovech. Možnost začít klasickým \"Lorem ipsum dolor sit amet…\" a výstup jako prostý text nebo HTML."
+    },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Testování regexu a nahrazování textu",
+      "description": "Sestavte regulární výraz, uvidíte zvýrazněné shody a aplikujte nahrazení (podporuje $1, $2…). Vše ve vašem prohlížeči."
+    },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "Převod mezi YAML a JSON",
+      "description": "Vložte YAML nebo JSON a okamžitě získáte druhý formát. Automaticky detekuje formát a zobrazuje chyby s řádkem a sloupcem. Vše ve vašem prohlížeči."
+    },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "Generátor CSS přechodů",
+      "description": "Sestavte lineární, radiální a kónické přechody s více body, zobrazte živý náhled a zkopírujte CSS."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "Generátor box-shadow",
+      "description": "Stíny s posunem, rozmazáním, rozšířením, barvou, průhledností a inset. Více vrstev s živým náhledem."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Výběr barev, paleta a WCAG kontrast",
+      "description": "Vyberte barvu, převádějte mezi HEX/RGB/HSL, vygenerujte paletu a změřte WCAG kontrast proti bílé a černé."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "Převodník CSS jednotek",
+      "description": "Převádějte mezi px, rem, em, pt a % pomocí nastavitelné základní velikosti. Úprava libovolné jednotky přepočítá ostatní."
+    },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Převod časových razítek a dat",
+      "description": "Upravte libovolný formát (UNIX sekundy/ms, ISO 8601 UTC/místní, RFC 2822) a ostatní se aktualizují. Zobrazí den v týdnu, relativní čas a časové pásmo."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Převod mezi číselnými soustavami",
+      "description": "Převádějte mezi binární, oktalovou, desítkovou a šestnáctkovou soustavou. Podporuje celá čísla libovolné velikosti (BigInt)."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "Formátování a validace JSON",
+      "description": "Vložte JSON, ověřte jej a hezky vytiskněte s odsazením, které vám vyhovuje. Minifikujte, seřaďte klíče a zobrazte statistiky. Vše ve vašem prohlížeči."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Typ",
+      "linear": "Lineární",
+      "radial": "Radiální",
+      "conic": "Kónický"
+    },
+    "angle": "Úhel",
+    "shape": {
+      "label": "Tvar",
+      "circle": "Kruh",
+      "ellipse": "Elipsa"
+    },
+    "position": {
+      "label": "Pozice"
+    },
+    "stops": {
+      "title": "Body",
+      "add": "Přidat bod"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!"
+    }
+  },
+  "shadowy": {
+    "title": "Stíny",
+    "layer": "Vrstva {n}",
+    "offsetX": "Posun X",
+    "offsetY": "Posun Y",
+    "blur": "Rozmazání",
+    "spread": "Rozšíření",
+    "color": "Barva",
+    "alpha": "Průhlednost",
+    "inset": "Inset",
+    "css": "CSS",
+    "actions": {
+      "add": "Přidat stín",
+      "remove": "Odstranit stín",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!"
+    }
+  },
+  "colory": {
+    "palette": "Paleta",
+    "contrast": {
+      "label": "WCAG kontrast",
+      "sample": "Aa",
+      "withWhite": "na bílé",
+      "withBlack": "na černé",
+      "normal": "Normální text",
+      "large": "Velký text"
+    },
+    "actions": {
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!"
+    }
+  },
+  "timely": {
+    "formats": "Formáty",
+    "fmt": {
+      "unixS": "UNIX (sekundy)",
+      "unixMs": "UNIX (milisekundy)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 místní",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Den v týdnu",
+      "relative": "Relativní",
+      "tz": "Vaše časové pásmo"
+    },
+    "actions": {
+      "now": "Nyní",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!"
+    },
+    "errors": {
+      "invalid": "Neplatný formát."
+    }
+  },
+  "basey": {
+    "title": "Číselné soustavy",
+    "bases": {
+      "bin": "Binární",
+      "oct": "Oktalová",
+      "dec": "Desítková",
+      "hex": "Šestnáctková"
+    },
+    "customLabel": "Soustava {radix}",
+    "placeholders": {
+      "bin": "např. 101010",
+      "oct": "např. 52",
+      "dec": "např. 42",
+      "hex": "např. 2A"
+    },
+    "addCustom": {
+      "title": "Přidat vlastní soustavu",
+      "label": "Základ",
+      "placeholder": "2–36",
+      "hint": "Číslice jdou 0-9, pak a-z. Například soustava 36 používá 0-9 a a-z."
+    },
+    "actions": {
+      "clear": "Vymazat",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!",
+      "addBase": "Přidat",
+      "removeBase": "Odstranit soustavu"
+    },
+    "errors": {
+      "invalid": "Neplatná hodnota pro {base}.",
+      "invalidRadix": "Základ musí být celé číslo mezi 2 a 36."
+    }
+  },
+  "unity": {
+    "baseFont": "Základní velikost",
+    "baseHint": "1rem = základ. 1em = relativně k rodiči (zde předpokládáme = základ). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "pixely",
+      "rem": "root em",
+      "em": "relativní em",
+      "pt": "body",
+      "percent": "procenta"
+    },
+    "actions": {
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!"
+    }
+  },
+  "yamljson": {
+    "input": "Vstup",
+    "output": "Výstup",
+    "inputPlaceholder": "Vložte sem YAML nebo JSON…",
+    "outputPlaceholder": "Výsledek se zobrazí zde.",
+    "indent": "Odsazení",
+    "direction": {
+      "label": "Směr",
+      "auto": "Automaticky",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "Detekováno",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "Neznámý"
+    },
+    "actions": {
+      "example": "Příklad",
+      "clear": "Vymazat",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!",
+      "download": "Stáhnout",
+      "useAsInput": "Použít jako vstup"
+    },
+    "errors": {
+      "unknownInput": "Formát nebylo možné detekovat. Vyberte směr ručně.",
+      "invalidYaml": "Neplatný YAML",
+      "invalidJson": "Neplatný JSON",
+      "atLine": "řádek {line}, sloupec {col}"
+    }
+  },
+  "regexpad": {
+    "pattern": "Vzor",
+    "patternPlaceholder": "např. \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Nahrazení",
+    "replacementPlaceholder": "Text nahrazení (použijte $1, $2… pro skupiny)",
+    "replacementHint": "Použijte $& pro celou shodu, $1, $2… pro zachycené skupiny.",
+    "source": "Zdrojový text",
+    "sourcePlaceholder": "Vložte sem text, který chcete prohledávat…",
+    "preview": "Zvýrazněné shody",
+    "previewEmpty": "Napište text výše pro zobrazení shod.",
+    "output": "Výsledek nahrazení",
+    "outputPlaceholder": "Text s aplikovaným nahrazením se zobrazí zde.",
+    "flags": {
+      "label": "Flagy",
+      "g": "globální",
+      "i": "bez ohledu na velikost písmen",
+      "m": "víceřádkový",
+      "s": "tečka odpovídá novým řádkům",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Čekání na vzor…",
+      "count": "{n} shod",
+      "none": "Žádné shody"
+    },
+    "actions": {
+      "example": "Příklad",
+      "clear": "Vymazat",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!",
+      "download": "Stáhnout"
+    },
+    "errors": {
+      "invalidRegex": "Neplatný regex"
+    }
+  },
+  "lorempad": {
+    "output": "Výstup",
+    "count": "Množství",
+    "wordsPerSentence": "Slov na větu",
+    "wordsPerParagraph": "Slov na odstavec",
+    "wordsHint": "0 = náhodně. Minimum 3 při pevné hodnotě.",
+    "classic": "Začít s \"Lorem ipsum dolor sit amet…\"",
+    "mode": {
+      "label": "Režim",
+      "paragraphs": "Odstavce",
+      "sentences": "Věty",
+      "words": "Slova"
+    },
+    "format": {
+      "label": "Formát",
+      "plain": "Prostý text",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Regenerovat",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!",
+      "download": "Stáhnout"
+    }
+  },
+  "jsonpad": {
+    "editor": "Editor",
+    "placeholder": "Vložte sem svůj JSON…",
+    "indent": "Odsazení (mezery)",
+    "actions": {
+      "format": "Formátovat",
+      "minify": "Minifikovat",
+      "sortKeys": "Seřadit klíče",
+      "example": "Příklad",
+      "clear": "Vymazat",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!",
+      "download": "Stáhnout"
+    },
+    "status": {
+      "empty": "Čekání na JSON…",
+      "valid": "Platný JSON",
+      "error": "Neplatný JSON",
+      "errorAt": "Chyba na řádku {line}, sloupec {col}"
+    },
+    "stats": {
+      "keys": "{n} klíčů",
+      "depth": "hloubka {n}",
+      "objects": "{n} objektů",
+      "arrays": "{n} polí"
+    }
+  },
+  "csvjson": {
+    "input": "Vstup",
+    "output": "Výstup",
+    "inputPlaceholder": "Vložte sem CSV nebo JSON…",
+    "outputPlaceholder": "Výsledek se zobrazí zde.",
+    "hasHeader": "CSV má řádek záhlaví",
+    "pretty": "Hezké formátování JSON",
+    "direction": {
+      "label": "Směr",
+      "auto": "Automaticky",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Oddělovač",
+      "auto": "Automaticky",
+      "comma": "Čárka (,)",
+      "semicolon": "Středník (;)",
+      "tab": "Tabulátor",
+      "pipe": "Roura (|)"
+    },
+    "detected": {
+      "label": "Detekováno",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Neznámý"
+    },
+    "actions": {
+      "example": "Příklad",
+      "clear": "Vymazat",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!",
+      "download": "Stáhnout",
+      "useAsInput": "Použít jako vstup"
+    },
+    "errors": {
+      "unknownInput": "Formát nebylo možné detekovat. Vyberte směr ručně.",
+      "invalidJson": "Neplatný JSON: {msg}",
+      "notTabular": "JSON musí být pole (nebo objekt) pro převod na CSV.",
+      "mixedShape": "Pole mísí typy prvků. Musí být všechny objekty nebo všechna pole."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Pole",
+      "valuePlaceholder": "Hodnota",
+      "examples": "např. Maria|např. Perez|např. Acme|např. 2024|např. dev|např. eu",
+      "add": "Přidat pole",
+      "remove": "Odstranit pole",
+      "mode": {
+        "full": "Plné",
+        "initial": "Iniciála",
+        "both": "Obojí"
+      }
+    },
+    "options": {
+      "separator": "Oddělovač",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Předpona",
+      "prefixPlaceholder": "https://www. (volitelné)",
+      "suffix": "Přípona",
+      "suffixPlaceholder": "{'@'}example.com (volitelné)",
+      "permute": "Permutovat pořadí polí",
+      "permuteHint": "Pokud je povoleno, generuje také kombinace s poli v různém pořadí (last.first atd.).",
+      "subsets": "Zahrnout podmnožiny (kombinace používající méně polí)",
+      "subsetsHint": "Pokud je povoleno, generuje také varianty používající pouze některá z vyplněných polí (pouze jméno, pouze příjmení, jméno+společnost atd.).",
+      "downloadOnly": "Pouze stažení (nevykreslovat seznam)",
+      "downloadOnlyHint": "Užitečné, když je tisíce kombinací a vykreslování seznamu zpomaluje prohlížeč. Zvyšuje limit na 100 000 výsledků."
+    },
+    "results": {
+      "title": "Výsledky ({count})",
+      "empty": "Vyplňte alespoň jedno pole pro generování kombinací.",
+      "limited": "Zobrazuje se prvních {limit} z {total} kombinací.",
+      "copyAll": "Kopírovat vše",
+      "copied": "Zkopírováno!",
+      "download": "Stáhnout .txt",
+      "downloadHint": "Seznam skryt, aby se nezpomalil prohlížeč. Stiskněte Stáhnout pro získání .txt se všemi {count} kombinacemi."
+    }
+  },
+  "scissor": {
+    "dropzone": "Přetáhněte sem PDF nebo klikněte pro výběr",
+    "totalPages": "{n} stránek",
+    "rangesLabel": "Stránky k extrahování",
+    "rangesPlaceholder": "Např. 1-3, 5, 8-10",
+    "hint": "Oddělte čárkami. Pro rozsahy použijte pomlčky (1-5). Ve výchozím nastavení jsou všechny stránky předvybrány.",
+    "preview": {
+      "pages": "Výběr",
+      "count": "Celkem",
+      "none": "Žádné"
+    },
+    "actions": {
+      "extract": "Extrahovat a stáhnout",
+      "processing": "Extrahování…",
+      "change": "Změnit PDF"
+    },
+    "errors": {
+      "notPdf": "{name} není PDF.",
+      "invalidPdf": "{name} není platný PDF nebo je poškozen.",
+      "encrypted": "Tento PDF je chráněn heslem.",
+      "invalidTokens": "Nelze zpracovat: {tokens}.",
+      "outOfRange": "Mimo rozsah (max {max}): {tokens}.",
+      "generic": "Nelze extrahovat stránky."
+    }
+  },
+  "wordy": {
+    "modeText": "Text",
+    "modeFile": "Soubor",
+    "textPlaceholder": "Vložte nebo napište text k analýze…",
+    "dropzone": "Přetáhněte textový soubor (.txt, .md, .csv…) nebo klikněte pro výběr",
+    "stats": {
+      "words": "Slova",
+      "charsWithSpaces": "Znaky (s mezerami)",
+      "charsNoSpaces": "Znaky (bez mezer)",
+      "lines": "Řádky",
+      "paragraphs": "Odstavce",
+      "sentences": "Věty",
+      "readingTime": "Čas čtení",
+      "minutes": "{n} min",
+      "minutesSeconds": "{m} min {s} s",
+      "seconds": "{n} s"
+    },
+    "actions": {
+      "clear": "Vymazat"
+    },
+    "errors": {
+      "notText": "Podporovány jsou pouze soubory s prostým textem (.txt, .md, .csv atd.).",
+      "read": "Nelze přečíst soubor."
+    }
+  },
+  "stapler": {
+    "dropzone": "Přetáhněte sem PDF nebo klikněte pro výběr",
+    "list": {
+      "title": "{count} souborů · {pages} stránek celkem",
+      "pages": "{n} stránek"
+    },
+    "actions": {
+      "merge": "Sloučit PDF",
+      "processing": "Slučování…",
+      "clear": "Odstranit vše",
+      "moveUp": "Posunout nahoru",
+      "moveDown": "Posunout dolů",
+      "remove": "Odstranit"
+    },
+    "errors": {
+      "notPdf": "{name} není PDF.",
+      "invalidPdf": "{name} není platný PDF nebo je poškozen.",
+      "encrypted": "{name} je chráněn heslem.",
+      "generic": "Nelze sloučit PDF."
+    }
+  },
+  "createpass": {
+    "length": "Délka",
+    "count": "Kolik?",
+    "excludeSimilar": "Vyloučit podobné (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Vyloučit nejednoznačné (závorky, uvozovky apod.)",
+    "bits": "bitů",
+    "strength": {
+      "veryWeak": "Velmi slabé",
+      "weak": "Slabé",
+      "reasonable": "Přijatelné",
+      "strong": "Silné",
+      "veryStrong": "Velmi silné"
+    },
+    "actions": {
+      "generate": "Generovat",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!"
+    },
+    "errors": {
+      "noCharset": "Vyberte alespoň jeden typ znaků.",
+      "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "idkun": {
+    "format": "Formát",
+    "count": "Kolik?",
+    "nanoidSize": "Délka NanoID",
+    "uppercase": "Velká písmena",
+    "hyphens": "Se spojovníky",
+    "formats": {
+      "uuidv4": "UUID v4 (náhodný)",
+      "uuidv7": "UUID v7 (časové razítko + náhoda)",
+      "uuidNil": "UUID NIL (samé nuly)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (URL-safe)"
+    },
+    "about": {
+      "uuidv4": "Nejběžnější standardní UUID. 122 náhodných bitů. RFC 4122.",
+      "uuidv7": "Kombinuje časové razítko + náhodu. Lexikograficky řaditelné. RFC 9562 (2024).",
+      "uuidNil": "Nulové UUID, samé nuly. Užitečné jako výchozí nebo sentinel hodnota.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. 26 znaků v Crockford Base32.",
+      "nanoid": "Krátký a populární URL-safe identifikátor. Konfigurovatelná velikost."
+    },
+    "actions": {
+      "generate": "Generovat",
+      "copy": "Kopírovat",
+      "copyAll": "Kopírovat vše",
+      "copied": "Zkopírováno!"
+    },
+    "errors": {
+      "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "hashy": {
+    "modeText": "Text",
+    "modeFile": "Soubor",
+    "textPlaceholder": "Vložte nebo napište text k hashování…",
+    "dropzone": "Přetáhněte sem soubor nebo klikněte pro výběr",
+    "processing": "Počítání…",
+    "actions": {
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!"
+    },
+    "verify": {
+      "label": "Ověřit proti očekávanému hashi",
+      "placeholder": "Vložte hex hash (40, 64, 96 nebo 128 znaků)…",
+      "unknownLength": "Nerozpoznaná délka. Musí odpovídat SHA-1 (40), SHA-256 (64), SHA-384 (96) nebo SHA-512 (128).",
+      "match": "Odpovídá {algo}.",
+      "mismatch": "Hash {algo} neodpovídá."
+    },
+    "errors": {
+      "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Přetáhněte sem JPEG nebo klikněte pro výběr",
+    "tags": {
+      "title": "Detekovaná metadata ({count})",
+      "hint": "Každý tag zobrazuje svůj název, IFD a typ. Upravte hodnotu, odstraňte pomocí × nebo přidejte nové tagy.",
+      "empty": "Tento obrázek nemá žádná EXIF metadata.",
+      "add": "Přidat tag",
+      "confirmAdd": "Přidat",
+      "remove": "Odstranit tag",
+      "searchPlaceholder": "Hledat tag (název nebo IFD)…",
+      "modeStandard": "Standardní",
+      "modeCustom": "Vlastní",
+      "custom": {
+        "note": "EXIF identifikuje tagy pomocí číselného ID. Jiné čtečky mohou zobrazit tento tag jako 'Unknown {id}'.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "Typ",
+        "name": "Název (pouze zobrazení)",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "Zadejte ID.",
+        "invalidId": "ID musí být celé číslo mezi 1 a 65535.",
+        "duplicate": "Tento tag již v obrázku existuje."
+      }
+    },
+    "actions": {
+      "strip": "Odstranit všechna metadata",
+      "apply": "Použít a stáhnout",
+      "cancel": "Zrušit"
+    },
+    "errors": {
+      "notJpeg": "Podporovány jsou pouze JPEG soubory (.jpg / .jpeg).",
+      "invalidValue": "Neplatná hodnota pro tag {tag}."
+    }
+  },
+  "dropzone": {
+    "empty": "Přetáhněte sem obrázek nebo klikněte pro výběr"
+  },
+  "controls": {
+    "width": "Šířka (px)",
+    "height": "Výška (px)",
+    "keepRatio": "Zachovat poměr stran",
+    "format": "Formát",
+    "quality": "Kvalita"
+  },
+  "actions": {
+    "resize": "Změnit velikost",
+    "processing": "Zpracovávám…",
+    "download": "Stáhnout"
+  },
+  "result": {
+    "title": "Výsledek"
+  },
+  "errors": {
+    "notAnImage": "Tento soubor není platný obrázek."
+  },
+  "footer": {
+    "tagline": "Tanukibox · nástroje, které běží ve vašem prohlížeči",
+    "legalLinks": "Právní odkazy",
+    "privacy": "Soukromí",
+    "terms": "Podmínky",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "lastUpdated": "Naposledy aktualizováno: 15. května 2026",
+    "privacy": {
+      "title": "Zásady ochrany osobních údajů",
+      "intro": "<p>V Tanukibox věříme, že vaše soubory patří vám. Proto všechny naše nástroje běží <strong>plně ve vašem prohlížeči</strong>: obrázky, PDF, text nebo jakýkoli soubor, který zpracováváte, nikdy neopustí vaše zařízení.</p>",
+      "sections": {
+        "scope": {
+          "title": "1. Rozsah",
+          "body": "<p>Tyto zásady platí pro tanukibox.com a každý nástroj hostovaný pod touto doménou. Popisují, jaké informace jsou shromažďovány, když navštívíte web, a co s nimi děláme.</p>"
+        },
+        "data": {
+          "title": "2. Údaje, které shromažďujeme",
+          "body": "<p>Nemáme server, který přijímá vaše soubory. Nástroje (Mochi, Metaimg, Createpass, Hashy atd.) zpracovávají data přímo ve vašem prohlížeči pomocí nativních API (Canvas, Web Crypto atd.). Proto:</p><ul><li><strong>Neshromažďujeme</strong> soubory, které zpracováváte, jejich obsah ani výsledky.</li><li><strong>Neexistují uživatelské účty</strong>, hesla ani profily.</li><li>Server Tanukibox doručuje pouze statické soubory webu (HTML, CSS, JS).</li></ul><p>Jediné, co se ukládá, je popsáno v sekci Cookies.</p>"
+        },
+        "cookies": {
+          "title": "3. Cookies a místní úložiště",
+          "body": "<p>Používáme jedinou technickou cookie s názvem <code>tanukibox_lang</code> pro zapamatování vašeho jazykového nastavení. Neidentifikuje uživatele a není sdílena s třetími stranami.</p><p>Více podrobností v <a href='/cookies'>zásadách cookies</a>.</p>"
+        },
+        "tracking": {
+          "title": "4. Analytika a reklama",
+          "body": "<p>Momentálně nepoužíváme analytické ani reklamní služby. Pokud v budoucnu integrujeme služby jako Google AdSense nebo poskytovatele analytiky, tyto zásady budou aktualizovány, aby to odrážely, a váš souhlas bude požadován, pokud to vyžaduje zákon (GDPR/EU).</p>"
+        },
+        "gdpr": {
+          "title": "5. Vaše práva (GDPR)",
+          "body": "<p>Vzhledem k tomu, že na našich serverech neukládáme osobně identifikovatelné informace, většina práv GDPR (přístup, oprava, výmaz, přenositelnost) se nevztahuje, protože neexistují žádné údaje, na které by se vztahovaly.</p><p>Přesto můžete uplatnit jakékoli právo tím, že nás kontaktujete na adrese uvedené na konci těchto zásad.</p>"
+        },
+        "children": {
+          "title": "6. Děti",
+          "body": "<p>Web není určen dětem mladším 14 let. Vědomě neshromažďujeme údaje o nezletilých.</p>"
+        },
+        "changes": {
+          "title": "7. Změny těchto zásad",
+          "body": "<p>Tyto zásady můžeme aktualizovat, když přidáme nové funkce nebo z právních důvodů. Datum poslední aktualizace je uvedeno v záhlaví dokumentu.</p>"
+        },
+        "contact": {
+          "title": "8. Kontakt",
+          "body": "<p>Pro jakékoli dotazy týkající se soukromí: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
+        }
+      }
+    },
+    "terms": {
+      "title": "Podmínky použití",
+      "intro": "<p>Vítejte v Tanukibox. Používáním tohoto webu přijímáte níže popsané podmínky. Pokud nesouhlasíte, službu prosím nepoužívejte.</p>",
+      "sections": {
+        "acceptance": {
+          "title": "1. Přijetí",
+          "body": "<p>Přístup a používání tanukibox.com znamená plné přijetí těchto podmínek. Mohou být kdykoli aktualizovány; pokračující používání po změnách znamená jejich přijetí.</p>"
+        },
+        "service": {
+          "title": "2. Popis služby",
+          "body": "<p>Tanukibox poskytuje sadu nástrojů, které běží plně ve vašem prohlížeči (místní zpracování). Služba je poskytována <strong>zdarma a \"tak jak je\"</strong>, bez záruk dostupnosti, přesnosti nebo vhodnosti pro konkrétní účel.</p>"
+        },
+        "use": {
+          "title": "3. Povolené použití",
+          "body": "<p>Nástroje můžete používat k jakémukoli zákonnému účelu, osobnímu nebo profesionálnímu. Nesmíte:</p><ul><li>Pokoušet se ohrozit bezpečnost nebo dostupnost webu.</li><li>Používat službu ke zpracování nelegálního obsahu.</li><li>Kopírovat nebo redistribuovat kód webu bez povolení.</li></ul>"
+        },
+        "responsibility": {
+          "title": "4. Odpovědnost uživatele",
+          "body": "<p>Jste odpovědní za ověření výsledků každého nástroje před tím, než na jejich základě učiníte rozhodnutí. Například ručně ověřit hash, zkontrolovat vygenerované heslo v důvěryhodném správci nebo zkontrolovat odstraněná metadata před publikováním obrázku.</p>"
+        },
+        "ip": {
+          "title": "5. Duševní vlastnictví",
+          "body": "<p>Název Tanukibox, logo a design webu jsou vlastnictvím jejich autora. Zdrojový kód může být dostupný pod otevřenou licencí ve veřejném repozitáři; přesné podmínky zkontrolujte v repozitáři.</p>"
+        },
+        "liability": {
+          "title": "6. Omezení odpovědnosti",
+          "body": "<p>V maximálním rozsahu povoleném zákonem nenese Tanukibox odpovědnost za přímé, nepřímé, náhodné nebo následné škody vyplývající z použití nebo nemožnosti používat službu, včetně ztráty dat.</p>"
+        },
+        "changes": {
+          "title": "7. Úpravy",
+          "body": "<p>Vyhrazujeme si právo kdykoli a bez předchozího upozornění upravit, pozastavit nebo ukončit jakýkoli nástroj.</p>"
+        },
+        "jurisdiction": {
+          "title": "8. Rozhodné právo a jurisdikce",
+          "body": "<p>Tyto podmínky se řídí španělským právem. Pro jakýkoli spor se strany podřizují soudům a tribunálům bydliště uživatele nebo soudům v Madridu, pokud uživatel není spotřebitelem.</p>"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Zásady cookies",
+      "intro": "<p>Tato stránka popisuje, které cookies a mechanismy úložiště tanukibox.com používá.</p>",
+      "sections": {
+        "what": {
+          "title": "1. Co jsou cookies",
+          "body": "<p>Cookies jsou malé soubory, které web ukládá na vaše zařízení, aby si zapamatoval informace mezi návštěvami (preference, relace atd.). Tanukibox používá naprosté minimum.</p>"
+        },
+        "used": {
+          "title": "2. Cookies, které používáme",
+          "body": "<ul><li><strong><code>tanukibox_lang</code></strong> — technická preferenční cookie. Ukládá vybraný jazyk, abychom se nemuseli ptát při každé návštěvě. Vyprší za 1 rok. Neidentifikuje uživatele.</li></ul><p>Momentálně nepoužíváme sledovací ani reklamní cookies.</p>"
+        },
+        "thirdParty": {
+          "title": "3. Cookies třetích stran",
+          "body": "<p>Tanukibox v současné době nenačítá skripty třetích stran, které instalují cookies. Pokud v budoucnu integrujeme služby jako Google AdSense nebo analytický nástroj, tato sekce bude aktualizována a váš souhlas bude požadován prostřednictvím banneru.</p>"
+        },
+        "manage": {
+          "title": "4. Jak spravovat cookies",
+          "body": "<p>Cookies můžete smazat nebo blokovat z nastavení vašeho prohlížeče. Pokud blokujete <code>tanukibox_lang</code>, web bude fungovat, ale nezapamatuje si vaše jazykové nastavení.</p>"
+        },
+        "changes": {
+          "title": "5. Změny těchto zásad",
+          "body": "<p>Pokud přidáme nové cookies nebo služby třetích stran, aktualizujeme tuto stránku a datum v záhlaví.</p>"
+        }
+      }
+    }
+  }
+}

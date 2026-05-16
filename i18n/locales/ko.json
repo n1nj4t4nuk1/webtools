@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "languageSwitcher": "언어 선택기"
+  },
+  "landing": {
+    "title": "브라우저에서 실행되는 도구",
+    "description": "서버리스 웹 유틸리티 모음입니다. 파일은 기기에서 절대 벗어나지 않습니다.",
+    "categories": {
+      "imageEdit": "이미지 편집",
+      "documents": "문서",
+      "privacy": "프라이버시",
+      "generators": "생성기",
+      "dev": "개발",
+      "design": "디자인",
+      "converters": "변환기"
+    }
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "이미지 크기 조정",
+      "description": "브라우저에서 바로 이미지의 픽셀 크기를 줄입니다. 업로드도 서버도 없습니다."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "EXIF 메타데이터 편집",
+      "description": "JPEG 사진의 EXIF 메타데이터를 읽고 편집하거나 제거합니다. 모두 브라우저에서 처리됩니다."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "강력한 비밀번호 생성",
+      "description": "브라우저 암호화를 사용해 무작위 비밀번호를 생성합니다. 기기를 절대 벗어나지 않습니다."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "해시 계산 및 무결성 검증",
+      "description": "텍스트나 파일의 SHA-1, SHA-256, SHA-384, SHA-512를 계산합니다. 예상 해시와 비교해 다운로드를 검증할 수 있습니다."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "고유 식별자 생성",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID, NanoID. 브라우저에서 암호학적으로 안전하게 생성합니다."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "여러 PDF를 하나로 병합",
+      "description": "여러 PDF 파일을 원하는 순서로 하나로 합칩니다. 모든 처리는 브라우저에서 이루어집니다."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "단어와 문자 수 세기",
+      "description": "텍스트나 텍스트 파일을 분석합니다: 단어, 문자, 줄, 단락 및 예상 읽기 시간."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "PDF에서 페이지 추출",
+      "description": "PDF에서 페이지나 범위를 선택해 새 파일로 다운로드합니다. 모두 브라우저에서 처리됩니다."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "필드를 조합해 변형 생성 (이메일, 사용자명…)",
+      "description": "구성 가능한 구분자와 접미사로 여러 필드의 조합을 생성합니다. 이메일 목록, 사용자명, 슬러그, ID에 유용합니다."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "CSV와 JSON 간 변환",
+      "description": "CSV나 JSON을 붙여넣으면 즉시 다른 형식을 얻을 수 있습니다. 구분자와 형식을 자동 감지합니다. 모두 브라우저에서 처리됩니다."
+    },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Lorem ipsum 텍스트 생성",
+      "description": "단락, 문장 또는 단어 단위의 자리표시자 텍스트입니다. 클래식한 \"Lorem ipsum dolor sit amet…\"로 시작할 수 있으며 일반 텍스트나 HTML로 출력합니다."
+    },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "정규식 테스트 및 텍스트 치환",
+      "description": "정규식을 만들고, 일치 항목을 강조 표시로 확인하며, 치환을 적용합니다 ($1, $2… 지원). 모두 브라우저에서 처리됩니다."
+    },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "YAML과 JSON 간 변환",
+      "description": "YAML이나 JSON을 붙여넣으면 즉시 다른 형식을 얻을 수 있습니다. 형식을 자동 감지하고 줄과 열로 오류를 표시합니다. 모두 브라우저에서 처리됩니다."
+    },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "CSS 그라데이션 생성기",
+      "description": "여러 정지점이 있는 선형, 방사형, 원뿔형 그라데이션을 만들고 실시간 미리보기를 확인하며 CSS를 복사합니다."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "box-shadow 생성기",
+      "description": "오프셋, 블러, 확산, 색상, 알파, 내부 그림자를 적용합니다. 실시간 미리보기와 함께 여러 레이어를 사용할 수 있습니다."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "색상 선택, 팔레트 및 WCAG 대비",
+      "description": "색상을 선택하고 HEX/RGB/HSL 간 변환하며, 팔레트를 생성하고 흰색과 검정색에 대한 WCAG 대비를 측정합니다."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "CSS 단위 변환기",
+      "description": "구성 가능한 기준 크기를 사용해 px, rem, em, pt, % 간 변환합니다. 한 단위를 편집하면 나머지가 다시 계산됩니다."
+    },
+    "timely": {
+      "name": "Timely",
+      "tagline": "타임스탬프와 날짜 변환",
+      "description": "어떤 형식이든 편집하면(UNIX 초/밀리초, ISO 8601 UTC/로컬, RFC 2822) 다른 형식이 업데이트됩니다. 요일, 상대 시간 및 시간대를 표시합니다."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "진법 간 변환",
+      "description": "2진수, 8진수, 10진수, 16진수 간 변환합니다. 모든 크기의 정수를 지원합니다 (BigInt)."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "JSON 포맷 및 검증",
+      "description": "JSON을 붙여넣고 검증한 뒤 원하는 들여쓰기로 보기 좋게 출력합니다. 압축, 키 정렬, 통계 확인이 가능합니다. 모두 브라우저에서 처리됩니다."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "유형",
+      "linear": "선형",
+      "radial": "방사형",
+      "conic": "원뿔형"
+    },
+    "angle": "각도",
+    "shape": {
+      "label": "모양",
+      "circle": "원형",
+      "ellipse": "타원형"
+    },
+    "position": {
+      "label": "위치"
+    },
+    "stops": {
+      "title": "정지점",
+      "add": "정지점 추가"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "복사",
+      "copied": "복사되었습니다!"
+    }
+  },
+  "shadowy": {
+    "title": "그림자",
+    "layer": "레이어 {n}",
+    "offsetX": "오프셋 X",
+    "offsetY": "오프셋 Y",
+    "blur": "블러",
+    "spread": "확산",
+    "color": "색상",
+    "alpha": "투명도",
+    "inset": "내부",
+    "css": "CSS",
+    "actions": {
+      "add": "그림자 추가",
+      "remove": "그림자 제거",
+      "copy": "복사",
+      "copied": "복사되었습니다!"
+    }
+  },
+  "colory": {
+    "palette": "팔레트",
+    "contrast": {
+      "label": "WCAG 대비",
+      "sample": "Aa",
+      "withWhite": "흰색 바탕",
+      "withBlack": "검정 바탕",
+      "normal": "일반 텍스트",
+      "large": "큰 텍스트"
+    },
+    "actions": {
+      "copy": "복사",
+      "copied": "복사되었습니다!"
+    }
+  },
+  "timely": {
+    "formats": "형식",
+    "fmt": {
+      "unixS": "UNIX (초)",
+      "unixMs": "UNIX (밀리초)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 로컬",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "요일",
+      "relative": "상대",
+      "tz": "현재 시간대"
+    },
+    "actions": {
+      "now": "지금",
+      "copy": "복사",
+      "copied": "복사되었습니다!"
+    },
+    "errors": {
+      "invalid": "잘못된 형식입니다."
+    }
+  },
+  "basey": {
+    "title": "진법",
+    "bases": {
+      "bin": "2진수",
+      "oct": "8진수",
+      "dec": "10진수",
+      "hex": "16진수"
+    },
+    "customLabel": "{radix}진수",
+    "placeholders": {
+      "bin": "예: 101010",
+      "oct": "예: 52",
+      "dec": "예: 42",
+      "hex": "예: 2A"
+    },
+    "addCustom": {
+      "title": "사용자 정의 진법 추가",
+      "label": "기수",
+      "placeholder": "2–36",
+      "hint": "숫자는 0-9 다음에 a-z로 이어집니다. 예를 들어 36진수는 0-9와 a-z를 사용합니다."
+    },
+    "actions": {
+      "clear": "지우기",
+      "copy": "복사",
+      "copied": "복사되었습니다!",
+      "addBase": "추가",
+      "removeBase": "진법 제거"
+    },
+    "errors": {
+      "invalid": "{base}에 잘못된 값입니다.",
+      "invalidRadix": "기수는 2에서 36 사이의 정수여야 합니다."
+    }
+  },
+  "unity": {
+    "baseFont": "기준 크기",
+    "baseHint": "1rem = 기준값. 1em = 부모 기준 (여기서는 기준값과 동일하다고 가정). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "픽셀",
+      "rem": "루트 em",
+      "em": "상대 em",
+      "pt": "포인트",
+      "percent": "퍼센트"
+    },
+    "actions": {
+      "copy": "복사",
+      "copied": "복사되었습니다!"
+    }
+  },
+  "yamljson": {
+    "input": "입력",
+    "output": "출력",
+    "inputPlaceholder": "여기에 YAML이나 JSON을 붙여넣으세요…",
+    "outputPlaceholder": "결과가 여기에 표시됩니다.",
+    "indent": "들여쓰기",
+    "direction": {
+      "label": "방향",
+      "auto": "자동",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "감지됨",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "알 수 없음"
+    },
+    "actions": {
+      "example": "예시",
+      "clear": "지우기",
+      "copy": "복사",
+      "copied": "복사되었습니다!",
+      "download": "다운로드",
+      "useAsInput": "입력으로 사용"
+    },
+    "errors": {
+      "unknownInput": "형식을 감지할 수 없습니다. 방향을 수동으로 선택하세요.",
+      "invalidYaml": "잘못된 YAML",
+      "invalidJson": "잘못된 JSON",
+      "atLine": "{line}번째 줄, {col}번째 열"
+    }
+  },
+  "regexpad": {
+    "pattern": "패턴",
+    "patternPlaceholder": "예: \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "치환",
+    "replacementPlaceholder": "치환 텍스트 (그룹은 $1, $2…)",
+    "replacementHint": "전체 일치는 $&, 캡처 그룹은 $1, $2…을 사용하세요.",
+    "source": "원본 텍스트",
+    "sourcePlaceholder": "검색할 텍스트를 여기에 붙여넣으세요…",
+    "preview": "강조된 일치 항목",
+    "previewEmpty": "위에 텍스트를 입력하면 일치 항목이 표시됩니다.",
+    "output": "치환 결과",
+    "outputPlaceholder": "치환이 적용된 텍스트가 여기에 표시됩니다.",
+    "flags": {
+      "label": "플래그",
+      "g": "전역",
+      "i": "대소문자 무시",
+      "m": "여러 줄",
+      "s": "점이 줄바꿈과 일치",
+      "u": "유니코드"
+    },
+    "matches": {
+      "idle": "패턴 대기 중…",
+      "count": "{n}개 일치",
+      "none": "일치 없음"
+    },
+    "actions": {
+      "example": "예시",
+      "clear": "지우기",
+      "copy": "복사",
+      "copied": "복사되었습니다!",
+      "download": "다운로드"
+    },
+    "errors": {
+      "invalidRegex": "잘못된 정규식"
+    }
+  },
+  "lorempad": {
+    "output": "출력",
+    "count": "수량",
+    "wordsPerSentence": "문장당 단어 수",
+    "wordsPerParagraph": "단락당 단어 수",
+    "wordsHint": "0 = 무작위. 고정 시 최소 3.",
+    "classic": "\"Lorem ipsum dolor sit amet…\"로 시작",
+    "mode": {
+      "label": "모드",
+      "paragraphs": "단락",
+      "sentences": "문장",
+      "words": "단어"
+    },
+    "format": {
+      "label": "형식",
+      "plain": "일반 텍스트",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "다시 생성",
+      "copy": "복사",
+      "copied": "복사되었습니다!",
+      "download": "다운로드"
+    }
+  },
+  "jsonpad": {
+    "editor": "에디터",
+    "placeholder": "여기에 JSON을 붙여넣으세요…",
+    "indent": "들여쓰기 (공백)",
+    "actions": {
+      "format": "포맷",
+      "minify": "압축",
+      "sortKeys": "키 정렬",
+      "example": "예시",
+      "clear": "지우기",
+      "copy": "복사",
+      "copied": "복사되었습니다!",
+      "download": "다운로드"
+    },
+    "status": {
+      "empty": "JSON 대기 중…",
+      "valid": "유효한 JSON",
+      "error": "잘못된 JSON",
+      "errorAt": "{line}번째 줄, {col}번째 열에서 오류"
+    },
+    "stats": {
+      "keys": "키 {n}개",
+      "depth": "깊이 {n}",
+      "objects": "객체 {n}개",
+      "arrays": "배열 {n}개"
+    }
+  },
+  "csvjson": {
+    "input": "입력",
+    "output": "출력",
+    "inputPlaceholder": "여기에 CSV나 JSON을 붙여넣으세요…",
+    "outputPlaceholder": "결과가 여기에 표시됩니다.",
+    "hasHeader": "CSV에 헤더 행이 있음",
+    "pretty": "JSON 보기 좋게 출력",
+    "direction": {
+      "label": "방향",
+      "auto": "자동",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "구분자",
+      "auto": "자동",
+      "comma": "쉼표 (,)",
+      "semicolon": "세미콜론 (;)",
+      "tab": "탭",
+      "pipe": "파이프 (|)"
+    },
+    "detected": {
+      "label": "감지됨",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "알 수 없음"
+    },
+    "actions": {
+      "example": "예시",
+      "clear": "지우기",
+      "copy": "복사",
+      "copied": "복사되었습니다!",
+      "download": "다운로드",
+      "useAsInput": "입력으로 사용"
+    },
+    "errors": {
+      "unknownInput": "형식을 감지할 수 없습니다. 방향을 수동으로 선택하세요.",
+      "invalidJson": "잘못된 JSON: {msg}",
+      "notTabular": "CSV로 변환하려면 JSON이 배열(또는 객체)이어야 합니다.",
+      "mixedShape": "배열의 요소 형식이 혼합되어 있습니다. 모두 객체이거나 모두 배열이어야 합니다."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "필드",
+      "valuePlaceholder": "값",
+      "examples": "예: Maria|예: Perez|예: Acme|예: 2024|예: dev|예: eu",
+      "add": "필드 추가",
+      "remove": "필드 제거",
+      "mode": {
+        "full": "전체",
+        "initial": "이니셜",
+        "both": "둘 다"
+      }
+    },
+    "options": {
+      "separator": "구분자",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "접두사",
+      "prefixPlaceholder": "https://www. (선택)",
+      "suffix": "접미사",
+      "suffixPlaceholder": "{'@'}example.com (선택)",
+      "permute": "필드 순서 순열",
+      "permuteHint": "활성화하면 필드를 다른 순서로 배치한 조합도 생성합니다 (last.first 등).",
+      "subsets": "부분 집합 포함 (더 적은 필드를 사용한 조합)",
+      "subsetsHint": "활성화하면 채워진 필드 중 일부만 사용하는 변형도 생성합니다 (이름만, 성만, 이름+회사 등).",
+      "downloadOnly": "다운로드만 (목록을 렌더링하지 않음)",
+      "downloadOnlyHint": "조합이 수천 개일 때 목록 그리기가 브라우저를 느리게 할 경우 유용합니다. 결과 한도를 100,000으로 늘립니다."
+    },
+    "results": {
+      "title": "결과 ({count})",
+      "empty": "조합을 생성하려면 최소 한 개의 필드를 채우세요.",
+      "limited": "{total}개 중 처음 {limit}개의 조합을 표시합니다.",
+      "copyAll": "모두 복사",
+      "copied": "복사되었습니다!",
+      "download": ".txt 다운로드",
+      "downloadHint": "브라우저 속도 저하를 피하기 위해 목록이 숨겨졌습니다. 다운로드를 눌러 모든 {count}개 조합이 담긴 .txt 파일을 받으세요."
+    }
+  },
+  "scissor": {
+    "dropzone": "여기에 PDF를 끌어 놓거나 클릭해 선택하세요",
+    "totalPages": "{n}페이지",
+    "rangesLabel": "추출할 페이지",
+    "rangesPlaceholder": "예: 1-3, 5, 8-10",
+    "hint": "쉼표로 구분하세요. 범위는 하이픈으로 표기합니다 (1-5). 기본적으로 모든 페이지가 미리 선택되어 있습니다.",
+    "preview": {
+      "pages": "선택",
+      "count": "총합",
+      "none": "없음"
+    },
+    "actions": {
+      "extract": "추출 및 다운로드",
+      "processing": "추출 중…",
+      "change": "PDF 변경"
+    },
+    "errors": {
+      "notPdf": "{name}은(는) PDF가 아닙니다.",
+      "invalidPdf": "{name}은(는) 유효한 PDF가 아니거나 손상되었습니다.",
+      "encrypted": "이 PDF는 비밀번호로 보호되어 있습니다.",
+      "invalidTokens": "다음을 분석할 수 없습니다: {tokens}.",
+      "outOfRange": "범위를 벗어났습니다 (최대 {max}): {tokens}.",
+      "generic": "페이지를 추출할 수 없습니다."
+    }
+  },
+  "wordy": {
+    "modeText": "텍스트",
+    "modeFile": "파일",
+    "textPlaceholder": "분석할 텍스트를 붙여넣거나 입력하세요…",
+    "dropzone": "텍스트 파일 (.txt, .md, .csv…)을 끌어 놓거나 클릭해 선택하세요",
+    "stats": {
+      "words": "단어",
+      "charsWithSpaces": "문자 (공백 포함)",
+      "charsNoSpaces": "문자 (공백 제외)",
+      "lines": "줄",
+      "paragraphs": "단락",
+      "sentences": "문장",
+      "readingTime": "읽기 시간",
+      "minutes": "{n}분",
+      "minutesSeconds": "{m}분 {s}초",
+      "seconds": "{n}초"
+    },
+    "actions": {
+      "clear": "지우기"
+    },
+    "errors": {
+      "notText": "일반 텍스트 파일 (.txt, .md, .csv 등)만 지원됩니다.",
+      "read": "파일을 읽을 수 없습니다."
+    }
+  },
+  "stapler": {
+    "dropzone": "여기에 PDF를 끌어 놓거나 클릭해 선택하세요",
+    "list": {
+      "title": "{count}개 파일 · 총 {pages}페이지",
+      "pages": "{n}페이지"
+    },
+    "actions": {
+      "merge": "PDF 병합",
+      "processing": "병합 중…",
+      "clear": "모두 제거",
+      "moveUp": "위로 이동",
+      "moveDown": "아래로 이동",
+      "remove": "제거"
+    },
+    "errors": {
+      "notPdf": "{name}은(는) PDF가 아닙니다.",
+      "invalidPdf": "{name}은(는) 유효한 PDF가 아니거나 손상되었습니다.",
+      "encrypted": "{name}은(는) 비밀번호로 보호되어 있습니다.",
+      "generic": "PDF를 병합할 수 없습니다."
+    }
+  },
+  "createpass": {
+    "length": "길이",
+    "count": "몇 개?",
+    "excludeSimilar": "비슷한 문자 제외 (l, I, 1, O, 0)",
+    "excludeAmbiguous": "모호한 문자 제외 (괄호, 따옴표 등)",
+    "bits": "비트",
+    "strength": {
+      "veryWeak": "매우 약함",
+      "weak": "약함",
+      "reasonable": "적절함",
+      "strong": "강함",
+      "veryStrong": "매우 강함"
+    },
+    "actions": {
+      "generate": "생성",
+      "copy": "복사",
+      "copied": "복사되었습니다!"
+    },
+    "errors": {
+      "noCharset": "최소 한 가지 문자 유형을 선택하세요.",
+      "clipboard": "클립보드에 복사할 수 없습니다."
+    }
+  },
+  "idkun": {
+    "format": "형식",
+    "count": "몇 개?",
+    "nanoidSize": "NanoID 길이",
+    "uppercase": "대문자",
+    "hyphens": "하이픈 포함",
+    "formats": {
+      "uuidv4": "UUID v4 (무작위)",
+      "uuidv7": "UUID v7 (타임스탬프 + 무작위)",
+      "uuidNil": "UUID NIL (전부 0)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (URL-안전)"
+    },
+    "about": {
+      "uuidv4": "가장 일반적인 표준 UUID입니다. 122비트의 무작위. RFC 4122.",
+      "uuidv7": "타임스탬프 + 무작위를 결합합니다. 사전순으로 정렬 가능. RFC 9562 (2024).",
+      "uuidNil": "전부 0으로 된 nil UUID입니다. 기본값이나 센티넬 값으로 유용합니다.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. Crockford Base32로 26자.",
+      "nanoid": "짧고 인기 있는 URL-안전 식별자입니다. 길이 설정 가능."
+    },
+    "actions": {
+      "generate": "생성",
+      "copy": "복사",
+      "copyAll": "모두 복사",
+      "copied": "복사되었습니다!"
+    },
+    "errors": {
+      "clipboard": "클립보드에 복사할 수 없습니다."
+    }
+  },
+  "hashy": {
+    "modeText": "텍스트",
+    "modeFile": "파일",
+    "textPlaceholder": "해시할 텍스트를 붙여넣거나 입력하세요…",
+    "dropzone": "여기에 파일을 끌어 놓거나 클릭해 선택하세요",
+    "processing": "계산 중…",
+    "actions": {
+      "copy": "복사",
+      "copied": "복사되었습니다!"
+    },
+    "verify": {
+      "label": "예상 해시와 비교",
+      "placeholder": "16진수 해시 (40, 64, 96 또는 128자)를 붙여넣으세요…",
+      "unknownLength": "인식할 수 없는 길이입니다. SHA-1 (40), SHA-256 (64), SHA-384 (96) 또는 SHA-512 (128) 중 하나여야 합니다.",
+      "match": "{algo}와 일치합니다.",
+      "mismatch": "{algo} 해시가 일치하지 않습니다."
+    },
+    "errors": {
+      "clipboard": "클립보드에 복사할 수 없습니다."
+    }
+  },
+  "metaimg": {
+    "dropzone": "여기에 JPEG를 끌어 놓거나 클릭해 선택하세요",
+    "tags": {
+      "title": "감지된 메타데이터 ({count})",
+      "hint": "각 태그는 이름, IFD, 유형을 표시합니다. 값을 편집하거나 ×로 제거하거나 새 태그를 추가하세요.",
+      "empty": "이 이미지에는 EXIF 메타데이터가 없습니다.",
+      "add": "태그 추가",
+      "confirmAdd": "추가",
+      "remove": "태그 제거",
+      "searchPlaceholder": "태그 검색 (이름 또는 IFD)…",
+      "modeStandard": "표준",
+      "modeCustom": "사용자 정의",
+      "custom": {
+        "note": "EXIF는 태그를 숫자 ID로 식별합니다. 다른 리더는 이 태그를 'Unknown {id}'로 표시할 수 있습니다.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "유형",
+        "name": "이름 (표시용)",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "ID를 입력하세요.",
+        "invalidId": "ID는 1에서 65535 사이의 정수여야 합니다.",
+        "duplicate": "해당 태그가 이미지에 이미 존재합니다."
+      }
+    },
+    "actions": {
+      "strip": "모든 메타데이터 제거",
+      "apply": "적용 및 다운로드",
+      "cancel": "취소"
+    },
+    "errors": {
+      "notJpeg": "JPEG 파일 (.jpg / .jpeg)만 지원됩니다.",
+      "invalidValue": "{tag} 태그에 잘못된 값입니다."
+    }
+  },
+  "dropzone": {
+    "empty": "여기에 이미지를 끌어 놓거나 클릭해 선택하세요"
+  },
+  "controls": {
+    "width": "너비 (px)",
+    "height": "높이 (px)",
+    "keepRatio": "비율 유지",
+    "format": "형식",
+    "quality": "품질"
+  },
+  "actions": {
+    "resize": "크기 조정",
+    "processing": "처리 중…",
+    "download": "다운로드"
+  },
+  "result": {
+    "title": "결과"
+  },
+  "errors": {
+    "notAnImage": "해당 파일은 유효한 이미지가 아닙니다."
+  },
+  "footer": {
+    "tagline": "Tanukibox · 브라우저에서 실행되는 도구",
+    "legalLinks": "법적 링크",
+    "privacy": "개인정보",
+    "terms": "이용약관",
+    "cookies": "쿠키"
+  },
+  "legal": {
+    "lastUpdated": "최종 업데이트: 2026년 5월 15일",
+    "privacy": {
+      "title": "개인정보 처리방침",
+      "intro": "<p>Tanukibox에서는 여러분의 파일은 여러분의 것이라고 믿습니다. 그래서 모든 도구는 <strong>전적으로 브라우저에서</strong> 실행됩니다: 처리하는 이미지, PDF, 텍스트 또는 모든 파일은 기기를 절대 벗어나지 않습니다.</p>",
+      "sections": {
+        "scope": {
+          "title": "1. 적용 범위",
+          "body": "<p>이 방침은 tanukibox.com 및 이 도메인 아래 호스팅되는 모든 도구에 적용됩니다. 사이트를 방문할 때 수집되는 정보와 이를 어떻게 사용하는지 설명합니다.</p>"
+        },
+        "data": {
+          "title": "2. 수집하는 데이터",
+          "body": "<p>파일을 수신하는 서버가 없습니다. 도구(Mochi, Metaimg, Createpass, Hashy 등)는 네이티브 API(Canvas, Web Crypto 등)를 사용해 데이터를 브라우저에서 바로 처리합니다. 따라서:</p><ul><li>처리하는 파일, 그 내용 또는 결과를 <strong>수집하지 않습니다</strong>.</li><li><strong>사용자 계정</strong>, 비밀번호 또는 프로필이 없습니다.</li><li>Tanukibox 서버는 사이트의 정적 자산(HTML, CSS, JS)만 제공합니다.</li></ul><p>저장되는 유일한 것은 쿠키 섹션에서 설명합니다.</p>"
+        },
+        "cookies": {
+          "title": "3. 쿠키와 로컬 저장소",
+          "body": "<p>언어 환경설정을 기억하기 위해 <code>tanukibox_lang</code>이라는 단일 기술 쿠키를 사용합니다. 사용자를 식별하지 않으며 제3자와 공유되지 않습니다.</p><p>자세한 내용은 <a href='/cookies'>쿠키 정책</a>을 참조하세요.</p>"
+        },
+        "tracking": {
+          "title": "4. 분석 및 광고",
+          "body": "<p>현재 분석 도구나 디스플레이 광고를 사용하지 않습니다. 향후 Google AdSense나 분석 제공자와 같은 서비스를 통합한다면 이 방침이 업데이트되며, 법(GDPR/EU)이 요구할 때 동의를 요청합니다.</p>"
+        },
+        "gdpr": {
+          "title": "5. 사용자의 권리 (GDPR)",
+          "body": "<p>서버에 개인 식별 정보를 저장하지 않으므로 GDPR의 대부분의 권리(접근, 정정, 삭제, 이동성)는 적용할 데이터가 없어 적용되지 않습니다.</p><p>그럼에도 이 방침 하단에 표시된 주소로 연락하여 어떤 권리든 행사하실 수 있습니다.</p>"
+        },
+        "children": {
+          "title": "6. 어린이",
+          "body": "<p>이 사이트는 만 14세 미만 어린이를 대상으로 하지 않습니다. 미성년자에 대한 데이터를 의도적으로 수집하지 않습니다.</p>"
+        },
+        "changes": {
+          "title": "7. 방침 변경",
+          "body": "<p>새 기능을 추가하거나 법적인 이유로 이 방침을 업데이트할 수 있습니다. 마지막 업데이트 날짜는 문서 머리말에 표시됩니다.</p>"
+        },
+        "contact": {
+          "title": "8. 연락처",
+          "body": "<p>개인정보 관련 문의는 다음으로 연락주세요: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
+        }
+      }
+    },
+    "terms": {
+      "title": "이용약관",
+      "intro": "<p>Tanukibox에 오신 것을 환영합니다. 이 사이트를 사용함으로써 아래 설명된 조건에 동의하게 됩니다. 동의하지 않으시면 서비스를 사용하지 마세요.</p>",
+      "sections": {
+        "acceptance": {
+          "title": "1. 동의",
+          "body": "<p>tanukibox.com에 접근하고 사용하는 것은 이 약관에 대한 완전한 동의를 의미합니다. 약관은 언제든지 업데이트될 수 있으며, 변경 후 계속 사용하는 것은 동의를 의미합니다.</p>"
+        },
+        "service": {
+          "title": "2. 서비스 설명",
+          "body": "<p>Tanukibox는 전적으로 브라우저에서 실행되는(로컬 처리) 유틸리티 모음을 제공합니다. 서비스는 <strong>무료로 \"있는 그대로\"</strong> 제공되며, 가용성, 정확성 또는 특정 목적에의 적합성에 대한 보증은 없습니다.</p>"
+        },
+        "use": {
+          "title": "3. 허용된 사용",
+          "body": "<p>개인적 또는 직업적, 합법적인 모든 목적으로 도구를 사용할 수 있습니다. 다음은 금지됩니다:</p><ul><li>사이트의 보안이나 가용성을 침해하려는 시도.</li><li>불법 콘텐츠를 처리하기 위해 서비스를 사용하는 것.</li><li>허가 없이 사이트 코드를 복사하거나 재배포하는 것.</li></ul>"
+        },
+        "responsibility": {
+          "title": "4. 사용자 책임",
+          "body": "<p>각 도구의 결과를 바탕으로 결정을 내리기 전에 결과를 검증하는 것은 사용자의 책임입니다. 예를 들어 해시를 수동으로 확인하거나, 생성된 비밀번호를 신뢰할 수 있는 관리자에서 확인하거나, 이미지를 게시하기 전에 제거된 메타데이터를 검토하는 것 등입니다.</p>"
+        },
+        "ip": {
+          "title": "5. 지적 재산권",
+          "body": "<p>Tanukibox 이름, 로고 및 사이트 디자인은 저작자의 소유입니다. 소스 코드는 공개 저장소에서 오픈 라이선스로 제공될 수 있으며, 정확한 약관은 저장소를 확인하세요.</p>"
+        },
+        "liability": {
+          "title": "6. 책임 제한",
+          "body": "<p>법이 허용하는 최대 범위 내에서 Tanukibox는 데이터 손실을 포함하여 서비스 사용 또는 사용 불가로 인한 직접적, 간접적, 부수적 또는 결과적 손해에 대해 책임을 지지 않습니다.</p>"
+        },
+        "changes": {
+          "title": "7. 수정",
+          "body": "<p>사전 통지 없이 언제든지 도구를 수정, 중단 또는 폐쇄할 권리를 보유합니다.</p>"
+        },
+        "jurisdiction": {
+          "title": "8. 준거법 및 관할",
+          "body": "<p>이 약관은 스페인 법에 따릅니다. 분쟁이 있을 경우 당사자는 사용자의 주소지 법원, 사용자가 소비자가 아닌 경우 마드리드 법원에 종속됩니다.</p>"
+        }
+      }
+    },
+    "cookies": {
+      "title": "쿠키 정책",
+      "intro": "<p>이 페이지는 tanukibox.com이 사용하는 쿠키와 저장 메커니즘을 설명합니다.</p>",
+      "sections": {
+        "what": {
+          "title": "1. 쿠키란",
+          "body": "<p>쿠키는 방문 간 정보(환경설정, 세션 등)를 기억하기 위해 웹사이트가 기기에 저장하는 작은 파일입니다. Tanukibox는 최소한만 사용합니다.</p>"
+        },
+        "used": {
+          "title": "2. 사용하는 쿠키",
+          "body": "<ul><li><strong><code>tanukibox_lang</code></strong> — 기술 환경설정 쿠키. 매 방문마다 묻지 않도록 선택한 언어를 저장합니다. 1년 후 만료. 사용자를 식별하지 않습니다.</li></ul><p>현재 추적이나 광고 쿠키는 사용하지 않습니다.</p>"
+        },
+        "thirdParty": {
+          "title": "3. 제3자 쿠키",
+          "body": "<p>Tanukibox는 현재 쿠키를 설치하는 제3자 스크립트를 로드하지 않습니다. 향후 Google AdSense나 분석 도구와 같은 서비스를 통합한다면 이 섹션이 업데이트되고 배너를 통해 동의를 요청합니다.</p>"
+        },
+        "manage": {
+          "title": "4. 쿠키 관리 방법",
+          "body": "<p>브라우저 설정에서 쿠키를 삭제하거나 차단할 수 있습니다. <code>tanukibox_lang</code>을 차단해도 사이트는 작동하지만 언어 환경설정은 기억하지 않습니다.</p>"
+        },
+        "changes": {
+          "title": "5. 정책 변경",
+          "body": "<p>새 쿠키나 제3자 서비스를 추가하면 이 페이지와 머리말 날짜를 업데이트합니다.</p>"
+        }
+      }
+    }
+  }
+}

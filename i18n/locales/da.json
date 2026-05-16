@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "languageSwitcher": "Sprogvælger"
+  },
+  "landing": {
+    "title": "Værktøjer der kører i din browser",
+    "description": "En samling af serverløse webværktøjer. Dine filer forlader aldrig din enhed.",
+    "categories": {
+      "imageEdit": "Billedredigering",
+      "documents": "Dokumenter",
+      "privacy": "Privatliv",
+      "generators": "Generatorer",
+      "dev": "Udvikling",
+      "design": "Design",
+      "converters": "Konvertere"
+    }
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Tilpas billedstørrelse",
+      "description": "Reducer pixelstørrelsen på dine billeder direkte i browseren. Ingen uploads, ingen server."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "Rediger EXIF-metadata",
+      "description": "Læs, rediger eller fjern EXIF-metadata fra dine JPEG-billeder. Alt sker i din browser."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Generér stærke adgangskoder",
+      "description": "Lav tilfældige adgangskoder ved hjælp af browserens kryptografi. De forlader aldrig din enhed."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Beregn hashes og bekræft integritet",
+      "description": "SHA-1, SHA-256, SHA-384 og SHA-512 af tekst eller filer. Sammenlign med en forventet hash for at verificere downloads."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Generér unikke identifikatorer",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID og NanoID. Kryptografisk sikker generering i din browser."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Flet flere PDF'er til én",
+      "description": "Kombinér flere PDF-filer til en enkelt, i den rækkefølge du ønsker. Alt behandles i din browser."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Tæl ord og tegn",
+      "description": "Analysér tekst eller en tekstfil: ord, tegn, linjer, afsnit og anslået læsetid."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "Udtræk sider fra en PDF",
+      "description": "Vælg sider eller intervaller fra en PDF og hent dem som en ny fil. Alt i din browser."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Kombinér felter til varianter (e-mails, brugernavne…)",
+      "description": "Generér kombinationer af flere felter med en konfigurerbar adskiller og suffiks. Praktisk til e-mail-lister, brugernavne, slugs eller ID'er."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Konvertér mellem CSV og JSON",
+      "description": "Indsæt CSV eller JSON og få det andet format med det samme. Registrerer automatisk adskiller og format. Alt i din browser."
+    },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Generér Lorem ipsum-tekst",
+      "description": "Pladsholdertekst i afsnit, sætninger eller ord. Mulighed for at starte med det klassiske \"Lorem ipsum dolor sit amet…\" og udskrive som almindelig tekst eller HTML."
+    },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Test regex og erstat tekst",
+      "description": "Byg et regulært udtryk, se fremhævede matches, og anvend en erstatning (understøtter $1, $2…). Alt i din browser."
+    },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "Konvertér mellem YAML og JSON",
+      "description": "Indsæt YAML eller JSON og få det andet format med det samme. Registrerer automatisk formatet og viser fejl med linje og kolonne. Alt i din browser."
+    },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "CSS-gradientgenerator",
+      "description": "Byg lineære, radiale og koniske gradienter med flere stop, se en live forhåndsvisning, og kopiér CSS-koden."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "box-shadow-generator",
+      "description": "Skygger med forskydning, blur, spredning, farve, alfa og inset. Flere lag med live forhåndsvisning."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Farvevælger, palet og WCAG-kontrast",
+      "description": "Vælg en farve, konvertér mellem HEX/RGB/HSL, generér en palet og mål WCAG-kontrast mod hvid og sort."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "CSS-enhedskonverter",
+      "description": "Konvertér mellem px, rem, em, pt og % med en konfigurerbar basisstørrelse. Når du redigerer en enhed, genberegnes resten."
+    },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Konvertér tidsstempler og datoer",
+      "description": "Rediger et hvilket som helst format (UNIX sekunder/ms, ISO 8601 UTC/lokalt, RFC 2822), og de andre opdateres. Viser ugedag, relativ tid og tidszone."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Konvertér mellem talsystemer",
+      "description": "Konvertér mellem binær, oktal, decimal og heksadecimal. Understøtter heltal af enhver størrelse (BigInt)."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "Formatér og valider JSON",
+      "description": "Indsæt JSON, validér det og pretty-print med den indrykning, du foretrækker. Minify, sortér nøgler og se statistik. Alt i din browser."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Type",
+      "linear": "Lineær",
+      "radial": "Radial",
+      "conic": "Konisk"
+    },
+    "angle": "Vinkel",
+    "shape": {
+      "label": "Form",
+      "circle": "Cirkel",
+      "ellipse": "Ellipse"
+    },
+    "position": {
+      "label": "Position"
+    },
+    "stops": {
+      "title": "Stop",
+      "add": "Tilføj stop"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Kopiér",
+      "copied": "Kopieret!"
+    }
+  },
+  "shadowy": {
+    "title": "Skygger",
+    "layer": "Lag {n}",
+    "offsetX": "Forskydning X",
+    "offsetY": "Forskydning Y",
+    "blur": "Blur",
+    "spread": "Spredning",
+    "color": "Farve",
+    "alpha": "Gennemsigtighed",
+    "inset": "Inset",
+    "css": "CSS",
+    "actions": {
+      "add": "Tilføj skygge",
+      "remove": "Fjern skygge",
+      "copy": "Kopiér",
+      "copied": "Kopieret!"
+    }
+  },
+  "colory": {
+    "palette": "Palet",
+    "contrast": {
+      "label": "WCAG-kontrast",
+      "sample": "Aa",
+      "withWhite": "på hvid",
+      "withBlack": "på sort",
+      "normal": "Normal tekst",
+      "large": "Stor tekst"
+    },
+    "actions": {
+      "copy": "Kopiér",
+      "copied": "Kopieret!"
+    }
+  },
+  "timely": {
+    "formats": "Formater",
+    "fmt": {
+      "unixS": "UNIX (sekunder)",
+      "unixMs": "UNIX (millisekunder)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 lokalt",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Ugedag",
+      "relative": "Relativ",
+      "tz": "Din tidszone"
+    },
+    "actions": {
+      "now": "Nu",
+      "copy": "Kopiér",
+      "copied": "Kopieret!"
+    },
+    "errors": {
+      "invalid": "Ugyldigt format."
+    }
+  },
+  "basey": {
+    "title": "Talsystemer",
+    "bases": {
+      "bin": "Binær",
+      "oct": "Oktal",
+      "dec": "Decimal",
+      "hex": "Heksadecimal"
+    },
+    "customLabel": "Base {radix}",
+    "placeholders": {
+      "bin": "f.eks. 101010",
+      "oct": "f.eks. 52",
+      "dec": "f.eks. 42",
+      "hex": "f.eks. 2A"
+    },
+    "addCustom": {
+      "title": "Tilføj en brugerdefineret base",
+      "label": "Radix",
+      "placeholder": "2–36",
+      "hint": "Cifrene går fra 0-9 og derefter a-z. For eksempel bruger base 36 0-9 og a-z."
+    },
+    "actions": {
+      "clear": "Ryd",
+      "copy": "Kopiér",
+      "copied": "Kopieret!",
+      "addBase": "Tilføj",
+      "removeBase": "Fjern base"
+    },
+    "errors": {
+      "invalid": "Ugyldig værdi for {base}.",
+      "invalidRadix": "Radix skal være et heltal mellem 2 og 36."
+    }
+  },
+  "unity": {
+    "baseFont": "Basisstørrelse",
+    "baseHint": "1rem = base. 1em = relativ til forælder (her antaget = base). 1pt = 1,333px (96dpi).",
+    "units": {
+      "px": "pixels",
+      "rem": "root em",
+      "em": "relativ em",
+      "pt": "punkter",
+      "percent": "procent"
+    },
+    "actions": {
+      "copy": "Kopiér",
+      "copied": "Kopieret!"
+    }
+  },
+  "yamljson": {
+    "input": "Input",
+    "output": "Output",
+    "inputPlaceholder": "Indsæt YAML eller JSON her…",
+    "outputPlaceholder": "Resultatet vises her.",
+    "indent": "Indrykning",
+    "direction": {
+      "label": "Retning",
+      "auto": "Automatisk",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "Registreret",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "Ukendt"
+    },
+    "actions": {
+      "example": "Eksempel",
+      "clear": "Ryd",
+      "copy": "Kopiér",
+      "copied": "Kopieret!",
+      "download": "Hent",
+      "useAsInput": "Brug som input"
+    },
+    "errors": {
+      "unknownInput": "Kunne ikke registrere formatet. Vælg retningen manuelt.",
+      "invalidYaml": "Ugyldig YAML",
+      "invalidJson": "Ugyldig JSON",
+      "atLine": "linje {line}, kolonne {col}"
+    }
+  },
+  "regexpad": {
+    "pattern": "Mønster",
+    "patternPlaceholder": "f.eks. \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Erstatning",
+    "replacementPlaceholder": "Erstatningstekst (brug $1, $2… for grupper)",
+    "replacementHint": "Brug $& for hele matchet, $1, $2… for indfangningsgrupper.",
+    "source": "Kildetekst",
+    "sourcePlaceholder": "Indsæt teksten, du vil søge i, her…",
+    "preview": "Fremhævede matches",
+    "previewEmpty": "Skriv noget tekst ovenfor for at se matches.",
+    "output": "Erstatningsresultat",
+    "outputPlaceholder": "Teksten med erstatningen anvendt vises her.",
+    "flags": {
+      "label": "Flag",
+      "g": "global",
+      "i": "ignorér store/små bogstaver",
+      "m": "flerlinje",
+      "s": "punktum matcher linjeskift",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Venter på mønster…",
+      "count": "{n} matches",
+      "none": "Ingen matches"
+    },
+    "actions": {
+      "example": "Eksempel",
+      "clear": "Ryd",
+      "copy": "Kopiér",
+      "copied": "Kopieret!",
+      "download": "Hent"
+    },
+    "errors": {
+      "invalidRegex": "Ugyldigt regex"
+    }
+  },
+  "lorempad": {
+    "output": "Output",
+    "count": "Mængde",
+    "wordsPerSentence": "Ord pr. sætning",
+    "wordsPerParagraph": "Ord pr. afsnit",
+    "wordsHint": "0 = tilfældigt. Minimum 3, når det er fast.",
+    "classic": "Start med \"Lorem ipsum dolor sit amet…\"",
+    "mode": {
+      "label": "Tilstand",
+      "paragraphs": "Afsnit",
+      "sentences": "Sætninger",
+      "words": "Ord"
+    },
+    "format": {
+      "label": "Format",
+      "plain": "Almindelig tekst",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Generér igen",
+      "copy": "Kopiér",
+      "copied": "Kopieret!",
+      "download": "Hent"
+    }
+  },
+  "jsonpad": {
+    "editor": "Editor",
+    "placeholder": "Indsæt din JSON her…",
+    "indent": "Indrykning (mellemrum)",
+    "actions": {
+      "format": "Formatér",
+      "minify": "Minify",
+      "sortKeys": "Sortér nøgler",
+      "example": "Eksempel",
+      "clear": "Ryd",
+      "copy": "Kopiér",
+      "copied": "Kopieret!",
+      "download": "Hent"
+    },
+    "status": {
+      "empty": "Venter på JSON…",
+      "valid": "Gyldig JSON",
+      "error": "Ugyldig JSON",
+      "errorAt": "Fejl på linje {line}, kolonne {col}"
+    },
+    "stats": {
+      "keys": "{n} nøgler",
+      "depth": "dybde {n}",
+      "objects": "{n} objekter",
+      "arrays": "{n} arrays"
+    }
+  },
+  "csvjson": {
+    "input": "Input",
+    "output": "Output",
+    "inputPlaceholder": "Indsæt CSV eller JSON her…",
+    "outputPlaceholder": "Resultatet vises her.",
+    "hasHeader": "CSV har en overskriftsrække",
+    "pretty": "Pretty-print JSON",
+    "direction": {
+      "label": "Retning",
+      "auto": "Automatisk",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Adskiller",
+      "auto": "Automatisk",
+      "comma": "Komma (,)",
+      "semicolon": "Semikolon (;)",
+      "tab": "Tabulator",
+      "pipe": "Pipe (|)"
+    },
+    "detected": {
+      "label": "Registreret",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Ukendt"
+    },
+    "actions": {
+      "example": "Eksempel",
+      "clear": "Ryd",
+      "copy": "Kopiér",
+      "copied": "Kopieret!",
+      "download": "Hent",
+      "useAsInput": "Brug som input"
+    },
+    "errors": {
+      "unknownInput": "Kunne ikke registrere formatet. Vælg retningen manuelt.",
+      "invalidJson": "Ugyldig JSON: {msg}",
+      "notTabular": "JSON skal være et array (eller objekt) for at kunne konverteres til CSV.",
+      "mixedShape": "Arrayet blander elementtyper. Det skal være kun objekter eller kun arrays."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Felter",
+      "valuePlaceholder": "Værdi",
+      "examples": "f.eks. Maria|f.eks. Perez|f.eks. Acme|f.eks. 2024|f.eks. dev|f.eks. eu",
+      "add": "Tilføj felt",
+      "remove": "Fjern felt",
+      "mode": {
+        "full": "Fuld",
+        "initial": "Initial",
+        "both": "Begge"
+      }
+    },
+    "options": {
+      "separator": "Adskiller",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Præfiks",
+      "prefixPlaceholder": "https://www. (valgfrit)",
+      "suffix": "Suffiks",
+      "suffixPlaceholder": "{'@'}example.com (valgfrit)",
+      "permute": "Permutér feltrækkefølge",
+      "permuteHint": "Når aktiveret, genereres også kombinationer med felter i forskellige rækkefølger (last.first, osv.).",
+      "subsets": "Inkludér undersæt (kombinationer med færre felter)",
+      "subsetsHint": "Når aktiveret, genereres også varianter med kun nogle af de udfyldte felter (kun fornavn, kun efternavn, fornavn+firma, osv.).",
+      "downloadOnly": "Kun hent (vis ikke listen)",
+      "downloadOnlyHint": "Nyttigt, når der er tusindvis af kombinationer, og tegning af listen gør browseren langsom. Hæver loftet til 100.000 resultater."
+    },
+    "results": {
+      "title": "Resultater ({count})",
+      "empty": "Udfyld mindst ét felt for at generere kombinationer.",
+      "limited": "Viser de første {limit} af {total} kombinationer.",
+      "copyAll": "Kopiér alle",
+      "copied": "Kopieret!",
+      "download": "Hent .txt",
+      "downloadHint": "Listen er skjult for ikke at gøre browseren langsom. Tryk på Hent for at få en .txt med alle {count} kombinationer."
+    }
+  },
+  "scissor": {
+    "dropzone": "Træk en PDF hertil, eller klik for at vælge en",
+    "totalPages": "{n} sider",
+    "rangesLabel": "Sider der skal udtrækkes",
+    "rangesPlaceholder": "F.eks. 1-3, 5, 8-10",
+    "hint": "Adskil med komma. Brug bindestreger til intervaller (1-5). Som standard er alle sider forvalgt.",
+    "preview": {
+      "pages": "Valg",
+      "count": "I alt",
+      "none": "Ingen"
+    },
+    "actions": {
+      "extract": "Udtræk og hent",
+      "processing": "Udtrækker…",
+      "change": "Skift PDF"
+    },
+    "errors": {
+      "notPdf": "{name} er ikke en PDF.",
+      "invalidPdf": "{name} er ikke en gyldig PDF eller er beskadiget.",
+      "encrypted": "Denne PDF er beskyttet med adgangskode.",
+      "invalidTokens": "Kunne ikke fortolke: {tokens}.",
+      "outOfRange": "Uden for intervallet (maks. {max}): {tokens}.",
+      "generic": "Kunne ikke udtrække siderne."
+    }
+  },
+  "wordy": {
+    "modeText": "Tekst",
+    "modeFile": "Fil",
+    "textPlaceholder": "Indsæt eller skriv teksten, der skal analyseres…",
+    "dropzone": "Træk en tekstfil (.txt, .md, .csv…), eller klik for at vælge en",
+    "stats": {
+      "words": "Ord",
+      "charsWithSpaces": "Tegn (med mellemrum)",
+      "charsNoSpaces": "Tegn (uden mellemrum)",
+      "lines": "Linjer",
+      "paragraphs": "Afsnit",
+      "sentences": "Sætninger",
+      "readingTime": "Læsetid",
+      "minutes": "{n} min",
+      "minutesSeconds": "{m} min {s} s",
+      "seconds": "{n} s"
+    },
+    "actions": {
+      "clear": "Ryd"
+    },
+    "errors": {
+      "notText": "Kun almindelige tekstfiler (.txt, .md, .csv osv.) understøttes.",
+      "read": "Kunne ikke læse filen."
+    }
+  },
+  "stapler": {
+    "dropzone": "Træk PDF'er hertil, eller klik for at vælge dem",
+    "list": {
+      "title": "{count} filer · {pages} sider i alt",
+      "pages": "{n} sider"
+    },
+    "actions": {
+      "merge": "Flet PDF'er",
+      "processing": "Fletter…",
+      "clear": "Fjern alle",
+      "moveUp": "Flyt op",
+      "moveDown": "Flyt ned",
+      "remove": "Fjern"
+    },
+    "errors": {
+      "notPdf": "{name} er ikke en PDF.",
+      "invalidPdf": "{name} er ikke en gyldig PDF eller er beskadiget.",
+      "encrypted": "{name} er beskyttet med adgangskode.",
+      "generic": "Kunne ikke flette PDF'erne."
+    }
+  },
+  "createpass": {
+    "length": "Længde",
+    "count": "Hvor mange?",
+    "excludeSimilar": "Udelad ens (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Udelad tvetydige (parenteser, anførselstegn og lignende)",
+    "bits": "bits",
+    "strength": {
+      "veryWeak": "Meget svag",
+      "weak": "Svag",
+      "reasonable": "Rimelig",
+      "strong": "Stærk",
+      "veryStrong": "Meget stærk"
+    },
+    "actions": {
+      "generate": "Generér",
+      "copy": "Kopiér",
+      "copied": "Kopieret!"
+    },
+    "errors": {
+      "noCharset": "Vælg mindst én tegntype.",
+      "clipboard": "Kunne ikke kopiere til udklipsholderen."
+    }
+  },
+  "idkun": {
+    "format": "Format",
+    "count": "Hvor mange?",
+    "nanoidSize": "NanoID-længde",
+    "uppercase": "Store bogstaver",
+    "hyphens": "Med bindestreger",
+    "formats": {
+      "uuidv4": "UUID v4 (tilfældig)",
+      "uuidv7": "UUID v7 (tidsstempel + tilfældig)",
+      "uuidNil": "UUID NIL (alle nuller)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (URL-safe)"
+    },
+    "about": {
+      "uuidv4": "Den mest almindelige standard-UUID. 122 tilfældige bits. RFC 4122.",
+      "uuidv7": "Kombinerer tidsstempel + tilfældig. Leksikografisk sorterbar. RFC 9562 (2024).",
+      "uuidNil": "Nil-UUID'en, kun nuller. Nyttig som standardværdi eller sentinel.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. 26 tegn i Crockford Base32.",
+      "nanoid": "Kort og populær URL-safe identifikator. Konfigurerbar størrelse."
+    },
+    "actions": {
+      "generate": "Generér",
+      "copy": "Kopiér",
+      "copyAll": "Kopiér alle",
+      "copied": "Kopieret!"
+    },
+    "errors": {
+      "clipboard": "Kunne ikke kopiere til udklipsholderen."
+    }
+  },
+  "hashy": {
+    "modeText": "Tekst",
+    "modeFile": "Fil",
+    "textPlaceholder": "Indsæt eller skriv tekst, der skal hashes…",
+    "dropzone": "Træk en fil hertil, eller klik for at vælge en",
+    "processing": "Beregner…",
+    "actions": {
+      "copy": "Kopiér",
+      "copied": "Kopieret!"
+    },
+    "verify": {
+      "label": "Verificér mod en forventet hash",
+      "placeholder": "Indsæt hex-hashen (40, 64, 96 eller 128 tegn)…",
+      "unknownLength": "Ukendt længde. Skal matche SHA-1 (40), SHA-256 (64), SHA-384 (96) eller SHA-512 (128).",
+      "match": "Matcher {algo}.",
+      "mismatch": "{algo}-hash matcher ikke."
+    },
+    "errors": {
+      "clipboard": "Kunne ikke kopiere til udklipsholderen."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Træk en JPEG hertil, eller klik for at vælge en",
+    "tags": {
+      "title": "Registrerede metadata ({count})",
+      "hint": "Hvert tag viser sit navn, IFD og type. Rediger værdien, fjern med × eller tilføj nye tags.",
+      "empty": "Dette billede har ingen EXIF-metadata.",
+      "add": "Tilføj tag",
+      "confirmAdd": "Tilføj",
+      "remove": "Fjern tag",
+      "searchPlaceholder": "Søg tag (navn eller IFD)…",
+      "modeStandard": "Standard",
+      "modeCustom": "Brugerdefineret",
+      "custom": {
+        "note": "EXIF identificerer tags ved hjælp af numerisk ID. Andre læsere kan vise dette tag som 'Unknown {id}'.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "Type",
+        "name": "Navn (kun visning)",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "Angiv et ID.",
+        "invalidId": "ID skal være et heltal mellem 1 og 65535.",
+        "duplicate": "Det tag findes allerede i billedet."
+      }
+    },
+    "actions": {
+      "strip": "Fjern alle metadata",
+      "apply": "Anvend og hent",
+      "cancel": "Annullér"
+    },
+    "errors": {
+      "notJpeg": "Kun JPEG-filer (.jpg / .jpeg) understøttes.",
+      "invalidValue": "Ugyldig værdi for tag {tag}."
+    }
+  },
+  "dropzone": {
+    "empty": "Træk et billede hertil, eller klik for at vælge et"
+  },
+  "controls": {
+    "width": "Bredde (px)",
+    "height": "Højde (px)",
+    "keepRatio": "Behold formatforhold",
+    "format": "Format",
+    "quality": "Kvalitet"
+  },
+  "actions": {
+    "resize": "Tilpas størrelse",
+    "processing": "Behandler…",
+    "download": "Hent"
+  },
+  "result": {
+    "title": "Resultat"
+  },
+  "errors": {
+    "notAnImage": "Den fil er ikke et gyldigt billede."
+  },
+  "footer": {
+    "tagline": "Tanukibox · værktøjer der kører i din browser",
+    "legalLinks": "Juridiske links",
+    "privacy": "Privatliv",
+    "terms": "Vilkår",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "lastUpdated": "Sidst opdateret: 15. maj 2026",
+    "privacy": {
+      "title": "Privatlivspolitik",
+      "intro": "<p>Hos Tanukibox mener vi, at dine filer er dine. Derfor kører alle vores værktøjer <strong>udelukkende i din browser</strong>: billederne, PDF'erne, teksten eller enhver fil, du behandler, forlader aldrig din enhed.</p>",
+      "sections": {
+        "scope": {
+          "title": "1. Omfang",
+          "body": "<p>Denne politik gælder for tanukibox.com og alle værktøjer, der hostes under dette domæne. Den beskriver, hvilke oplysninger der indsamles, når du besøger siden, og hvad vi gør med dem.</p>"
+        },
+        "data": {
+          "title": "2. Data vi indsamler",
+          "body": "<p>Vi har ikke en server, der modtager dine filer. Værktøjerne (Mochi, Metaimg, Createpass, Hashy osv.) behandler data direkte i din browser ved hjælp af native API'er (Canvas, Web Crypto osv.). Derfor:</p><ul><li><strong>Vi indsamler ikke</strong> de filer, du behandler, deres indhold eller resultaterne.</li><li><strong>Der findes ingen brugerkonti</strong>, adgangskoder eller profiler.</li><li>Tanukibox-serveren leverer kun sidens statiske ressourcer (HTML, CSS, JS).</li></ul><p>Det eneste, der gemmes, er beskrevet i afsnittet om cookies.</p>"
+        },
+        "cookies": {
+          "title": "3. Cookies og lokal lagring",
+          "body": "<p>Vi bruger en enkelt teknisk cookie kaldet <code>tanukibox_lang</code> til at huske din sprogpræference. Den identificerer ikke brugeren og deles ikke med tredjeparter.</p><p>Flere detaljer i <a href='/cookies'>cookiepolitikken</a>.</p>"
+        },
+        "tracking": {
+          "title": "4. Analyse og annoncering",
+          "body": "<p>Vi bruger ikke analyse eller visningsannoncer i øjeblikket. Hvis vi i fremtiden integrerer tjenester som Google AdSense eller en analyseudbyder, vil denne politik blive opdateret for at afspejle det, og dit samtykke vil blive anmodet om, når loven kræver det (GDPR/EU).</p>"
+        },
+        "gdpr": {
+          "title": "5. Dine rettigheder (GDPR)",
+          "body": "<p>Da vi ikke gemmer personligt identificerbare oplysninger på vores servere, gælder de fleste rettigheder i GDPR (adgang, berigtigelse, sletning, dataportabilitet) ikke, fordi der ikke er data at anvende dem på.</p><p>Du kan alligevel udøve enhver rettighed ved at kontakte os på adressen i bunden af denne politik.</p>"
+        },
+        "children": {
+          "title": "6. Børn",
+          "body": "<p>Siden er ikke rettet mod børn under 14 år. Vi indsamler ikke bevidst data om mindreårige.</p>"
+        },
+        "changes": {
+          "title": "7. Ændringer af denne politik",
+          "body": "<p>Vi kan opdatere denne politik, når vi tilføjer nye funktioner eller af juridiske årsager. Datoen for den seneste opdatering vises i dokumentets sidehoved.</p>"
+        },
+        "contact": {
+          "title": "8. Kontakt",
+          "body": "<p>For ethvert spørgsmål vedrørende privatliv: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
+        }
+      }
+    },
+    "terms": {
+      "title": "Brugsvilkår",
+      "intro": "<p>Velkommen til Tanukibox. Ved at bruge denne side accepterer du de vilkår, der er beskrevet nedenfor. Hvis du ikke er enig, bedes du undlade at bruge tjenesten.</p>",
+      "sections": {
+        "acceptance": {
+          "title": "1. Accept",
+          "body": "<p>Adgang til og brug af tanukibox.com indebærer fuld accept af disse vilkår. De kan opdateres når som helst; fortsat brug efter ændringerne indebærer accept af dem.</p>"
+        },
+        "service": {
+          "title": "2. Beskrivelse af tjenesten",
+          "body": "<p>Tanukibox leverer et sæt værktøjer, der kører udelukkende i din browser (lokal behandling). Tjenesten leveres <strong>gratis og \"som den er\"</strong>, uden garantier for tilgængelighed, nøjagtighed eller egnethed til et bestemt formål.</p>"
+        },
+        "use": {
+          "title": "3. Tilladt brug",
+          "body": "<p>Du må bruge værktøjerne til ethvert lovligt formål, personligt eller professionelt. Du må ikke:</p><ul><li>Forsøge at kompromittere sidens sikkerhed eller tilgængelighed.</li><li>Bruge tjenesten til at behandle ulovligt indhold.</li><li>Kopiere eller videredistribuere sidens kode uden tilladelse.</li></ul>"
+        },
+        "responsibility": {
+          "title": "4. Brugerens ansvar",
+          "body": "<p>Du er ansvarlig for at validere resultaterne af hvert værktøj, før du træffer beslutninger baseret på dem. For eksempel ved manuelt at verificere en hash, kontrollere en genereret adgangskode i en pålidelig manager eller gennemgå de fjernede metadata, før du udgiver et billede.</p>"
+        },
+        "ip": {
+          "title": "5. Immaterielle rettigheder",
+          "body": "<p>Navnet Tanukibox, logoet og sidens design tilhører dets forfatter. Kildekoden kan være tilgængelig under en åben licens i dens offentlige repository; tjek repositoryet for de nøjagtige vilkår.</p>"
+        },
+        "liability": {
+          "title": "6. Ansvarsbegrænsning",
+          "body": "<p>I det videst mulige omfang, som loven tillader, er Tanukibox ikke ansvarlig for direkte, indirekte, tilfældige eller følgeskader, der opstår som følge af brugen eller manglende evne til at bruge tjenesten, herunder tab af data.</p>"
+        },
+        "changes": {
+          "title": "7. Ændringer",
+          "body": "<p>Vi forbeholder os retten til at ændre, suspendere eller indstille ethvert værktøj når som helst uden forudgående varsel.</p>"
+        },
+        "jurisdiction": {
+          "title": "8. Gældende lov og jurisdiktion",
+          "body": "<p>Disse vilkår er underlagt spansk lov. For enhver tvist underkaster parterne sig retterne og domstolene på brugerens bopæl, eller i Madrid hvis brugeren ikke er forbruger.</p>"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookiepolitik",
+      "intro": "<p>Denne side beskriver, hvilke cookies og lagringsmekanismer tanukibox.com bruger.</p>",
+      "sections": {
+        "what": {
+          "title": "1. Hvad cookies er",
+          "body": "<p>Cookies er små filer, som et website gemmer på din enhed for at huske oplysninger mellem besøg (præferencer, session osv.). Tanukibox bruger det absolutte minimum.</p>"
+        },
+        "used": {
+          "title": "2. Cookies vi bruger",
+          "body": "<ul><li><strong><code>tanukibox_lang</code></strong> — teknisk præferencecookie. Gemmer det valgte sprog, så vi ikke spørger ved hvert besøg. Udløber efter 1 år. Identificerer ikke brugeren.</li></ul><p>Vi bruger i øjeblikket ikke sporings- eller annoncecookies.</p>"
+        },
+        "thirdParty": {
+          "title": "3. Tredjepartscookies",
+          "body": "<p>Tanukibox indlæser i øjeblikket ikke tredjepartsscripts, der installerer cookies. Hvis vi i fremtiden integrerer tjenester som Google AdSense eller et analyseværktøj, vil dette afsnit blive opdateret, og dit samtykke vil blive anmodet om via et banner.</p>"
+        },
+        "manage": {
+          "title": "4. Sådan administrerer du cookies",
+          "body": "<p>Du kan slette eller blokere cookies fra din browsers indstillinger. Hvis du blokerer <code>tanukibox_lang</code>, vil siden fungere, men den vil ikke huske din sprogpræference.</p>"
+        },
+        "changes": {
+          "title": "5. Ændringer af denne politik",
+          "body": "<p>Hvis vi tilføjer nye cookies eller tredjepartstjenester, opdaterer vi denne side og datoen i sidehovedet.</p>"
+        }
+      }
+    }
+  }
+}

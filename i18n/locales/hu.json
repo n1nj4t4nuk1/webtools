@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "languageSwitcher": "Nyelvválasztó"
+  },
+  "landing": {
+    "title": "Eszközök, amelyek a böngészőben futnak",
+    "description": "Szerver nélküli webes segédprogramok gyűjteménye. A fájljai soha nem hagyják el az eszközét.",
+    "categories": {
+      "imageEdit": "Képszerkesztés",
+      "documents": "Dokumentumok",
+      "privacy": "Adatvédelem",
+      "generators": "Generátorok",
+      "dev": "Fejlesztés",
+      "design": "Tervezés",
+      "converters": "Konverterek"
+    }
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Képek átméretezése",
+      "description": "Csökkentse a képek képpontméretét közvetlenül a böngészőben. Nincs feltöltés, nincs szerver."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "EXIF metaadatok szerkesztése",
+      "description": "Olvassa, szerkessze vagy törölje a JPEG fényképek EXIF metaadatait. Mindezt a böngészőben."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Erős jelszavak generálása",
+      "description": "Véletlenszerű jelszavak létrehozása a böngésző kriptográfiájával. Soha nem hagyják el az eszközt."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Hash-ek számítása és integritás ellenőrzése",
+      "description": "SHA-1, SHA-256, SHA-384 és SHA-512 szövegekhez vagy fájlokhoz. Hasonlítsa össze egy elvárt hash-sel a letöltések ellenőrzéséhez."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Egyedi azonosítók generálása",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID és NanoID. Kriptográfiailag biztonságos generálás a böngészőben."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Több PDF egyesítése egybe",
+      "description": "Több PDF-fájl összefűzése egyetlen fájlba, tetszőleges sorrendben. Minden feldolgozás a böngészőben történik."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Szavak és karakterek számolása",
+      "description": "Elemezzen szöveget vagy szövegfájlt: szavak, karakterek, sorok, bekezdések és becsült olvasási idő."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "Oldalak kinyerése egy PDF-ből",
+      "description": "Válasszon oldalakat vagy tartományokat egy PDF-ből, és töltse le őket új fájlként. Minden a böngészőben."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Mezők kombinálása változatokká (e-mailek, felhasználónevek…)",
+      "description": "Generáljon kombinációkat több mezőből konfigurálható elválasztóval és utótaggal. Hasznos e-mail-listákhoz, felhasználónevekhez, slugokhoz vagy azonosítókhoz."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Konvertálás CSV és JSON között",
+      "description": "Illesszen be CSV-t vagy JSON-t, és azonnal megkapja a másik formátumot. Automatikusan felismeri az elválasztót és a formátumot. Mindez a böngészőben."
+    },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Lorem ipsum szöveg generálása",
+      "description": "Helykitöltő szöveg bekezdésekben, mondatokban vagy szavakban. Lehetőség a klasszikus \"Lorem ipsum dolor sit amet…\" kezdettel, és kimenet sima szövegként vagy HTML-ként."
+    },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Regex tesztelése és szöveg cseréje",
+      "description": "Építsen reguláris kifejezést, lássa kiemelve a találatokat, és alkalmazzon cserét (támogatja a $1, $2… jelöléseket). Mindez a böngészőben."
+    },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "Konvertálás YAML és JSON között",
+      "description": "Illesszen be YAML-t vagy JSON-t, és azonnal megkapja a másik formátumot. Automatikusan felismeri a formátumot, és sor- és oszlopszámmal jelzi a hibákat. Mindez a böngészőben."
+    },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "CSS gradiens generátor",
+      "description": "Készítsen lineáris, radiális és kúpos gradienseket több színátmenettel, élő előnézettel, majd másolja ki a CSS-t."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "box-shadow generátor",
+      "description": "Árnyékok eltolással, elmosással, terjedéssel, színnel, alfával és belső árnyékkal. Több réteg élő előnézettel."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Színválasztó, paletta és WCAG kontraszt",
+      "description": "Válasszon színt, konvertáljon HEX/RGB/HSL között, generáljon palettát, és mérje a WCAG kontrasztot fehér és fekete háttéren."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "CSS mértékegység-konverter",
+      "description": "Konvertálás px, rem, em, pt és % között konfigurálható alapmérettel. Bármelyik egység szerkesztése újraszámolja a többit."
+    },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Időbélyegek és dátumok konvertálása",
+      "description": "Szerkesszen bármilyen formátumot (UNIX másodperc/ms, ISO 8601 UTC/helyi, RFC 2822), és a többi frissül. Mutatja a hét napját, a relatív időt és az időzónát."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Konvertálás számrendszerek között",
+      "description": "Konvertálás bináris, oktális, decimális és hexadecimális között. Tetszőleges méretű egész számokat támogat (BigInt)."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "JSON formázása és érvényesítése",
+      "description": "Illesszen be JSON-t, érvényesítse és formázza tetszőleges behúzással. Tömörítsen, rendezze a kulcsokat, és nézze meg a statisztikát. Mindez a böngészőben."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Típus",
+      "linear": "Lineáris",
+      "radial": "Radiális",
+      "conic": "Kúpos"
+    },
+    "angle": "Szög",
+    "shape": {
+      "label": "Alak",
+      "circle": "Kör",
+      "ellipse": "Ellipszis"
+    },
+    "position": {
+      "label": "Pozíció"
+    },
+    "stops": {
+      "title": "Színátmenetek",
+      "add": "Színátmenet hozzáadása"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Másolás",
+      "copied": "Másolva!"
+    }
+  },
+  "shadowy": {
+    "title": "Árnyékok",
+    "layer": "{n}. réteg",
+    "offsetX": "X eltolás",
+    "offsetY": "Y eltolás",
+    "blur": "Elmosás",
+    "spread": "Terjedés",
+    "color": "Szín",
+    "alpha": "Átlátszatlanság",
+    "inset": "Belső",
+    "css": "CSS",
+    "actions": {
+      "add": "Árnyék hozzáadása",
+      "remove": "Árnyék eltávolítása",
+      "copy": "Másolás",
+      "copied": "Másolva!"
+    }
+  },
+  "colory": {
+    "palette": "Paletta",
+    "contrast": {
+      "label": "WCAG kontraszt",
+      "sample": "Aa",
+      "withWhite": "fehéren",
+      "withBlack": "feketén",
+      "normal": "Normál szöveg",
+      "large": "Nagy szöveg"
+    },
+    "actions": {
+      "copy": "Másolás",
+      "copied": "Másolva!"
+    }
+  },
+  "timely": {
+    "formats": "Formátumok",
+    "fmt": {
+      "unixS": "UNIX (másodperc)",
+      "unixMs": "UNIX (ezredmásodperc)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 helyi",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "A hét napja",
+      "relative": "Relatív",
+      "tz": "Az Ön időzónája"
+    },
+    "actions": {
+      "now": "Most",
+      "copy": "Másolás",
+      "copied": "Másolva!"
+    },
+    "errors": {
+      "invalid": "Érvénytelen formátum."
+    }
+  },
+  "basey": {
+    "title": "Számrendszerek",
+    "bases": {
+      "bin": "Bináris",
+      "oct": "Oktális",
+      "dec": "Decimális",
+      "hex": "Hexadecimális"
+    },
+    "customLabel": "{radix}-es számrendszer",
+    "placeholders": {
+      "bin": "pl. 101010",
+      "oct": "pl. 52",
+      "dec": "pl. 42",
+      "hex": "pl. 2A"
+    },
+    "addCustom": {
+      "title": "Egyéni számrendszer hozzáadása",
+      "label": "Alap",
+      "placeholder": "2–36",
+      "hint": "A számjegyek 0-9-ig, majd a-z-ig terjednek. Például a 36-os számrendszer 0-9 és a-z karaktereket használ."
+    },
+    "actions": {
+      "clear": "Törlés",
+      "copy": "Másolás",
+      "copied": "Másolva!",
+      "addBase": "Hozzáadás",
+      "removeBase": "Számrendszer eltávolítása"
+    },
+    "errors": {
+      "invalid": "Érvénytelen érték a következőhöz: {base}.",
+      "invalidRadix": "Az alapnak 2 és 36 közötti egész számnak kell lennie."
+    }
+  },
+  "unity": {
+    "baseFont": "Alapméret",
+    "baseHint": "1rem = alap. 1em = a szülőhöz viszonyított (itt feltételezve = alap). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "képpont",
+      "rem": "root em",
+      "em": "relatív em",
+      "pt": "pont",
+      "percent": "százalék"
+    },
+    "actions": {
+      "copy": "Másolás",
+      "copied": "Másolva!"
+    }
+  },
+  "yamljson": {
+    "input": "Bemenet",
+    "output": "Kimenet",
+    "inputPlaceholder": "Illesszen be ide YAML-t vagy JSON-t…",
+    "outputPlaceholder": "Az eredmény itt fog megjelenni.",
+    "indent": "Behúzás",
+    "direction": {
+      "label": "Irány",
+      "auto": "Automatikus",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "Felismerve",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "Ismeretlen"
+    },
+    "actions": {
+      "example": "Példa",
+      "clear": "Törlés",
+      "copy": "Másolás",
+      "copied": "Másolva!",
+      "download": "Letöltés",
+      "useAsInput": "Bemenetként használ"
+    },
+    "errors": {
+      "unknownInput": "Nem sikerült felismerni a formátumot. Válassza ki az irányt kézzel.",
+      "invalidYaml": "Érvénytelen YAML",
+      "invalidJson": "Érvénytelen JSON",
+      "atLine": "{line}. sor, {col}. oszlop"
+    }
+  },
+  "regexpad": {
+    "pattern": "Minta",
+    "patternPlaceholder": "pl. \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Csere",
+    "replacementPlaceholder": "Csereszöveg (használja a $1, $2… jelöléseket a csoportokhoz)",
+    "replacementHint": "Használja a $& jelölést a teljes találathoz, a $1, $2… jelöléseket a befogó csoportokhoz.",
+    "source": "Forrásszöveg",
+    "sourcePlaceholder": "Illessze be ide a keresendő szöveget…",
+    "preview": "Kiemelt találatok",
+    "previewEmpty": "Írjon be szöveget fent a találatok megtekintéséhez.",
+    "output": "A csere eredménye",
+    "outputPlaceholder": "Itt fog megjelenni a szöveg az alkalmazott cserével.",
+    "flags": {
+      "label": "Jelzők",
+      "g": "globális",
+      "i": "kis- és nagybetű figyelmen kívül hagyása",
+      "m": "többsoros",
+      "s": "a pont egyezik az új sorral",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Mintára várok…",
+      "count": "{n} találat",
+      "none": "Nincs találat"
+    },
+    "actions": {
+      "example": "Példa",
+      "clear": "Törlés",
+      "copy": "Másolás",
+      "copied": "Másolva!",
+      "download": "Letöltés"
+    },
+    "errors": {
+      "invalidRegex": "Érvénytelen regex"
+    }
+  },
+  "lorempad": {
+    "output": "Kimenet",
+    "count": "Mennyiség",
+    "wordsPerSentence": "Szó mondatonként",
+    "wordsPerParagraph": "Szó bekezdésenként",
+    "wordsHint": "0 = véletlenszerű. Legalább 3, ha rögzített.",
+    "classic": "Kezdje a klasszikus \"Lorem ipsum dolor sit amet…\" szöveggel",
+    "mode": {
+      "label": "Mód",
+      "paragraphs": "Bekezdések",
+      "sentences": "Mondatok",
+      "words": "Szavak"
+    },
+    "format": {
+      "label": "Formátum",
+      "plain": "Sima szöveg",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Újragenerálás",
+      "copy": "Másolás",
+      "copied": "Másolva!",
+      "download": "Letöltés"
+    }
+  },
+  "jsonpad": {
+    "editor": "Szerkesztő",
+    "placeholder": "Illessze be ide a JSON-t…",
+    "indent": "Behúzás (szóköz)",
+    "actions": {
+      "format": "Formázás",
+      "minify": "Tömörítés",
+      "sortKeys": "Kulcsok rendezése",
+      "example": "Példa",
+      "clear": "Törlés",
+      "copy": "Másolás",
+      "copied": "Másolva!",
+      "download": "Letöltés"
+    },
+    "status": {
+      "empty": "JSON-ra várok…",
+      "valid": "Érvényes JSON",
+      "error": "Érvénytelen JSON",
+      "errorAt": "Hiba a {line}. sor {col}. oszlopában"
+    },
+    "stats": {
+      "keys": "{n} kulcs",
+      "depth": "{n} mélység",
+      "objects": "{n} objektum",
+      "arrays": "{n} tömb"
+    }
+  },
+  "csvjson": {
+    "input": "Bemenet",
+    "output": "Kimenet",
+    "inputPlaceholder": "Illesszen be ide CSV-t vagy JSON-t…",
+    "outputPlaceholder": "Az eredmény itt fog megjelenni.",
+    "hasHeader": "A CSV-nek van fejlécsora",
+    "pretty": "JSON szép formázása",
+    "direction": {
+      "label": "Irány",
+      "auto": "Automatikus",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Elválasztó",
+      "auto": "Automatikus",
+      "comma": "Vessző (,)",
+      "semicolon": "Pontosvessző (;)",
+      "tab": "Tabulátor",
+      "pipe": "Függőleges vonal (|)"
+    },
+    "detected": {
+      "label": "Felismerve",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Ismeretlen"
+    },
+    "actions": {
+      "example": "Példa",
+      "clear": "Törlés",
+      "copy": "Másolás",
+      "copied": "Másolva!",
+      "download": "Letöltés",
+      "useAsInput": "Bemenetként használ"
+    },
+    "errors": {
+      "unknownInput": "Nem sikerült felismerni a formátumot. Válassza ki az irányt kézzel.",
+      "invalidJson": "Érvénytelen JSON: {msg}",
+      "notTabular": "A JSON-nak tömbnek (vagy objektumnak) kell lennie a CSV-vé alakításhoz.",
+      "mixedShape": "A tömb különböző típusú elemeket tartalmaz. Csak objektumokból vagy csak tömbökből állhat."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Mezők",
+      "valuePlaceholder": "Érték",
+      "examples": "pl. Mária|pl. Kovács|pl. Acme|pl. 2024|pl. dev|pl. eu",
+      "add": "Mező hozzáadása",
+      "remove": "Mező eltávolítása",
+      "mode": {
+        "full": "Teljes",
+        "initial": "Kezdőbetű",
+        "both": "Mindkettő"
+      }
+    },
+    "options": {
+      "separator": "Elválasztó",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Előtag",
+      "prefixPlaceholder": "https://www. (opcionális)",
+      "suffix": "Utótag",
+      "suffixPlaceholder": "{'@'}example.com (opcionális)",
+      "permute": "Mezők sorrendjének permutálása",
+      "permuteHint": "Ha be van kapcsolva, eltérő mezősorrendű kombinációkat is generál (last.first, stb.).",
+      "subsets": "Részhalmazok belevétele (kevesebb mezőt használó kombinációk)",
+      "subsetsHint": "Ha be van kapcsolva, olyan változatokat is generál, amelyek csak néhány kitöltött mezőt használnak (csak keresztnév, csak vezetéknév, keresztnév+cég, stb.).",
+      "downloadOnly": "Csak letöltés (ne jelenítse meg a listát)",
+      "downloadOnlyHint": "Hasznos, ha sok ezer kombináció van, és a lista megjelenítése lelassítja a böngészőt. A felső határt 100 000 eredményre emeli."
+    },
+    "results": {
+      "title": "Eredmények ({count})",
+      "empty": "Töltsön ki legalább egy mezőt a kombinációk generálásához.",
+      "limited": "{total} kombinációból az első {limit} látható.",
+      "copyAll": "Mind másolása",
+      "copied": "Másolva!",
+      "download": ".txt letöltése",
+      "downloadHint": "A lista el van rejtve, hogy ne lassítsa le a böngészőt. Nyomja meg a Letöltést, és kap egy .txt fájlt mind a(z) {count} kombinációval."
+    }
+  },
+  "scissor": {
+    "dropzone": "Húzzon ide egy PDF-et, vagy kattintson a kiválasztáshoz",
+    "totalPages": "{n} oldal",
+    "rangesLabel": "Kinyerendő oldalak",
+    "rangesPlaceholder": "Pl. 1-3, 5, 8-10",
+    "hint": "Vesszővel válassza el. Tartományhoz használjon kötőjelet (1-5). Alapértelmezés szerint minden oldal ki van választva.",
+    "preview": {
+      "pages": "Kiválasztás",
+      "count": "Összesen",
+      "none": "Nincs"
+    },
+    "actions": {
+      "extract": "Kinyerés és letöltés",
+      "processing": "Kinyerés…",
+      "change": "PDF cseréje"
+    },
+    "errors": {
+      "notPdf": "{name} nem PDF.",
+      "invalidPdf": "{name} nem érvényes PDF, vagy sérült.",
+      "encrypted": "Ez a PDF jelszóval védett.",
+      "invalidTokens": "Nem sikerült értelmezni: {tokens}.",
+      "outOfRange": "Tartományon kívül (max {max}): {tokens}.",
+      "generic": "Nem sikerült kinyerni az oldalakat."
+    }
+  },
+  "wordy": {
+    "modeText": "Szöveg",
+    "modeFile": "Fájl",
+    "textPlaceholder": "Illessze be vagy írja be az elemezendő szöveget…",
+    "dropzone": "Húzzon ide egy szövegfájlt (.txt, .md, .csv…), vagy kattintson a kiválasztáshoz",
+    "stats": {
+      "words": "Szavak",
+      "charsWithSpaces": "Karakterek (szóközökkel)",
+      "charsNoSpaces": "Karakterek (szóközök nélkül)",
+      "lines": "Sorok",
+      "paragraphs": "Bekezdések",
+      "sentences": "Mondatok",
+      "readingTime": "Olvasási idő",
+      "minutes": "{n} perc",
+      "minutesSeconds": "{m} perc {s} mp",
+      "seconds": "{n} mp"
+    },
+    "actions": {
+      "clear": "Törlés"
+    },
+    "errors": {
+      "notText": "Csak sima szövegfájlok (.txt, .md, .csv, stb.) támogatottak.",
+      "read": "Nem sikerült beolvasni a fájlt."
+    }
+  },
+  "stapler": {
+    "dropzone": "Húzzon ide PDF-eket, vagy kattintson a kiválasztáshoz",
+    "list": {
+      "title": "{count} fájl · összesen {pages} oldal",
+      "pages": "{n} oldal"
+    },
+    "actions": {
+      "merge": "PDF-ek egyesítése",
+      "processing": "Egyesítés…",
+      "clear": "Mind eltávolítása",
+      "moveUp": "Mozgatás felfelé",
+      "moveDown": "Mozgatás lefelé",
+      "remove": "Eltávolítás"
+    },
+    "errors": {
+      "notPdf": "{name} nem PDF.",
+      "invalidPdf": "{name} nem érvényes PDF, vagy sérült.",
+      "encrypted": "{name} jelszóval védett.",
+      "generic": "Nem sikerült egyesíteni a PDF-eket."
+    }
+  },
+  "createpass": {
+    "length": "Hossz",
+    "count": "Hány darab?",
+    "excludeSimilar": "Hasonló karakterek kizárása (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Kétértelmű karakterek kizárása (zárójelek, idézőjelek és hasonlók)",
+    "bits": "bit",
+    "strength": {
+      "veryWeak": "Nagyon gyenge",
+      "weak": "Gyenge",
+      "reasonable": "Elfogadható",
+      "strong": "Erős",
+      "veryStrong": "Nagyon erős"
+    },
+    "actions": {
+      "generate": "Generálás",
+      "copy": "Másolás",
+      "copied": "Másolva!"
+    },
+    "errors": {
+      "noCharset": "Válasszon ki legalább egy karaktertípust.",
+      "clipboard": "Nem sikerült a vágólapra másolni."
+    }
+  },
+  "idkun": {
+    "format": "Formátum",
+    "count": "Hány darab?",
+    "nanoidSize": "NanoID hossza",
+    "uppercase": "Nagybetűk",
+    "hyphens": "Kötőjelekkel",
+    "formats": {
+      "uuidv4": "UUID v4 (véletlenszerű)",
+      "uuidv7": "UUID v7 (időbélyeg + véletlen)",
+      "uuidNil": "UUID NIL (csupa nulla)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (URL-biztos)"
+    },
+    "about": {
+      "uuidv4": "A leggyakoribb szabványos UUID. 122 véletlenszerű bit. RFC 4122.",
+      "uuidv7": "Egyesíti az időbélyeget és a véletlent. Lexikografikusan rendezhető. RFC 9562 (2024).",
+      "uuidNil": "A nil UUID, csupa nullák. Alapértelmezett vagy őrszem értékként hasznos.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. 26 karakter Crockford Base32-ben.",
+      "nanoid": "Rövid és népszerű URL-biztos azonosító. Konfigurálható mérettel."
+    },
+    "actions": {
+      "generate": "Generálás",
+      "copy": "Másolás",
+      "copyAll": "Mind másolása",
+      "copied": "Másolva!"
+    },
+    "errors": {
+      "clipboard": "Nem sikerült a vágólapra másolni."
+    }
+  },
+  "hashy": {
+    "modeText": "Szöveg",
+    "modeFile": "Fájl",
+    "textPlaceholder": "Illessze be vagy írja be a hash-elendő szöveget…",
+    "dropzone": "Húzzon ide egy fájlt, vagy kattintson a kiválasztáshoz",
+    "processing": "Számítás…",
+    "actions": {
+      "copy": "Másolás",
+      "copied": "Másolva!"
+    },
+    "verify": {
+      "label": "Ellenőrzés egy elvárt hash-sel szemben",
+      "placeholder": "Illessze be a hexa hash-t (40, 64, 96 vagy 128 karakter)…",
+      "unknownLength": "Ismeretlen hossz. Egyeznie kell a SHA-1 (40), SHA-256 (64), SHA-384 (96) vagy SHA-512 (128) hosszúsággal.",
+      "match": "Egyezik a következővel: {algo}.",
+      "mismatch": "A(z) {algo} hash nem egyezik."
+    },
+    "errors": {
+      "clipboard": "Nem sikerült a vágólapra másolni."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Húzzon ide egy JPEG-et, vagy kattintson a kiválasztáshoz",
+    "tags": {
+      "title": "Felismert metaadatok ({count})",
+      "hint": "Minden címke mutatja a nevét, IFD-jét és típusát. Szerkessze az értéket, távolítsa el ×-szel, vagy adjon hozzá új címkéket.",
+      "empty": "Ennek a képnek nincsenek EXIF metaadatai.",
+      "add": "Címke hozzáadása",
+      "confirmAdd": "Hozzáadás",
+      "remove": "Címke eltávolítása",
+      "searchPlaceholder": "Címke keresése (név vagy IFD)…",
+      "modeStandard": "Szabványos",
+      "modeCustom": "Egyéni",
+      "custom": {
+        "note": "Az EXIF a címkéket numerikus azonosítóval azonosítja. Más olvasók ezt a címkét így jeleníthetik meg: 'Unknown {id}'.",
+        "id": "Azonosító (1–65535)",
+        "ifd": "IFD",
+        "type": "Típus",
+        "name": "Név (csak megjelenítéshez)",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "Adjon meg azonosítót.",
+        "invalidId": "Az azonosítónak 1 és 65535 közötti egész számnak kell lennie.",
+        "duplicate": "Ez a címke már létezik a képen."
+      }
+    },
+    "actions": {
+      "strip": "Minden metaadat eltávolítása",
+      "apply": "Alkalmazás és letöltés",
+      "cancel": "Mégse"
+    },
+    "errors": {
+      "notJpeg": "Csak JPEG fájlok (.jpg / .jpeg) támogatottak.",
+      "invalidValue": "Érvénytelen érték a(z) {tag} címkéhez."
+    }
+  },
+  "dropzone": {
+    "empty": "Húzzon ide egy képet, vagy kattintson a kiválasztáshoz"
+  },
+  "controls": {
+    "width": "Szélesség (px)",
+    "height": "Magasság (px)",
+    "keepRatio": "Méretarány megtartása",
+    "format": "Formátum",
+    "quality": "Minőség"
+  },
+  "actions": {
+    "resize": "Átméretezés",
+    "processing": "Feldolgozás…",
+    "download": "Letöltés"
+  },
+  "result": {
+    "title": "Eredmény"
+  },
+  "errors": {
+    "notAnImage": "Ez a fájl nem érvényes kép."
+  },
+  "footer": {
+    "tagline": "Tanukibox · eszközök, amelyek a böngészőben futnak",
+    "legalLinks": "Jogi linkek",
+    "privacy": "Adatvédelem",
+    "terms": "Feltételek",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "lastUpdated": "Utolsó frissítés: 2026. május 15.",
+    "privacy": {
+      "title": "Adatvédelmi szabályzat",
+      "intro": "<p>A Tanukibox-nál hiszünk abban, hogy az Ön fájljai az Önéi. Ezért minden eszközünk <strong>teljes egészében az Ön böngészőjében</strong> fut: a feldolgozott képek, PDF-ek, szövegek vagy bármilyen fájl soha nem hagyják el az eszközét.</p>",
+      "sections": {
+        "scope": {
+          "title": "1. Hatály",
+          "body": "<p>Ez a szabályzat a tanukibox.com oldalra és az ehhez a domainhez tartozó minden eszközre vonatkozik. Leírja, milyen információkat gyűjtünk az oldal látogatása során, és mit teszünk velük.</p>"
+        },
+        "data": {
+          "title": "2. Az általunk gyűjtött adatok",
+          "body": "<p>Nincs olyan szerverünk, amely az Ön fájljait fogadná. Az eszközök (Mochi, Metaimg, Createpass, Hashy, stb.) közvetlenül a böngészőben dolgozzák fel az adatokat natív API-k (Canvas, Web Crypto, stb.) segítségével. Ennélfogva:</p><ul><li><strong>Nem gyűjtjük</strong> az Ön által feldolgozott fájlokat, azok tartalmát vagy az eredményeket.</li><li><strong>Nincsenek felhasználói fiókok</strong>, jelszavak vagy profilok.</li><li>A Tanukibox szerver csak az oldal statikus erőforrásait (HTML, CSS, JS) szolgáltatja.</li></ul><p>Az egyetlen tárolt elemet a Cookies szakasz írja le.</p>"
+        },
+        "cookies": {
+          "title": "3. Cookies és helyi tárolás",
+          "body": "<p>Egyetlen technikai cookie-t használunk <code>tanukibox_lang</code> néven az Ön nyelvi preferenciájának megjegyzésére. Nem azonosítja a felhasználót, és nem osztjuk meg harmadik felekkel.</p><p>További részletek a <a href='/cookies'>cookies szabályzatban</a>.</p>"
+        },
+        "tracking": {
+          "title": "4. Elemzés és hirdetés",
+          "body": "<p>Jelenleg nem használunk elemzést vagy megjelenített hirdetést. Ha a jövőben olyan szolgáltatásokat integrálunk, mint a Google AdSense vagy egy elemző szolgáltató, ez a szabályzat frissül, és az Ön hozzájárulását is kérni fogjuk, ha a törvény (GDPR/EU) ezt megköveteli.</p>"
+        },
+        "gdpr": {
+          "title": "5. Az Ön jogai (GDPR)",
+          "body": "<p>Mivel nem tárolunk személyazonosításra alkalmas adatokat a szervereinken, a GDPR szerinti legtöbb jog (hozzáférés, helyesbítés, törlés, hordozhatóság) nem alkalmazható, mert nincs olyan adat, amelyre alkalmazni lehetne.</p><p>Ennek ellenére bármely jogát gyakorolhatja, ha kapcsolatba lép velünk a szabályzat alján feltüntetett címen.</p>"
+        },
+        "children": {
+          "title": "6. Gyermekek",
+          "body": "<p>Az oldal nem 14 év alatti gyermekeknek készült. Tudatosan nem gyűjtünk adatokat kiskorúakról.</p>"
+        },
+        "changes": {
+          "title": "7. A szabályzat módosításai",
+          "body": "<p>Ezt a szabályzatot frissíthetjük, ha új funkciókat adunk hozzá, vagy jogi okokból. Az utolsó frissítés dátuma a dokumentum fejlécében látható.</p>"
+        },
+        "contact": {
+          "title": "8. Kapcsolat",
+          "body": "<p>Az adatvédelemmel kapcsolatos bármely kérdés esetén: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
+        }
+      }
+    },
+    "terms": {
+      "title": "Felhasználási feltételek",
+      "intro": "<p>Üdvözöljük a Tanukibox-on. Az oldal használatával elfogadja az alább ismertetett feltételeket. Ha nem ért egyet velük, kérjük, ne használja a szolgáltatást.</p>",
+      "sections": {
+        "acceptance": {
+          "title": "1. Elfogadás",
+          "body": "<p>A tanukibox.com elérése és használata e feltételek teljes elfogadását jelenti. Ezek bármikor frissülhetnek; a változások utáni folytatólagos használat azok elfogadását jelenti.</p>"
+        },
+        "service": {
+          "title": "2. A szolgáltatás leírása",
+          "body": "<p>A Tanukibox olyan segédprogramokat kínál, amelyek teljes egészében az Ön böngészőjében futnak (helyi feldolgozás). A szolgáltatást <strong>ingyenesen és \"ahogy van\"</strong> alapon nyújtjuk, az elérhetőségre, pontosságra vagy adott célra való alkalmasságra vonatkozó garancia nélkül.</p>"
+        },
+        "use": {
+          "title": "3. Engedélyezett használat",
+          "body": "<p>Az eszközöket bármilyen jogszerű célra használhatja, személyes vagy szakmai célból. Nem szabad:</p><ul><li>Megkísérelni veszélyeztetni az oldal biztonságát vagy elérhetőségét.</li><li>A szolgáltatást törvénytelen tartalom feldolgozására használni.</li><li>Engedély nélkül másolni vagy újra terjeszteni az oldal kódját.</li></ul>"
+        },
+        "responsibility": {
+          "title": "4. Felhasználói felelősség",
+          "body": "<p>Ön felelős minden eszköz eredményének érvényesítéséért, mielőtt azok alapján döntéseket hozna. Például egy hash kézi ellenőrzéséért, egy generált jelszó megbízható kezelőben való ellenőrzéséért, vagy az eltávolított metaadatok átnézéséért egy kép közzététele előtt.</p>"
+        },
+        "ip": {
+          "title": "5. Szellemi tulajdon",
+          "body": "<p>A Tanukibox név, logó és oldaltervezés a szerzője tulajdonát képezi. A forráskód nyílt licenc alatt elérhető lehet a nyilvános tárolójában; az pontos feltételeket a tárolóban ellenőrizze.</p>"
+        },
+        "liability": {
+          "title": "6. Felelősség korlátozása",
+          "body": "<p>A törvény által megengedett legnagyobb mértékben a Tanukibox nem vállal felelősséget a szolgáltatás használatából vagy nem használatából eredő közvetlen, közvetett, járulékos vagy következményes károkért, beleértve az adatvesztést is.</p>"
+        },
+        "changes": {
+          "title": "7. Módosítások",
+          "body": "<p>Fenntartjuk a jogot, hogy bármelyik eszközt bármikor, előzetes értesítés nélkül módosítsuk, felfüggesszük vagy megszüntessük.</p>"
+        },
+        "jurisdiction": {
+          "title": "8. Alkalmazandó jog és joghatóság",
+          "body": "<p>Ezek a feltételek a spanyol jog hatálya alá tartoznak. Bármilyen vita esetén a felek a felhasználó lakóhelyének bíróságai elé terjesztik a kérdést, vagy Madrid bíróságai elé, ha a felhasználó nem fogyasztó.</p>"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookies szabályzat",
+      "intro": "<p>Ez az oldal leírja, milyen cookies-okat és tárolási mechanizmusokat használ a tanukibox.com.</p>",
+      "sections": {
+        "what": {
+          "title": "1. Mik azok a cookies",
+          "body": "<p>A cookies kis fájlok, amelyeket egy weboldal tárol az eszközén, hogy információkat megjegyezzen a látogatások között (preferenciák, munkamenet, stb.). A Tanukibox a minimális szükséges mennyiséget használja.</p>"
+        },
+        "used": {
+          "title": "2. Az általunk használt cookies",
+          "body": "<ul><li><strong><code>tanukibox_lang</code></strong> — technikai preferencia cookie. Tárolja a kiválasztott nyelvet, hogy ne kelljen minden látogatáskor megkérdezni. 1 év alatt lejár. Nem azonosítja a felhasználót.</li></ul><p>Jelenleg nem használunk követő vagy hirdetési cookies-okat.</p>"
+        },
+        "thirdParty": {
+          "title": "3. Harmadik felek cookies-ai",
+          "body": "<p>A Tanukibox jelenleg nem tölt be olyan harmadik féltől származó szkripteket, amelyek cookies-okat telepítenének. Ha a jövőben olyan szolgáltatásokat integrálunk, mint a Google AdSense vagy egy elemző eszköz, ez a szakasz frissül, és az Ön hozzájárulását egy banneren keresztül kérjük.</p>"
+        },
+        "manage": {
+          "title": "4. Cookies kezelése",
+          "body": "<p>A cookies-okat a böngésző beállításaiból törölheti vagy letilthatja. Ha letiltja a <code>tanukibox_lang</code>-ot, az oldal működik, de nem fogja megjegyezni a nyelvi preferenciáját.</p>"
+        },
+        "changes": {
+          "title": "5. A szabályzat módosításai",
+          "body": "<p>Ha új cookies-okat vagy harmadik féltől származó szolgáltatásokat adunk hozzá, frissítjük ezt az oldalt és a fejlécen szereplő dátumot.</p>"
+        }
+      }
+    }
+  }
+}

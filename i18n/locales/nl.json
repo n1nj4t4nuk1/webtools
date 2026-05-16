@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "languageSwitcher": "Taalkeuze"
+  },
+  "landing": {
+    "title": "Tools die in uw browser draaien",
+    "description": "Een verzameling serverloze webhulpmiddelen. Uw bestanden verlaten nooit uw apparaat.",
+    "categories": {
+      "imageEdit": "Beeldbewerking",
+      "documents": "Documenten",
+      "privacy": "Privacy",
+      "generators": "Generatoren",
+      "dev": "Ontwikkeling",
+      "design": "Ontwerp",
+      "converters": "Converters"
+    }
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Afbeeldingen verkleinen",
+      "description": "Verklein het pixelformaat van uw afbeeldingen direct in de browser. Geen uploads, geen server."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "EXIF-metadata bewerken",
+      "description": "Lees, bewerk of verwijder EXIF-metadata uit uw JPEG-foto's. Alles in uw browser."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Sterke wachtwoorden genereren",
+      "description": "Maak willekeurige wachtwoorden met browsercryptografie. Ze verlaten nooit uw apparaat."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Hashes berekenen en integriteit controleren",
+      "description": "SHA-1, SHA-256, SHA-384 en SHA-512 van tekst of bestanden. Vergelijk met een verwachte hash om downloads te verifiëren."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Unieke identificatoren genereren",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID en NanoID. Cryptografisch veilige generatie in uw browser."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Meerdere PDF's tot één samenvoegen",
+      "description": "Combineer meerdere PDF-bestanden tot één, in elke gewenste volgorde. Alles wordt in uw browser verwerkt."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Woorden en tekens tellen",
+      "description": "Analyseer tekst of een tekstbestand: woorden, tekens, regels, alinea's en geschatte leestijd."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "Pagina's uit een PDF halen",
+      "description": "Kies pagina's of bereiken uit een PDF en download ze als een nieuw bestand. Alles in uw browser."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Velden combineren tot varianten (e-mails, gebruikersnamen…)",
+      "description": "Genereer combinaties van meerdere velden met een instelbaar scheidingsteken en achtervoegsel. Handig voor e-maillijsten, gebruikersnamen, slugs of ID's."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Converteren tussen CSV en JSON",
+      "description": "Plak CSV of JSON en krijg direct het andere formaat. Detecteert automatisch het scheidingsteken en het formaat. Alles in uw browser."
+    },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Lorem ipsum-tekst genereren",
+      "description": "Opvultekst in alinea's, zinnen of woorden. Optie om te beginnen met het klassieke \"Lorem ipsum dolor sit amet…\" en uitvoer als platte tekst of HTML."
+    },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Regex testen en tekst vervangen",
+      "description": "Bouw een reguliere expressie, zie overeenkomsten gemarkeerd en pas een vervanging toe (ondersteunt $1, $2…). Alles in uw browser."
+    },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "Converteren tussen YAML en JSON",
+      "description": "Plak YAML of JSON en krijg direct het andere formaat. Detecteert automatisch het formaat en toont fouten met regel en kolom. Alles in uw browser."
+    },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "CSS-verloopgenerator",
+      "description": "Bouw lineaire, radiale en conische verlopen met meerdere stops, bekijk een live voorvertoning en kopieer de CSS."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "box-shadow-generator",
+      "description": "Schaduwen met offset, vervaging, spreiding, kleur, alfa en inset. Meerdere lagen met live voorvertoning."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Kleurkiezer, palet en WCAG-contrast",
+      "description": "Kies een kleur, converteer tussen HEX/RGB/HSL, genereer een palet en meet WCAG-contrast tegen wit en zwart."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "CSS-eenheidsconverter",
+      "description": "Converteer tussen px, rem, em, pt en % met een instelbare basisgrootte. Het bewerken van een eenheid herberekent de rest."
+    },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Tijdstempels en datums converteren",
+      "description": "Bewerk elk formaat (UNIX seconden/ms, ISO 8601 UTC/lokaal, RFC 2822) en de andere worden bijgewerkt. Toont weekdag, relatieve tijd en tijdzone."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Converteren tussen getalstelsels",
+      "description": "Converteer tussen binair, octaal, decimaal en hexadecimaal. Ondersteunt gehele getallen van elke grootte (BigInt)."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "JSON formatteren en valideren",
+      "description": "Plak JSON, valideer het en print het netjes met de gewenste inspringing. Minify, sorteer sleutels en bekijk statistieken. Alles in uw browser."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Type",
+      "linear": "Lineair",
+      "radial": "Radiaal",
+      "conic": "Conisch"
+    },
+    "angle": "Hoek",
+    "shape": {
+      "label": "Vorm",
+      "circle": "Cirkel",
+      "ellipse": "Ellips"
+    },
+    "position": {
+      "label": "Positie"
+    },
+    "stops": {
+      "title": "Stops",
+      "add": "Stop toevoegen"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!"
+    }
+  },
+  "shadowy": {
+    "title": "Schaduwen",
+    "layer": "Laag {n}",
+    "offsetX": "Offset X",
+    "offsetY": "Offset Y",
+    "blur": "Vervaging",
+    "spread": "Spreiding",
+    "color": "Kleur",
+    "alpha": "Dekking",
+    "inset": "Inset",
+    "css": "CSS",
+    "actions": {
+      "add": "Schaduw toevoegen",
+      "remove": "Schaduw verwijderen",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!"
+    }
+  },
+  "colory": {
+    "palette": "Palet",
+    "contrast": {
+      "label": "WCAG-contrast",
+      "sample": "Aa",
+      "withWhite": "op wit",
+      "withBlack": "op zwart",
+      "normal": "Normale tekst",
+      "large": "Grote tekst"
+    },
+    "actions": {
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!"
+    }
+  },
+  "timely": {
+    "formats": "Formaten",
+    "fmt": {
+      "unixS": "UNIX (seconden)",
+      "unixMs": "UNIX (milliseconden)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 lokaal",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Dag van de week",
+      "relative": "Relatief",
+      "tz": "Uw tijdzone"
+    },
+    "actions": {
+      "now": "Nu",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!"
+    },
+    "errors": {
+      "invalid": "Ongeldig formaat."
+    }
+  },
+  "basey": {
+    "title": "Getalstelsels",
+    "bases": {
+      "bin": "Binair",
+      "oct": "Octaal",
+      "dec": "Decimaal",
+      "hex": "Hexadecimaal"
+    },
+    "customLabel": "Basis {radix}",
+    "placeholders": {
+      "bin": "bijv. 101010",
+      "oct": "bijv. 52",
+      "dec": "bijv. 42",
+      "hex": "bijv. 2A"
+    },
+    "addCustom": {
+      "title": "Aangepaste basis toevoegen",
+      "label": "Grondtal",
+      "placeholder": "2–36",
+      "hint": "Cijfers lopen van 0-9, daarna a-z. Basis 36 gebruikt bijvoorbeeld 0-9 en a-z."
+    },
+    "actions": {
+      "clear": "Wissen",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!",
+      "addBase": "Toevoegen",
+      "removeBase": "Basis verwijderen"
+    },
+    "errors": {
+      "invalid": "Ongeldige waarde voor {base}.",
+      "invalidRadix": "Het grondtal moet een geheel getal tussen 2 en 36 zijn."
+    }
+  },
+  "unity": {
+    "baseFont": "Basisgrootte",
+    "baseHint": "1rem = basis. 1em = relatief aan ouder (hier verondersteld = basis). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "pixels",
+      "rem": "root em",
+      "em": "relatieve em",
+      "pt": "punten",
+      "percent": "procent"
+    },
+    "actions": {
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!"
+    }
+  },
+  "yamljson": {
+    "input": "Invoer",
+    "output": "Uitvoer",
+    "inputPlaceholder": "Plak hier YAML of JSON…",
+    "outputPlaceholder": "Het resultaat verschijnt hier.",
+    "indent": "Inspringing",
+    "direction": {
+      "label": "Richting",
+      "auto": "Automatisch",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "Gedetecteerd",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "Onbekend"
+    },
+    "actions": {
+      "example": "Voorbeeld",
+      "clear": "Wissen",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!",
+      "download": "Downloaden",
+      "useAsInput": "Als invoer gebruiken"
+    },
+    "errors": {
+      "unknownInput": "Het formaat kon niet worden gedetecteerd. Kies de richting handmatig.",
+      "invalidYaml": "Ongeldige YAML",
+      "invalidJson": "Ongeldige JSON",
+      "atLine": "regel {line}, kolom {col}"
+    }
+  },
+  "regexpad": {
+    "pattern": "Patroon",
+    "patternPlaceholder": "bijv. \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Vervanging",
+    "replacementPlaceholder": "Vervangtekst (gebruik $1, $2… voor groepen)",
+    "replacementHint": "Gebruik $& voor de hele overeenkomst, $1, $2… voor capture-groepen.",
+    "source": "Brontekst",
+    "sourcePlaceholder": "Plak hier de tekst die u wilt doorzoeken…",
+    "preview": "Gemarkeerde overeenkomsten",
+    "previewEmpty": "Typ tekst hierboven om overeenkomsten te zien.",
+    "output": "Vervangingsresultaat",
+    "outputPlaceholder": "De tekst met de toegepaste vervanging verschijnt hier.",
+    "flags": {
+      "label": "Vlaggen",
+      "g": "globaal",
+      "i": "hoofdletterongevoelig",
+      "m": "meerregelig",
+      "s": "punt komt overeen met nieuwe regels",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Wachten op patroon…",
+      "count": "{n} overeenkomsten",
+      "none": "Geen overeenkomsten"
+    },
+    "actions": {
+      "example": "Voorbeeld",
+      "clear": "Wissen",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!",
+      "download": "Downloaden"
+    },
+    "errors": {
+      "invalidRegex": "Ongeldige regex"
+    }
+  },
+  "lorempad": {
+    "output": "Uitvoer",
+    "count": "Aantal",
+    "wordsPerSentence": "Woorden per zin",
+    "wordsPerParagraph": "Woorden per alinea",
+    "wordsHint": "0 = willekeurig. Minimaal 3 indien vast.",
+    "classic": "Beginnen met \"Lorem ipsum dolor sit amet…\"",
+    "mode": {
+      "label": "Modus",
+      "paragraphs": "Alinea's",
+      "sentences": "Zinnen",
+      "words": "Woorden"
+    },
+    "format": {
+      "label": "Formaat",
+      "plain": "Platte tekst",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Opnieuw genereren",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!",
+      "download": "Downloaden"
+    }
+  },
+  "jsonpad": {
+    "editor": "Editor",
+    "placeholder": "Plak hier uw JSON…",
+    "indent": "Inspringing (spaties)",
+    "actions": {
+      "format": "Formatteren",
+      "minify": "Minify",
+      "sortKeys": "Sleutels sorteren",
+      "example": "Voorbeeld",
+      "clear": "Wissen",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!",
+      "download": "Downloaden"
+    },
+    "status": {
+      "empty": "Wachten op JSON…",
+      "valid": "Geldige JSON",
+      "error": "Ongeldige JSON",
+      "errorAt": "Fout op regel {line}, kolom {col}"
+    },
+    "stats": {
+      "keys": "{n} sleutels",
+      "depth": "diepte {n}",
+      "objects": "{n} objecten",
+      "arrays": "{n} arrays"
+    }
+  },
+  "csvjson": {
+    "input": "Invoer",
+    "output": "Uitvoer",
+    "inputPlaceholder": "Plak hier CSV of JSON…",
+    "outputPlaceholder": "Het resultaat verschijnt hier.",
+    "hasHeader": "CSV heeft een kopregel",
+    "pretty": "JSON netjes formatteren",
+    "direction": {
+      "label": "Richting",
+      "auto": "Automatisch",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Scheidingsteken",
+      "auto": "Automatisch",
+      "comma": "Komma (,)",
+      "semicolon": "Puntkomma (;)",
+      "tab": "Tab",
+      "pipe": "Pijp (|)"
+    },
+    "detected": {
+      "label": "Gedetecteerd",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Onbekend"
+    },
+    "actions": {
+      "example": "Voorbeeld",
+      "clear": "Wissen",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!",
+      "download": "Downloaden",
+      "useAsInput": "Als invoer gebruiken"
+    },
+    "errors": {
+      "unknownInput": "Het formaat kon niet worden gedetecteerd. Kies de richting handmatig.",
+      "invalidJson": "Ongeldige JSON: {msg}",
+      "notTabular": "JSON moet een array (of object) zijn om naar CSV te converteren.",
+      "mixedShape": "De array mengt verschillende elementtypes. Alle elementen moeten objecten of alle arrays zijn."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Velden",
+      "valuePlaceholder": "Waarde",
+      "examples": "bijv. Maria|bijv. Perez|bijv. Acme|bijv. 2024|bijv. dev|bijv. eu",
+      "add": "Veld toevoegen",
+      "remove": "Veld verwijderen",
+      "mode": {
+        "full": "Volledig",
+        "initial": "Initiaal",
+        "both": "Beide"
+      }
+    },
+    "options": {
+      "separator": "Scheidingsteken",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Voorvoegsel",
+      "prefixPlaceholder": "https://www. (optioneel)",
+      "suffix": "Achtervoegsel",
+      "suffixPlaceholder": "{'@'}example.com (optioneel)",
+      "permute": "Veldvolgorde permuteren",
+      "permuteHint": "Wanneer ingeschakeld worden ook combinaties met velden in verschillende volgordes gegenereerd (last.first, enz.).",
+      "subsets": "Subsets opnemen (combinaties met minder velden)",
+      "subsetsHint": "Wanneer ingeschakeld worden ook varianten gegenereerd met slechts enkele van de ingevulde velden (alleen voornaam, alleen achternaam, voornaam+bedrijf, enz.).",
+      "downloadOnly": "Alleen downloaden (de lijst niet weergeven)",
+      "downloadOnlyHint": "Handig wanneer er duizenden combinaties zijn en het tekenen van de lijst de browser vertraagt. Verhoogt de limiet naar 100.000 resultaten."
+    },
+    "results": {
+      "title": "Resultaten ({count})",
+      "empty": "Vul minstens één veld in om combinaties te genereren.",
+      "limited": "De eerste {limit} van {total} combinaties worden getoond.",
+      "copyAll": "Alles kopiëren",
+      "copied": "Gekopieerd!",
+      "download": ".txt downloaden",
+      "downloadHint": "Lijst verborgen om de browser niet te vertragen. Druk op Downloaden voor een .txt met alle {count} combinaties."
+    }
+  },
+  "scissor": {
+    "dropzone": "Sleep een PDF hierheen of klik om er een te selecteren",
+    "totalPages": "{n} pagina's",
+    "rangesLabel": "Pagina's om te extraheren",
+    "rangesPlaceholder": "Bijv. 1-3, 5, 8-10",
+    "hint": "Scheid met komma's. Gebruik streepjes voor bereiken (1-5). Standaard zijn alle pagina's voorgeselecteerd.",
+    "preview": {
+      "pages": "Selectie",
+      "count": "Totaal",
+      "none": "Geen"
+    },
+    "actions": {
+      "extract": "Extraheren en downloaden",
+      "processing": "Bezig met extraheren…",
+      "change": "PDF wijzigen"
+    },
+    "errors": {
+      "notPdf": "{name} is geen PDF.",
+      "invalidPdf": "{name} is geen geldige PDF of is beschadigd.",
+      "encrypted": "Deze PDF is met een wachtwoord beveiligd.",
+      "invalidTokens": "Kon niet verwerken: {tokens}.",
+      "outOfRange": "Buiten bereik (max {max}): {tokens}.",
+      "generic": "De pagina's konden niet worden geëxtraheerd."
+    }
+  },
+  "wordy": {
+    "modeText": "Tekst",
+    "modeFile": "Bestand",
+    "textPlaceholder": "Plak of typ de tekst om te analyseren…",
+    "dropzone": "Sleep een tekstbestand (.txt, .md, .csv…) of klik om er een te selecteren",
+    "stats": {
+      "words": "Woorden",
+      "charsWithSpaces": "Tekens (met spaties)",
+      "charsNoSpaces": "Tekens (zonder spaties)",
+      "lines": "Regels",
+      "paragraphs": "Alinea's",
+      "sentences": "Zinnen",
+      "readingTime": "Leestijd",
+      "minutes": "{n} min",
+      "minutesSeconds": "{m} min {s} s",
+      "seconds": "{n} s"
+    },
+    "actions": {
+      "clear": "Wissen"
+    },
+    "errors": {
+      "notText": "Alleen platte-tekstbestanden (.txt, .md, .csv, enz.) worden ondersteund.",
+      "read": "Het bestand kon niet worden gelezen."
+    }
+  },
+  "stapler": {
+    "dropzone": "Sleep PDF's hierheen of klik om ze te selecteren",
+    "list": {
+      "title": "{count} bestanden · {pages} pagina's totaal",
+      "pages": "{n} pagina's"
+    },
+    "actions": {
+      "merge": "PDF's samenvoegen",
+      "processing": "Bezig met samenvoegen…",
+      "clear": "Alles verwijderen",
+      "moveUp": "Omhoog verplaatsen",
+      "moveDown": "Omlaag verplaatsen",
+      "remove": "Verwijderen"
+    },
+    "errors": {
+      "notPdf": "{name} is geen PDF.",
+      "invalidPdf": "{name} is geen geldige PDF of is beschadigd.",
+      "encrypted": "{name} is met een wachtwoord beveiligd.",
+      "generic": "De PDF's konden niet worden samengevoegd."
+    }
+  },
+  "createpass": {
+    "length": "Lengte",
+    "count": "Hoeveel?",
+    "excludeSimilar": "Vergelijkbare tekens uitsluiten (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Dubbelzinnige tekens uitsluiten (haakjes, aanhalingstekens en dergelijke)",
+    "bits": "bits",
+    "strength": {
+      "veryWeak": "Zeer zwak",
+      "weak": "Zwak",
+      "reasonable": "Redelijk",
+      "strong": "Sterk",
+      "veryStrong": "Zeer sterk"
+    },
+    "actions": {
+      "generate": "Genereren",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!"
+    },
+    "errors": {
+      "noCharset": "Kies ten minste één tekentype.",
+      "clipboard": "Kon niet naar het klembord kopiëren."
+    }
+  },
+  "idkun": {
+    "format": "Formaat",
+    "count": "Hoeveel?",
+    "nanoidSize": "NanoID-lengte",
+    "uppercase": "Hoofdletters",
+    "hyphens": "Met streepjes",
+    "formats": {
+      "uuidv4": "UUID v4 (willekeurig)",
+      "uuidv7": "UUID v7 (tijdstempel + willekeurig)",
+      "uuidNil": "UUID NIL (alle nullen)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (URL-veilig)"
+    },
+    "about": {
+      "uuidv4": "De meest voorkomende standaard UUID. 122 willekeurige bits. RFC 4122.",
+      "uuidv7": "Combineert tijdstempel + willekeurig. Lexicografisch sorteerbaar. RFC 9562 (2024).",
+      "uuidNil": "De nil UUID, alle nullen. Handig als standaard- of sentinelwaarde.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. 26 tekens in Crockford Base32.",
+      "nanoid": "Korte en populaire URL-veilige identificator. Configureerbare grootte."
+    },
+    "actions": {
+      "generate": "Genereren",
+      "copy": "Kopiëren",
+      "copyAll": "Alles kopiëren",
+      "copied": "Gekopieerd!"
+    },
+    "errors": {
+      "clipboard": "Kon niet naar het klembord kopiëren."
+    }
+  },
+  "hashy": {
+    "modeText": "Tekst",
+    "modeFile": "Bestand",
+    "textPlaceholder": "Plak of typ tekst om te hashen…",
+    "dropzone": "Sleep een bestand hierheen of klik om er een te selecteren",
+    "processing": "Bezig met berekenen…",
+    "actions": {
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!"
+    },
+    "verify": {
+      "label": "Verifiëren tegen een verwachte hash",
+      "placeholder": "Plak de hex-hash (40, 64, 96 of 128 tekens)…",
+      "unknownLength": "Niet-herkende lengte. Moet overeenkomen met SHA-1 (40), SHA-256 (64), SHA-384 (96) of SHA-512 (128).",
+      "match": "Komt overeen met {algo}.",
+      "mismatch": "{algo}-hash komt niet overeen."
+    },
+    "errors": {
+      "clipboard": "Kon niet naar het klembord kopiëren."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Sleep een JPEG hierheen of klik om er een te selecteren",
+    "tags": {
+      "title": "Gedetecteerde metadata ({count})",
+      "hint": "Elke tag toont zijn naam, IFD en type. Bewerk de waarde, verwijder met × of voeg nieuwe tags toe.",
+      "empty": "Deze afbeelding heeft geen EXIF-metadata.",
+      "add": "Tag toevoegen",
+      "confirmAdd": "Toevoegen",
+      "remove": "Tag verwijderen",
+      "searchPlaceholder": "Tag zoeken (naam of IFD)…",
+      "modeStandard": "Standaard",
+      "modeCustom": "Aangepast",
+      "custom": {
+        "note": "EXIF identificeert tags via een numeriek ID. Andere lezers tonen deze tag mogelijk als 'Unknown {id}'.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "Type",
+        "name": "Naam (alleen weergave)",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "Geef een ID op.",
+        "invalidId": "ID moet een geheel getal tussen 1 en 65535 zijn.",
+        "duplicate": "Die tag bestaat al in de afbeelding."
+      }
+    },
+    "actions": {
+      "strip": "Alle metadata verwijderen",
+      "apply": "Toepassen en downloaden",
+      "cancel": "Annuleren"
+    },
+    "errors": {
+      "notJpeg": "Alleen JPEG-bestanden (.jpg / .jpeg) worden ondersteund.",
+      "invalidValue": "Ongeldige waarde voor tag {tag}."
+    }
+  },
+  "dropzone": {
+    "empty": "Sleep een afbeelding hierheen of klik om er een te selecteren"
+  },
+  "controls": {
+    "width": "Breedte (px)",
+    "height": "Hoogte (px)",
+    "keepRatio": "Beeldverhouding behouden",
+    "format": "Formaat",
+    "quality": "Kwaliteit"
+  },
+  "actions": {
+    "resize": "Verkleinen",
+    "processing": "Bezig met verwerken…",
+    "download": "Downloaden"
+  },
+  "result": {
+    "title": "Resultaat"
+  },
+  "errors": {
+    "notAnImage": "Dat bestand is geen geldige afbeelding."
+  },
+  "footer": {
+    "tagline": "Tanukibox · tools die in uw browser draaien",
+    "legalLinks": "Juridische links",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "lastUpdated": "Laatst bijgewerkt: 15 mei 2026",
+    "privacy": {
+      "title": "Privacybeleid",
+      "intro": "<p>Bij Tanukibox geloven we dat uw bestanden van u zijn. Daarom draaien al onze tools <strong>volledig in uw browser</strong>: de afbeeldingen, PDF's, tekst of welk bestand u ook verwerkt verlaat nooit uw apparaat.</p>",
+      "sections": {
+        "scope": {
+          "title": "1. Toepassingsgebied",
+          "body": "<p>Dit beleid is van toepassing op tanukibox.com en op elke tool die onder dit domein wordt gehost. Het beschrijft welke informatie wordt verzameld wanneer u de site bezoekt en wat we ermee doen.</p>"
+        },
+        "data": {
+          "title": "2. Gegevens die we verzamelen",
+          "body": "<p>We hebben geen server die uw bestanden ontvangt. De tools (Mochi, Metaimg, Createpass, Hashy, enz.) verwerken gegevens rechtstreeks in uw browser met behulp van native API's (Canvas, Web Crypto, enz.). Daarom:</p><ul><li><strong>Verzamelen we niet</strong> de bestanden die u verwerkt, hun inhoud of de resultaten.</li><li><strong>Er zijn geen gebruikersaccounts</strong>, wachtwoorden of profielen.</li><li>De Tanukibox-server levert alleen de statische bronnen van de site (HTML, CSS, JS).</li></ul><p>Het enige wat wordt opgeslagen staat beschreven in het gedeelte Cookies.</p>"
+        },
+        "cookies": {
+          "title": "3. Cookies en lokale opslag",
+          "body": "<p>We gebruiken één enkele technische cookie genaamd <code>tanukibox_lang</code> om uw taalvoorkeur te onthouden. Deze identificeert de gebruiker niet en wordt niet gedeeld met derden.</p><p>Meer details in het <a href='/cookies'>cookiebeleid</a>.</p>"
+        },
+        "tracking": {
+          "title": "4. Analyse en advertenties",
+          "body": "<p>Op dit moment gebruiken we geen analyse- of advertentiediensten. Als we in de toekomst diensten als Google AdSense of een analyseprovider integreren, wordt dit beleid bijgewerkt om dit te weerspiegelen en wordt uw toestemming gevraagd wanneer de wet dit vereist (AVG/EU).</p>"
+        },
+        "gdpr": {
+          "title": "5. Uw rechten (AVG)",
+          "body": "<p>Aangezien we geen persoonlijk identificeerbare informatie op onze servers opslaan, zijn de meeste rechten van de AVG (toegang, rectificatie, verwijdering, overdraagbaarheid) niet van toepassing omdat er geen gegevens zijn om deze op toe te passen.</p><p>Toch kunt u elk recht uitoefenen door contact met ons op te nemen via het adres onderaan dit beleid.</p>"
+        },
+        "children": {
+          "title": "6. Kinderen",
+          "body": "<p>De site is niet gericht op kinderen onder de 14 jaar. We verzamelen niet bewust gegevens over minderjarigen.</p>"
+        },
+        "changes": {
+          "title": "7. Wijzigingen van dit beleid",
+          "body": "<p>We kunnen dit beleid bijwerken wanneer we nieuwe functies toevoegen of om juridische redenen. De datum van de laatste update staat vermeld in de kop van het document.</p>"
+        },
+        "contact": {
+          "title": "8. Contact",
+          "body": "<p>Voor vragen over privacy: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
+        }
+      }
+    },
+    "terms": {
+      "title": "Gebruiksvoorwaarden",
+      "intro": "<p>Welkom bij Tanukibox. Door deze site te gebruiken accepteert u de hieronder beschreven voorwaarden. Als u het er niet mee eens bent, gebruik de dienst dan niet.</p>",
+      "sections": {
+        "acceptance": {
+          "title": "1. Acceptatie",
+          "body": "<p>Toegang tot en gebruik van tanukibox.com impliceert volledige acceptatie van deze voorwaarden. Ze kunnen op elk moment worden bijgewerkt; voortgezet gebruik na de wijzigingen impliceert acceptatie ervan.</p>"
+        },
+        "service": {
+          "title": "2. Beschrijving van de dienst",
+          "body": "<p>Tanukibox biedt een set hulpmiddelen die volledig in uw browser draaien (lokale verwerking). De dienst wordt <strong>gratis en \"zoals het is\"</strong> geleverd, zonder garanties van beschikbaarheid, nauwkeurigheid of geschiktheid voor een bepaald doel.</p>"
+        },
+        "use": {
+          "title": "3. Toegestaan gebruik",
+          "body": "<p>U mag de tools voor elk wettig doel gebruiken, persoonlijk of professioneel. U mag niet:</p><ul><li>Pogingen ondernemen om de veiligheid of beschikbaarheid van de site in gevaar te brengen.</li><li>De dienst gebruiken om illegale inhoud te verwerken.</li><li>De sitecode kopiëren of herdistribueren zonder toestemming.</li></ul>"
+        },
+        "responsibility": {
+          "title": "4. Verantwoordelijkheid van de gebruiker",
+          "body": "<p>U bent verantwoordelijk voor het valideren van de resultaten van elke tool voordat u op basis daarvan beslissingen neemt. Bijvoorbeeld het handmatig verifiëren van een hash, het controleren van een gegenereerd wachtwoord in een vertrouwde beheerder, of het beoordelen van de verwijderde metadata voordat u een afbeelding publiceert.</p>"
+        },
+        "ip": {
+          "title": "5. Intellectueel eigendom",
+          "body": "<p>De naam Tanukibox, het logo en het siteontwerp zijn eigendom van de auteur. De broncode kan beschikbaar zijn onder een open licentie in zijn publieke repository; raadpleeg de repository voor de exacte voorwaarden.</p>"
+        },
+        "liability": {
+          "title": "6. Beperking van aansprakelijkheid",
+          "body": "<p>Voor zover wettelijk toegestaan is Tanukibox niet aansprakelijk voor directe, indirecte, incidentele of gevolgschade die voortvloeit uit het gebruik of het onvermogen om de dienst te gebruiken, inclusief gegevensverlies.</p>"
+        },
+        "changes": {
+          "title": "7. Wijzigingen",
+          "body": "<p>We behouden ons het recht voor om elke tool op elk moment zonder voorafgaande kennisgeving te wijzigen, op te schorten of stop te zetten.</p>"
+        },
+        "jurisdiction": {
+          "title": "8. Toepasselijk recht en jurisdictie",
+          "body": "<p>Deze voorwaarden vallen onder het Spaanse recht. Voor elk geschil onderwerpen de partijen zich aan de rechtbanken van de woonplaats van de gebruiker, of van Madrid als de gebruiker geen consument is.</p>"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookiebeleid",
+      "intro": "<p>Deze pagina beschrijft welke cookies en opslagmechanismen tanukibox.com gebruikt.</p>",
+      "sections": {
+        "what": {
+          "title": "1. Wat cookies zijn",
+          "body": "<p>Cookies zijn kleine bestanden die een website op uw apparaat opslaat om informatie tussen bezoeken te onthouden (voorkeuren, sessie, enz.). Tanukibox gebruikt het absolute minimum.</p>"
+        },
+        "used": {
+          "title": "2. Cookies die we gebruiken",
+          "body": "<ul><li><strong><code>tanukibox_lang</code></strong> — technische voorkeurscookie. Slaat de geselecteerde taal op zodat we het niet bij elk bezoek hoeven te vragen. Verloopt na 1 jaar. Identificeert de gebruiker niet.</li></ul><p>We gebruiken op dit moment geen tracking- of advertentiecookies.</p>"
+        },
+        "thirdParty": {
+          "title": "3. Cookies van derden",
+          "body": "<p>Tanukibox laadt momenteel geen scripts van derden die cookies installeren. Als we in de toekomst diensten als Google AdSense of een analysehulpmiddel integreren, wordt deze sectie bijgewerkt en wordt uw toestemming gevraagd via een banner.</p>"
+        },
+        "manage": {
+          "title": "4. Cookies beheren",
+          "body": "<p>U kunt cookies verwijderen of blokkeren via de instellingen van uw browser. Als u <code>tanukibox_lang</code> blokkeert, blijft de site werken maar onthoudt deze uw taalvoorkeur niet.</p>"
+        },
+        "changes": {
+          "title": "5. Wijzigingen van dit beleid",
+          "body": "<p>Als we nieuwe cookies of diensten van derden toevoegen, werken we deze pagina en de datum in de kop bij.</p>"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "languageSwitcher": "Pengalih bahasa"
+  },
+  "landing": {
+    "title": "Alat yang berjalan di peramban Anda",
+    "description": "Koleksi utilitas web tanpa server. File Anda tidak pernah meninggalkan perangkat.",
+    "categories": {
+      "imageEdit": "Pengeditan gambar",
+      "documents": "Dokumen",
+      "privacy": "Privasi",
+      "generators": "Generator",
+      "dev": "Pengembangan",
+      "design": "Desain",
+      "converters": "Konverter"
+    }
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Ubah ukuran gambar",
+      "description": "Kecilkan ukuran piksel gambar Anda langsung di peramban. Tanpa unggahan, tanpa server."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "Edit metadata EXIF",
+      "description": "Baca, edit, atau hapus metadata EXIF dari foto JPEG Anda. Semua di peramban Anda."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Buat kata sandi yang kuat",
+      "description": "Buat kata sandi acak menggunakan kriptografi peramban. Tidak pernah meninggalkan perangkat Anda."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Hitung hash dan verifikasi integritas",
+      "description": "SHA-1, SHA-256, SHA-384, dan SHA-512 dari teks atau file. Bandingkan dengan hash yang diharapkan untuk memverifikasi unduhan."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Buat pengenal unik",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID, dan NanoID. Pembuatan aman secara kriptografis di peramban Anda."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Gabungkan beberapa PDF menjadi satu",
+      "description": "Gabungkan beberapa file PDF menjadi satu, dalam urutan apa pun. Semua diproses di peramban Anda."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Hitung kata dan karakter",
+      "description": "Analisis teks atau file teks: kata, karakter, baris, paragraf, dan perkiraan waktu baca."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "Ekstrak halaman dari PDF",
+      "description": "Pilih halaman atau rentang dari PDF dan unduh sebagai file baru. Semua di peramban Anda."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Gabungkan kolom menjadi varian (email, nama pengguna…)",
+      "description": "Buat kombinasi dari beberapa kolom dengan pemisah dan akhiran yang dapat dikonfigurasi. Berguna untuk daftar email, nama pengguna, slug, atau ID."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Konversi antara CSV dan JSON",
+      "description": "Tempel CSV atau JSON dan dapatkan format lainnya secara instan. Mendeteksi otomatis pemisah dan format. Semua di peramban Anda."
+    },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Buat teks Lorem ipsum",
+      "description": "Teks placeholder dalam paragraf, kalimat, atau kata. Opsi untuk memulai dengan klasik \"Lorem ipsum dolor sit amet…\" dan keluaran sebagai teks biasa atau HTML."
+    },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Uji regex dan ganti teks",
+      "description": "Bangun ekspresi reguler, lihat hasil cocok yang disorot, dan terapkan penggantian (mendukung $1, $2…). Semua di peramban Anda."
+    },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "Konversi antara YAML dan JSON",
+      "description": "Tempel YAML atau JSON dan dapatkan format lainnya secara instan. Mendeteksi otomatis format dan menampilkan kesalahan dengan baris dan kolom. Semua di peramban Anda."
+    },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "Generator gradien CSS",
+      "description": "Bangun gradien linear, radial, dan konik dengan beberapa stop, lihat pratinjau langsung, dan salin CSS."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "Generator box-shadow",
+      "description": "Bayangan dengan offset, blur, spread, warna, alpha, dan inset. Beberapa lapisan dengan pratinjau langsung."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Pemilih warna, palet, dan kontras WCAG",
+      "description": "Pilih warna, konversi antara HEX/RGB/HSL, buat palet, dan ukur kontras WCAG terhadap putih dan hitam."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "Konverter satuan CSS",
+      "description": "Konversi antara px, rem, em, pt, dan % menggunakan ukuran dasar yang dapat dikonfigurasi. Mengedit satuan apa pun akan menghitung ulang yang lain."
+    },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Konversi timestamp dan tanggal",
+      "description": "Edit format apa pun (UNIX detik/ms, ISO 8601 UTC/lokal, RFC 2822) dan yang lain akan diperbarui. Menampilkan hari, waktu relatif, dan zona waktu."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Konversi antara basis bilangan",
+      "description": "Konversi antara biner, oktal, desimal, dan heksadesimal. Mendukung bilangan bulat ukuran berapa pun (BigInt)."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "Format dan validasi JSON",
+      "description": "Tempel JSON, validasi, dan cetak rapi dengan indentasi yang Anda suka. Minify, urutkan kunci, dan lihat statistik. Semua di peramban Anda."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Tipe",
+      "linear": "Linear",
+      "radial": "Radial",
+      "conic": "Konik"
+    },
+    "angle": "Sudut",
+    "shape": {
+      "label": "Bentuk",
+      "circle": "Lingkaran",
+      "ellipse": "Elips"
+    },
+    "position": {
+      "label": "Posisi"
+    },
+    "stops": {
+      "title": "Stop",
+      "add": "Tambah stop"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Salin",
+      "copied": "Tersalin!"
+    }
+  },
+  "shadowy": {
+    "title": "Bayangan",
+    "layer": "Lapisan {n}",
+    "offsetX": "Offset X",
+    "offsetY": "Offset Y",
+    "blur": "Blur",
+    "spread": "Spread",
+    "color": "Warna",
+    "alpha": "Opasitas",
+    "inset": "Inset",
+    "css": "CSS",
+    "actions": {
+      "add": "Tambah bayangan",
+      "remove": "Hapus bayangan",
+      "copy": "Salin",
+      "copied": "Tersalin!"
+    }
+  },
+  "colory": {
+    "palette": "Palet",
+    "contrast": {
+      "label": "Kontras WCAG",
+      "sample": "Aa",
+      "withWhite": "pada putih",
+      "withBlack": "pada hitam",
+      "normal": "Teks normal",
+      "large": "Teks besar"
+    },
+    "actions": {
+      "copy": "Salin",
+      "copied": "Tersalin!"
+    }
+  },
+  "timely": {
+    "formats": "Format",
+    "fmt": {
+      "unixS": "UNIX (detik)",
+      "unixMs": "UNIX (milidetik)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 lokal",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Hari dalam seminggu",
+      "relative": "Relatif",
+      "tz": "Zona waktu Anda"
+    },
+    "actions": {
+      "now": "Sekarang",
+      "copy": "Salin",
+      "copied": "Tersalin!"
+    },
+    "errors": {
+      "invalid": "Format tidak valid."
+    }
+  },
+  "basey": {
+    "title": "Basis bilangan",
+    "bases": {
+      "bin": "Biner",
+      "oct": "Oktal",
+      "dec": "Desimal",
+      "hex": "Heksadesimal"
+    },
+    "customLabel": "Basis {radix}",
+    "placeholders": {
+      "bin": "mis. 101010",
+      "oct": "mis. 52",
+      "dec": "mis. 42",
+      "hex": "mis. 2A"
+    },
+    "addCustom": {
+      "title": "Tambah basis kustom",
+      "label": "Radix",
+      "placeholder": "2–36",
+      "hint": "Digit berjalan 0-9, lalu a-z. Misalnya, basis 36 menggunakan 0-9 dan a-z."
+    },
+    "actions": {
+      "clear": "Bersihkan",
+      "copy": "Salin",
+      "copied": "Tersalin!",
+      "addBase": "Tambah",
+      "removeBase": "Hapus basis"
+    },
+    "errors": {
+      "invalid": "Nilai tidak valid untuk {base}.",
+      "invalidRadix": "Radix harus bilangan bulat antara 2 dan 36."
+    }
+  },
+  "unity": {
+    "baseFont": "Ukuran dasar",
+    "baseHint": "1rem = dasar. 1em = relatif terhadap induk (di sini diasumsikan = dasar). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "piksel",
+      "rem": "root em",
+      "em": "em relatif",
+      "pt": "poin",
+      "percent": "persen"
+    },
+    "actions": {
+      "copy": "Salin",
+      "copied": "Tersalin!"
+    }
+  },
+  "yamljson": {
+    "input": "Masukan",
+    "output": "Keluaran",
+    "inputPlaceholder": "Tempel YAML atau JSON di sini…",
+    "outputPlaceholder": "Hasil akan muncul di sini.",
+    "indent": "Indentasi",
+    "direction": {
+      "label": "Arah",
+      "auto": "Otomatis",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "Terdeteksi",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "Tidak diketahui"
+    },
+    "actions": {
+      "example": "Contoh",
+      "clear": "Bersihkan",
+      "copy": "Salin",
+      "copied": "Tersalin!",
+      "download": "Unduh",
+      "useAsInput": "Gunakan sebagai masukan"
+    },
+    "errors": {
+      "unknownInput": "Tidak dapat mendeteksi format. Pilih arah secara manual.",
+      "invalidYaml": "YAML tidak valid",
+      "invalidJson": "JSON tidak valid",
+      "atLine": "baris {line}, kolom {col}"
+    }
+  },
+  "regexpad": {
+    "pattern": "Pola",
+    "patternPlaceholder": "mis. \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Penggantian",
+    "replacementPlaceholder": "Teks pengganti (gunakan $1, $2… untuk grup)",
+    "replacementHint": "Gunakan $& untuk seluruh hasil cocok, $1, $2… untuk grup tangkapan.",
+    "source": "Teks sumber",
+    "sourcePlaceholder": "Tempel teks yang ingin Anda cari di sini…",
+    "preview": "Hasil cocok yang disorot",
+    "previewEmpty": "Ketik teks di atas untuk melihat hasil cocok.",
+    "output": "Hasil penggantian",
+    "outputPlaceholder": "Teks dengan penggantian yang diterapkan akan muncul di sini.",
+    "flags": {
+      "label": "Flag",
+      "g": "global",
+      "i": "abaikan huruf besar/kecil",
+      "m": "multiline",
+      "s": "titik cocok dengan baris baru",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Menunggu pola…",
+      "count": "{n} hasil cocok",
+      "none": "Tidak ada hasil cocok"
+    },
+    "actions": {
+      "example": "Contoh",
+      "clear": "Bersihkan",
+      "copy": "Salin",
+      "copied": "Tersalin!",
+      "download": "Unduh"
+    },
+    "errors": {
+      "invalidRegex": "Regex tidak valid"
+    }
+  },
+  "lorempad": {
+    "output": "Keluaran",
+    "count": "Jumlah",
+    "wordsPerSentence": "Kata per kalimat",
+    "wordsPerParagraph": "Kata per paragraf",
+    "wordsHint": "0 = acak. Minimum 3 saat ditetapkan.",
+    "classic": "Mulai dengan \"Lorem ipsum dolor sit amet…\"",
+    "mode": {
+      "label": "Mode",
+      "paragraphs": "Paragraf",
+      "sentences": "Kalimat",
+      "words": "Kata"
+    },
+    "format": {
+      "label": "Format",
+      "plain": "Teks biasa",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Buat ulang",
+      "copy": "Salin",
+      "copied": "Tersalin!",
+      "download": "Unduh"
+    }
+  },
+  "jsonpad": {
+    "editor": "Editor",
+    "placeholder": "Tempel JSON Anda di sini…",
+    "indent": "Indentasi (spasi)",
+    "actions": {
+      "format": "Format",
+      "minify": "Minify",
+      "sortKeys": "Urutkan kunci",
+      "example": "Contoh",
+      "clear": "Bersihkan",
+      "copy": "Salin",
+      "copied": "Tersalin!",
+      "download": "Unduh"
+    },
+    "status": {
+      "empty": "Menunggu JSON…",
+      "valid": "JSON valid",
+      "error": "JSON tidak valid",
+      "errorAt": "Kesalahan pada baris {line}, kolom {col}"
+    },
+    "stats": {
+      "keys": "{n} kunci",
+      "depth": "kedalaman {n}",
+      "objects": "{n} objek",
+      "arrays": "{n} array"
+    }
+  },
+  "csvjson": {
+    "input": "Masukan",
+    "output": "Keluaran",
+    "inputPlaceholder": "Tempel CSV atau JSON di sini…",
+    "outputPlaceholder": "Hasil akan muncul di sini.",
+    "hasHeader": "CSV memiliki baris header",
+    "pretty": "JSON dicetak rapi",
+    "direction": {
+      "label": "Arah",
+      "auto": "Otomatis",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Pemisah",
+      "auto": "Otomatis",
+      "comma": "Koma (,)",
+      "semicolon": "Titik koma (;)",
+      "tab": "Tab",
+      "pipe": "Pipa (|)"
+    },
+    "detected": {
+      "label": "Terdeteksi",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Tidak diketahui"
+    },
+    "actions": {
+      "example": "Contoh",
+      "clear": "Bersihkan",
+      "copy": "Salin",
+      "copied": "Tersalin!",
+      "download": "Unduh",
+      "useAsInput": "Gunakan sebagai masukan"
+    },
+    "errors": {
+      "unknownInput": "Tidak dapat mendeteksi format. Pilih arah secara manual.",
+      "invalidJson": "JSON tidak valid: {msg}",
+      "notTabular": "JSON harus berupa array (atau objek) untuk dikonversi ke CSV.",
+      "mixedShape": "Array mencampur jenis elemen. Harus semuanya objek atau semuanya array."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Kolom",
+      "valuePlaceholder": "Nilai",
+      "examples": "mis. Maria|mis. Perez|mis. Acme|mis. 2024|mis. dev|mis. eu",
+      "add": "Tambah kolom",
+      "remove": "Hapus kolom",
+      "mode": {
+        "full": "Penuh",
+        "initial": "Inisial",
+        "both": "Keduanya"
+      }
+    },
+    "options": {
+      "separator": "Pemisah",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Prefiks",
+      "prefixPlaceholder": "https://www. (opsional)",
+      "suffix": "Akhiran",
+      "suffixPlaceholder": "{'@'}example.com (opsional)",
+      "permute": "Permutasikan urutan kolom",
+      "permuteHint": "Bila diaktifkan, juga menghasilkan kombinasi dengan kolom dalam urutan berbeda (last.first, dll.).",
+      "subsets": "Sertakan subset (kombinasi yang menggunakan lebih sedikit kolom)",
+      "subsetsHint": "Bila diaktifkan, juga menghasilkan varian yang hanya menggunakan beberapa kolom terisi (hanya nama depan, hanya nama belakang, depan+perusahaan, dll.).",
+      "downloadOnly": "Hanya unduh (jangan tampilkan daftar)",
+      "downloadOnlyHint": "Berguna saat ada ribuan kombinasi dan menggambar daftar memperlambat peramban. Menaikkan batas hingga 100.000 hasil."
+    },
+    "results": {
+      "title": "Hasil ({count})",
+      "empty": "Isi setidaknya satu kolom untuk menghasilkan kombinasi.",
+      "limited": "Menampilkan {limit} pertama dari {total} kombinasi.",
+      "copyAll": "Salin semua",
+      "copied": "Tersalin!",
+      "download": "Unduh .txt",
+      "downloadHint": "Daftar disembunyikan untuk menghindari peramban menjadi lambat. Tekan Unduh untuk mendapatkan .txt dengan semua {count} kombinasi."
+    }
+  },
+  "scissor": {
+    "dropzone": "Seret PDF ke sini atau klik untuk memilih",
+    "totalPages": "{n} halaman",
+    "rangesLabel": "Halaman untuk diekstrak",
+    "rangesPlaceholder": "Mis. 1-3, 5, 8-10",
+    "hint": "Pisahkan dengan koma. Gunakan tanda hubung untuk rentang (1-5). Semua halaman dipilih secara default.",
+    "preview": {
+      "pages": "Pilihan",
+      "count": "Total",
+      "none": "Tidak ada"
+    },
+    "actions": {
+      "extract": "Ekstrak dan unduh",
+      "processing": "Mengekstrak…",
+      "change": "Ganti PDF"
+    },
+    "errors": {
+      "notPdf": "{name} bukan PDF.",
+      "invalidPdf": "{name} bukan PDF yang valid atau rusak.",
+      "encrypted": "PDF ini dilindungi kata sandi.",
+      "invalidTokens": "Tidak dapat mengurai: {tokens}.",
+      "outOfRange": "Di luar rentang (maks {max}): {tokens}.",
+      "generic": "Tidak dapat mengekstrak halaman."
+    }
+  },
+  "wordy": {
+    "modeText": "Teks",
+    "modeFile": "File",
+    "textPlaceholder": "Tempel atau ketik teks untuk dianalisis…",
+    "dropzone": "Seret file teks (.txt, .md, .csv…) atau klik untuk memilih",
+    "stats": {
+      "words": "Kata",
+      "charsWithSpaces": "Karakter (dengan spasi)",
+      "charsNoSpaces": "Karakter (tanpa spasi)",
+      "lines": "Baris",
+      "paragraphs": "Paragraf",
+      "sentences": "Kalimat",
+      "readingTime": "Waktu baca",
+      "minutes": "{n} mnt",
+      "minutesSeconds": "{m} mnt {s} dtk",
+      "seconds": "{n} dtk"
+    },
+    "actions": {
+      "clear": "Bersihkan"
+    },
+    "errors": {
+      "notText": "Hanya file teks biasa (.txt, .md, .csv, dll.) yang didukung.",
+      "read": "Tidak dapat membaca file."
+    }
+  },
+  "stapler": {
+    "dropzone": "Seret PDF ke sini atau klik untuk memilihnya",
+    "list": {
+      "title": "{count} file · total {pages} halaman",
+      "pages": "{n} halaman"
+    },
+    "actions": {
+      "merge": "Gabungkan PDF",
+      "processing": "Menggabungkan…",
+      "clear": "Hapus semua",
+      "moveUp": "Pindah ke atas",
+      "moveDown": "Pindah ke bawah",
+      "remove": "Hapus"
+    },
+    "errors": {
+      "notPdf": "{name} bukan PDF.",
+      "invalidPdf": "{name} bukan PDF yang valid atau rusak.",
+      "encrypted": "{name} dilindungi kata sandi.",
+      "generic": "Tidak dapat menggabungkan PDF."
+    }
+  },
+  "createpass": {
+    "length": "Panjang",
+    "count": "Berapa banyak?",
+    "excludeSimilar": "Kecualikan yang mirip (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Kecualikan yang ambigu (kurung, kutipan, dan sejenisnya)",
+    "bits": "bit",
+    "strength": {
+      "veryWeak": "Sangat lemah",
+      "weak": "Lemah",
+      "reasonable": "Wajar",
+      "strong": "Kuat",
+      "veryStrong": "Sangat kuat"
+    },
+    "actions": {
+      "generate": "Buat",
+      "copy": "Salin",
+      "copied": "Tersalin!"
+    },
+    "errors": {
+      "noCharset": "Pilih setidaknya satu jenis karakter.",
+      "clipboard": "Tidak dapat menyalin ke clipboard."
+    }
+  },
+  "idkun": {
+    "format": "Format",
+    "count": "Berapa banyak?",
+    "nanoidSize": "Panjang NanoID",
+    "uppercase": "Huruf besar",
+    "hyphens": "Dengan tanda hubung",
+    "formats": {
+      "uuidv4": "UUID v4 (acak)",
+      "uuidv7": "UUID v7 (timestamp + acak)",
+      "uuidNil": "UUID NIL (semua nol)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (aman URL)"
+    },
+    "about": {
+      "uuidv4": "UUID standar yang paling umum. 122 bit acak. RFC 4122.",
+      "uuidv7": "Menggabungkan timestamp + acak. Dapat diurutkan secara leksikografis. RFC 9562 (2024).",
+      "uuidNil": "UUID nil, semua nol. Berguna sebagai nilai default atau sentinel.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. 26 karakter dalam Crockford Base32.",
+      "nanoid": "Pengenal pendek dan populer yang aman untuk URL. Ukuran dapat dikonfigurasi."
+    },
+    "actions": {
+      "generate": "Buat",
+      "copy": "Salin",
+      "copyAll": "Salin semua",
+      "copied": "Tersalin!"
+    },
+    "errors": {
+      "clipboard": "Tidak dapat menyalin ke clipboard."
+    }
+  },
+  "hashy": {
+    "modeText": "Teks",
+    "modeFile": "File",
+    "textPlaceholder": "Tempel atau ketik teks untuk di-hash…",
+    "dropzone": "Seret file ke sini atau klik untuk memilih",
+    "processing": "Menghitung…",
+    "actions": {
+      "copy": "Salin",
+      "copied": "Tersalin!"
+    },
+    "verify": {
+      "label": "Verifikasi terhadap hash yang diharapkan",
+      "placeholder": "Tempel hash hex (40, 64, 96, atau 128 karakter)…",
+      "unknownLength": "Panjang tidak dikenali. Harus cocok dengan SHA-1 (40), SHA-256 (64), SHA-384 (96), atau SHA-512 (128).",
+      "match": "Cocok dengan {algo}.",
+      "mismatch": "Hash {algo} tidak cocok."
+    },
+    "errors": {
+      "clipboard": "Tidak dapat menyalin ke clipboard."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Seret JPEG ke sini atau klik untuk memilih",
+    "tags": {
+      "title": "Metadata terdeteksi ({count})",
+      "hint": "Setiap tag menampilkan nama, IFD, dan tipenya. Edit nilai, hapus dengan × atau tambahkan tag baru.",
+      "empty": "Gambar ini tidak memiliki metadata EXIF.",
+      "add": "Tambah tag",
+      "confirmAdd": "Tambah",
+      "remove": "Hapus tag",
+      "searchPlaceholder": "Cari tag (nama atau IFD)…",
+      "modeStandard": "Standar",
+      "modeCustom": "Kustom",
+      "custom": {
+        "note": "EXIF mengidentifikasi tag berdasarkan ID numerik. Pembaca lain mungkin menampilkan tag ini sebagai 'Unknown {id}'.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "Tipe",
+        "name": "Nama (hanya untuk tampilan)",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "Berikan ID.",
+        "invalidId": "ID harus bilangan bulat antara 1 dan 65535.",
+        "duplicate": "Tag tersebut sudah ada di gambar."
+      }
+    },
+    "actions": {
+      "strip": "Hapus semua metadata",
+      "apply": "Terapkan dan unduh",
+      "cancel": "Batal"
+    },
+    "errors": {
+      "notJpeg": "Hanya file JPEG (.jpg / .jpeg) yang didukung.",
+      "invalidValue": "Nilai tidak valid untuk tag {tag}."
+    }
+  },
+  "dropzone": {
+    "empty": "Seret gambar ke sini atau klik untuk memilih"
+  },
+  "controls": {
+    "width": "Lebar (px)",
+    "height": "Tinggi (px)",
+    "keepRatio": "Pertahankan rasio aspek",
+    "format": "Format",
+    "quality": "Kualitas"
+  },
+  "actions": {
+    "resize": "Ubah ukuran",
+    "processing": "Memproses…",
+    "download": "Unduh"
+  },
+  "result": {
+    "title": "Hasil"
+  },
+  "errors": {
+    "notAnImage": "File itu bukan gambar yang valid."
+  },
+  "footer": {
+    "tagline": "Tanukibox · alat yang berjalan di peramban Anda",
+    "legalLinks": "Tautan hukum",
+    "privacy": "Privasi",
+    "terms": "Ketentuan",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "lastUpdated": "Terakhir diperbarui: 15 Mei 2026",
+    "privacy": {
+      "title": "Kebijakan Privasi",
+      "intro": "<p>Di Tanukibox, kami percaya bahwa file Anda adalah milik Anda. Itulah sebabnya semua alat kami berjalan <strong>sepenuhnya di peramban Anda</strong>: gambar, PDF, teks, atau file apa pun yang Anda proses tidak pernah meninggalkan perangkat Anda.</p>",
+      "sections": {
+        "scope": {
+          "title": "1. Ruang lingkup",
+          "body": "<p>Kebijakan ini berlaku untuk tanukibox.com dan setiap alat yang dihosting di bawah domain ini. Ini menjelaskan informasi apa yang dikumpulkan saat Anda mengunjungi situs dan apa yang kami lakukan dengannya.</p>"
+        },
+        "data": {
+          "title": "2. Data yang kami kumpulkan",
+          "body": "<p>Kami tidak memiliki server yang menerima file Anda. Alat-alat (Mochi, Metaimg, Createpass, Hashy, dll.) memproses data langsung di peramban Anda menggunakan API bawaan (Canvas, Web Crypto, dll.). Oleh karena itu:</p><ul><li><strong>Kami tidak mengumpulkan</strong> file yang Anda proses, isinya, atau hasilnya.</li><li><strong>Tidak ada akun pengguna</strong>, kata sandi, atau profil.</li><li>Server Tanukibox hanya mengirimkan aset statis situs (HTML, CSS, JS).</li></ul><p>Satu-satunya yang disimpan dijelaskan di bagian Cookies.</p>"
+        },
+        "cookies": {
+          "title": "3. Cookies dan penyimpanan lokal",
+          "body": "<p>Kami menggunakan satu cookie teknis bernama <code>tanukibox_lang</code> untuk mengingat preferensi bahasa Anda. Ini tidak mengidentifikasi pengguna dan tidak dibagikan kepada pihak ketiga.</p><p>Detail lebih lanjut dalam <a href='/cookies'>kebijakan cookies</a>.</p>"
+        },
+        "tracking": {
+          "title": "4. Analitik dan periklanan",
+          "body": "<p>Saat ini kami tidak menggunakan analitik atau iklan tampilan. Jika di masa mendatang kami mengintegrasikan layanan seperti Google AdSense atau penyedia analitik, kebijakan ini akan diperbarui untuk mencerminkannya dan persetujuan Anda akan diminta saat hukum mensyaratkannya (GDPR/EU).</p>"
+        },
+        "gdpr": {
+          "title": "5. Hak Anda (GDPR)",
+          "body": "<p>Karena kami tidak menyimpan informasi yang dapat diidentifikasi secara pribadi di server kami, sebagian besar hak GDPR (akses, pembetulan, penghapusan, portabilitas) tidak berlaku karena tidak ada data untuk diterapkan.</p><p>Meski demikian, Anda dapat menggunakan hak apa pun dengan menghubungi kami di alamat yang tercantum di bagian bawah kebijakan ini.</p>"
+        },
+        "children": {
+          "title": "6. Anak-anak",
+          "body": "<p>Situs ini tidak ditujukan untuk anak di bawah 14 tahun. Kami tidak dengan sengaja mengumpulkan data tentang anak di bawah umur.</p>"
+        },
+        "changes": {
+          "title": "7. Perubahan pada kebijakan ini",
+          "body": "<p>Kami dapat memperbarui kebijakan ini saat menambahkan fitur baru atau karena alasan hukum. Tanggal pembaruan terakhir ditunjukkan di tajuk dokumen.</p>"
+        },
+        "contact": {
+          "title": "8. Kontak",
+          "body": "<p>Untuk pertanyaan terkait privasi: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
+        }
+      }
+    },
+    "terms": {
+      "title": "Ketentuan Penggunaan",
+      "intro": "<p>Selamat datang di Tanukibox. Dengan menggunakan situs ini, Anda menerima ketentuan yang dijelaskan di bawah. Jika Anda tidak setuju, mohon jangan gunakan layanan ini.</p>",
+      "sections": {
+        "acceptance": {
+          "title": "1. Penerimaan",
+          "body": "<p>Mengakses dan menggunakan tanukibox.com menyiratkan penerimaan penuh atas ketentuan ini. Ketentuan dapat diperbarui kapan saja; penggunaan lanjutan setelah perubahan menyiratkan penerimaannya.</p>"
+        },
+        "service": {
+          "title": "2. Deskripsi layanan",
+          "body": "<p>Tanukibox menyediakan sekumpulan utilitas yang berjalan sepenuhnya di peramban Anda (pemrosesan lokal). Layanan disediakan <strong>secara gratis dan \"sebagaimana adanya\"</strong>, tanpa jaminan ketersediaan, akurasi, atau kesesuaian untuk tujuan tertentu.</p>"
+        },
+        "use": {
+          "title": "3. Penggunaan yang diizinkan",
+          "body": "<p>Anda dapat menggunakan alat untuk tujuan apa pun yang sah, pribadi atau profesional. Anda tidak boleh:</p><ul><li>Mencoba mengkompromikan keamanan atau ketersediaan situs.</li><li>Menggunakan layanan untuk memproses konten ilegal.</li><li>Menyalin atau mendistribusikan ulang kode situs tanpa izin.</li></ul>"
+        },
+        "responsibility": {
+          "title": "4. Tanggung jawab pengguna",
+          "body": "<p>Anda bertanggung jawab untuk memvalidasi hasil setiap alat sebelum membuat keputusan berdasarkan hal tersebut. Misalnya, memverifikasi hash secara manual, memeriksa kata sandi yang dihasilkan di pengelola terpercaya, atau meninjau metadata yang dihapus sebelum mempublikasikan gambar.</p>"
+        },
+        "ip": {
+          "title": "5. Kekayaan intelektual",
+          "body": "<p>Nama, logo, dan desain situs Tanukibox adalah milik penulisnya. Kode sumber mungkin tersedia di bawah lisensi terbuka di repositori publiknya; periksa repositori untuk ketentuan yang tepat.</p>"
+        },
+        "liability": {
+          "title": "6. Batasan tanggung jawab",
+          "body": "<p>Sejauh diizinkan oleh hukum, Tanukibox tidak bertanggung jawab atas kerusakan langsung, tidak langsung, insidental, atau konsekuensial yang timbul dari penggunaan atau ketidakmampuan menggunakan layanan, termasuk kehilangan data.</p>"
+        },
+        "changes": {
+          "title": "7. Modifikasi",
+          "body": "<p>Kami memiliki hak untuk memodifikasi, menangguhkan, atau menghentikan alat apa pun kapan saja tanpa pemberitahuan sebelumnya.</p>"
+        },
+        "jurisdiction": {
+          "title": "8. Hukum yang berlaku dan yurisdiksi",
+          "body": "<p>Ketentuan ini diatur oleh hukum Spanyol. Untuk setiap perselisihan, para pihak tunduk pada pengadilan dan tribunal di tempat tinggal pengguna, atau Madrid jika pengguna bukan konsumen.</p>"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Kebijakan Cookies",
+      "intro": "<p>Halaman ini menjelaskan cookies dan mekanisme penyimpanan apa yang digunakan tanukibox.com.</p>",
+      "sections": {
+        "what": {
+          "title": "1. Apa itu cookies",
+          "body": "<p>Cookies adalah file kecil yang disimpan situs web di perangkat Anda untuk mengingat informasi antar kunjungan (preferensi, sesi, dll.). Tanukibox menggunakan minimum mutlak.</p>"
+        },
+        "used": {
+          "title": "2. Cookies yang kami gunakan",
+          "body": "<ul><li><strong><code>tanukibox_lang</code></strong> — cookie preferensi teknis. Menyimpan bahasa yang dipilih sehingga kami tidak bertanya setiap kunjungan. Kedaluwarsa dalam 1 tahun. Tidak mengidentifikasi pengguna.</li></ul><p>Saat ini kami tidak menggunakan cookie pelacakan atau iklan.</p>"
+        },
+        "thirdParty": {
+          "title": "3. Cookies pihak ketiga",
+          "body": "<p>Tanukibox saat ini tidak memuat skrip pihak ketiga yang memasang cookies. Jika di masa mendatang kami mengintegrasikan layanan seperti Google AdSense atau alat analitik, bagian ini akan diperbarui dan persetujuan Anda akan diminta melalui banner.</p>"
+        },
+        "manage": {
+          "title": "4. Cara mengelola cookies",
+          "body": "<p>Anda dapat menghapus atau memblokir cookies dari pengaturan peramban Anda. Jika Anda memblokir <code>tanukibox_lang</code>, situs akan berfungsi tetapi tidak akan mengingat preferensi bahasa Anda.</p>"
+        },
+        "changes": {
+          "title": "5. Perubahan pada kebijakan ini",
+          "body": "<p>Jika kami menambahkan cookies baru atau layanan pihak ketiga, kami akan memperbarui halaman ini dan tanggal di tajuk.</p>"
+        }
+      }
+    }
+  }
+}

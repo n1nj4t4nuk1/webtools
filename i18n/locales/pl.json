@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "languageSwitcher": "Przełącznik języka"
+  },
+  "landing": {
+    "title": "Narzędzia działające w Twojej przeglądarce",
+    "description": "Zbiór bezserwerowych narzędzi internetowych. Twoje pliki nigdy nie opuszczają urządzenia.",
+    "categories": {
+      "imageEdit": "Edycja obrazów",
+      "documents": "Dokumenty",
+      "privacy": "Prywatność",
+      "generators": "Generatory",
+      "dev": "Programowanie",
+      "design": "Projektowanie",
+      "converters": "Konwertery"
+    }
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Zmień rozmiar obrazów",
+      "description": "Zmniejsz rozmiar pikseli swoich obrazów bezpośrednio w przeglądarce. Bez przesyłania, bez serwera."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "Edytuj metadane EXIF",
+      "description": "Czytaj, edytuj lub usuwaj metadane EXIF ze swoich zdjęć JPEG. Wszystko w Twojej przeglądarce."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Generuj silne hasła",
+      "description": "Twórz losowe hasła z użyciem kryptografii przeglądarki. Nigdy nie opuszczają Twojego urządzenia."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Obliczaj skróty i weryfikuj integralność",
+      "description": "SHA-1, SHA-256, SHA-384 i SHA-512 tekstu lub plików. Porównaj z oczekiwanym skrótem, aby zweryfikować pobrane pliki."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Generuj unikalne identyfikatory",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID i NanoID. Generowanie bezpieczne kryptograficznie w Twojej przeglądarce."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Łącz wiele plików PDF w jeden",
+      "description": "Połącz kilka plików PDF w jeden, w dowolnej kolejności. Wszystko przetwarzane w Twojej przeglądarce."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Licz słowa i znaki",
+      "description": "Analizuj tekst lub plik tekstowy: słowa, znaki, wiersze, akapity i szacowany czas czytania."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "Wyodrębniaj strony z PDF",
+      "description": "Wybierz strony lub zakresy z PDF i pobierz je jako nowy plik. Wszystko w Twojej przeglądarce."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Łącz pola w warianty (e-maile, nazwy użytkownika…)",
+      "description": "Generuj kombinacje wielu pól z konfigurowalnym separatorem i sufiksem. Przydatne do list e-mailowych, nazw użytkowników, slugów lub identyfikatorów."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Konwertuj między CSV a JSON",
+      "description": "Wklej CSV lub JSON i natychmiast otrzymaj drugi format. Automatyczne wykrywanie separatora i formatu. Wszystko w Twojej przeglądarce."
+    },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Generuj tekst Lorem ipsum",
+      "description": "Tekst zastępczy w akapitach, zdaniach lub słowach. Opcja rozpoczęcia od klasycznego \"Lorem ipsum dolor sit amet…\" oraz wyjście jako zwykły tekst lub HTML."
+    },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Testuj regex i zamieniaj tekst",
+      "description": "Twórz wyrażenia regularne, zobacz podświetlone dopasowania i zastosuj zamianę (obsługa $1, $2…). Wszystko w Twojej przeglądarce."
+    },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "Konwertuj między YAML a JSON",
+      "description": "Wklej YAML lub JSON i natychmiast otrzymaj drugi format. Automatyczne wykrywanie formatu i pokazywanie błędów z numerem wiersza i kolumny. Wszystko w Twojej przeglądarce."
+    },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "Generator gradientów CSS",
+      "description": "Twórz gradienty liniowe, radialne i stożkowe z wieloma punktami, oglądaj podgląd na żywo i kopiuj CSS."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "Generator box-shadow",
+      "description": "Cienie z przesunięciem, rozmyciem, rozszerzeniem, kolorem, przezroczystością i inset. Wiele warstw z podglądem na żywo."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Próbnik kolorów, paleta i kontrast WCAG",
+      "description": "Wybierz kolor, konwertuj między HEX/RGB/HSL, generuj paletę i mierz kontrast WCAG względem bieli i czerni."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "Konwerter jednostek CSS",
+      "description": "Konwertuj między px, rem, em, pt i % używając konfigurowalnego rozmiaru bazowego. Edycja dowolnej jednostki przelicza pozostałe."
+    },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Konwertuj znaczniki czasu i daty",
+      "description": "Edytuj dowolny format (UNIX sekundy/ms, ISO 8601 UTC/lokalny, RFC 2822), a pozostałe się zaktualizują. Pokazuje dzień tygodnia, czas względny i strefę czasową."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Konwertuj między systemami liczbowymi",
+      "description": "Konwertuj między binarnym, ósemkowym, dziesiętnym i szesnastkowym. Obsługuje liczby całkowite dowolnego rozmiaru (BigInt)."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "Formatuj i waliduj JSON",
+      "description": "Wklej JSON, zwaliduj go i sformatuj z wybranym wcięciem. Minifikuj, sortuj klucze i sprawdzaj statystyki. Wszystko w Twojej przeglądarce."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Typ",
+      "linear": "Liniowy",
+      "radial": "Radialny",
+      "conic": "Stożkowy"
+    },
+    "angle": "Kąt",
+    "shape": {
+      "label": "Kształt",
+      "circle": "Koło",
+      "ellipse": "Elipsa"
+    },
+    "position": {
+      "label": "Pozycja"
+    },
+    "stops": {
+      "title": "Punkty",
+      "add": "Dodaj punkt"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!"
+    }
+  },
+  "shadowy": {
+    "title": "Cienie",
+    "layer": "Warstwa {n}",
+    "offsetX": "Przesunięcie X",
+    "offsetY": "Przesunięcie Y",
+    "blur": "Rozmycie",
+    "spread": "Rozszerzenie",
+    "color": "Kolor",
+    "alpha": "Przezroczystość",
+    "inset": "Inset",
+    "css": "CSS",
+    "actions": {
+      "add": "Dodaj cień",
+      "remove": "Usuń cień",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!"
+    }
+  },
+  "colory": {
+    "palette": "Paleta",
+    "contrast": {
+      "label": "Kontrast WCAG",
+      "sample": "Aa",
+      "withWhite": "na białym",
+      "withBlack": "na czarnym",
+      "normal": "Tekst normalny",
+      "large": "Tekst duży"
+    },
+    "actions": {
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!"
+    }
+  },
+  "timely": {
+    "formats": "Formaty",
+    "fmt": {
+      "unixS": "UNIX (sekundy)",
+      "unixMs": "UNIX (milisekundy)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 lokalny",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Dzień tygodnia",
+      "relative": "Względny",
+      "tz": "Twoja strefa czasowa"
+    },
+    "actions": {
+      "now": "Teraz",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!"
+    },
+    "errors": {
+      "invalid": "Nieprawidłowy format."
+    }
+  },
+  "basey": {
+    "title": "Systemy liczbowe",
+    "bases": {
+      "bin": "Binarny",
+      "oct": "Ósemkowy",
+      "dec": "Dziesiętny",
+      "hex": "Szesnastkowy"
+    },
+    "customLabel": "Podstawa {radix}",
+    "placeholders": {
+      "bin": "np. 101010",
+      "oct": "np. 52",
+      "dec": "np. 42",
+      "hex": "np. 2A"
+    },
+    "addCustom": {
+      "title": "Dodaj własną podstawę",
+      "label": "Podstawa",
+      "placeholder": "2–36",
+      "hint": "Cyfry to 0-9, następnie a-z. Na przykład podstawa 36 używa 0-9 i a-z."
+    },
+    "actions": {
+      "clear": "Wyczyść",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!",
+      "addBase": "Dodaj",
+      "removeBase": "Usuń podstawę"
+    },
+    "errors": {
+      "invalid": "Nieprawidłowa wartość dla {base}.",
+      "invalidRadix": "Podstawa musi być liczbą całkowitą między 2 a 36."
+    }
+  },
+  "unity": {
+    "baseFont": "Rozmiar bazowy",
+    "baseHint": "1rem = baza. 1em = względem rodzica (tutaj przyjęte = baza). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "piksele",
+      "rem": "root em",
+      "em": "względne em",
+      "pt": "punkty",
+      "percent": "procent"
+    },
+    "actions": {
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!"
+    }
+  },
+  "yamljson": {
+    "input": "Wejście",
+    "output": "Wyjście",
+    "inputPlaceholder": "Wklej tutaj YAML lub JSON…",
+    "outputPlaceholder": "Wynik pojawi się tutaj.",
+    "indent": "Wcięcie",
+    "direction": {
+      "label": "Kierunek",
+      "auto": "Automatyczny",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "Wykryto",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "Nieznany"
+    },
+    "actions": {
+      "example": "Przykład",
+      "clear": "Wyczyść",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!",
+      "download": "Pobierz",
+      "useAsInput": "Użyj jako wejścia"
+    },
+    "errors": {
+      "unknownInput": "Nie udało się wykryć formatu. Wybierz kierunek ręcznie.",
+      "invalidYaml": "Nieprawidłowy YAML",
+      "invalidJson": "Nieprawidłowy JSON",
+      "atLine": "wiersz {line}, kolumna {col}"
+    }
+  },
+  "regexpad": {
+    "pattern": "Wzorzec",
+    "patternPlaceholder": "np. \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Zamiana",
+    "replacementPlaceholder": "Tekst zamiany (użyj $1, $2… dla grup)",
+    "replacementHint": "Użyj $& dla całego dopasowania, $1, $2… dla grup przechwytujących.",
+    "source": "Tekst źródłowy",
+    "sourcePlaceholder": "Wklej tutaj tekst, w którym chcesz wyszukiwać…",
+    "preview": "Podświetlone dopasowania",
+    "previewEmpty": "Wpisz tekst powyżej, aby zobaczyć dopasowania.",
+    "output": "Wynik zamiany",
+    "outputPlaceholder": "Tutaj pojawi się tekst z zastosowaną zamianą.",
+    "flags": {
+      "label": "Flagi",
+      "g": "globalne",
+      "i": "ignoruj wielkość liter",
+      "m": "wieloliniowe",
+      "s": "kropka pasuje do nowych linii",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Oczekiwanie na wzorzec…",
+      "count": "{n} dopasowań",
+      "none": "Brak dopasowań"
+    },
+    "actions": {
+      "example": "Przykład",
+      "clear": "Wyczyść",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!",
+      "download": "Pobierz"
+    },
+    "errors": {
+      "invalidRegex": "Nieprawidłowy regex"
+    }
+  },
+  "lorempad": {
+    "output": "Wyjście",
+    "count": "Ilość",
+    "wordsPerSentence": "Słów na zdanie",
+    "wordsPerParagraph": "Słów na akapit",
+    "wordsHint": "0 = losowo. Minimum 3 przy wartości stałej.",
+    "classic": "Zacznij od \"Lorem ipsum dolor sit amet…\"",
+    "mode": {
+      "label": "Tryb",
+      "paragraphs": "Akapity",
+      "sentences": "Zdania",
+      "words": "Słowa"
+    },
+    "format": {
+      "label": "Format",
+      "plain": "Zwykły tekst",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Generuj ponownie",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!",
+      "download": "Pobierz"
+    }
+  },
+  "jsonpad": {
+    "editor": "Edytor",
+    "placeholder": "Wklej tutaj swój JSON…",
+    "indent": "Wcięcie (spacje)",
+    "actions": {
+      "format": "Formatuj",
+      "minify": "Minifikuj",
+      "sortKeys": "Sortuj klucze",
+      "example": "Przykład",
+      "clear": "Wyczyść",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!",
+      "download": "Pobierz"
+    },
+    "status": {
+      "empty": "Oczekiwanie na JSON…",
+      "valid": "Prawidłowy JSON",
+      "error": "Nieprawidłowy JSON",
+      "errorAt": "Błąd w wierszu {line}, kolumnie {col}"
+    },
+    "stats": {
+      "keys": "{n} kluczy",
+      "depth": "głębokość {n}",
+      "objects": "{n} obiektów",
+      "arrays": "{n} tablic"
+    }
+  },
+  "csvjson": {
+    "input": "Wejście",
+    "output": "Wyjście",
+    "inputPlaceholder": "Wklej tutaj CSV lub JSON…",
+    "outputPlaceholder": "Wynik pojawi się tutaj.",
+    "hasHeader": "CSV ma wiersz nagłówka",
+    "pretty": "Sformatowany JSON",
+    "direction": {
+      "label": "Kierunek",
+      "auto": "Automatyczny",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Separator",
+      "auto": "Automatyczny",
+      "comma": "Przecinek (,)",
+      "semicolon": "Średnik (;)",
+      "tab": "Tabulator",
+      "pipe": "Pionowa kreska (|)"
+    },
+    "detected": {
+      "label": "Wykryto",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Nieznany"
+    },
+    "actions": {
+      "example": "Przykład",
+      "clear": "Wyczyść",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!",
+      "download": "Pobierz",
+      "useAsInput": "Użyj jako wejścia"
+    },
+    "errors": {
+      "unknownInput": "Nie udało się wykryć formatu. Wybierz kierunek ręcznie.",
+      "invalidJson": "Nieprawidłowy JSON: {msg}",
+      "notTabular": "JSON musi być tablicą (lub obiektem), aby konwertować na CSV.",
+      "mixedShape": "Tablica miesza typy elementów. Wszystkie muszą być obiektami lub wszystkie tablicami."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Pola",
+      "valuePlaceholder": "Wartość",
+      "examples": "np. Maria|np. Perez|np. Acme|np. 2024|np. dev|np. eu",
+      "add": "Dodaj pole",
+      "remove": "Usuń pole",
+      "mode": {
+        "full": "Pełne",
+        "initial": "Inicjał",
+        "both": "Oba"
+      }
+    },
+    "options": {
+      "separator": "Separator",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Prefiks",
+      "prefixPlaceholder": "https://www. (opcjonalnie)",
+      "suffix": "Sufiks",
+      "suffixPlaceholder": "{'@'}example.com (opcjonalnie)",
+      "permute": "Permutuj kolejność pól",
+      "permuteHint": "Po włączeniu generuje również kombinacje z polami w różnych kolejnościach (last.first itp.).",
+      "subsets": "Uwzględnij podzbiory (kombinacje z mniejszą liczbą pól)",
+      "subsetsHint": "Po włączeniu generuje również warianty używające tylko niektórych wypełnionych pól (samo imię, samo nazwisko, imię+firma itp.).",
+      "downloadOnly": "Tylko pobieranie (nie wyświetlaj listy)",
+      "downloadOnlyHint": "Przydatne, gdy są tysiące kombinacji, a renderowanie listy spowalnia przeglądarkę. Podnosi limit do 100 000 wyników."
+    },
+    "results": {
+      "title": "Wyniki ({count})",
+      "empty": "Wypełnij co najmniej jedno pole, aby wygenerować kombinacje.",
+      "limited": "Wyświetlono pierwsze {limit} z {total} kombinacji.",
+      "copyAll": "Kopiuj wszystko",
+      "copied": "Skopiowano!",
+      "download": "Pobierz .txt",
+      "downloadHint": "Lista ukryta, aby nie spowalniać przeglądarki. Naciśnij Pobierz, aby otrzymać .txt ze wszystkimi {count} kombinacjami."
+    }
+  },
+  "scissor": {
+    "dropzone": "Przeciągnij tutaj PDF lub kliknij, aby go wybrać",
+    "totalPages": "{n} stron",
+    "rangesLabel": "Strony do wyodrębnienia",
+    "rangesPlaceholder": "Np. 1-3, 5, 8-10",
+    "hint": "Oddzielaj przecinkami. Używaj myślników dla zakresów (1-5). Domyślnie wszystkie strony są zaznaczone.",
+    "preview": {
+      "pages": "Wybór",
+      "count": "Razem",
+      "none": "Brak"
+    },
+    "actions": {
+      "extract": "Wyodrębnij i pobierz",
+      "processing": "Wyodrębnianie…",
+      "change": "Zmień PDF"
+    },
+    "errors": {
+      "notPdf": "{name} nie jest plikiem PDF.",
+      "invalidPdf": "{name} nie jest prawidłowym PDF lub jest uszkodzony.",
+      "encrypted": "Ten PDF jest chroniony hasłem.",
+      "invalidTokens": "Nie udało się przeanalizować: {tokens}.",
+      "outOfRange": "Poza zakresem (maks. {max}): {tokens}.",
+      "generic": "Nie udało się wyodrębnić stron."
+    }
+  },
+  "wordy": {
+    "modeText": "Tekst",
+    "modeFile": "Plik",
+    "textPlaceholder": "Wklej lub wpisz tekst do analizy…",
+    "dropzone": "Przeciągnij plik tekstowy (.txt, .md, .csv…) lub kliknij, aby go wybrać",
+    "stats": {
+      "words": "Słowa",
+      "charsWithSpaces": "Znaki (ze spacjami)",
+      "charsNoSpaces": "Znaki (bez spacji)",
+      "lines": "Wiersze",
+      "paragraphs": "Akapity",
+      "sentences": "Zdania",
+      "readingTime": "Czas czytania",
+      "minutes": "{n} min",
+      "minutesSeconds": "{m} min {s} s",
+      "seconds": "{n} s"
+    },
+    "actions": {
+      "clear": "Wyczyść"
+    },
+    "errors": {
+      "notText": "Obsługiwane są tylko pliki tekstowe (.txt, .md, .csv itp.).",
+      "read": "Nie udało się odczytać pliku."
+    }
+  },
+  "stapler": {
+    "dropzone": "Przeciągnij tutaj pliki PDF lub kliknij, aby je wybrać",
+    "list": {
+      "title": "{count} plików · {pages} stron łącznie",
+      "pages": "{n} stron"
+    },
+    "actions": {
+      "merge": "Połącz PDF",
+      "processing": "Łączenie…",
+      "clear": "Usuń wszystko",
+      "moveUp": "Przesuń w górę",
+      "moveDown": "Przesuń w dół",
+      "remove": "Usuń"
+    },
+    "errors": {
+      "notPdf": "{name} nie jest plikiem PDF.",
+      "invalidPdf": "{name} nie jest prawidłowym PDF lub jest uszkodzony.",
+      "encrypted": "{name} jest chroniony hasłem.",
+      "generic": "Nie udało się połączyć plików PDF."
+    }
+  },
+  "createpass": {
+    "length": "Długość",
+    "count": "Ile?",
+    "excludeSimilar": "Wyklucz podobne (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Wyklucz niejednoznaczne (nawiasy, cudzysłowy itp.)",
+    "bits": "bitów",
+    "strength": {
+      "veryWeak": "Bardzo słabe",
+      "weak": "Słabe",
+      "reasonable": "Rozsądne",
+      "strong": "Silne",
+      "veryStrong": "Bardzo silne"
+    },
+    "actions": {
+      "generate": "Generuj",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!"
+    },
+    "errors": {
+      "noCharset": "Wybierz co najmniej jeden typ znaków.",
+      "clipboard": "Nie udało się skopiować do schowka."
+    }
+  },
+  "idkun": {
+    "format": "Format",
+    "count": "Ile?",
+    "nanoidSize": "Długość NanoID",
+    "uppercase": "Wielkie litery",
+    "hyphens": "Z myślnikami",
+    "formats": {
+      "uuidv4": "UUID v4 (losowy)",
+      "uuidv7": "UUID v7 (znacznik czasu + losowy)",
+      "uuidNil": "UUID NIL (same zera)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (bezpieczny dla URL)"
+    },
+    "about": {
+      "uuidv4": "Najczęstszy standardowy UUID. 122 losowe bity. RFC 4122.",
+      "uuidv7": "Łączy znacznik czasu + losowość. Sortowalny leksykograficznie. RFC 9562 (2024).",
+      "uuidNil": "UUID nil, same zera. Przydatny jako wartość domyślna lub wartownik.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. 26 znaków w Crockford Base32.",
+      "nanoid": "Krótki i popularny identyfikator bezpieczny dla URL. Konfigurowalny rozmiar."
+    },
+    "actions": {
+      "generate": "Generuj",
+      "copy": "Kopiuj",
+      "copyAll": "Kopiuj wszystko",
+      "copied": "Skopiowano!"
+    },
+    "errors": {
+      "clipboard": "Nie udało się skopiować do schowka."
+    }
+  },
+  "hashy": {
+    "modeText": "Tekst",
+    "modeFile": "Plik",
+    "textPlaceholder": "Wklej lub wpisz tekst do zhaszowania…",
+    "dropzone": "Przeciągnij tutaj plik lub kliknij, aby go wybrać",
+    "processing": "Obliczanie…",
+    "actions": {
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!"
+    },
+    "verify": {
+      "label": "Zweryfikuj z oczekiwanym skrótem",
+      "placeholder": "Wklej skrót hex (40, 64, 96 lub 128 znaków)…",
+      "unknownLength": "Nierozpoznana długość. Musi pasować do SHA-1 (40), SHA-256 (64), SHA-384 (96) lub SHA-512 (128).",
+      "match": "Zgadza się z {algo}.",
+      "mismatch": "Skrót {algo} nie pasuje."
+    },
+    "errors": {
+      "clipboard": "Nie udało się skopiować do schowka."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Przeciągnij tutaj plik JPEG lub kliknij, aby go wybrać",
+    "tags": {
+      "title": "Wykryte metadane ({count})",
+      "hint": "Każdy tag pokazuje swoją nazwę, IFD i typ. Edytuj wartość, usuń znakiem × lub dodaj nowe tagi.",
+      "empty": "Ten obraz nie ma metadanych EXIF.",
+      "add": "Dodaj tag",
+      "confirmAdd": "Dodaj",
+      "remove": "Usuń tag",
+      "searchPlaceholder": "Szukaj tagu (nazwa lub IFD)…",
+      "modeStandard": "Standardowy",
+      "modeCustom": "Niestandardowy",
+      "custom": {
+        "note": "EXIF identyfikuje tagi za pomocą numerycznego ID. Inne czytniki mogą wyświetlać ten tag jako 'Unknown {id}'.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "Typ",
+        "name": "Nazwa (tylko do wyświetlenia)",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "Podaj ID.",
+        "invalidId": "ID musi być liczbą całkowitą między 1 a 65535.",
+        "duplicate": "Ten tag już istnieje w obrazie."
+      }
+    },
+    "actions": {
+      "strip": "Usuń wszystkie metadane",
+      "apply": "Zastosuj i pobierz",
+      "cancel": "Anuluj"
+    },
+    "errors": {
+      "notJpeg": "Obsługiwane są tylko pliki JPEG (.jpg / .jpeg).",
+      "invalidValue": "Nieprawidłowa wartość dla tagu {tag}."
+    }
+  },
+  "dropzone": {
+    "empty": "Przeciągnij tutaj obraz lub kliknij, aby go wybrać"
+  },
+  "controls": {
+    "width": "Szerokość (px)",
+    "height": "Wysokość (px)",
+    "keepRatio": "Zachowaj proporcje",
+    "format": "Format",
+    "quality": "Jakość"
+  },
+  "actions": {
+    "resize": "Zmień rozmiar",
+    "processing": "Przetwarzanie…",
+    "download": "Pobierz"
+  },
+  "result": {
+    "title": "Wynik"
+  },
+  "errors": {
+    "notAnImage": "Ten plik nie jest prawidłowym obrazem."
+  },
+  "footer": {
+    "tagline": "Tanukibox · narzędzia działające w Twojej przeglądarce",
+    "legalLinks": "Linki prawne",
+    "privacy": "Prywatność",
+    "terms": "Regulamin",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "lastUpdated": "Ostatnia aktualizacja: 15 maja 2026",
+    "privacy": {
+      "title": "Polityka prywatności",
+      "intro": "<p>W Tanukibox wierzymy, że Twoje pliki należą do Ciebie. Dlatego wszystkie nasze narzędzia działają <strong>w całości w Twojej przeglądarce</strong>: obrazy, pliki PDF, tekst i wszelkie pliki, które przetwarzasz, nigdy nie opuszczają Twojego urządzenia.</p>",
+      "sections": {
+        "scope": {
+          "title": "1. Zakres",
+          "body": "<p>Niniejsza polityka dotyczy tanukibox.com i każdego narzędzia hostowanego w tej domenie. Opisuje, jakie informacje są zbierane podczas odwiedzania witryny i co z nimi robimy.</p>"
+        },
+        "data": {
+          "title": "2. Zbierane dane",
+          "body": "<p>Nie mamy serwera, który odbiera Twoje pliki. Narzędzia (Mochi, Metaimg, Createpass, Hashy itp.) przetwarzają dane bezpośrednio w Twojej przeglądarce, używając natywnych API (Canvas, Web Crypto itp.). Dlatego:</p><ul><li><strong>Nie zbieramy</strong> plików, które przetwarzasz, ich zawartości ani wyników.</li><li><strong>Nie ma kont użytkowników</strong>, haseł ani profili.</li><li>Serwer Tanukibox dostarcza wyłącznie statyczne zasoby strony (HTML, CSS, JS).</li></ul><p>Jedyne, co jest przechowywane, opisano w sekcji Cookies.</p>"
+        },
+        "cookies": {
+          "title": "3. Cookies i pamięć lokalna",
+          "body": "<p>Używamy jednego ciasteczka technicznego o nazwie <code>tanukibox_lang</code>, aby zapamiętać preferencje językowe. Nie identyfikuje użytkownika i nie jest udostępniane stronom trzecim.</p><p>Więcej szczegółów w <a href='/cookies'>polityce cookies</a>.</p>"
+        },
+        "tracking": {
+          "title": "4. Analityka i reklama",
+          "body": "<p>Obecnie nie używamy analityki ani reklamy displayowej. Jeśli w przyszłości zintegrujemy usługi takie jak Google AdSense lub dostawcę analityki, niniejsza polityka zostanie zaktualizowana, a Twoja zgoda zostanie poproszona, gdy wymaga tego prawo (RODO/UE).</p>"
+        },
+        "gdpr": {
+          "title": "5. Twoje prawa (RODO)",
+          "body": "<p>Ponieważ nie przechowujemy danych osobowych na naszych serwerach, większość praw wynikających z RODO (dostęp, sprostowanie, usunięcie, przenoszenie) nie ma zastosowania, ponieważ nie ma danych, do których można je zastosować.</p><p>Mimo to możesz skorzystać z dowolnego prawa, kontaktując się z nami pod adresem podanym na dole tej polityki.</p>"
+        },
+        "children": {
+          "title": "6. Dzieci",
+          "body": "<p>Strona nie jest skierowana do dzieci poniżej 14 roku życia. Świadomie nie zbieramy danych o nieletnich.</p>"
+        },
+        "changes": {
+          "title": "7. Zmiany w tej polityce",
+          "body": "<p>Możemy aktualizować tę politykę, gdy dodamy nowe funkcje lub z powodów prawnych. Data ostatniej aktualizacji jest wyświetlona w nagłówku dokumentu.</p>"
+        },
+        "contact": {
+          "title": "8. Kontakt",
+          "body": "<p>W sprawie pytań dotyczących prywatności: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
+        }
+      }
+    },
+    "terms": {
+      "title": "Warunki użytkowania",
+      "intro": "<p>Witamy w Tanukibox. Korzystając z tej strony, akceptujesz warunki opisane poniżej. Jeśli się nie zgadzasz, prosimy nie korzystać z usługi.</p>",
+      "sections": {
+        "acceptance": {
+          "title": "1. Akceptacja",
+          "body": "<p>Dostęp i korzystanie z tanukibox.com oznacza pełną akceptację niniejszych warunków. Mogą być one aktualizowane w dowolnym momencie; dalsze korzystanie po zmianach oznacza ich akceptację.</p>"
+        },
+        "service": {
+          "title": "2. Opis usługi",
+          "body": "<p>Tanukibox dostarcza zestaw narzędzi działających w całości w Twojej przeglądarce (przetwarzanie lokalne). Usługa jest świadczona <strong>bezpłatnie i \"tak jak jest\"</strong>, bez gwarancji dostępności, dokładności lub przydatności do określonego celu.</p>"
+        },
+        "use": {
+          "title": "3. Dozwolone użycie",
+          "body": "<p>Możesz używać narzędzi do dowolnych celów zgodnych z prawem, osobistych lub zawodowych. Nie wolno:</p><ul><li>Próbować naruszać bezpieczeństwa lub dostępności strony.</li><li>Używać usługi do przetwarzania nielegalnych treści.</li><li>Kopiować lub redystrybuować kodu strony bez zezwolenia.</li></ul>"
+        },
+        "responsibility": {
+          "title": "4. Odpowiedzialność użytkownika",
+          "body": "<p>Jesteś odpowiedzialny za weryfikację wyników każdego narzędzia przed podjęciem decyzji na ich podstawie. Na przykład ręczna weryfikacja skrótu, sprawdzenie wygenerowanego hasła w zaufanym menedżerze lub przejrzenie usuniętych metadanych przed publikacją obrazu.</p>"
+        },
+        "ip": {
+          "title": "5. Własność intelektualna",
+          "body": "<p>Nazwa Tanukibox, logo i projekt strony są własnością jej autora. Kod źródłowy może być dostępny na otwartej licencji w publicznym repozytorium; sprawdź repozytorium, aby poznać dokładne warunki.</p>"
+        },
+        "liability": {
+          "title": "6. Ograniczenie odpowiedzialności",
+          "body": "<p>W maksymalnym zakresie dozwolonym przez prawo Tanukibox nie ponosi odpowiedzialności za bezpośrednie, pośrednie, przypadkowe lub wtórne szkody wynikające z korzystania lub niemożności korzystania z usługi, w tym utraty danych.</p>"
+        },
+        "changes": {
+          "title": "7. Modyfikacje",
+          "body": "<p>Zastrzegamy sobie prawo do modyfikacji, zawieszenia lub zaprzestania świadczenia dowolnego narzędzia w dowolnym momencie bez wcześniejszego powiadomienia.</p>"
+        },
+        "jurisdiction": {
+          "title": "8. Prawo właściwe i jurysdykcja",
+          "body": "<p>Niniejsze warunki podlegają prawu hiszpańskiemu. W przypadku sporu strony poddają się sądom i trybunałom miejsca zamieszkania użytkownika lub Madrytu, jeśli użytkownik nie jest konsumentem.</p>"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Polityka cookies",
+      "intro": "<p>Niniejsza strona opisuje, jakich cookies i mechanizmów przechowywania używa tanukibox.com.</p>",
+      "sections": {
+        "what": {
+          "title": "1. Czym są cookies",
+          "body": "<p>Cookies to małe pliki, które strona internetowa przechowuje na Twoim urządzeniu w celu zapamiętania informacji między wizytami (preferencje, sesja itp.). Tanukibox używa absolutnego minimum.</p>"
+        },
+        "used": {
+          "title": "2. Używane cookies",
+          "body": "<ul><li><strong><code>tanukibox_lang</code></strong> — techniczne ciasteczko preferencji. Przechowuje wybrany język, aby nie pytać przy każdej wizycie. Wygasa po 1 roku. Nie identyfikuje użytkownika.</li></ul><p>Obecnie nie używamy cookies śledzących ani reklamowych.</p>"
+        },
+        "thirdParty": {
+          "title": "3. Cookies stron trzecich",
+          "body": "<p>Tanukibox obecnie nie ładuje skryptów stron trzecich, które instalują cookies. Jeśli w przyszłości zintegrujemy usługi takie jak Google AdSense lub narzędzie analityczne, ta sekcja zostanie zaktualizowana, a Twoja zgoda zostanie poproszona za pomocą banera.</p>"
+        },
+        "manage": {
+          "title": "4. Jak zarządzać cookies",
+          "body": "<p>Możesz usunąć lub zablokować cookies w ustawieniach przeglądarki. Jeśli zablokujesz <code>tanukibox_lang</code>, strona będzie działać, ale nie zapamięta Twoich preferencji językowych.</p>"
+        },
+        "changes": {
+          "title": "5. Zmiany w tej polityce",
+          "body": "<p>Jeśli dodamy nowe cookies lub usługi stron trzecich, zaktualizujemy tę stronę i datę w nagłówku.</p>"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "languageSwitcher": "Bộ chuyển ngôn ngữ"
+  },
+  "landing": {
+    "title": "Công cụ chạy ngay trong trình duyệt của bạn",
+    "description": "Bộ sưu tập tiện ích web không cần máy chủ. Tệp của bạn không bao giờ rời khỏi thiết bị.",
+    "categories": {
+      "imageEdit": "Chỉnh sửa ảnh",
+      "documents": "Tài liệu",
+      "privacy": "Quyền riêng tư",
+      "generators": "Công cụ tạo",
+      "dev": "Phát triển",
+      "design": "Thiết kế",
+      "converters": "Chuyển đổi"
+    }
+  },
+  "tools": {
+    "mochi": {
+      "name": "Mochi",
+      "tagline": "Thay đổi kích thước ảnh",
+      "description": "Thu nhỏ kích thước điểm ảnh của ảnh ngay trong trình duyệt. Không tải lên, không máy chủ."
+    },
+    "metaimg": {
+      "name": "Metaimg",
+      "tagline": "Chỉnh sửa siêu dữ liệu EXIF",
+      "description": "Đọc, chỉnh sửa hoặc xóa siêu dữ liệu EXIF khỏi ảnh JPEG của bạn. Tất cả trong trình duyệt."
+    },
+    "createpass": {
+      "name": "Createpass",
+      "tagline": "Tạo mật khẩu mạnh",
+      "description": "Tạo mật khẩu ngẫu nhiên bằng mật mã trình duyệt. Chúng không bao giờ rời khỏi thiết bị của bạn."
+    },
+    "hashy": {
+      "name": "Hashy",
+      "tagline": "Tính hash và xác minh tính toàn vẹn",
+      "description": "SHA-1, SHA-256, SHA-384 và SHA-512 của văn bản hoặc tệp. So sánh với hash mong đợi để xác minh các tệp tải về."
+    },
+    "idkun": {
+      "name": "Idkun",
+      "tagline": "Tạo định danh duy nhất",
+      "description": "UUID v4, UUID v7, UUID NIL, ULID và NanoID. Tạo an toàn về mặt mật mã trong trình duyệt của bạn."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Gộp nhiều PDF thành một",
+      "description": "Kết hợp nhiều tệp PDF thành một, theo bất kỳ thứ tự nào. Mọi thứ được xử lý trong trình duyệt."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Đếm từ và ký tự",
+      "description": "Phân tích văn bản hoặc tệp văn bản: từ, ký tự, dòng, đoạn và thời gian đọc ước tính."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "Trích xuất trang từ PDF",
+      "description": "Chọn các trang hoặc phạm vi từ PDF và tải về dưới dạng tệp mới. Mọi thứ trong trình duyệt."
+    },
+    "combiny": {
+      "name": "Combiny",
+      "tagline": "Kết hợp các trường thành biến thể (email, tên người dùng…)",
+      "description": "Tạo các kết hợp của nhiều trường với dấu phân cách và hậu tố có thể tùy chỉnh. Hữu ích cho danh sách email, tên người dùng, slug hoặc ID."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Chuyển đổi giữa CSV và JSON",
+      "description": "Dán CSV hoặc JSON và nhận định dạng còn lại ngay lập tức. Tự động nhận dạng dấu phân cách và định dạng. Tất cả trong trình duyệt."
+    },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Tạo văn bản Lorem ipsum",
+      "description": "Văn bản giữ chỗ theo đoạn, câu hoặc từ. Tùy chọn bắt đầu bằng câu kinh điển \"Lorem ipsum dolor sit amet…\" và xuất ra văn bản thuần hoặc HTML."
+    },
+    "regexpad": {
+      "name": "Regexpad",
+      "tagline": "Kiểm tra regex và thay thế văn bản",
+      "description": "Xây dựng biểu thức chính quy, xem các kết quả khớp được tô sáng và áp dụng phép thay thế (hỗ trợ $1, $2…). Tất cả trong trình duyệt."
+    },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "Chuyển đổi giữa YAML và JSON",
+      "description": "Dán YAML hoặc JSON và nhận định dạng còn lại ngay lập tức. Tự động nhận dạng định dạng và hiển thị lỗi với dòng và cột. Tất cả trong trình duyệt."
+    },
+    "gradienty": {
+      "name": "Gradienty",
+      "tagline": "Trình tạo gradient CSS",
+      "description": "Tạo gradient tuyến tính, hướng tâm và hình nón với nhiều điểm dừng, xem trước trực tiếp và sao chép CSS."
+    },
+    "shadowy": {
+      "name": "Shadowy",
+      "tagline": "Trình tạo box-shadow",
+      "description": "Đổ bóng với offset, độ mờ, độ lan, màu sắc, alpha và inset. Nhiều lớp với xem trước trực tiếp."
+    },
+    "colory": {
+      "name": "Colory",
+      "tagline": "Chọn màu, bảng màu và độ tương phản WCAG",
+      "description": "Chọn một màu, chuyển đổi giữa HEX/RGB/HSL, tạo bảng màu và đo độ tương phản WCAG với màu trắng và đen."
+    },
+    "unity": {
+      "name": "Unity",
+      "tagline": "Bộ chuyển đổi đơn vị CSS",
+      "description": "Chuyển đổi giữa px, rem, em, pt và % bằng kích thước cơ sở có thể tùy chỉnh. Chỉnh sửa bất kỳ đơn vị nào sẽ tính lại các đơn vị khác."
+    },
+    "timely": {
+      "name": "Timely",
+      "tagline": "Chuyển đổi timestamp và ngày tháng",
+      "description": "Chỉnh sửa bất kỳ định dạng nào (UNIX giây/ms, ISO 8601 UTC/cục bộ, RFC 2822) và các định dạng khác sẽ cập nhật. Hiển thị thứ trong tuần, thời gian tương đối và múi giờ."
+    },
+    "basey": {
+      "name": "Basey",
+      "tagline": "Chuyển đổi giữa các hệ cơ số",
+      "description": "Chuyển đổi giữa nhị phân, bát phân, thập phân và thập lục phân. Hỗ trợ số nguyên ở mọi kích thước (BigInt)."
+    },
+    "jsonpad": {
+      "name": "Jsonpad",
+      "tagline": "Định dạng và xác thực JSON",
+      "description": "Dán JSON, xác thực và in đẹp với độ thụt lề bạn thích. Thu gọn, sắp xếp khóa và xem thống kê. Tất cả trong trình duyệt."
+    }
+  },
+  "gradienty": {
+    "type": {
+      "label": "Loại",
+      "linear": "Tuyến tính",
+      "radial": "Hướng tâm",
+      "conic": "Hình nón"
+    },
+    "angle": "Góc",
+    "shape": {
+      "label": "Hình dạng",
+      "circle": "Hình tròn",
+      "ellipse": "Hình elip"
+    },
+    "position": {
+      "label": "Vị trí"
+    },
+    "stops": {
+      "title": "Điểm dừng",
+      "add": "Thêm điểm dừng"
+    },
+    "css": "CSS",
+    "actions": {
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!"
+    }
+  },
+  "shadowy": {
+    "title": "Đổ bóng",
+    "layer": "Lớp {n}",
+    "offsetX": "Offset X",
+    "offsetY": "Offset Y",
+    "blur": "Độ mờ",
+    "spread": "Độ lan",
+    "color": "Màu sắc",
+    "alpha": "Độ trong suốt",
+    "inset": "Inset",
+    "css": "CSS",
+    "actions": {
+      "add": "Thêm bóng",
+      "remove": "Xóa bóng",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!"
+    }
+  },
+  "colory": {
+    "palette": "Bảng màu",
+    "contrast": {
+      "label": "Độ tương phản WCAG",
+      "sample": "Aa",
+      "withWhite": "trên trắng",
+      "withBlack": "trên đen",
+      "normal": "Văn bản thường",
+      "large": "Văn bản lớn"
+    },
+    "actions": {
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!"
+    }
+  },
+  "timely": {
+    "formats": "Định dạng",
+    "fmt": {
+      "unixS": "UNIX (giây)",
+      "unixMs": "UNIX (mili giây)",
+      "isoUtc": "ISO 8601 UTC",
+      "isoLocal": "ISO 8601 cục bộ",
+      "rfc2822": "RFC 2822"
+    },
+    "info": {
+      "weekday": "Thứ trong tuần",
+      "relative": "Tương đối",
+      "tz": "Múi giờ của bạn"
+    },
+    "actions": {
+      "now": "Hiện tại",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!"
+    },
+    "errors": {
+      "invalid": "Định dạng không hợp lệ."
+    }
+  },
+  "basey": {
+    "title": "Hệ cơ số",
+    "bases": {
+      "bin": "Nhị phân",
+      "oct": "Bát phân",
+      "dec": "Thập phân",
+      "hex": "Thập lục phân"
+    },
+    "customLabel": "Cơ số {radix}",
+    "placeholders": {
+      "bin": "ví dụ 101010",
+      "oct": "ví dụ 52",
+      "dec": "ví dụ 42",
+      "hex": "ví dụ 2A"
+    },
+    "addCustom": {
+      "title": "Thêm một cơ số tùy chỉnh",
+      "label": "Cơ số",
+      "placeholder": "2–36",
+      "hint": "Các chữ số chạy từ 0-9, rồi a-z. Ví dụ, cơ số 36 sử dụng 0-9 và a-z."
+    },
+    "actions": {
+      "clear": "Xóa",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!",
+      "addBase": "Thêm",
+      "removeBase": "Xóa cơ số"
+    },
+    "errors": {
+      "invalid": "Giá trị không hợp lệ cho {base}.",
+      "invalidRadix": "Cơ số phải là số nguyên từ 2 đến 36."
+    }
+  },
+  "unity": {
+    "baseFont": "Kích thước cơ sở",
+    "baseHint": "1rem = cơ sở. 1em = tương đối với phần tử cha (ở đây giả định = cơ sở). 1pt = 1.333px (96dpi).",
+    "units": {
+      "px": "điểm ảnh",
+      "rem": "root em",
+      "em": "em tương đối",
+      "pt": "điểm",
+      "percent": "phần trăm"
+    },
+    "actions": {
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!"
+    }
+  },
+  "yamljson": {
+    "input": "Đầu vào",
+    "output": "Đầu ra",
+    "inputPlaceholder": "Dán YAML hoặc JSON tại đây…",
+    "outputPlaceholder": "Kết quả sẽ hiển thị tại đây.",
+    "indent": "Thụt lề",
+    "direction": {
+      "label": "Hướng",
+      "auto": "Tự động",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "Đã nhận dạng",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "Không xác định"
+    },
+    "actions": {
+      "example": "Ví dụ",
+      "clear": "Xóa",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!",
+      "download": "Tải về",
+      "useAsInput": "Dùng làm đầu vào"
+    },
+    "errors": {
+      "unknownInput": "Không thể nhận dạng định dạng. Vui lòng chọn hướng thủ công.",
+      "invalidYaml": "YAML không hợp lệ",
+      "invalidJson": "JSON không hợp lệ",
+      "atLine": "dòng {line}, cột {col}"
+    }
+  },
+  "regexpad": {
+    "pattern": "Mẫu",
+    "patternPlaceholder": "ví dụ \\b(\\w+){'@'}(\\w+\\.\\w+)\\b",
+    "replacement": "Thay thế",
+    "replacementPlaceholder": "Văn bản thay thế (dùng $1, $2… cho nhóm)",
+    "replacementHint": "Dùng $& cho toàn bộ kết quả khớp, $1, $2… cho nhóm bắt giữ.",
+    "source": "Văn bản nguồn",
+    "sourcePlaceholder": "Dán văn bản bạn muốn tìm kiếm tại đây…",
+    "preview": "Kết quả khớp được tô sáng",
+    "previewEmpty": "Nhập văn bản ở trên để xem các kết quả khớp.",
+    "output": "Kết quả thay thế",
+    "outputPlaceholder": "Văn bản đã áp dụng phép thay thế sẽ hiển thị tại đây.",
+    "flags": {
+      "label": "Cờ",
+      "g": "toàn cục",
+      "i": "bỏ qua chữ hoa/thường",
+      "m": "đa dòng",
+      "s": "dấu chấm khớp xuống dòng",
+      "u": "unicode"
+    },
+    "matches": {
+      "idle": "Đang chờ mẫu…",
+      "count": "{n} kết quả khớp",
+      "none": "Không có kết quả khớp"
+    },
+    "actions": {
+      "example": "Ví dụ",
+      "clear": "Xóa",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!",
+      "download": "Tải về"
+    },
+    "errors": {
+      "invalidRegex": "Regex không hợp lệ"
+    }
+  },
+  "lorempad": {
+    "output": "Đầu ra",
+    "count": "Số lượng",
+    "wordsPerSentence": "Số từ mỗi câu",
+    "wordsPerParagraph": "Số từ mỗi đoạn",
+    "wordsHint": "0 = ngẫu nhiên. Tối thiểu 3 khi cố định.",
+    "classic": "Bắt đầu bằng \"Lorem ipsum dolor sit amet…\"",
+    "mode": {
+      "label": "Chế độ",
+      "paragraphs": "Đoạn",
+      "sentences": "Câu",
+      "words": "Từ"
+    },
+    "format": {
+      "label": "Định dạng",
+      "plain": "Văn bản thuần",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Tạo lại",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!",
+      "download": "Tải về"
+    }
+  },
+  "jsonpad": {
+    "editor": "Trình chỉnh sửa",
+    "placeholder": "Dán JSON của bạn tại đây…",
+    "indent": "Thụt lề (khoảng trắng)",
+    "actions": {
+      "format": "Định dạng",
+      "minify": "Thu gọn",
+      "sortKeys": "Sắp xếp khóa",
+      "example": "Ví dụ",
+      "clear": "Xóa",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!",
+      "download": "Tải về"
+    },
+    "status": {
+      "empty": "Đang chờ JSON…",
+      "valid": "JSON hợp lệ",
+      "error": "JSON không hợp lệ",
+      "errorAt": "Lỗi tại dòng {line}, cột {col}"
+    },
+    "stats": {
+      "keys": "{n} khóa",
+      "depth": "độ sâu {n}",
+      "objects": "{n} đối tượng",
+      "arrays": "{n} mảng"
+    }
+  },
+  "csvjson": {
+    "input": "Đầu vào",
+    "output": "Đầu ra",
+    "inputPlaceholder": "Dán CSV hoặc JSON tại đây…",
+    "outputPlaceholder": "Kết quả sẽ hiển thị tại đây.",
+    "hasHeader": "CSV có dòng tiêu đề",
+    "pretty": "In đẹp JSON",
+    "direction": {
+      "label": "Hướng",
+      "auto": "Tự động",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Dấu phân cách",
+      "auto": "Tự động",
+      "comma": "Dấu phẩy (,)",
+      "semicolon": "Dấu chấm phẩy (;)",
+      "tab": "Tab",
+      "pipe": "Dấu sổ đứng (|)"
+    },
+    "detected": {
+      "label": "Đã nhận dạng",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Không xác định"
+    },
+    "actions": {
+      "example": "Ví dụ",
+      "clear": "Xóa",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!",
+      "download": "Tải về",
+      "useAsInput": "Dùng làm đầu vào"
+    },
+    "errors": {
+      "unknownInput": "Không thể nhận dạng định dạng. Vui lòng chọn hướng thủ công.",
+      "invalidJson": "JSON không hợp lệ: {msg}",
+      "notTabular": "JSON phải là mảng (hoặc đối tượng) để chuyển đổi sang CSV.",
+      "mixedShape": "Mảng có lẫn các kiểu phần tử. Phải toàn là đối tượng hoặc toàn là mảng."
+    }
+  },
+  "combiny": {
+    "fields": {
+      "title": "Trường",
+      "valuePlaceholder": "Giá trị",
+      "examples": "ví dụ Maria|ví dụ Perez|ví dụ Acme|ví dụ 2024|ví dụ dev|ví dụ eu",
+      "add": "Thêm trường",
+      "remove": "Xóa trường",
+      "mode": {
+        "full": "Đầy đủ",
+        "initial": "Chữ cái đầu",
+        "both": "Cả hai"
+      }
+    },
+    "options": {
+      "separator": "Dấu phân cách",
+      "separatorPlaceholder": ". _ - + …",
+      "prefix": "Tiền tố",
+      "prefixPlaceholder": "https://www. (tùy chọn)",
+      "suffix": "Hậu tố",
+      "suffixPlaceholder": "{'@'}example.com (tùy chọn)",
+      "permute": "Hoán vị thứ tự các trường",
+      "permuteHint": "Khi bật, cũng tạo các kết hợp với các trường ở thứ tự khác nhau (last.first, v.v.).",
+      "subsets": "Bao gồm tập con (kết hợp dùng ít trường hơn)",
+      "subsetsHint": "Khi bật, cũng tạo các biến thể chỉ dùng một số trường đã điền (chỉ tên, chỉ họ, tên+công ty, v.v.).",
+      "downloadOnly": "Chỉ tải về (không hiển thị danh sách)",
+      "downloadOnlyHint": "Hữu ích khi có hàng nghìn kết hợp và việc vẽ danh sách làm chậm trình duyệt. Tăng giới hạn lên 100.000 kết quả."
+    },
+    "results": {
+      "title": "Kết quả ({count})",
+      "empty": "Điền vào ít nhất một trường để tạo kết hợp.",
+      "limited": "Đang hiển thị {limit} kết quả đầu tiên trong tổng số {total} kết hợp.",
+      "copyAll": "Sao chép tất cả",
+      "copied": "Đã sao chép!",
+      "download": "Tải .txt",
+      "downloadHint": "Danh sách bị ẩn để tránh làm chậm trình duyệt. Nhấn Tải về để lấy một tệp .txt với tất cả {count} kết hợp."
+    }
+  },
+  "scissor": {
+    "dropzone": "Kéo PDF vào đây hoặc nhấp để chọn",
+    "totalPages": "{n} trang",
+    "rangesLabel": "Trang cần trích xuất",
+    "rangesPlaceholder": "Ví dụ 1-3, 5, 8-10",
+    "hint": "Phân tách bằng dấu phẩy. Dùng dấu gạch nối cho phạm vi (1-5). Mặc định tất cả các trang đều được chọn trước.",
+    "preview": {
+      "pages": "Lựa chọn",
+      "count": "Tổng",
+      "none": "Không có"
+    },
+    "actions": {
+      "extract": "Trích xuất và tải về",
+      "processing": "Đang trích xuất…",
+      "change": "Đổi PDF"
+    },
+    "errors": {
+      "notPdf": "{name} không phải là PDF.",
+      "invalidPdf": "{name} không phải là PDF hợp lệ hoặc bị hỏng.",
+      "encrypted": "PDF này được bảo vệ bằng mật khẩu.",
+      "invalidTokens": "Không thể phân tích: {tokens}.",
+      "outOfRange": "Ngoài phạm vi (tối đa {max}): {tokens}.",
+      "generic": "Không thể trích xuất các trang."
+    }
+  },
+  "wordy": {
+    "modeText": "Văn bản",
+    "modeFile": "Tệp",
+    "textPlaceholder": "Dán hoặc nhập văn bản cần phân tích…",
+    "dropzone": "Kéo tệp văn bản (.txt, .md, .csv…) hoặc nhấp để chọn",
+    "stats": {
+      "words": "Từ",
+      "charsWithSpaces": "Ký tự (kèm khoảng trắng)",
+      "charsNoSpaces": "Ký tự (không khoảng trắng)",
+      "lines": "Dòng",
+      "paragraphs": "Đoạn",
+      "sentences": "Câu",
+      "readingTime": "Thời gian đọc",
+      "minutes": "{n} phút",
+      "minutesSeconds": "{m} phút {s} giây",
+      "seconds": "{n} giây"
+    },
+    "actions": {
+      "clear": "Xóa"
+    },
+    "errors": {
+      "notText": "Chỉ hỗ trợ tệp văn bản thuần (.txt, .md, .csv, v.v.).",
+      "read": "Không thể đọc tệp."
+    }
+  },
+  "stapler": {
+    "dropzone": "Kéo các tệp PDF vào đây hoặc nhấp để chọn",
+    "list": {
+      "title": "{count} tệp · tổng {pages} trang",
+      "pages": "{n} trang"
+    },
+    "actions": {
+      "merge": "Gộp PDF",
+      "processing": "Đang gộp…",
+      "clear": "Xóa tất cả",
+      "moveUp": "Di chuyển lên",
+      "moveDown": "Di chuyển xuống",
+      "remove": "Xóa"
+    },
+    "errors": {
+      "notPdf": "{name} không phải là PDF.",
+      "invalidPdf": "{name} không phải là PDF hợp lệ hoặc bị hỏng.",
+      "encrypted": "{name} được bảo vệ bằng mật khẩu.",
+      "generic": "Không thể gộp các tệp PDF."
+    }
+  },
+  "createpass": {
+    "length": "Độ dài",
+    "count": "Bao nhiêu?",
+    "excludeSimilar": "Loại trừ ký tự giống nhau (l, I, 1, O, 0)",
+    "excludeAmbiguous": "Loại trừ ký tự gây nhầm lẫn (dấu ngoặc, dấu nháy và tương tự)",
+    "bits": "bit",
+    "strength": {
+      "veryWeak": "Rất yếu",
+      "weak": "Yếu",
+      "reasonable": "Hợp lý",
+      "strong": "Mạnh",
+      "veryStrong": "Rất mạnh"
+    },
+    "actions": {
+      "generate": "Tạo",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!"
+    },
+    "errors": {
+      "noCharset": "Chọn ít nhất một loại ký tự.",
+      "clipboard": "Không thể sao chép vào clipboard."
+    }
+  },
+  "idkun": {
+    "format": "Định dạng",
+    "count": "Bao nhiêu?",
+    "nanoidSize": "Độ dài NanoID",
+    "uppercase": "Chữ hoa",
+    "hyphens": "Có dấu gạch nối",
+    "formats": {
+      "uuidv4": "UUID v4 (ngẫu nhiên)",
+      "uuidv7": "UUID v7 (dấu thời gian + ngẫu nhiên)",
+      "uuidNil": "UUID NIL (toàn số không)",
+      "ulid": "ULID (Crockford Base32)",
+      "nanoid": "NanoID (an toàn cho URL)"
+    },
+    "about": {
+      "uuidv4": "UUID chuẩn phổ biến nhất. 122 bit ngẫu nhiên. RFC 4122.",
+      "uuidv7": "Kết hợp dấu thời gian + ngẫu nhiên. Có thể sắp xếp theo từ điển. RFC 9562 (2024).",
+      "uuidNil": "UUID nil, toàn số không. Hữu ích như một giá trị mặc định hoặc giá trị canh.",
+      "ulid": "Universally Unique Lexicographically Sortable Identifier. 26 ký tự trong Crockford Base32.",
+      "nanoid": "Định danh ngắn gọn và phổ biến, an toàn cho URL. Kích thước có thể cấu hình."
+    },
+    "actions": {
+      "generate": "Tạo",
+      "copy": "Sao chép",
+      "copyAll": "Sao chép tất cả",
+      "copied": "Đã sao chép!"
+    },
+    "errors": {
+      "clipboard": "Không thể sao chép vào clipboard."
+    }
+  },
+  "hashy": {
+    "modeText": "Văn bản",
+    "modeFile": "Tệp",
+    "textPlaceholder": "Dán hoặc nhập văn bản cần hash…",
+    "dropzone": "Kéo tệp vào đây hoặc nhấp để chọn",
+    "processing": "Đang tính toán…",
+    "actions": {
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!"
+    },
+    "verify": {
+      "label": "Xác minh với hash mong đợi",
+      "placeholder": "Dán hash hex (40, 64, 96 hoặc 128 ký tự)…",
+      "unknownLength": "Độ dài không được nhận dạng. Phải khớp với SHA-1 (40), SHA-256 (64), SHA-384 (96) hoặc SHA-512 (128).",
+      "match": "Khớp với {algo}.",
+      "mismatch": "Hash {algo} không khớp."
+    },
+    "errors": {
+      "clipboard": "Không thể sao chép vào clipboard."
+    }
+  },
+  "metaimg": {
+    "dropzone": "Kéo tệp JPEG vào đây hoặc nhấp để chọn",
+    "tags": {
+      "title": "Siêu dữ liệu được phát hiện ({count})",
+      "hint": "Mỗi tag hiển thị tên, IFD và loại. Chỉnh sửa giá trị, xóa bằng × hoặc thêm tag mới.",
+      "empty": "Ảnh này không có siêu dữ liệu EXIF.",
+      "add": "Thêm tag",
+      "confirmAdd": "Thêm",
+      "remove": "Xóa tag",
+      "searchPlaceholder": "Tìm tag (tên hoặc IFD)…",
+      "modeStandard": "Chuẩn",
+      "modeCustom": "Tùy chỉnh",
+      "custom": {
+        "note": "EXIF nhận diện tag bằng ID số. Các trình đọc khác có thể hiển thị tag này dưới dạng 'Unknown {id}'.",
+        "id": "ID (1–65535)",
+        "ifd": "IFD",
+        "type": "Loại",
+        "name": "Tên (chỉ để hiển thị)",
+        "namePlaceholder": "MyCustomTag",
+        "idRequired": "Cung cấp ID.",
+        "invalidId": "ID phải là số nguyên từ 1 đến 65535.",
+        "duplicate": "Tag đó đã tồn tại trong ảnh."
+      }
+    },
+    "actions": {
+      "strip": "Xóa tất cả siêu dữ liệu",
+      "apply": "Áp dụng và tải về",
+      "cancel": "Hủy"
+    },
+    "errors": {
+      "notJpeg": "Chỉ hỗ trợ tệp JPEG (.jpg / .jpeg).",
+      "invalidValue": "Giá trị không hợp lệ cho tag {tag}."
+    }
+  },
+  "dropzone": {
+    "empty": "Kéo ảnh vào đây hoặc nhấp để chọn"
+  },
+  "controls": {
+    "width": "Chiều rộng (px)",
+    "height": "Chiều cao (px)",
+    "keepRatio": "Giữ tỷ lệ khung hình",
+    "format": "Định dạng",
+    "quality": "Chất lượng"
+  },
+  "actions": {
+    "resize": "Thay đổi kích thước",
+    "processing": "Đang xử lý…",
+    "download": "Tải về"
+  },
+  "result": {
+    "title": "Kết quả"
+  },
+  "errors": {
+    "notAnImage": "Tệp đó không phải là ảnh hợp lệ."
+  },
+  "footer": {
+    "tagline": "Tanukibox · công cụ chạy trong trình duyệt của bạn",
+    "legalLinks": "Liên kết pháp lý",
+    "privacy": "Quyền riêng tư",
+    "terms": "Điều khoản",
+    "cookies": "Cookies"
+  },
+  "legal": {
+    "lastUpdated": "Cập nhật lần cuối: 15 tháng 5, 2026",
+    "privacy": {
+      "title": "Chính sách quyền riêng tư",
+      "intro": "<p>Tại Tanukibox, chúng tôi tin rằng tệp của bạn là của bạn. Đó là lý do tại sao tất cả công cụ của chúng tôi đều chạy <strong>hoàn toàn trong trình duyệt của bạn</strong>: ảnh, PDF, văn bản hoặc bất kỳ tệp nào bạn xử lý đều không bao giờ rời khỏi thiết bị của bạn.</p>",
+      "sections": {
+        "scope": {
+          "title": "1. Phạm vi",
+          "body": "<p>Chính sách này áp dụng cho tanukibox.com và mọi công cụ được lưu trữ trong miền này. Nó mô tả những thông tin nào được thu thập khi bạn truy cập trang web và chúng tôi làm gì với chúng.</p>"
+        },
+        "data": {
+          "title": "2. Dữ liệu chúng tôi thu thập",
+          "body": "<p>Chúng tôi không có máy chủ nhận tệp của bạn. Các công cụ (Mochi, Metaimg, Createpass, Hashy, v.v.) xử lý dữ liệu ngay trong trình duyệt của bạn bằng API gốc (Canvas, Web Crypto, v.v.). Do đó:</p><ul><li><strong>Chúng tôi không thu thập</strong> các tệp bạn xử lý, nội dung của chúng hoặc kết quả.</li><li><strong>Không có tài khoản người dùng</strong>, mật khẩu hoặc hồ sơ.</li><li>Máy chủ Tanukibox chỉ cung cấp các tài nguyên tĩnh của trang web (HTML, CSS, JS).</li></ul><p>Điều duy nhất được lưu trữ được mô tả trong phần Cookies.</p>"
+        },
+        "cookies": {
+          "title": "3. Cookies và lưu trữ cục bộ",
+          "body": "<p>Chúng tôi sử dụng một cookie kỹ thuật duy nhất tên là <code>tanukibox_lang</code> để ghi nhớ tùy chọn ngôn ngữ của bạn. Nó không xác định người dùng và không được chia sẻ với bên thứ ba.</p><p>Thông tin chi tiết hơn trong <a href='/cookies'>chính sách cookies</a>.</p>"
+        },
+        "tracking": {
+          "title": "4. Phân tích và quảng cáo",
+          "body": "<p>Hiện tại chúng tôi không sử dụng phân tích hoặc quảng cáo hiển thị. Nếu trong tương lai chúng tôi tích hợp các dịch vụ như Google AdSense hoặc nhà cung cấp phân tích, chính sách này sẽ được cập nhật để phản ánh điều đó và sự đồng ý của bạn sẽ được yêu cầu khi luật yêu cầu (GDPR/EU).</p>"
+        },
+        "gdpr": {
+          "title": "5. Quyền của bạn (GDPR)",
+          "body": "<p>Vì chúng tôi không lưu trữ thông tin nhận dạng cá nhân trên máy chủ của mình, hầu hết các quyền của GDPR (truy cập, sửa đổi, xóa, di chuyển) không áp dụng vì không có dữ liệu để áp dụng chúng.</p><p>Tuy nhiên, bạn có thể thực hiện bất kỳ quyền nào bằng cách liên hệ với chúng tôi tại địa chỉ được liệt kê ở cuối chính sách này.</p>"
+        },
+        "children": {
+          "title": "6. Trẻ em",
+          "body": "<p>Trang web không hướng đến trẻ em dưới 14 tuổi. Chúng tôi không cố ý thu thập dữ liệu về trẻ vị thành niên.</p>"
+        },
+        "changes": {
+          "title": "7. Thay đổi đối với chính sách này",
+          "body": "<p>Chúng tôi có thể cập nhật chính sách này khi thêm tính năng mới hoặc vì lý do pháp lý. Ngày cập nhật cuối cùng được hiển thị trong tiêu đề tài liệu.</p>"
+        },
+        "contact": {
+          "title": "8. Liên hệ",
+          "body": "<p>Đối với bất kỳ câu hỏi nào liên quan đến quyền riêng tư: <a href='mailto:hola&#64;tanukibox.com'>hola&#64;tanukibox.com</a>.</p>"
+        }
+      }
+    },
+    "terms": {
+      "title": "Điều khoản sử dụng",
+      "intro": "<p>Chào mừng bạn đến với Tanukibox. Khi sử dụng trang web này, bạn chấp nhận các điều kiện được mô tả bên dưới. Nếu bạn không đồng ý, vui lòng không sử dụng dịch vụ.</p>",
+      "sections": {
+        "acceptance": {
+          "title": "1. Chấp nhận",
+          "body": "<p>Việc truy cập và sử dụng tanukibox.com đồng nghĩa với việc chấp nhận đầy đủ các điều khoản này. Chúng có thể được cập nhật bất kỳ lúc nào; việc tiếp tục sử dụng sau những thay đổi đó đồng nghĩa với việc chấp nhận chúng.</p>"
+        },
+        "service": {
+          "title": "2. Mô tả dịch vụ",
+          "body": "<p>Tanukibox cung cấp một bộ tiện ích chạy hoàn toàn trong trình duyệt của bạn (xử lý cục bộ). Dịch vụ được cung cấp <strong>miễn phí và \"như hiện trạng\"</strong>, không bảo đảm về tính khả dụng, độ chính xác hoặc tính phù hợp cho một mục đích cụ thể.</p>"
+        },
+        "use": {
+          "title": "3. Sử dụng được cho phép",
+          "body": "<p>Bạn có thể sử dụng công cụ cho bất kỳ mục đích hợp pháp nào, cá nhân hoặc chuyên nghiệp. Bạn không được:</p><ul><li>Cố gắng xâm phạm bảo mật hoặc tính khả dụng của trang web.</li><li>Sử dụng dịch vụ để xử lý nội dung bất hợp pháp.</li><li>Sao chép hoặc phân phối lại mã trang web mà không có sự cho phép.</li></ul>"
+        },
+        "responsibility": {
+          "title": "4. Trách nhiệm của người dùng",
+          "body": "<p>Bạn có trách nhiệm xác thực kết quả của mỗi công cụ trước khi đưa ra quyết định dựa trên chúng. Ví dụ, xác minh hash thủ công, kiểm tra mật khẩu được tạo trong trình quản lý đáng tin cậy, hoặc xem xét siêu dữ liệu đã xóa trước khi xuất bản ảnh.</p>"
+        },
+        "ip": {
+          "title": "5. Sở hữu trí tuệ",
+          "body": "<p>Tên Tanukibox, logo và thiết kế trang web là tài sản của tác giả. Mã nguồn có thể được cung cấp dưới giấy phép mở trong kho lưu trữ công khai; hãy kiểm tra kho lưu trữ để biết các điều khoản chính xác.</p>"
+        },
+        "liability": {
+          "title": "6. Giới hạn trách nhiệm",
+          "body": "<p>Trong phạm vi tối đa mà luật pháp cho phép, Tanukibox sẽ không chịu trách nhiệm về các thiệt hại trực tiếp, gián tiếp, ngẫu nhiên hoặc do hậu quả phát sinh từ việc sử dụng hoặc không thể sử dụng dịch vụ, bao gồm cả việc mất dữ liệu.</p>"
+        },
+        "changes": {
+          "title": "7. Sửa đổi",
+          "body": "<p>Chúng tôi giữ quyền sửa đổi, đình chỉ hoặc ngừng bất kỳ công cụ nào bất kỳ lúc nào mà không cần thông báo trước.</p>"
+        },
+        "jurisdiction": {
+          "title": "8. Luật áp dụng và quyền tài phán",
+          "body": "<p>Các điều khoản này được điều chỉnh bởi luật pháp Tây Ban Nha. Đối với bất kỳ tranh chấp nào, các bên sẽ chịu sự xét xử của tòa án nơi cư trú của người dùng, hoặc của Madrid nếu người dùng không phải là người tiêu dùng.</p>"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Chính sách cookies",
+      "intro": "<p>Trang này mô tả những cookies và cơ chế lưu trữ nào mà tanukibox.com sử dụng.</p>",
+      "sections": {
+        "what": {
+          "title": "1. Cookies là gì",
+          "body": "<p>Cookies là những tệp nhỏ mà một trang web lưu trữ trên thiết bị của bạn để ghi nhớ thông tin giữa các lần truy cập (tùy chọn, phiên, v.v.). Tanukibox sử dụng mức tối thiểu.</p>"
+        },
+        "used": {
+          "title": "2. Cookies chúng tôi sử dụng",
+          "body": "<ul><li><strong><code>tanukibox_lang</code></strong> — cookie tùy chọn kỹ thuật. Lưu trữ ngôn ngữ đã chọn để chúng tôi không hỏi lại mỗi lần truy cập. Hết hạn sau 1 năm. Không xác định người dùng.</li></ul><p>Hiện tại chúng tôi không sử dụng cookie theo dõi hoặc quảng cáo.</p>"
+        },
+        "thirdParty": {
+          "title": "3. Cookies bên thứ ba",
+          "body": "<p>Tanukibox hiện không tải các script bên thứ ba cài đặt cookies. Nếu trong tương lai chúng tôi tích hợp các dịch vụ như Google AdSense hoặc công cụ phân tích, phần này sẽ được cập nhật và sự đồng ý của bạn sẽ được yêu cầu thông qua biểu ngữ.</p>"
+        },
+        "manage": {
+          "title": "4. Cách quản lý cookies",
+          "body": "<p>Bạn có thể xóa hoặc chặn cookies từ cài đặt trình duyệt của mình. Nếu bạn chặn <code>tanukibox_lang</code>, trang web sẽ hoạt động nhưng sẽ không nhớ tùy chọn ngôn ngữ của bạn.</p>"
+        },
+        "changes": {
+          "title": "5. Thay đổi đối với chính sách này",
+          "body": "<p>Nếu chúng tôi thêm cookies mới hoặc dịch vụ bên thứ ba, chúng tôi sẽ cập nhật trang này và ngày trong tiêu đề.</p>"
+        }
+      }
+    }
+  }
+}
