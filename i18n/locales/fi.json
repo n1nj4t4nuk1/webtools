@@ -101,6 +101,11 @@
       "tagline": "Koodaa teksti useaan muotoon kerralla",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex ja Base58. Muokkaa mitä tahansa muotoa, ja muut päivittyvät välittömästi."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "Dekoodaa JSON Web Tokens",
+      "description": "Liitä JWT nähdäksesi sen headerin ja payloadin siististi muotoiltuna, kelpoisuustilan sekä tulkitut vakiomuotoiset claimit (exp, iat, nbf…)."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-liukuvärigeneraattori",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "Kopioi",
       "copied": "Kopioitu!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Liitä JWT tähän (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Allekirjoitus on läpinäkymätön: sen vahvistaminen vaatii myöntäjän avaimen tai varmenteen.",
+    "standardClaims": "Vakiomuotoiset claimit (tulkittu)",
+    "customClaims": "{n} muuta ei-vakiomuotoista claimia.",
+    "claims": {
+      "iss": "Myöntäjä",
+      "sub": "Kohde",
+      "aud": "Vastaanottaja",
+      "exp": "Vanhenee",
+      "nbf": "Ei voimassa ennen",
+      "iat": "Myönnetty",
+      "jti": "Tokenin tunniste"
+    },
+    "status": {
+      "valid": "Voimassa oleva token",
+      "expired": "Vanhentunut token",
+      "notYet": "Ei vielä voimassa",
+      "unknown": "Ei kelpoisuustietoja"
+    },
+    "actions": {
+      "example": "Esimerkki",
+      "clear": "Tyhjennä",
+      "copy": "Kopioi",
+      "copied": "Kopioitu!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "JWT:ssä on oltava 3 pisteillä erotettua osaa.",
+      "INVALID_HEADER": "Header ei ole kelvollista JSONia.",
+      "INVALID_PAYLOAD": "Payload ei ole kelvollista JSONia."
     }
   },
   "codecpad": {

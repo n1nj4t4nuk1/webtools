@@ -96,6 +96,11 @@
       "tagline": "Codifique texto em vários formatos ao mesmo tempo",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex e Base58. Edite qualquer formato e os demais se atualizam instantaneamente."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "Decodifique JSON Web Tokens",
+      "description": "Cole um JWT para ver header e payload formatados, status de validade e claims padrão (exp, iat, nbf…) interpretados."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Gerador de gradientes CSS",
@@ -260,6 +265,42 @@
     "actions": {
       "copy": "Copiar",
       "copied": "Copiado!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Cole aqui seu JWT (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "A assinatura é opaca: verificá-la requer a chave ou certificado do emissor.",
+    "standardClaims": "Claims padrão interpretados",
+    "customClaims": "Há {n} claims adicionais não padrão.",
+    "claims": {
+      "iss": "Emissor",
+      "sub": "Sujeito",
+      "aud": "Audiência",
+      "exp": "Expira",
+      "nbf": "Não válido antes de",
+      "iat": "Emitido em",
+      "jti": "ID do token"
+    },
+    "status": {
+      "valid": "Token válido",
+      "expired": "Token expirado",
+      "notYet": "Token ainda não válido",
+      "unknown": "Sem informação de validade"
+    },
+    "actions": {
+      "example": "Exemplo",
+      "clear": "Limpar",
+      "copy": "Copiar",
+      "copied": "Copiado!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "Um JWT deve ter 3 partes separadas por pontos.",
+      "INVALID_HEADER": "O header não é um JSON válido.",
+      "INVALID_PAYLOAD": "O payload não é um JSON válido."
     }
   },
   "codecpad": {

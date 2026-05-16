@@ -101,6 +101,11 @@
       "tagline": "Кодирование текста в несколько форматов одновременно",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex и Base58. Измените любой формат, и остальные обновятся мгновенно."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "Декодирование JSON Web Tokens",
+      "description": "Вставьте JWT, чтобы увидеть его Header и Payload в отформатированном виде, статус действительности и интерпретированные стандартные claims (exp, iat, nbf…)."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Генератор CSS-градиентов",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "Копировать",
       "copied": "Скопировано!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Вставьте сюда ваш JWT (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Подпись непрозрачна: для её проверки требуется ключ или сертификат издателя.",
+    "standardClaims": "Стандартные claims (интерпретированные)",
+    "customClaims": "Дополнительных нестандартных claims: {n}.",
+    "claims": {
+      "iss": "Издатель",
+      "sub": "Субъект",
+      "aud": "Аудитория",
+      "exp": "Истекает",
+      "nbf": "Недействителен до",
+      "iat": "Выпущен",
+      "jti": "ID токена"
+    },
+    "status": {
+      "valid": "Действительный token",
+      "expired": "Истёкший token",
+      "notYet": "Ещё не действителен",
+      "unknown": "Нет информации о сроке действия"
+    },
+    "actions": {
+      "example": "Пример",
+      "clear": "Очистить",
+      "copy": "Копировать",
+      "copied": "Скопировано!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "JWT должен состоять из 3 частей, разделённых точками.",
+      "INVALID_HEADER": "Header не является корректным JSON.",
+      "INVALID_PAYLOAD": "Payload не является корректным JSON."
     }
   },
   "codecpad": {

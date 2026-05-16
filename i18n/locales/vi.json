@@ -101,6 +101,11 @@
       "tagline": "Mã hóa văn bản theo nhiều định dạng cùng lúc",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex và Base58. Chỉnh sửa bất kỳ định dạng nào, các định dạng còn lại sẽ cập nhật ngay lập tức."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "Giải mã JSON Web Tokens",
+      "description": "Dán một JWT để xem Header và Payload được in đẹp, trạng thái hợp lệ và các claim chuẩn (exp, iat, nbf…) đã được diễn giải."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Trình tạo gradient CSS",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "Sao chép",
       "copied": "Đã sao chép!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Dán JWT của bạn tại đây (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Signature là không trong suốt: việc xác minh nó đòi hỏi khóa hoặc chứng chỉ của bên phát hành.",
+    "standardClaims": "Claim chuẩn (đã diễn giải)",
+    "customClaims": "{n} claim bổ sung không chuẩn.",
+    "claims": {
+      "iss": "Bên phát hành",
+      "sub": "Chủ thể",
+      "aud": "Đối tượng",
+      "exp": "Hết hạn",
+      "nbf": "Không hợp lệ trước",
+      "iat": "Phát hành lúc",
+      "jti": "ID Token"
+    },
+    "status": {
+      "valid": "Token hợp lệ",
+      "expired": "Token đã hết hạn",
+      "notYet": "Chưa hợp lệ",
+      "unknown": "Không có thông tin hiệu lực"
+    },
+    "actions": {
+      "example": "Ví dụ",
+      "clear": "Xóa",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "Một JWT phải có 3 phần ngăn cách bởi dấu chấm.",
+      "INVALID_HEADER": "Header không phải là JSON hợp lệ.",
+      "INVALID_PAYLOAD": "Payload không phải là JSON hợp lệ."
     }
   },
   "codecpad": {

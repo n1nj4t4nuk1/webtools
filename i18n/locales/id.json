@@ -101,6 +101,11 @@
       "tagline": "Enkode teks dalam beberapa format sekaligus",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex, dan Base58. Edit format apa pun dan yang lain akan diperbarui secara instan."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "Dekode JSON Web Tokens",
+      "description": "Tempel JWT untuk melihat Header dan Payload-nya yang dicetak rapi, status validitas, dan claim standar (exp, iat, nbf…) yang telah diinterpretasikan."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generator gradien CSS",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "Salin",
       "copied": "Tersalin!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Tempel JWT Anda di sini (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Signature bersifat opak: memverifikasinya memerlukan kunci atau sertifikat penerbit.",
+    "standardClaims": "Claim standar (telah diinterpretasikan)",
+    "customClaims": "{n} claim tambahan non-standar.",
+    "claims": {
+      "iss": "Penerbit",
+      "sub": "Subjek",
+      "aud": "Audiens",
+      "exp": "Kedaluwarsa",
+      "nbf": "Tidak valid sebelum",
+      "iat": "Diterbitkan pada",
+      "jti": "ID Token"
+    },
+    "status": {
+      "valid": "Token valid",
+      "expired": "Token kedaluwarsa",
+      "notYet": "Belum valid",
+      "unknown": "Tidak ada info validitas"
+    },
+    "actions": {
+      "example": "Contoh",
+      "clear": "Bersihkan",
+      "copy": "Salin",
+      "copied": "Tersalin!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "Sebuah JWT harus memiliki 3 bagian yang dipisahkan oleh titik.",
+      "INVALID_HEADER": "Header bukan JSON yang valid.",
+      "INVALID_PAYLOAD": "Payload bukan JSON yang valid."
     }
   },
   "codecpad": {

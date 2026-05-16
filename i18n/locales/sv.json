@@ -101,6 +101,11 @@
       "tagline": "Koda text i flera format samtidigt",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex och Base58. Redigera valfritt format så uppdateras de andra direkt."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "Avkoda JSON Web Tokens",
+      "description": "Klistra in en JWT för att se dess Header och Payload snyggformaterade, giltighetsstatus och tolkade standardanspråk (exp, iat, nbf…)."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-gradientgenerator",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "Kopiera",
       "copied": "Kopierat!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Klistra in din JWT här (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Signaturen är ogenomskinlig: för att verifiera den behövs utfärdarens nyckel eller certifikat.",
+    "standardClaims": "Standardanspråk (tolkade)",
+    "customClaims": "{n} ytterligare icke-standardanspråk.",
+    "claims": {
+      "iss": "Utfärdare",
+      "sub": "Ämne",
+      "aud": "Publik",
+      "exp": "Går ut",
+      "nbf": "Inte giltig före",
+      "iat": "Utfärdad",
+      "jti": "Token-ID"
+    },
+    "status": {
+      "valid": "Giltig token",
+      "expired": "Utgången token",
+      "notYet": "Inte giltig än",
+      "unknown": "Ingen giltighetsinformation"
+    },
+    "actions": {
+      "example": "Exempel",
+      "clear": "Rensa",
+      "copy": "Kopiera",
+      "copied": "Kopierat!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "En JWT måste ha 3 delar separerade med punkter.",
+      "INVALID_HEADER": "Header är inte giltig JSON.",
+      "INVALID_PAYLOAD": "Payload är inte giltig JSON."
     }
   },
   "codecpad": {

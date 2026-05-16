@@ -96,6 +96,11 @@
       "tagline": "Κωδικοποίηση κειμένου σε πολλαπλά φορμά ταυτόχρονα",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex και Base58. Επεξεργαστείτε οποιοδήποτε φορμά και τα υπόλοιπα ενημερώνονται άμεσα."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "Αποκωδικοποίηση JSON Web Tokens",
+      "description": "Επικολλήστε ένα JWT για να δείτε header και payload μορφοποιημένα, κατάσταση εγκυρότητας και πρότυπα claims (exp, iat, nbf…)."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Γεννήτρια διαβαθμίσεων CSS",
@@ -260,6 +265,42 @@
     "actions": {
       "copy": "Αντιγραφή",
       "copied": "Αντιγράφηκε!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Επικολλήστε εδώ το JWT σας (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Η υπογραφή είναι αδιαφανής: η επαλήθευσή της απαιτεί το κλειδί ή το πιστοποιητικό του εκδότη.",
+    "standardClaims": "Πρότυπα claims (ερμηνευμένα)",
+    "customClaims": "Υπάρχουν {n} επιπλέον μη πρότυπα claims.",
+    "claims": {
+      "iss": "Εκδότης",
+      "sub": "Υποκείμενο",
+      "aud": "Audience",
+      "exp": "Λήγει",
+      "nbf": "Δεν ισχύει πριν από",
+      "iat": "Εκδόθηκε στις",
+      "jti": "ID token"
+    },
+    "status": {
+      "valid": "Έγκυρο token",
+      "expired": "Token έχει λήξει",
+      "notYet": "Token δεν ισχύει ακόμα",
+      "unknown": "Χωρίς πληροφορίες εγκυρότητας"
+    },
+    "actions": {
+      "example": "Παράδειγμα",
+      "clear": "Καθαρισμός",
+      "copy": "Αντιγραφή",
+      "copied": "Αντιγράφηκε!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "Ένα JWT πρέπει να έχει 3 μέρη χωρισμένα με τελείες.",
+      "INVALID_HEADER": "Το header δεν είναι έγκυρο JSON.",
+      "INVALID_PAYLOAD": "Το payload δεν είναι έγκυρο JSON."
     }
   },
   "codecpad": {

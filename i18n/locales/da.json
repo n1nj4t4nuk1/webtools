@@ -101,6 +101,11 @@
       "tagline": "Kod tekst i flere formater på én gang",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex og Base58. Rediger et hvilket som helst format, og resten opdateres med det samme."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "Afkod JSON Web Tokens",
+      "description": "Indsæt et JWT for at se dets header og payload pretty-printet, dets gyldighedsstatus og standardclaims (exp, iat, nbf…) fortolket."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-gradientgenerator",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "Kopiér",
       "copied": "Kopieret!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Indsæt dit JWT her (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Signaturen er uigennemsigtig: verificering kræver udstederens nøgle eller certifikat.",
+    "standardClaims": "Standardclaims (fortolket)",
+    "customClaims": "{n} yderligere ikke-standard claims.",
+    "claims": {
+      "iss": "Udsteder",
+      "sub": "Subjekt",
+      "aud": "Modtager",
+      "exp": "Udløber",
+      "nbf": "Ikke gyldig før",
+      "iat": "Udstedt",
+      "jti": "Token-ID"
+    },
+    "status": {
+      "valid": "Gyldigt token",
+      "expired": "Udløbet token",
+      "notYet": "Endnu ikke gyldigt",
+      "unknown": "Ingen gyldighedsoplysninger"
+    },
+    "actions": {
+      "example": "Eksempel",
+      "clear": "Ryd",
+      "copy": "Kopiér",
+      "copied": "Kopieret!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "Et JWT skal have 3 dele adskilt af punktummer.",
+      "INVALID_HEADER": "Header er ikke gyldig JSON.",
+      "INVALID_PAYLOAD": "Payload er ikke gyldig JSON."
     }
   },
   "codecpad": {

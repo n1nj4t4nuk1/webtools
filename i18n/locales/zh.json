@@ -96,6 +96,11 @@
       "tagline": "同时以多种格式编码文本",
       "description": "UTF-8、Base64、Base64 URL-safe、Base32、Hex 和 Base58。编辑任何格式，其他格式即时更新。"
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "解码 JSON Web Token",
+      "description": "粘贴 JWT 即可查看格式化的 header 和 payload、有效性状态以及标准 claim（exp、iat、nbf…）的解读。"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS 渐变生成器",
@@ -260,6 +265,42 @@
     "actions": {
       "copy": "复制",
       "copied": "已复制！"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "在此粘贴您的 JWT (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "签名是不透明的：验证需要发行者的密钥或证书。",
+    "standardClaims": "标准 claim（已解读）",
+    "customClaims": "另有 {n} 个非标准 claim。",
+    "claims": {
+      "iss": "发行者",
+      "sub": "主题",
+      "aud": "受众",
+      "exp": "过期",
+      "nbf": "不早于",
+      "iat": "签发时间",
+      "jti": "Token ID"
+    },
+    "status": {
+      "valid": "有效 token",
+      "expired": "token 已过期",
+      "notYet": "token 尚未有效",
+      "unknown": "无有效性信息"
+    },
+    "actions": {
+      "example": "示例",
+      "clear": "清除",
+      "copy": "复制",
+      "copied": "已复制！"
+    },
+    "errors": {
+      "INVALID_FORMAT": "JWT 必须由点分隔的 3 部分组成。",
+      "INVALID_HEADER": "Header 不是有效的 JSON。",
+      "INVALID_PAYLOAD": "Payload 不是有效的 JSON。"
     }
   },
   "codecpad": {

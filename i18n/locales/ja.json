@@ -96,6 +96,11 @@
       "tagline": "テキストを複数の形式で同時にエンコード",
       "description": "UTF-8、Base64、Base64 URL-safe、Base32、Hex、Base58。任意の形式を編集すると他がすべて即座に更新されます。"
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "JSON Web Tokenをデコード",
+      "description": "JWTを貼り付けて、ヘッダーとペイロードを整形表示、有効性ステータス、標準クレーム（exp、iat、nbf…）の解釈を確認。"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSSグラデーションジェネレーター",
@@ -260,6 +265,42 @@
     "actions": {
       "copy": "コピー",
       "copied": "コピーしました！"
+    }
+  },
+  "jwtdecoder": {
+    "token": "トークン",
+    "placeholder": "ここにJWTを貼り付け（header.payload.signature）…",
+    "header": "ヘッダー",
+    "payload": "ペイロード",
+    "signature": "署名",
+    "signatureHint": "署名は不透明です：検証には発行者の鍵または証明書が必要です。",
+    "standardClaims": "標準クレーム（解釈済み）",
+    "customClaims": "追加の非標準クレームが{n}件あります。",
+    "claims": {
+      "iss": "発行者",
+      "sub": "サブジェクト",
+      "aud": "オーディエンス",
+      "exp": "有効期限",
+      "nbf": "有効開始",
+      "iat": "発行時刻",
+      "jti": "トークンID"
+    },
+    "status": {
+      "valid": "有効なトークン",
+      "expired": "期限切れのトークン",
+      "notYet": "まだ有効ではありません",
+      "unknown": "有効性情報なし"
+    },
+    "actions": {
+      "example": "例",
+      "clear": "クリア",
+      "copy": "コピー",
+      "copied": "コピーしました！"
+    },
+    "errors": {
+      "INVALID_FORMAT": "JWTはドットで区切られた3つの部分で構成される必要があります。",
+      "INVALID_HEADER": "ヘッダーが有効なJSONではありません。",
+      "INVALID_PAYLOAD": "ペイロードが有効なJSONではありません。"
     }
   },
   "codecpad": {

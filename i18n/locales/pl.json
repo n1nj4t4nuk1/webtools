@@ -101,6 +101,11 @@
       "tagline": "Koduj tekst w wielu formatach jednocześnie",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex i Base58. Edytuj dowolny format, a pozostałe zaktualizują się natychmiast."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "Dekoduj JSON Web Tokens",
+      "description": "Wklej JWT, aby zobaczyć jego Header i Payload w sformatowanej postaci, status ważności oraz interpretację standardowych claimów (exp, iat, nbf…)."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generator gradientów CSS",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "Kopiuj",
       "copied": "Skopiowano!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Wklej tutaj swój JWT (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Signature jest nieprzejrzysta: jej weryfikacja wymaga klucza lub certyfikatu wydawcy.",
+    "standardClaims": "Standardowe claimy (zinterpretowane)",
+    "customClaims": "{n} dodatkowych niestandardowych claimów.",
+    "claims": {
+      "iss": "Wydawca",
+      "sub": "Podmiot",
+      "aud": "Odbiorca",
+      "exp": "Wygasa",
+      "nbf": "Nieważny przed",
+      "iat": "Wydany",
+      "jti": "Identyfikator tokenu"
+    },
+    "status": {
+      "valid": "Prawidłowy token",
+      "expired": "Token wygasł",
+      "notYet": "Jeszcze nieważny",
+      "unknown": "Brak informacji o ważności"
+    },
+    "actions": {
+      "example": "Przykład",
+      "clear": "Wyczyść",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "JWT musi mieć 3 części oddzielone kropkami.",
+      "INVALID_HEADER": "Header nie jest prawidłowym JSON.",
+      "INVALID_PAYLOAD": "Payload nie jest prawidłowym JSON."
     }
   },
   "codecpad": {

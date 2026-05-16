@@ -101,6 +101,11 @@
       "tagline": "एक साथ कई फ़ॉर्मेट में टेक्स्ट एनकोड करें",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex और Base58। किसी भी फ़ॉर्मेट को संपादित करें और बाकी तुरंत अपडेट हो जाते हैं।"
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "JSON Web Tokens डिकोड करें",
+      "description": "एक JWT पेस्ट करें और उसका Header और Payload सुंदर रूप से प्रिंट किया हुआ, वैधता स्थिति, और मानक क्लेम्स (exp, iat, nbf…) की व्याख्या देखें।"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS ग्रेडिएंट जनरेटर",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "कॉपी करें",
       "copied": "कॉपी हो गया!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "अपना JWT यहाँ पेस्ट करें (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Signature अपारदर्शी है: इसे सत्यापित करने के लिए जारीकर्ता की कुंजी या प्रमाणपत्र की आवश्यकता होती है।",
+    "standardClaims": "मानक क्लेम्स (व्याख्यायित)",
+    "customClaims": "{n} अतिरिक्त गैर-मानक क्लेम्स।",
+    "claims": {
+      "iss": "जारीकर्ता",
+      "sub": "विषय",
+      "aud": "श्रोता",
+      "exp": "समाप्त होता है",
+      "nbf": "इससे पहले मान्य नहीं",
+      "iat": "जारी किया गया",
+      "jti": "टोकन ID"
+    },
+    "status": {
+      "valid": "मान्य टोकन",
+      "expired": "समाप्त टोकन",
+      "notYet": "अभी तक मान्य नहीं",
+      "unknown": "कोई वैधता जानकारी नहीं"
+    },
+    "actions": {
+      "example": "उदाहरण",
+      "clear": "साफ़ करें",
+      "copy": "कॉपी करें",
+      "copied": "कॉपी हो गया!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "एक JWT में बिंदुओं द्वारा अलग किए गए 3 भाग होने चाहिए।",
+      "INVALID_HEADER": "Header मान्य JSON नहीं है।",
+      "INVALID_PAYLOAD": "Payload मान्य JSON नहीं है।"
     }
   },
   "codecpad": {

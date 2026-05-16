@@ -101,6 +101,11 @@
       "tagline": "Metni birden fazla formatta aynı anda kodla",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex ve Base58. Herhangi bir formatı düzenleyin ve diğerleri anında güncellensin."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "JSON Web Tokens'ı çöz",
+      "description": "Bir JWT yapıştırın ve Header ile Payload'ını güzelce biçimlendirilmiş şekilde, geçerlilik durumunu ve yorumlanmış standart talepleri (exp, iat, nbf…) görün."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS gradyan üreteci",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "Kopyala",
       "copied": "Kopyalandı!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "JWT'nizi buraya yapıştırın (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Signature opaktır: doğrulamak için yayıncının anahtarına veya sertifikasına ihtiyaç vardır.",
+    "standardClaims": "Standart talepler (yorumlanmış)",
+    "customClaims": "{n} ek standart dışı talep.",
+    "claims": {
+      "iss": "Yayıncı",
+      "sub": "Konu",
+      "aud": "Hedef kitle",
+      "exp": "Sona eriyor",
+      "nbf": "Şundan önce geçerli değil",
+      "iat": "Düzenlenme zamanı",
+      "jti": "Token ID"
+    },
+    "status": {
+      "valid": "Geçerli token",
+      "expired": "Süresi dolmuş token",
+      "notYet": "Henüz geçerli değil",
+      "unknown": "Geçerlilik bilgisi yok"
+    },
+    "actions": {
+      "example": "Örnek",
+      "clear": "Temizle",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "Bir JWT, noktalarla ayrılmış 3 bölümden oluşmalıdır.",
+      "INVALID_HEADER": "Header geçerli JSON değil.",
+      "INVALID_PAYLOAD": "Payload geçerli JSON değil."
     }
   },
   "codecpad": {

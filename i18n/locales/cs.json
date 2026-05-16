@@ -101,6 +101,11 @@
       "tagline": "Kódování textu v několika formátech najednou",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex a Base58. Upravte libovolný formát a ostatní se okamžitě aktualizují."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "Dekódování JSON Web Tokens",
+      "description": "Vložte JWT a uvidíte hezky zformátovaný header a payload, stav platnosti a interpretované standardní claimy (exp, iat, nbf…)."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generátor CSS přechodů",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "Kopírovat",
       "copied": "Zkopírováno!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Vložte sem svůj JWT (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Signature je neprůhledný: pro ověření je potřeba klíč nebo certifikát vydavatele.",
+    "standardClaims": "Standardní claimy (interpretované)",
+    "customClaims": "{n} dalších nestandardních claimů.",
+    "claims": {
+      "iss": "Vydavatel",
+      "sub": "Subjekt",
+      "aud": "Příjemce",
+      "exp": "Vyprší",
+      "nbf": "Neplatný před",
+      "iat": "Vydáno",
+      "jti": "ID tokenu"
+    },
+    "status": {
+      "valid": "Platný token",
+      "expired": "Token vypršel",
+      "notYet": "Zatím neplatný",
+      "unknown": "Bez informace o platnosti"
+    },
+    "actions": {
+      "example": "Příklad",
+      "clear": "Vymazat",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "JWT musí mít 3 části oddělené tečkami.",
+      "INVALID_HEADER": "Header není platný JSON.",
+      "INVALID_PAYLOAD": "Payload není platný JSON."
     }
   },
   "codecpad": {

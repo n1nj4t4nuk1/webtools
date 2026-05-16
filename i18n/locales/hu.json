@@ -101,6 +101,11 @@
       "tagline": "Szöveg kódolása több formátumban egyszerre",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex és Base58. Szerkesszen bármelyik formátumot, és a többi azonnal frissül."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "JSON Web Tokens dekódolása",
+      "description": "Illesszen be egy JWT-t, hogy lássa a Header-t és a Payload-ot szépen formázva, az érvényességi állapotot és az értelmezett szabványos igényléseket (exp, iat, nbf…)."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS gradiens generátor",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "Másolás",
       "copied": "Másolva!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Illessze be ide a JWT-jét (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "A signature átláthatatlan: ellenőrzéséhez a kibocsátó kulcsa vagy tanúsítványa szükséges.",
+    "standardClaims": "Szabványos igénylések (értelmezve)",
+    "customClaims": "{n} további nem szabványos igénylés.",
+    "claims": {
+      "iss": "Kibocsátó",
+      "sub": "Alany",
+      "aud": "Közönség",
+      "exp": "Lejár",
+      "nbf": "Nem érvényes ez előtt",
+      "iat": "Kibocsátva ekkor",
+      "jti": "Token azonosító"
+    },
+    "status": {
+      "valid": "Érvényes token",
+      "expired": "Lejárt token",
+      "notYet": "Még nem érvényes",
+      "unknown": "Nincs érvényességi információ"
+    },
+    "actions": {
+      "example": "Példa",
+      "clear": "Törlés",
+      "copy": "Másolás",
+      "copied": "Másolva!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "A JWT-nek 3, pontokkal elválasztott részből kell állnia.",
+      "INVALID_HEADER": "A Header nem érvényes JSON.",
+      "INVALID_PAYLOAD": "A Payload nem érvényes JSON."
     }
   },
   "codecpad": {

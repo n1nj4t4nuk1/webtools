@@ -101,6 +101,11 @@
       "tagline": "여러 형식으로 텍스트를 한 번에 인코딩",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex 및 Base58. 어떤 형식이든 편집하면 나머지가 즉시 업데이트됩니다."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "JSON Web Tokens 디코딩",
+      "description": "JWT를 붙여넣으면 Header와 Payload가 보기 좋게 출력되고, 유효성 상태와 표준 클레임(exp, iat, nbf…)이 해석되어 표시됩니다."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS 그라데이션 생성기",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "복사",
       "copied": "복사되었습니다!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "여기에 JWT를 붙여넣으세요 (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Signature는 불투명합니다: 검증하려면 발급자의 키 또는 인증서가 필요합니다.",
+    "standardClaims": "표준 클레임 (해석됨)",
+    "customClaims": "추가 비표준 클레임 {n}개.",
+    "claims": {
+      "iss": "발급자",
+      "sub": "주체",
+      "aud": "대상",
+      "exp": "만료",
+      "nbf": "유효 시작 시점",
+      "iat": "발급 시각",
+      "jti": "토큰 ID"
+    },
+    "status": {
+      "valid": "유효한 토큰",
+      "expired": "만료된 토큰",
+      "notYet": "아직 유효하지 않음",
+      "unknown": "유효성 정보 없음"
+    },
+    "actions": {
+      "example": "예시",
+      "clear": "지우기",
+      "copy": "복사",
+      "copied": "복사되었습니다!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "JWT는 점으로 구분된 3개의 부분으로 이루어져야 합니다.",
+      "INVALID_HEADER": "Header가 유효한 JSON이 아닙니다.",
+      "INVALID_PAYLOAD": "Payload가 유효한 JSON이 아닙니다."
     }
   },
   "codecpad": {

@@ -101,6 +101,11 @@
       "tagline": "Codifică text în mai multe formate simultan",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex și Base58. Editează orice format, iar restul se actualizează instantaneu."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "Decodifică JSON Web Tokens",
+      "description": "Lipește un JWT pentru a vedea Header-ul și Payload-ul formatate, starea de valabilitate și revendicările standard (exp, iat, nbf…) interpretate."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generator de gradiente CSS",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "Copiază",
       "copied": "Copiat!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Lipește JWT-ul aici (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Semnătura este opacă: verificarea ei necesită cheia sau certificatul emitentului.",
+    "standardClaims": "Revendicări standard (interpretate)",
+    "customClaims": "{n} revendicări suplimentare nestandard.",
+    "claims": {
+      "iss": "Emitent",
+      "sub": "Subiect",
+      "aud": "Audiență",
+      "exp": "Expiră",
+      "nbf": "Nu este valid înainte de",
+      "iat": "Emis la",
+      "jti": "ID-ul Token-ului"
+    },
+    "status": {
+      "valid": "Token valid",
+      "expired": "Token expirat",
+      "notYet": "Încă nu este valid",
+      "unknown": "Fără informații de valabilitate"
+    },
+    "actions": {
+      "example": "Exemplu",
+      "clear": "Șterge",
+      "copy": "Copiază",
+      "copied": "Copiat!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "Un JWT trebuie să aibă 3 părți separate prin puncte.",
+      "INVALID_HEADER": "Header-ul nu este JSON valid.",
+      "INVALID_PAYLOAD": "Payload-ul nu este JSON valid."
     }
   },
   "codecpad": {

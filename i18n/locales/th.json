@@ -101,6 +101,11 @@
       "tagline": "เข้ารหัสข้อความในหลายรูปแบบพร้อมกัน",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex และ Base58 แก้ไขรูปแบบใดก็ได้ แล้วรูปแบบอื่นๆ จะอัปเดตทันที"
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "ถอดรหัส JSON Web Tokens",
+      "description": "วาง JWT เพื่อดู header และ payload ในรูปแบบที่อ่านง่าย พร้อมสถานะความถูกต้องและการตีความ claims มาตรฐาน (exp, iat, nbf…)"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "ตัวสร้างไล่ระดับสี CSS",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "คัดลอก",
       "copied": "คัดลอกแล้ว!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "วาง JWT ของคุณที่นี่ (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "Signature เป็นข้อมูลทึบ: การตรวจสอบต้องใช้คีย์หรือใบรับรองของผู้ออก",
+    "standardClaims": "Claims มาตรฐาน (ตีความแล้ว)",
+    "customClaims": "มี claims เพิ่มเติมที่ไม่ใช่มาตรฐานอีก {n} รายการ",
+    "claims": {
+      "iss": "ผู้ออก",
+      "sub": "ประธาน",
+      "aud": "ผู้รับ",
+      "exp": "หมดอายุ",
+      "nbf": "ใช้ไม่ได้ก่อน",
+      "iat": "ออกเมื่อ",
+      "jti": "รหัส Token"
+    },
+    "status": {
+      "valid": "Token ถูกต้อง",
+      "expired": "Token หมดอายุ",
+      "notYet": "ยังใช้ไม่ได้",
+      "unknown": "ไม่มีข้อมูลความถูกต้อง"
+    },
+    "actions": {
+      "example": "ตัวอย่าง",
+      "clear": "ล้าง",
+      "copy": "คัดลอก",
+      "copied": "คัดลอกแล้ว!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "JWT ต้องมี 3 ส่วนคั่นด้วยจุด",
+      "INVALID_HEADER": "Header ไม่ใช่ JSON ที่ถูกต้อง",
+      "INVALID_PAYLOAD": "Payload ไม่ใช่ JSON ที่ถูกต้อง"
     }
   },
   "codecpad": {

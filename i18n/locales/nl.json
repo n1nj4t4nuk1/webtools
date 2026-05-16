@@ -101,6 +101,11 @@
       "tagline": "Tekst tegelijk in meerdere formaten coderen",
       "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex en Base58. Bewerk een willekeurig formaat en de rest wordt direct bijgewerkt."
     },
+    "jwtdecoder": {
+      "name": "JwtDecoder",
+      "tagline": "JSON Web Tokens decoderen",
+      "description": "Plak een JWT om de header en payload netjes geformatteerd te zien, samen met de geldigheidsstatus en de geïnterpreteerde standaardclaims (exp, iat, nbf…)."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-verloopgenerator",
@@ -265,6 +270,42 @@
     "actions": {
       "copy": "Kopiëren",
       "copied": "Gekopieerd!"
+    }
+  },
+  "jwtdecoder": {
+    "token": "Token",
+    "placeholder": "Plak hier uw JWT (header.payload.signature)…",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "signatureHint": "De signature is ondoorzichtig: voor verificatie heeft u de sleutel of het certificaat van de uitgever nodig.",
+    "standardClaims": "Standaardclaims (geïnterpreteerd)",
+    "customClaims": "{n} aanvullende niet-standaard claims.",
+    "claims": {
+      "iss": "Uitgever",
+      "sub": "Onderwerp",
+      "aud": "Doelgroep",
+      "exp": "Verloopt",
+      "nbf": "Niet geldig vóór",
+      "iat": "Uitgegeven op",
+      "jti": "Token-ID"
+    },
+    "status": {
+      "valid": "Geldige token",
+      "expired": "Verlopen token",
+      "notYet": "Nog niet geldig",
+      "unknown": "Geen geldigheidsinformatie"
+    },
+    "actions": {
+      "example": "Voorbeeld",
+      "clear": "Wissen",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!"
+    },
+    "errors": {
+      "INVALID_FORMAT": "Een JWT moet uit 3 delen bestaan, gescheiden door punten.",
+      "INVALID_HEADER": "De header is geen geldige JSON.",
+      "INVALID_PAYLOAD": "De payload is geen geldige JSON."
     }
   },
   "codecpad": {
