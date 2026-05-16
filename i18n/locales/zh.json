@@ -59,10 +59,40 @@
       "tagline": "在 CSV 和 JSON 之间转换",
       "description": "粘贴 CSV 或 JSON，立即获得另一种格式。自动检测分隔符和格式。所有处理都在您的浏览器中完成。"
     },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "生成 Lorem ipsum 文本",
+      "description": "以段落、句子或单词生成占位文本。可选择以经典的 \"Lorem ipsum dolor sit amet…\" 开头，输出为纯文本或 HTML。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
       "description": "粘贴 JSON，验证并按您喜欢的缩进格式化。压缩、排序键和显示统计信息。所有处理都在您的浏览器中完成。"
+    }
+  },
+  "lorempad": {
+    "output": "结果",
+    "count": "数量",
+    "wordsPerSentence": "每句单词数",
+    "wordsPerParagraph": "每段单词数",
+    "wordsHint": "0 = 随机。固定时最少 3。",
+    "classic": "以 \"Lorem ipsum dolor sit amet…\" 开始",
+    "mode": {
+      "label": "模式",
+      "paragraphs": "段落",
+      "sentences": "句子",
+      "words": "单词"
+    },
+    "format": {
+      "label": "格式",
+      "plain": "纯文本",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "重新生成",
+      "copy": "复制",
+      "copied": "已复制！",
+      "download": "下载"
     }
   },
   "jsonpad": {

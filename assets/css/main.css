@@ -61,6 +61,11 @@ a {
   color: var(--accent);
   font-size: 1.15rem;
 }
+.brand-sub {
+  color: var(--muted);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
 
 .lang-switcher {
   display: inline-flex;

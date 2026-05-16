@@ -59,10 +59,40 @@
       "tagline": "Μετατροπή μεταξύ CSV και JSON",
       "description": "Επικολλήστε CSV ή JSON και αποκτήστε άμεσα το άλλο φορμά. Ανιχνεύει αυτόματα διαχωριστικό και φορμά. Όλα στο πρόγραμμα περιήγησης."
     },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Δημιουργία κειμένου Lorem ipsum",
+      "description": "Placeholder κείμενο σε παραγράφους, προτάσεις ή λέξεις. Επιλογή να ξεκινήσει με το κλασικό \"Lorem ipsum dolor sit amet…\" και έξοδος σε απλό κείμενο ή HTML."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Μορφοποίηση και επικύρωση JSON",
       "description": "Επικολλήστε JSON, επικυρώστε και μορφοποιήστε με την εσοχή που θέλετε. Minify, ταξινόμηση κλειδιών και στατιστικά. Όλα στο πρόγραμμα περιήγησης."
+    }
+  },
+  "lorempad": {
+    "output": "Αποτέλεσμα",
+    "count": "Ποσότητα",
+    "wordsPerSentence": "Λέξεις ανά πρόταση",
+    "wordsPerParagraph": "Λέξεις ανά παράγραφο",
+    "wordsHint": "0 = τυχαίο. Ελάχιστο 3 όταν είναι σταθερό.",
+    "classic": "Ξεκινήστε με \"Lorem ipsum dolor sit amet…\"",
+    "mode": {
+      "label": "Λειτουργία",
+      "paragraphs": "Παράγραφοι",
+      "sentences": "Προτάσεις",
+      "words": "Λέξεις"
+    },
+    "format": {
+      "label": "Μορφή",
+      "plain": "Απλό κείμενο",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Επαναδημιουργία",
+      "copy": "Αντιγραφή",
+      "copied": "Αντιγράφηκε!",
+      "download": "Λήψη"
     }
   },
   "jsonpad": {

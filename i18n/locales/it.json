@@ -59,10 +59,40 @@
       "tagline": "Converti tra CSV e JSON",
       "description": "Incolla CSV o JSON e ottieni l'altro formato all'istante. Rileva delimitatore e formato automaticamente. Tutto nel tuo browser."
     },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Genera testo Lorem ipsum",
+      "description": "Testo placeholder in paragrafi, frasi o parole. Opzione per iniziare con il classico \"Lorem ipsum dolor sit amet…\" e output in testo semplice o HTML."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatta e valida JSON",
       "description": "Incolla JSON, validalo e formattalo con l'indentazione che preferisci. Minifica, ordina chiavi e mostra statistiche. Tutto nel tuo browser."
+    }
+  },
+  "lorempad": {
+    "output": "Risultato",
+    "count": "Quantità",
+    "wordsPerSentence": "Parole per frase",
+    "wordsPerParagraph": "Parole per paragrafo",
+    "wordsHint": "0 = casuale. Minimo 3 quando fisso.",
+    "classic": "Inizia con \"Lorem ipsum dolor sit amet…\"",
+    "mode": {
+      "label": "Modalità",
+      "paragraphs": "Paragrafi",
+      "sentences": "Frasi",
+      "words": "Parole"
+    },
+    "format": {
+      "label": "Formato",
+      "plain": "Testo semplice",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "Rigenera",
+      "copy": "Copia",
+      "copied": "Copiato!",
+      "download": "Scarica"
     }
   },
   "jsonpad": {

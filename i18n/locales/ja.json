@@ -59,10 +59,40 @@
       "tagline": "CSVとJSONを相互変換",
       "description": "CSVまたはJSONを貼り付けると、もう一方の形式に即座に変換します。区切り文字と形式を自動検出。すべてブラウザで処理。"
     },
+    "lorempad": {
+      "name": "Lorempad",
+      "tagline": "Lorem ipsumテキストを生成",
+      "description": "段落、文、または単語でプレースホルダーテキストを生成。クラシックな「Lorem ipsum dolor sit amet…」で始めるオプション、プレーンテキストまたはHTMLで出力。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSONをフォーマット・検証",
       "description": "JSONを貼り付けて検証し、好みのインデントで整形。圧縮、キーのソート、統計表示が可能。すべてブラウザで処理。"
+    }
+  },
+  "lorempad": {
+    "output": "結果",
+    "count": "数量",
+    "wordsPerSentence": "文あたりの単語数",
+    "wordsPerParagraph": "段落あたりの単語数",
+    "wordsHint": "0 = ランダム。固定時は最小3。",
+    "classic": "「Lorem ipsum dolor sit amet…」で始める",
+    "mode": {
+      "label": "モード",
+      "paragraphs": "段落",
+      "sentences": "文",
+      "words": "単語"
+    },
+    "format": {
+      "label": "形式",
+      "plain": "プレーンテキスト",
+      "html": "HTML"
+    },
+    "actions": {
+      "regenerate": "再生成",
+      "copy": "コピー",
+      "copied": "コピーしました！",
+      "download": "ダウンロード"
     }
   },
   "jsonpad": {
