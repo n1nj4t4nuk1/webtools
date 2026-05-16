@@ -76,6 +76,11 @@
       "tagline": "YAMLとJSONを相互変換",
       "description": "YAMLまたはJSONを貼り付けると、もう一方の形式に即座に変換します。形式を自動検出し、行と列でエラーを表示。すべてブラウザで処理。"
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "URLのエンコード・デコード",
+      "description": "テキストやURLをエンコードまたはデコード。自動検出と2つのバリアント（完全URIまたはコンポーネント）。すべてブラウザで処理。"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSSグラデーションジェネレーター",
@@ -240,6 +245,41 @@
     "actions": {
       "copy": "コピー",
       "copied": "コピーしました！"
+    }
+  },
+  "urlpad": {
+    "input": "入力",
+    "output": "出力",
+    "inputPlaceholder": "ここにテキストまたはURLを貼り付け…",
+    "outputPlaceholder": "結果はここに表示されます。",
+    "direction": {
+      "label": "方向",
+      "auto": "自動",
+      "encode": "エンコード",
+      "decode": "デコード"
+    },
+    "variant": {
+      "label": "バリアント",
+      "component": "コンポーネント",
+      "componentHint": "encodeURIComponent / decodeURIComponent。文字、数字、-_.!~*'() 以外をすべてエスケープ。クエリパラメータの値に使用。",
+      "uri": "完全URI",
+      "uriHint": "encodeURI / decodeURI。/, :, ?, #, & などの予約文字を保持。完全なURLに使用。"
+    },
+    "detected": {
+      "label": "検出",
+      "encode": "エンコード",
+      "decode": "デコード"
+    },
+    "actions": {
+      "example": "例",
+      "clear": "クリア",
+      "copy": "コピー",
+      "copied": "コピーしました！",
+      "download": "ダウンロード",
+      "useAsInput": "入力として使用"
+    },
+    "errors": {
+      "decode": "デコードできませんでした"
     }
   },
   "yamljson": {

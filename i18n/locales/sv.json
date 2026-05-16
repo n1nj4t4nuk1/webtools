@@ -81,6 +81,11 @@
       "tagline": "Konvertera mellan YAML och JSON",
       "description": "Klistra in YAML eller JSON och få det andra formatet direkt. Identifierar formatet automatiskt och visar fel med rad och kolumn. Allt i din webbläsare."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "Koda och avkoda URL:er",
+      "description": "Koda eller avkoda text och URL:er. Automatisk identifiering och två varianter (fullständig URI eller komponent). Allt i din webbläsare."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-gradientgenerator",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "Kopiera",
       "copied": "Kopierat!"
+    }
+  },
+  "urlpad": {
+    "input": "Indata",
+    "output": "Utdata",
+    "inputPlaceholder": "Klistra in text eller URL här…",
+    "outputPlaceholder": "Resultatet visas här.",
+    "direction": {
+      "label": "Riktning",
+      "auto": "Automatisk",
+      "encode": "Koda",
+      "decode": "Avkoda"
+    },
+    "variant": {
+      "label": "Variant",
+      "component": "Komponent",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Escapar allt utom bokstäver, siffror och -_.!~*'(). Använd den för värden i query-parametrar.",
+      "uri": "Fullständig URI",
+      "uriHint": "encodeURI / decodeURI. Bevarar reserverade tecken som /, :, ?, #, &. Använd den för en komplett URL."
+    },
+    "detected": {
+      "label": "Identifierad",
+      "encode": "Koda",
+      "decode": "Avkoda"
+    },
+    "actions": {
+      "example": "Exempel",
+      "clear": "Rensa",
+      "copy": "Kopiera",
+      "copied": "Kopierat!",
+      "download": "Ladda ner",
+      "useAsInput": "Använd som indata"
+    },
+    "errors": {
+      "decode": "Kunde inte avkoda"
     }
   },
   "yamljson": {

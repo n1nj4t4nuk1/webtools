@@ -81,6 +81,11 @@
       "tagline": "Convert between YAML and JSON",
       "description": "Paste YAML or JSON and get the other format instantly. Auto-detects format and shows errors with line and column. All in your browser."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "Encode and decode URLs",
+      "description": "Encode or decode text and URLs. Auto-detection and two variants (full URI or component). All in your browser."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS gradient generator",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "Copy",
       "copied": "Copied!"
+    }
+  },
+  "urlpad": {
+    "input": "Input",
+    "output": "Output",
+    "inputPlaceholder": "Paste text or URL here…",
+    "outputPlaceholder": "The result will appear here.",
+    "direction": {
+      "label": "Direction",
+      "auto": "Automatic",
+      "encode": "Encode",
+      "decode": "Decode"
+    },
+    "variant": {
+      "label": "Variant",
+      "component": "Component",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Escapes everything except letters, digits, and -_.!~*'(). Use it for query param values.",
+      "uri": "Full URI",
+      "uriHint": "encodeURI / decodeURI. Preserves reserved chars like /, :, ?, #, &. Use it for a complete URL."
+    },
+    "detected": {
+      "label": "Detected",
+      "encode": "Encode",
+      "decode": "Decode"
+    },
+    "actions": {
+      "example": "Example",
+      "clear": "Clear",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "download": "Download",
+      "useAsInput": "Use as input"
+    },
+    "errors": {
+      "decode": "Could not decode"
     }
   },
   "yamljson": {

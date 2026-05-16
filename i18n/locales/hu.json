@@ -81,6 +81,11 @@
       "tagline": "Konvertálás YAML és JSON között",
       "description": "Illesszen be YAML-t vagy JSON-t, és azonnal megkapja a másik formátumot. Automatikusan felismeri a formátumot, és sor- és oszlopszámmal jelzi a hibákat. Mindez a böngészőben."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "URL-ek kódolása és dekódolása",
+      "description": "Szöveg és URL-ek kódolása vagy dekódolása. Automatikus felismerés és két változat (teljes URI vagy komponens). Mindez a böngészőben."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS gradiens generátor",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "Másolás",
       "copied": "Másolva!"
+    }
+  },
+  "urlpad": {
+    "input": "Bemenet",
+    "output": "Kimenet",
+    "inputPlaceholder": "Illesszen be ide szöveget vagy URL-t…",
+    "outputPlaceholder": "Az eredmény itt fog megjelenni.",
+    "direction": {
+      "label": "Irány",
+      "auto": "Automatikus",
+      "encode": "Kódolás",
+      "decode": "Dekódolás"
+    },
+    "variant": {
+      "label": "Változat",
+      "component": "Komponens",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Mindent escape-el, kivéve a betűket, számjegyeket és a -_.!~*'() karaktereket. Használja query paraméterek értékeihez.",
+      "uri": "Teljes URI",
+      "uriHint": "encodeURI / decodeURI. Megőrzi a fenntartott karaktereket, mint /, :, ?, #, &. Használja teljes URL-ekhez."
+    },
+    "detected": {
+      "label": "Felismerve",
+      "encode": "Kódolás",
+      "decode": "Dekódolás"
+    },
+    "actions": {
+      "example": "Példa",
+      "clear": "Törlés",
+      "copy": "Másolás",
+      "copied": "Másolva!",
+      "download": "Letöltés",
+      "useAsInput": "Bemenetként használ"
+    },
+    "errors": {
+      "decode": "Nem sikerült dekódolni"
     }
   },
   "yamljson": {

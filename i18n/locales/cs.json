@@ -81,6 +81,11 @@
       "tagline": "Převod mezi YAML a JSON",
       "description": "Vložte YAML nebo JSON a okamžitě získáte druhý formát. Automaticky detekuje formát a zobrazuje chyby s řádkem a sloupcem. Vše ve vašem prohlížeči."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "Kódování a dekódování URL",
+      "description": "Zakódujte nebo dekódujte text a URL. Automatická detekce a dvě varianty (celé URI nebo komponenta). Vše ve vašem prohlížeči."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generátor CSS přechodů",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "Kopírovat",
       "copied": "Zkopírováno!"
+    }
+  },
+  "urlpad": {
+    "input": "Vstup",
+    "output": "Výstup",
+    "inputPlaceholder": "Vložte sem text nebo URL…",
+    "outputPlaceholder": "Výsledek se zobrazí zde.",
+    "direction": {
+      "label": "Směr",
+      "auto": "Automaticky",
+      "encode": "Zakódovat",
+      "decode": "Dekódovat"
+    },
+    "variant": {
+      "label": "Varianta",
+      "component": "Komponenta",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Escapuje vše kromě písmen, číslic a -_.!~*'(). Použijte pro hodnoty parametrů dotazu.",
+      "uri": "Celé URI",
+      "uriHint": "encodeURI / decodeURI. Zachovává vyhrazené znaky jako /, :, ?, #, &. Použijte pro kompletní URL."
+    },
+    "detected": {
+      "label": "Detekováno",
+      "encode": "Zakódovat",
+      "decode": "Dekódovat"
+    },
+    "actions": {
+      "example": "Příklad",
+      "clear": "Vymazat",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!",
+      "download": "Stáhnout",
+      "useAsInput": "Použít jako vstup"
+    },
+    "errors": {
+      "decode": "Nelze dekódovat"
     }
   },
   "yamljson": {

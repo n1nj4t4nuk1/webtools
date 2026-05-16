@@ -81,6 +81,11 @@
       "tagline": "YAML ve JSON arasında dönüştür",
       "description": "YAML veya JSON yapıştırın ve diğer formatı anında alın. Formatı otomatik algılar ve hataları satır ve sütun ile gösterir. Hepsi tarayıcınızda."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "URL kodla ve çöz",
+      "description": "Metin ve URL'leri kodlayın veya çözün. Otomatik algılama ve iki varyant (tam URI veya bileşen). Hepsi tarayıcınızda."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS gradyan üreteci",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "Kopyala",
       "copied": "Kopyalandı!"
+    }
+  },
+  "urlpad": {
+    "input": "Giriş",
+    "output": "Çıkış",
+    "inputPlaceholder": "Buraya metin veya URL yapıştırın…",
+    "outputPlaceholder": "Sonuç burada görünecek.",
+    "direction": {
+      "label": "Yön",
+      "auto": "Otomatik",
+      "encode": "Kodla",
+      "decode": "Çöz"
+    },
+    "variant": {
+      "label": "Varyant",
+      "component": "Bileşen",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Harfler, rakamlar ve -_.!~*'() dışındaki her şeyi kaçışlar. Sorgu parametre değerleri için kullanın.",
+      "uri": "Tam URI",
+      "uriHint": "encodeURI / decodeURI. /, :, ?, #, & gibi ayrılmış karakterleri korur. Tam bir URL için kullanın."
+    },
+    "detected": {
+      "label": "Algılanan",
+      "encode": "Kodla",
+      "decode": "Çöz"
+    },
+    "actions": {
+      "example": "Örnek",
+      "clear": "Temizle",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "download": "İndir",
+      "useAsInput": "Giriş olarak kullan"
+    },
+    "errors": {
+      "decode": "Çözülemedi"
     }
   },
   "yamljson": {

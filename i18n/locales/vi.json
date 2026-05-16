@@ -81,6 +81,11 @@
       "tagline": "Chuyển đổi giữa YAML và JSON",
       "description": "Dán YAML hoặc JSON và nhận định dạng còn lại ngay lập tức. Tự động nhận dạng định dạng và hiển thị lỗi với dòng và cột. Tất cả trong trình duyệt."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "Mã hóa và giải mã URL",
+      "description": "Mã hóa hoặc giải mã văn bản và URL. Tự động nhận dạng và hai biến thể (URI đầy đủ hoặc thành phần). Tất cả trong trình duyệt của bạn."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Trình tạo gradient CSS",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "Sao chép",
       "copied": "Đã sao chép!"
+    }
+  },
+  "urlpad": {
+    "input": "Đầu vào",
+    "output": "Đầu ra",
+    "inputPlaceholder": "Dán văn bản hoặc URL tại đây…",
+    "outputPlaceholder": "Kết quả sẽ hiển thị tại đây.",
+    "direction": {
+      "label": "Hướng",
+      "auto": "Tự động",
+      "encode": "Mã hóa",
+      "decode": "Giải mã"
+    },
+    "variant": {
+      "label": "Biến thể",
+      "component": "Thành phần",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Thoát mọi thứ trừ chữ cái, chữ số và -_.!~*'(). Dùng cho giá trị tham số query.",
+      "uri": "URI đầy đủ",
+      "uriHint": "encodeURI / decodeURI. Giữ nguyên các ký tự dành riêng như /, :, ?, #, &. Dùng cho một URL hoàn chỉnh."
+    },
+    "detected": {
+      "label": "Đã nhận dạng",
+      "encode": "Mã hóa",
+      "decode": "Giải mã"
+    },
+    "actions": {
+      "example": "Ví dụ",
+      "clear": "Xóa",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!",
+      "download": "Tải về",
+      "useAsInput": "Dùng làm đầu vào"
+    },
+    "errors": {
+      "decode": "Không thể giải mã"
     }
   },
   "yamljson": {

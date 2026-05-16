@@ -81,6 +81,11 @@
       "tagline": "Convertește între YAML și JSON",
       "description": "Lipește YAML sau JSON și obține instantaneu celălalt format. Detectează automat formatul și afișează erorile cu linie și coloană. Totul în browserul tău."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "Codifică și decodifică URL-uri",
+      "description": "Codifică sau decodifică text și URL-uri. Detectare automată și două variante (URI complet sau component). Totul în browserul tău."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generator de gradiente CSS",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "Copiază",
       "copied": "Copiat!"
+    }
+  },
+  "urlpad": {
+    "input": "Intrare",
+    "output": "Ieșire",
+    "inputPlaceholder": "Lipește text sau URL aici…",
+    "outputPlaceholder": "Rezultatul va apărea aici.",
+    "direction": {
+      "label": "Direcție",
+      "auto": "Automat",
+      "encode": "Codifică",
+      "decode": "Decodifică"
+    },
+    "variant": {
+      "label": "Variantă",
+      "component": "Component",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Escapează tot cu excepția literelor, cifrelor și a -_.!~*'(). Folosește-l pentru valorile parametrilor din query.",
+      "uri": "URI complet",
+      "uriHint": "encodeURI / decodeURI. Păstrează caracterele rezervate precum /, :, ?, #, &. Folosește-l pentru un URL complet."
+    },
+    "detected": {
+      "label": "Detectat",
+      "encode": "Codifică",
+      "decode": "Decodifică"
+    },
+    "actions": {
+      "example": "Exemplu",
+      "clear": "Șterge",
+      "copy": "Copiază",
+      "copied": "Copiat!",
+      "download": "Descarcă",
+      "useAsInput": "Folosește ca intrare"
+    },
+    "errors": {
+      "decode": "Nu s-a putut decodifica"
     }
   },
   "yamljson": {

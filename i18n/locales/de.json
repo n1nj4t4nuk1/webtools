@@ -81,6 +81,11 @@
       "tagline": "Zwischen YAML und JSON konvertieren",
       "description": "Fügen Sie YAML oder JSON ein und erhalten Sie das andere Format sofort. Erkennt das Format automatisch und zeigt Fehler mit Zeile und Spalte. Alles in Ihrem Browser."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "URLs kodieren und dekodieren",
+      "description": "Kodieren oder dekodieren Sie Text und URLs. Automatische Erkennung und zwei Varianten (vollständige URI oder Komponente). Alles in Ihrem Browser."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-Verlaufsgenerator",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "Kopieren",
       "copied": "Kopiert!"
+    }
+  },
+  "urlpad": {
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "inputPlaceholder": "Text oder URL hier einfügen…",
+    "outputPlaceholder": "Das Ergebnis erscheint hier.",
+    "direction": {
+      "label": "Richtung",
+      "auto": "Automatisch",
+      "encode": "Kodieren",
+      "decode": "Dekodieren"
+    },
+    "variant": {
+      "label": "Variante",
+      "component": "Komponente",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Escapt alles außer Buchstaben, Ziffern und -_.!~*'(). Für Werte von Query-Parametern verwenden.",
+      "uri": "Vollständige URI",
+      "uriHint": "encodeURI / decodeURI. Behält reservierte Zeichen wie /, :, ?, #, & bei. Für eine vollständige URL verwenden."
+    },
+    "detected": {
+      "label": "Erkannt",
+      "encode": "Kodieren",
+      "decode": "Dekodieren"
+    },
+    "actions": {
+      "example": "Beispiel",
+      "clear": "Leeren",
+      "copy": "Kopieren",
+      "copied": "Kopiert!",
+      "download": "Herunterladen",
+      "useAsInput": "Als Eingabe verwenden"
+    },
+    "errors": {
+      "decode": "Konnte nicht dekodiert werden"
     }
   },
   "yamljson": {

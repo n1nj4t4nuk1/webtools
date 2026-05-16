@@ -81,6 +81,11 @@
       "tagline": "Konversi antara YAML dan JSON",
       "description": "Tempel YAML atau JSON dan dapatkan format lainnya secara instan. Mendeteksi otomatis format dan menampilkan kesalahan dengan baris dan kolom. Semua di peramban Anda."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "Enkode dan dekode URL",
+      "description": "Enkode atau dekode teks dan URL. Deteksi otomatis dan dua varian (URI penuh atau komponen). Semua di peramban Anda."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generator gradien CSS",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "Salin",
       "copied": "Tersalin!"
+    }
+  },
+  "urlpad": {
+    "input": "Masukan",
+    "output": "Keluaran",
+    "inputPlaceholder": "Tempel teks atau URL di sini…",
+    "outputPlaceholder": "Hasil akan muncul di sini.",
+    "direction": {
+      "label": "Arah",
+      "auto": "Otomatis",
+      "encode": "Enkode",
+      "decode": "Dekode"
+    },
+    "variant": {
+      "label": "Varian",
+      "component": "Komponen",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Meng-escape semuanya kecuali huruf, angka, dan -_.!~*'(). Gunakan untuk nilai parameter query.",
+      "uri": "URI penuh",
+      "uriHint": "encodeURI / decodeURI. Mempertahankan karakter cadangan seperti /, :, ?, #, &. Gunakan untuk URL lengkap."
+    },
+    "detected": {
+      "label": "Terdeteksi",
+      "encode": "Enkode",
+      "decode": "Dekode"
+    },
+    "actions": {
+      "example": "Contoh",
+      "clear": "Bersihkan",
+      "copy": "Salin",
+      "copied": "Tersalin!",
+      "download": "Unduh",
+      "useAsInput": "Gunakan sebagai masukan"
+    },
+    "errors": {
+      "decode": "Tidak dapat mendekode"
     }
   },
   "yamljson": {

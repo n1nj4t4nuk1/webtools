@@ -81,6 +81,11 @@
       "tagline": "Konverter mellom YAML og JSON",
       "description": "Lim inn YAML eller JSON og få det andre formatet umiddelbart. Oppdager formatet automatisk og viser feil med linje og kolonne. Alt i nettleseren din."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "Kod og dekod URL-er",
+      "description": "Kod eller dekod tekst og URL-er. Automatisk gjenkjenning og to varianter (full URI eller komponent). Alt i nettleseren din."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-gradientgenerator",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "Kopier",
       "copied": "Kopiert!"
+    }
+  },
+  "urlpad": {
+    "input": "Inndata",
+    "output": "Utdata",
+    "inputPlaceholder": "Lim inn tekst eller URL her…",
+    "outputPlaceholder": "Resultatet vil vises her.",
+    "direction": {
+      "label": "Retning",
+      "auto": "Automatisk",
+      "encode": "Kod",
+      "decode": "Dekod"
+    },
+    "variant": {
+      "label": "Variant",
+      "component": "Komponent",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Escaper alt unntatt bokstaver, sifre og -_.!~*'(). Bruk den til verdier i query-parametere.",
+      "uri": "Full URI",
+      "uriHint": "encodeURI / decodeURI. Bevarer reserverte tegn som /, :, ?, #, &. Bruk den til en komplett URL."
+    },
+    "detected": {
+      "label": "Oppdaget",
+      "encode": "Kod",
+      "decode": "Dekod"
+    },
+    "actions": {
+      "example": "Eksempel",
+      "clear": "Tøm",
+      "copy": "Kopier",
+      "copied": "Kopiert!",
+      "download": "Last ned",
+      "useAsInput": "Bruk som inndata"
+    },
+    "errors": {
+      "decode": "Kunne ikke dekode"
     }
   },
   "yamljson": {

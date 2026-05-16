@@ -81,6 +81,11 @@
       "tagline": "Converteren tussen YAML en JSON",
       "description": "Plak YAML of JSON en krijg direct het andere formaat. Detecteert automatisch het formaat en toont fouten met regel en kolom. Alles in uw browser."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "URL's coderen en decoderen",
+      "description": "Codeer of decodeer tekst en URL's. Automatische detectie en twee varianten (volledige URI of component). Alles in uw browser."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-verloopgenerator",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "Kopiëren",
       "copied": "Gekopieerd!"
+    }
+  },
+  "urlpad": {
+    "input": "Invoer",
+    "output": "Uitvoer",
+    "inputPlaceholder": "Plak hier tekst of een URL…",
+    "outputPlaceholder": "Het resultaat verschijnt hier.",
+    "direction": {
+      "label": "Richting",
+      "auto": "Automatisch",
+      "encode": "Coderen",
+      "decode": "Decoderen"
+    },
+    "variant": {
+      "label": "Variant",
+      "component": "Component",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Escapet alles behalve letters, cijfers en -_.!~*'(). Gebruik dit voor waarden van queryparameters.",
+      "uri": "Volledige URI",
+      "uriHint": "encodeURI / decodeURI. Behoudt gereserveerde tekens zoals /, :, ?, #, &. Gebruik dit voor een complete URL."
+    },
+    "detected": {
+      "label": "Gedetecteerd",
+      "encode": "Coderen",
+      "decode": "Decoderen"
+    },
+    "actions": {
+      "example": "Voorbeeld",
+      "clear": "Wissen",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!",
+      "download": "Downloaden",
+      "useAsInput": "Als invoer gebruiken"
+    },
+    "errors": {
+      "decode": "Kon niet decoderen"
     }
   },
   "yamljson": {

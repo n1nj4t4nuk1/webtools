@@ -76,6 +76,11 @@
       "tagline": "Converta entre YAML e JSON",
       "description": "Cole YAML ou JSON e obtenha o outro formato instantaneamente. Detecta o formato automaticamente e mostra erros com linha e coluna. Tudo no seu navegador."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "Codifique e decodifique URLs",
+      "description": "Codifique ou decodifique texto e URLs. Detecção automática e duas variantes (URI completa ou componente). Tudo no seu navegador."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Gerador de gradientes CSS",
@@ -240,6 +245,41 @@
     "actions": {
       "copy": "Copiar",
       "copied": "Copiado!"
+    }
+  },
+  "urlpad": {
+    "input": "Entrada",
+    "output": "Saída",
+    "inputPlaceholder": "Cole aqui o texto ou a URL…",
+    "outputPlaceholder": "O resultado aparecerá aqui.",
+    "direction": {
+      "label": "Direção",
+      "auto": "Automático",
+      "encode": "Codificar",
+      "decode": "Decodificar"
+    },
+    "variant": {
+      "label": "Variante",
+      "component": "Componente",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Escapa tudo exceto letras, dígitos e -_.!~*'(). Use para valores de query params.",
+      "uri": "URI completa",
+      "uriHint": "encodeURI / decodeURI. Preserva caracteres reservados como /, :, ?, #, &. Use para uma URL completa."
+    },
+    "detected": {
+      "label": "Detectado",
+      "encode": "Codificar",
+      "decode": "Decodificar"
+    },
+    "actions": {
+      "example": "Exemplo",
+      "clear": "Limpar",
+      "copy": "Copiar",
+      "copied": "Copiado!",
+      "download": "Baixar",
+      "useAsInput": "Usar como entrada"
+    },
+    "errors": {
+      "decode": "Não foi possível decodificar"
     }
   },
   "yamljson": {

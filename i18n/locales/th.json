@@ -81,6 +81,11 @@
       "tagline": "แปลงระหว่าง YAML และ JSON",
       "description": "วาง YAML หรือ JSON แล้วได้รูปแบบอื่นทันที ตรวจจับรูปแบบโดยอัตโนมัติและแสดงข้อผิดพลาดพร้อมบรรทัดและคอลัมน์ ทั้งหมดในเบราว์เซอร์ของคุณ"
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "เข้ารหัสและถอดรหัส URL",
+      "description": "เข้ารหัสหรือถอดรหัสข้อความและ URL ตรวจจับอัตโนมัติและมีสองรูปแบบ (URI ทั้งหมดหรือคอมโพเนนต์) ทั้งหมดในเบราว์เซอร์ของคุณ"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "ตัวสร้างไล่ระดับสี CSS",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "คัดลอก",
       "copied": "คัดลอกแล้ว!"
+    }
+  },
+  "urlpad": {
+    "input": "อินพุต",
+    "output": "เอาต์พุต",
+    "inputPlaceholder": "วางข้อความหรือ URL ที่นี่…",
+    "outputPlaceholder": "ผลลัพธ์จะปรากฏที่นี่",
+    "direction": {
+      "label": "ทิศทาง",
+      "auto": "อัตโนมัติ",
+      "encode": "เข้ารหัส",
+      "decode": "ถอดรหัส"
+    },
+    "variant": {
+      "label": "รูปแบบ",
+      "component": "คอมโพเนนต์",
+      "componentHint": "encodeURIComponent / decodeURIComponent เอสเคปทุกอย่างยกเว้นตัวอักษร ตัวเลข และ -_.!~*'() ใช้สำหรับค่าพารามิเตอร์ใน query",
+      "uri": "URI ทั้งหมด",
+      "uriHint": "encodeURI / decodeURI คงอักขระสงวนเช่น /, :, ?, #, & ไว้ ใช้สำหรับ URL ที่สมบูรณ์"
+    },
+    "detected": {
+      "label": "ตรวจพบ",
+      "encode": "เข้ารหัส",
+      "decode": "ถอดรหัส"
+    },
+    "actions": {
+      "example": "ตัวอย่าง",
+      "clear": "ล้าง",
+      "copy": "คัดลอก",
+      "copied": "คัดลอกแล้ว!",
+      "download": "ดาวน์โหลด",
+      "useAsInput": "ใช้เป็นอินพุต"
+    },
+    "errors": {
+      "decode": "ไม่สามารถถอดรหัสได้"
     }
   },
   "yamljson": {

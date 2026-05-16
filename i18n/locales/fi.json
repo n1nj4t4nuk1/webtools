@@ -81,6 +81,11 @@
       "tagline": "Muunna YAMLin ja JSONin välillä",
       "description": "Liitä YAML tai JSON ja saat toisen muodon välittömästi. Tunnistaa muodon automaattisesti ja näyttää virheet rivin ja sarakkeen kanssa. Kaikki selaimessasi."
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "Koodaa ja dekoodaa URL-osoitteita",
+      "description": "Koodaa tai dekoodaa tekstiä ja URL-osoitteita. Automaattinen tunnistus ja kaksi varianttia (täysi URI tai komponentti). Kaikki selaimessasi."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-liukuvärigeneraattori",
@@ -245,6 +250,41 @@
     "actions": {
       "copy": "Kopioi",
       "copied": "Kopioitu!"
+    }
+  },
+  "urlpad": {
+    "input": "Syöte",
+    "output": "Tulos",
+    "inputPlaceholder": "Liitä teksti tai URL tähän…",
+    "outputPlaceholder": "Tulos näkyy tässä.",
+    "direction": {
+      "label": "Suunta",
+      "auto": "Automaattinen",
+      "encode": "Koodaa",
+      "decode": "Dekoodaa"
+    },
+    "variant": {
+      "label": "Variantti",
+      "component": "Komponentti",
+      "componentHint": "encodeURIComponent / decodeURIComponent. Escapettaa kaiken paitsi kirjaimet, numerot ja merkit -_.!~*'(). Käytä sitä kyselyparametrien arvoille.",
+      "uri": "Täysi URI",
+      "uriHint": "encodeURI / decodeURI. Säilyttää varatut merkit kuten /, :, ?, #, &. Käytä sitä kokonaiselle URL-osoitteelle."
+    },
+    "detected": {
+      "label": "Tunnistettu",
+      "encode": "Koodaa",
+      "decode": "Dekoodaa"
+    },
+    "actions": {
+      "example": "Esimerkki",
+      "clear": "Tyhjennä",
+      "copy": "Kopioi",
+      "copied": "Kopioitu!",
+      "download": "Lataa",
+      "useAsInput": "Käytä syötteenä"
+    },
+    "errors": {
+      "decode": "Dekoodaus epäonnistui"
     }
   },
   "yamljson": {

@@ -76,6 +76,11 @@
       "tagline": "在 YAML 和 JSON 之间转换",
       "description": "粘贴 YAML 或 JSON，立即获得另一种格式。自动检测格式并显示带行列号的错误。所有处理都在您的浏览器中完成。"
     },
+    "urlpad": {
+      "name": "Urlpad",
+      "tagline": "URL 编码和解码",
+      "description": "对文本和 URL 进行编码或解码。自动检测和两种变体（完整 URI 或组件）。所有处理都在您的浏览器中完成。"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS 渐变生成器",
@@ -240,6 +245,41 @@
     "actions": {
       "copy": "复制",
       "copied": "已复制！"
+    }
+  },
+  "urlpad": {
+    "input": "输入",
+    "output": "输出",
+    "inputPlaceholder": "在此粘贴文本或 URL…",
+    "outputPlaceholder": "结果将显示在此处。",
+    "direction": {
+      "label": "方向",
+      "auto": "自动",
+      "encode": "编码",
+      "decode": "解码"
+    },
+    "variant": {
+      "label": "变体",
+      "component": "组件",
+      "componentHint": "encodeURIComponent / decodeURIComponent。除字母、数字和 -_.!~*'() 外全部转义。用于查询参数值。",
+      "uri": "完整 URI",
+      "uriHint": "encodeURI / decodeURI。保留 /, :, ?, #, & 等保留字符。用于完整 URL。"
+    },
+    "detected": {
+      "label": "检测到",
+      "encode": "编码",
+      "decode": "解码"
+    },
+    "actions": {
+      "example": "示例",
+      "clear": "清除",
+      "copy": "复制",
+      "copied": "已复制！",
+      "download": "下载",
+      "useAsInput": "用作输入"
+    },
+    "errors": {
+      "decode": "无法解码"
     }
   },
   "yamljson": {
