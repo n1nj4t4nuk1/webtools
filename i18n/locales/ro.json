@@ -26,6 +26,11 @@
       "tagline": "Editează metadate EXIF",
       "description": "Citește, editează sau elimină metadatele EXIF din fotografiile tale JPEG. Totul în browser."
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "Convertește imagini între formate",
+      "description": "Convertește între PNG, JPG și WebP cu control al calității. Totul în browser, fără încărcări."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Generează parole puternice",
@@ -705,6 +710,33 @@
     },
     "errors": {
       "clipboard": "Nu s-a putut copia în clipboard."
+    }
+  },
+  "convy": {
+    "dropzone": "Trage o imagine aici sau apasă pentru a selecta una",
+    "format": {
+      "label": "Format de ieșire",
+      "png": "PNG (fără pierderi)",
+      "jpeg": "JPG (cu pierderi)",
+      "webp": "WebP (cu pierderi)"
+    },
+    "quality": "Calitate",
+    "qualityHintLossless": "PNG este fără pierderi și nu are control al calității.",
+    "actions": {
+      "convert": "Convertește și descarcă",
+      "processing": "Se convertește…",
+      "change": "Schimbă imaginea"
+    },
+    "result": {
+      "size": "Dimensiunea rezultatului",
+      "ratio": "Comparat",
+      "smaller": "{pct}% din original (mai mic)",
+      "larger": "{pct}% din original (mai mare)",
+      "same": "Aceeași dimensiune"
+    },
+    "errors": {
+      "notImage": "{name} nu este o imagine validă.",
+      "conversion": "Nu s-a putut converti imaginea."
     }
   },
   "metaimg": {

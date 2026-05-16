@@ -26,6 +26,11 @@
       "tagline": "EXIF metaadatok szerkesztése",
       "description": "Olvassa, szerkessze vagy törölje a JPEG fényképek EXIF metaadatait. Mindezt a böngészőben."
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "Képek konvertálása formátumok között",
+      "description": "Konvertálás PNG, JPG és WebP között minőségszabályozással. Mindezt a böngészőben, feltöltés nélkül."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Erős jelszavak generálása",
@@ -705,6 +710,33 @@
     },
     "errors": {
       "clipboard": "Nem sikerült a vágólapra másolni."
+    }
+  },
+  "convy": {
+    "dropzone": "Húzzon ide egy képet, vagy kattintson a kiválasztáshoz",
+    "format": {
+      "label": "Kimeneti formátum",
+      "png": "PNG (veszteségmentes)",
+      "jpeg": "JPG (veszteséges)",
+      "webp": "WebP (veszteséges)"
+    },
+    "quality": "Minőség",
+    "qualityHintLossless": "A PNG veszteségmentes, nincs minőségszabályozása.",
+    "actions": {
+      "convert": "Konvertálás és letöltés",
+      "processing": "Konvertálás…",
+      "change": "Kép cseréje"
+    },
+    "result": {
+      "size": "Eredmény mérete",
+      "ratio": "Összehasonlítva",
+      "smaller": "Az eredeti {pct}%-a (kisebb)",
+      "larger": "Az eredeti {pct}%-a (nagyobb)",
+      "same": "Azonos méret"
+    },
+    "errors": {
+      "notImage": "{name} nem érvényes kép.",
+      "conversion": "Nem sikerült konvertálni a képet."
     }
   },
   "metaimg": {

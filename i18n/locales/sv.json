@@ -26,6 +26,11 @@
       "tagline": "Redigera EXIF-metadata",
       "description": "Läs, redigera eller ta bort EXIF-metadata från dina JPEG-foton. Allt i din webbläsare."
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "Konvertera bilder mellan format",
+      "description": "Konvertera mellan PNG, JPG och WebP med kvalitetskontroll. Allt i din webbläsare, inga uppladdningar."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Skapa starka lösenord",
@@ -705,6 +710,33 @@
     },
     "errors": {
       "clipboard": "Kunde inte kopiera till urklipp."
+    }
+  },
+  "convy": {
+    "dropzone": "Dra en bild hit eller klicka för att välja en",
+    "format": {
+      "label": "Utdataformat",
+      "png": "PNG (förlustfritt)",
+      "jpeg": "JPG (förlustigt)",
+      "webp": "WebP (förlustigt)"
+    },
+    "quality": "Kvalitet",
+    "qualityHintLossless": "PNG är förlustfritt och har ingen kvalitetskontroll.",
+    "actions": {
+      "convert": "Konvertera och ladda ner",
+      "processing": "Konverterar…",
+      "change": "Byt bild"
+    },
+    "result": {
+      "size": "Resultatets storlek",
+      "ratio": "Jämfört",
+      "smaller": "{pct}% av originalet (mindre)",
+      "larger": "{pct}% av originalet (större)",
+      "same": "Samma storlek"
+    },
+    "errors": {
+      "notImage": "{name} är inte en giltig bild.",
+      "conversion": "Kunde inte konvertera bilden."
     }
   },
   "metaimg": {

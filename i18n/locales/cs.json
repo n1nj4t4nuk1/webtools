@@ -26,6 +26,11 @@
       "tagline": "Úprava EXIF metadat",
       "description": "Čtěte, upravujte nebo odstraňujte EXIF metadata ze svých JPEG fotografií. Vše ve vašem prohlížeči."
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "Převod obrázků mezi formáty",
+      "description": "Převádějte mezi PNG, JPG a WebP s kontrolou kvality. Vše ve vašem prohlížeči, bez nahrávání."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Generování silných hesel",
@@ -705,6 +710,33 @@
     },
     "errors": {
       "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "convy": {
+    "dropzone": "Přetáhněte sem obrázek nebo klikněte pro výběr",
+    "format": {
+      "label": "Výstupní formát",
+      "png": "PNG (bezeztrátový)",
+      "jpeg": "JPG (ztrátový)",
+      "webp": "WebP (ztrátový)"
+    },
+    "quality": "Kvalita",
+    "qualityHintLossless": "PNG je bezeztrátový a nemá kontrolu kvality.",
+    "actions": {
+      "convert": "Převést a stáhnout",
+      "processing": "Převádění…",
+      "change": "Změnit obrázek"
+    },
+    "result": {
+      "size": "Velikost výsledku",
+      "ratio": "Porovnání",
+      "smaller": "{pct}% originálu (menší)",
+      "larger": "{pct}% originálu (větší)",
+      "same": "Stejná velikost"
+    },
+    "errors": {
+      "notImage": "{name} není platný obrázek.",
+      "conversion": "Nelze převést obrázek."
     }
   },
   "metaimg": {

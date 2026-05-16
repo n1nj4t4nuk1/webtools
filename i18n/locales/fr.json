@@ -26,6 +26,11 @@
       "tagline": "Modifier les métadonnées EXIF",
       "description": "Lisez, modifiez ou supprimez les métadonnées EXIF de vos photos JPEG. Le tout dans votre navigateur."
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "Convertir des images entre formats",
+      "description": "Convertissez entre PNG, JPG et WebP avec contrôle de la qualité. Le tout dans votre navigateur, sans envoi."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Générer des mots de passe robustes",
@@ -705,6 +710,33 @@
     },
     "errors": {
       "clipboard": "Impossible de copier dans le presse-papiers."
+    }
+  },
+  "convy": {
+    "dropzone": "Glissez une image ici ou cliquez pour en sélectionner une",
+    "format": {
+      "label": "Format de sortie",
+      "png": "PNG (sans perte)",
+      "jpeg": "JPG (avec perte)",
+      "webp": "WebP (avec perte)"
+    },
+    "quality": "Qualité",
+    "qualityHintLossless": "Le PNG est sans perte et n'a pas de contrôle de qualité.",
+    "actions": {
+      "convert": "Convertir et télécharger",
+      "processing": "Conversion…",
+      "change": "Changer d'image"
+    },
+    "result": {
+      "size": "Taille du résultat",
+      "ratio": "Comparé",
+      "smaller": "{pct} % de l'original (plus petit)",
+      "larger": "{pct} % de l'original (plus grand)",
+      "same": "Même taille"
+    },
+    "errors": {
+      "notImage": "{name} n'est pas une image valide.",
+      "conversion": "Impossible de convertir l'image."
     }
   },
   "metaimg": {

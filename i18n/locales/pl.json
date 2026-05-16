@@ -26,6 +26,11 @@
       "tagline": "Edytuj metadane EXIF",
       "description": "Czytaj, edytuj lub usuwaj metadane EXIF ze swoich zdjęć JPEG. Wszystko w Twojej przeglądarce."
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "Konwertuj obrazy między formatami",
+      "description": "Konwertuj między PNG, JPG i WebP z kontrolą jakości. Wszystko w Twojej przeglądarce, bez przesyłania."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Generuj silne hasła",
@@ -705,6 +710,33 @@
     },
     "errors": {
       "clipboard": "Nie udało się skopiować do schowka."
+    }
+  },
+  "convy": {
+    "dropzone": "Przeciągnij tutaj obraz lub kliknij, aby go wybrać",
+    "format": {
+      "label": "Format wyjściowy",
+      "png": "PNG (bezstratny)",
+      "jpeg": "JPG (stratny)",
+      "webp": "WebP (stratny)"
+    },
+    "quality": "Jakość",
+    "qualityHintLossless": "PNG jest bezstratny i nie ma kontroli jakości.",
+    "actions": {
+      "convert": "Konwertuj i pobierz",
+      "processing": "Konwertowanie…",
+      "change": "Zmień obraz"
+    },
+    "result": {
+      "size": "Rozmiar wyniku",
+      "ratio": "Porównanie",
+      "smaller": "{pct}% oryginału (mniejszy)",
+      "larger": "{pct}% oryginału (większy)",
+      "same": "Ten sam rozmiar"
+    },
+    "errors": {
+      "notImage": "{name} nie jest prawidłowym obrazem.",
+      "conversion": "Nie udało się przekonwertować obrazu."
     }
   },
   "metaimg": {

@@ -26,6 +26,11 @@
       "tagline": "EXIF meta verilerini düzenle",
       "description": "JPEG fotoğraflarınızdaki EXIF meta verilerini okuyun, düzenleyin veya silin. Hepsi tarayıcınızda."
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "Görüntüleri formatlar arasında dönüştür",
+      "description": "PNG, JPG ve WebP arasında kalite kontrolü ile dönüştürün. Hepsi tarayıcınızda, yükleme yok."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Güçlü parolalar oluştur",
@@ -705,6 +710,33 @@
     },
     "errors": {
       "clipboard": "Panoya kopyalanamadı."
+    }
+  },
+  "convy": {
+    "dropzone": "Buraya bir görüntü sürükleyin veya seçmek için tıklayın",
+    "format": {
+      "label": "Çıkış formatı",
+      "png": "PNG (kayıpsız)",
+      "jpeg": "JPG (kayıplı)",
+      "webp": "WebP (kayıplı)"
+    },
+    "quality": "Kalite",
+    "qualityHintLossless": "PNG kayıpsızdır ve kalite kontrolü yoktur.",
+    "actions": {
+      "convert": "Dönüştür ve indir",
+      "processing": "Dönüştürülüyor…",
+      "change": "Görüntüyü değiştir"
+    },
+    "result": {
+      "size": "Sonuç boyutu",
+      "ratio": "Karşılaştırma",
+      "smaller": "Orijinalin %{pct}'i (daha küçük)",
+      "larger": "Orijinalin %{pct}'i (daha büyük)",
+      "same": "Aynı boyut"
+    },
+    "errors": {
+      "notImage": "{name} geçerli bir görüntü değil.",
+      "conversion": "Görüntü dönüştürülemedi."
     }
   },
   "metaimg": {

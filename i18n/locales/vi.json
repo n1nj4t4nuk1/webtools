@@ -26,6 +26,11 @@
       "tagline": "Chỉnh sửa siêu dữ liệu EXIF",
       "description": "Đọc, chỉnh sửa hoặc xóa siêu dữ liệu EXIF khỏi ảnh JPEG của bạn. Tất cả trong trình duyệt."
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "Chuyển đổi ảnh giữa các định dạng",
+      "description": "Chuyển đổi giữa PNG, JPG và WebP với kiểm soát chất lượng. Tất cả trong trình duyệt của bạn, không cần tải lên."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Tạo mật khẩu mạnh",
@@ -705,6 +710,33 @@
     },
     "errors": {
       "clipboard": "Không thể sao chép vào clipboard."
+    }
+  },
+  "convy": {
+    "dropzone": "Kéo ảnh vào đây hoặc nhấp để chọn",
+    "format": {
+      "label": "Định dạng đầu ra",
+      "png": "PNG (không mất dữ liệu)",
+      "jpeg": "JPG (mất dữ liệu)",
+      "webp": "WebP (mất dữ liệu)"
+    },
+    "quality": "Chất lượng",
+    "qualityHintLossless": "PNG không mất dữ liệu và không có kiểm soát chất lượng.",
+    "actions": {
+      "convert": "Chuyển đổi và tải về",
+      "processing": "Đang chuyển đổi…",
+      "change": "Đổi ảnh"
+    },
+    "result": {
+      "size": "Kích thước kết quả",
+      "ratio": "So sánh",
+      "smaller": "{pct}% so với gốc (nhỏ hơn)",
+      "larger": "{pct}% so với gốc (lớn hơn)",
+      "same": "Cùng kích thước"
+    },
+    "errors": {
+      "notImage": "{name} không phải là ảnh hợp lệ.",
+      "conversion": "Không thể chuyển đổi ảnh."
     }
   },
   "metaimg": {

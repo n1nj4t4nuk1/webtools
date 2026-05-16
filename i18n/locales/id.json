@@ -26,6 +26,11 @@
       "tagline": "Edit metadata EXIF",
       "description": "Baca, edit, atau hapus metadata EXIF dari foto JPEG Anda. Semua di peramban Anda."
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "Konversi gambar antar format",
+      "description": "Konversi antara PNG, JPG, dan WebP dengan kontrol kualitas. Semua di peramban Anda, tanpa unggahan."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Buat kata sandi yang kuat",
@@ -705,6 +710,33 @@
     },
     "errors": {
       "clipboard": "Tidak dapat menyalin ke clipboard."
+    }
+  },
+  "convy": {
+    "dropzone": "Seret gambar ke sini atau klik untuk memilih",
+    "format": {
+      "label": "Format keluaran",
+      "png": "PNG (tanpa kehilangan)",
+      "jpeg": "JPG (dengan kehilangan)",
+      "webp": "WebP (dengan kehilangan)"
+    },
+    "quality": "Kualitas",
+    "qualityHintLossless": "PNG tanpa kehilangan dan tidak memiliki kontrol kualitas.",
+    "actions": {
+      "convert": "Konversi dan unduh",
+      "processing": "Mengonversi…",
+      "change": "Ganti gambar"
+    },
+    "result": {
+      "size": "Ukuran hasil",
+      "ratio": "Dibandingkan",
+      "smaller": "{pct}% dari aslinya (lebih kecil)",
+      "larger": "{pct}% dari aslinya (lebih besar)",
+      "same": "Ukuran sama"
+    },
+    "errors": {
+      "notImage": "{name} bukan gambar yang valid.",
+      "conversion": "Tidak dapat mengonversi gambar."
     }
   },
   "metaimg": {

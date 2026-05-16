@@ -26,6 +26,11 @@
       "tagline": "EXIF-metadata bewerken",
       "description": "Lees, bewerk of verwijder EXIF-metadata uit uw JPEG-foto's. Alles in uw browser."
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "Afbeeldingen converteren tussen formaten",
+      "description": "Converteer tussen PNG, JPG en WebP met kwaliteitscontrole. Alles in uw browser, zonder uploads."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Sterke wachtwoorden genereren",
@@ -705,6 +710,33 @@
     },
     "errors": {
       "clipboard": "Kon niet naar het klembord kopiëren."
+    }
+  },
+  "convy": {
+    "dropzone": "Sleep een afbeelding hierheen of klik om er een te selecteren",
+    "format": {
+      "label": "Uitvoerformaat",
+      "png": "PNG (verliesvrij)",
+      "jpeg": "JPG (met verlies)",
+      "webp": "WebP (met verlies)"
+    },
+    "quality": "Kwaliteit",
+    "qualityHintLossless": "PNG is verliesvrij en heeft geen kwaliteitscontrole.",
+    "actions": {
+      "convert": "Converteren en downloaden",
+      "processing": "Bezig met converteren…",
+      "change": "Afbeelding wijzigen"
+    },
+    "result": {
+      "size": "Resultaatgrootte",
+      "ratio": "Vergeleken",
+      "smaller": "{pct}% van het origineel (kleiner)",
+      "larger": "{pct}% van het origineel (groter)",
+      "same": "Zelfde grootte"
+    },
+    "errors": {
+      "notImage": "{name} is geen geldige afbeelding.",
+      "conversion": "Kon de afbeelding niet converteren."
     }
   },
   "metaimg": {

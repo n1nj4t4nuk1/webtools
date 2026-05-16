@@ -26,6 +26,11 @@
       "tagline": "Muokkaa EXIF-metatietoja",
       "description": "Lue, muokkaa tai poista EXIF-metatietoja JPEG-valokuvistasi. Kaikki tapahtuu selaimessasi."
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "Muunna kuvia formaattien välillä",
+      "description": "Muunna PNG-, JPG- ja WebP-formaattien välillä laadunsäädöllä. Kaikki selaimessasi, ei latauksia."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Luo vahvoja salasanoja",
@@ -705,6 +710,33 @@
     },
     "errors": {
       "clipboard": "Leikepöydälle ei voitu kopioida."
+    }
+  },
+  "convy": {
+    "dropzone": "Vedä kuva tähän tai napsauta valitaksesi yhden",
+    "format": {
+      "label": "Tulostusformaatti",
+      "png": "PNG (häviötön)",
+      "jpeg": "JPG (häviöllinen)",
+      "webp": "WebP (häviöllinen)"
+    },
+    "quality": "Laatu",
+    "qualityHintLossless": "PNG on häviötön eikä siinä ole laadunsäätöä.",
+    "actions": {
+      "convert": "Muunna ja lataa",
+      "processing": "Muunnetaan…",
+      "change": "Vaihda kuva"
+    },
+    "result": {
+      "size": "Tuloksen koko",
+      "ratio": "Verrattuna",
+      "smaller": "{pct}% alkuperäisestä (pienempi)",
+      "larger": "{pct}% alkuperäisestä (suurempi)",
+      "same": "Sama koko"
+    },
+    "errors": {
+      "notImage": "{name} ei ole kelvollinen kuva.",
+      "conversion": "Kuvaa ei voitu muuntaa."
     }
   },
   "metaimg": {

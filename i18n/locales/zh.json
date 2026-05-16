@@ -26,6 +26,11 @@
       "tagline": "编辑 EXIF 元数据",
       "description": "读取、修改或删除 JPEG 照片的 EXIF 元数据。一切都在浏览器中完成。"
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "在不同格式间转换图片",
+      "description": "在 PNG、JPG 和 WebP 之间转换，可控制质量。所有处理都在您的浏览器中完成，无需上传。"
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "生成强密码",
@@ -670,6 +675,33 @@
     },
     "errors": {
       "clipboard": "无法复制到剪贴板。"
+    }
+  },
+  "convy": {
+    "dropzone": "将图片拖到此处，或点击选择",
+    "format": {
+      "label": "输出格式",
+      "png": "PNG（无损）",
+      "jpeg": "JPG（有损）",
+      "webp": "WebP（有损）"
+    },
+    "quality": "质量",
+    "qualityHintLossless": "PNG 是无损格式，没有质量控制。",
+    "actions": {
+      "convert": "转换并下载",
+      "processing": "转换中…",
+      "change": "更换图片"
+    },
+    "result": {
+      "size": "结果大小",
+      "ratio": "对比",
+      "smaller": "原始的 {pct}%（更小）",
+      "larger": "原始的 {pct}%（更大）",
+      "same": "相同大小"
+    },
+    "errors": {
+      "notImage": "{name} 不是有效的图片。",
+      "conversion": "无法转换图片。"
     }
   },
   "metaimg": {

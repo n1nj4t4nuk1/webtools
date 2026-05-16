@@ -26,6 +26,11 @@
       "tagline": "EXIFメタデータを編集",
       "description": "JPEG写真のEXIFメタデータを読み取り、編集、削除できます。すべてブラウザで完結。"
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "画像を別の形式に変換",
+      "description": "PNG、JPG、WebP間で品質コントロール付きで変換。すべてブラウザで処理、アップロード不要。"
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "強力なパスワードを生成",
@@ -670,6 +675,33 @@
     },
     "errors": {
       "clipboard": "クリップボードにコピーできませんでした。"
+    }
+  },
+  "convy": {
+    "dropzone": "画像をここにドラッグするか、クリックして選択",
+    "format": {
+      "label": "出力形式",
+      "png": "PNG（可逆）",
+      "jpeg": "JPG（非可逆）",
+      "webp": "WebP（lossy）"
+    },
+    "quality": "品質",
+    "qualityHintLossless": "PNGは可逆圧縮で、品質コントロールはありません。",
+    "actions": {
+      "convert": "変換してダウンロード",
+      "processing": "変換中…",
+      "change": "画像を変更"
+    },
+    "result": {
+      "size": "結果サイズ",
+      "ratio": "比較",
+      "smaller": "元の{pct}%（小さい）",
+      "larger": "元の{pct}%（大きい）",
+      "same": "同じサイズ"
+    },
+    "errors": {
+      "notImage": "{name}は有効な画像ではありません。",
+      "conversion": "画像を変換できませんでした。"
     }
   },
   "metaimg": {

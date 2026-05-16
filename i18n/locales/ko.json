@@ -26,6 +26,11 @@
       "tagline": "EXIF 메타데이터 편집",
       "description": "JPEG 사진의 EXIF 메타데이터를 읽고 편집하거나 제거합니다. 모두 브라우저에서 처리됩니다."
     },
+    "convy": {
+      "name": "Convy",
+      "tagline": "이미지를 다른 형식으로 변환",
+      "description": "PNG, JPG, WebP 간 품질 조절과 함께 변환합니다. 모두 브라우저에서 처리되며 업로드가 없습니다."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "강력한 비밀번호 생성",
@@ -705,6 +710,33 @@
     },
     "errors": {
       "clipboard": "클립보드에 복사할 수 없습니다."
+    }
+  },
+  "convy": {
+    "dropzone": "여기에 이미지를 끌어 놓거나 클릭해 선택하세요",
+    "format": {
+      "label": "출력 형식",
+      "png": "PNG (무손실)",
+      "jpeg": "JPG (손실)",
+      "webp": "WebP (손실)"
+    },
+    "quality": "품질",
+    "qualityHintLossless": "PNG는 무손실이며 품질 조절이 없습니다.",
+    "actions": {
+      "convert": "변환 및 다운로드",
+      "processing": "변환 중…",
+      "change": "이미지 변경"
+    },
+    "result": {
+      "size": "결과 크기",
+      "ratio": "비교",
+      "smaller": "원본의 {pct}% (더 작음)",
+      "larger": "원본의 {pct}% (더 큼)",
+      "same": "동일한 크기"
+    },
+    "errors": {
+      "notImage": "{name}은(는) 유효한 이미지가 아닙니다.",
+      "conversion": "이미지를 변환할 수 없습니다."
     }
   },
   "metaimg": {
