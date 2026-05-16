@@ -9,7 +9,8 @@
       "imageEdit": "图片编辑",
       "documents": "文档",
       "privacy": "隐私",
-      "generators": "生成器"
+      "generators": "生成器",
+      "dev": "开发"
     }
   },
   "tools": {
@@ -52,6 +53,53 @@
       "name": "Combiny",
       "tagline": "组合字段生成变体（邮箱、用户名…）",
       "description": "使用可配置的分隔符和后缀生成多个字段的组合。适用于邮箱列表、用户名、slug 或 ID。"
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "在 CSV 和 JSON 之间转换",
+      "description": "粘贴 CSV 或 JSON，立即获得另一种格式。自动检测分隔符和格式。所有处理都在您的浏览器中完成。"
+    }
+  },
+  "csvjson": {
+    "input": "输入",
+    "output": "输出",
+    "inputPlaceholder": "在此粘贴 CSV 或 JSON…",
+    "outputPlaceholder": "结果将显示在此处。",
+    "hasHeader": "CSV 包含标题行",
+    "pretty": "格式化 JSON",
+    "direction": {
+      "label": "方向",
+      "auto": "自动",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "分隔符",
+      "auto": "自动",
+      "comma": "逗号 (,)",
+      "semicolon": "分号 (;)",
+      "tab": "制表符",
+      "pipe": "竖线 (|)"
+    },
+    "detected": {
+      "label": "检测到",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "未知"
+    },
+    "actions": {
+      "example": "示例",
+      "clear": "清除",
+      "copy": "复制",
+      "copied": "已复制！",
+      "download": "下载",
+      "useAsInput": "用作输入"
+    },
+    "errors": {
+      "unknownInput": "无法检测格式。请手动选择方向。",
+      "invalidJson": "无效的 JSON：{msg}",
+      "notTabular": "要转换为 CSV，JSON 必须是数组（或对象）。",
+      "mixedShape": "数组中元素类型混合。必须全部为对象或全部为数组。"
     }
   },
   "combiny": {

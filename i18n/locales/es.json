@@ -9,7 +9,8 @@
       "imageEdit": "Edición de imágenes",
       "documents": "Documentos",
       "privacy": "Privacidad",
-      "generators": "Generadores"
+      "generators": "Generadores",
+      "dev": "Desarrollo"
     }
   },
   "tools": {
@@ -57,6 +58,53 @@
       "name": "Combiny",
       "tagline": "Combina campos en variantes (emails, usernames…)",
       "description": "Genera combinaciones de varios campos con un separador y sufijo configurable. Útil para listas de emails, nombres de usuario, slugs o IDs."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Convierte entre CSV y JSON",
+      "description": "Pega CSV o JSON y obtén el otro formato al instante. Detecta el delimitador y el formato automáticamente. Todo en tu navegador."
+    }
+  },
+  "csvjson": {
+    "input": "Entrada",
+    "output": "Salida",
+    "inputPlaceholder": "Pega CSV o JSON aquí…",
+    "outputPlaceholder": "El resultado aparecerá aquí.",
+    "hasHeader": "El CSV tiene cabecera",
+    "pretty": "JSON con formato",
+    "direction": {
+      "label": "Dirección",
+      "auto": "Automático",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Delimitador",
+      "auto": "Automático",
+      "comma": "Coma (,)",
+      "semicolon": "Punto y coma (;)",
+      "tab": "Tabulador",
+      "pipe": "Barra (|)"
+    },
+    "detected": {
+      "label": "Detectado",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "No reconocido"
+    },
+    "actions": {
+      "example": "Ejemplo",
+      "clear": "Limpiar",
+      "copy": "Copiar",
+      "copied": "¡Copiado!",
+      "download": "Descargar",
+      "useAsInput": "Usar como entrada"
+    },
+    "errors": {
+      "unknownInput": "No se ha podido reconocer el formato. Selecciona la dirección manualmente.",
+      "invalidJson": "JSON no válido: {msg}",
+      "notTabular": "El JSON debe ser un array (o un objeto) para convertir a CSV.",
+      "mixedShape": "El array contiene elementos de tipos mezclados. Debe ser todo objetos o todo arrays."
     }
   },
   "combiny": {

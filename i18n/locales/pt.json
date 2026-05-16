@@ -9,7 +9,8 @@
       "imageEdit": "Edição de imagens",
       "documents": "Documentos",
       "privacy": "Privacidade",
-      "generators": "Geradores"
+      "generators": "Geradores",
+      "dev": "Desenvolvimento"
     }
   },
   "tools": {
@@ -52,6 +53,53 @@
       "name": "Combiny",
       "tagline": "Combine campos em variantes (emails, usernames…)",
       "description": "Gere combinações de vários campos com separador e sufixo configuráveis. Útil para listas de emails, nomes de usuário, slugs ou IDs."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Converta entre CSV e JSON",
+      "description": "Cole CSV ou JSON e obtenha o outro formato instantaneamente. Detecta o delimitador e o formato automaticamente. Tudo no seu navegador."
+    }
+  },
+  "csvjson": {
+    "input": "Entrada",
+    "output": "Saída",
+    "inputPlaceholder": "Cole CSV ou JSON aqui…",
+    "outputPlaceholder": "O resultado aparecerá aqui.",
+    "hasHeader": "O CSV tem cabeçalho",
+    "pretty": "JSON formatado",
+    "direction": {
+      "label": "Direção",
+      "auto": "Automático",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Delimitador",
+      "auto": "Automático",
+      "comma": "Vírgula (,)",
+      "semicolon": "Ponto e vírgula (;)",
+      "tab": "Tabulação",
+      "pipe": "Barra (|)"
+    },
+    "detected": {
+      "label": "Detectado",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Desconhecido"
+    },
+    "actions": {
+      "example": "Exemplo",
+      "clear": "Limpar",
+      "copy": "Copiar",
+      "copied": "Copiado!",
+      "download": "Baixar",
+      "useAsInput": "Usar como entrada"
+    },
+    "errors": {
+      "unknownInput": "Não foi possível detectar o formato. Selecione a direção manualmente.",
+      "invalidJson": "JSON inválido: {msg}",
+      "notTabular": "O JSON deve ser um array (ou objeto) para converter em CSV.",
+      "mixedShape": "O array mistura tipos de elementos. Deve ser todo de objetos ou todo de arrays."
     }
   },
   "combiny": {

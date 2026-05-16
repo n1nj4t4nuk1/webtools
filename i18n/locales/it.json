@@ -9,7 +9,8 @@
       "imageEdit": "Modifica immagini",
       "documents": "Documenti",
       "privacy": "Privacy",
-      "generators": "Generatori"
+      "generators": "Generatori",
+      "dev": "Sviluppo"
     }
   },
   "tools": {
@@ -52,6 +53,53 @@
       "name": "Combiny",
       "tagline": "Combina campi in varianti (email, username…)",
       "description": "Genera combinazioni di più campi con separatore e suffisso configurabili. Utile per liste di email, username, slug o ID."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Converti tra CSV e JSON",
+      "description": "Incolla CSV o JSON e ottieni l'altro formato all'istante. Rileva delimitatore e formato automaticamente. Tutto nel tuo browser."
+    }
+  },
+  "csvjson": {
+    "input": "Input",
+    "output": "Output",
+    "inputPlaceholder": "Incolla CSV o JSON qui…",
+    "outputPlaceholder": "Il risultato apparirà qui.",
+    "hasHeader": "Il CSV ha un'intestazione",
+    "pretty": "JSON formattato",
+    "direction": {
+      "label": "Direzione",
+      "auto": "Automatica",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Delimitatore",
+      "auto": "Automatico",
+      "comma": "Virgola (,)",
+      "semicolon": "Punto e virgola (;)",
+      "tab": "Tabulazione",
+      "pipe": "Barra (|)"
+    },
+    "detected": {
+      "label": "Rilevato",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Sconosciuto"
+    },
+    "actions": {
+      "example": "Esempio",
+      "clear": "Pulisci",
+      "copy": "Copia",
+      "copied": "Copiato!",
+      "download": "Scarica",
+      "useAsInput": "Usa come input"
+    },
+    "errors": {
+      "unknownInput": "Impossibile rilevare il formato. Seleziona la direzione manualmente.",
+      "invalidJson": "JSON non valido: {msg}",
+      "notTabular": "Il JSON deve essere un array (o oggetto) per convertirlo in CSV.",
+      "mixedShape": "L'array contiene tipi di elementi misti. Deve essere tutto di oggetti o tutto di array."
     }
   },
   "combiny": {

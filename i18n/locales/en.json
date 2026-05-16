@@ -9,7 +9,8 @@
       "imageEdit": "Image editing",
       "documents": "Documents",
       "privacy": "Privacy",
-      "generators": "Generators"
+      "generators": "Generators",
+      "dev": "Development"
     }
   },
   "tools": {
@@ -57,6 +58,53 @@
       "name": "Combiny",
       "tagline": "Combine fields into variants (emails, usernames…)",
       "description": "Generate combinations of multiple fields with a configurable separator and suffix. Handy for email lists, usernames, slugs or IDs."
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "Convert between CSV and JSON",
+      "description": "Paste CSV or JSON and get the other format instantly. Auto-detects the delimiter and format. All in your browser."
+    }
+  },
+  "csvjson": {
+    "input": "Input",
+    "output": "Output",
+    "inputPlaceholder": "Paste CSV or JSON here…",
+    "outputPlaceholder": "The result will appear here.",
+    "hasHeader": "CSV has a header row",
+    "pretty": "Pretty-print JSON",
+    "direction": {
+      "label": "Direction",
+      "auto": "Automatic",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "Delimiter",
+      "auto": "Automatic",
+      "comma": "Comma (,)",
+      "semicolon": "Semicolon (;)",
+      "tab": "Tab",
+      "pipe": "Pipe (|)"
+    },
+    "detected": {
+      "label": "Detected",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "Unknown"
+    },
+    "actions": {
+      "example": "Example",
+      "clear": "Clear",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "download": "Download",
+      "useAsInput": "Use as input"
+    },
+    "errors": {
+      "unknownInput": "Could not detect the format. Pick the direction manually.",
+      "invalidJson": "Invalid JSON: {msg}",
+      "notTabular": "JSON must be an array (or object) to convert to CSV.",
+      "mixedShape": "The array mixes element types. It must be all objects or all arrays."
     }
   },
   "combiny": {

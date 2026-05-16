@@ -7,6 +7,7 @@ const categoriesRaw = [
   { id: 'documents', tools: ['stapler', 'scissor', 'wordy'] },
   { id: 'privacy', tools: ['metaimg', 'createpass', 'hashy'] },
   { id: 'generators', tools: ['createpass', 'idkun', 'combiny'] },
+  { id: 'dev', tools: ['csvjson'] },
 ] as const
 
 const toolPaths: Record<string, string> = {
@@ -19,6 +20,7 @@ const toolPaths: Record<string, string> = {
   scissor: '/scissor',
   wordy: '/wordy',
   combiny: '/combiny',
+  csvjson: '/csvjson',
 }
 
 const categories = computed(() =>

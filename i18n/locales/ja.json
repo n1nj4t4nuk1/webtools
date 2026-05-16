@@ -9,7 +9,8 @@
       "imageEdit": "画像編集",
       "documents": "ドキュメント",
       "privacy": "プライバシー",
-      "generators": "ジェネレーター"
+      "generators": "ジェネレーター",
+      "dev": "開発"
     }
   },
   "tools": {
@@ -52,6 +53,53 @@
       "name": "Combiny",
       "tagline": "フィールドを組み合わせてバリアントを生成（メール、ユーザー名など）",
       "description": "区切り文字と接尾辞をカスタマイズして複数フィールドの組み合わせを生成。メールリスト、ユーザー名、スラッグ、IDに便利。"
+    },
+    "csvjson": {
+      "name": "CsvJson",
+      "tagline": "CSVとJSONを相互変換",
+      "description": "CSVまたはJSONを貼り付けると、もう一方の形式に即座に変換します。区切り文字と形式を自動検出。すべてブラウザで処理。"
+    }
+  },
+  "csvjson": {
+    "input": "入力",
+    "output": "出力",
+    "inputPlaceholder": "ここにCSVまたはJSONを貼り付け…",
+    "outputPlaceholder": "結果はここに表示されます。",
+    "hasHeader": "CSVにヘッダー行あり",
+    "pretty": "JSONを整形",
+    "direction": {
+      "label": "方向",
+      "auto": "自動",
+      "csv2json": "CSV → JSON",
+      "json2csv": "JSON → CSV"
+    },
+    "delimiter": {
+      "label": "区切り文字",
+      "auto": "自動",
+      "comma": "カンマ (,)",
+      "semicolon": "セミコロン (;)",
+      "tab": "タブ",
+      "pipe": "パイプ (|)"
+    },
+    "detected": {
+      "label": "検出",
+      "json": "JSON",
+      "csv": "CSV",
+      "unknown": "不明"
+    },
+    "actions": {
+      "example": "例",
+      "clear": "クリア",
+      "copy": "コピー",
+      "copied": "コピーしました！",
+      "download": "ダウンロード",
+      "useAsInput": "入力として使用"
+    },
+    "errors": {
+      "unknownInput": "形式を検出できませんでした。手動で方向を選択してください。",
+      "invalidJson": "無効なJSON：{msg}",
+      "notTabular": "CSVに変換するには、JSONは配列（またはオブジェクト）である必要があります。",
+      "mixedShape": "配列に異なる型の要素が混在しています。すべてオブジェクトまたはすべて配列である必要があります。"
     }
   },
   "combiny": {
