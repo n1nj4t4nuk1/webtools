@@ -42,6 +42,36 @@
       "name": "Stapler",
       "tagline": "Une varios PDFs en uno",
       "description": "Combina varios archivos PDF en uno solo, en el orden que quieras. Todo se procesa en tu navegador."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Cuenta palabras y caracteres",
+      "description": "Analiza un texto o archivo de texto: palabras, caracteres, líneas, párrafos y tiempo de lectura estimado."
+    }
+  },
+  "wordy": {
+    "modeText": "Texto",
+    "modeFile": "Archivo",
+    "textPlaceholder": "Pega o escribe el texto a analizar…",
+    "dropzone": "Arrastra un archivo de texto (.txt, .md, .csv…) o haz clic para seleccionarlo",
+    "stats": {
+      "words": "Palabras",
+      "charsWithSpaces": "Caracteres (con espacios)",
+      "charsNoSpaces": "Caracteres (sin espacios)",
+      "lines": "Líneas",
+      "paragraphs": "Párrafos",
+      "sentences": "Oraciones",
+      "readingTime": "Tiempo de lectura",
+      "minutes": "{n} min",
+      "minutesSeconds": "{m} min {s} s",
+      "seconds": "{n} s"
+    },
+    "actions": {
+      "clear": "Limpiar"
+    },
+    "errors": {
+      "notText": "Solo se admiten archivos de texto plano (.txt, .md, .csv, etc.).",
+      "read": "No se pudo leer el archivo."
     }
   },
   "stapler": {

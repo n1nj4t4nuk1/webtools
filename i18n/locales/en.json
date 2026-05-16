@@ -42,6 +42,36 @@
       "name": "Stapler",
       "tagline": "Merge multiple PDFs into one",
       "description": "Combine several PDF files into a single one, in any order. Everything is processed in your browser."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Count words and characters",
+      "description": "Analyze text or a text file: words, characters, lines, paragraphs and estimated reading time."
+    }
+  },
+  "wordy": {
+    "modeText": "Text",
+    "modeFile": "File",
+    "textPlaceholder": "Paste or type the text to analyze…",
+    "dropzone": "Drag a text file (.txt, .md, .csv…) or click to select one",
+    "stats": {
+      "words": "Words",
+      "charsWithSpaces": "Characters (with spaces)",
+      "charsNoSpaces": "Characters (no spaces)",
+      "lines": "Lines",
+      "paragraphs": "Paragraphs",
+      "sentences": "Sentences",
+      "readingTime": "Reading time",
+      "minutes": "{n} min",
+      "minutesSeconds": "{m} min {s} s",
+      "seconds": "{n} s"
+    },
+    "actions": {
+      "clear": "Clear"
+    },
+    "errors": {
+      "notText": "Only plain-text files (.txt, .md, .csv, etc.) are supported.",
+      "read": "Could not read the file."
     }
   },
   "stapler": {

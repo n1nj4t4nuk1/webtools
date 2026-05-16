@@ -37,6 +37,36 @@
       "name": "Stapler",
       "tagline": "複数のPDFを1つに結合",
       "description": "複数のPDFファイルを好きな順序で1つに結合します。すべてブラウザで処理されます。"
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "単語と文字を数える",
+      "description": "テキストまたはテキストファイルを分析：単語数、文字数、行数、段落数、推定読了時間。"
+    }
+  },
+  "wordy": {
+    "modeText": "テキスト",
+    "modeFile": "ファイル",
+    "textPlaceholder": "分析するテキストを貼り付けまたは入力…",
+    "dropzone": "テキストファイル（.txt, .md, .csv…）をドラッグするか、クリックして選択",
+    "stats": {
+      "words": "単語",
+      "charsWithSpaces": "文字数（スペース含む）",
+      "charsNoSpaces": "文字数（スペース除く）",
+      "lines": "行",
+      "paragraphs": "段落",
+      "sentences": "文",
+      "readingTime": "読了時間",
+      "minutes": "{n} 分",
+      "minutesSeconds": "{m} 分 {s} 秒",
+      "seconds": "{n} 秒"
+    },
+    "actions": {
+      "clear": "クリア"
+    },
+    "errors": {
+      "notText": "プレーンテキストファイル（.txt, .md, .csv など）のみ対応しています。",
+      "read": "ファイルを読み込めませんでした。"
     }
   },
   "stapler": {

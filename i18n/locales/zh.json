@@ -37,6 +37,36 @@
       "name": "Stapler",
       "tagline": "将多个 PDF 合并为一个",
       "description": "按您想要的顺序将多个 PDF 文件合并为一个。所有处理都在您的浏览器中完成。"
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "统计单词和字符",
+      "description": "分析文本或文本文件：单词、字符、行数、段落和预计阅读时间。"
+    }
+  },
+  "wordy": {
+    "modeText": "文本",
+    "modeFile": "文件",
+    "textPlaceholder": "粘贴或输入要分析的文本…",
+    "dropzone": "将文本文件（.txt, .md, .csv…）拖到此处，或点击选择",
+    "stats": {
+      "words": "单词",
+      "charsWithSpaces": "字符（含空格）",
+      "charsNoSpaces": "字符（不含空格）",
+      "lines": "行",
+      "paragraphs": "段落",
+      "sentences": "句子",
+      "readingTime": "阅读时间",
+      "minutes": "{n} 分钟",
+      "minutesSeconds": "{m} 分 {s} 秒",
+      "seconds": "{n} 秒"
+    },
+    "actions": {
+      "clear": "清除"
+    },
+    "errors": {
+      "notText": "仅支持纯文本文件（.txt, .md, .csv 等）。",
+      "read": "无法读取文件。"
     }
   },
   "stapler": {

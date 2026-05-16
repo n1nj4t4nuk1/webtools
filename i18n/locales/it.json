@@ -37,6 +37,36 @@
       "name": "Stapler",
       "tagline": "Unisci più PDF in uno",
       "description": "Combina più file PDF in uno solo, nell'ordine che vuoi. Tutto viene elaborato nel tuo browser."
+    },
+    "wordy": {
+      "name": "Wordy",
+      "tagline": "Conta parole e caratteri",
+      "description": "Analizza un testo o un file di testo: parole, caratteri, righe, paragrafi e tempo di lettura stimato."
+    }
+  },
+  "wordy": {
+    "modeText": "Testo",
+    "modeFile": "File",
+    "textPlaceholder": "Incolla o digita il testo da analizzare…",
+    "dropzone": "Trascina un file di testo (.txt, .md, .csv…) o clicca per selezionarlo",
+    "stats": {
+      "words": "Parole",
+      "charsWithSpaces": "Caratteri (con spazi)",
+      "charsNoSpaces": "Caratteri (senza spazi)",
+      "lines": "Righe",
+      "paragraphs": "Paragrafi",
+      "sentences": "Frasi",
+      "readingTime": "Tempo di lettura",
+      "minutes": "{n} min",
+      "minutesSeconds": "{m} min {s} s",
+      "seconds": "{n} s"
+    },
+    "actions": {
+      "clear": "Cancella"
+    },
+    "errors": {
+      "notText": "Sono supportati solo file di testo semplice (.txt, .md, .csv, ecc.).",
+      "read": "Impossibile leggere il file."
     }
   },
   "stapler": {
