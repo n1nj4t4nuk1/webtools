@@ -69,10 +69,48 @@
       "tagline": "测试正则表达式并替换文本",
       "description": "构建正则表达式，查看高亮匹配，并应用替换（支持 $1, $2…）。所有处理都在您的浏览器中完成。"
     },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "在 YAML 和 JSON 之间转换",
+      "description": "粘贴 YAML 或 JSON，立即获得另一种格式。自动检测格式并显示带行列号的错误。所有处理都在您的浏览器中完成。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
       "description": "粘贴 JSON，验证并按您喜欢的缩进格式化。压缩、排序键和显示统计信息。所有处理都在您的浏览器中完成。"
+    }
+  },
+  "yamljson": {
+    "input": "输入",
+    "output": "输出",
+    "inputPlaceholder": "在此粘贴 YAML 或 JSON…",
+    "outputPlaceholder": "结果将显示在此处。",
+    "indent": "缩进",
+    "direction": {
+      "label": "方向",
+      "auto": "自动",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "检测到",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "未知"
+    },
+    "actions": {
+      "example": "示例",
+      "clear": "清除",
+      "copy": "复制",
+      "copied": "已复制！",
+      "download": "下载",
+      "useAsInput": "用作输入"
+    },
+    "errors": {
+      "unknownInput": "无法检测格式。请手动选择方向。",
+      "invalidYaml": "无效的 YAML",
+      "invalidJson": "无效的 JSON",
+      "atLine": "第 {line} 行第 {col} 列"
     }
   },
   "regexpad": {

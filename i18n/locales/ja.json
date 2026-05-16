@@ -69,10 +69,48 @@
       "tagline": "正規表現でテストと置換",
       "description": "正規表現を作成し、マッチをハイライト表示、置換を適用（$1、$2…をサポート）。すべてブラウザで処理。"
     },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "YAMLとJSONを相互変換",
+      "description": "YAMLまたはJSONを貼り付けると、もう一方の形式に即座に変換します。形式を自動検出し、行と列でエラーを表示。すべてブラウザで処理。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSONをフォーマット・検証",
       "description": "JSONを貼り付けて検証し、好みのインデントで整形。圧縮、キーのソート、統計表示が可能。すべてブラウザで処理。"
+    }
+  },
+  "yamljson": {
+    "input": "入力",
+    "output": "出力",
+    "inputPlaceholder": "ここにYAMLまたはJSONを貼り付け…",
+    "outputPlaceholder": "結果はここに表示されます。",
+    "indent": "インデント",
+    "direction": {
+      "label": "方向",
+      "auto": "自動",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "検出",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "不明"
+    },
+    "actions": {
+      "example": "例",
+      "clear": "クリア",
+      "copy": "コピー",
+      "copied": "コピーしました！",
+      "download": "ダウンロード",
+      "useAsInput": "入力として使用"
+    },
+    "errors": {
+      "unknownInput": "形式を検出できませんでした。手動で方向を選択してください。",
+      "invalidYaml": "無効なYAML",
+      "invalidJson": "無効なJSON",
+      "atLine": "{line}行{col}列"
     }
   },
   "regexpad": {

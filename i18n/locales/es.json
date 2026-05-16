@@ -74,10 +74,48 @@
       "tagline": "Prueba regex y reemplaza texto",
       "description": "Construye una expresión regular, ve las coincidencias resaltadas y aplica un reemplazo (soporta $1, $2…). Todo en tu navegador."
     },
+    "yamljson": {
+      "name": "YamlJson",
+      "tagline": "Convierte entre YAML y JSON",
+      "description": "Pega YAML o JSON y obtén el otro formato al instante. Detecta el formato automáticamente y muestra errores con línea y columna. Todo en tu navegador."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatea y valida JSON",
       "description": "Pega JSON, valídalo y formatéalo con la indentación que quieras. Minifica, ordena claves y muestra estadísticas. Todo en tu navegador."
+    }
+  },
+  "yamljson": {
+    "input": "Entrada",
+    "output": "Salida",
+    "inputPlaceholder": "Pega YAML o JSON aquí…",
+    "outputPlaceholder": "El resultado aparecerá aquí.",
+    "indent": "Indentación",
+    "direction": {
+      "label": "Dirección",
+      "auto": "Automático",
+      "yaml2json": "YAML → JSON",
+      "json2yaml": "JSON → YAML"
+    },
+    "detected": {
+      "label": "Detectado",
+      "json": "JSON",
+      "yaml": "YAML",
+      "unknown": "No reconocido"
+    },
+    "actions": {
+      "example": "Ejemplo",
+      "clear": "Limpiar",
+      "copy": "Copiar",
+      "copied": "¡Copiado!",
+      "download": "Descargar",
+      "useAsInput": "Usar como entrada"
+    },
+    "errors": {
+      "unknownInput": "No se ha podido reconocer el formato. Selecciona la dirección manualmente.",
+      "invalidYaml": "YAML no válido",
+      "invalidJson": "JSON no válido",
+      "atLine": "línea {line}, columna {col}"
     }
   },
   "regexpad": {
