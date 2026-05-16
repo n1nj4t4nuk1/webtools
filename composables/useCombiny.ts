@@ -62,7 +62,10 @@ const nonEmptySubsets = <T>(arr: T[]): T[][] => {
 }
 
 export const useCombiny = () => {
-  const generate = (opts: CombinyOptions): CombinyResult => {
+  const generate = (
+    opts: CombinyOptions,
+    maxResults: number = MAX_RESULTS,
+  ): CombinyResult => {
     const active = opts.fields.filter((f) => f.value.trim().length > 0)
     if (active.length === 0) {
       return { combinations: [], totalGenerated: 0 }
@@ -70,7 +73,7 @@ export const useCombiny = () => {
 
     const baseGroups = opts.includeSubsets ? nonEmptySubsets(active) : [active]
     const seen = new Set<string>()
-    const cap = MAX_RESULTS * 4
+    const cap = Math.max(maxResults * 4, MAX_RESULTS * 4)
 
     outer: for (const group of baseGroups) {
       const orderings = opts.permuteOrder ? permutations(group) : [group]
@@ -86,7 +89,7 @@ export const useCombiny = () => {
 
     const all = [...seen].sort()
     return {
-      combinations: all.slice(0, MAX_RESULTS),
+      combinations: all.slice(0, maxResults),
       totalGenerated: all.length,
     }
   }

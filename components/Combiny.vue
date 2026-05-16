@@ -6,6 +6,7 @@ const { t } = useI18n()
 const { generate } = useCombiny()
 
 const MAX_FIELDS = 6
+const DOWNLOAD_CAP = 100000
 
 const makeId = () => `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`
 
@@ -19,17 +20,21 @@ const prefix = ref('')
 const suffix = ref('')
 const permuteOrder = ref(false)
 const includeSubsets = ref(false)
+const downloadOnly = ref(false)
 const copied = ref(false)
 
 const result = computed(() =>
-  generate({
-    fields: fields.value,
-    separator: separator.value,
-    prefix: prefix.value,
-    suffix: suffix.value,
-    permuteOrder: permuteOrder.value,
-    includeSubsets: includeSubsets.value,
-  }),
+  generate(
+    {
+      fields: fields.value,
+      separator: separator.value,
+      prefix: prefix.value,
+      suffix: suffix.value,
+      permuteOrder: permuteOrder.value,
+      includeSubsets: includeSubsets.value,
+    },
+    downloadOnly.value ? DOWNLOAD_CAP : MAX_RESULTS,
+  ),
 )
 
 const canAdd = computed(() => fields.value.length < MAX_FIELDS)
@@ -58,6 +63,19 @@ const copyAll = async () => {
   } catch {
     // silent
   }
+}
+
+const downloadTxt = () => {
+  const content = result.value.combinations.join('\n')
+  const blob = new Blob([content], { type: 'text/plain;charset=utf-8' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = 'combiny.txt'
+  document.body.appendChild(a)
+  a.click()
+  document.body.removeChild(a)
+  setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
 
 const modeOptions: FieldMode[] = ['full', 'initial', 'both']
@@ -142,6 +160,12 @@ const modeOptions: FieldMode[] = ['full', 'initial', 'both']
         <span>{{ t('combiny.options.subsets') }}</span>
       </label>
       <p class="hint">{{ t('combiny.options.subsetsHint') }}</p>
+
+      <label class="chk">
+        <input v-model="downloadOnly" type="checkbox" />
+        <span>{{ t('combiny.options.downloadOnly') }}</span>
+      </label>
+      <p class="hint">{{ t('combiny.options.downloadOnlyHint') }}</p>
     </div>
 
     <div class="card results">
@@ -149,14 +173,24 @@ const modeOptions: FieldMode[] = ['full', 'initial', 'both']
         <h2 class="section-title">
           {{ t('combiny.results.title', { count: result.combinations.length }) }}
         </h2>
-        <button
-          v-if="result.combinations.length > 0"
-          type="button"
-          class="btn btn-ghost btn-sm"
-          @click="copyAll"
-        >
-          {{ copied ? t('combiny.results.copied') : t('combiny.results.copyAll') }}
-        </button>
+        <div class="header-actions">
+          <button
+            v-if="result.combinations.length > 0 && downloadOnly"
+            type="button"
+            class="btn btn-sm"
+            @click="downloadTxt"
+          >
+            {{ t('combiny.results.download') }}
+          </button>
+          <button
+            v-if="result.combinations.length > 0 && !downloadOnly"
+            type="button"
+            class="btn btn-ghost btn-sm"
+            @click="copyAll"
+          >
+            {{ copied ? t('combiny.results.copied') : t('combiny.results.copyAll') }}
+          </button>
+        </div>
       </header>
 
       <p v-if="result.combinations.length === 0" class="empty">
@@ -169,12 +203,15 @@ const modeOptions: FieldMode[] = ['full', 'initial', 'both']
         >
           {{
             t('combiny.results.limited', {
-              limit: MAX_RESULTS,
+              limit: downloadOnly ? DOWNLOAD_CAP : MAX_RESULTS,
               total: result.totalGenerated,
             })
           }}
         </p>
-        <ul class="result-list">
+        <p v-if="downloadOnly" class="empty">
+          {{ t('combiny.results.downloadHint', { count: result.combinations.length }) }}
+        </p>
+        <ul v-else class="result-list">
           <li v-for="combo in result.combinations" :key="combo">
             <code>{{ combo }}</code>
           </li>
@@ -204,6 +241,10 @@ const modeOptions: FieldMode[] = ['full', 'initial', 'both']
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
+}
+.header-actions {
+  display: inline-flex;
+  gap: 0.4rem;
 }
 .section-title {
   margin: 0;

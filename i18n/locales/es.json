@@ -82,14 +82,18 @@
       "permute": "Permutar el orden de los campos",
       "permuteHint": "Si lo activas, también se prueban combinaciones con los campos en distinto orden (apellido.nombre, etc.).",
       "subsets": "Incluir subconjuntos (combinaciones con menos campos)",
-      "subsetsHint": "Si lo activas, también se generan variantes usando solo algunos de los campos rellenados (solo nombre, solo apellido, nombre+compañía, etc.)."
+      "subsetsHint": "Si lo activas, también se generan variantes usando solo algunos de los campos rellenados (solo nombre, solo apellido, nombre+compañía, etc.).",
+      "downloadOnly": "Solo descarga (no renderizar la lista)",
+      "downloadOnlyHint": "Útil cuando hay miles de combinaciones y dibujar la lista en pantalla ralentiza el navegador. Sube el tope a 100 000 resultados."
     },
     "results": {
       "title": "Resultados ({count})",
       "empty": "Rellena al menos un campo para generar combinaciones.",
       "limited": "Se muestran las primeras {limit} de {total} combinaciones.",
       "copyAll": "Copiar todas",
-      "copied": "¡Copiado!"
+      "copied": "¡Copiado!",
+      "download": "Descargar .txt",
+      "downloadHint": "Lista oculta para no ralentizar el navegador. Pulsa Descargar para obtener un .txt con las {count} combinaciones."
     }
   },
   "scissor": {

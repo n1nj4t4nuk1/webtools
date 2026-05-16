@@ -82,14 +82,18 @@
       "permute": "Permute field order",
       "permuteHint": "When enabled, also generates combinations with fields in different orders (last.first, etc.).",
       "subsets": "Include subsets (combinations using fewer fields)",
-      "subsetsHint": "When enabled, also generates variants using only some of the filled fields (just first name, just last name, first+company, etc.)."
+      "subsetsHint": "When enabled, also generates variants using only some of the filled fields (just first name, just last name, first+company, etc.).",
+      "downloadOnly": "Download only (don't render the list)",
+      "downloadOnlyHint": "Useful when there are thousands of combinations and drawing the list slows the browser. Raises the cap to 100,000 results."
     },
     "results": {
       "title": "Results ({count})",
       "empty": "Fill in at least one field to generate combinations.",
       "limited": "Showing the first {limit} of {total} combinations.",
       "copyAll": "Copy all",
-      "copied": "Copied!"
+      "copied": "Copied!",
+      "download": "Download .txt",
+      "downloadHint": "List hidden to avoid slowing down the browser. Press Download to get a .txt with all {count} combinations."
     }
   },
   "scissor": {

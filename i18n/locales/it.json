@@ -77,14 +77,18 @@
       "permute": "Permuta l'ordine dei campi",
       "permuteHint": "Quando attivo, genera anche combinazioni con i campi in ordini diversi (cognome.nome, ecc.).",
       "subsets": "Includi sottoinsiemi (combinazioni con meno campi)",
-      "subsetsHint": "Quando attivo, genera anche varianti usando solo alcuni dei campi compilati (solo nome, solo cognome, nome+azienda, ecc.)."
+      "subsetsHint": "Quando attivo, genera anche varianti usando solo alcuni dei campi compilati (solo nome, solo cognome, nome+azienda, ecc.).",
+      "downloadOnly": "Solo download (non renderizzare la lista)",
+      "downloadOnlyHint": "Utile quando ci sono migliaia di combinazioni e disegnare la lista rallenta il browser. Alza il tetto a 100.000 risultati."
     },
     "results": {
       "title": "Risultati ({count})",
       "empty": "Compila almeno un campo per generare combinazioni.",
       "limited": "Mostrate le prime {limit} di {total} combinazioni.",
       "copyAll": "Copia tutte",
-      "copied": "Copiato!"
+      "copied": "Copiato!",
+      "download": "Scarica .txt",
+      "downloadHint": "Lista nascosta per non rallentare il browser. Clicca Scarica per ottenere un .txt con le {count} combinazioni."
     }
   },
   "scissor": {

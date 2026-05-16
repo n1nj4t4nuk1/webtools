@@ -77,14 +77,18 @@
       "permute": "排列字段顺序",
       "permuteHint": "启用后，也会生成以不同顺序排列字段的组合（姓.名 等）。",
       "subsets": "包括子集（仅使用部分字段的组合）",
-      "subsetsHint": "启用后，也会生成仅使用部分已填字段的变体（仅名、仅姓、名+公司 等）。"
+      "subsetsHint": "启用后，也会生成仅使用部分已填字段的变体（仅名、仅姓、名+公司 等）。",
+      "downloadOnly": "仅下载（不渲染列表）",
+      "downloadOnlyHint": "当组合数量达到数千条、渲染列表会拖慢浏览器时很有用。上限提高到 100 000 条结果。"
     },
     "results": {
       "title": "结果 ({count})",
       "empty": "至少填写一个字段以生成组合。",
       "limited": "显示 {total} 个组合中的前 {limit} 个。",
       "copyAll": "复制全部",
-      "copied": "已复制！"
+      "copied": "已复制！",
+      "download": "下载 .txt",
+      "downloadHint": "已隐藏列表以避免拖慢浏览器。点击下载获取包含 {count} 个组合的 .txt 文件。"
     }
   },
   "scissor": {
