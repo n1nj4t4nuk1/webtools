@@ -56,6 +56,11 @@
       "tagline": "Ekstrak halaman dari PDF",
       "description": "Pilih halaman atau rentang dari PDF dan unduh sebagai file baru. Semua di peramban Anda."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "Putar halaman PDF",
+      "description": "Putar semua halaman atau rentang tertentu sebesar 90°, 180°, atau 270°. Semua di peramban Anda."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Gabungkan kolom menjadi varian (email, nama pengguna…)",
@@ -524,6 +529,37 @@
       "copied": "Tersalin!",
       "download": "Unduh .txt",
       "downloadHint": "Daftar disembunyikan untuk menghindari peramban menjadi lambat. Tekan Unduh untuk mendapatkan .txt dengan semua {count} kombinasi."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Seret PDF ke sini atau klik untuk memilih",
+    "totalPages": "{n} halaman",
+    "angle": "Sudut putaran",
+    "angles": {
+      "90": "90° ke kanan",
+      "180": "180°",
+      "270": "90° ke kiri"
+    },
+    "rangesLabel": "Halaman untuk diputar",
+    "rangesPlaceholder": "Kosong = semua. Mis. 1-3, 5, 8-{max}",
+    "hint": "Pisahkan dengan koma, gunakan tanda hubung untuk rentang. Kosong akan memutar setiap halaman. Putaran ditumpuk pada rotasi saat ini.",
+    "preview": {
+      "pages": "Pilihan",
+      "count": "Total",
+      "none": "Tidak ada"
+    },
+    "actions": {
+      "rotate": "Putar dan unduh",
+      "processing": "Memutar…",
+      "change": "Ganti PDF"
+    },
+    "errors": {
+      "notPdf": "{name} bukan PDF.",
+      "invalidPdf": "{name} bukan PDF yang valid atau rusak.",
+      "encrypted": "PDF ini dilindungi kata sandi.",
+      "invalidTokens": "Tidak dapat mengurai: {tokens}.",
+      "outOfRange": "Di luar rentang (maks {max}): {tokens}.",
+      "generic": "Tidak dapat memutar halaman."
     }
   },
   "scissor": {

@@ -56,6 +56,11 @@
       "tagline": "Oldalak kinyerése egy PDF-ből",
       "description": "Válasszon oldalakat vagy tartományokat egy PDF-ből, és töltse le őket új fájlként. Minden a böngészőben."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "PDF oldalainak forgatása",
+      "description": "Forgassa el az összes oldalt vagy egy adott tartományt 90°, 180° vagy 270° fokkal. Mindezt a böngészőben."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Mezők kombinálása változatokká (e-mailek, felhasználónevek…)",
@@ -524,6 +529,37 @@
       "copied": "Másolva!",
       "download": ".txt letöltése",
       "downloadHint": "A lista el van rejtve, hogy ne lassítsa le a böngészőt. Nyomja meg a Letöltést, és kap egy .txt fájlt mind a(z) {count} kombinációval."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Húzzon ide egy PDF-et, vagy kattintson a kiválasztáshoz",
+    "totalPages": "{n} oldal",
+    "angle": "Forgatási szög",
+    "angles": {
+      "90": "90° jobbra",
+      "180": "180°",
+      "270": "90° balra"
+    },
+    "rangesLabel": "Forgatandó oldalak",
+    "rangesPlaceholder": "Üres = mind. pl. 1-3, 5, 8-{max}",
+    "hint": "Vesszővel válassza el, tartományhoz használjon kötőjelet. Üres mező az összes oldalt elforgatja. A forgatások a jelenlegi elforgatáshoz adódnak hozzá.",
+    "preview": {
+      "pages": "Kiválasztás",
+      "count": "Összesen",
+      "none": "Nincs"
+    },
+    "actions": {
+      "rotate": "Forgatás és letöltés",
+      "processing": "Forgatás…",
+      "change": "PDF cseréje"
+    },
+    "errors": {
+      "notPdf": "{name} nem PDF.",
+      "invalidPdf": "{name} nem érvényes PDF, vagy sérült.",
+      "encrypted": "Ez a PDF jelszóval védett.",
+      "invalidTokens": "Nem sikerült értelmezni: {tokens}.",
+      "outOfRange": "Tartományon kívül (max {max}): {tokens}.",
+      "generic": "Nem sikerült elforgatni az oldalakat."
     }
   },
   "scissor": {

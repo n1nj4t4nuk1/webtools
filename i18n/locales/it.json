@@ -51,6 +51,11 @@
       "tagline": "Estrai pagine da un PDF",
       "description": "Seleziona pagine o intervalli da un PDF e scaricale come nuovo file. Tutto nel tuo browser."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "Ruota pagine di un PDF",
+      "description": "Ruota tutte le pagine o un intervallo specifico di 90°, 180° o 270°. Tutto nel tuo browser."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Combina campi in varianti (email, username…)",
@@ -519,6 +524,37 @@
       "copied": "Copiato!",
       "download": "Scarica .txt",
       "downloadHint": "Lista nascosta per non rallentare il browser. Clicca Scarica per ottenere un .txt con le {count} combinazioni."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Trascina un PDF qui o clicca per selezionarlo",
+    "totalPages": "{n} pagine",
+    "angle": "Angolo di rotazione",
+    "angles": {
+      "90": "90° destra",
+      "180": "180°",
+      "270": "90° sinistra"
+    },
+    "rangesLabel": "Pagine da ruotare",
+    "rangesPlaceholder": "Vuoto = tutte. Es.: 1-3, 5, 8-{max}",
+    "hint": "Separa con virgole, usa trattini per gli intervalli. Vuoto ruota tutte le pagine. Le rotazioni si sommano alla rotazione attuale.",
+    "preview": {
+      "pages": "Selezione",
+      "count": "Totale",
+      "none": "Nessuna"
+    },
+    "actions": {
+      "rotate": "Ruota e scarica",
+      "processing": "Rotazione…",
+      "change": "Cambia PDF"
+    },
+    "errors": {
+      "notPdf": "{name} non è un PDF.",
+      "invalidPdf": "{name} non è un PDF valido o è danneggiato.",
+      "encrypted": "Questo PDF è protetto da password.",
+      "invalidTokens": "Impossibile interpretare: {tokens}.",
+      "outOfRange": "Fuori intervallo (max {max}): {tokens}.",
+      "generic": "Impossibile ruotare le pagine."
     }
   },
   "scissor": {

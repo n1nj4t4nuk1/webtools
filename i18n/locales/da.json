@@ -56,6 +56,11 @@
       "tagline": "Udtræk sider fra en PDF",
       "description": "Vælg sider eller intervaller fra en PDF og hent dem som en ny fil. Alt i din browser."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "Rotér sider i en PDF",
+      "description": "Rotér alle sider eller et bestemt interval med 90°, 180° eller 270°. Alt i din browser."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kombinér felter til varianter (e-mails, brugernavne…)",
@@ -524,6 +529,37 @@
       "copied": "Kopieret!",
       "download": "Hent .txt",
       "downloadHint": "Listen er skjult for ikke at gøre browseren langsom. Tryk på Hent for at få en .txt med alle {count} kombinationer."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Træk en PDF hertil, eller klik for at vælge en",
+    "totalPages": "{n} sider",
+    "angle": "Rotationsvinkel",
+    "angles": {
+      "90": "90° højre",
+      "180": "180°",
+      "270": "90° venstre"
+    },
+    "rangesLabel": "Sider der skal roteres",
+    "rangesPlaceholder": "Tom = alle. F.eks. 1-3, 5, 8-{max}",
+    "hint": "Adskil med komma, brug bindestreger til intervaller. Tom roterer alle sider. Rotationer lægges oven på den nuværende rotation.",
+    "preview": {
+      "pages": "Valg",
+      "count": "I alt",
+      "none": "Ingen"
+    },
+    "actions": {
+      "rotate": "Rotér og hent",
+      "processing": "Roterer…",
+      "change": "Skift PDF"
+    },
+    "errors": {
+      "notPdf": "{name} er ikke en PDF.",
+      "invalidPdf": "{name} er ikke en gyldig PDF eller er beskadiget.",
+      "encrypted": "Denne PDF er beskyttet med adgangskode.",
+      "invalidTokens": "Kunne ikke fortolke: {tokens}.",
+      "outOfRange": "Uden for intervallet (maks. {max}): {tokens}.",
+      "generic": "Kunne ikke rotere siderne."
     }
   },
   "scissor": {

@@ -56,6 +56,11 @@
       "tagline": "PDF'den sayfa çıkar",
       "description": "Bir PDF'den sayfa veya aralık seçin ve yeni bir dosya olarak indirin. Her şey tarayıcınızda."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "PDF sayfalarını döndür",
+      "description": "Tüm sayfaları veya belirli bir aralığı 90°, 180° veya 270° döndürün. Hepsi tarayıcınızda."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Alanları varyantlar halinde birleştir (e-postalar, kullanıcı adları…)",
@@ -524,6 +529,37 @@
       "copied": "Kopyalandı!",
       "download": ".txt indir",
       "downloadHint": "Tarayıcının yavaşlamaması için liste gizlendi. Tüm {count} kombinasyonlu bir .txt almak için İndir'e basın."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Buraya bir PDF sürükleyin veya seçmek için tıklayın",
+    "totalPages": "{n} sayfa",
+    "angle": "Döndürme açısı",
+    "angles": {
+      "90": "Sağa 90°",
+      "180": "180°",
+      "270": "Sola 90°"
+    },
+    "rangesLabel": "Döndürülecek sayfalar",
+    "rangesPlaceholder": "Boş = tümü. Örn. 1-3, 5, 8-{max}",
+    "hint": "Virgülle ayırın, aralıklar için tire kullanın. Boş bırakırsanız tüm sayfalar döndürülür. Döndürmeler mevcut döndürmenin üzerine eklenir.",
+    "preview": {
+      "pages": "Seçim",
+      "count": "Toplam",
+      "none": "Yok"
+    },
+    "actions": {
+      "rotate": "Döndür ve indir",
+      "processing": "Döndürülüyor…",
+      "change": "PDF değiştir"
+    },
+    "errors": {
+      "notPdf": "{name} bir PDF değil.",
+      "invalidPdf": "{name} geçerli bir PDF değil veya bozuk.",
+      "encrypted": "Bu PDF parola korumalı.",
+      "invalidTokens": "Çözümlenemedi: {tokens}.",
+      "outOfRange": "Aralık dışı (maksimum {max}): {tokens}.",
+      "generic": "Sayfalar döndürülemedi."
     }
   },
   "scissor": {

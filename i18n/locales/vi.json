@@ -56,6 +56,11 @@
       "tagline": "Trích xuất trang từ PDF",
       "description": "Chọn các trang hoặc phạm vi từ PDF và tải về dưới dạng tệp mới. Mọi thứ trong trình duyệt."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "Xoay các trang của PDF",
+      "description": "Xoay tất cả các trang hoặc một phạm vi cụ thể 90°, 180° hoặc 270°. Tất cả trong trình duyệt của bạn."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kết hợp các trường thành biến thể (email, tên người dùng…)",
@@ -524,6 +529,37 @@
       "copied": "Đã sao chép!",
       "download": "Tải .txt",
       "downloadHint": "Danh sách bị ẩn để tránh làm chậm trình duyệt. Nhấn Tải về để lấy một tệp .txt với tất cả {count} kết hợp."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Kéo PDF vào đây hoặc nhấp để chọn",
+    "totalPages": "{n} trang",
+    "angle": "Góc xoay",
+    "angles": {
+      "90": "90° sang phải",
+      "180": "180°",
+      "270": "90° sang trái"
+    },
+    "rangesLabel": "Trang cần xoay",
+    "rangesPlaceholder": "Để trống = tất cả. Ví dụ 1-3, 5, 8-{max}",
+    "hint": "Phân tách bằng dấu phẩy, dùng dấu gạch nối cho phạm vi. Để trống sẽ xoay mọi trang. Các phép xoay cộng dồn với góc xoay hiện tại.",
+    "preview": {
+      "pages": "Lựa chọn",
+      "count": "Tổng",
+      "none": "Không có"
+    },
+    "actions": {
+      "rotate": "Xoay và tải về",
+      "processing": "Đang xoay…",
+      "change": "Đổi PDF"
+    },
+    "errors": {
+      "notPdf": "{name} không phải là PDF.",
+      "invalidPdf": "{name} không phải là PDF hợp lệ hoặc bị hỏng.",
+      "encrypted": "PDF này được bảo vệ bằng mật khẩu.",
+      "invalidTokens": "Không thể phân tích: {tokens}.",
+      "outOfRange": "Ngoài phạm vi (tối đa {max}): {tokens}.",
+      "generic": "Không thể xoay các trang."
     }
   },
   "scissor": {

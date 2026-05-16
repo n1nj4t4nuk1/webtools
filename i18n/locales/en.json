@@ -56,6 +56,11 @@
       "tagline": "Extract pages from a PDF",
       "description": "Pick pages or ranges from a PDF and download them as a new file. Everything in your browser."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "Rotate pages of a PDF",
+      "description": "Rotate all pages or a specific range by 90°, 180° or 270°. All in your browser."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Combine fields into variants (emails, usernames…)",
@@ -524,6 +529,37 @@
       "copied": "Copied!",
       "download": "Download .txt",
       "downloadHint": "List hidden to avoid slowing down the browser. Press Download to get a .txt with all {count} combinations."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Drag a PDF here or click to select one",
+    "totalPages": "{n} pages",
+    "angle": "Rotation angle",
+    "angles": {
+      "90": "90° right",
+      "180": "180°",
+      "270": "90° left"
+    },
+    "rangesLabel": "Pages to rotate",
+    "rangesPlaceholder": "Empty = all. e.g. 1-3, 5, 8-{max}",
+    "hint": "Separate with commas, use dashes for ranges. Empty rotates every page. Rotations stack on top of the current rotation.",
+    "preview": {
+      "pages": "Selection",
+      "count": "Total",
+      "none": "None"
+    },
+    "actions": {
+      "rotate": "Rotate and download",
+      "processing": "Rotating…",
+      "change": "Change PDF"
+    },
+    "errors": {
+      "notPdf": "{name} is not a PDF.",
+      "invalidPdf": "{name} is not a valid PDF or is corrupted.",
+      "encrypted": "This PDF is password-protected.",
+      "invalidTokens": "Could not parse: {tokens}.",
+      "outOfRange": "Out of range (max {max}): {tokens}.",
+      "generic": "Could not rotate the pages."
     }
   },
   "scissor": {

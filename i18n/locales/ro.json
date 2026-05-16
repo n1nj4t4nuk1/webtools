@@ -56,6 +56,11 @@
       "tagline": "Extrage pagini dintr-un PDF",
       "description": "Alege pagini sau intervale dintr-un PDF și descarcă-le ca fișier nou. Totul în browserul tău."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "Rotește paginile unui PDF",
+      "description": "Rotește toate paginile sau un interval specific cu 90°, 180° sau 270°. Totul în browserul tău."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Combină câmpuri în variante (e-mailuri, nume de utilizator…)",
@@ -524,6 +529,37 @@
       "copied": "Copiat!",
       "download": "Descarcă .txt",
       "downloadHint": "Lista este ascunsă pentru a nu încetini browserul. Apasă Descarcă pentru a obține un .txt cu toate cele {count} combinații."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Trage un PDF aici sau apasă pentru a selecta unul",
+    "totalPages": "{n} pagini",
+    "angle": "Unghi de rotație",
+    "angles": {
+      "90": "90° dreapta",
+      "180": "180°",
+      "270": "90° stânga"
+    },
+    "rangesLabel": "Pagini de rotit",
+    "rangesPlaceholder": "Gol = toate. ex. 1-3, 5, 8-{max}",
+    "hint": "Separă cu virgule, folosește cratima pentru intervale. Gol rotește toate paginile. Rotațiile se adaugă peste rotația curentă.",
+    "preview": {
+      "pages": "Selecție",
+      "count": "Total",
+      "none": "Niciuna"
+    },
+    "actions": {
+      "rotate": "Rotește și descarcă",
+      "processing": "Se rotește…",
+      "change": "Schimbă PDF-ul"
+    },
+    "errors": {
+      "notPdf": "{name} nu este un PDF.",
+      "invalidPdf": "{name} nu este un PDF valid sau este corupt.",
+      "encrypted": "Acest PDF este protejat cu parolă.",
+      "invalidTokens": "Nu s-a putut interpreta: {tokens}.",
+      "outOfRange": "În afara intervalului (max {max}): {tokens}.",
+      "generic": "Nu s-au putut roti paginile."
     }
   },
   "scissor": {

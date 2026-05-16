@@ -56,6 +56,11 @@
       "tagline": "Trekk ut sider fra en PDF",
       "description": "Velg sider eller områder fra en PDF og last dem ned som en ny fil. Alt i nettleseren din."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "Roter sider i en PDF",
+      "description": "Roter alle sider eller et bestemt område med 90°, 180° eller 270°. Alt i nettleseren din."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kombiner felter til varianter (e-poster, brukernavn…)",
@@ -524,6 +529,37 @@
       "copied": "Kopiert!",
       "download": "Last ned .txt",
       "downloadHint": "Listen er skjult for å unngå å gjøre nettleseren treg. Trykk Last ned for å få en .txt med alle {count} kombinasjoner."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Dra en PDF hit eller klikk for å velge en",
+    "totalPages": "{n} sider",
+    "angle": "Rotasjonsvinkel",
+    "angles": {
+      "90": "90° høyre",
+      "180": "180°",
+      "270": "90° venstre"
+    },
+    "rangesLabel": "Sider som skal roteres",
+    "rangesPlaceholder": "Tom = alle. F.eks. 1-3, 5, 8-{max}",
+    "hint": "Separer med komma, bruk bindestreker for områder. Tom roterer alle sider. Rotasjoner legges oppå gjeldende rotasjon.",
+    "preview": {
+      "pages": "Valg",
+      "count": "Totalt",
+      "none": "Ingen"
+    },
+    "actions": {
+      "rotate": "Roter og last ned",
+      "processing": "Roterer…",
+      "change": "Bytt PDF"
+    },
+    "errors": {
+      "notPdf": "{name} er ikke en PDF.",
+      "invalidPdf": "{name} er ikke en gyldig PDF eller er skadet.",
+      "encrypted": "Denne PDF-en er passordbeskyttet.",
+      "invalidTokens": "Kunne ikke tolke: {tokens}.",
+      "outOfRange": "Utenfor området (maks {max}): {tokens}.",
+      "generic": "Kunne ikke rotere sidene."
     }
   },
   "scissor": {

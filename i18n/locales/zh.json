@@ -51,6 +51,11 @@
       "tagline": "从 PDF 提取页面",
       "description": "从 PDF 中选择页面或范围并下载为新文件。所有处理都在您的浏览器中完成。"
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "旋转 PDF 页面",
+      "description": "将所有页面或特定范围旋转 90°、180° 或 270°。所有处理都在您的浏览器中完成。"
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "组合字段生成变体（邮箱、用户名…）",
@@ -519,6 +524,37 @@
       "copied": "已复制！",
       "download": "下载 .txt",
       "downloadHint": "已隐藏列表以避免拖慢浏览器。点击下载获取包含 {count} 个组合的 .txt 文件。"
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "将 PDF 拖到此处，或点击选择",
+    "totalPages": "{n} 页",
+    "angle": "旋转角度",
+    "angles": {
+      "90": "右转 90°",
+      "180": "180°",
+      "270": "左转 90°"
+    },
+    "rangesLabel": "要旋转的页面",
+    "rangesPlaceholder": "留空 = 全部。例如：1-3, 5, 8-{max}",
+    "hint": "用逗号分隔，连字符表示范围。留空旋转所有页面。旋转会叠加到当前角度。",
+    "preview": {
+      "pages": "选择",
+      "count": "总计",
+      "none": "无"
+    },
+    "actions": {
+      "rotate": "旋转并下载",
+      "processing": "旋转中…",
+      "change": "更换 PDF"
+    },
+    "errors": {
+      "notPdf": "{name} 不是 PDF 文件。",
+      "invalidPdf": "{name} 不是有效的 PDF 或已损坏。",
+      "encrypted": "此 PDF 受密码保护。",
+      "invalidTokens": "无法解析：{tokens}。",
+      "outOfRange": "超出范围（最大 {max}）：{tokens}。",
+      "generic": "无法旋转页面。"
     }
   },
   "scissor": {

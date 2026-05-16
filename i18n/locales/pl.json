@@ -56,6 +56,11 @@
       "tagline": "Wyodrębniaj strony z PDF",
       "description": "Wybierz strony lub zakresy z PDF i pobierz je jako nowy plik. Wszystko w Twojej przeglądarce."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "Obracaj strony PDF",
+      "description": "Obróć wszystkie strony lub wybrany zakres o 90°, 180° lub 270°. Wszystko w Twojej przeglądarce."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Łącz pola w warianty (e-maile, nazwy użytkownika…)",
@@ -524,6 +529,37 @@
       "copied": "Skopiowano!",
       "download": "Pobierz .txt",
       "downloadHint": "Lista ukryta, aby nie spowalniać przeglądarki. Naciśnij Pobierz, aby otrzymać .txt ze wszystkimi {count} kombinacjami."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Przeciągnij tutaj PDF lub kliknij, aby go wybrać",
+    "totalPages": "{n} stron",
+    "angle": "Kąt obrotu",
+    "angles": {
+      "90": "90° w prawo",
+      "180": "180°",
+      "270": "90° w lewo"
+    },
+    "rangesLabel": "Strony do obrócenia",
+    "rangesPlaceholder": "Puste = wszystkie. Np. 1-3, 5, 8-{max}",
+    "hint": "Oddzielaj przecinkami, używaj myślników dla zakresów. Puste pole obraca każdą stronę. Obroty kumulują się z bieżącą rotacją.",
+    "preview": {
+      "pages": "Wybór",
+      "count": "Razem",
+      "none": "Brak"
+    },
+    "actions": {
+      "rotate": "Obróć i pobierz",
+      "processing": "Obracanie…",
+      "change": "Zmień PDF"
+    },
+    "errors": {
+      "notPdf": "{name} nie jest plikiem PDF.",
+      "invalidPdf": "{name} nie jest prawidłowym PDF lub jest uszkodzony.",
+      "encrypted": "Ten PDF jest chroniony hasłem.",
+      "invalidTokens": "Nie udało się przeanalizować: {tokens}.",
+      "outOfRange": "Poza zakresem (maks. {max}): {tokens}.",
+      "generic": "Nie udało się obrócić stron."
     }
   },
   "scissor": {

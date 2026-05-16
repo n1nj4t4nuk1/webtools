@@ -56,6 +56,11 @@
       "tagline": "Extrahera sidor från en PDF",
       "description": "Välj sidor eller intervall från en PDF och ladda ner dem som en ny fil. Allt i din webbläsare."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "Rotera sidor i en PDF",
+      "description": "Rotera alla sidor eller ett specifikt intervall med 90°, 180° eller 270°. Allt i din webbläsare."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kombinera fält till varianter (e-post, användarnamn…)",
@@ -524,6 +529,37 @@
       "copied": "Kopierat!",
       "download": "Ladda ner .txt",
       "downloadHint": "Listan är dold för att inte sakta ner webbläsaren. Tryck på Ladda ner för att få en .txt med alla {count} kombinationer."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Dra en PDF hit eller klicka för att välja en",
+    "totalPages": "{n} sidor",
+    "angle": "Rotationsvinkel",
+    "angles": {
+      "90": "90° höger",
+      "180": "180°",
+      "270": "90° vänster"
+    },
+    "rangesLabel": "Sidor att rotera",
+    "rangesPlaceholder": "Tomt = alla. t.ex. 1-3, 5, 8-{max}",
+    "hint": "Separera med kommatecken, använd bindestreck för intervall. Tomt roterar alla sidor. Rotationerna läggs ovanpå den nuvarande rotationen.",
+    "preview": {
+      "pages": "Urval",
+      "count": "Totalt",
+      "none": "Inga"
+    },
+    "actions": {
+      "rotate": "Rotera och ladda ner",
+      "processing": "Roterar…",
+      "change": "Byt PDF"
+    },
+    "errors": {
+      "notPdf": "{name} är inte en PDF.",
+      "invalidPdf": "{name} är inte en giltig PDF eller är skadad.",
+      "encrypted": "Den här PDF:en är lösenordsskyddad.",
+      "invalidTokens": "Kunde inte tolka: {tokens}.",
+      "outOfRange": "Utanför intervallet (max {max}): {tokens}.",
+      "generic": "Kunde inte rotera sidorna."
     }
   },
   "scissor": {

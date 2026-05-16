@@ -56,6 +56,11 @@
       "tagline": "Extraire des pages d'un PDF",
       "description": "Sélectionnez des pages ou des plages d'un PDF et téléchargez-les dans un nouveau fichier. Tout dans votre navigateur."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "Faire pivoter les pages d'un PDF",
+      "description": "Faites pivoter toutes les pages ou une plage spécifique de 90°, 180° ou 270°. Le tout dans votre navigateur."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Combiner des champs en variantes (e-mails, identifiants…)",
@@ -524,6 +529,37 @@
       "copied": "Copié !",
       "download": "Télécharger .txt",
       "downloadHint": "Liste masquée pour ne pas ralentir le navigateur. Appuyez sur Télécharger pour obtenir un .txt avec les {count} combinaisons."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Glissez un PDF ici ou cliquez pour en sélectionner un",
+    "totalPages": "{n} pages",
+    "angle": "Angle de rotation",
+    "angles": {
+      "90": "90° à droite",
+      "180": "180°",
+      "270": "90° à gauche"
+    },
+    "rangesLabel": "Pages à faire pivoter",
+    "rangesPlaceholder": "Vide = toutes. Ex. 1-3, 5, 8-{max}",
+    "hint": "Séparez par des virgules, utilisez le tiret pour les plages. Vide fait pivoter toutes les pages. Les rotations s'ajoutent à la rotation actuelle.",
+    "preview": {
+      "pages": "Sélection",
+      "count": "Total",
+      "none": "Aucune"
+    },
+    "actions": {
+      "rotate": "Faire pivoter et télécharger",
+      "processing": "Rotation…",
+      "change": "Changer de PDF"
+    },
+    "errors": {
+      "notPdf": "{name} n'est pas un PDF.",
+      "invalidPdf": "{name} n'est pas un PDF valide ou il est corrompu.",
+      "encrypted": "Ce PDF est protégé par mot de passe.",
+      "invalidTokens": "Impossible d'analyser : {tokens}.",
+      "outOfRange": "Hors plage (max {max}) : {tokens}.",
+      "generic": "Impossible de faire pivoter les pages."
     }
   },
   "scissor": {

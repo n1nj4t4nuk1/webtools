@@ -56,6 +56,11 @@
       "tagline": "Extrahování stránek z PDF",
       "description": "Vyberte stránky nebo rozsahy z PDF a stáhněte je jako nový soubor. Vše ve vašem prohlížeči."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "Otáčení stránek PDF",
+      "description": "Otočte všechny stránky nebo konkrétní rozsah o 90°, 180° nebo 270°. Vše ve vašem prohlížeči."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kombinování polí do variant (e-maily, uživatelská jména…)",
@@ -524,6 +529,37 @@
       "copied": "Zkopírováno!",
       "download": "Stáhnout .txt",
       "downloadHint": "Seznam skryt, aby se nezpomalil prohlížeč. Stiskněte Stáhnout pro získání .txt se všemi {count} kombinacemi."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Přetáhněte sem PDF nebo klikněte pro výběr",
+    "totalPages": "{n} stránek",
+    "angle": "Úhel otočení",
+    "angles": {
+      "90": "90° vpravo",
+      "180": "180°",
+      "270": "90° vlevo"
+    },
+    "rangesLabel": "Stránky k otočení",
+    "rangesPlaceholder": "Prázdné = všechny. např. 1-3, 5, 8-{max}",
+    "hint": "Oddělte čárkami, pro rozsahy použijte pomlčky. Prázdné otočí každou stránku. Otočení se přičítají k aktuálnímu otočení.",
+    "preview": {
+      "pages": "Výběr",
+      "count": "Celkem",
+      "none": "Žádné"
+    },
+    "actions": {
+      "rotate": "Otočit a stáhnout",
+      "processing": "Otáčení…",
+      "change": "Změnit PDF"
+    },
+    "errors": {
+      "notPdf": "{name} není PDF.",
+      "invalidPdf": "{name} není platný PDF nebo je poškozen.",
+      "encrypted": "Tento PDF je chráněn heslem.",
+      "invalidTokens": "Nelze zpracovat: {tokens}.",
+      "outOfRange": "Mimo rozsah (max {max}): {tokens}.",
+      "generic": "Stránky nelze otočit."
     }
   },
   "scissor": {

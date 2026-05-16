@@ -56,6 +56,11 @@
       "tagline": "Seiten aus einer PDF extrahieren",
       "description": "Wählen Sie Seiten oder Bereiche aus einer PDF aus und laden Sie sie als neue Datei herunter. Alles im Browser."
     },
+    "pdfspinner": {
+      "name": "PdfSpinner",
+      "tagline": "Seiten einer PDF drehen",
+      "description": "Drehen Sie alle Seiten oder einen bestimmten Bereich um 90°, 180° oder 270°. Alles in Ihrem Browser."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Felder zu Varianten kombinieren (E-Mails, Benutzernamen…)",
@@ -524,6 +529,37 @@
       "copied": "Kopiert!",
       "download": "Als .txt herunterladen",
       "downloadHint": "Liste ausgeblendet, um den Browser nicht zu verlangsamen. Klicken Sie auf Herunterladen, um eine .txt mit allen {count} Kombinationen zu erhalten."
+    }
+  },
+  "pdfspinner": {
+    "dropzone": "Ziehen Sie eine PDF hierher oder klicken Sie, um eine auszuwählen",
+    "totalPages": "{n} Seiten",
+    "angle": "Drehwinkel",
+    "angles": {
+      "90": "90° nach rechts",
+      "180": "180°",
+      "270": "90° nach links"
+    },
+    "rangesLabel": "Zu drehende Seiten",
+    "rangesPlaceholder": "Leer = alle. Z. B. 1-3, 5, 8-{max}",
+    "hint": "Mit Kommas trennen, Bindestriche für Bereiche verwenden. Leer dreht jede Seite. Drehungen werden zur aktuellen Drehung addiert.",
+    "preview": {
+      "pages": "Auswahl",
+      "count": "Gesamt",
+      "none": "Keine"
+    },
+    "actions": {
+      "rotate": "Drehen und herunterladen",
+      "processing": "Drehe…",
+      "change": "PDF wechseln"
+    },
+    "errors": {
+      "notPdf": "{name} ist keine PDF.",
+      "invalidPdf": "{name} ist keine gültige PDF oder ist beschädigt.",
+      "encrypted": "Diese PDF ist passwortgeschützt.",
+      "invalidTokens": "Konnte nicht analysiert werden: {tokens}.",
+      "outOfRange": "Außerhalb des Bereichs (max {max}): {tokens}.",
+      "generic": "Seiten konnten nicht gedreht werden."
     }
   },
   "scissor": {
