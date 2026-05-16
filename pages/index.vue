@@ -4,6 +4,7 @@ const localePath = useLocalePath()
 
 const categoriesRaw = [
   { id: 'imageEdit', tools: ['mochi', 'metaimg'] },
+  { id: 'documents', tools: ['stapler'] },
   { id: 'privacy', tools: ['metaimg', 'createpass', 'hashy'] },
   { id: 'generators', tools: ['createpass', 'idkun'] },
 ] as const
@@ -14,6 +15,7 @@ const toolPaths: Record<string, string> = {
   createpass: '/createpass',
   hashy: '/hashy',
   idkun: '/idkun',
+  stapler: '/stapler',
 }
 
 const categories = computed(() =>

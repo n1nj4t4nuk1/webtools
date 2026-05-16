@@ -7,6 +7,7 @@
     "description": "Coleção de utilitários web sem servidor. Seus arquivos nunca saem do seu dispositivo.",
     "categories": {
       "imageEdit": "Edição de imagens",
+      "documents": "Documentos",
       "privacy": "Privacidade",
       "generators": "Geradores"
     }
@@ -31,6 +32,32 @@
       "name": "Hashy",
       "tagline": "Calcule hashes e verifique integridade",
       "description": "SHA-1, SHA-256, SHA-384 e SHA-512 de texto ou arquivos. Compare com um hash esperado para verificar downloads."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Una vários PDFs em um",
+      "description": "Combine vários arquivos PDF em um só, na ordem que quiser. Tudo é processado no seu navegador."
+    }
+  },
+  "stapler": {
+    "dropzone": "Arraste PDFs aqui ou clique para selecionar",
+    "list": {
+      "title": "{count} arquivos · {pages} páginas no total",
+      "pages": "{n} páginas"
+    },
+    "actions": {
+      "merge": "Unir PDFs",
+      "processing": "Unindo…",
+      "clear": "Remover todos",
+      "moveUp": "Mover para cima",
+      "moveDown": "Mover para baixo",
+      "remove": "Remover"
+    },
+    "errors": {
+      "notPdf": "{name} não é um PDF.",
+      "invalidPdf": "{name} não é um PDF válido ou está corrompido.",
+      "encrypted": "{name} está protegido por senha.",
+      "generic": "Não foi possível unir os PDFs."
     }
   },
   "createpass": {

@@ -11,6 +11,7 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
+    "pdf-lib": "^1.17.1",
     "piexifjs": "^1.0.6",
     "vue": "^3.5.0",
     "vue-router": "^4.4.0"

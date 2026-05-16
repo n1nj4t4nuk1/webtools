@@ -7,6 +7,7 @@
     "description": "Colección de utilidades web sin servidor. Tus archivos nunca salen de tu dispositivo.",
     "categories": {
       "imageEdit": "Edición de imágenes",
+      "documents": "Documentos",
       "privacy": "Privacidad",
       "generators": "Generadores"
     }
@@ -36,6 +37,32 @@
       "name": "Idkun",
       "tagline": "Genera identificadores únicos",
       "description": "UUID v4, UUID v7, UUID NIL, ULID y NanoID. Generación criptográficamente segura en tu navegador."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Une varios PDFs en uno",
+      "description": "Combina varios archivos PDF en uno solo, en el orden que quieras. Todo se procesa en tu navegador."
+    }
+  },
+  "stapler": {
+    "dropzone": "Arrastra PDFs aquí o haz clic para seleccionarlos",
+    "list": {
+      "title": "{count} archivos · {pages} páginas en total",
+      "pages": "{n} páginas"
+    },
+    "actions": {
+      "merge": "Unir PDFs",
+      "processing": "Uniendo…",
+      "clear": "Quitar todos",
+      "moveUp": "Mover arriba",
+      "moveDown": "Mover abajo",
+      "remove": "Quitar"
+    },
+    "errors": {
+      "notPdf": "{name} no es un PDF.",
+      "invalidPdf": "{name} no es un PDF válido o está dañado.",
+      "encrypted": "{name} está protegido con contraseña.",
+      "generic": "No se ha podido unir los PDFs."
     }
   },
   "createpass": {

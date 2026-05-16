@@ -7,6 +7,7 @@
     "description": "A collection of serverless web utilities. Your files never leave your device.",
     "categories": {
       "imageEdit": "Image editing",
+      "documents": "Documents",
       "privacy": "Privacy",
       "generators": "Generators"
     }
@@ -36,6 +37,32 @@
       "name": "Idkun",
       "tagline": "Generate unique identifiers",
       "description": "UUID v4, UUID v7, UUID NIL, ULID and NanoID. Cryptographically secure generation in your browser."
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "Merge multiple PDFs into one",
+      "description": "Combine several PDF files into a single one, in any order. Everything is processed in your browser."
+    }
+  },
+  "stapler": {
+    "dropzone": "Drag PDFs here or click to select them",
+    "list": {
+      "title": "{count} files · {pages} total pages",
+      "pages": "{n} pages"
+    },
+    "actions": {
+      "merge": "Merge PDFs",
+      "processing": "Merging…",
+      "clear": "Remove all",
+      "moveUp": "Move up",
+      "moveDown": "Move down",
+      "remove": "Remove"
+    },
+    "errors": {
+      "notPdf": "{name} is not a PDF.",
+      "invalidPdf": "{name} is not a valid PDF or is corrupted.",
+      "encrypted": "{name} is password-protected.",
+      "generic": "Could not merge the PDFs."
     }
   },
   "createpass": {

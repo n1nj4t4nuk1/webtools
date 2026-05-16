@@ -7,6 +7,7 @@
     "description": "一系列无需服务器的网络实用工具。您的文件永远不会离开您的设备。",
     "categories": {
       "imageEdit": "图片编辑",
+      "documents": "文档",
       "privacy": "隐私",
       "generators": "生成器"
     }
@@ -31,6 +32,32 @@
       "name": "Hashy",
       "tagline": "计算哈希并验证完整性",
       "description": "计算文本或文件的 SHA-1、SHA-256、SHA-384 和 SHA-512 哈希。与期望的哈希值比较以验证下载。"
+    },
+    "stapler": {
+      "name": "Stapler",
+      "tagline": "将多个 PDF 合并为一个",
+      "description": "按您想要的顺序将多个 PDF 文件合并为一个。所有处理都在您的浏览器中完成。"
+    }
+  },
+  "stapler": {
+    "dropzone": "将 PDF 拖到此处，或点击选择",
+    "list": {
+      "title": "{count} 个文件 · 共 {pages} 页",
+      "pages": "{n} 页"
+    },
+    "actions": {
+      "merge": "合并 PDF",
+      "processing": "合并中…",
+      "clear": "全部移除",
+      "moveUp": "上移",
+      "moveDown": "下移",
+      "remove": "移除"
+    },
+    "errors": {
+      "notPdf": "{name} 不是 PDF 文件。",
+      "invalidPdf": "{name} 不是有效的 PDF 或已损坏。",
+      "encrypted": "{name} 受密码保护。",
+      "generic": "无法合并 PDF。"
     }
   },
   "createpass": {
