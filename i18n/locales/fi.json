@@ -86,6 +86,11 @@
       "tagline": "Koodaa ja dekoodaa URL-osoitteita",
       "description": "Koodaa tai dekoodaa tekstiä ja URL-osoitteita. Automaattinen tunnistus ja kaksi varianttia (täysi URI tai komponentti). Kaikki selaimessasi."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Koodaa teksti useaan muotoon kerralla",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex ja Base58. Muokkaa mitä tahansa muotoa, ja muut päivittyvät välittömästi."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-liukuvärigeneraattori",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Kopioi",
       "copied": "Kopioitu!"
+    }
+  },
+  "codecpad": {
+    "title": "Koodaukset",
+    "codecs": {
+      "utf8": "UTF-8-teksti",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Tavallinen UTF-8-teksti",
+      "base64": "Vakio Base64 (RFC 4648)",
+      "base64url": "Base64 ilman URL-osoitteessa epäturvallisia merkkejä",
+      "base32": "Base32 RFC 4648 (käytetään OTP:ssä)",
+      "hex": "Heksadesimaali (Base16)",
+      "base58": "Ei moniselitteisiä merkkejä (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "Lisää koodauksia",
+      "hint": "Napsauta \"Lisää\" näyttääksesi lisäkoodauksia."
+    },
+    "actions": {
+      "clear": "Tyhjennä",
+      "copy": "Kopioi",
+      "copied": "Kopioitu!",
+      "addCodec": "Lisää",
+      "removeCodec": "Poista koodaus"
+    },
+    "errors": {
+      "invalid": "Virheellinen arvo koodaukselle {codec}.",
+      "nonRepresentable": "Tavut eivät ole esitettävissä tässä muodossa"
     }
   },
   "urlpad": {

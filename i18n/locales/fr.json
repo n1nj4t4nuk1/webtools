@@ -86,6 +86,11 @@
       "tagline": "Encoder et décoder des URL",
       "description": "Encodez ou décodez du texte et des URL. Détection automatique et deux variantes (URI complète ou composant). Le tout dans votre navigateur."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Encoder du texte en plusieurs formats à la fois",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex et Base58. Modifiez n'importe quel format et les autres se mettent à jour instantanément."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Générateur de dégradés CSS",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Copier",
       "copied": "Copié !"
+    }
+  },
+  "codecpad": {
+    "title": "Encodages",
+    "codecs": {
+      "utf8": "Texte UTF-8",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Texte UTF-8 brut",
+      "base64": "Base64 standard (RFC 4648)",
+      "base64url": "Base64 sans caractères non sûrs pour les URL",
+      "base32": "Base32 RFC 4648 (utilisé par OTP)",
+      "hex": "Hexadécimal (Base16)",
+      "base58": "Sans caractères ambigus (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "Plus d'encodages",
+      "hint": "Cliquez sur « Ajouter » pour afficher des encodages supplémentaires."
+    },
+    "actions": {
+      "clear": "Effacer",
+      "copy": "Copier",
+      "copied": "Copié !",
+      "addCodec": "Ajouter",
+      "removeCodec": "Supprimer l'encodage"
+    },
+    "errors": {
+      "invalid": "Valeur invalide pour {codec}.",
+      "nonRepresentable": "Les octets ne sont pas représentables dans ce format"
     }
   },
   "urlpad": {

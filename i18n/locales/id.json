@@ -86,6 +86,11 @@
       "tagline": "Enkode dan dekode URL",
       "description": "Enkode atau dekode teks dan URL. Deteksi otomatis dan dua varian (URI penuh atau komponen). Semua di peramban Anda."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Enkode teks dalam beberapa format sekaligus",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex, dan Base58. Edit format apa pun dan yang lain akan diperbarui secara instan."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generator gradien CSS",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Salin",
       "copied": "Tersalin!"
+    }
+  },
+  "codecpad": {
+    "title": "Pengkodean",
+    "codecs": {
+      "utf8": "Teks UTF-8",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Teks UTF-8 biasa",
+      "base64": "Base64 standar (RFC 4648)",
+      "base64url": "Base64 tanpa karakter yang tidak aman untuk URL",
+      "base32": "Base32 RFC 4648 (digunakan oleh OTP)",
+      "hex": "Heksadesimal (Base16)",
+      "base58": "Tanpa karakter ambigu (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "Pengkodean lainnya",
+      "hint": "Klik \"Tambah\" untuk menampilkan pengkodean tambahan."
+    },
+    "actions": {
+      "clear": "Bersihkan",
+      "copy": "Salin",
+      "copied": "Tersalin!",
+      "addCodec": "Tambah",
+      "removeCodec": "Hapus pengkodean"
+    },
+    "errors": {
+      "invalid": "Nilai tidak valid untuk {codec}.",
+      "nonRepresentable": "Byte tidak dapat direpresentasikan dalam format ini"
     }
   },
   "urlpad": {

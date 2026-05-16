@@ -86,6 +86,11 @@
       "tagline": "URL एनकोड और डिकोड करें",
       "description": "टेक्स्ट और URL को एनकोड या डिकोड करें। स्वचालित पहचान और दो वेरिएंट (पूर्ण URI या कंपोनेंट)। सब कुछ आपके ब्राउज़र में।"
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "एक साथ कई फ़ॉर्मेट में टेक्स्ट एनकोड करें",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex और Base58। किसी भी फ़ॉर्मेट को संपादित करें और बाकी तुरंत अपडेट हो जाते हैं।"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS ग्रेडिएंट जनरेटर",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "कॉपी करें",
       "copied": "कॉपी हो गया!"
+    }
+  },
+  "codecpad": {
+    "title": "एनकोडिंग",
+    "codecs": {
+      "utf8": "UTF-8 टेक्स्ट",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "सादा UTF-8 टेक्स्ट",
+      "base64": "मानक Base64 (RFC 4648)",
+      "base64url": "URL के लिए असुरक्षित वर्णों के बिना Base64",
+      "base32": "Base32 RFC 4648 (OTP द्वारा उपयोग किया जाता है)",
+      "hex": "षोडशाधारी (Base16)",
+      "base58": "कोई अस्पष्ट वर्ण नहीं (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "अधिक एनकोडिंग",
+      "hint": "अतिरिक्त एनकोडिंग दिखाने के लिए \"जोड़ें\" पर क्लिक करें।"
+    },
+    "actions": {
+      "clear": "साफ़ करें",
+      "copy": "कॉपी करें",
+      "copied": "कॉपी हो गया!",
+      "addCodec": "जोड़ें",
+      "removeCodec": "एनकोडिंग हटाएं"
+    },
+    "errors": {
+      "invalid": "{codec} के लिए अमान्य मान।",
+      "nonRepresentable": "बाइट्स इस फ़ॉर्मेट में प्रतिनिधित्व योग्य नहीं हैं"
     }
   },
   "urlpad": {

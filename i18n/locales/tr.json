@@ -86,6 +86,11 @@
       "tagline": "URL kodla ve çöz",
       "description": "Metin ve URL'leri kodlayın veya çözün. Otomatik algılama ve iki varyant (tam URI veya bileşen). Hepsi tarayıcınızda."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Metni birden fazla formatta aynı anda kodla",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex ve Base58. Herhangi bir formatı düzenleyin ve diğerleri anında güncellensin."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS gradyan üreteci",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Kopyala",
       "copied": "Kopyalandı!"
+    }
+  },
+  "codecpad": {
+    "title": "Kodlamalar",
+    "codecs": {
+      "utf8": "UTF-8 metin",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Düz UTF-8 metin",
+      "base64": "Standart Base64 (RFC 4648)",
+      "base64url": "URL için güvenli olmayan karakterler içermeyen Base64",
+      "base32": "Base32 RFC 4648 (OTP tarafından kullanılır)",
+      "hex": "Onaltılı (Base16)",
+      "base58": "Belirsiz karakter yok (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "Daha fazla kodlama",
+      "hint": "Ek kodlamaları göstermek için \"Ekle\"ye tıklayın."
+    },
+    "actions": {
+      "clear": "Temizle",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "addCodec": "Ekle",
+      "removeCodec": "Kodlamayı kaldır"
+    },
+    "errors": {
+      "invalid": "{codec} için geçersiz değer.",
+      "nonRepresentable": "Baytlar bu formatta temsil edilemez"
     }
   },
   "urlpad": {

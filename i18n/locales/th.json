@@ -86,6 +86,11 @@
       "tagline": "เข้ารหัสและถอดรหัส URL",
       "description": "เข้ารหัสหรือถอดรหัสข้อความและ URL ตรวจจับอัตโนมัติและมีสองรูปแบบ (URI ทั้งหมดหรือคอมโพเนนต์) ทั้งหมดในเบราว์เซอร์ของคุณ"
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "เข้ารหัสข้อความในหลายรูปแบบพร้อมกัน",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex และ Base58 แก้ไขรูปแบบใดก็ได้ แล้วรูปแบบอื่นๆ จะอัปเดตทันที"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "ตัวสร้างไล่ระดับสี CSS",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "คัดลอก",
       "copied": "คัดลอกแล้ว!"
+    }
+  },
+  "codecpad": {
+    "title": "การเข้ารหัส",
+    "codecs": {
+      "utf8": "ข้อความ UTF-8",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "ข้อความ UTF-8 ธรรมดา",
+      "base64": "Base64 มาตรฐาน (RFC 4648)",
+      "base64url": "Base64 โดยไม่มีอักขระที่ไม่ปลอดภัยต่อ URL",
+      "base32": "Base32 RFC 4648 (ใช้โดย OTP)",
+      "hex": "ฐานสิบหก (Base16)",
+      "base58": "ไม่มีอักขระที่กำกวม (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "การเข้ารหัสเพิ่มเติม",
+      "hint": "คลิก \"เพิ่ม\" เพื่อแสดงการเข้ารหัสเพิ่มเติม"
+    },
+    "actions": {
+      "clear": "ล้าง",
+      "copy": "คัดลอก",
+      "copied": "คัดลอกแล้ว!",
+      "addCodec": "เพิ่ม",
+      "removeCodec": "ลบการเข้ารหัส"
+    },
+    "errors": {
+      "invalid": "ค่าไม่ถูกต้องสำหรับ {codec}",
+      "nonRepresentable": "ไบต์ไม่สามารถแสดงในรูปแบบนี้ได้"
     }
   },
   "urlpad": {

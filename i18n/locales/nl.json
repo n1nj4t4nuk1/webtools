@@ -86,6 +86,11 @@
       "tagline": "URL's coderen en decoderen",
       "description": "Codeer of decodeer tekst en URL's. Automatische detectie en twee varianten (volledige URI of component). Alles in uw browser."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Tekst tegelijk in meerdere formaten coderen",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex en Base58. Bewerk een willekeurig formaat en de rest wordt direct bijgewerkt."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-verloopgenerator",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Kopiëren",
       "copied": "Gekopieerd!"
+    }
+  },
+  "codecpad": {
+    "title": "Coderingen",
+    "codecs": {
+      "utf8": "UTF-8-tekst",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Platte UTF-8-tekst",
+      "base64": "Standaard Base64 (RFC 4648)",
+      "base64url": "Base64 zonder URL-onveilige tekens",
+      "base32": "Base32 RFC 4648 (gebruikt door OTP)",
+      "hex": "Hexadecimaal (Base16)",
+      "base58": "Geen dubbelzinnige tekens (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "Meer coderingen",
+      "hint": "Klik op \"Toevoegen\" om extra coderingen te tonen."
+    },
+    "actions": {
+      "clear": "Wissen",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!",
+      "addCodec": "Toevoegen",
+      "removeCodec": "Codering verwijderen"
+    },
+    "errors": {
+      "invalid": "Ongeldige waarde voor {codec}.",
+      "nonRepresentable": "Bytes zijn niet weer te geven in dit formaat"
     }
   },
   "urlpad": {

@@ -86,6 +86,11 @@
       "tagline": "URLs kodieren und dekodieren",
       "description": "Kodieren oder dekodieren Sie Text und URLs. Automatische Erkennung und zwei Varianten (vollständige URI oder Komponente). Alles in Ihrem Browser."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Text in mehreren Formaten gleichzeitig kodieren",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex und Base58. Bearbeiten Sie ein beliebiges Format und die anderen werden sofort aktualisiert."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-Verlaufsgenerator",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Kopieren",
       "copied": "Kopiert!"
+    }
+  },
+  "codecpad": {
+    "title": "Kodierungen",
+    "codecs": {
+      "utf8": "UTF-8-Text",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Reiner UTF-8-Text",
+      "base64": "Standard-Base64 (RFC 4648)",
+      "base64url": "Base64 ohne URL-unsichere Zeichen",
+      "base32": "Base32 RFC 4648 (verwendet von OTP)",
+      "hex": "Hexadezimal (Base16)",
+      "base58": "Ohne mehrdeutige Zeichen (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "Weitere Kodierungen",
+      "hint": "Klicken Sie auf „Hinzufügen\", um zusätzliche Kodierungen anzuzeigen."
+    },
+    "actions": {
+      "clear": "Leeren",
+      "copy": "Kopieren",
+      "copied": "Kopiert!",
+      "addCodec": "Hinzufügen",
+      "removeCodec": "Kodierung entfernen"
+    },
+    "errors": {
+      "invalid": "Ungültiger Wert für {codec}.",
+      "nonRepresentable": "Die Bytes sind in diesem Format nicht darstellbar"
     }
   },
   "urlpad": {

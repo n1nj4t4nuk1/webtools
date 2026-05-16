@@ -81,6 +81,11 @@
       "tagline": "URL 编码和解码",
       "description": "对文本和 URL 进行编码或解码。自动检测和两种变体（完整 URI 或组件）。所有处理都在您的浏览器中完成。"
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "同时以多种格式编码文本",
+      "description": "UTF-8、Base64、Base64 URL-safe、Base32、Hex 和 Base58。编辑任何格式，其他格式即时更新。"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS 渐变生成器",
@@ -245,6 +250,40 @@
     "actions": {
       "copy": "复制",
       "copied": "已复制！"
+    }
+  },
+  "codecpad": {
+    "title": "编码",
+    "codecs": {
+      "utf8": "UTF-8 文本",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "纯 UTF-8 文本",
+      "base64": "标准 Base64 (RFC 4648)",
+      "base64url": "无 URL 特殊字符的 Base64",
+      "base32": "Base32 RFC 4648（用于 OTP）",
+      "hex": "十六进制 (Base16)",
+      "base58": "无歧义字符 (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "更多编码",
+      "hint": "点击\"添加\"以显示更多编码。"
+    },
+    "actions": {
+      "clear": "清除",
+      "copy": "复制",
+      "copied": "已复制！",
+      "addCodec": "添加",
+      "removeCodec": "移除编码"
+    },
+    "errors": {
+      "invalid": "{codec} 的值无效。",
+      "nonRepresentable": "字节在此格式中不可表示"
     }
   },
   "urlpad": {

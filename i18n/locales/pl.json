@@ -86,6 +86,11 @@
       "tagline": "Koduj i dekoduj URL",
       "description": "Koduj lub dekoduj tekst i adresy URL. Automatyczne wykrywanie i dwa warianty (pełny URI lub komponent). Wszystko w Twojej przeglądarce."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Koduj tekst w wielu formatach jednocześnie",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex i Base58. Edytuj dowolny format, a pozostałe zaktualizują się natychmiast."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generator gradientów CSS",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Kopiuj",
       "copied": "Skopiowano!"
+    }
+  },
+  "codecpad": {
+    "title": "Kodowania",
+    "codecs": {
+      "utf8": "Tekst UTF-8",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Zwykły tekst UTF-8",
+      "base64": "Standardowy Base64 (RFC 4648)",
+      "base64url": "Base64 bez znaków niebezpiecznych w URL",
+      "base32": "Base32 RFC 4648 (używany przez OTP)",
+      "hex": "Szesnastkowy (Base16)",
+      "base58": "Bez niejednoznacznych znaków (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "Więcej kodowań",
+      "hint": "Kliknij \"Dodaj\", aby pokazać dodatkowe kodowania."
+    },
+    "actions": {
+      "clear": "Wyczyść",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!",
+      "addCodec": "Dodaj",
+      "removeCodec": "Usuń kodowanie"
+    },
+    "errors": {
+      "invalid": "Nieprawidłowa wartość dla {codec}.",
+      "nonRepresentable": "Bajtów nie można przedstawić w tym formacie"
     }
   },
   "urlpad": {

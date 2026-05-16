@@ -86,6 +86,11 @@
       "tagline": "Kódování a dekódování URL",
       "description": "Zakódujte nebo dekódujte text a URL. Automatická detekce a dvě varianty (celé URI nebo komponenta). Vše ve vašem prohlížeči."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Kódování textu v několika formátech najednou",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex a Base58. Upravte libovolný formát a ostatní se okamžitě aktualizují."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generátor CSS přechodů",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Kopírovat",
       "copied": "Zkopírováno!"
+    }
+  },
+  "codecpad": {
+    "title": "Kódování",
+    "codecs": {
+      "utf8": "Text UTF-8",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Prostý text UTF-8",
+      "base64": "Standardní Base64 (RFC 4648)",
+      "base64url": "Base64 bez znaků nebezpečných pro URL",
+      "base32": "Base32 RFC 4648 (používá OTP)",
+      "hex": "Šestnáctkové (Base16)",
+      "base58": "Bez nejednoznačných znaků (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "Další kódování",
+      "hint": "Klikněte na \"Přidat\" pro zobrazení dalších kódování."
+    },
+    "actions": {
+      "clear": "Vymazat",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!",
+      "addCodec": "Přidat",
+      "removeCodec": "Odebrat kódování"
+    },
+    "errors": {
+      "invalid": "Neplatná hodnota pro {codec}.",
+      "nonRepresentable": "Bajty nelze v tomto formátu reprezentovat"
     }
   },
   "urlpad": {

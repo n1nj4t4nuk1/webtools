@@ -86,6 +86,11 @@
       "tagline": "Kod og dekod URL-er",
       "description": "Kod eller dekod tekst og URL-er. Automatisk gjenkjenning og to varianter (full URI eller komponent). Alt i nettleseren din."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Kod tekst i flere formater samtidig",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex og Base58. Rediger et hvilket som helst format, så oppdateres resten umiddelbart."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-gradientgenerator",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Kopier",
       "copied": "Kopiert!"
+    }
+  },
+  "codecpad": {
+    "title": "Kodinger",
+    "codecs": {
+      "utf8": "UTF-8-tekst",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Ren UTF-8-tekst",
+      "base64": "Standard Base64 (RFC 4648)",
+      "base64url": "Base64 uten URL-utrygge tegn",
+      "base32": "Base32 RFC 4648 (brukes av OTP)",
+      "hex": "Heksadesimal (Base16)",
+      "base58": "Ingen tvetydige tegn (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "Flere kodinger",
+      "hint": "Klikk \"Legg til\" for å vise ekstra kodinger."
+    },
+    "actions": {
+      "clear": "Tøm",
+      "copy": "Kopier",
+      "copied": "Kopiert!",
+      "addCodec": "Legg til",
+      "removeCodec": "Fjern koding"
+    },
+    "errors": {
+      "invalid": "Ugyldig verdi for {codec}.",
+      "nonRepresentable": "Bytene kan ikke representeres i dette formatet"
     }
   },
   "urlpad": {

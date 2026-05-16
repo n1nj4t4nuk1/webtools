@@ -86,6 +86,11 @@
       "tagline": "URL 인코딩 및 디코딩",
       "description": "텍스트와 URL을 인코딩하거나 디코딩합니다. 자동 감지와 두 가지 변형 (전체 URI 또는 컴포넌트). 모두 브라우저에서 처리됩니다."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "여러 형식으로 텍스트를 한 번에 인코딩",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex 및 Base58. 어떤 형식이든 편집하면 나머지가 즉시 업데이트됩니다."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS 그라데이션 생성기",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "복사",
       "copied": "복사되었습니다!"
+    }
+  },
+  "codecpad": {
+    "title": "인코딩",
+    "codecs": {
+      "utf8": "UTF-8 텍스트",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "일반 UTF-8 텍스트",
+      "base64": "표준 Base64 (RFC 4648)",
+      "base64url": "URL에 안전하지 않은 문자가 없는 Base64",
+      "base32": "Base32 RFC 4648 (OTP에서 사용)",
+      "hex": "16진수 (Base16)",
+      "base58": "모호한 문자 없음 (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "추가 인코딩",
+      "hint": "추가 인코딩을 표시하려면 \"추가\"를 클릭하세요."
+    },
+    "actions": {
+      "clear": "지우기",
+      "copy": "복사",
+      "copied": "복사되었습니다!",
+      "addCodec": "추가",
+      "removeCodec": "인코딩 제거"
+    },
+    "errors": {
+      "invalid": "{codec}에 잘못된 값입니다.",
+      "nonRepresentable": "이 형식으로는 바이트를 표현할 수 없습니다"
     }
   },
   "urlpad": {

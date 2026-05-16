@@ -81,6 +81,11 @@
       "tagline": "URLのエンコード・デコード",
       "description": "テキストやURLをエンコードまたはデコード。自動検出と2つのバリアント（完全URIまたはコンポーネント）。すべてブラウザで処理。"
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "テキストを複数の形式で同時にエンコード",
+      "description": "UTF-8、Base64、Base64 URL-safe、Base32、Hex、Base58。任意の形式を編集すると他がすべて即座に更新されます。"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSSグラデーションジェネレーター",
@@ -245,6 +250,40 @@
     "actions": {
       "copy": "コピー",
       "copied": "コピーしました！"
+    }
+  },
+  "codecpad": {
+    "title": "エンコーディング",
+    "codecs": {
+      "utf8": "UTF-8テキスト",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "プレーンUTF-8テキスト",
+      "base64": "標準Base64（RFC 4648）",
+      "base64url": "URLセーフなBase64",
+      "base32": "Base32 RFC 4648（OTPで使用）",
+      "hex": "16進数（Base16）",
+      "base58": "曖昧な文字なし（Bitcoin、IPFS）"
+    },
+    "addCodec": {
+      "title": "その他のエンコーディング",
+      "hint": "「追加」を押すと追加のエンコーディングを表示します。"
+    },
+    "actions": {
+      "clear": "クリア",
+      "copy": "コピー",
+      "copied": "コピーしました！",
+      "addCodec": "追加",
+      "removeCodec": "エンコーディングを削除"
+    },
+    "errors": {
+      "invalid": "{codec}の値が無効です。",
+      "nonRepresentable": "この形式ではバイトを表現できません"
     }
   },
   "urlpad": {

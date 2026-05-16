@@ -86,6 +86,11 @@
       "tagline": "Codifică și decodifică URL-uri",
       "description": "Codifică sau decodifică text și URL-uri. Detectare automată și două variante (URI complet sau component). Totul în browserul tău."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Codifică text în mai multe formate simultan",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex și Base58. Editează orice format, iar restul se actualizează instantaneu."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generator de gradiente CSS",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Copiază",
       "copied": "Copiat!"
+    }
+  },
+  "codecpad": {
+    "title": "Codificări",
+    "codecs": {
+      "utf8": "Text UTF-8",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Text UTF-8 simplu",
+      "base64": "Base64 standard (RFC 4648)",
+      "base64url": "Base64 fără caractere nesigure pentru URL",
+      "base32": "Base32 RFC 4648 (folosit de OTP)",
+      "hex": "Hexazecimal (Base16)",
+      "base58": "Fără caractere ambigue (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "Mai multe codificări",
+      "hint": "Apasă \"Adaugă\" pentru a afișa codificări suplimentare."
+    },
+    "actions": {
+      "clear": "Șterge",
+      "copy": "Copiază",
+      "copied": "Copiat!",
+      "addCodec": "Adaugă",
+      "removeCodec": "Elimină codificarea"
+    },
+    "errors": {
+      "invalid": "Valoare nevalidă pentru {codec}.",
+      "nonRepresentable": "Octeții nu pot fi reprezentați în acest format"
     }
   },
   "urlpad": {

@@ -86,6 +86,11 @@
       "tagline": "Encode and decode URLs",
       "description": "Encode or decode text and URLs. Auto-detection and two variants (full URI or component). All in your browser."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Encode text in multiple formats at once",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex and Base58. Edit any format and the rest update instantly."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS gradient generator",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Copy",
       "copied": "Copied!"
+    }
+  },
+  "codecpad": {
+    "title": "Encodings",
+    "codecs": {
+      "utf8": "UTF-8 text",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Plain UTF-8 text",
+      "base64": "Standard Base64 (RFC 4648)",
+      "base64url": "Base64 without URL-unsafe chars",
+      "base32": "Base32 RFC 4648 (used by OTP)",
+      "hex": "Hexadecimal (Base16)",
+      "base58": "No ambiguous chars (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "More encodings",
+      "hint": "Click \"Add\" to show extra encodings."
+    },
+    "actions": {
+      "clear": "Clear",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "addCodec": "Add",
+      "removeCodec": "Remove encoding"
+    },
+    "errors": {
+      "invalid": "Invalid value for {codec}.",
+      "nonRepresentable": "Bytes are not representable in this format"
     }
   },
   "urlpad": {

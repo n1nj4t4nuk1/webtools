@@ -86,6 +86,11 @@
       "tagline": "URL-ek kódolása és dekódolása",
       "description": "Szöveg és URL-ek kódolása vagy dekódolása. Automatikus felismerés és két változat (teljes URI vagy komponens). Mindez a böngészőben."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Szöveg kódolása több formátumban egyszerre",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex és Base58. Szerkesszen bármelyik formátumot, és a többi azonnal frissül."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS gradiens generátor",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Másolás",
       "copied": "Másolva!"
+    }
+  },
+  "codecpad": {
+    "title": "Kódolások",
+    "codecs": {
+      "utf8": "UTF-8 szöveg",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Sima UTF-8 szöveg",
+      "base64": "Szabványos Base64 (RFC 4648)",
+      "base64url": "Base64 URL-ben nem biztonságos karakterek nélkül",
+      "base32": "Base32 RFC 4648 (OTP használja)",
+      "hex": "Hexadecimális (Base16)",
+      "base58": "Egyértelmű karakterek nélkül (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "További kódolások",
+      "hint": "Kattintson a \"Hozzáadás\" gombra a további kódolások megjelenítéséhez."
+    },
+    "actions": {
+      "clear": "Törlés",
+      "copy": "Másolás",
+      "copied": "Másolva!",
+      "addCodec": "Hozzáadás",
+      "removeCodec": "Kódolás eltávolítása"
+    },
+    "errors": {
+      "invalid": "Érvénytelen érték a következőhöz: {codec}.",
+      "nonRepresentable": "A bájtok nem ábrázolhatók ebben a formátumban"
     }
   },
   "urlpad": {

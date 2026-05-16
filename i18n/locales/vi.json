@@ -86,6 +86,11 @@
       "tagline": "Mã hóa và giải mã URL",
       "description": "Mã hóa hoặc giải mã văn bản và URL. Tự động nhận dạng và hai biến thể (URI đầy đủ hoặc thành phần). Tất cả trong trình duyệt của bạn."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Mã hóa văn bản theo nhiều định dạng cùng lúc",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex và Base58. Chỉnh sửa bất kỳ định dạng nào, các định dạng còn lại sẽ cập nhật ngay lập tức."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Trình tạo gradient CSS",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Sao chép",
       "copied": "Đã sao chép!"
+    }
+  },
+  "codecpad": {
+    "title": "Mã hóa",
+    "codecs": {
+      "utf8": "Văn bản UTF-8",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Văn bản UTF-8 thuần",
+      "base64": "Base64 chuẩn (RFC 4648)",
+      "base64url": "Base64 không có ký tự không an toàn cho URL",
+      "base32": "Base32 RFC 4648 (dùng bởi OTP)",
+      "hex": "Thập lục phân (Base16)",
+      "base58": "Không có ký tự gây nhầm lẫn (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "Thêm cách mã hóa",
+      "hint": "Nhấp \"Thêm\" để hiển thị các cách mã hóa bổ sung."
+    },
+    "actions": {
+      "clear": "Xóa",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!",
+      "addCodec": "Thêm",
+      "removeCodec": "Xóa cách mã hóa"
+    },
+    "errors": {
+      "invalid": "Giá trị không hợp lệ cho {codec}.",
+      "nonRepresentable": "Các byte không thể biểu diễn trong định dạng này"
     }
   },
   "urlpad": {

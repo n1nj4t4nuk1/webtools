@@ -86,6 +86,11 @@
       "tagline": "Koda och avkoda URL:er",
       "description": "Koda eller avkoda text och URL:er. Automatisk identifiering och två varianter (fullständig URI eller komponent). Allt i din webbläsare."
     },
+    "codecpad": {
+      "name": "Codecpad",
+      "tagline": "Koda text i flera format samtidigt",
+      "description": "UTF-8, Base64, Base64 URL-safe, Base32, Hex och Base58. Redigera valfritt format så uppdateras de andra direkt."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-gradientgenerator",
@@ -250,6 +255,40 @@
     "actions": {
       "copy": "Kopiera",
       "copied": "Kopierat!"
+    }
+  },
+  "codecpad": {
+    "title": "Kodningar",
+    "codecs": {
+      "utf8": "UTF-8-text",
+      "base64": "Base64",
+      "base64url": "Base64 URL-safe",
+      "base32": "Base32",
+      "hex": "Hex",
+      "base58": "Base58"
+    },
+    "descriptions": {
+      "utf8": "Vanlig UTF-8-text",
+      "base64": "Standard Base64 (RFC 4648)",
+      "base64url": "Base64 utan tecken som är osäkra i URL:er",
+      "base32": "Base32 RFC 4648 (används av OTP)",
+      "hex": "Hexadecimalt (Base16)",
+      "base58": "Inga tvetydiga tecken (Bitcoin, IPFS)"
+    },
+    "addCodec": {
+      "title": "Fler kodningar",
+      "hint": "Klicka på \"Lägg till\" för att visa fler kodningar."
+    },
+    "actions": {
+      "clear": "Rensa",
+      "copy": "Kopiera",
+      "copied": "Kopierat!",
+      "addCodec": "Lägg till",
+      "removeCodec": "Ta bort kodning"
+    },
+    "errors": {
+      "invalid": "Ogiltigt värde för {codec}.",
+      "nonRepresentable": "Byten kan inte representeras i det här formatet"
     }
   },
   "urlpad": {
