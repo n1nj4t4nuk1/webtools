@@ -106,6 +106,11 @@
       "tagline": "Giải mã JSON Web Tokens",
       "description": "Dán một JWT để xem Header và Payload được in đẹp, trạng thái hợp lệ và các claim chuẩn (exp, iat, nbf…) đã được diễn giải."
     },
+    "diffy": {
+      "name": "Diffy",
+      "tagline": "So sánh hai văn bản và làm nổi bật các thay đổi",
+      "description": "So sánh theo dòng, từ hoặc ký tự với chế độ tô sáng. Tùy chọn bỏ qua chữ hoa/thường hoặc khoảng trắng. Tất cả trong trình duyệt của bạn."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Trình tạo gradient CSS",
@@ -270,6 +275,35 @@
     "actions": {
       "copy": "Sao chép",
       "copied": "Đã sao chép!"
+    }
+  },
+  "diffy": {
+    "original": "Bản gốc",
+    "changed": "Bản đã sửa",
+    "originalPlaceholder": "Dán văn bản gốc tại đây…",
+    "changedPlaceholder": "Dán văn bản đã sửa tại đây…",
+    "result": "Kết quả so sánh",
+    "empty": "Dán hai văn bản ở trên để so sánh.",
+    "noChanges": "Không có thay đổi.",
+    "mode": {
+      "label": "So sánh theo",
+      "lines": "Dòng",
+      "words": "Từ",
+      "chars": "Ký tự"
+    },
+    "options": {
+      "ignoreCase": "Bỏ qua chữ hoa/thường",
+      "ignoreWhitespace": "Bỏ qua khoảng trắng"
+    },
+    "units": {
+      "lines": "dòng",
+      "words": "từ",
+      "chars": "ký tự"
+    },
+    "actions": {
+      "example": "Ví dụ",
+      "swap": "Hoán đổi",
+      "clear": "Xóa"
     }
   },
   "jwtdecoder": {

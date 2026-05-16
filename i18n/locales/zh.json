@@ -101,6 +101,11 @@
       "tagline": "解码 JSON Web Token",
       "description": "粘贴 JWT 即可查看格式化的 header 和 payload、有效性状态以及标准 claim（exp、iat、nbf…）的解读。"
     },
+    "diffy": {
+      "name": "Diffy",
+      "tagline": "比较两段文本并高亮显示变化",
+      "description": "按行、单词或字符进行 diff 并高亮显示。支持忽略大小写或空格的选项。所有处理都在您的浏览器中完成。"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS 渐变生成器",
@@ -265,6 +270,35 @@
     "actions": {
       "copy": "复制",
       "copied": "已复制！"
+    }
+  },
+  "diffy": {
+    "original": "原始",
+    "changed": "修改后",
+    "originalPlaceholder": "在此粘贴原始文本…",
+    "changedPlaceholder": "在此粘贴修改后的文本…",
+    "result": "Diff 结果",
+    "empty": "在上方粘贴两段文本以进行比较。",
+    "noChanges": "无变化。",
+    "mode": {
+      "label": "比较方式",
+      "lines": "行",
+      "words": "单词",
+      "chars": "字符"
+    },
+    "options": {
+      "ignoreCase": "忽略大小写",
+      "ignoreWhitespace": "忽略空格"
+    },
+    "units": {
+      "lines": "行",
+      "words": "单词",
+      "chars": "字符"
+    },
+    "actions": {
+      "example": "示例",
+      "swap": "交换",
+      "clear": "清除"
     }
   },
   "jwtdecoder": {

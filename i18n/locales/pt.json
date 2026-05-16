@@ -101,6 +101,11 @@
       "tagline": "Decodifique JSON Web Tokens",
       "description": "Cole um JWT para ver header e payload formatados, status de validade e claims padrão (exp, iat, nbf…) interpretados."
     },
+    "diffy": {
+      "name": "Diffy",
+      "tagline": "Compare dois textos e destaque mudanças",
+      "description": "Diff por linhas, palavras ou caracteres com destaque. Opções para ignorar maiúsculas ou espaços. Tudo no seu navegador."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Gerador de gradientes CSS",
@@ -265,6 +270,35 @@
     "actions": {
       "copy": "Copiar",
       "copied": "Copiado!"
+    }
+  },
+  "diffy": {
+    "original": "Original",
+    "changed": "Modificado",
+    "originalPlaceholder": "Cole aqui o texto original…",
+    "changedPlaceholder": "Cole aqui o texto modificado…",
+    "result": "Resultado do diff",
+    "empty": "Cole dois textos acima para comparar.",
+    "noChanges": "Sem mudanças.",
+    "mode": {
+      "label": "Comparar por",
+      "lines": "Linhas",
+      "words": "Palavras",
+      "chars": "Caracteres"
+    },
+    "options": {
+      "ignoreCase": "Ignorar maiúsculas",
+      "ignoreWhitespace": "Ignorar espaços"
+    },
+    "units": {
+      "lines": "linhas",
+      "words": "palavras",
+      "chars": "caracteres"
+    },
+    "actions": {
+      "example": "Exemplo",
+      "swap": "Trocar",
+      "clear": "Limpar"
     }
   },
   "jwtdecoder": {

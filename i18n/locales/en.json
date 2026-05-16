@@ -106,6 +106,11 @@
       "tagline": "Decode JSON Web Tokens",
       "description": "Paste a JWT to see its header and payload pretty-printed, validity status, and standard claims (exp, iat, nbf…) interpreted."
     },
+    "diffy": {
+      "name": "Diffy",
+      "tagline": "Compare two texts and highlight changes",
+      "description": "Diff by lines, words or characters with highlighting. Options to ignore case or whitespace. All in your browser."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS gradient generator",
@@ -270,6 +275,35 @@
     "actions": {
       "copy": "Copy",
       "copied": "Copied!"
+    }
+  },
+  "diffy": {
+    "original": "Original",
+    "changed": "Changed",
+    "originalPlaceholder": "Paste the original text here…",
+    "changedPlaceholder": "Paste the changed text here…",
+    "result": "Diff result",
+    "empty": "Paste two texts above to compare.",
+    "noChanges": "No changes.",
+    "mode": {
+      "label": "Compare by",
+      "lines": "Lines",
+      "words": "Words",
+      "chars": "Characters"
+    },
+    "options": {
+      "ignoreCase": "Ignore case",
+      "ignoreWhitespace": "Ignore whitespace"
+    },
+    "units": {
+      "lines": "lines",
+      "words": "words",
+      "chars": "characters"
+    },
+    "actions": {
+      "example": "Example",
+      "swap": "Swap",
+      "clear": "Clear"
     }
   },
   "jwtdecoder": {

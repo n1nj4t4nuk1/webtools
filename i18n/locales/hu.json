@@ -106,6 +106,11 @@
       "tagline": "JSON Web Tokens dekódolása",
       "description": "Illesszen be egy JWT-t, hogy lássa a Header-t és a Payload-ot szépen formázva, az érvényességi állapotot és az értelmezett szabványos igényléseket (exp, iat, nbf…)."
     },
+    "diffy": {
+      "name": "Diffy",
+      "tagline": "Hasonlítson össze két szöveget és emelje ki a változásokat",
+      "description": "Diff sorok, szavak vagy karakterek szerint, kiemeléssel. Lehetőség a kis- és nagybetűk vagy szóközök figyelmen kívül hagyására. Mindez az Ön böngészőjében."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS gradiens generátor",
@@ -270,6 +275,35 @@
     "actions": {
       "copy": "Másolás",
       "copied": "Másolva!"
+    }
+  },
+  "diffy": {
+    "original": "Eredeti",
+    "changed": "Módosított",
+    "originalPlaceholder": "Illessze be ide az eredeti szöveget…",
+    "changedPlaceholder": "Illessze be ide a módosított szöveget…",
+    "result": "Diff eredménye",
+    "empty": "Illesszen be két szöveget fent az összehasonlításhoz.",
+    "noChanges": "Nincs változás.",
+    "mode": {
+      "label": "Összehasonlítás",
+      "lines": "Sorok",
+      "words": "Szavak",
+      "chars": "Karakterek"
+    },
+    "options": {
+      "ignoreCase": "Kis- és nagybetűk figyelmen kívül hagyása",
+      "ignoreWhitespace": "Szóközök figyelmen kívül hagyása"
+    },
+    "units": {
+      "lines": "sor",
+      "words": "szó",
+      "chars": "karakter"
+    },
+    "actions": {
+      "example": "Példa",
+      "swap": "Csere",
+      "clear": "Törlés"
     }
   },
   "jwtdecoder": {

@@ -106,6 +106,11 @@
       "tagline": "JSON Web Tokens'ı çöz",
       "description": "Bir JWT yapıştırın ve Header ile Payload'ını güzelce biçimlendirilmiş şekilde, geçerlilik durumunu ve yorumlanmış standart talepleri (exp, iat, nbf…) görün."
     },
+    "diffy": {
+      "name": "Diffy",
+      "tagline": "İki metni karşılaştır ve değişiklikleri vurgula",
+      "description": "Satır, kelime veya karakter bazında vurgulamalı diff. Büyük/küçük harf veya boşluğu yok sayma seçenekleri. Hepsi tarayıcınızda."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS gradyan üreteci",
@@ -270,6 +275,35 @@
     "actions": {
       "copy": "Kopyala",
       "copied": "Kopyalandı!"
+    }
+  },
+  "diffy": {
+    "original": "Orijinal",
+    "changed": "Değiştirilmiş",
+    "originalPlaceholder": "Orijinal metni buraya yapıştırın…",
+    "changedPlaceholder": "Değiştirilmiş metni buraya yapıştırın…",
+    "result": "Diff sonucu",
+    "empty": "Karşılaştırmak için yukarıya iki metin yapıştırın.",
+    "noChanges": "Değişiklik yok.",
+    "mode": {
+      "label": "Karşılaştırma birimi",
+      "lines": "Satırlar",
+      "words": "Kelimeler",
+      "chars": "Karakterler"
+    },
+    "options": {
+      "ignoreCase": "Büyük/küçük harfi yok say",
+      "ignoreWhitespace": "Boşlukları yok say"
+    },
+    "units": {
+      "lines": "satır",
+      "words": "kelime",
+      "chars": "karakter"
+    },
+    "actions": {
+      "example": "Örnek",
+      "swap": "Yer değiştir",
+      "clear": "Temizle"
     }
   },
   "jwtdecoder": {

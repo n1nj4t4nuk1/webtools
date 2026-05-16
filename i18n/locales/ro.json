@@ -106,6 +106,11 @@
       "tagline": "Decodifică JSON Web Tokens",
       "description": "Lipește un JWT pentru a vedea Header-ul și Payload-ul formatate, starea de valabilitate și revendicările standard (exp, iat, nbf…) interpretate."
     },
+    "diffy": {
+      "name": "Diffy",
+      "tagline": "Compară două texte și evidențiază modificările",
+      "description": "Diff pe linii, cuvinte sau caractere cu evidențiere. Opțiuni pentru a ignora majusculele sau spațiile. Totul în browserul tău."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generator de gradiente CSS",
@@ -270,6 +275,35 @@
     "actions": {
       "copy": "Copiază",
       "copied": "Copiat!"
+    }
+  },
+  "diffy": {
+    "original": "Original",
+    "changed": "Modificat",
+    "originalPlaceholder": "Lipește aici textul original…",
+    "changedPlaceholder": "Lipește aici textul modificat…",
+    "result": "Rezultat diff",
+    "empty": "Lipește două texte mai sus pentru a le compara.",
+    "noChanges": "Nicio modificare.",
+    "mode": {
+      "label": "Compară după",
+      "lines": "Linii",
+      "words": "Cuvinte",
+      "chars": "Caractere"
+    },
+    "options": {
+      "ignoreCase": "Ignoră majusculele",
+      "ignoreWhitespace": "Ignoră spațiile"
+    },
+    "units": {
+      "lines": "linii",
+      "words": "cuvinte",
+      "chars": "caractere"
+    },
+    "actions": {
+      "example": "Exemplu",
+      "swap": "Inversează",
+      "clear": "Șterge"
     }
   },
   "jwtdecoder": {

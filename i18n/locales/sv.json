@@ -106,6 +106,11 @@
       "tagline": "Avkoda JSON Web Tokens",
       "description": "Klistra in en JWT för att se dess Header och Payload snyggformaterade, giltighetsstatus och tolkade standardanspråk (exp, iat, nbf…)."
     },
+    "diffy": {
+      "name": "Diffy",
+      "tagline": "Jämför två texter och markera ändringar",
+      "description": "Diff per rad, ord eller tecken med markering. Alternativ för att ignorera versaler eller blanksteg. Allt i din webbläsare."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-gradientgenerator",
@@ -270,6 +275,35 @@
     "actions": {
       "copy": "Kopiera",
       "copied": "Kopierat!"
+    }
+  },
+  "diffy": {
+    "original": "Original",
+    "changed": "Ändrad",
+    "originalPlaceholder": "Klistra in originaltexten här…",
+    "changedPlaceholder": "Klistra in den ändrade texten här…",
+    "result": "Diff-resultat",
+    "empty": "Klistra in två texter ovan för att jämföra.",
+    "noChanges": "Inga ändringar.",
+    "mode": {
+      "label": "Jämför efter",
+      "lines": "Rader",
+      "words": "Ord",
+      "chars": "Tecken"
+    },
+    "options": {
+      "ignoreCase": "Ignorera versaler",
+      "ignoreWhitespace": "Ignorera blanksteg"
+    },
+    "units": {
+      "lines": "rader",
+      "words": "ord",
+      "chars": "tecken"
+    },
+    "actions": {
+      "example": "Exempel",
+      "swap": "Byt",
+      "clear": "Rensa"
     }
   },
   "jwtdecoder": {

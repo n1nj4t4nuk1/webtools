@@ -106,6 +106,11 @@
       "tagline": "JSON Web Tokens decoderen",
       "description": "Plak een JWT om de header en payload netjes geformatteerd te zien, samen met de geldigheidsstatus en de geïnterpreteerde standaardclaims (exp, iat, nbf…)."
     },
+    "diffy": {
+      "name": "Diffy",
+      "tagline": "Twee teksten vergelijken en verschillen markeren",
+      "description": "Diff per regel, woord of teken met markering. Opties om hoofdletters of witruimte te negeren. Alles in uw browser."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSS-verloopgenerator",
@@ -270,6 +275,35 @@
     "actions": {
       "copy": "Kopiëren",
       "copied": "Gekopieerd!"
+    }
+  },
+  "diffy": {
+    "original": "Origineel",
+    "changed": "Gewijzigd",
+    "originalPlaceholder": "Plak hier de originele tekst…",
+    "changedPlaceholder": "Plak hier de gewijzigde tekst…",
+    "result": "Diff-resultaat",
+    "empty": "Plak hierboven twee teksten om te vergelijken.",
+    "noChanges": "Geen wijzigingen.",
+    "mode": {
+      "label": "Vergelijken op",
+      "lines": "Regels",
+      "words": "Woorden",
+      "chars": "Tekens"
+    },
+    "options": {
+      "ignoreCase": "Hoofdlettergebruik negeren",
+      "ignoreWhitespace": "Witruimte negeren"
+    },
+    "units": {
+      "lines": "regels",
+      "words": "woorden",
+      "chars": "tekens"
+    },
+    "actions": {
+      "example": "Voorbeeld",
+      "swap": "Omwisselen",
+      "clear": "Wissen"
     }
   },
   "jwtdecoder": {

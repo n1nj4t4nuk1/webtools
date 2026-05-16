@@ -101,6 +101,11 @@
       "tagline": "JSON Web Tokenをデコード",
       "description": "JWTを貼り付けて、ヘッダーとペイロードを整形表示、有効性ステータス、標準クレーム（exp、iat、nbf…）の解釈を確認。"
     },
+    "diffy": {
+      "name": "Diffy",
+      "tagline": "2つのテキストを比較して変更を強調表示",
+      "description": "行、単語、文字単位で差分を強調表示。大文字小文字や空白を無視するオプション付き。すべてブラウザで処理。"
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "CSSグラデーションジェネレーター",
@@ -265,6 +270,35 @@
     "actions": {
       "copy": "コピー",
       "copied": "コピーしました！"
+    }
+  },
+  "diffy": {
+    "original": "オリジナル",
+    "changed": "変更後",
+    "originalPlaceholder": "オリジナルのテキストをここに貼り付け…",
+    "changedPlaceholder": "変更後のテキストをここに貼り付け…",
+    "result": "Diff結果",
+    "empty": "上に2つのテキストを貼り付けて比較してください。",
+    "noChanges": "変更なし。",
+    "mode": {
+      "label": "比較単位",
+      "lines": "行",
+      "words": "単語",
+      "chars": "文字"
+    },
+    "options": {
+      "ignoreCase": "大文字小文字を無視",
+      "ignoreWhitespace": "空白を無視"
+    },
+    "units": {
+      "lines": "行",
+      "words": "単語",
+      "chars": "文字"
+    },
+    "actions": {
+      "example": "例",
+      "swap": "入れ替え",
+      "clear": "クリア"
     }
   },
   "jwtdecoder": {

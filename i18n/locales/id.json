@@ -106,6 +106,11 @@
       "tagline": "Dekode JSON Web Tokens",
       "description": "Tempel JWT untuk melihat Header dan Payload-nya yang dicetak rapi, status validitas, dan claim standar (exp, iat, nbf…) yang telah diinterpretasikan."
     },
+    "diffy": {
+      "name": "Diffy",
+      "tagline": "Bandingkan dua teks dan soroti perubahan",
+      "description": "Diff berdasarkan baris, kata, atau karakter dengan penyorotan. Opsi untuk mengabaikan huruf besar/kecil atau spasi. Semua di peramban Anda."
+    },
     "gradienty": {
       "name": "Gradienty",
       "tagline": "Generator gradien CSS",
@@ -270,6 +275,35 @@
     "actions": {
       "copy": "Salin",
       "copied": "Tersalin!"
+    }
+  },
+  "diffy": {
+    "original": "Asli",
+    "changed": "Diubah",
+    "originalPlaceholder": "Tempel teks asli di sini…",
+    "changedPlaceholder": "Tempel teks yang diubah di sini…",
+    "result": "Hasil diff",
+    "empty": "Tempel dua teks di atas untuk membandingkan.",
+    "noChanges": "Tidak ada perubahan.",
+    "mode": {
+      "label": "Bandingkan berdasarkan",
+      "lines": "Baris",
+      "words": "Kata",
+      "chars": "Karakter"
+    },
+    "options": {
+      "ignoreCase": "Abaikan huruf besar/kecil",
+      "ignoreWhitespace": "Abaikan spasi"
+    },
+    "units": {
+      "lines": "baris",
+      "words": "kata",
+      "chars": "karakter"
+    },
+    "actions": {
+      "example": "Contoh",
+      "swap": "Tukar",
+      "clear": "Bersihkan"
     }
   },
   "jwtdecoder": {

@@ -11,7 +11,9 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
+    "@types/diff": "^7.0.2",
     "@types/js-yaml": "^4.0.9",
+    "diff": "^9.0.0",
     "js-yaml": "^4.1.1",
     "pdf-lib": "^1.17.1",
     "piexifjs": "^1.0.6",
