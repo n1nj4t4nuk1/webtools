@@ -42,6 +42,36 @@
       "name": "Wordy",
       "tagline": "単語と文字を数える",
       "description": "テキストまたはテキストファイルを分析：単語数、文字数、行数、段落数、推定読了時間。"
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "PDFからページを抽出",
+      "description": "PDFからページや範囲を選んで新しいファイルとしてダウンロード。すべてブラウザで処理されます。"
+    }
+  },
+  "scissor": {
+    "dropzone": "PDFをここにドラッグするか、クリックして選択",
+    "totalPages": "{n}ページ",
+    "rangesLabel": "抽出するページ",
+    "rangesPlaceholder": "例：1-3, 5, 8-10",
+    "hint": "カンマで区切ります。範囲はハイフン（1-5）を使用。デフォルトですべてのページが選択されます。",
+    "preview": {
+      "pages": "選択",
+      "count": "合計",
+      "none": "なし"
+    },
+    "actions": {
+      "extract": "抽出してダウンロード",
+      "processing": "抽出中…",
+      "change": "PDFを変更"
+    },
+    "errors": {
+      "notPdf": "{name}はPDFではありません。",
+      "invalidPdf": "{name}は有効なPDFではないか、破損しています。",
+      "encrypted": "このPDFはパスワードで保護されています。",
+      "invalidTokens": "解釈できません：{tokens}。",
+      "outOfRange": "範囲外（最大 {max}）：{tokens}。",
+      "generic": "ページを抽出できませんでした。"
     }
   },
   "wordy": {

@@ -42,6 +42,36 @@
       "name": "Wordy",
       "tagline": "Conte palavras e caracteres",
       "description": "Analise um texto ou arquivo de texto: palavras, caracteres, linhas, parágrafos e tempo estimado de leitura."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "Extraia páginas de um PDF",
+      "description": "Selecione páginas ou intervalos de um PDF e baixe como um novo arquivo. Tudo no seu navegador."
+    }
+  },
+  "scissor": {
+    "dropzone": "Arraste um PDF aqui ou clique para selecionar",
+    "totalPages": "{n} páginas",
+    "rangesLabel": "Páginas para extrair",
+    "rangesPlaceholder": "Ex.: 1-3, 5, 8-10",
+    "hint": "Separe com vírgulas. Use hifens para intervalos (1-5). Todas as páginas são pré-selecionadas por padrão.",
+    "preview": {
+      "pages": "Seleção",
+      "count": "Total",
+      "none": "Nenhuma"
+    },
+    "actions": {
+      "extract": "Extrair e baixar",
+      "processing": "Extraindo…",
+      "change": "Mudar PDF"
+    },
+    "errors": {
+      "notPdf": "{name} não é um PDF.",
+      "invalidPdf": "{name} não é um PDF válido ou está corrompido.",
+      "encrypted": "Este PDF está protegido por senha.",
+      "invalidTokens": "Não foi possível interpretar: {tokens}.",
+      "outOfRange": "Fora do intervalo (máx. {max}): {tokens}.",
+      "generic": "Não foi possível extrair as páginas."
     }
   },
   "wordy": {

@@ -47,6 +47,36 @@
       "name": "Wordy",
       "tagline": "Count words and characters",
       "description": "Analyze text or a text file: words, characters, lines, paragraphs and estimated reading time."
+    },
+    "scissor": {
+      "name": "Scissor",
+      "tagline": "Extract pages from a PDF",
+      "description": "Pick pages or ranges from a PDF and download them as a new file. Everything in your browser."
+    }
+  },
+  "scissor": {
+    "dropzone": "Drag a PDF here or click to select one",
+    "totalPages": "{n} pages",
+    "rangesLabel": "Pages to extract",
+    "rangesPlaceholder": "E.g. 1-3, 5, 8-10",
+    "hint": "Separate with commas. Use dashes for ranges (1-5). All pages are preselected by default.",
+    "preview": {
+      "pages": "Selection",
+      "count": "Total",
+      "none": "None"
+    },
+    "actions": {
+      "extract": "Extract and download",
+      "processing": "Extracting…",
+      "change": "Change PDF"
+    },
+    "errors": {
+      "notPdf": "{name} is not a PDF.",
+      "invalidPdf": "{name} is not a valid PDF or is corrupted.",
+      "encrypted": "This PDF is password-protected.",
+      "invalidTokens": "Could not parse: {tokens}.",
+      "outOfRange": "Out of range (max {max}): {tokens}.",
+      "generic": "Could not extract the pages."
     }
   },
   "wordy": {
