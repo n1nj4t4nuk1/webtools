@@ -863,6 +863,11 @@
   "pixely": {
     "dropzone": "Trage o imagine aici sau apasă pentru a selecta una",
     "blockSize": "Dimensiunea blocului",
+    "selection": {
+      "label": "Zonă selectată",
+      "hint": "Trageți pe imagine pentru a pixela doar o regiune.",
+      "clear": "Șterge selecția"
+    },
     "quality": "Calitate",
     "format": {
       "label": "Format",

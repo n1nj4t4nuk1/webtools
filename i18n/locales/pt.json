@@ -828,6 +828,11 @@
   "pixely": {
     "dropzone": "Arraste uma imagem aqui ou clique para selecionar",
     "blockSize": "Tamanho do bloco",
+    "selection": {
+      "label": "Área selecionada",
+      "hint": "Arraste sobre a imagem para pixelizar apenas uma zona.",
+      "clear": "Remover seleção"
+    },
     "quality": "Qualidade",
     "format": {
       "label": "Formato",

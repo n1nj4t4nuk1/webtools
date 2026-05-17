@@ -863,6 +863,11 @@
   "pixely": {
     "dropzone": "Przeciągnij tutaj obraz lub kliknij, aby go wybrać",
     "blockSize": "Rozmiar bloku",
+    "selection": {
+      "label": "Zaznaczony obszar",
+      "hint": "Przeciągnij na obrazie, aby zpikselizować tylko jeden obszar.",
+      "clear": "Wyczyść zaznaczenie"
+    },
     "quality": "Jakość",
     "format": {
       "label": "Format",

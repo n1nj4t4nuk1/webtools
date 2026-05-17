@@ -863,6 +863,11 @@
   "pixely": {
     "dropzone": "Húzzon ide egy képet, vagy kattintson a kiválasztáshoz",
     "blockSize": "Blokkméret",
+    "selection": {
+      "label": "Kijelölt terület",
+      "hint": "Húzza a képen, hogy csak egy területet pixelezzen.",
+      "clear": "Kijelölés törlése"
+    },
     "quality": "Minőség",
     "format": {
       "label": "Formátum",

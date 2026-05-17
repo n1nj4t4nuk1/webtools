@@ -863,6 +863,11 @@
   "pixely": {
     "dropzone": "Træk et billede hertil, eller klik for at vælge et",
     "blockSize": "Blokstørrelse",
+    "selection": {
+      "label": "Valgt område",
+      "hint": "Træk på billedet for kun at pixelere ét område.",
+      "clear": "Ryd markering"
+    },
     "quality": "Kvalitet",
     "format": {
       "label": "Format",

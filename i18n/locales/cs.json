@@ -863,6 +863,11 @@
   "pixely": {
     "dropzone": "Přetáhněte sem obrázek nebo klikněte pro výběr",
     "blockSize": "Velikost bloku",
+    "selection": {
+      "label": "Vybraná oblast",
+      "hint": "Tažením po obrázku pixelizujte jen jednu oblast.",
+      "clear": "Zrušit výběr"
+    },
     "quality": "Kvalita",
     "format": {
       "label": "Formát",

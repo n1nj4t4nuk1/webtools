@@ -863,6 +863,11 @@
   "pixely": {
     "dropzone": "Vedä kuva tähän tai napsauta valitaksesi yhden",
     "blockSize": "Lohkokoko",
+    "selection": {
+      "label": "Valittu alue",
+      "hint": "Vedä kuvan päällä pikselöidäksesi vain yhden alueen.",
+      "clear": "Tyhjennä valinta"
+    },
     "quality": "Laatu",
     "format": {
       "label": "Muoto",

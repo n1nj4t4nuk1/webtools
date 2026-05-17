@@ -863,6 +863,11 @@
   "pixely": {
     "dropzone": "Dra en bild hit eller klicka för att välja en",
     "blockSize": "Blockstorlek",
+    "selection": {
+      "label": "Markerat område",
+      "hint": "Dra på bilden för att pixla bara ett område.",
+      "clear": "Rensa markering"
+    },
     "quality": "Kvalitet",
     "format": {
       "label": "Format",

@@ -828,6 +828,11 @@
   "pixely": {
     "dropzone": "将图片拖到此处，或点击选择",
     "blockSize": "块大小",
+    "selection": {
+      "label": "选定区域",
+      "hint": "在图片上拖动以仅像素化某个区域。",
+      "clear": "清除选择"
+    },
     "quality": "质量",
     "format": {
       "label": "格式",

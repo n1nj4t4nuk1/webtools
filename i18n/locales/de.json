@@ -863,6 +863,11 @@
   "pixely": {
     "dropzone": "Ziehen Sie ein Bild hierher oder klicken Sie, um eines auszuwählen",
     "blockSize": "Blockgröße",
+    "selection": {
+      "label": "Ausgewählter Bereich",
+      "hint": "Ziehen Sie auf dem Bild, um nur einen Bereich zu verpixeln.",
+      "clear": "Auswahl aufheben"
+    },
     "quality": "Qualität",
     "format": {
       "label": "Format",

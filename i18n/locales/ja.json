@@ -828,6 +828,11 @@
   "pixely": {
     "dropzone": "画像をここにドラッグするか、クリックして選択",
     "blockSize": "ブロックサイズ",
+    "selection": {
+      "label": "選択範囲",
+      "hint": "画像上をドラッグして特定の領域だけをピクセル化。",
+      "clear": "選択を解除"
+    },
     "quality": "品質",
     "format": {
       "label": "形式",

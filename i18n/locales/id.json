@@ -863,6 +863,11 @@
   "pixely": {
     "dropzone": "Seret gambar ke sini atau klik untuk memilih",
     "blockSize": "Ukuran blok",
+    "selection": {
+      "label": "Area terpilih",
+      "hint": "Seret pada gambar untuk mempikselasi hanya satu area.",
+      "clear": "Hapus pilihan"
+    },
     "quality": "Kualitas",
     "format": {
       "label": "Format",

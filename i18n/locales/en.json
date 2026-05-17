@@ -863,6 +863,11 @@
   "pixely": {
     "dropzone": "Drag an image here or click to select one",
     "blockSize": "Block size",
+    "selection": {
+      "label": "Selected area",
+      "hint": "Drag on the image to pixelate just one region.",
+      "clear": "Clear selection"
+    },
     "quality": "Quality",
     "format": {
       "label": "Format",

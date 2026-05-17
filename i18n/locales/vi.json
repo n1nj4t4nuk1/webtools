@@ -863,6 +863,11 @@
   "pixely": {
     "dropzone": "Kéo ảnh vào đây hoặc nhấp để chọn",
     "blockSize": "Kích thước khối",
+    "selection": {
+      "label": "Vùng đã chọn",
+      "hint": "Kéo trên ảnh để chỉ pixel hóa một vùng.",
+      "clear": "Xóa vùng chọn"
+    },
     "quality": "Chất lượng",
     "format": {
       "label": "Định dạng",

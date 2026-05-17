@@ -863,6 +863,11 @@
   "pixely": {
     "dropzone": "Buraya bir görüntü sürükleyin veya seçmek için tıklayın",
     "blockSize": "Blok boyutu",
+    "selection": {
+      "label": "Seçili alan",
+      "hint": "Yalnızca bir bölgeyi pikselleştirmek için görüntü üzerinde sürükleyin.",
+      "clear": "Seçimi temizle"
+    },
     "quality": "Kalite",
     "format": {
       "label": "Format",
