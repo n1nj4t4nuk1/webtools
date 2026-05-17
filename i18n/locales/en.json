@@ -66,6 +66,11 @@
       "tagline": "Rotate pages of a PDF",
       "description": "Rotate all pages or a specific range by 90°, 180° or 270°. All in your browser."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Turn multiple images into one PDF",
+      "description": "Load several images, reorder them, and download them as a single PDF. A4, Letter or page sized to each image. All in your browser."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Combine fields into variants (emails, usernames…)",
@@ -637,6 +642,41 @@
       "copied": "Copied!",
       "download": "Download .txt",
       "downloadHint": "List hidden to avoid slowing down the browser. Press Download to get a .txt with all {count} combinations."
+    }
+  },
+  "albumy": {
+    "dropzone": "Drag images here or click to select them",
+    "list": {
+      "title": "{count} images"
+    },
+    "options": {
+      "title": "PDF options",
+      "pageSize": "Page size",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Fit to image"
+      },
+      "orientation": "Orientation",
+      "orientations": {
+        "portrait": "Portrait",
+        "landscape": "Landscape"
+      },
+      "margin": "Margin",
+      "quality": "Quality",
+      "qualityHint": "JPEG and PNG are embedded as-is. Other formats (WebP, GIF, etc.) are re-encoded to JPEG at this quality."
+    },
+    "actions": {
+      "build": "Build PDF and download",
+      "processing": "Building…",
+      "clear": "Remove all",
+      "moveUp": "Move up",
+      "moveDown": "Move down",
+      "remove": "Remove"
+    },
+    "errors": {
+      "notImage": "{name} is not a valid image.",
+      "generic": "Could not build the PDF."
     }
   },
   "pdfspinner": {

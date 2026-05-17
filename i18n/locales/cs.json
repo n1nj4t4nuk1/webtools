@@ -66,6 +66,11 @@
       "tagline": "Otáčení stránek PDF",
       "description": "Otočte všechny stránky nebo konkrétní rozsah o 90°, 180° nebo 270°. Vše ve vašem prohlížeči."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Spojení více obrázků do jednoho PDF",
+      "description": "Nahrajte několik obrázků, seřaďte je a stáhněte je jako jeden PDF. A4, Letter nebo velikost stránky přizpůsobená každému obrázku. Vše ve vašem prohlížeči."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kombinování polí do variant (e-maily, uživatelská jména…)",
@@ -637,6 +642,41 @@
       "copied": "Zkopírováno!",
       "download": "Stáhnout .txt",
       "downloadHint": "Seznam skryt, aby se nezpomalil prohlížeč. Stiskněte Stáhnout pro získání .txt se všemi {count} kombinacemi."
+    }
+  },
+  "albumy": {
+    "dropzone": "Přetáhněte sem obrázky nebo klikněte pro výběr",
+    "list": {
+      "title": "{count} obrázků"
+    },
+    "options": {
+      "title": "Možnosti PDF",
+      "pageSize": "Velikost stránky",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Přizpůsobit obrázku"
+      },
+      "orientation": "Orientace",
+      "orientations": {
+        "portrait": "Na výšku",
+        "landscape": "Na šířku"
+      },
+      "margin": "Okraj",
+      "quality": "Kvalita",
+      "qualityHint": "JPEG a PNG jsou vloženy v původní podobě. Ostatní formáty (WebP, GIF atd.) jsou překódovány do JPEG v této kvalitě."
+    },
+    "actions": {
+      "build": "Sestavit PDF a stáhnout",
+      "processing": "Sestavování…",
+      "clear": "Odstranit vše",
+      "moveUp": "Posunout nahoru",
+      "moveDown": "Posunout dolů",
+      "remove": "Odstranit"
+    },
+    "errors": {
+      "notImage": "{name} není platný obrázek.",
+      "generic": "Nelze sestavit PDF."
     }
   },
   "pdfspinner": {

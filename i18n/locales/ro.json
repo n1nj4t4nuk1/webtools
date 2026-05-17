@@ -66,6 +66,11 @@
       "tagline": "Rotește paginile unui PDF",
       "description": "Rotește toate paginile sau un interval specific cu 90°, 180° sau 270°. Totul în browserul tău."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Transformă mai multe imagini într-un singur PDF",
+      "description": "Încarcă mai multe imagini, reordonează-le și descarcă-le ca un singur PDF. A4, Letter sau pagină dimensionată după fiecare imagine. Totul în browserul tău."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Combină câmpuri în variante (e-mailuri, nume de utilizator…)",
@@ -637,6 +642,41 @@
       "copied": "Copiat!",
       "download": "Descarcă .txt",
       "downloadHint": "Lista este ascunsă pentru a nu încetini browserul. Apasă Descarcă pentru a obține un .txt cu toate cele {count} combinații."
+    }
+  },
+  "albumy": {
+    "dropzone": "Trage imagini aici sau apasă pentru a le selecta",
+    "list": {
+      "title": "{count} imagini"
+    },
+    "options": {
+      "title": "Opțiuni PDF",
+      "pageSize": "Dimensiunea paginii",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Potrivit pe imagine"
+      },
+      "orientation": "Orientare",
+      "orientations": {
+        "portrait": "Portret",
+        "landscape": "Peisaj"
+      },
+      "margin": "Margine",
+      "quality": "Calitate",
+      "qualityHint": "JPEG și PNG sunt încorporate ca atare. Alte formate (WebP, GIF, etc.) sunt recodificate în JPEG la această calitate."
+    },
+    "actions": {
+      "build": "Generează PDF și descarcă",
+      "processing": "Se generează…",
+      "clear": "Elimină tot",
+      "moveUp": "Mută în sus",
+      "moveDown": "Mută în jos",
+      "remove": "Elimină"
+    },
+    "errors": {
+      "notImage": "{name} nu este o imagine validă.",
+      "generic": "Nu s-a putut genera PDF-ul."
     }
   },
   "pdfspinner": {

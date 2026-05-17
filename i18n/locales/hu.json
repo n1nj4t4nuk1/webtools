@@ -66,6 +66,11 @@
       "tagline": "PDF oldalainak forgatása",
       "description": "Forgassa el az összes oldalt vagy egy adott tartományt 90°, 180° vagy 270° fokkal. Mindezt a böngészőben."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Alakítson több képet egyetlen PDF-fé",
+      "description": "Töltsön be több képet, rendezze át őket, és töltse le egyetlen PDF-ként. A4, Letter vagy az egyes képekhez igazított oldalméret. Mindezt a böngészőjében."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Mezők kombinálása változatokká (e-mailek, felhasználónevek…)",
@@ -637,6 +642,41 @@
       "copied": "Másolva!",
       "download": ".txt letöltése",
       "downloadHint": "A lista el van rejtve, hogy ne lassítsa le a böngészőt. Nyomja meg a Letöltést, és kap egy .txt fájlt mind a(z) {count} kombinációval."
+    }
+  },
+  "albumy": {
+    "dropzone": "Húzzon ide képeket, vagy kattintson a kiválasztáshoz",
+    "list": {
+      "title": "{count} kép"
+    },
+    "options": {
+      "title": "PDF beállítások",
+      "pageSize": "Oldalméret",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Igazítás a képhez"
+      },
+      "orientation": "Tájolás",
+      "orientations": {
+        "portrait": "Álló",
+        "landscape": "Fekvő"
+      },
+      "margin": "Margó",
+      "quality": "Minőség",
+      "qualityHint": "A JPEG és PNG képeket változatlan formában ágyazza be. A többi formátumot (WebP, GIF, stb.) JPEG-be kódolja át ezzel a minőséggel."
+    },
+    "actions": {
+      "build": "PDF készítése és letöltés",
+      "processing": "Készítés…",
+      "clear": "Mind eltávolítása",
+      "moveUp": "Mozgatás felfelé",
+      "moveDown": "Mozgatás lefelé",
+      "remove": "Eltávolítás"
+    },
+    "errors": {
+      "notImage": "{name} nem érvényes kép.",
+      "generic": "Nem sikerült elkészíteni a PDF-et."
     }
   },
   "pdfspinner": {

@@ -61,6 +61,11 @@
       "tagline": "旋转 PDF 页面",
       "description": "将所有页面或特定范围旋转 90°、180° 或 270°。所有处理都在您的浏览器中完成。"
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "将多张图片合并为一个 PDF",
+      "description": "加载多张图片，排序并下载为单个 PDF。A4、Letter 或自适应每张图片的尺寸。所有处理都在您的浏览器中完成。"
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "组合字段生成变体（邮箱、用户名…）",
@@ -632,6 +637,41 @@
       "copied": "已复制！",
       "download": "下载 .txt",
       "downloadHint": "已隐藏列表以避免拖慢浏览器。点击下载获取包含 {count} 个组合的 .txt 文件。"
+    }
+  },
+  "albumy": {
+    "dropzone": "将图片拖到此处，或点击选择",
+    "list": {
+      "title": "{count} 张图片"
+    },
+    "options": {
+      "title": "PDF 选项",
+      "pageSize": "页面大小",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "适应图片"
+      },
+      "orientation": "方向",
+      "orientations": {
+        "portrait": "纵向",
+        "landscape": "横向"
+      },
+      "margin": "边距",
+      "quality": "质量",
+      "qualityHint": "JPEG 和 PNG 按原样嵌入。其他格式（WebP、GIF 等）以此质量重新编码为 JPEG。"
+    },
+    "actions": {
+      "build": "创建 PDF 并下载",
+      "processing": "创建中…",
+      "clear": "全部移除",
+      "moveUp": "上移",
+      "moveDown": "下移",
+      "remove": "移除"
+    },
+    "errors": {
+      "notImage": "{name} 不是有效的图片。",
+      "generic": "无法创建 PDF。"
     }
   },
   "pdfspinner": {

@@ -66,6 +66,11 @@
       "tagline": "Putar halaman PDF",
       "description": "Putar semua halaman atau rentang tertentu sebesar 90°, 180°, atau 270°. Semua di peramban Anda."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Ubah beberapa gambar menjadi satu PDF",
+      "description": "Muat beberapa gambar, susun ulang, dan unduh sebagai satu PDF. A4, Letter, atau halaman sesuai ukuran tiap gambar. Semua di peramban Anda."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Gabungkan kolom menjadi varian (email, nama pengguna…)",
@@ -637,6 +642,41 @@
       "copied": "Tersalin!",
       "download": "Unduh .txt",
       "downloadHint": "Daftar disembunyikan untuk menghindari peramban menjadi lambat. Tekan Unduh untuk mendapatkan .txt dengan semua {count} kombinasi."
+    }
+  },
+  "albumy": {
+    "dropzone": "Seret gambar ke sini atau klik untuk memilihnya",
+    "list": {
+      "title": "{count} gambar"
+    },
+    "options": {
+      "title": "Opsi PDF",
+      "pageSize": "Ukuran halaman",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Sesuaikan dengan gambar"
+      },
+      "orientation": "Orientasi",
+      "orientations": {
+        "portrait": "Potret",
+        "landscape": "Lanskap"
+      },
+      "margin": "Margin",
+      "quality": "Kualitas",
+      "qualityHint": "JPEG dan PNG disematkan apa adanya. Format lain (WebP, GIF, dll.) dikodekan ulang ke JPEG pada kualitas ini."
+    },
+    "actions": {
+      "build": "Buat PDF dan unduh",
+      "processing": "Membuat…",
+      "clear": "Hapus semua",
+      "moveUp": "Pindah ke atas",
+      "moveDown": "Pindah ke bawah",
+      "remove": "Hapus"
+    },
+    "errors": {
+      "notImage": "{name} bukan gambar yang valid.",
+      "generic": "Tidak dapat membuat PDF."
     }
   },
   "pdfspinner": {

@@ -66,6 +66,11 @@
       "tagline": "Xoay các trang của PDF",
       "description": "Xoay tất cả các trang hoặc một phạm vi cụ thể 90°, 180° hoặc 270°. Tất cả trong trình duyệt của bạn."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Biến nhiều ảnh thành một PDF",
+      "description": "Tải nhiều ảnh, sắp xếp lại thứ tự và tải về dưới dạng một tệp PDF duy nhất. A4, Letter hoặc trang vừa với từng ảnh. Tất cả trong trình duyệt của bạn."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kết hợp các trường thành biến thể (email, tên người dùng…)",
@@ -637,6 +642,41 @@
       "copied": "Đã sao chép!",
       "download": "Tải .txt",
       "downloadHint": "Danh sách bị ẩn để tránh làm chậm trình duyệt. Nhấn Tải về để lấy một tệp .txt với tất cả {count} kết hợp."
+    }
+  },
+  "albumy": {
+    "dropzone": "Kéo các ảnh vào đây hoặc nhấp để chọn",
+    "list": {
+      "title": "{count} ảnh"
+    },
+    "options": {
+      "title": "Tùy chọn PDF",
+      "pageSize": "Kích thước trang",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Vừa với ảnh"
+      },
+      "orientation": "Hướng",
+      "orientations": {
+        "portrait": "Dọc",
+        "landscape": "Ngang"
+      },
+      "margin": "Lề",
+      "quality": "Chất lượng",
+      "qualityHint": "JPEG và PNG được nhúng nguyên trạng. Các định dạng khác (WebP, GIF, v.v.) được mã hóa lại sang JPEG ở chất lượng này."
+    },
+    "actions": {
+      "build": "Tạo PDF và tải về",
+      "processing": "Đang tạo…",
+      "clear": "Xóa tất cả",
+      "moveUp": "Di chuyển lên",
+      "moveDown": "Di chuyển xuống",
+      "remove": "Xóa"
+    },
+    "errors": {
+      "notImage": "{name} không phải là ảnh hợp lệ.",
+      "generic": "Không thể tạo PDF."
     }
   },
   "pdfspinner": {

@@ -66,6 +66,11 @@
       "tagline": "PDF 페이지 회전",
       "description": "모든 페이지 또는 특정 범위를 90°, 180° 또는 270°로 회전합니다. 모두 브라우저에서 처리됩니다."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "여러 이미지를 하나의 PDF로 변환",
+      "description": "여러 이미지를 불러와 순서를 변경하고 단일 PDF로 다운로드합니다. A4, Letter 또는 각 이미지 크기에 맞춤. 모두 브라우저에서 처리됩니다."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "필드를 조합해 변형 생성 (이메일, 사용자명…)",
@@ -637,6 +642,41 @@
       "copied": "복사되었습니다!",
       "download": ".txt 다운로드",
       "downloadHint": "브라우저 속도 저하를 피하기 위해 목록이 숨겨졌습니다. 다운로드를 눌러 모든 {count}개 조합이 담긴 .txt 파일을 받으세요."
+    }
+  },
+  "albumy": {
+    "dropzone": "여기에 이미지를 끌어 놓거나 클릭해 선택하세요",
+    "list": {
+      "title": "이미지 {count}개"
+    },
+    "options": {
+      "title": "PDF 옵션",
+      "pageSize": "페이지 크기",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "이미지에 맞춤"
+      },
+      "orientation": "방향",
+      "orientations": {
+        "portrait": "세로",
+        "landscape": "가로"
+      },
+      "margin": "여백",
+      "quality": "품질",
+      "qualityHint": "JPEG와 PNG는 그대로 포함됩니다. 다른 형식(WebP, GIF 등)은 이 품질로 JPEG로 재인코딩됩니다."
+    },
+    "actions": {
+      "build": "PDF 생성 및 다운로드",
+      "processing": "생성 중…",
+      "clear": "모두 제거",
+      "moveUp": "위로 이동",
+      "moveDown": "아래로 이동",
+      "remove": "제거"
+    },
+    "errors": {
+      "notImage": "{name}은(는) 유효한 이미지가 아닙니다.",
+      "generic": "PDF를 생성할 수 없습니다."
     }
   },
   "pdfspinner": {

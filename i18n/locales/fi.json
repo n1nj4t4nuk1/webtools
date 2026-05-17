@@ -66,6 +66,11 @@
       "tagline": "Kierrä PDF:n sivuja",
       "description": "Kierrä kaikkia sivuja tai tiettyä väliä 90°, 180° tai 270°. Kaikki selaimessasi."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Yhdistä useita kuvia yhdeksi PDF:ksi",
+      "description": "Lataa useita kuvia, järjestä ne uudelleen ja lataa ne yhtenä PDF:nä. A4, Letter tai kuhunkin kuvaan sovitettu sivukoko. Kaikki selaimessasi."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Yhdistä kenttiä variantteihin (sähköpostit, käyttäjänimet…)",
@@ -637,6 +642,41 @@
       "copied": "Kopioitu!",
       "download": "Lataa .txt",
       "downloadHint": "Lista on piilotettu, jottei selain hidastu. Paina Lataa saadaksesi .txt-tiedoston, jossa on kaikki {count} yhdistelmää."
+    }
+  },
+  "albumy": {
+    "dropzone": "Vedä kuvat tähän tai napsauta valitaksesi ne",
+    "list": {
+      "title": "{count} kuvaa"
+    },
+    "options": {
+      "title": "PDF-asetukset",
+      "pageSize": "Sivukoko",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Sovita kuvaan"
+      },
+      "orientation": "Suunta",
+      "orientations": {
+        "portrait": "Pysty",
+        "landscape": "Vaaka"
+      },
+      "margin": "Marginaali",
+      "quality": "Laatu",
+      "qualityHint": "JPEG ja PNG upotetaan sellaisinaan. Muut muodot (WebP, GIF jne.) koodataan uudelleen JPEG-muotoon tällä laadulla."
+    },
+    "actions": {
+      "build": "Luo PDF ja lataa",
+      "processing": "Luodaan…",
+      "clear": "Poista kaikki",
+      "moveUp": "Siirrä ylös",
+      "moveDown": "Siirrä alas",
+      "remove": "Poista"
+    },
+    "errors": {
+      "notImage": "{name} ei ole kelvollinen kuva.",
+      "generic": "PDF:n luominen epäonnistui."
     }
   },
   "pdfspinner": {

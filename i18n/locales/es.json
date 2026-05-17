@@ -66,6 +66,11 @@
       "tagline": "Rota páginas de un PDF",
       "description": "Rota todas las páginas o un rango específico 90°, 180° o 270°. Todo en tu navegador."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Convierte varias imágenes en un PDF",
+      "description": "Carga varias imágenes, ordénalas y descárgalas como un único PDF. Tamaño A4, Letter o ajustado a la imagen. Todo en tu navegador."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Combina campos en variantes (emails, usernames…)",
@@ -637,6 +642,41 @@
       "copied": "¡Copiado!",
       "download": "Descargar .txt",
       "downloadHint": "Lista oculta para no ralentizar el navegador. Pulsa Descargar para obtener un .txt con las {count} combinaciones."
+    }
+  },
+  "albumy": {
+    "dropzone": "Arrastra imágenes aquí o haz clic para seleccionarlas",
+    "list": {
+      "title": "{count} imágenes"
+    },
+    "options": {
+      "title": "Opciones del PDF",
+      "pageSize": "Tamaño de página",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Ajustar a la imagen"
+      },
+      "orientation": "Orientación",
+      "orientations": {
+        "portrait": "Vertical",
+        "landscape": "Horizontal"
+      },
+      "margin": "Margen",
+      "quality": "Calidad",
+      "qualityHint": "JPEG y PNG se incrustan tal cual. Otros formatos (WebP, GIF, etc.) se reconvierten a JPEG con esta calidad."
+    },
+    "actions": {
+      "build": "Crear PDF y descargar",
+      "processing": "Creando…",
+      "clear": "Quitar todas",
+      "moveUp": "Mover arriba",
+      "moveDown": "Mover abajo",
+      "remove": "Quitar"
+    },
+    "errors": {
+      "notImage": "{name} no es una imagen válida.",
+      "generic": "No se pudo crear el PDF."
     }
   },
   "pdfspinner": {

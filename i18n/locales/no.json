@@ -66,6 +66,11 @@
       "tagline": "Roter sider i en PDF",
       "description": "Roter alle sider eller et bestemt område med 90°, 180° eller 270°. Alt i nettleseren din."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Gjør flere bilder om til én PDF",
+      "description": "Last inn flere bilder, omorganiser dem, og last dem ned som én enkelt PDF. A4, Letter eller sidestørrelse tilpasset hvert bilde. Alt i nettleseren din."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kombiner felter til varianter (e-poster, brukernavn…)",
@@ -637,6 +642,41 @@
       "copied": "Kopiert!",
       "download": "Last ned .txt",
       "downloadHint": "Listen er skjult for å unngå å gjøre nettleseren treg. Trykk Last ned for å få en .txt med alle {count} kombinasjoner."
+    }
+  },
+  "albumy": {
+    "dropzone": "Dra bilder hit eller klikk for å velge dem",
+    "list": {
+      "title": "{count} bilder"
+    },
+    "options": {
+      "title": "PDF-innstillinger",
+      "pageSize": "Sidestørrelse",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Tilpass til bilde"
+      },
+      "orientation": "Retning",
+      "orientations": {
+        "portrait": "Stående",
+        "landscape": "Liggende"
+      },
+      "margin": "Marg",
+      "quality": "Kvalitet",
+      "qualityHint": "JPEG og PNG bygges inn som de er. Andre formater (WebP, GIF osv.) kodes om til JPEG med denne kvaliteten."
+    },
+    "actions": {
+      "build": "Bygg PDF og last ned",
+      "processing": "Bygger…",
+      "clear": "Fjern alle",
+      "moveUp": "Flytt opp",
+      "moveDown": "Flytt ned",
+      "remove": "Fjern"
+    },
+    "errors": {
+      "notImage": "{name} er ikke et gyldig bilde.",
+      "generic": "Kunne ikke bygge PDF-en."
     }
   },
   "pdfspinner": {

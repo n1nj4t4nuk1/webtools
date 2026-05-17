@@ -61,6 +61,11 @@
       "tagline": "Ruota pagine di un PDF",
       "description": "Ruota tutte le pagine o un intervallo specifico di 90°, 180° o 270°. Tutto nel tuo browser."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Trasforma più immagini in un PDF",
+      "description": "Carica più immagini, riordinale e scaricale come un unico PDF. A4, Letter o dimensione adattata a ogni immagine. Tutto nel tuo browser."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Combina campi in varianti (email, username…)",
@@ -632,6 +637,41 @@
       "copied": "Copiato!",
       "download": "Scarica .txt",
       "downloadHint": "Lista nascosta per non rallentare il browser. Clicca Scarica per ottenere un .txt con le {count} combinazioni."
+    }
+  },
+  "albumy": {
+    "dropzone": "Trascina immagini qui o clicca per selezionarle",
+    "list": {
+      "title": "{count} immagini"
+    },
+    "options": {
+      "title": "Opzioni PDF",
+      "pageSize": "Dimensione pagina",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Adatta all'immagine"
+      },
+      "orientation": "Orientamento",
+      "orientations": {
+        "portrait": "Verticale",
+        "landscape": "Orizzontale"
+      },
+      "margin": "Margine",
+      "quality": "Qualità",
+      "qualityHint": "JPEG e PNG vengono incorporati così come sono. Altri formati (WebP, GIF, ecc.) vengono riconvertiti in JPEG con questa qualità."
+    },
+    "actions": {
+      "build": "Crea PDF e scarica",
+      "processing": "Creazione…",
+      "clear": "Rimuovi tutte",
+      "moveUp": "Sposta su",
+      "moveDown": "Sposta giù",
+      "remove": "Rimuovi"
+    },
+    "errors": {
+      "notImage": "{name} non è un'immagine valida.",
+      "generic": "Impossibile creare il PDF."
     }
   },
   "pdfspinner": {

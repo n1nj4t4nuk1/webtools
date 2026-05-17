@@ -66,6 +66,11 @@
       "tagline": "Pagina's van een PDF draaien",
       "description": "Draai alle pagina's of een specifiek bereik met 90°, 180° of 270°. Alles in uw browser."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Meerdere afbeeldingen omzetten naar één PDF",
+      "description": "Laad meerdere afbeeldingen, herorden ze en download ze als één PDF. A4, Letter of paginaformaat aangepast aan elke afbeelding. Alles in uw browser."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Velden combineren tot varianten (e-mails, gebruikersnamen…)",
@@ -637,6 +642,41 @@
       "copied": "Gekopieerd!",
       "download": ".txt downloaden",
       "downloadHint": "Lijst verborgen om de browser niet te vertragen. Druk op Downloaden voor een .txt met alle {count} combinaties."
+    }
+  },
+  "albumy": {
+    "dropzone": "Sleep afbeeldingen hierheen of klik om ze te selecteren",
+    "list": {
+      "title": "{count} afbeeldingen"
+    },
+    "options": {
+      "title": "PDF-opties",
+      "pageSize": "Paginaformaat",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Aanpassen aan afbeelding"
+      },
+      "orientation": "Oriëntatie",
+      "orientations": {
+        "portrait": "Staand",
+        "landscape": "Liggend"
+      },
+      "margin": "Marge",
+      "quality": "Kwaliteit",
+      "qualityHint": "JPEG en PNG worden ongewijzigd ingesloten. Andere formaten (WebP, GIF, enz.) worden opnieuw gecodeerd naar JPEG met deze kwaliteit."
+    },
+    "actions": {
+      "build": "PDF bouwen en downloaden",
+      "processing": "Bezig met bouwen…",
+      "clear": "Alles verwijderen",
+      "moveUp": "Omhoog verplaatsen",
+      "moveDown": "Omlaag verplaatsen",
+      "remove": "Verwijderen"
+    },
+    "errors": {
+      "notImage": "{name} is geen geldige afbeelding.",
+      "generic": "Kon de PDF niet bouwen."
     }
   },
   "pdfspinner": {

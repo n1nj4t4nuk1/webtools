@@ -66,6 +66,11 @@
       "tagline": "Faire pivoter les pages d'un PDF",
       "description": "Faites pivoter toutes les pages ou une plage spécifique de 90°, 180° ou 270°. Le tout dans votre navigateur."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Transformer plusieurs images en un seul PDF",
+      "description": "Chargez plusieurs images, réorganisez-les et téléchargez-les sous forme d'un seul PDF. A4, Letter ou page ajustée à chaque image. Le tout dans votre navigateur."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Combiner des champs en variantes (e-mails, identifiants…)",
@@ -637,6 +642,41 @@
       "copied": "Copié !",
       "download": "Télécharger .txt",
       "downloadHint": "Liste masquée pour ne pas ralentir le navigateur. Appuyez sur Télécharger pour obtenir un .txt avec les {count} combinaisons."
+    }
+  },
+  "albumy": {
+    "dropzone": "Glissez les images ici ou cliquez pour les sélectionner",
+    "list": {
+      "title": "{count} images"
+    },
+    "options": {
+      "title": "Options PDF",
+      "pageSize": "Taille de page",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Ajuster à l'image"
+      },
+      "orientation": "Orientation",
+      "orientations": {
+        "portrait": "Portrait",
+        "landscape": "Paysage"
+      },
+      "margin": "Marge",
+      "quality": "Qualité",
+      "qualityHint": "JPEG et PNG sont intégrés tels quels. Les autres formats (WebP, GIF, etc.) sont réencodés en JPEG avec cette qualité."
+    },
+    "actions": {
+      "build": "Générer le PDF et télécharger",
+      "processing": "Génération…",
+      "clear": "Tout supprimer",
+      "moveUp": "Monter",
+      "moveDown": "Descendre",
+      "remove": "Supprimer"
+    },
+    "errors": {
+      "notImage": "{name} n'est pas une image valide.",
+      "generic": "Impossible de générer le PDF."
     }
   },
   "pdfspinner": {

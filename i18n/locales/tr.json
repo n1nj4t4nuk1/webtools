@@ -66,6 +66,11 @@
       "tagline": "PDF sayfalarını döndür",
       "description": "Tüm sayfaları veya belirli bir aralığı 90°, 180° veya 270° döndürün. Hepsi tarayıcınızda."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Birden fazla görüntüyü tek bir PDF'ye dönüştür",
+      "description": "Birden fazla görüntü yükleyin, yeniden sıralayın ve tek bir PDF olarak indirin. A4, Letter veya her görüntünün boyutuna göre sayfa. Hepsi tarayıcınızda."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Alanları varyantlar halinde birleştir (e-postalar, kullanıcı adları…)",
@@ -637,6 +642,41 @@
       "copied": "Kopyalandı!",
       "download": ".txt indir",
       "downloadHint": "Tarayıcının yavaşlamaması için liste gizlendi. Tüm {count} kombinasyonlu bir .txt almak için İndir'e basın."
+    }
+  },
+  "albumy": {
+    "dropzone": "Buraya görüntüleri sürükleyin veya seçmek için tıklayın",
+    "list": {
+      "title": "{count} görüntü"
+    },
+    "options": {
+      "title": "PDF seçenekleri",
+      "pageSize": "Sayfa boyutu",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Görüntüye sığdır"
+      },
+      "orientation": "Yönlendirme",
+      "orientations": {
+        "portrait": "Dikey",
+        "landscape": "Yatay"
+      },
+      "margin": "Kenar boşluğu",
+      "quality": "Kalite",
+      "qualityHint": "JPEG ve PNG olduğu gibi gömülür. Diğer formatlar (WebP, GIF, vb.) bu kalitede JPEG olarak yeniden kodlanır."
+    },
+    "actions": {
+      "build": "PDF oluştur ve indir",
+      "processing": "Oluşturuluyor…",
+      "clear": "Tümünü kaldır",
+      "moveUp": "Yukarı taşı",
+      "moveDown": "Aşağı taşı",
+      "remove": "Kaldır"
+    },
+    "errors": {
+      "notImage": "{name} geçerli bir görüntü değil.",
+      "generic": "PDF oluşturulamadı."
     }
   },
   "pdfspinner": {

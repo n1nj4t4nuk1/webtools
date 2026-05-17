@@ -61,6 +61,11 @@
       "tagline": "PDFのページを回転",
       "description": "すべてのページまたは指定範囲を90°、180°、270°回転。すべてブラウザで処理されます。"
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "複数の画像を1つのPDFに変換",
+      "description": "複数の画像を読み込み、並び替えて1つのPDFとしてダウンロード。A4、Letter、または各画像に合わせたサイズ。すべてブラウザで処理。"
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "フィールドを組み合わせてバリアントを生成（メール、ユーザー名など）",
@@ -632,6 +637,41 @@
       "copied": "コピーしました！",
       "download": ".txtをダウンロード",
       "downloadHint": "ブラウザの負荷を避けるためリストを非表示にしています。ダウンロードを押すと{count}件の組み合わせを含む.txtを取得できます。"
+    }
+  },
+  "albumy": {
+    "dropzone": "画像をここにドラッグするか、クリックして選択",
+    "list": {
+      "title": "{count}個の画像"
+    },
+    "options": {
+      "title": "PDFオプション",
+      "pageSize": "ページサイズ",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "画像に合わせる"
+      },
+      "orientation": "向き",
+      "orientations": {
+        "portrait": "縦",
+        "landscape": "横"
+      },
+      "margin": "余白",
+      "quality": "品質",
+      "qualityHint": "JPEGとPNGはそのまま埋め込まれます。他の形式（WebP、GIFなど）はこの品質でJPEGに再エンコードされます。"
+    },
+    "actions": {
+      "build": "PDFを作成してダウンロード",
+      "processing": "作成中…",
+      "clear": "すべて削除",
+      "moveUp": "上へ",
+      "moveDown": "下へ",
+      "remove": "削除"
+    },
+    "errors": {
+      "notImage": "{name}は有効な画像ではありません。",
+      "generic": "PDFを作成できませんでした。"
     }
   },
   "pdfspinner": {

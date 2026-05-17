@@ -66,6 +66,11 @@
       "tagline": "Rotera sidor i en PDF",
       "description": "Rotera alla sidor eller ett specifikt intervall med 90°, 180° eller 270°. Allt i din webbläsare."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Förvandla flera bilder till en PDF",
+      "description": "Ladda flera bilder, ändra ordningen och ladda ner dem som en enda PDF. A4, Letter eller sidstorlek anpassad till varje bild. Allt i din webbläsare."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kombinera fält till varianter (e-post, användarnamn…)",
@@ -637,6 +642,41 @@
       "copied": "Kopierat!",
       "download": "Ladda ner .txt",
       "downloadHint": "Listan är dold för att inte sakta ner webbläsaren. Tryck på Ladda ner för att få en .txt med alla {count} kombinationer."
+    }
+  },
+  "albumy": {
+    "dropzone": "Dra bilder hit eller klicka för att välja dem",
+    "list": {
+      "title": "{count} bilder"
+    },
+    "options": {
+      "title": "PDF-alternativ",
+      "pageSize": "Sidstorlek",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Anpassa till bild"
+      },
+      "orientation": "Orientering",
+      "orientations": {
+        "portrait": "Stående",
+        "landscape": "Liggande"
+      },
+      "margin": "Marginal",
+      "quality": "Kvalitet",
+      "qualityHint": "JPEG och PNG bäddas in som de är. Andra format (WebP, GIF, etc.) kodas om till JPEG med den här kvaliteten."
+    },
+    "actions": {
+      "build": "Skapa PDF och ladda ner",
+      "processing": "Skapar…",
+      "clear": "Ta bort alla",
+      "moveUp": "Flytta upp",
+      "moveDown": "Flytta ner",
+      "remove": "Ta bort"
+    },
+    "errors": {
+      "notImage": "{name} är inte en giltig bild.",
+      "generic": "Kunde inte skapa PDF:en."
     }
   },
   "pdfspinner": {

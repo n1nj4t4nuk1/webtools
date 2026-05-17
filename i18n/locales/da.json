@@ -66,6 +66,11 @@
       "tagline": "Rotér sider i en PDF",
       "description": "Rotér alle sider eller et bestemt interval med 90°, 180° eller 270°. Alt i din browser."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Forvandl flere billeder til én PDF",
+      "description": "Indlæs flere billeder, omarrangér dem, og hent dem som en enkelt PDF. A4, Letter eller sidestørrelse tilpasset hvert billede. Alt i din browser."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kombinér felter til varianter (e-mails, brugernavne…)",
@@ -637,6 +642,41 @@
       "copied": "Kopieret!",
       "download": "Hent .txt",
       "downloadHint": "Listen er skjult for ikke at gøre browseren langsom. Tryk på Hent for at få en .txt med alle {count} kombinationer."
+    }
+  },
+  "albumy": {
+    "dropzone": "Træk billeder hertil, eller klik for at vælge dem",
+    "list": {
+      "title": "{count} billeder"
+    },
+    "options": {
+      "title": "PDF-indstillinger",
+      "pageSize": "Sidestørrelse",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Tilpas til billede"
+      },
+      "orientation": "Retning",
+      "orientations": {
+        "portrait": "Stående",
+        "landscape": "Liggende"
+      },
+      "margin": "Margen",
+      "quality": "Kvalitet",
+      "qualityHint": "JPEG og PNG indlejres som de er. Andre formater (WebP, GIF osv.) genkodes til JPEG med denne kvalitet."
+    },
+    "actions": {
+      "build": "Byg PDF og hent",
+      "processing": "Bygger…",
+      "clear": "Fjern alle",
+      "moveUp": "Flyt op",
+      "moveDown": "Flyt ned",
+      "remove": "Fjern"
+    },
+    "errors": {
+      "notImage": "{name} er ikke et gyldigt billede.",
+      "generic": "Kunne ikke bygge PDF'en."
     }
   },
   "pdfspinner": {

@@ -66,6 +66,11 @@
       "tagline": "Obracaj strony PDF",
       "description": "Obróć wszystkie strony lub wybrany zakres o 90°, 180° lub 270°. Wszystko w Twojej przeglądarce."
     },
+    "albumy": {
+      "name": "Albumy",
+      "tagline": "Zamień wiele obrazów w jeden PDF",
+      "description": "Załaduj kilka obrazów, zmień ich kolejność i pobierz jako pojedynczy PDF. A4, Letter lub strona dopasowana do każdego obrazu. Wszystko w Twojej przeglądarce."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Łącz pola w warianty (e-maile, nazwy użytkownika…)",
@@ -637,6 +642,41 @@
       "copied": "Skopiowano!",
       "download": "Pobierz .txt",
       "downloadHint": "Lista ukryta, aby nie spowalniać przeglądarki. Naciśnij Pobierz, aby otrzymać .txt ze wszystkimi {count} kombinacjami."
+    }
+  },
+  "albumy": {
+    "dropzone": "Przeciągnij tutaj obrazy lub kliknij, aby je wybrać",
+    "list": {
+      "title": "{count} obrazów"
+    },
+    "options": {
+      "title": "Opcje PDF",
+      "pageSize": "Rozmiar strony",
+      "pageSizes": {
+        "a4": "A4",
+        "letter": "Letter",
+        "fit": "Dopasuj do obrazu"
+      },
+      "orientation": "Orientacja",
+      "orientations": {
+        "portrait": "Pionowa",
+        "landscape": "Pozioma"
+      },
+      "margin": "Margines",
+      "quality": "Jakość",
+      "qualityHint": "JPEG i PNG są osadzane bez zmian. Inne formaty (WebP, GIF itp.) są ponownie kodowane do JPEG z tą jakością."
+    },
+    "actions": {
+      "build": "Utwórz PDF i pobierz",
+      "processing": "Tworzenie…",
+      "clear": "Usuń wszystko",
+      "moveUp": "Przesuń w górę",
+      "moveDown": "Przesuń w dół",
+      "remove": "Usuń"
+    },
+    "errors": {
+      "notImage": "{name} nie jest prawidłowym obrazem.",
+      "generic": "Nie udało się utworzyć PDF."
     }
   },
   "pdfspinner": {
