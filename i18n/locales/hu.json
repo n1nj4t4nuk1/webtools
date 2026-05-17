@@ -76,6 +76,11 @@
       "tagline": "Alakítson több képet egyetlen PDF-fé",
       "description": "Töltsön be több képet, rendezze át őket, és töltse le egyetlen PDF-ként. A4, Letter vagy az egyes képekhez igazított oldalméret. Mindezt a böngészőjében."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "PDF metaadatainak szerkesztése",
+      "description": "Olvassa és módosítsa egy PDF címét, szerzőjét, tárgyát, kulcsszavait és dátumait. Mindezt a böngészőjében."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Mezők kombinálása változatokká (e-mailek, felhasználónevek…)",
@@ -682,6 +687,35 @@
       "copied": "Másolva!",
       "download": ".txt letöltése",
       "downloadHint": "A lista el van rejtve, hogy ne lassítsa le a böngészőt. Nyomja meg a Letöltést, és kap egy .txt fájlt mind a(z) {count} kombinációval."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Húzzon ide egy PDF-et, vagy kattintson a kiválasztáshoz",
+    "totalPages": "{n} oldal",
+    "fields": {
+      "title": "Cím",
+      "author": "Szerző",
+      "subject": "Tárgy",
+      "keywords": "Kulcsszavak",
+      "keywordsPlaceholder": "kulcsszó1, kulcsszó2, kulcsszó3…",
+      "keywordsHint": "A kulcsszavakat vesszővel válassza el.",
+      "producer": "Készítő",
+      "creator": "Létrehozó",
+      "creationDate": "Létrehozás dátuma",
+      "modificationDate": "Módosítás dátuma",
+      "empty": "(üres)"
+    },
+    "actions": {
+      "apply": "Alkalmazás és letöltés",
+      "processing": "Alkalmazás…",
+      "change": "PDF cseréje",
+      "now": "Most"
+    },
+    "errors": {
+      "notPdf": "{name} nem PDF.",
+      "invalidPdf": "{name} nem érvényes PDF, vagy sérült.",
+      "encrypted": "Ez a PDF jelszóval védett.",
+      "generic": "Nem sikerült alkalmazni a módosításokat."
     }
   },
   "albumy": {

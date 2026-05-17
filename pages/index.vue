@@ -4,7 +4,7 @@ const localePath = useLocalePath()
 
 const categoriesRaw = [
   { id: 'imageEdit', tools: ['mochi', 'metaimg', 'convy', 'pixely'] },
-  { id: 'documents', tools: ['stapler', 'scissor', 'pdfspinner', 'albumy', 'wordy'] },
+  { id: 'documents', tools: ['stapler', 'scissor', 'pdfspinner', 'albumy', 'metapdf', 'wordy'] },
   { id: 'privacy', tools: ['metaimg', 'createpass', 'hashy'] },
   { id: 'generators', tools: ['createpass', 'idkun', 'combiny', 'lorempad', 'qrgen'] },
   { id: 'dev', tools: ['csvjson', 'jsonpad', 'regexpad', 'yamljson', 'urlpad', 'codecpad', 'jwtdecoder', 'diffy', 'idkun'] },
@@ -24,6 +24,7 @@ const toolPaths: Record<string, string> = {
   scissor: '/scissor',
   pdfspinner: '/pdfspinner',
   albumy: '/albumy',
+  metapdf: '/metapdf',
   wordy: '/wordy',
   combiny: '/combiny',
   csvjson: '/csvjson',

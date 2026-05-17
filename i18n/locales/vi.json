@@ -76,6 +76,11 @@
       "tagline": "Biến nhiều ảnh thành một PDF",
       "description": "Tải nhiều ảnh, sắp xếp lại thứ tự và tải về dưới dạng một tệp PDF duy nhất. A4, Letter hoặc trang vừa với từng ảnh. Tất cả trong trình duyệt của bạn."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Chỉnh sửa metadata của PDF",
+      "description": "Đọc và sửa tiêu đề, tác giả, chủ đề, từ khóa và ngày tháng của một PDF. Tất cả trong trình duyệt của bạn."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kết hợp các trường thành biến thể (email, tên người dùng…)",
@@ -682,6 +687,35 @@
       "copied": "Đã sao chép!",
       "download": "Tải .txt",
       "downloadHint": "Danh sách bị ẩn để tránh làm chậm trình duyệt. Nhấn Tải về để lấy một tệp .txt với tất cả {count} kết hợp."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Kéo một PDF vào đây hoặc nhấp để chọn",
+    "totalPages": "{n} trang",
+    "fields": {
+      "title": "Tiêu đề",
+      "author": "Tác giả",
+      "subject": "Chủ đề",
+      "keywords": "Từ khóa",
+      "keywordsPlaceholder": "từ khóa 1, từ khóa 2, từ khóa 3…",
+      "keywordsHint": "Phân tách các từ khóa bằng dấu phẩy.",
+      "producer": "Nhà sản xuất",
+      "creator": "Người tạo",
+      "creationDate": "Ngày tạo",
+      "modificationDate": "Ngày sửa đổi",
+      "empty": "(trống)"
+    },
+    "actions": {
+      "apply": "Áp dụng và tải về",
+      "processing": "Đang áp dụng…",
+      "change": "Đổi PDF",
+      "now": "Bây giờ"
+    },
+    "errors": {
+      "notPdf": "{name} không phải là PDF.",
+      "invalidPdf": "{name} không phải là PDF hợp lệ hoặc đã bị hỏng.",
+      "encrypted": "PDF này được bảo vệ bằng mật khẩu.",
+      "generic": "Không thể áp dụng các thay đổi."
     }
   },
   "albumy": {

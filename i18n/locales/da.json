@@ -76,6 +76,11 @@
       "tagline": "Forvandl flere billeder til én PDF",
       "description": "Indlæs flere billeder, omarrangér dem, og hent dem som en enkelt PDF. A4, Letter eller sidestørrelse tilpasset hvert billede. Alt i din browser."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Redigér metadata i en PDF",
+      "description": "Læs og ændr titel, forfatter, emne, nøgleord og datoer i en PDF. Alt i din browser."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kombinér felter til varianter (e-mails, brugernavne…)",
@@ -682,6 +687,35 @@
       "copied": "Kopieret!",
       "download": "Hent .txt",
       "downloadHint": "Listen er skjult for ikke at gøre browseren langsom. Tryk på Hent for at få en .txt med alle {count} kombinationer."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Træk en PDF hertil, eller klik for at vælge en",
+    "totalPages": "{n} sider",
+    "fields": {
+      "title": "Titel",
+      "author": "Forfatter",
+      "subject": "Emne",
+      "keywords": "Nøgleord",
+      "keywordsPlaceholder": "nøgleord1, nøgleord2, nøgleord3…",
+      "keywordsHint": "Adskil nøgleord med komma.",
+      "producer": "Producent",
+      "creator": "Oprettet af",
+      "creationDate": "Oprettelsesdato",
+      "modificationDate": "Ændringsdato",
+      "empty": "(tom)"
+    },
+    "actions": {
+      "apply": "Anvend og hent",
+      "processing": "Anvender…",
+      "change": "Skift PDF",
+      "now": "Nu"
+    },
+    "errors": {
+      "notPdf": "{name} er ikke en PDF.",
+      "invalidPdf": "{name} er ikke en gyldig PDF eller er beskadiget.",
+      "encrypted": "Denne PDF er beskyttet med adgangskode.",
+      "generic": "Kunne ikke anvende ændringerne."
     }
   },
   "albumy": {

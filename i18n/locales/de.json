@@ -76,6 +76,11 @@
       "tagline": "Mehrere Bilder in eine PDF umwandeln",
       "description": "Laden Sie mehrere Bilder, ordnen Sie sie neu an und laden Sie sie als einzelne PDF herunter. A4, Letter oder Seitengröße passend zu jedem Bild. Alles in Ihrem Browser."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Metadaten einer PDF bearbeiten",
+      "description": "Titel, Autor, Betreff, Schlüsselwörter und Daten einer PDF lesen und ändern. Alles in Ihrem Browser."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Felder zu Varianten kombinieren (E-Mails, Benutzernamen…)",
@@ -682,6 +687,35 @@
       "copied": "Kopiert!",
       "download": "Als .txt herunterladen",
       "downloadHint": "Liste ausgeblendet, um den Browser nicht zu verlangsamen. Klicken Sie auf Herunterladen, um eine .txt mit allen {count} Kombinationen zu erhalten."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Ziehen Sie eine PDF hierher oder klicken Sie, um eine auszuwählen",
+    "totalPages": "{n} Seiten",
+    "fields": {
+      "title": "Titel",
+      "author": "Autor",
+      "subject": "Betreff",
+      "keywords": "Schlüsselwörter",
+      "keywordsPlaceholder": "Schlüsselwort1, Schlüsselwort2, Schlüsselwort3…",
+      "keywordsHint": "Trennen Sie die Schlüsselwörter durch Kommas.",
+      "producer": "Erzeuger",
+      "creator": "Ersteller",
+      "creationDate": "Erstellungsdatum",
+      "modificationDate": "Änderungsdatum",
+      "empty": "(leer)"
+    },
+    "actions": {
+      "apply": "Anwenden und herunterladen",
+      "processing": "Anwenden…",
+      "change": "PDF wechseln",
+      "now": "Jetzt"
+    },
+    "errors": {
+      "notPdf": "{name} ist keine PDF.",
+      "invalidPdf": "{name} ist keine gültige PDF oder ist beschädigt.",
+      "encrypted": "Diese PDF ist passwortgeschützt.",
+      "generic": "Die Änderungen konnten nicht angewendet werden."
     }
   },
   "albumy": {

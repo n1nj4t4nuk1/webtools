@@ -76,6 +76,11 @@
       "tagline": "Meerdere afbeeldingen omzetten naar één PDF",
       "description": "Laad meerdere afbeeldingen, herorden ze en download ze als één PDF. A4, Letter of paginaformaat aangepast aan elke afbeelding. Alles in uw browser."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Metadata van een PDF bewerken",
+      "description": "Lees en wijzig titel, auteur, onderwerp, trefwoorden en datums van een PDF. Alles in uw browser."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Velden combineren tot varianten (e-mails, gebruikersnamen…)",
@@ -682,6 +687,35 @@
       "copied": "Gekopieerd!",
       "download": ".txt downloaden",
       "downloadHint": "Lijst verborgen om de browser niet te vertragen. Druk op Downloaden voor een .txt met alle {count} combinaties."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Sleep een PDF hierheen of klik om er een te selecteren",
+    "totalPages": "{n} pagina's",
+    "fields": {
+      "title": "Titel",
+      "author": "Auteur",
+      "subject": "Onderwerp",
+      "keywords": "Trefwoorden",
+      "keywordsPlaceholder": "trefwoord1, trefwoord2, trefwoord3…",
+      "keywordsHint": "Scheid trefwoorden met komma's.",
+      "producer": "Producent",
+      "creator": "Maker",
+      "creationDate": "Aanmaakdatum",
+      "modificationDate": "Wijzigingsdatum",
+      "empty": "(leeg)"
+    },
+    "actions": {
+      "apply": "Toepassen en downloaden",
+      "processing": "Bezig met toepassen…",
+      "change": "PDF wijzigen",
+      "now": "Nu"
+    },
+    "errors": {
+      "notPdf": "{name} is geen PDF.",
+      "invalidPdf": "{name} is geen geldige PDF of is beschadigd.",
+      "encrypted": "Deze PDF is met een wachtwoord beveiligd.",
+      "generic": "Kon de wijzigingen niet toepassen."
     }
   },
   "albumy": {

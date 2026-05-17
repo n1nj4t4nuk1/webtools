@@ -76,6 +76,11 @@
       "tagline": "Förvandla flera bilder till en PDF",
       "description": "Ladda flera bilder, ändra ordningen och ladda ner dem som en enda PDF. A4, Letter eller sidstorlek anpassad till varje bild. Allt i din webbläsare."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Redigera metadata för en PDF",
+      "description": "Läs och ändra titel, författare, ämne, nyckelord och datum i en PDF. Allt i din webbläsare."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kombinera fält till varianter (e-post, användarnamn…)",
@@ -682,6 +687,35 @@
       "copied": "Kopierat!",
       "download": "Ladda ner .txt",
       "downloadHint": "Listan är dold för att inte sakta ner webbläsaren. Tryck på Ladda ner för att få en .txt med alla {count} kombinationer."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Dra en PDF hit eller klicka för att välja en",
+    "totalPages": "{n} sidor",
+    "fields": {
+      "title": "Titel",
+      "author": "Författare",
+      "subject": "Ämne",
+      "keywords": "Nyckelord",
+      "keywordsPlaceholder": "nyckelord1, nyckelord2, nyckelord3…",
+      "keywordsHint": "Separera nyckelorden med kommatecken.",
+      "producer": "Producent",
+      "creator": "Skapare",
+      "creationDate": "Skapandedatum",
+      "modificationDate": "Ändringsdatum",
+      "empty": "(tomt)"
+    },
+    "actions": {
+      "apply": "Tillämpa och ladda ner",
+      "processing": "Tillämpar…",
+      "change": "Byt PDF",
+      "now": "Nu"
+    },
+    "errors": {
+      "notPdf": "{name} är inte en PDF.",
+      "invalidPdf": "{name} är inte en giltig PDF eller är skadad.",
+      "encrypted": "Den här PDF:en är lösenordsskyddad.",
+      "generic": "Kunde inte tillämpa ändringarna."
     }
   },
   "albumy": {

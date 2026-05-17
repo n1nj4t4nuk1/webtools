@@ -76,6 +76,11 @@
       "tagline": "Spojení více obrázků do jednoho PDF",
       "description": "Nahrajte několik obrázků, seřaďte je a stáhněte je jako jeden PDF. A4, Letter nebo velikost stránky přizpůsobená každému obrázku. Vše ve vašem prohlížeči."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Úprava metadat PDF",
+      "description": "Čtěte a upravujte název, autora, předmět, klíčová slova a data PDF. Vše ve vašem prohlížeči."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kombinování polí do variant (e-maily, uživatelská jména…)",
@@ -682,6 +687,35 @@
       "copied": "Zkopírováno!",
       "download": "Stáhnout .txt",
       "downloadHint": "Seznam skryt, aby se nezpomalil prohlížeč. Stiskněte Stáhnout pro získání .txt se všemi {count} kombinacemi."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Přetáhněte sem PDF nebo klikněte pro výběr",
+    "totalPages": "{n} stránek",
+    "fields": {
+      "title": "Název",
+      "author": "Autor",
+      "subject": "Předmět",
+      "keywords": "Klíčová slova",
+      "keywordsPlaceholder": "klíčové slovo1, klíčové slovo2, klíčové slovo3…",
+      "keywordsHint": "Klíčová slova oddělujte čárkami.",
+      "producer": "Producent",
+      "creator": "Tvůrce",
+      "creationDate": "Datum vytvoření",
+      "modificationDate": "Datum úpravy",
+      "empty": "(prázdné)"
+    },
+    "actions": {
+      "apply": "Použít a stáhnout",
+      "processing": "Aplikuji…",
+      "change": "Změnit PDF",
+      "now": "Nyní"
+    },
+    "errors": {
+      "notPdf": "{name} není PDF.",
+      "invalidPdf": "{name} není platný PDF nebo je poškozen.",
+      "encrypted": "Tento PDF je chráněn heslem.",
+      "generic": "Nelze použít změny."
     }
   },
   "albumy": {

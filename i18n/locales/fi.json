@@ -76,6 +76,11 @@
       "tagline": "Yhdistä useita kuvia yhdeksi PDF:ksi",
       "description": "Lataa useita kuvia, järjestä ne uudelleen ja lataa ne yhtenä PDF:nä. A4, Letter tai kuhunkin kuvaan sovitettu sivukoko. Kaikki selaimessasi."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Muokkaa PDF:n metatietoja",
+      "description": "Lue ja muokkaa PDF:n otsikkoa, tekijää, aihetta, avainsanoja ja päivämääriä. Kaikki selaimessasi."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Yhdistä kenttiä variantteihin (sähköpostit, käyttäjänimet…)",
@@ -682,6 +687,35 @@
       "copied": "Kopioitu!",
       "download": "Lataa .txt",
       "downloadHint": "Lista on piilotettu, jottei selain hidastu. Paina Lataa saadaksesi .txt-tiedoston, jossa on kaikki {count} yhdistelmää."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Vedä PDF tähän tai napsauta valitaksesi yhden",
+    "totalPages": "{n} sivua",
+    "fields": {
+      "title": "Otsikko",
+      "author": "Tekijä",
+      "subject": "Aihe",
+      "keywords": "Avainsanat",
+      "keywordsPlaceholder": "avainsana1, avainsana2, avainsana3…",
+      "keywordsHint": "Erota avainsanat pilkuilla.",
+      "producer": "Tuottaja",
+      "creator": "Luoja",
+      "creationDate": "Luontipäivä",
+      "modificationDate": "Muokkauspäivä",
+      "empty": "(tyhjä)"
+    },
+    "actions": {
+      "apply": "Käytä ja lataa",
+      "processing": "Käytetään…",
+      "change": "Vaihda PDF",
+      "now": "Nyt"
+    },
+    "errors": {
+      "notPdf": "{name} ei ole PDF.",
+      "invalidPdf": "{name} ei ole kelvollinen PDF tai se on vioittunut.",
+      "encrypted": "Tämä PDF on suojattu salasanalla.",
+      "generic": "Muutoksia ei voitu ottaa käyttöön."
     }
   },
   "albumy": {

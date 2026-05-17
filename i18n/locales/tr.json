@@ -76,6 +76,11 @@
       "tagline": "Birden fazla görüntüyü tek bir PDF'ye dönüştür",
       "description": "Birden fazla görüntü yükleyin, yeniden sıralayın ve tek bir PDF olarak indirin. A4, Letter veya her görüntünün boyutuna göre sayfa. Hepsi tarayıcınızda."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Bir PDF'nin meta verilerini düzenle",
+      "description": "Bir PDF'nin başlığını, yazarını, konusunu, anahtar kelimelerini ve tarihlerini okuyun ve değiştirin. Hepsi tarayıcınızda."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Alanları varyantlar halinde birleştir (e-postalar, kullanıcı adları…)",
@@ -682,6 +687,35 @@
       "copied": "Kopyalandı!",
       "download": ".txt indir",
       "downloadHint": "Tarayıcının yavaşlamaması için liste gizlendi. Tüm {count} kombinasyonlu bir .txt almak için İndir'e basın."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Buraya bir PDF sürükleyin veya seçmek için tıklayın",
+    "totalPages": "{n} sayfa",
+    "fields": {
+      "title": "Başlık",
+      "author": "Yazar",
+      "subject": "Konu",
+      "keywords": "Anahtar kelimeler",
+      "keywordsPlaceholder": "anahtarkelime1, anahtarkelime2, anahtarkelime3…",
+      "keywordsHint": "Anahtar kelimeleri virgülle ayırın.",
+      "producer": "Üretici",
+      "creator": "Oluşturucu",
+      "creationDate": "Oluşturma tarihi",
+      "modificationDate": "Değişiklik tarihi",
+      "empty": "(boş)"
+    },
+    "actions": {
+      "apply": "Uygula ve indir",
+      "processing": "Uygulanıyor…",
+      "change": "PDF değiştir",
+      "now": "Şimdi"
+    },
+    "errors": {
+      "notPdf": "{name} bir PDF değil.",
+      "invalidPdf": "{name} geçerli bir PDF değil veya bozuk.",
+      "encrypted": "Bu PDF parola korumalı.",
+      "generic": "Değişiklikler uygulanamadı."
     }
   },
   "albumy": {

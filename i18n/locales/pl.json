@@ -76,6 +76,11 @@
       "tagline": "Zamień wiele obrazów w jeden PDF",
       "description": "Załaduj kilka obrazów, zmień ich kolejność i pobierz jako pojedynczy PDF. A4, Letter lub strona dopasowana do każdego obrazu. Wszystko w Twojej przeglądarce."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Edytuj metadane PDF",
+      "description": "Odczytuj i modyfikuj tytuł, autora, temat, słowa kluczowe oraz daty pliku PDF. Wszystko w Twojej przeglądarce."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Łącz pola w warianty (e-maile, nazwy użytkownika…)",
@@ -682,6 +687,35 @@
       "copied": "Skopiowano!",
       "download": "Pobierz .txt",
       "downloadHint": "Lista ukryta, aby nie spowalniać przeglądarki. Naciśnij Pobierz, aby otrzymać .txt ze wszystkimi {count} kombinacjami."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Przeciągnij tutaj PDF lub kliknij, aby go wybrać",
+    "totalPages": "{n} stron",
+    "fields": {
+      "title": "Tytuł",
+      "author": "Autor",
+      "subject": "Temat",
+      "keywords": "Słowa kluczowe",
+      "keywordsPlaceholder": "słowo1, słowo2, słowo3…",
+      "keywordsHint": "Oddziel słowa kluczowe przecinkami.",
+      "producer": "Producent",
+      "creator": "Twórca",
+      "creationDate": "Data utworzenia",
+      "modificationDate": "Data modyfikacji",
+      "empty": "(puste)"
+    },
+    "actions": {
+      "apply": "Zastosuj i pobierz",
+      "processing": "Stosowanie…",
+      "change": "Zmień PDF",
+      "now": "Teraz"
+    },
+    "errors": {
+      "notPdf": "{name} nie jest plikiem PDF.",
+      "invalidPdf": "{name} nie jest prawidłowym PDF lub jest uszkodzony.",
+      "encrypted": "Ten PDF jest chroniony hasłem.",
+      "generic": "Nie udało się zastosować zmian."
     }
   },
   "albumy": {

@@ -76,6 +76,11 @@
       "tagline": "Convierte varias imágenes en un PDF",
       "description": "Carga varias imágenes, ordénalas y descárgalas como un único PDF. Tamaño A4, Letter o ajustado a la imagen. Todo en tu navegador."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Edita los metadatos de un PDF",
+      "description": "Lee y modifica título, autor, asunto, palabras clave y fechas de un PDF. Todo en tu navegador."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Combina campos en variantes (emails, usernames…)",
@@ -682,6 +687,35 @@
       "copied": "¡Copiado!",
       "download": "Descargar .txt",
       "downloadHint": "Lista oculta para no ralentizar el navegador. Pulsa Descargar para obtener un .txt con las {count} combinaciones."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Arrastra un PDF aquí o haz clic para seleccionarlo",
+    "totalPages": "{n} páginas",
+    "fields": {
+      "title": "Título",
+      "author": "Autor",
+      "subject": "Asunto",
+      "keywords": "Palabras clave",
+      "keywordsPlaceholder": "palabra1, palabra2, palabra3…",
+      "keywordsHint": "Separa las palabras clave por comas.",
+      "producer": "Productor",
+      "creator": "Creador",
+      "creationDate": "Fecha de creación",
+      "modificationDate": "Fecha de modificación",
+      "empty": "(vacío)"
+    },
+    "actions": {
+      "apply": "Aplicar y descargar",
+      "processing": "Aplicando…",
+      "change": "Cambiar PDF",
+      "now": "Ahora"
+    },
+    "errors": {
+      "notPdf": "{name} no es un PDF.",
+      "invalidPdf": "{name} no es un PDF válido o está dañado.",
+      "encrypted": "Este PDF está protegido con contraseña.",
+      "generic": "No se pudo aplicar los cambios."
     }
   },
   "albumy": {

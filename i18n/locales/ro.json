@@ -76,6 +76,11 @@
       "tagline": "Transformă mai multe imagini într-un singur PDF",
       "description": "Încarcă mai multe imagini, reordonează-le și descarcă-le ca un singur PDF. A4, Letter sau pagină dimensionată după fiecare imagine. Totul în browserul tău."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Editează metadatele unui PDF",
+      "description": "Citește și modifică titlul, autorul, subiectul, cuvintele-cheie și datele unui PDF. Totul în browserul tău."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Combină câmpuri în variante (e-mailuri, nume de utilizator…)",
@@ -682,6 +687,35 @@
       "copied": "Copiat!",
       "download": "Descarcă .txt",
       "downloadHint": "Lista este ascunsă pentru a nu încetini browserul. Apasă Descarcă pentru a obține un .txt cu toate cele {count} combinații."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Trage un PDF aici sau apasă pentru a selecta unul",
+    "totalPages": "{n} pagini",
+    "fields": {
+      "title": "Titlu",
+      "author": "Autor",
+      "subject": "Subiect",
+      "keywords": "Cuvinte-cheie",
+      "keywordsPlaceholder": "cuvânt1, cuvânt2, cuvânt3…",
+      "keywordsHint": "Separă cuvintele-cheie cu virgule.",
+      "producer": "Producător",
+      "creator": "Creator",
+      "creationDate": "Data creării",
+      "modificationDate": "Data modificării",
+      "empty": "(gol)"
+    },
+    "actions": {
+      "apply": "Aplică și descarcă",
+      "processing": "Se aplică…",
+      "change": "Schimbă PDF-ul",
+      "now": "Acum"
+    },
+    "errors": {
+      "notPdf": "{name} nu este un PDF.",
+      "invalidPdf": "{name} nu este un PDF valid sau este corupt.",
+      "encrypted": "Acest PDF este protejat cu parolă.",
+      "generic": "Nu s-au putut aplica modificările."
     }
   },
   "albumy": {

@@ -76,6 +76,11 @@
       "tagline": "Gjør flere bilder om til én PDF",
       "description": "Last inn flere bilder, omorganiser dem, og last dem ned som én enkelt PDF. A4, Letter eller sidestørrelse tilpasset hvert bilde. Alt i nettleseren din."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Rediger metadata i en PDF",
+      "description": "Les og endre tittel, forfatter, emne, nøkkelord og datoer i en PDF. Alt i nettleseren din."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Kombiner felter til varianter (e-poster, brukernavn…)",
@@ -682,6 +687,35 @@
       "copied": "Kopiert!",
       "download": "Last ned .txt",
       "downloadHint": "Listen er skjult for å unngå å gjøre nettleseren treg. Trykk Last ned for å få en .txt med alle {count} kombinasjoner."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Dra en PDF hit eller klikk for å velge en",
+    "totalPages": "{n} sider",
+    "fields": {
+      "title": "Tittel",
+      "author": "Forfatter",
+      "subject": "Emne",
+      "keywords": "Nøkkelord",
+      "keywordsPlaceholder": "nøkkelord1, nøkkelord2, nøkkelord3…",
+      "keywordsHint": "Skill nøkkelord med komma.",
+      "producer": "Produsent",
+      "creator": "Opprettet av",
+      "creationDate": "Opprettelsesdato",
+      "modificationDate": "Endringsdato",
+      "empty": "(tom)"
+    },
+    "actions": {
+      "apply": "Bruk og last ned",
+      "processing": "Bruker…",
+      "change": "Bytt PDF",
+      "now": "Nå"
+    },
+    "errors": {
+      "notPdf": "{name} er ikke en PDF.",
+      "invalidPdf": "{name} er ikke en gyldig PDF eller er skadet.",
+      "encrypted": "Denne PDF-en er passordbeskyttet.",
+      "generic": "Kunne ikke bruke endringene."
     }
   },
   "albumy": {

@@ -76,6 +76,11 @@
       "tagline": "Ubah beberapa gambar menjadi satu PDF",
       "description": "Muat beberapa gambar, susun ulang, dan unduh sebagai satu PDF. A4, Letter, atau halaman sesuai ukuran tiap gambar. Semua di peramban Anda."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Edit metadata PDF",
+      "description": "Baca dan ubah judul, penulis, subjek, kata kunci, dan tanggal dari sebuah PDF. Semua di peramban Anda."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Gabungkan kolom menjadi varian (email, nama pengguna…)",
@@ -682,6 +687,35 @@
       "copied": "Tersalin!",
       "download": "Unduh .txt",
       "downloadHint": "Daftar disembunyikan untuk menghindari peramban menjadi lambat. Tekan Unduh untuk mendapatkan .txt dengan semua {count} kombinasi."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Seret PDF ke sini atau klik untuk memilihnya",
+    "totalPages": "{n} halaman",
+    "fields": {
+      "title": "Judul",
+      "author": "Penulis",
+      "subject": "Subjek",
+      "keywords": "Kata kunci",
+      "keywordsPlaceholder": "kata kunci 1, kata kunci 2, kata kunci 3…",
+      "keywordsHint": "Pisahkan kata kunci dengan koma.",
+      "producer": "Produsen",
+      "creator": "Pembuat",
+      "creationDate": "Tanggal pembuatan",
+      "modificationDate": "Tanggal modifikasi",
+      "empty": "(kosong)"
+    },
+    "actions": {
+      "apply": "Terapkan dan unduh",
+      "processing": "Menerapkan…",
+      "change": "Ganti PDF",
+      "now": "Sekarang"
+    },
+    "errors": {
+      "notPdf": "{name} bukan PDF.",
+      "invalidPdf": "{name} bukan PDF yang valid atau sudah rusak.",
+      "encrypted": "PDF ini dilindungi kata sandi.",
+      "generic": "Tidak dapat menerapkan perubahan."
     }
   },
   "albumy": {

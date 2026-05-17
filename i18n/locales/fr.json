@@ -76,6 +76,11 @@
       "tagline": "Transformer plusieurs images en un seul PDF",
       "description": "Chargez plusieurs images, réorganisez-les et téléchargez-les sous forme d'un seul PDF. A4, Letter ou page ajustée à chaque image. Le tout dans votre navigateur."
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "Modifier les métadonnées d'un PDF",
+      "description": "Lisez et modifiez le titre, l'auteur, le sujet, les mots-clés et les dates d'un PDF. Le tout dans votre navigateur."
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "Combiner des champs en variantes (e-mails, identifiants…)",
@@ -682,6 +687,35 @@
       "copied": "Copié !",
       "download": "Télécharger .txt",
       "downloadHint": "Liste masquée pour ne pas ralentir le navigateur. Appuyez sur Télécharger pour obtenir un .txt avec les {count} combinaisons."
+    }
+  },
+  "metapdf": {
+    "dropzone": "Glissez un PDF ici ou cliquez pour en sélectionner un",
+    "totalPages": "{n} pages",
+    "fields": {
+      "title": "Titre",
+      "author": "Auteur",
+      "subject": "Sujet",
+      "keywords": "Mots-clés",
+      "keywordsPlaceholder": "mot-clé1, mot-clé2, mot-clé3…",
+      "keywordsHint": "Séparez les mots-clés par des virgules.",
+      "producer": "Producteur",
+      "creator": "Créateur",
+      "creationDate": "Date de création",
+      "modificationDate": "Date de modification",
+      "empty": "(vide)"
+    },
+    "actions": {
+      "apply": "Appliquer et télécharger",
+      "processing": "Application…",
+      "change": "Changer de PDF",
+      "now": "Maintenant"
+    },
+    "errors": {
+      "notPdf": "{name} n'est pas un PDF.",
+      "invalidPdf": "{name} n'est pas un PDF valide ou il est corrompu.",
+      "encrypted": "Ce PDF est protégé par mot de passe.",
+      "generic": "Impossible d'appliquer les modifications."
     }
   },
   "albumy": {

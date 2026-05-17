@@ -71,6 +71,11 @@
       "tagline": "将多张图片合并为一个 PDF",
       "description": "加载多张图片，排序并下载为单个 PDF。A4、Letter 或自适应每张图片的尺寸。所有处理都在您的浏览器中完成。"
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "编辑 PDF 元数据",
+      "description": "读取并修改 PDF 的标题、作者、主题、关键词和日期。所有处理都在您的浏览器中完成。"
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "组合字段生成变体（邮箱、用户名…）",
@@ -677,6 +682,35 @@
       "copied": "已复制！",
       "download": "下载 .txt",
       "downloadHint": "已隐藏列表以避免拖慢浏览器。点击下载获取包含 {count} 个组合的 .txt 文件。"
+    }
+  },
+  "metapdf": {
+    "dropzone": "将 PDF 拖到此处，或点击选择",
+    "totalPages": "{n} 页",
+    "fields": {
+      "title": "标题",
+      "author": "作者",
+      "subject": "主题",
+      "keywords": "关键词",
+      "keywordsPlaceholder": "关键词1, 关键词2, 关键词3…",
+      "keywordsHint": "用逗号分隔关键词。",
+      "producer": "制作者",
+      "creator": "创建者",
+      "creationDate": "创建日期",
+      "modificationDate": "修改日期",
+      "empty": "（空）"
+    },
+    "actions": {
+      "apply": "应用并下载",
+      "processing": "应用中…",
+      "change": "更换 PDF",
+      "now": "现在"
+    },
+    "errors": {
+      "notPdf": "{name} 不是 PDF 文件。",
+      "invalidPdf": "{name} 不是有效的 PDF 或已损坏。",
+      "encrypted": "此 PDF 受密码保护。",
+      "generic": "无法应用更改。"
     }
   },
   "albumy": {

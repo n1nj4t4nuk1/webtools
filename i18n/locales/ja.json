@@ -71,6 +71,11 @@
       "tagline": "複数の画像を1つのPDFに変換",
       "description": "複数の画像を読み込み、並び替えて1つのPDFとしてダウンロード。A4、Letter、または各画像に合わせたサイズ。すべてブラウザで処理。"
     },
+    "metapdf": {
+      "name": "Metapdf",
+      "tagline": "PDFのメタデータを編集",
+      "description": "PDFのタイトル、作成者、件名、キーワード、日付を読み取り・編集。すべてブラウザで処理。"
+    },
     "combiny": {
       "name": "Combiny",
       "tagline": "フィールドを組み合わせてバリアントを生成（メール、ユーザー名など）",
@@ -677,6 +682,35 @@
       "copied": "コピーしました！",
       "download": ".txtをダウンロード",
       "downloadHint": "ブラウザの負荷を避けるためリストを非表示にしています。ダウンロードを押すと{count}件の組み合わせを含む.txtを取得できます。"
+    }
+  },
+  "metapdf": {
+    "dropzone": "PDFをここにドラッグするか、クリックして選択",
+    "totalPages": "{n}ページ",
+    "fields": {
+      "title": "タイトル",
+      "author": "作成者",
+      "subject": "件名",
+      "keywords": "キーワード",
+      "keywordsPlaceholder": "キーワード1, キーワード2, キーワード3…",
+      "keywordsHint": "キーワードはカンマで区切ります。",
+      "producer": "プロデューサー",
+      "creator": "クリエイター",
+      "creationDate": "作成日時",
+      "modificationDate": "更新日時",
+      "empty": "（空）"
+    },
+    "actions": {
+      "apply": "適用してダウンロード",
+      "processing": "適用中…",
+      "change": "PDFを変更",
+      "now": "今"
+    },
+    "errors": {
+      "notPdf": "{name}はPDFではありません。",
+      "invalidPdf": "{name}は有効なPDFではないか、破損しています。",
+      "encrypted": "このPDFはパスワードで保護されています。",
+      "generic": "変更を適用できませんでした。"
     }
   },
   "albumy": {
