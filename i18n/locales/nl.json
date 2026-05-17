@@ -31,6 +31,11 @@
       "tagline": "Afbeeldingen converteren tussen formaten",
       "description": "Converteer tussen PNG, JPG en WebP met kwaliteitscontrole. Alles in uw browser, zonder uploads."
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "Een afbeelding pixeleren",
+      "description": "Pas een pixelart-effect toe op uw afbeelding door de blokgrootte aan te passen. Live voorvertoning. Alles in uw browser."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Sterke wachtwoorden genereren",
@@ -853,6 +858,25 @@
     },
     "errors": {
       "clipboard": "Kon niet naar het klembord kopiëren."
+    }
+  },
+  "pixely": {
+    "dropzone": "Sleep een afbeelding hierheen of klik om er een te selecteren",
+    "blockSize": "Blokgrootte",
+    "quality": "Kwaliteit",
+    "format": {
+      "label": "Formaat",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "Downloaden",
+      "processing": "Bezig met verwerken…",
+      "change": "Afbeelding wijzigen"
+    },
+    "errors": {
+      "notImage": "{name} is geen geldige afbeelding.",
+      "generic": "Kon de afbeelding niet verwerken."
     }
   },
   "convy": {

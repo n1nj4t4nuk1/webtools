@@ -31,6 +31,11 @@
       "tagline": "Konversi gambar antar format",
       "description": "Konversi antara PNG, JPG, dan WebP dengan kontrol kualitas. Semua di peramban Anda, tanpa unggahan."
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "Piksel-kan gambar",
+      "description": "Terapkan efek pixel-art pada gambar Anda dengan menyesuaikan ukuran blok. Pratinjau langsung. Semua di peramban Anda."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Buat kata sandi yang kuat",
@@ -853,6 +858,25 @@
     },
     "errors": {
       "clipboard": "Tidak dapat menyalin ke clipboard."
+    }
+  },
+  "pixely": {
+    "dropzone": "Seret gambar ke sini atau klik untuk memilih",
+    "blockSize": "Ukuran blok",
+    "quality": "Kualitas",
+    "format": {
+      "label": "Format",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "Unduh",
+      "processing": "Memproses…",
+      "change": "Ganti gambar"
+    },
+    "errors": {
+      "notImage": "{name} bukan gambar yang valid.",
+      "generic": "Tidak dapat memproses gambar."
     }
   },
   "convy": {

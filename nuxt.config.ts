@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'es' },
-      title: 'Tanukibox',
+      title: 'TanukiBox · WebTools',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -23,7 +23,13 @@ export default defineNuxtConfig({
             'Colección de utilidades web que se ejecutan en tu navegador. Sin servidor, sin subidas.',
         },
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/svg+xml',
+          href: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📦</text></svg>",
+        },
+      ],
     },
   },
 

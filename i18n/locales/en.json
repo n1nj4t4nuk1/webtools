@@ -31,6 +31,11 @@
       "tagline": "Convert images between formats",
       "description": "Convert between PNG, JPG and WebP with quality control. All in your browser, no uploads."
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "Pixelate an image",
+      "description": "Apply a pixel-art effect to your image by adjusting the block size. Live preview. All in your browser."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Generate strong passwords",
@@ -853,6 +858,25 @@
     },
     "errors": {
       "clipboard": "Could not copy to clipboard."
+    }
+  },
+  "pixely": {
+    "dropzone": "Drag an image here or click to select one",
+    "blockSize": "Block size",
+    "quality": "Quality",
+    "format": {
+      "label": "Format",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "Download",
+      "processing": "Processing…",
+      "change": "Change image"
+    },
+    "errors": {
+      "notImage": "{name} is not a valid image.",
+      "generic": "Could not process the image."
     }
   },
   "convy": {

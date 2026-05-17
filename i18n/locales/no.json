@@ -31,6 +31,11 @@
       "tagline": "Konverter bilder mellom formater",
       "description": "Konverter mellom PNG, JPG og WebP med kvalitetskontroll. Alt i nettleseren din, ingen opplastinger."
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "Pikseler et bilde",
+      "description": "Bruk en pixel-art-effekt på bildet ditt ved å justere blokkstørrelsen. Live forhåndsvisning. Alt i nettleseren din."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Generer sterke passord",
@@ -853,6 +858,25 @@
     },
     "errors": {
       "clipboard": "Kunne ikke kopiere til utklippstavlen."
+    }
+  },
+  "pixely": {
+    "dropzone": "Dra et bilde hit eller klikk for å velge et",
+    "blockSize": "Blokkstørrelse",
+    "quality": "Kvalitet",
+    "format": {
+      "label": "Format",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "Last ned",
+      "processing": "Behandler…",
+      "change": "Bytt bilde"
+    },
+    "errors": {
+      "notImage": "{name} er ikke et gyldig bilde.",
+      "generic": "Kunne ikke behandle bildet."
     }
   },
   "convy": {

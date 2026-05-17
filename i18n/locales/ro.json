@@ -31,6 +31,11 @@
       "tagline": "Convertește imagini între formate",
       "description": "Convertește între PNG, JPG și WebP cu control al calității. Totul în browser, fără încărcări."
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "Pixelează o imagine",
+      "description": "Aplică un efect de pixel-art imaginii tale ajustând dimensiunea blocului. Previzualizare live. Totul în browserul tău."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Generează parole puternice",
@@ -853,6 +858,25 @@
     },
     "errors": {
       "clipboard": "Nu s-a putut copia în clipboard."
+    }
+  },
+  "pixely": {
+    "dropzone": "Trage o imagine aici sau apasă pentru a selecta una",
+    "blockSize": "Dimensiunea blocului",
+    "quality": "Calitate",
+    "format": {
+      "label": "Format",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "Descarcă",
+      "processing": "Se procesează…",
+      "change": "Schimbă imaginea"
+    },
+    "errors": {
+      "notImage": "{name} nu este o imagine validă.",
+      "generic": "Nu s-a putut procesa imaginea."
     }
   },
   "convy": {

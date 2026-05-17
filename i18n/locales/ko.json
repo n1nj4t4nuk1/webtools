@@ -31,6 +31,11 @@
       "tagline": "이미지를 다른 형식으로 변환",
       "description": "PNG, JPG, WebP 간 품질 조절과 함께 변환합니다. 모두 브라우저에서 처리되며 업로드가 없습니다."
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "이미지 픽셀화",
+      "description": "블록 크기를 조정하여 이미지에 픽셀 아트 효과를 적용합니다. 실시간 미리보기. 모두 브라우저에서 처리됩니다."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "강력한 비밀번호 생성",
@@ -853,6 +858,25 @@
     },
     "errors": {
       "clipboard": "클립보드에 복사할 수 없습니다."
+    }
+  },
+  "pixely": {
+    "dropzone": "여기에 이미지를 끌어 놓거나 클릭해 선택하세요",
+    "blockSize": "블록 크기",
+    "quality": "품질",
+    "format": {
+      "label": "형식",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "다운로드",
+      "processing": "처리 중…",
+      "change": "이미지 변경"
+    },
+    "errors": {
+      "notImage": "{name}은(는) 유효한 이미지가 아닙니다.",
+      "generic": "이미지를 처리할 수 없습니다."
     }
   },
   "convy": {

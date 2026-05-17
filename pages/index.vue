@@ -3,7 +3,7 @@ const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
 const categoriesRaw = [
-  { id: 'imageEdit', tools: ['mochi', 'metaimg', 'convy'] },
+  { id: 'imageEdit', tools: ['mochi', 'metaimg', 'convy', 'pixely'] },
   { id: 'documents', tools: ['stapler', 'scissor', 'pdfspinner', 'albumy', 'wordy'] },
   { id: 'privacy', tools: ['metaimg', 'createpass', 'hashy'] },
   { id: 'generators', tools: ['createpass', 'idkun', 'combiny', 'lorempad', 'qrgen'] },
@@ -16,6 +16,7 @@ const toolPaths: Record<string, string> = {
   mochi: '/mochi',
   metaimg: '/metaimg',
   convy: '/convy',
+  pixely: '/pixely',
   createpass: '/createpass',
   hashy: '/hashy',
   idkun: '/idkun',
@@ -53,7 +54,6 @@ const categories = computed(() =>
 )
 
 useHead({
-  title: () => `Tanukibox · ${t('landing.title')}`,
   meta: [{ name: 'description', content: () => t('landing.description') }],
 })
 </script>

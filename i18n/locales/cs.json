@@ -31,6 +31,11 @@
       "tagline": "Převod obrázků mezi formáty",
       "description": "Převádějte mezi PNG, JPG a WebP s kontrolou kvality. Vše ve vašem prohlížeči, bez nahrávání."
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "Pixelace obrázku",
+      "description": "Aplikujte na svůj obrázek efekt pixel artu úpravou velikosti bloku. Živý náhled. Vše ve vašem prohlížeči."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Generování silných hesel",
@@ -853,6 +858,25 @@
     },
     "errors": {
       "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "pixely": {
+    "dropzone": "Přetáhněte sem obrázek nebo klikněte pro výběr",
+    "blockSize": "Velikost bloku",
+    "quality": "Kvalita",
+    "format": {
+      "label": "Formát",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "Stáhnout",
+      "processing": "Zpracovávám…",
+      "change": "Změnit obrázek"
+    },
+    "errors": {
+      "notImage": "{name} není platný obrázek.",
+      "generic": "Nelze zpracovat obrázek."
     }
   },
   "convy": {

@@ -31,6 +31,11 @@
       "tagline": "画像を別の形式に変換",
       "description": "PNG、JPG、WebP間で品質コントロール付きで変換。すべてブラウザで処理、アップロード不要。"
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "画像をピクセル化",
+      "description": "ブロックサイズを調整して画像にピクセルアート効果を適用。リアルタイムプレビュー。すべてブラウザで処理。"
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "強力なパスワードを生成",
@@ -818,6 +823,25 @@
     },
     "errors": {
       "clipboard": "クリップボードにコピーできませんでした。"
+    }
+  },
+  "pixely": {
+    "dropzone": "画像をここにドラッグするか、クリックして選択",
+    "blockSize": "ブロックサイズ",
+    "quality": "品質",
+    "format": {
+      "label": "形式",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "ダウンロード",
+      "processing": "処理中…",
+      "change": "画像を変更"
+    },
+    "errors": {
+      "notImage": "{name}は有効な画像ではありません。",
+      "generic": "画像を処理できませんでした。"
     }
   },
   "convy": {

@@ -31,6 +31,11 @@
       "tagline": "Görüntüleri formatlar arasında dönüştür",
       "description": "PNG, JPG ve WebP arasında kalite kontrolü ile dönüştürün. Hepsi tarayıcınızda, yükleme yok."
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "Bir görüntüyü pikselleştir",
+      "description": "Blok boyutunu ayarlayarak görüntünüze piksel sanatı efekti uygulayın. Canlı önizleme. Hepsi tarayıcınızda."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Güçlü parolalar oluştur",
@@ -853,6 +858,25 @@
     },
     "errors": {
       "clipboard": "Panoya kopyalanamadı."
+    }
+  },
+  "pixely": {
+    "dropzone": "Buraya bir görüntü sürükleyin veya seçmek için tıklayın",
+    "blockSize": "Blok boyutu",
+    "quality": "Kalite",
+    "format": {
+      "label": "Format",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "İndir",
+      "processing": "İşleniyor…",
+      "change": "Görüntüyü değiştir"
+    },
+    "errors": {
+      "notImage": "{name} geçerli bir görüntü değil.",
+      "generic": "Görüntü işlenemedi."
     }
   },
   "convy": {

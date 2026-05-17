@@ -2,7 +2,7 @@
 const { t } = useI18n()
 
 useHead({
-  title: () => `${t('tools.mochi.name')} · Tanukibox`,
+  title: () => `TanukiBox · ${t('tools.mochi.name')}`,
   meta: [
     { name: 'description', content: () => t('tools.mochi.description') },
   ],

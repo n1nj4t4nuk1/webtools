@@ -31,6 +31,11 @@
       "tagline": "在不同格式间转换图片",
       "description": "在 PNG、JPG 和 WebP 之间转换，可控制质量。所有处理都在您的浏览器中完成，无需上传。"
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "将图片像素化",
+      "description": "通过调整块大小，为图片应用像素艺术效果。实时预览。所有处理都在您的浏览器中完成。"
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "生成强密码",
@@ -818,6 +823,25 @@
     },
     "errors": {
       "clipboard": "无法复制到剪贴板。"
+    }
+  },
+  "pixely": {
+    "dropzone": "将图片拖到此处，或点击选择",
+    "blockSize": "块大小",
+    "quality": "质量",
+    "format": {
+      "label": "格式",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "下载",
+      "processing": "处理中…",
+      "change": "更换图片"
+    },
+    "errors": {
+      "notImage": "{name} 不是有效的图片。",
+      "generic": "无法处理图片。"
     }
   },
   "convy": {

@@ -31,6 +31,11 @@
       "tagline": "Konvertera bilder mellan format",
       "description": "Konvertera mellan PNG, JPG och WebP med kvalitetskontroll. Allt i din webbläsare, inga uppladdningar."
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "Pixelera en bild",
+      "description": "Lägg en pixelkonsteffekt på din bild genom att justera blockstorleken. Livförhandsgranskning. Allt i din webbläsare."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Skapa starka lösenord",
@@ -853,6 +858,25 @@
     },
     "errors": {
       "clipboard": "Kunde inte kopiera till urklipp."
+    }
+  },
+  "pixely": {
+    "dropzone": "Dra en bild hit eller klicka för att välja en",
+    "blockSize": "Blockstorlek",
+    "quality": "Kvalitet",
+    "format": {
+      "label": "Format",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "Ladda ner",
+      "processing": "Bearbetar…",
+      "change": "Byt bild"
+    },
+    "errors": {
+      "notImage": "{name} är inte en giltig bild.",
+      "generic": "Kunde inte bearbeta bilden."
     }
   },
   "convy": {

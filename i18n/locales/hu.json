@@ -31,6 +31,11 @@
       "tagline": "Képek konvertálása formátumok között",
       "description": "Konvertálás PNG, JPG és WebP között minőségszabályozással. Mindezt a böngészőben, feltöltés nélkül."
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "Kép pixelesítése",
+      "description": "Alkalmazzon pixel-art effektet a képére a blokkméret beállításával. Élő előnézet. Mindezt az Ön böngészőjében."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Erős jelszavak generálása",
@@ -853,6 +858,25 @@
     },
     "errors": {
       "clipboard": "Nem sikerült a vágólapra másolni."
+    }
+  },
+  "pixely": {
+    "dropzone": "Húzzon ide egy képet, vagy kattintson a kiválasztáshoz",
+    "blockSize": "Blokkméret",
+    "quality": "Minőség",
+    "format": {
+      "label": "Formátum",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "Letöltés",
+      "processing": "Feldolgozás…",
+      "change": "Kép cseréje"
+    },
+    "errors": {
+      "notImage": "{name} nem érvényes kép.",
+      "generic": "Nem sikerült feldolgozni a képet."
     }
   },
   "convy": {

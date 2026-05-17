@@ -31,6 +31,11 @@
       "tagline": "Chuyển đổi ảnh giữa các định dạng",
       "description": "Chuyển đổi giữa PNG, JPG và WebP với kiểm soát chất lượng. Tất cả trong trình duyệt của bạn, không cần tải lên."
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "Pixel hóa ảnh",
+      "description": "Áp dụng hiệu ứng pixel-art cho ảnh của bạn bằng cách điều chỉnh kích thước khối. Xem trước trực tiếp. Tất cả trong trình duyệt của bạn."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Tạo mật khẩu mạnh",
@@ -853,6 +858,25 @@
     },
     "errors": {
       "clipboard": "Không thể sao chép vào clipboard."
+    }
+  },
+  "pixely": {
+    "dropzone": "Kéo ảnh vào đây hoặc nhấp để chọn",
+    "blockSize": "Kích thước khối",
+    "quality": "Chất lượng",
+    "format": {
+      "label": "Định dạng",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "Tải về",
+      "processing": "Đang xử lý…",
+      "change": "Đổi ảnh"
+    },
+    "errors": {
+      "notImage": "{name} không phải là ảnh hợp lệ.",
+      "generic": "Không thể xử lý ảnh."
     }
   },
   "convy": {

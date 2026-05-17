@@ -31,6 +31,11 @@
       "tagline": "Muunna kuvia formaattien välillä",
       "description": "Muunna PNG-, JPG- ja WebP-formaattien välillä laadunsäädöllä. Kaikki selaimessasi, ei latauksia."
     },
+    "pixely": {
+      "name": "Pixely",
+      "tagline": "Pikselöi kuva",
+      "description": "Lisää kuvaasi pikselitaide-efekti säätämällä lohkokokoa. Reaaliaikainen esikatselu. Kaikki selaimessasi."
+    },
     "createpass": {
       "name": "Createpass",
       "tagline": "Luo vahvoja salasanoja",
@@ -853,6 +858,25 @@
     },
     "errors": {
       "clipboard": "Leikepöydälle ei voitu kopioida."
+    }
+  },
+  "pixely": {
+    "dropzone": "Vedä kuva tähän tai napsauta valitaksesi yhden",
+    "blockSize": "Lohkokoko",
+    "quality": "Laatu",
+    "format": {
+      "label": "Muoto",
+      "png": "PNG",
+      "jpeg": "JPG"
+    },
+    "actions": {
+      "download": "Lataa",
+      "processing": "Käsitellään…",
+      "change": "Vaihda kuva"
+    },
+    "errors": {
+      "notImage": "{name} ei ole kelvollinen kuva.",
+      "generic": "Kuvan käsittely epäonnistui."
     }
   },
   "convy": {

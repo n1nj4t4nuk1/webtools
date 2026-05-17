@@ -61,6 +61,10 @@ a {
   color: var(--accent);
   font-size: 1.15rem;
 }
+.brand-sep {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
 .brand-sub {
   color: var(--muted);
   font-size: 1.05rem;

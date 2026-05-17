@@ -2,7 +2,7 @@
 const { t } = useI18n()
 
 useHead({
-  title: () => `${t('tools.yamljson.name')} · Tanukibox`,
+  title: () => `TanukiBox · ${t('tools.yamljson.name')}`,
   meta: [{ name: 'description', content: () => t('tools.yamljson.description') }],
 })
 </script>
