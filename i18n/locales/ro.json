@@ -81,6 +81,11 @@
       "tagline": "Generează text Lorem ipsum",
       "description": "Text de umplere în paragrafe, propoziții sau cuvinte. Opțiunea de a începe cu clasicul \"Lorem ipsum dolor sit amet…\" și de a livra ca text simplu sau HTML."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "Generează coduri QR",
+      "description": "Creează coduri QR pentru URL-uri sau text. Personalizează culoarea, dimensiunea, nivelul de corecție a erorilor și descarcă în format SVG sau PNG."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "Testează expresii regulate și înlocuiește text",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "Regex nevalid"
+    }
+  },
+  "qrgen": {
+    "text": "Text sau URL",
+    "placeholder": "Scrie sau lipește aici…",
+    "empty": "Introdu un text mai sus pentru a genera codul QR.",
+    "size": "Dimensiune",
+    "margin": "Margine",
+    "fgColor": "Culoarea QR",
+    "bgColor": "Culoarea fundalului",
+    "errorLevel": {
+      "label": "Corecția erorilor",
+      "L": "L (scăzută, ~7%)",
+      "M": "M (medie, ~15%)",
+      "Q": "Q (ridicată, ~25%)",
+      "H": "H (maximă, ~30%)"
+    },
+    "errorLevelHint": "O corecție mai mare păstrează codul QR lizibil chiar dacă este deteriorat sau parțial acoperit, cu prețul unei densități mai mari.",
+    "actions": {
+      "copySvg": "Copiază SVG",
+      "copied": "Copiat!",
+      "downloadSvg": "Descarcă SVG",
+      "downloadPng": "Descarcă PNG"
     }
   },
   "lorempad": {

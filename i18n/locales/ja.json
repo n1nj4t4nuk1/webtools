@@ -76,6 +76,11 @@
       "tagline": "Lorem ipsumテキストを生成",
       "description": "段落、文、または単語でプレースホルダーテキストを生成。クラシックな「Lorem ipsum dolor sit amet…」で始めるオプション、プレーンテキストまたはHTMLで出力。"
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "QRコードを生成",
+      "description": "URLやテキストのQRコードを作成。色、サイズ、誤り訂正レベルをカスタマイズし、SVGまたはPNGでダウンロード。"
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "正規表現でテストと置換",
@@ -473,6 +478,29 @@
     },
     "errors": {
       "invalidRegex": "無効な正規表現"
+    }
+  },
+  "qrgen": {
+    "text": "テキストまたはURL",
+    "placeholder": "ここに入力または貼り付け…",
+    "empty": "QRを生成するには上にテキストを入力してください。",
+    "size": "サイズ",
+    "margin": "余白",
+    "fgColor": "QRの色",
+    "bgColor": "背景色",
+    "errorLevel": {
+      "label": "誤り訂正",
+      "L": "L（低、約7%）",
+      "M": "M（中、約15%）",
+      "Q": "Q（高、約25%）",
+      "H": "H（最大、約30%）"
+    },
+    "errorLevelHint": "訂正レベルが高いほど、QRが破損したり部分的に覆われても読み取れますが、密度が高くなります。",
+    "actions": {
+      "copySvg": "SVGをコピー",
+      "copied": "コピーしました！",
+      "downloadSvg": "SVGをダウンロード",
+      "downloadPng": "PNGをダウンロード"
     }
   },
   "lorempad": {

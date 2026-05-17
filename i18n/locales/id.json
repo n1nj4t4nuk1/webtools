@@ -81,6 +81,11 @@
       "tagline": "Buat teks Lorem ipsum",
       "description": "Teks placeholder dalam paragraf, kalimat, atau kata. Opsi untuk memulai dengan klasik \"Lorem ipsum dolor sit amet…\" dan keluaran sebagai teks biasa atau HTML."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "Buat kode QR",
+      "description": "Buat kode QR untuk URL atau teks. Sesuaikan warna, ukuran, tingkat koreksi kesalahan, dan unduh sebagai SVG atau PNG."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "Uji regex dan ganti teks",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "Regex tidak valid"
+    }
+  },
+  "qrgen": {
+    "text": "Teks atau URL",
+    "placeholder": "Ketik atau tempel di sini…",
+    "empty": "Masukkan teks di atas untuk membuat kode QR.",
+    "size": "Ukuran",
+    "margin": "Margin",
+    "fgColor": "Warna QR",
+    "bgColor": "Warna latar",
+    "errorLevel": {
+      "label": "Koreksi kesalahan",
+      "L": "L (rendah, ~7%)",
+      "M": "M (sedang, ~15%)",
+      "Q": "Q (tinggi, ~25%)",
+      "H": "H (maks., ~30%)"
+    },
+    "errorLevelHint": "Koreksi yang lebih tinggi membuat QR tetap dapat dibaca saat rusak atau tertutup sebagian, dengan konsekuensi kepadatan yang lebih besar.",
+    "actions": {
+      "copySvg": "Salin SVG",
+      "copied": "Tersalin!",
+      "downloadSvg": "Unduh SVG",
+      "downloadPng": "Unduh PNG"
     }
   },
   "lorempad": {

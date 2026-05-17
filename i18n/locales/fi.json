@@ -81,6 +81,11 @@
       "tagline": "Luo Lorem ipsum -tekstiä",
       "description": "Täytetekstiä kappaleina, lauseina tai sanoina. Mahdollisuus aloittaa klassisella \"Lorem ipsum dolor sit amet…\" ja tulostaa puhtaana tekstinä tai HTML-muodossa."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "Luo QR-koodeja",
+      "description": "Luo QR-koodeja URL-osoitteille tai tekstille. Mukauta väriä, kokoa ja virheenkorjaustasoa sekä lataa SVG- tai PNG-muodossa."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "Testaa regexiä ja korvaa tekstiä",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "Virheellinen regex"
+    }
+  },
+  "qrgen": {
+    "text": "Teksti tai URL",
+    "placeholder": "Kirjoita tai liitä tähän…",
+    "empty": "Syötä tekstiä yllä luodaksesi QR-koodin.",
+    "size": "Koko",
+    "margin": "Marginaali",
+    "fgColor": "QR-väri",
+    "bgColor": "Taustaväri",
+    "errorLevel": {
+      "label": "Virheenkorjaus",
+      "L": "L (matala, ~7%)",
+      "M": "M (keskitaso, ~15%)",
+      "Q": "Q (korkea, ~25%)",
+      "H": "H (enintään, ~30%)"
+    },
+    "errorLevelHint": "Korkeampi virheenkorjaus pitää QR-koodin luettavana, kun se on vaurioitunut tai osittain peitetty, suuremman tiheyden kustannuksella.",
+    "actions": {
+      "copySvg": "Kopioi SVG",
+      "copied": "Kopioitu!",
+      "downloadSvg": "Lataa SVG",
+      "downloadPng": "Lataa PNG"
     }
   },
   "lorempad": {

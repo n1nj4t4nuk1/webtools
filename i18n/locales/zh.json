@@ -76,6 +76,11 @@
       "tagline": "生成 Lorem ipsum 文本",
       "description": "以段落、句子或单词生成占位文本。可选择以经典的 \"Lorem ipsum dolor sit amet…\" 开头，输出为纯文本或 HTML。"
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "生成 QR 码",
+      "description": "为 URL 或文本创建 QR 码。自定义颜色、大小、纠错级别，并下载为 SVG 或 PNG。"
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "测试正则表达式并替换文本",
@@ -473,6 +478,29 @@
     },
     "errors": {
       "invalidRegex": "无效的正则表达式"
+    }
+  },
+  "qrgen": {
+    "text": "文本或 URL",
+    "placeholder": "在此输入或粘贴…",
+    "empty": "在上方输入文本以生成 QR。",
+    "size": "大小",
+    "margin": "边距",
+    "fgColor": "QR 颜色",
+    "bgColor": "背景颜色",
+    "errorLevel": {
+      "label": "纠错级别",
+      "L": "L（低，约 7%）",
+      "M": "M（中，约 15%）",
+      "Q": "Q（高，约 25%）",
+      "H": "H（最高，约 30%）"
+    },
+    "errorLevelHint": "更高的纠错使 QR 在受损或部分遮挡时仍可读取，代价是更高的密度。",
+    "actions": {
+      "copySvg": "复制 SVG",
+      "copied": "已复制！",
+      "downloadSvg": "下载 SVG",
+      "downloadPng": "下载 PNG"
     }
   },
   "lorempad": {

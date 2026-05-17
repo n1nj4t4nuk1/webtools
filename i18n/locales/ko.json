@@ -81,6 +81,11 @@
       "tagline": "Lorem ipsum 텍스트 생성",
       "description": "단락, 문장 또는 단어 단위의 자리표시자 텍스트입니다. 클래식한 \"Lorem ipsum dolor sit amet…\"로 시작할 수 있으며 일반 텍스트나 HTML로 출력합니다."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "QR 코드 생성",
+      "description": "URL이나 텍스트의 QR 코드를 만듭니다. 색상, 크기, 오류 정정 수준을 사용자 정의하고 SVG 또는 PNG로 다운로드할 수 있습니다."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "정규식 테스트 및 텍스트 치환",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "잘못된 정규식"
+    }
+  },
+  "qrgen": {
+    "text": "텍스트 또는 URL",
+    "placeholder": "여기에 입력하거나 붙여넣으세요…",
+    "empty": "QR을 생성하려면 위에 텍스트를 입력하세요.",
+    "size": "크기",
+    "margin": "여백",
+    "fgColor": "QR 색상",
+    "bgColor": "배경색",
+    "errorLevel": {
+      "label": "오류 정정",
+      "L": "L (낮음, ~7%)",
+      "M": "M (중간, ~15%)",
+      "Q": "Q (높음, ~25%)",
+      "H": "H (최대, ~30%)"
+    },
+    "errorLevelHint": "정정 수준이 높을수록 QR이 손상되거나 일부가 가려져도 읽기 쉬워지지만 밀도가 높아집니다.",
+    "actions": {
+      "copySvg": "SVG 복사",
+      "copied": "복사되었습니다!",
+      "downloadSvg": "SVG 다운로드",
+      "downloadPng": "PNG 다운로드"
     }
   },
   "lorempad": {

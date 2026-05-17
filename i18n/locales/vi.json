@@ -81,6 +81,11 @@
       "tagline": "Tạo văn bản Lorem ipsum",
       "description": "Văn bản giữ chỗ theo đoạn, câu hoặc từ. Tùy chọn bắt đầu bằng câu kinh điển \"Lorem ipsum dolor sit amet…\" và xuất ra văn bản thuần hoặc HTML."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "Tạo mã QR",
+      "description": "Tạo mã QR cho URL hoặc văn bản. Tùy chỉnh màu sắc, kích thước, mức sửa lỗi và tải về dưới dạng SVG hoặc PNG."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "Kiểm tra regex và thay thế văn bản",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "Regex không hợp lệ"
+    }
+  },
+  "qrgen": {
+    "text": "Văn bản hoặc URL",
+    "placeholder": "Nhập hoặc dán tại đây…",
+    "empty": "Nhập văn bản ở trên để tạo mã QR.",
+    "size": "Kích thước",
+    "margin": "Lề",
+    "fgColor": "Màu QR",
+    "bgColor": "Màu nền",
+    "errorLevel": {
+      "label": "Sửa lỗi",
+      "L": "L (thấp, ~7%)",
+      "M": "M (trung bình, ~15%)",
+      "Q": "Q (cao, ~25%)",
+      "H": "H (tối đa, ~30%)"
+    },
+    "errorLevelHint": "Mức sửa lỗi cao hơn giúp mã QR vẫn đọc được khi bị hỏng hoặc bị che một phần, đổi lại mật độ sẽ dày hơn.",
+    "actions": {
+      "copySvg": "Sao chép SVG",
+      "copied": "Đã sao chép!",
+      "downloadSvg": "Tải SVG",
+      "downloadPng": "Tải PNG"
     }
   },
   "lorempad": {

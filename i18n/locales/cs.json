@@ -81,6 +81,11 @@
       "tagline": "Generování Lorem ipsum textu",
       "description": "Zástupný text v odstavcích, větách nebo slovech. Možnost začít klasickým \"Lorem ipsum dolor sit amet…\" a výstup jako prostý text nebo HTML."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "Generování QR kódů",
+      "description": "Vytvářejte QR kódy pro URL nebo text. Přizpůsobte barvu, velikost, úroveň korekce chyb a stáhněte jako SVG nebo PNG."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "Testování regexu a nahrazování textu",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "Neplatný regex"
+    }
+  },
+  "qrgen": {
+    "text": "Text nebo URL",
+    "placeholder": "Napište nebo vložte sem…",
+    "empty": "Zadejte výše nějaký text pro generování QR.",
+    "size": "Velikost",
+    "margin": "Okraj",
+    "fgColor": "Barva QR",
+    "bgColor": "Barva pozadí",
+    "errorLevel": {
+      "label": "Korekce chyb",
+      "L": "L (nízká, ~7%)",
+      "M": "M (střední, ~15%)",
+      "Q": "Q (vysoká, ~25%)",
+      "H": "H (max, ~30%)"
+    },
+    "errorLevelHint": "Vyšší korekce udržuje QR čitelný i při poškození nebo částečném zakrytí, za cenu vyšší hustoty.",
+    "actions": {
+      "copySvg": "Kopírovat SVG",
+      "copied": "Zkopírováno!",
+      "downloadSvg": "Stáhnout SVG",
+      "downloadPng": "Stáhnout PNG"
     }
   },
   "lorempad": {

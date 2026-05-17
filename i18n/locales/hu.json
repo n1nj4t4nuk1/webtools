@@ -81,6 +81,11 @@
       "tagline": "Lorem ipsum szöveg generálása",
       "description": "Helykitöltő szöveg bekezdésekben, mondatokban vagy szavakban. Lehetőség a klasszikus \"Lorem ipsum dolor sit amet…\" kezdettel, és kimenet sima szövegként vagy HTML-ként."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "QR-kódok generálása",
+      "description": "Hozzon létre QR-kódokat URL-ekhez vagy szöveghez. Testreszabhatja a színt, a méretet, a hibajavítási szintet, és letöltheti SVG vagy PNG formátumban."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "Regex tesztelése és szöveg cseréje",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "Érvénytelen regex"
+    }
+  },
+  "qrgen": {
+    "text": "Szöveg vagy URL",
+    "placeholder": "Írja be vagy illessze be ide…",
+    "empty": "Adjon meg szöveget fent a QR-kód generálásához.",
+    "size": "Méret",
+    "margin": "Margó",
+    "fgColor": "QR színe",
+    "bgColor": "Háttérszín",
+    "errorLevel": {
+      "label": "Hibajavítás",
+      "L": "L (alacsony, ~7%)",
+      "M": "M (közepes, ~15%)",
+      "Q": "Q (magas, ~25%)",
+      "H": "H (maximális, ~30%)"
+    },
+    "errorLevelHint": "A magasabb hibajavítás akkor is olvashatóvá teszi a QR-kódot, ha sérült vagy részben fedett, a nagyobb sűrűség árán.",
+    "actions": {
+      "copySvg": "SVG másolása",
+      "copied": "Másolva!",
+      "downloadSvg": "SVG letöltése",
+      "downloadPng": "PNG letöltése"
     }
   },
   "lorempad": {

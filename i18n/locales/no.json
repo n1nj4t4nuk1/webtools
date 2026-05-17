@@ -81,6 +81,11 @@
       "tagline": "Generer Lorem ipsum-tekst",
       "description": "Plassholdertekst i avsnitt, setninger eller ord. Mulighet til å starte med klassiske \"Lorem ipsum dolor sit amet…\" og skrive ut som ren tekst eller HTML."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "Generer QR-koder",
+      "description": "Lag QR-koder for URL-er eller tekst. Tilpass farge, størrelse, feilkorreksjonsnivå og last ned som SVG eller PNG."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "Test regex og erstatt tekst",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "Ugyldig regex"
+    }
+  },
+  "qrgen": {
+    "text": "Tekst eller URL",
+    "placeholder": "Skriv eller lim inn her…",
+    "empty": "Skriv inn litt tekst ovenfor for å generere QR-koden.",
+    "size": "Størrelse",
+    "margin": "Marg",
+    "fgColor": "QR-farge",
+    "bgColor": "Bakgrunnsfarge",
+    "errorLevel": {
+      "label": "Feilkorreksjon",
+      "L": "L (lav, ~7%)",
+      "M": "M (middels, ~15%)",
+      "Q": "Q (høy, ~25%)",
+      "H": "H (maks., ~30%)"
+    },
+    "errorLevelHint": "Høyere korreksjon holder QR-koden lesbar når den er skadet eller delvis tildekket, på bekostning av høyere tetthet.",
+    "actions": {
+      "copySvg": "Kopier SVG",
+      "copied": "Kopiert!",
+      "downloadSvg": "Last ned SVG",
+      "downloadPng": "Last ned PNG"
     }
   },
   "lorempad": {

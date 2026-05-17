@@ -81,6 +81,11 @@
       "tagline": "Lorem ipsum-tekst genereren",
       "description": "Opvultekst in alinea's, zinnen of woorden. Optie om te beginnen met het klassieke \"Lorem ipsum dolor sit amet…\" en uitvoer als platte tekst of HTML."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "QR-codes genereren",
+      "description": "Maak QR-codes voor URL's of tekst. Pas kleur, grootte en foutcorrectieniveau aan en download als SVG of PNG."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "Regex testen en tekst vervangen",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "Ongeldige regex"
+    }
+  },
+  "qrgen": {
+    "text": "Tekst of URL",
+    "placeholder": "Typ of plak hier…",
+    "empty": "Voer hierboven tekst in om de QR te genereren.",
+    "size": "Grootte",
+    "margin": "Marge",
+    "fgColor": "QR-kleur",
+    "bgColor": "Achtergrondkleur",
+    "errorLevel": {
+      "label": "Foutcorrectie",
+      "L": "L (laag, ~7%)",
+      "M": "M (gemiddeld, ~15%)",
+      "Q": "Q (hoog, ~25%)",
+      "H": "H (max, ~30%)"
+    },
+    "errorLevelHint": "Hogere correctie houdt de QR leesbaar wanneer deze beschadigd of gedeeltelijk bedekt is, ten koste van meer dichtheid.",
+    "actions": {
+      "copySvg": "SVG kopiëren",
+      "copied": "Gekopieerd!",
+      "downloadSvg": "SVG downloaden",
+      "downloadPng": "PNG downloaden"
     }
   },
   "lorempad": {

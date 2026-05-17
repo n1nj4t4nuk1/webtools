@@ -81,6 +81,11 @@
       "tagline": "Generuj tekst Lorem ipsum",
       "description": "Tekst zastępczy w akapitach, zdaniach lub słowach. Opcja rozpoczęcia od klasycznego \"Lorem ipsum dolor sit amet…\" oraz wyjście jako zwykły tekst lub HTML."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "Generuj kody QR",
+      "description": "Twórz kody QR dla adresów URL lub tekstu. Dostosuj kolor, rozmiar, poziom korekcji błędów i pobierz jako SVG lub PNG."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "Testuj regex i zamieniaj tekst",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "Nieprawidłowy regex"
+    }
+  },
+  "qrgen": {
+    "text": "Tekst lub URL",
+    "placeholder": "Wpisz lub wklej tutaj…",
+    "empty": "Wprowadź tekst powyżej, aby wygenerować kod QR.",
+    "size": "Rozmiar",
+    "margin": "Margines",
+    "fgColor": "Kolor QR",
+    "bgColor": "Kolor tła",
+    "errorLevel": {
+      "label": "Korekcja błędów",
+      "L": "L (niska, ~7%)",
+      "M": "M (średnia, ~15%)",
+      "Q": "Q (wysoka, ~25%)",
+      "H": "H (maks., ~30%)"
+    },
+    "errorLevelHint": "Wyższa korekcja sprawia, że QR pozostaje czytelny, gdy jest uszkodzony lub częściowo zasłonięty, kosztem większej gęstości.",
+    "actions": {
+      "copySvg": "Kopiuj SVG",
+      "copied": "Skopiowano!",
+      "downloadSvg": "Pobierz SVG",
+      "downloadPng": "Pobierz PNG"
     }
   },
   "lorempad": {

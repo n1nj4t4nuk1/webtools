@@ -81,6 +81,11 @@
       "tagline": "Lorem ipsum metni oluştur",
       "description": "Paragraflar, cümleler veya kelimeler halinde yer tutucu metin. Klasik \"Lorem ipsum dolor sit amet…\" ile başlama seçeneği ve düz metin veya HTML olarak çıktı."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "QR kodları oluştur",
+      "description": "URL'ler veya metinler için QR kodları oluşturun. Renk, boyut, hata düzeltme seviyesini özelleştirin ve SVG veya PNG olarak indirin."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "Regex test et ve metin değiştir",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "Geçersiz regex"
+    }
+  },
+  "qrgen": {
+    "text": "Metin veya URL",
+    "placeholder": "Buraya yazın veya yapıştırın…",
+    "empty": "QR oluşturmak için yukarıya bir metin girin.",
+    "size": "Boyut",
+    "margin": "Kenar boşluğu",
+    "fgColor": "QR rengi",
+    "bgColor": "Arka plan rengi",
+    "errorLevel": {
+      "label": "Hata düzeltme",
+      "L": "L (düşük, ~%7)",
+      "M": "M (orta, ~%15)",
+      "Q": "Q (yüksek, ~%25)",
+      "H": "H (maksimum, ~%30)"
+    },
+    "errorLevelHint": "Daha yüksek düzeltme, QR'nin hasar gördüğünde veya kısmen kapatıldığında okunabilir kalmasını sağlar, ancak yoğunluğu artırır.",
+    "actions": {
+      "copySvg": "SVG'yi kopyala",
+      "copied": "Kopyalandı!",
+      "downloadSvg": "SVG indir",
+      "downloadPng": "PNG indir"
     }
   },
   "lorempad": {

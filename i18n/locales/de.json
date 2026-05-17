@@ -81,6 +81,11 @@
       "tagline": "Lorem-ipsum-Text generieren",
       "description": "Platzhaltertext in Absätzen, Sätzen oder Wörtern. Option, mit dem klassischen \"Lorem ipsum dolor sit amet…\" zu beginnen und als reinen Text oder HTML auszugeben."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "QR-Codes generieren",
+      "description": "Erstellen Sie QR-Codes für URLs oder Text. Passen Sie Farbe, Größe und Fehlerkorrekturstufe an und laden Sie sie als SVG oder PNG herunter."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "Regex testen und Text ersetzen",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "Ungültige Regex"
+    }
+  },
+  "qrgen": {
+    "text": "Text oder URL",
+    "placeholder": "Hier eingeben oder einfügen…",
+    "empty": "Geben Sie oben Text ein, um den QR zu generieren.",
+    "size": "Größe",
+    "margin": "Rand",
+    "fgColor": "QR-Farbe",
+    "bgColor": "Hintergrundfarbe",
+    "errorLevel": {
+      "label": "Fehlerkorrektur",
+      "L": "L (niedrig, ~7%)",
+      "M": "M (mittel, ~15%)",
+      "Q": "Q (hoch, ~25%)",
+      "H": "H (max, ~30%)"
+    },
+    "errorLevelHint": "Eine höhere Korrektur sorgt dafür, dass der QR auch bei Beschädigung oder teilweiser Verdeckung lesbar bleibt, allerdings auf Kosten einer höheren Dichte.",
+    "actions": {
+      "copySvg": "SVG kopieren",
+      "copied": "Kopiert!",
+      "downloadSvg": "SVG herunterladen",
+      "downloadPng": "PNG herunterladen"
     }
   },
   "lorempad": {

@@ -81,6 +81,11 @@
       "tagline": "Generér Lorem ipsum-tekst",
       "description": "Pladsholdertekst i afsnit, sætninger eller ord. Mulighed for at starte med det klassiske \"Lorem ipsum dolor sit amet…\" og udskrive som almindelig tekst eller HTML."
     },
+    "qrgen": {
+      "name": "Qrgen",
+      "tagline": "Generér QR-koder",
+      "description": "Opret QR-koder til URL'er eller tekst. Tilpas farve, størrelse, fejlkorrektionsniveau, og hent som SVG eller PNG."
+    },
     "regexpad": {
       "name": "Regexpad",
       "tagline": "Test regex og erstat tekst",
@@ -478,6 +483,29 @@
     },
     "errors": {
       "invalidRegex": "Ugyldigt regex"
+    }
+  },
+  "qrgen": {
+    "text": "Tekst eller URL",
+    "placeholder": "Skriv eller indsæt her…",
+    "empty": "Indtast noget tekst ovenfor for at generere QR-koden.",
+    "size": "Størrelse",
+    "margin": "Margen",
+    "fgColor": "QR-farve",
+    "bgColor": "Baggrundsfarve",
+    "errorLevel": {
+      "label": "Fejlkorrektion",
+      "L": "L (lav, ~7%)",
+      "M": "M (medium, ~15%)",
+      "Q": "Q (høj, ~25%)",
+      "H": "H (maks., ~30%)"
+    },
+    "errorLevelHint": "Højere korrektion holder QR-koden læsbar, når den er beskadiget eller delvist tildækket, på bekostning af mere tæthed.",
+    "actions": {
+      "copySvg": "Kopiér SVG",
+      "copied": "Kopieret!",
+      "downloadSvg": "Hent SVG",
+      "downloadPng": "Hent PNG"
     }
   },
   "lorempad": {
