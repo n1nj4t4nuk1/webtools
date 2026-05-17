@@ -12,7 +12,7 @@
       "generators": "Generator",
       "dev": "Pengembangan",
       "design": "Desain",
-      "converters": "Konverter"
+      "calculators": "Kalkulator"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "Konversi antara basis bilangan",
       "description": "Konversi antara biner, oktal, desimal, dan heksadesimal. Mendukung bilangan bulat ukuran berapa pun (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Waktu antara dua tanggal",
+      "description": "Hitung waktu antara dua tanggal atau dari sebuah tanggal hingga sekarang (langsung). Menampilkan tahun, bulan, hari, jam, menit, dan detik."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format dan validasi JSON",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "Format tidak valid."
+    }
+  },
+  "lapsy": {
+    "from": "Dari",
+    "to": "Hingga",
+    "useNow": "Gunakan waktu saat ini (diperbarui setiap detik)",
+    "breakdown": "Rincian",
+    "totals": {
+      "title": "Total",
+      "days": "Hari",
+      "hours": "Jam",
+      "minutes": "Menit",
+      "seconds": "Detik"
+    },
+    "units": {
+      "years": "tahun",
+      "months": "bulan",
+      "days": "hari",
+      "hours": "jam",
+      "minutes": "menit",
+      "seconds": "detik"
+    },
+    "status": {
+      "past": "{text} yang lalu",
+      "future": "Dalam {text}",
+      "same": "Waktu yang sama"
+    },
+    "actions": {
+      "swap": "Tukar",
+      "now": "Sekarang"
     }
   },
   "basey": {

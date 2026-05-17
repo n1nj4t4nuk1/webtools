@@ -12,7 +12,7 @@
       "generators": "Generatoare",
       "dev": "Dezvoltare",
       "design": "Design",
-      "converters": "Convertoare"
+      "calculators": "Calculatoare"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "Convertește între baze numerice",
       "description": "Convertește între binar, octal, zecimal și hexazecimal. Suportă numere întregi de orice dimensiune (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Timpul dintre două date",
+      "description": "Calculează timpul dintre două date sau de la o dată până în prezent (în timp real). Afișează ani, luni, zile, ore, minute și secunde."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatează și validează JSON",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "Format nevalid."
+    }
+  },
+  "lapsy": {
+    "from": "De la",
+    "to": "Până la",
+    "useNow": "Folosește ora curentă (se actualizează la fiecare secundă)",
+    "breakdown": "Detaliere",
+    "totals": {
+      "title": "Totaluri",
+      "days": "Zile",
+      "hours": "Ore",
+      "minutes": "Minute",
+      "seconds": "Secunde"
+    },
+    "units": {
+      "years": "ani",
+      "months": "luni",
+      "days": "zile",
+      "hours": "ore",
+      "minutes": "minute",
+      "seconds": "secunde"
+    },
+    "status": {
+      "past": "acum {text}",
+      "future": "În {text}",
+      "same": "Același moment"
+    },
+    "actions": {
+      "swap": "Inversează",
+      "now": "Acum"
     }
   },
   "basey": {

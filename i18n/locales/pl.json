@@ -12,7 +12,7 @@
       "generators": "Generatory",
       "dev": "Programowanie",
       "design": "Projektowanie",
-      "converters": "Konwertery"
+      "calculators": "Kalkulatory"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "Konwertuj między systemami liczbowymi",
       "description": "Konwertuj między binarnym, ósemkowym, dziesiętnym i szesnastkowym. Obsługuje liczby całkowite dowolnego rozmiaru (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Czas między dwiema datami",
+      "description": "Oblicz czas między dwiema datami lub od daty do teraz (na żywo). Pokazuje lata, miesiące, dni, godziny, minuty i sekundy."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatuj i waliduj JSON",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "Nieprawidłowy format."
+    }
+  },
+  "lapsy": {
+    "from": "Od",
+    "to": "Do",
+    "useNow": "Użyj bieżącego czasu (aktualizuje się co sekundę)",
+    "breakdown": "Szczegóły",
+    "totals": {
+      "title": "Sumy",
+      "days": "Dni",
+      "hours": "Godziny",
+      "minutes": "Minuty",
+      "seconds": "Sekundy"
+    },
+    "units": {
+      "years": "lat",
+      "months": "miesięcy",
+      "days": "dni",
+      "hours": "godzin",
+      "minutes": "minut",
+      "seconds": "sekund"
+    },
+    "status": {
+      "past": "{text} temu",
+      "future": "Za {text}",
+      "same": "Ta sama chwila"
+    },
+    "actions": {
+      "swap": "Zamień",
+      "now": "Teraz"
     }
   },
   "basey": {

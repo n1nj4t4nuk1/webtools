@@ -12,7 +12,7 @@
       "generators": "Geradores",
       "dev": "Desenvolvimento",
       "design": "Design",
-      "converters": "Conversores"
+      "calculators": "Calculadoras"
     }
   },
   "tools": {
@@ -151,6 +151,11 @@
       "tagline": "Conversor entre bases numéricas",
       "description": "Converta entre binário, octal, decimal e hexadecimal. Suporta inteiros de qualquer tamanho (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Tempo entre duas datas",
+      "description": "Calcule o tempo entre duas datas ou de uma data até agora (ao vivo). Mostra anos, meses, dias, horas, minutos e segundos."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formate e valide JSON",
@@ -237,6 +242,36 @@
     },
     "errors": {
       "invalid": "Formato inválido."
+    }
+  },
+  "lapsy": {
+    "from": "De",
+    "to": "Até",
+    "useNow": "Usar data atual (atualiza a cada segundo)",
+    "breakdown": "Detalhes",
+    "totals": {
+      "title": "Totais",
+      "days": "Dias",
+      "hours": "Horas",
+      "minutes": "Minutos",
+      "seconds": "Segundos"
+    },
+    "units": {
+      "years": "anos",
+      "months": "meses",
+      "days": "dias",
+      "hours": "horas",
+      "minutes": "minutos",
+      "seconds": "segundos"
+    },
+    "status": {
+      "past": "Há {text}",
+      "future": "Faltam {text}",
+      "same": "Mesmo instante"
+    },
+    "actions": {
+      "swap": "Trocar",
+      "now": "Agora"
     }
   },
   "basey": {

@@ -12,7 +12,7 @@
       "generators": "Generatoren",
       "dev": "Entwicklung",
       "design": "Design",
-      "converters": "Konverter"
+      "calculators": "Rechner"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "Zwischen Zahlenbasen konvertieren",
       "description": "Konvertieren Sie zwischen Binär, Oktal, Dezimal und Hexadezimal. Unterstützt Ganzzahlen beliebiger Größe (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Zeit zwischen zwei Daten",
+      "description": "Berechnen Sie die Zeit zwischen zwei Daten oder von einem Datum bis jetzt (live). Zeigt Jahre, Monate, Tage, Stunden, Minuten und Sekunden."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatieren und validieren",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "Ungültiges Format."
+    }
+  },
+  "lapsy": {
+    "from": "Von",
+    "to": "Bis",
+    "useNow": "Aktuelle Zeit verwenden (Aktualisierung jede Sekunde)",
+    "breakdown": "Aufschlüsselung",
+    "totals": {
+      "title": "Summen",
+      "days": "Tage",
+      "hours": "Stunden",
+      "minutes": "Minuten",
+      "seconds": "Sekunden"
+    },
+    "units": {
+      "years": "Jahre",
+      "months": "Monate",
+      "days": "Tage",
+      "hours": "Stunden",
+      "minutes": "Minuten",
+      "seconds": "Sekunden"
+    },
+    "status": {
+      "past": "vor {text}",
+      "future": "In {text}",
+      "same": "Gleicher Zeitpunkt"
+    },
+    "actions": {
+      "swap": "Tauschen",
+      "now": "Jetzt"
     }
   },
   "basey": {

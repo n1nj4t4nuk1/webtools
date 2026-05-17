@@ -12,7 +12,7 @@
       "generators": "Üreteçler",
       "dev": "Geliştirme",
       "design": "Tasarım",
-      "converters": "Dönüştürücüler"
+      "calculators": "Hesap makineleri"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "Sayı tabanları arasında dönüştür",
       "description": "İkili, sekizli, ondalık ve onaltılı arasında dönüştürün. Herhangi bir boyuttaki tamsayıları destekler (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "İki tarih arasındaki süre",
+      "description": "İki tarih arasındaki veya bir tarihten şimdiye kadar olan süreyi hesaplayın (canlı). Yıl, ay, gün, saat, dakika ve saniye olarak gösterir."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON'u biçimlendir ve doğrula",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "Geçersiz format."
+    }
+  },
+  "lapsy": {
+    "from": "Başlangıç",
+    "to": "Bitiş",
+    "useNow": "Geçerli saati kullan (her saniye güncellenir)",
+    "breakdown": "Ayrıntı",
+    "totals": {
+      "title": "Toplamlar",
+      "days": "Gün",
+      "hours": "Saat",
+      "minutes": "Dakika",
+      "seconds": "Saniye"
+    },
+    "units": {
+      "years": "yıl",
+      "months": "ay",
+      "days": "gün",
+      "hours": "saat",
+      "minutes": "dakika",
+      "seconds": "saniye"
+    },
+    "status": {
+      "past": "{text} önce",
+      "future": "{text} sonra",
+      "same": "Aynı an"
+    },
+    "actions": {
+      "swap": "Yer değiştir",
+      "now": "Şimdi"
     }
   },
   "basey": {

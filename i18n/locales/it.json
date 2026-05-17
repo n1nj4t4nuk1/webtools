@@ -12,7 +12,7 @@
       "generators": "Generatori",
       "dev": "Sviluppo",
       "design": "Design",
-      "converters": "Convertitori"
+      "calculators": "Calcolatrici"
     }
   },
   "tools": {
@@ -151,6 +151,11 @@
       "tagline": "Convertitore tra basi numeriche",
       "description": "Converti tra binario, ottale, decimale ed esadecimale. Supporta interi di qualsiasi dimensione (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Tempo tra due date",
+      "description": "Calcola il tempo tra due date o da una data fino ad ora (in tempo reale). Mostra anni, mesi, giorni, ore, minuti e secondi."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatta e valida JSON",
@@ -237,6 +242,36 @@
     },
     "errors": {
       "invalid": "Formato non valido."
+    }
+  },
+  "lapsy": {
+    "from": "Da",
+    "to": "A",
+    "useNow": "Usa data attuale (aggiorna ogni secondo)",
+    "breakdown": "Scomposizione",
+    "totals": {
+      "title": "Totali",
+      "days": "Giorni",
+      "hours": "Ore",
+      "minutes": "Minuti",
+      "seconds": "Secondi"
+    },
+    "units": {
+      "years": "anni",
+      "months": "mesi",
+      "days": "giorni",
+      "hours": "ore",
+      "minutes": "minuti",
+      "seconds": "secondi"
+    },
+    "status": {
+      "past": "{text} fa",
+      "future": "Tra {text}",
+      "same": "Stesso istante"
+    },
+    "actions": {
+      "swap": "Scambia",
+      "now": "Ora"
     }
   },
   "basey": {

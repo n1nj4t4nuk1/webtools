@@ -12,7 +12,7 @@
       "generators": "Generatorer",
       "dev": "Utveckling",
       "design": "Design",
-      "converters": "Konverterare"
+      "calculators": "Räknare"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "Konvertera mellan talsystem",
       "description": "Konvertera mellan binärt, oktalt, decimalt och hexadecimalt. Stöder heltal av valfri storlek (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Tid mellan två datum",
+      "description": "Beräkna tiden mellan två datum eller från ett datum fram till nu (live). Visar år, månader, dagar, timmar, minuter och sekunder."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatera och validera JSON",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "Ogiltigt format."
+    }
+  },
+  "lapsy": {
+    "from": "Från",
+    "to": "Till",
+    "useNow": "Använd aktuell tid (uppdateras varje sekund)",
+    "breakdown": "Uppdelning",
+    "totals": {
+      "title": "Totalt",
+      "days": "Dagar",
+      "hours": "Timmar",
+      "minutes": "Minuter",
+      "seconds": "Sekunder"
+    },
+    "units": {
+      "years": "år",
+      "months": "månader",
+      "days": "dagar",
+      "hours": "timmar",
+      "minutes": "minuter",
+      "seconds": "sekunder"
+    },
+    "status": {
+      "past": "för {text} sedan",
+      "future": "Om {text}",
+      "same": "Samma ögonblick"
+    },
+    "actions": {
+      "swap": "Byt",
+      "now": "Nu"
     }
   },
   "basey": {

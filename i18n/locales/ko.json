@@ -12,7 +12,7 @@
       "generators": "생성기",
       "dev": "개발",
       "design": "디자인",
-      "converters": "변환기"
+      "calculators": "계산기"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "진법 간 변환",
       "description": "2진수, 8진수, 10진수, 16진수 간 변환합니다. 모든 크기의 정수를 지원합니다 (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "두 날짜 사이의 시간",
+      "description": "두 날짜 사이 또는 한 날짜에서 현재까지의 시간을 계산합니다 (실시간). 연, 월, 일, 시, 분, 초를 표시합니다."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON 포맷 및 검증",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "잘못된 형식입니다."
+    }
+  },
+  "lapsy": {
+    "from": "시작",
+    "to": "종료",
+    "useNow": "현재 시간 사용 (매초 업데이트)",
+    "breakdown": "세부 내역",
+    "totals": {
+      "title": "총합",
+      "days": "일",
+      "hours": "시간",
+      "minutes": "분",
+      "seconds": "초"
+    },
+    "units": {
+      "years": "년",
+      "months": "개월",
+      "days": "일",
+      "hours": "시간",
+      "minutes": "분",
+      "seconds": "초"
+    },
+    "status": {
+      "past": "{text} 전",
+      "future": "{text} 후",
+      "same": "같은 순간"
+    },
+    "actions": {
+      "swap": "바꾸기",
+      "now": "지금"
     }
   },
   "basey": {

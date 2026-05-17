@@ -12,7 +12,7 @@
       "generators": "生成器",
       "dev": "开发",
       "design": "设计",
-      "converters": "转换器"
+      "calculators": "计算器"
     }
   },
   "tools": {
@@ -151,6 +151,11 @@
       "tagline": "数字进制转换器",
       "description": "在二进制、八进制、十进制和十六进制之间转换。支持任意大小的整数（BigInt）。"
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "两个日期之间的时间",
+      "description": "计算两个日期之间或从某个日期到现在的时间（实时）。显示年、月、日、时、分、秒。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
@@ -237,6 +242,36 @@
     },
     "errors": {
       "invalid": "无效格式。"
+    }
+  },
+  "lapsy": {
+    "from": "从",
+    "to": "至",
+    "useNow": "使用当前时间（每秒更新）",
+    "breakdown": "分解",
+    "totals": {
+      "title": "总计",
+      "days": "天",
+      "hours": "小时",
+      "minutes": "分钟",
+      "seconds": "秒"
+    },
+    "units": {
+      "years": "年",
+      "months": "月",
+      "days": "天",
+      "hours": "小时",
+      "minutes": "分钟",
+      "seconds": "秒"
+    },
+    "status": {
+      "past": "{text}前",
+      "future": "{text}后",
+      "same": "同一时刻"
+    },
+    "actions": {
+      "swap": "交换",
+      "now": "现在"
     }
   },
   "basey": {

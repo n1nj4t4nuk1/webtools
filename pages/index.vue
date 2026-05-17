@@ -9,7 +9,7 @@ const categoriesRaw = [
   { id: 'generators', tools: ['createpass', 'idkun', 'combiny', 'lorempad', 'qrgen'] },
   { id: 'dev', tools: ['csvjson', 'jsonpad', 'regexpad', 'yamljson', 'urlpad', 'codecpad', 'jwtdecoder', 'diffy', 'idkun'] },
   { id: 'design', tools: ['gradienty', 'shadowy', 'colory', 'unity'] },
-  { id: 'converters', tools: ['timely', 'basey'] },
+  { id: 'calculators', tools: ['timely', 'basey', 'lapsy'] },
 ] as const
 
 const toolPaths: Record<string, string> = {
@@ -42,6 +42,7 @@ const toolPaths: Record<string, string> = {
   unity: '/unity',
   timely: '/timely',
   basey: '/basey',
+  lapsy: '/lapsy',
 }
 
 const categories = computed(() =>

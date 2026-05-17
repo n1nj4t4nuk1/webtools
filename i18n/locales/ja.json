@@ -12,7 +12,7 @@
       "generators": "ジェネレーター",
       "dev": "開発",
       "design": "デザイン",
-      "converters": "コンバーター"
+      "calculators": "計算機"
     }
   },
   "tools": {
@@ -151,6 +151,11 @@
       "tagline": "数値基数の相互変換",
       "description": "2進数、8進数、10進数、16進数間で変換。任意のサイズの整数をサポート（BigInt）。"
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "2つの日付間の時間",
+      "description": "2つの日付間または日付から現在までの時間を計算（リアルタイム）。年、月、日、時、分、秒を表示。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSONをフォーマット・検証",
@@ -237,6 +242,36 @@
     },
     "errors": {
       "invalid": "無効な形式です。"
+    }
+  },
+  "lapsy": {
+    "from": "から",
+    "to": "まで",
+    "useNow": "現在時刻を使用（毎秒更新）",
+    "breakdown": "内訳",
+    "totals": {
+      "title": "合計",
+      "days": "日",
+      "hours": "時間",
+      "minutes": "分",
+      "seconds": "秒"
+    },
+    "units": {
+      "years": "年",
+      "months": "ヶ月",
+      "days": "日",
+      "hours": "時間",
+      "minutes": "分",
+      "seconds": "秒"
+    },
+    "status": {
+      "past": "{text}前",
+      "future": "あと{text}",
+      "same": "同じ瞬間"
+    },
+    "actions": {
+      "swap": "入れ替え",
+      "now": "今"
     }
   },
   "basey": {

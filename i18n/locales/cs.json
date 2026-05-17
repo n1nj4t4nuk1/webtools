@@ -12,7 +12,7 @@
       "generators": "Generátory",
       "dev": "Vývoj",
       "design": "Design",
-      "converters": "Převodníky"
+      "calculators": "Kalkulačky"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "Převod mezi číselnými soustavami",
       "description": "Převádějte mezi binární, oktalovou, desítkovou a šestnáctkovou soustavou. Podporuje celá čísla libovolné velikosti (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Čas mezi dvěma daty",
+      "description": "Vypočítejte čas mezi dvěma daty nebo od data do nynějška (živě). Zobrazí roky, měsíce, dny, hodiny, minuty a sekundy."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formátování a validace JSON",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "Neplatný formát."
+    }
+  },
+  "lapsy": {
+    "from": "Od",
+    "to": "Do",
+    "useNow": "Použít aktuální čas (aktualizuje se každou sekundu)",
+    "breakdown": "Rozpis",
+    "totals": {
+      "title": "Souhrn",
+      "days": "Dny",
+      "hours": "Hodiny",
+      "minutes": "Minuty",
+      "seconds": "Sekundy"
+    },
+    "units": {
+      "years": "let",
+      "months": "měsíců",
+      "days": "dní",
+      "hours": "hodin",
+      "minutes": "minut",
+      "seconds": "sekund"
+    },
+    "status": {
+      "past": "před {text}",
+      "future": "Za {text}",
+      "same": "Stejný okamžik"
+    },
+    "actions": {
+      "swap": "Prohodit",
+      "now": "Nyní"
     }
   },
   "basey": {

@@ -12,7 +12,7 @@
       "generators": "Generátorok",
       "dev": "Fejlesztés",
       "design": "Tervezés",
-      "converters": "Konverterek"
+      "calculators": "Számológépek"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "Konvertálás számrendszerek között",
       "description": "Konvertálás bináris, oktális, decimális és hexadecimális között. Tetszőleges méretű egész számokat támogat (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Két dátum közötti idő",
+      "description": "Számítsa ki az időt két dátum között, vagy egy dátumtól a jelenlegi időpontig (élőben). Évek, hónapok, napok, órák, percek és másodpercek formájában mutatja."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formázása és érvényesítése",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "Érvénytelen formátum."
+    }
+  },
+  "lapsy": {
+    "from": "Honnan",
+    "to": "Eddig",
+    "useNow": "Aktuális idő használata (másodpercenként frissül)",
+    "breakdown": "Részletezés",
+    "totals": {
+      "title": "Összesen",
+      "days": "Napok",
+      "hours": "Órák",
+      "minutes": "Percek",
+      "seconds": "Másodpercek"
+    },
+    "units": {
+      "years": "év",
+      "months": "hónap",
+      "days": "nap",
+      "hours": "óra",
+      "minutes": "perc",
+      "seconds": "másodperc"
+    },
+    "status": {
+      "past": "{text} ezelőtt",
+      "future": "{text} múlva",
+      "same": "Ugyanaz a pillanat"
+    },
+    "actions": {
+      "swap": "Csere",
+      "now": "Most"
     }
   },
   "basey": {

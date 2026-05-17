@@ -12,7 +12,7 @@
       "generators": "Generatoren",
       "dev": "Ontwikkeling",
       "design": "Ontwerp",
-      "converters": "Converters"
+      "calculators": "Rekenmachines"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "Converteren tussen getalstelsels",
       "description": "Converteer tussen binair, octaal, decimaal en hexadecimaal. Ondersteunt gehele getallen van elke grootte (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Tijd tussen twee datums",
+      "description": "Bereken de tijd tussen twee datums of vanaf een datum tot nu (live). Toont jaren, maanden, dagen, uren, minuten en seconden."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatteren en valideren",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "Ongeldig formaat."
+    }
+  },
+  "lapsy": {
+    "from": "Van",
+    "to": "Tot",
+    "useNow": "Huidige tijd gebruiken (wordt elke seconde bijgewerkt)",
+    "breakdown": "Uitsplitsing",
+    "totals": {
+      "title": "Totalen",
+      "days": "Dagen",
+      "hours": "Uren",
+      "minutes": "Minuten",
+      "seconds": "Seconden"
+    },
+    "units": {
+      "years": "jaar",
+      "months": "maanden",
+      "days": "dagen",
+      "hours": "uren",
+      "minutes": "minuten",
+      "seconds": "seconden"
+    },
+    "status": {
+      "past": "{text} geleden",
+      "future": "Over {text}",
+      "same": "Zelfde moment"
+    },
+    "actions": {
+      "swap": "Omwisselen",
+      "now": "Nu"
     }
   },
   "basey": {

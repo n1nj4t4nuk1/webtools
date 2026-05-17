@@ -12,7 +12,7 @@
       "generators": "Công cụ tạo",
       "dev": "Phát triển",
       "design": "Thiết kế",
-      "converters": "Chuyển đổi"
+      "calculators": "Máy tính"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "Chuyển đổi giữa các hệ cơ số",
       "description": "Chuyển đổi giữa nhị phân, bát phân, thập phân và thập lục phân. Hỗ trợ số nguyên ở mọi kích thước (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Khoảng thời gian giữa hai ngày",
+      "description": "Tính khoảng thời gian giữa hai ngày hoặc từ một ngày đến hiện tại (trực tiếp). Hiển thị năm, tháng, ngày, giờ, phút và giây."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Định dạng và xác thực JSON",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "Định dạng không hợp lệ."
+    }
+  },
+  "lapsy": {
+    "from": "Từ",
+    "to": "Đến",
+    "useNow": "Dùng thời gian hiện tại (cập nhật mỗi giây)",
+    "breakdown": "Chi tiết",
+    "totals": {
+      "title": "Tổng",
+      "days": "Ngày",
+      "hours": "Giờ",
+      "minutes": "Phút",
+      "seconds": "Giây"
+    },
+    "units": {
+      "years": "năm",
+      "months": "tháng",
+      "days": "ngày",
+      "hours": "giờ",
+      "minutes": "phút",
+      "seconds": "giây"
+    },
+    "status": {
+      "past": "{text} trước",
+      "future": "Trong {text}",
+      "same": "Cùng một thời điểm"
+    },
+    "actions": {
+      "swap": "Hoán đổi",
+      "now": "Hiện tại"
     }
   },
   "basey": {

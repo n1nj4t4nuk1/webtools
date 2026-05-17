@@ -12,7 +12,7 @@
       "generators": "Generatorer",
       "dev": "Utvikling",
       "design": "Design",
-      "converters": "Konverterere"
+      "calculators": "Kalkulatorer"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "Konverter mellom tallsystemer",
       "description": "Konverter mellom binær, oktal, desimal og heksadesimal. Støtter heltall av enhver størrelse (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Tid mellom to datoer",
+      "description": "Beregn tiden mellom to datoer eller fra en dato til nå (live). Viser år, måneder, dager, timer, minutter og sekunder."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater og valider JSON",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "Ugyldig format."
+    }
+  },
+  "lapsy": {
+    "from": "Fra",
+    "to": "Til",
+    "useNow": "Bruk nåværende tidspunkt (oppdateres hvert sekund)",
+    "breakdown": "Oppdeling",
+    "totals": {
+      "title": "Totalt",
+      "days": "Dager",
+      "hours": "Timer",
+      "minutes": "Minutter",
+      "seconds": "Sekunder"
+    },
+    "units": {
+      "years": "år",
+      "months": "måneder",
+      "days": "dager",
+      "hours": "timer",
+      "minutes": "minutter",
+      "seconds": "sekunder"
+    },
+    "status": {
+      "past": "{text} siden",
+      "future": "Om {text}",
+      "same": "Samme øyeblikk"
+    },
+    "actions": {
+      "swap": "Bytt",
+      "now": "Nå"
     }
   },
   "basey": {

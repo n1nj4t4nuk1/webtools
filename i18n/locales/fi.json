@@ -12,7 +12,7 @@
       "generators": "Generaattorit",
       "dev": "Kehitys",
       "design": "Suunnittelu",
-      "converters": "Muuntimet"
+      "calculators": "Laskimet"
     }
   },
   "tools": {
@@ -156,6 +156,11 @@
       "tagline": "Muunna lukukantojen välillä",
       "description": "Muunna binäärin, oktaalin, desimaalin ja heksadesimaalin välillä. Tukee minkä tahansa kokoisia kokonaislukuja (BigInt)."
     },
+    "lapsy": {
+      "name": "Lapsy",
+      "tagline": "Aika kahden päivämäärän välillä",
+      "description": "Laske aika kahden päivämäärän välillä tai päivämäärästä nykyhetkeen (live). Näyttää vuodet, kuukaudet, päivät, tunnit, minuutit ja sekunnit."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Muotoile ja validoi JSON",
@@ -242,6 +247,36 @@
     },
     "errors": {
       "invalid": "Virheellinen muoto."
+    }
+  },
+  "lapsy": {
+    "from": "Alkaen",
+    "to": "Päättyen",
+    "useNow": "Käytä nykyistä aikaa (päivittyy joka sekunti)",
+    "breakdown": "Erittely",
+    "totals": {
+      "title": "Yhteensä",
+      "days": "Päivää",
+      "hours": "Tuntia",
+      "minutes": "Minuuttia",
+      "seconds": "Sekuntia"
+    },
+    "units": {
+      "years": "vuotta",
+      "months": "kuukautta",
+      "days": "päivää",
+      "hours": "tuntia",
+      "minutes": "minuuttia",
+      "seconds": "sekuntia"
+    },
+    "status": {
+      "past": "{text} sitten",
+      "future": "{text} kuluttua",
+      "same": "Sama hetki"
+    },
+    "actions": {
+      "swap": "Vaihda",
+      "now": "Nyt"
     }
   },
   "basey": {
