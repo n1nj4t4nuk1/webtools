@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * pages/index.vue — landing page.
+ *
+ * Declarative catalog of categories and tools. `categoriesRaw` is the
+ * editorial layout (some tools appear in multiple categories on purpose,
+ * e.g. Metaimg lives under both Image editing and Privacy). `toolPaths`
+ * is the route map. At render time tools are sorted alphabetically by
+ * their translated name so the order respects the user's language.
+ */
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
 

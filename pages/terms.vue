@@ -1,4 +1,11 @@
 <script setup lang="ts">
+/**
+ * pages/terms.vue — terms of service.
+ *
+ * Renders the localized ToS by iterating `sectionKeys` and pulling each
+ * `legal.terms.<section>` block from the i18n catalog. Robots are
+ * explicitly allowed to index this page.
+ */
 const { t } = useI18n()
 
 const sectionKeys = ['acceptance', 'service', 'use', 'responsibility', 'ip', 'liability', 'changes', 'jurisdiction'] as const

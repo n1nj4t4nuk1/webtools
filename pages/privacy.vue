@@ -1,4 +1,11 @@
 <script setup lang="ts">
+/**
+ * pages/privacy.vue — privacy policy.
+ *
+ * Renders the localized policy by iterating `sectionKeys` and pulling
+ * each `legal.privacy.<section>` block from the i18n catalog. Robots
+ * are explicitly allowed to index this page.
+ */
 const { t } = useI18n()
 
 const sectionKeys = ['scope', 'data', 'cookies', 'tracking', 'gdpr', 'children', 'changes', 'contact'] as const
