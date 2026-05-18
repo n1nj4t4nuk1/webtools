@@ -1,11 +1,30 @@
+/**
+ * useCsvJson
+ *
+ * Composable powering the CsvJson tool: detects whether a pasted blob
+ * is JSON or CSV, auto-detects the CSV delimiter from `,`/`;`/tab/`|`
+ * and converts in either direction. The CSV parser is implemented
+ * inline (no library) and handles quoted cells, doubled-quote escapes
+ * (`""` → `"`) and CRLF/LF line endings.
+ */
+
+/** Result of {@link useCsvJson.detectFormat}. */
 export type DetectedFormat = 'json' | 'csv' | 'empty' | 'unknown'
+
+/** Delimiters considered when auto-detecting CSV. */
 export type Delimiter = ',' | ';' | '\t' | '|'
 
 const DELIM_CANDIDATES: Delimiter[] = [',', ';', '\t', '|']
 
+/** Escape a string so it can be used inside a `new RegExp(...)`. */
 const escapeRegex = (str: string) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 
 export const useCsvJson = () => {
+  /**
+   * Decide whether `text` looks like JSON or CSV. Anything starting with
+   * `{` or `[` is parsed as JSON; success → `json`, failure → `unknown`.
+   * Everything else (non-empty) is assumed to be `csv`.
+   */
   const detectFormat = (text: string): DetectedFormat => {
     const trimmed = text.trim()
     if (trimmed.length === 0) return 'empty'
@@ -20,6 +39,12 @@ export const useCsvJson = () => {
     return 'csv'
   }
 
+  /**
+   * Best-effort delimiter detection: pick the candidate that appears
+   * the most consistently across the first 10 non-empty lines.
+   * "Consistently" = high mean count, low variance across lines. Any
+   * delimiter that's missing from at least one line is discarded.
+   */
   const detectDelimiter = (text: string): Delimiter => {
     const lines = text
       .split(/\r?\n/)
@@ -45,6 +70,12 @@ export const useCsvJson = () => {
     return best
   }
 
+  /**
+   * Stateful character-by-character CSV parser. Handles RFC 4180-style
+   * quoting: a cell beginning with `"` is read until the matching `"`,
+   * and a doubled `""` inside a quoted cell becomes a single `"`. Lone
+   * `\r` characters are skipped so CRLF and LF both work.
+   */
   const parseCsv = (text: string, delimiter: string): string[][] => {
     const rows: string[][] = []
     let current: string[] = []
@@ -106,6 +137,11 @@ export const useCsvJson = () => {
     return rows
   }
 
+  /**
+   * Convert CSV text to JSON. When `hasHeader` is true, the first row
+   * becomes the object keys for every subsequent row (missing cells
+   * default to empty string). Otherwise, a plain string[][] is returned.
+   */
   const csvToJson = (
     text: string,
     delimiter: string,
@@ -124,6 +160,12 @@ export const useCsvJson = () => {
     })
   }
 
+  /**
+   * Serialize one cell. Anything that contains the delimiter, a quote
+   * or a newline gets wrapped in `"..."` with internal quotes doubled.
+   * `null`/`undefined` become empty strings and nested objects/arrays
+   * are stringified as JSON.
+   */
   const escapeCsvCell = (raw: unknown, delimiter: string): string => {
     let s: string
     if (raw === null || raw === undefined) s = ''
@@ -140,6 +182,12 @@ export const useCsvJson = () => {
     return s
   }
 
+  /**
+   * Convert JSON text to CSV. Accepts either an array of plain objects
+   * (the header is the union of their keys, in first-seen order), an
+   * array of arrays (no header, rows written as-is) or a single object
+   * (treated as an array of one). Mixed shapes throw `MIXED_SHAPE`.
+   */
   const jsonToCsv = (text: string, delimiter: string): string => {
     const parsed = JSON.parse(text)
     let arr: unknown[]
