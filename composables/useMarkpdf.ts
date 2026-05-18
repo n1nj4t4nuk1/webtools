@@ -1,5 +1,18 @@
+/**
+ * useMarkpdf
+ *
+ * Composable powering the Markpdf tool: stamps a text watermark on
+ * selected pages of a PDF using `pdf-lib`. Supports nine fixed anchor
+ * positions (the eight edges/corners plus center) and a "tiled" mode
+ * that repeats the watermark across the whole page on a configurable
+ * grid. The text can be rotated around its visual center; the
+ * trigonometric offsets in `drawAt` compensate so the rotation pivots
+ * around the centroid rather than the baseline-left corner that
+ * `page.drawText` would normally use.
+ */
 import { PDFDocument, StandardFonts, degrees, rgb } from 'pdf-lib'
 
+/** Fixed anchor positions plus the special `tiled` (repeating) mode. */
 export type Position =
   | 'center'
   | 'topLeft'
@@ -12,6 +25,7 @@ export type Position =
   | 'bottomRight'
   | 'tiled'
 
+/** All positions, in display order. */
 export const POSITIONS: Position[] = [
   'center',
   'topLeft',
@@ -25,18 +39,32 @@ export const POSITIONS: Position[] = [
   'tiled',
 ]
 
+/** Watermark configuration passed to {@link useMarkpdf.apply}. */
 export interface WatermarkOptions {
   text: string
+  /** Font size in PDF points; clamped to ≥4. */
   fontSize: number
+  /** Color in the `[0..1]` per-channel range that pdf-lib expects. */
   color: { r: number; g: number; b: number }
+  /** Opacity in `[0..1]`; clamped on apply. */
   opacity: number
+  /** Rotation in degrees; positive = counterclockwise. */
   rotation: number
+  /** Where to place the stamp. `tiled` ignores `margin`. */
   position: Position
+  /** Page numbers (1-based). Empty array means "all pages". */
   pages: number[]
+  /** Distance from the page edge for non-tiled positions, in PDF points. */
   margin: number
+  /** Gap between repetitions in tiled mode, in PDF points. */
   tileGap: number
 }
 
+/**
+ * Convert a CSS-style hex color to pdf-lib's `{ r, g, b }` triplet in
+ * the `[0..1]` range. Falls back to mid-grey for malformed input so the
+ * UI keeps working while the user is typing.
+ */
 export const hexToRgb01 = (hex: string): { r: number; g: number; b: number } => {
   const m = hex.trim().match(/^#?([0-9a-f]{6}|[0-9a-f]{3})$/i)
   if (!m) return { r: 0.5, g: 0.5, b: 0.5 }
@@ -50,6 +78,7 @@ export const hexToRgb01 = (hex: string): { r: number; g: number; b: number } => 
 }
 
 export const useMarkpdf = () => {
+  /** Quickly read a PDF's page count. Returns 0 on any parse failure. */
   const countPages = async (data: ArrayBuffer): Promise<number> => {
     try {
       const doc = await PDFDocument.load(data, { ignoreEncryption: true })
@@ -59,6 +88,18 @@ export const useMarkpdf = () => {
     }
   }
 
+  /**
+   * Apply the watermark to the requested pages and return the new
+   * PDF's bytes. Throws:
+   *   - `EMPTY_TEXT` if no text was provided.
+   *   - `ENCRYPTED` if the source PDF is password-protected.
+   *
+   * Implementation note: `page.drawText` always treats `(x, y)` as the
+   * baseline-left of the text. When rotation is involved the visible
+   * text shifts relative to that anchor, so `drawAt` precomputes the
+   * `(x, y)` such that the visual *center* of the text ends up at the
+   * requested `(cx, cy)`.
+   */
   const apply = async (
     data: ArrayBuffer,
     options: WatermarkOptions,
@@ -89,6 +130,7 @@ export const useMarkpdf = () => {
     for (const page of targets) {
       const { width: pw, height: ph } = page.getSize()
 
+      /** Draw the rotated text so its visual centroid is at (cx, cy). */
       const drawAt = (cx: number, cy: number) => {
         const rad = (rot * Math.PI) / 180
         const cos = Math.cos(rad)
@@ -107,6 +149,9 @@ export const useMarkpdf = () => {
       }
 
       if (options.position === 'tiled') {
+        // Bounding box of the rotated text plus the user-configurable gap
+        // gives us the tile pitch. Start at half-pitch so the pattern
+        // looks centered on the page.
         const rad = (Math.abs(rot) * Math.PI) / 180
         const boxW = Math.abs(textWidth * Math.cos(rad)) + Math.abs(textHeight * Math.sin(rad))
         const boxH = Math.abs(textWidth * Math.sin(rad)) + Math.abs(textHeight * Math.cos(rad))
