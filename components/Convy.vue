@@ -1,4 +1,11 @@
 <script setup lang="ts">
+/**
+ * Convy.vue
+ *
+ * Dropzone + format selector + quality slider. Calls `useConvy.convert`
+ * when the user clicks Convert and exposes a before/after size comparison
+ * so the user can see whether the conversion saved or added bytes.
+ */
 import type { OutputFormat } from '~/composables/useConvy'
 import { EXT_MAP, OUTPUT_FORMATS } from '~/composables/useConvy'
 

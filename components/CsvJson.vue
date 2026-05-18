@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * CsvJson.vue
+ *
+ * Two-pane editor (CSV ↔ JSON) that auto-detects which side the user just
+ * edited (via `useCsvJson.detectFormat`) and converts to the other. Lets
+ * the user override the delimiter and toggle whether the first CSV row is
+ * a header. Errors from either parser are surfaced inline.
+ */
 import type { Delimiter } from '~/composables/useCsvJson'
 
 const { t } = useI18n()

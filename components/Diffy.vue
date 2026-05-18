@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * Diffy.vue
+ *
+ * Side-by-side text diff with three granularity toggles (line / word /
+ * char) plus options to ignore case and whitespace. Calls `useDiffy.compute`
+ * on every change and renders the resulting `Change[]` as colored spans;
+ * stats (added / removed / unchanged) come from `useDiffy.stats`.
+ */
 import type { DiffMode } from '~/composables/useDiffy'
 import { DIFF_MODES } from '~/composables/useDiffy'
 

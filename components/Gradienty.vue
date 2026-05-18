@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * Gradienty.vue
+ *
+ * Visual builder for CSS gradients. Hosts a list of color stops (each with
+ * color, position and a remove button), gradient-type controls (linear /
+ * radial / conic plus angle, shape, position) and a live preview pane.
+ * The output CSS string comes from `useGradienty.buildCss` and is exposed
+ * through a copy-to-clipboard button.
+ */
 import type {
   ColorStop,
   GradientPosition,

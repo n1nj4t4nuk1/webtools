@@ -1,4 +1,14 @@
 <script setup lang="ts">
+/**
+ * Cronpad.vue
+ *
+ * Cron-expression editor with three live panels: a validity badge with an
+ * error message, a human-readable description (shortcuts for the common
+ * patterns, verbose field-by-field fallback otherwise) and a list of the
+ * next 8 firing times rendered in the user's locale or UTC. `useCronpad`
+ * supplies the AST, validation and next-runs iterator; the natural-language
+ * formatting lives here so it can lean on `t()` for i18n.
+ */
 import type { Atom, FieldAst, FieldName, ParsedCron } from '~/composables/useCronpad'
 
 const { t, locale } = useI18n()
