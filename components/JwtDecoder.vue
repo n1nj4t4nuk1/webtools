@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * JwtDecoder.vue
+ *
+ * Pastes a JWT, splits it into header / payload / signature via
+ * `useJwtDecoder.parse` and renders each part. The standard time claims
+ * (`exp`, `nbf`, `iat`) get both an absolute date and a relative phrase
+ * ("in 2 hours") in the user's locale, plus a status badge (valid,
+ * expired, not-yet-valid).
+ */
 import { STANDARD_CLAIMS } from '~/composables/useJwtDecoder'
 
 const { t, locale } = useI18n()

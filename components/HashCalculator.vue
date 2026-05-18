@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * HashCalculator.vue (Hashy)
+ *
+ * Two source modes (text or file) and one output table that lists every
+ * supported digest algorithm at once. A "verify against expected hash"
+ * input compares an arbitrary pasted digest against the freshly computed
+ * one and tries to guess the algorithm from the hex length.
+ */
 import {
   ALL_ALGORITHMS,
   type HashAlgorithm,

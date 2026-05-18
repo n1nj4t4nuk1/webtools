@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * ImageResizer.vue (Mochi)
+ *
+ * Image dropzone with target dimension inputs (width + height with a
+ * lockable aspect ratio), output-format dropdown and JPEG/WebP quality
+ * slider. Calls `useImageResize.resize`, displays a before/after preview
+ * and triggers the browser download with the new file.
+ */
 import type { OutputFormat, ResizeResult } from '~/composables/useImageResize'
 
 const { t } = useI18n()

@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * Jsonpad.vue
+ *
+ * Single-pane JSON editor with a validity badge (line / column on errors),
+ * formatting actions (pretty-print with configurable indent, minify, sort
+ * keys) and a stats panel (bytes, keys, depth, arrays, objects). All logic
+ * is in `useJsonpad`; the component only orchestrates buttons and clipboard.
+ */
 const { t } = useI18n()
 const { validate, format, minify, sortKeys, stats } = useJsonpad()
 

@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * IdGenerator.vue (Idkun)
+ *
+ * Format picker (UUID v4 / v7 / NIL / ULID / NanoID), batch-size input and
+ * optional formatting toggles (uppercase, hyphens). Generates the chosen
+ * format via `useIdGenerator.generateMany` and renders the result in a
+ * scrollable code block with copy / download actions.
+ */
 import { ALL_FORMATS, type IdFormat } from '~/composables/useIdGenerator'
 
 const { t } = useI18n()
