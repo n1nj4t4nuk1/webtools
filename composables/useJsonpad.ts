@@ -1,9 +1,24 @@
+/**
+ * useJsonpad
+ *
+ * Composable powering the Jsonpad tool: validates JSON, formats with
+ * configurable indentation, minifies, optionally sorts keys
+ * alphabetically and reports stats about the parsed value (depth, key
+ * count, array/object counts, byte size).
+ *
+ * Validation errors are normalised to `{ line, col, msg }`: depending
+ * on the browser, `JSON.parse` throws either a `position N` message or
+ * a `line L column C` one — we accept both.
+ */
+
+/** Result of {@link useJsonpad.validate}. */
 export interface JsonValidation {
   valid: boolean
   parsed: unknown
   error: { line: number | null; col: number | null; msg: string } | null
 }
 
+/** Static analysis numbers shown beside the editor. */
 export interface JsonStats {
   bytes: number
   keys: number
@@ -12,6 +27,7 @@ export interface JsonStats {
   objects: number
 }
 
+/** Translate a character offset into a 1-based (line, col) pair. */
 const posToLineCol = (
   text: string,
   pos: number,
@@ -31,6 +47,11 @@ const posToLineCol = (
 }
 
 export const useJsonpad = () => {
+  /**
+   * Try to parse `text` as JSON. Empty input is reported as invalid but
+   * with `error: null` so the UI can stay silent. Successful parses
+   * surface the parsed value alongside `valid: true`.
+   */
   const validate = (text: string): JsonValidation => {
     if (text.trim().length === 0) {
       return { valid: false, parsed: null, error: null }
@@ -57,14 +78,21 @@ export const useJsonpad = () => {
     }
   }
 
+  /** Pretty-print the parsed value with the given indentation. */
   const format = (parsed: unknown, indent: number | string): string => {
     return JSON.stringify(parsed, null, indent)
   }
 
+  /** Compact, single-line serialisation. */
   const minify = (parsed: unknown): string => {
     return JSON.stringify(parsed)
   }
 
+  /**
+   * Return a deep copy of `value` with every object's keys sorted
+   * alphabetically. Arrays preserve their order; primitive values are
+   * passed through unchanged.
+   */
   const sortKeys = (value: unknown): unknown => {
     if (Array.isArray(value)) return value.map(sortKeys)
     if (value !== null && typeof value === 'object') {
@@ -79,6 +107,12 @@ export const useJsonpad = () => {
     return value
   }
 
+  /**
+   * Walk the parsed value to compute counters: total keys across every
+   * object, total arrays, total objects, maximum nesting depth, plus
+   * the UTF-8 byte size of the *original* text (not the re-serialised
+   * version) so the user sees what they actually pasted.
+   */
   const stats = (text: string, parsed: unknown): JsonStats => {
     let keys = 0
     let arrays = 0
