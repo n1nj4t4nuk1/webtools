@@ -1,8 +1,23 @@
+/**
+ * useAlbumy
+ *
+ * Composable powering the Albumy tool: builds a single PDF from a list of
+ * images. Supports A4, Letter or "fit-to-image" page sizes, portrait or
+ * landscape orientations, configurable margins and JPEG quality (used when
+ * re-encoding images whose format is not directly embeddable in PDF).
+ *
+ * pdf-lib can embed JPEG and PNG natively. Any other format (WebP, GIF,
+ * BMP, AVIF…) is rasterised to JPEG via a canvas before embedding.
+ */
 import { PDFDocument } from 'pdf-lib'
 
+/** Logical page size: standard A4, US Letter, or fit-each-page-to-image. */
 export type PageSize = 'a4' | 'letter' | 'fit'
+
+/** Page orientation, only meaningful for standard sizes (a4, letter). */
 export type Orientation = 'portrait' | 'landscape'
 
+/** One image to add to the PDF, with its raw bytes and metadata. */
 export interface AlbumyItem {
   name: string
   data: ArrayBuffer
@@ -11,18 +26,27 @@ export interface AlbumyItem {
   mime: string
 }
 
+/** Render options used by {@link useAlbumy.buildPdf}. */
 export interface AlbumyOptions {
   pageSize: PageSize
   orientation: Orientation
+  /** Margin around the image in PDF points (1/72 inch). */
   margin: number
+  /** JPEG quality (0-100) used when re-encoding non-JPEG/PNG sources. */
   quality: number
 }
 
+/** Standard page sizes in PDF points (portrait). */
 const PAGE_DIMENSIONS: Record<Exclude<PageSize, 'fit'>, [number, number]> = {
   a4: [595.28, 841.89],
   letter: [612, 792],
 }
 
+/**
+ * Re-encode arbitrary image bytes to JPEG via a canvas. Used as a fallback
+ * for formats pdf-lib can't embed directly. The canvas is filled with white
+ * first so that transparent pixels become white (JPEG has no alpha).
+ */
 const reencodeToJpeg = async (
   data: ArrayBuffer,
   mime: string,
@@ -50,6 +74,10 @@ const reencodeToJpeg = async (
 }
 
 export const useAlbumy = () => {
+  /**
+   * Quickly read the width and height of an image file without keeping
+   * the bitmap around. Used by the UI to display previews and metadata.
+   */
   const inspect = async (
     file: File,
   ): Promise<{ width: number; height: number }> => {
@@ -59,6 +87,11 @@ export const useAlbumy = () => {
     return result
   }
 
+  /**
+   * Build a PDF from the given image items. Each image becomes one page;
+   * the image is scaled to fit inside the page minus the margin while
+   * preserving its aspect ratio. Throws `NO_IMAGES` if `items` is empty.
+   */
   const buildPdf = async (
     items: AlbumyItem[],
     opts: AlbumyOptions,
