@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * PdfScissor.vue (Scissor)
+ *
+ * PDF dropzone, page-range input that updates a live preview of the
+ * resolved page numbers, and an Extract button that emits a new PDF with
+ * the selected pages via `usePdfSplit.extractPages`. Surfaces invalid /
+ * out-of-range tokens as warnings without blocking submission.
+ */
 const { t } = useI18n()
 const { parseRanges, extractPages, countPages } = usePdfSplit()
 

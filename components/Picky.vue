@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * Picky.vue
+ *
+ * Image dropzone followed by a canvas the user can hover (live preview of
+ * the color under the cursor) and click (snap a color and add it to the
+ * history). A sampling-radius slider switches between single-pixel and
+ * averaged-neighborhood reads. HEX / RGB / HSL values each have their own
+ * copy button. The history holds the 12 most recent unique picks.
+ */
 import type { Pick } from '~/composables/usePicky'
 
 const { t } = useI18n()

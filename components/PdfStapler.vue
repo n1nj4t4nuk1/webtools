@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * PdfStapler.vue (Stapler)
+ *
+ * Multi-PDF dropzone with a reorderable list (up / down buttons) and a
+ * Merge button that calls `usePdfMerge.mergePdfs` in the displayed order.
+ * Encrypted or unparseable files are flagged with a per-file error so the
+ * user can swap them out without losing the rest of the queue.
+ */
 interface PdfFile {
   id: string
   name: string

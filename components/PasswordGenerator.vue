@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * PasswordGenerator.vue (Createpass)
+ *
+ * Length slider plus toggles for each character class (uppercase /
+ * lowercase / numbers / symbols) and two convenience filters (exclude
+ * visually-similar / exclude shell-ambiguous). Generates via
+ * `usePasswordGenerator.generate` and shows the entropy in bits with a
+ * colored strength meter. Offers regenerate and copy actions.
+ */
 import type { PasswordOptions, StrengthBucket } from '~/composables/usePasswordGenerator'
 
 const { t } = useI18n()

@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * PdfSpinner.vue
+ *
+ * PDF dropzone with an angle picker (90/180/270) and a page-range input.
+ * Empty input means "all pages". Calls `usePdfSpinner.rotatePages`, which
+ * adds the chosen angle to each page's current rotation, then triggers a
+ * download with the resulting bytes.
+ */
 import type { RotationAngle } from '~/composables/usePdfSpinner'
 
 const { t } = useI18n()
