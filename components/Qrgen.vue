@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * Qrgen.vue
+ *
+ * Text input, error-correction-level picker, margin / size sliders and
+ * foreground / background color pickers. Live SVG preview is generated via
+ * `useQrgen.toSvg`; downloads are produced as PNG (canvas) or SVG (inline
+ * string). Empty input yields an empty preview without an error.
+ */
 import type { ErrorLevel } from '~/composables/useQrgen'
 import { ERROR_LEVELS } from '~/composables/useQrgen'
 

@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * Timely.vue
+ *
+ * Linked inputs for every timestamp format (`useTimely.FORMATS`): editing
+ * any one re-parses through `useTimely.parse` and rewrites the others via
+ * `format`. A "use current time" toggle ticks once a second and disables
+ * the inputs. Auxiliary panels show the relative phrase, weekday name and
+ * the browser's current timezone label.
+ */
 import type { TimelyFormat } from '~/composables/useTimely'
 import { FORMATS } from '~/composables/useTimely'
 

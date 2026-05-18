@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * Shadowy.vue
+ *
+ * Dynamic list of shadow layers, each with offset / blur / spread / color /
+ * alpha / inset controls and a remove button. A live preview tile shows
+ * the composed `box-shadow` value; `useShadowy.buildCss` produces the
+ * canonical CSS string that's also exposed for copy-to-clipboard.
+ */
 import type { Shadow } from '~/composables/useShadowy'
 
 const { t } = useI18n()

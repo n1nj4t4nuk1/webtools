@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * Pixely.vue
+ *
+ * Image dropzone with a block-size slider, output format/quality controls
+ * and a draggable rectangle on the preview that limits the pixelation to a
+ * subregion. `usePixely.pixelateToCanvas` renders the live preview; clicking
+ * Download encodes the canvas via `exportBlob` and triggers a save.
+ */
 import type { OutputFormat } from '~/composables/usePixely'
 import { FORMATS } from '~/composables/usePixely'
 

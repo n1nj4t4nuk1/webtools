@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * Regexpad.vue
+ *
+ * Pattern + flags inputs at the top, a textarea below where matches are
+ * highlighted via `useRegexpad.buildHighlight` (HTML-safe), and a replace
+ * panel that shows the output of `applyReplace`. Match count and the first
+ * captured group preview are surfaced inline so the user can iterate on
+ * the pattern without scrolling.
+ */
 const { t } = useI18n()
 const { buildRegex, findMatches, buildHighlight, applyReplace } = useRegexpad()
 
