@@ -6,7 +6,7 @@
 Browser
   └── Nuxt 3 SPA (ssr: false)
         ├── Vue 3 + Composition API
-        ├── @nuxtjs/i18n (7 locales, lazy-loaded JSON)
+        ├── @nuxtjs/i18n (25 locales, lazy-loaded JSON)
         └── Per-tool composable + component + page
 
 Static hosting (Netlify) serves dist/ — that's the whole runtime.
@@ -16,11 +16,18 @@ Every tool is **fully client-side**. There is no backend, no database, no
 serverless functions. The user's files are processed in their own browser
 using:
 
-- **Canvas API** — Mochi (image resize), planned image compressor.
-- **Web Crypto** — Hashy (digests), Createpass (random), Idkun (UUID/ULID/NanoID).
+- **Canvas API** — Mochi (resize), Convy (format conversion), Pixely
+  (pixelate), Picky (color eyedropper), Albumy (image-to-PDF rendering).
+- **Web Crypto** — Hashy (digests), Createpass (random), Idkun (UUID
+  v4/v7/NIL, ULID, NanoID).
 - **File API + `ArrayBuffer`** — every tool that takes a file.
-- **`pdf-lib`** — Stapler (merge), Scissor (extract).
+- **`pdf-lib`** — Stapler (merge), Scissor (split), PdfSpinner (rotate),
+  Albumy (image-to-PDF), Metapdf (metadata), Markpdf (watermark).
 - **`piexifjs`** — Metaimg (EXIF read/write).
+- **`js-yaml`** — YamlJson (YAML ↔ JSON).
+- **`qrcode`** — Qrgen (QR codes, SVG/PNG).
+- **`diff`** — Diffy (text diff: line / word / char).
+- **`Intl` + `BigInt`** — Timely, Lapsy, Basey, Codecpad.
 
 This is the **load-bearing constraint of the whole project**: any new tool
 proposal must answer "can this run entirely client-side?" first. If it
@@ -107,9 +114,9 @@ const toolPaths: Record<string, string> = {
   downloads Mochi's chunk plus the shared vendor.
 - Heavy single-use libraries should be `import()`ed dynamically inside
   the composable if possible — keeps the landing page snappy. Currently
-  `pdf-lib` and `piexifjs` are imported statically; both are small enough
-  that it doesn't matter.
-- The 7 locale JSON files are lazy-loaded by `@nuxtjs/i18n` (`lazy: true`).
+  `pdf-lib`, `piexifjs`, `js-yaml`, `qrcode` and `diff` are imported
+  statically; all are small enough that it doesn't matter.
+- The 25 locale JSON files are lazy-loaded by `@nuxtjs/i18n` (`lazy: true`).
 
 ## Routing and i18n strategy
 

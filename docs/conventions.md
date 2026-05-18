@@ -15,9 +15,11 @@
 
 ## Languages
 
-The interface ships in 7 languages: `es` (default), `en`, `pt`, `it`,
-`el`, `ja`, `zh`. Every new string goes into all seven files.
-See [`docs/i18n.md`](i18n.md) for the practical details.
+The interface ships in 25 languages (`es` is the default; `en` is the
+fallback). Every new string goes into all 25 locale files — typically by
+writing a handful manually and farming the rest out to subagents in
+parallel. See [`docs/i18n.md`](i18n.md) for the full list and the
+practical details.
 
 **The user writes in Spanish; conversations and code comments respond
 in Spanish.** Documentation files in `docs/` and `README.md` are in
@@ -99,7 +101,7 @@ diverged — stop and figure out why before forcing anything.
 Before considering a tool "done":
 
 - [ ] Composable, component and page files exist.
-- [ ] All 7 locales include `tools.<id>.{name,tagline,description}` plus
+- [ ] All 25 locales include `tools.<id>.{name,tagline,description}` plus
       every UI string.
 - [ ] Entry added to `categoriesRaw` and `toolPaths` in `pages/index.vue`.
 - [ ] Dev server loads `/<tool>` without console errors.

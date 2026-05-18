@@ -114,7 +114,10 @@ automatically (and `/en/slugify`, `/pt/slugify`, etc.).
 
 ## 4. Add the translations
 
-Open all **seven** locale files in `i18n/locales/` and add two blocks:
+Open all **25** locale files in `i18n/locales/` and add two blocks. In
+practice you write a handful by hand (typically `es`, `en`, `fr`, `de`,
+`it`, `pt`, `ja`) and farm the rest out to subagents in parallel — see
+[`docs/i18n.md`](i18n.md) for the workflow.
 
 **The tool card metadata** (under `tools.<id>`):
 
@@ -141,9 +144,9 @@ Open all **seven** locale files in `i18n/locales/` and add two blocks:
 }
 ```
 
-Translate honestly. Keep keys identical across all 7 files — vue-i18n's
+Translate honestly. Keep keys identical across all 25 files — vue-i18n's
 fallback chain points to `en`, so a missing key won't crash, but it will
-visibly leak English into Spanish/Japanese/etc.
+visibly leak English into the affected locale.
 
 If your strings contain `@`, `{}` or HTML, **read
 [`docs/i18n.md`](i18n.md) first**. There are three traps and they all
@@ -208,7 +211,7 @@ Push to `dev`. Don't merge to `main` unless the user asks.
   and let the user pick.
 - Putting business logic in the component. If it doesn't touch refs or
   DOM, it belongs in the composable.
-- Skipping locales. Seven languages is the contract — don't ship a tool
+- Skipping locales. 25 languages is the contract — don't ship a tool
   with only Spanish and English.
 - Hard-coding English in the page or component. Always go through `t()`.
 - Designing for hypothetical future tools. Solve the current one; the
