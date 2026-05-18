@@ -1,7 +1,18 @@
+/**
+ * useYamlJson
+ *
+ * Composable powering the YamlJson tool: bidirectional conversion
+ * between YAML and JSON using `js-yaml`. Auto-detects the input format
+ * (anything starting with `{`/`[` is tried as JSON first, then YAML)
+ * and normalises parse errors to a common `{ msg, line, col }` shape so
+ * the UI can render the same error component for both directions.
+ */
 import yaml from 'js-yaml'
 
+/** Output of {@link useYamlJson.detectFormat}. */
 export type DetectedFormat = 'json' | 'yaml' | 'empty' | 'unknown'
 
+/** Normalised parse error returned by both conversion directions. */
 export interface ConversionError {
   msg: string
   line: number | null
@@ -9,6 +20,11 @@ export interface ConversionError {
 }
 
 export const useYamlJson = () => {
+  /**
+   * Heuristic: try JSON if the input opens with `{` or `[`, otherwise
+   * try YAML. YAML is a strict superset of JSON in most respects, so
+   * this ordering favours the cheaper / stricter parser when possible.
+   */
   const detectFormat = (text: string): DetectedFormat => {
     const trimmed = text.trim()
     if (trimmed.length === 0) return 'empty'
@@ -17,7 +33,7 @@ export const useYamlJson = () => {
         JSON.parse(trimmed)
         return 'json'
       } catch {
-        // fall through to try YAML
+        // Fall through to try YAML.
       }
     }
     try {
@@ -29,6 +45,11 @@ export const useYamlJson = () => {
     }
   }
 
+  /**
+   * Parse YAML and serialise it as JSON with the given indentation.
+   * `js-yaml` errors carry a `mark` with `line`/`column` (0-based);
+   * we re-emit them 1-based to match the way the UI shows positions.
+   */
   const yamlToJson = (
     text: string,
     indent: number,
@@ -51,6 +72,12 @@ export const useYamlJson = () => {
     }
   }
 
+  /**
+   * Parse JSON and serialise it as YAML. Indentation is clamped to
+   * `1..10` (js-yaml's accepted range). On a JSON parse error we walk
+   * the input to translate `position N` into `(line, col)` ourselves —
+   * `JSON.parse` doesn't expose that directly across browsers.
+   */
   const jsonToYaml = (
     text: string,
     indent: number,

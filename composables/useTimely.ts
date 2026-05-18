@@ -1,10 +1,27 @@
+/**
+ * useTimely
+ *
+ * Composable powering the Timely tool: converts between the most
+ * common timestamp formats — Unix seconds, Unix milliseconds, ISO 8601
+ * (UTC and local with offset) and RFC 2822 — so editing one field
+ * automatically refreshes every other field. Also exposes helpers for
+ * the surrounding UI: relative phrase ("2 hours ago"), weekday name in
+ * the user's locale, and the current timezone offset label.
+ */
+
+/** All timestamp formats Timely can render or parse. */
 export type TimelyFormat = 'unixS' | 'unixMs' | 'isoUtc' | 'isoLocal' | 'rfc2822'
 
+/** Formats in display order. */
 export const FORMATS: TimelyFormat[] = ['unixS', 'unixMs', 'isoUtc', 'isoLocal', 'rfc2822']
 
 const pad2 = (n: number) => String(n).padStart(2, '0')
 const pad3 = (n: number) => String(n).padStart(3, '0')
 
+/**
+ * Format `date` as a local ISO 8601 string (with timezone offset),
+ * since `Date.prototype.toISOString` only emits UTC.
+ */
 const isoLocal = (date: Date): string => {
   const offsetMin = -date.getTimezoneOffset()
   const sign = offsetMin >= 0 ? '+' : '-'
@@ -19,6 +36,7 @@ const isoLocal = (date: Date): string => {
 }
 
 export const useTimely = () => {
+  /** Stringify `date` in the requested format. */
   const format = (date: Date, fmt: TimelyFormat): string => {
     const ms = date.getTime()
     switch (fmt) {
@@ -35,6 +53,12 @@ export const useTimely = () => {
     }
   }
 
+  /**
+   * Parse `raw` according to `fmt`. Returns `null` on any failure: empty
+   * input, malformed digits for the numeric formats, or a `Date` whose
+   * `getTime()` is `NaN` (which Date will silently produce for invalid
+   * ISO/RFC strings).
+   */
   const parse = (raw: string, fmt: TimelyFormat): Date | null => {
     const trimmed = raw.trim()
     if (trimmed.length === 0) return null
@@ -56,6 +80,11 @@ export const useTimely = () => {
     return Number.isNaN(d.getTime()) ? null : d
   }
 
+  /**
+   * Make a best guess at which format an input string represents, used
+   * by the UI to switch the active field automatically when the user
+   * pastes a value. Returns `null` for ambiguous or empty input.
+   */
   const detect = (raw: string): TimelyFormat | null => {
     const trimmed = raw.trim()
     if (trimmed.length === 0) return null
@@ -68,6 +97,11 @@ export const useTimely = () => {
     return null
   }
 
+  /**
+   * Localised relative-time phrase ("3 hours ago", "in 2 days") via
+   * `Intl.RelativeTimeFormat`. Picks the largest unit whose magnitude
+   * is still ≥1 so the output reads naturally.
+   */
   const relative = (date: Date, locale: string): string => {
     const diff = date.getTime() - Date.now()
     const abs = Math.abs(diff)
@@ -81,9 +115,11 @@ export const useTimely = () => {
     return rtf.format(sign * Math.round(abs / 31_536_000_000), 'year')
   }
 
+  /** Localised long-form weekday name (e.g. "Tuesday", "martes"). */
   const weekdayName = (date: Date, locale: string): string =>
     new Intl.DateTimeFormat(locale, { weekday: 'long' }).format(date)
 
+  /** Render the browser's current timezone offset as `UTC±HH:MM`. */
   const tzLabel = (date: Date): string => {
     const offsetMin = -date.getTimezoneOffset()
     const sign = offsetMin >= 0 ? '+' : '-'
