@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Regexpad tool: sets the tab title and mounts <Regexpad />. */
 const { t } = useI18n()
 
 useHead({

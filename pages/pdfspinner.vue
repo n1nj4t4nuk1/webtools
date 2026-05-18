@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the PdfSpinner tool: sets the tab title and mounts <PdfSpinner />. */
 const { t } = useI18n()
 
 useHead({

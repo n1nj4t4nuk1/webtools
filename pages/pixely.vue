@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Pixely tool: sets the tab title and mounts <Pixely />. */
 const { t } = useI18n()
 
 useHead({

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Qrgen tool: sets the tab title and mounts <Qrgen />. */
 const { t } = useI18n()
 
 useHead({
