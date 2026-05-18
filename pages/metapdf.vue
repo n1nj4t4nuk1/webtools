@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Metapdf tool: sets the tab title and mounts <Metapdf />. */
 const { t } = useI18n()
 
 useHead({

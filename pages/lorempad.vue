@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Lorempad tool: sets the tab title and mounts <Lorempad />. */
 const { t } = useI18n()
 
 useHead({

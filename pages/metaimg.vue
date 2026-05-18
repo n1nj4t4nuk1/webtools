@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Metaimg tool: sets the tab title and mounts <MetaimgEditor />. */
 const { t } = useI18n()
 
 useHead({

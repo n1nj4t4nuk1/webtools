@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Mochi tool: sets the tab title and mounts <ImageResizer />. */
 const { t } = useI18n()
 
 useHead({
