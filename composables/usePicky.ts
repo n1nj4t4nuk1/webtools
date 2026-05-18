@@ -1,6 +1,23 @@
+/**
+ * usePicky
+ *
+ * Composable powering the Picky tool: a color eyedropper that reads
+ * pixel colors out of an image rendered to a `<canvas>`. The canvas is
+ * created with `willReadFrequently: true` so the browser keeps it on
+ * the CPU side, making `getImageData` cheap enough to call on every
+ * pointer move.
+ *
+ * Two sampling modes are exposed:
+ *   - {@link pickAt}: single-pixel color at `(x, y)`.
+ *   - {@link sampleAverage}: average color over a square neighbourhood
+ *     of `radius` pixels — useful to smooth out compression noise on
+ *     JPEGs or anti-aliased edges.
+ */
 import { rgbToHex, rgbToHsl, type Rgb, type Hsl } from '~/composables/useColory'
 
+/** Result of a single eyedropper sample. */
 export interface Pick {
+  /** Pixel coordinates clamped to the canvas bounds. */
   x: number
   y: number
   rgb: Rgb
@@ -9,9 +26,15 @@ export interface Pick {
 }
 
 export const usePicky = () => {
+  /** Decode `file` into an `ImageBitmap` for canvas rendering. */
   const loadBitmap = async (file: File): Promise<ImageBitmap> =>
     await createImageBitmap(file)
 
+  /**
+   * Render `bitmap` at its native resolution into `canvas`. Disables
+   * smoothing so the per-pixel reads later are exact (no extra blending
+   * introduced by the GPU).
+   */
   const drawToCanvas = (
     bitmap: ImageBitmap,
     canvas: HTMLCanvasElement,
@@ -24,6 +47,11 @@ export const usePicky = () => {
     ctx.drawImage(bitmap, 0, 0)
   }
 
+  /**
+   * Sample the color of a single pixel. Returns `null` if the canvas
+   * has no 2D context. Out-of-range coordinates are clamped to the
+   * canvas bounds instead of erroring.
+   */
   const pickAt = (
     canvas: HTMLCanvasElement,
     x: number,
@@ -44,6 +72,12 @@ export const usePicky = () => {
     }
   }
 
+  /**
+   * Sample the *average* color of the square neighborhood of side
+   * `2*radius+1` around `(x, y)`. A radius of 0 short-circuits to
+   * {@link pickAt}. The window is clipped to the canvas so corner
+   * picks remain valid.
+   */
   const sampleAverage = (
     canvas: HTMLCanvasElement,
     x: number,

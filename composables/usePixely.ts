@@ -1,21 +1,49 @@
+/**
+ * usePixely
+ *
+ * Composable powering the Pixely tool: applies a "pixel art" effect to
+ * an image by down-sampling it to a small canvas with high-quality
+ * smoothing and then up-scaling that small canvas with smoothing
+ * disabled (so each tiny pixel becomes a sharp block on the output).
+ *
+ * If a selection rectangle is provided, only that area is pixelated;
+ * the rest of the image is drawn through unchanged. This is how the UI
+ * supports "pixelate only this part" (e.g. for redacting faces).
+ */
+
+/** Output formats supported by the encoder. */
 export type OutputFormat = 'png' | 'jpeg'
 
+/** All formats in display order. */
 export const FORMATS: OutputFormat[] = ['png', 'jpeg']
 
+/** MIME type used when calling `canvas.toBlob`. */
 const MIME: Record<OutputFormat, string> = {
   png: 'image/png',
   jpeg: 'image/jpeg',
 }
 
+/** Extension applied to the downloaded file. */
 const EXT: Record<OutputFormat, string> = {
   png: 'png',
   jpeg: 'jpg',
 }
 
 export const usePixely = () => {
+  /** Decode `file` into an `ImageBitmap`. */
   const loadBitmap = async (file: File): Promise<ImageBitmap> =>
     await createImageBitmap(file)
 
+  /**
+   * Render `bitmap` into `canvas` with a pixelation effect, sized so
+   * each "pixel block" is roughly `blockSize` × `blockSize` source
+   * pixels. When `selection` is non-null only that area is pixelated;
+   * the rest of the canvas keeps the original image.
+   *
+   * The trick is a two-step draw: down-sample with smoothing on, then
+   * up-sample with smoothing off so each small pixel becomes a sharp
+   * coloured block.
+   */
   const pixelateToCanvas = (
     bitmap: ImageBitmap,
     blockSize: number,
@@ -32,6 +60,8 @@ export const usePixely = () => {
     if (!ctx) throw new Error('NO_CONTEXT')
 
     if (!selection) {
+      // Whole-image pixelation: down-sample to a small canvas then
+      // up-sample with smoothing disabled to get the blocky look.
       const smallW = Math.max(1, Math.floor(w / size))
       const smallH = Math.max(1, Math.floor(h / size))
       const small = document.createElement('canvas')
@@ -47,6 +77,8 @@ export const usePixely = () => {
       return
     }
 
+    // Selection mode: draw the full image first, then pixelate just
+    // the selection rectangle on top.
     ctx.imageSmoothingEnabled = true
     ctx.drawImage(bitmap, 0, 0)
 
@@ -71,6 +103,10 @@ export const usePixely = () => {
     ctx.drawImage(small, 0, 0, smallW, smallH, sx, sy, sw, sh)
   }
 
+  /**
+   * Encode `canvas` as a Blob in the chosen format. `quality` is only
+   * honored for JPEG; PNG is always lossless.
+   */
   const exportBlob = async (
     canvas: HTMLCanvasElement,
     format: OutputFormat,
@@ -86,8 +122,10 @@ export const usePixely = () => {
     })
   }
 
+  /** Map an output format to the extension shown in the download name. */
   const extFor = (format: OutputFormat): string => EXT[format]
 
+  /** Quickly read the image's `(width, height)` without keeping a bitmap. */
   const inspect = async (
     file: File,
   ): Promise<{ width: number; height: number }> => {
