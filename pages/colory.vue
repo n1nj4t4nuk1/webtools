@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Colory tool: sets the tab title and mounts <Colory />. */
 const { t } = useI18n()
 
 useHead({

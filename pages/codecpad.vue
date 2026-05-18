@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Codecpad tool: sets the tab title and mounts <Codecpad />. */
 const { t } = useI18n()
 
 useHead({

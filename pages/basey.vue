@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Basey tool: sets the tab title and mounts <Basey />. */
 const { t } = useI18n()
 
 useHead({

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Combiny tool: sets the tab title and mounts <Combiny />. */
 const { t } = useI18n()
 
 useHead({

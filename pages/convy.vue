@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Convy tool: sets the tab title and mounts <Convy />. */
 const { t } = useI18n()
 
 useHead({
