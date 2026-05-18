@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Cronpad tool: sets the tab title and mounts <Cronpad />. */
 const { t } = useI18n()
 
 useHead({

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Createpass tool: sets the tab title and mounts <PasswordGenerator />. */
 const { t } = useI18n()
 
 useHead({

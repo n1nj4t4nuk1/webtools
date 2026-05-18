@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Diffy tool: sets the tab title and mounts <Diffy />. */
 const { t } = useI18n()
 
 useHead({

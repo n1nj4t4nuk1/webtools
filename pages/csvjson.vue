@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the CsvJson tool: sets the tab title and mounts <CsvJson />. */
 const { t } = useI18n()
 
 useHead({

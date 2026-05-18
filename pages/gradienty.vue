@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Gradienty tool: sets the tab title and mounts <Gradienty />. */
 const { t } = useI18n()
 
 useHead({
