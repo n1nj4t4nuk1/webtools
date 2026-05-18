@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * YamlJson.vue
+ *
+ * Two-pane editor (YAML ↔ JSON) that uses `useYamlJson.detectFormat` to
+ * decide which side the user edited and converts to the other via
+ * `yamlToJson` / `jsonToYaml`. Errors include the failing line / column
+ * when the underlying parser provides them.
+ */
 const { t } = useI18n()
 const { detectFormat, yamlToJson, jsonToYaml } = useYamlJson()
 

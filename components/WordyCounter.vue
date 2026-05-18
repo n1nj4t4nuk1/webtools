@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * WordyCounter.vue (Wordy)
+ *
+ * Textarea + file upload that feed the same input string into
+ * `useWordCount.compute`, plus a stats grid (words, characters with /
+ * without spaces, lines, paragraphs, sentences, estimated reading time).
+ * The reading-time display is localised via Intl.NumberFormat / units.
+ */
 const { t } = useI18n()
 const { compute } = useWordCount()
 

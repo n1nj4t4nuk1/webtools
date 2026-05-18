@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * Urlpad.vue
+ *
+ * Single-pane URL encoder/decoder with three direction modes (auto,
+ * encode, decode) and two variants (component vs full URI). Edits run
+ * through `useUrlpad.transform`; the badge shows which direction was
+ * applied so the user can tell when auto-detection switched modes.
+ */
 import type { UrlpadDirection, UrlpadVariant } from '~/composables/useUrlpad'
 
 const { t } = useI18n()

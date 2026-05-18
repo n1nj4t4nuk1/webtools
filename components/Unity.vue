@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * Unity.vue
+ *
+ * Row of linked inputs, one per CSS length unit (`useUnity.UNITS`), plus a
+ * base-font-size control. Editing any input runs `useUnity.convertAll`
+ * from that unit and refreshes every other field. Defaults to 16px base
+ * so the typical browser setting works out of the box.
+ */
 import type { CssUnit } from '~/composables/useUnity'
 import { UNITS } from '~/composables/useUnity'
 
