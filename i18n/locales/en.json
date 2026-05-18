@@ -166,6 +166,11 @@
       "tagline": "Time between two dates",
       "description": "Calculate the time between two dates or from a date until now (live). Shows years, months, days, hours, minutes and seconds."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Color eyedropper from an image",
+      "description": "Load an image, hover to inspect and click to pick a color. HEX, RGB and HSL with copy-to-clipboard. All in your browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format and validate JSON",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Could not copy to clipboard."
+    }
+  },
+  "picky": {
+    "dropzone": "Drag an image here or click to select one",
+    "hint": "Hover to preview and click to pick a color.",
+    "radius": "Sampling radius (average)",
+    "hover": "Under cursor",
+    "picked": "Picked color",
+    "history": "History",
+    "actions": {
+      "change": "Change image",
+      "copy": "Copy",
+      "copied": "Copied!"
+    },
+    "errors": {
+      "notImage": "{name} is not a valid image."
     }
   },
   "pixely": {

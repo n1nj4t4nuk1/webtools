@@ -166,6 +166,11 @@
       "tagline": "Waktu antara dua tanggal",
       "description": "Hitung waktu antara dua tanggal atau dari sebuah tanggal hingga sekarang (langsung). Menampilkan tahun, bulan, hari, jam, menit, dan detik."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Pipet warna dari gambar",
+      "description": "Muat gambar, arahkan kursor untuk memeriksa dan klik untuk memilih warna. HEX, RGB dan HSL dengan salin ke clipboard. Semua di peramban Anda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format dan validasi JSON",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Tidak dapat menyalin ke clipboard."
+    }
+  },
+  "picky": {
+    "dropzone": "Seret gambar ke sini atau klik untuk memilih",
+    "hint": "Arahkan kursor untuk pratinjau dan klik untuk memilih warna.",
+    "radius": "Radius pengambilan sampel (rata-rata)",
+    "hover": "Di bawah kursor",
+    "picked": "Warna terpilih",
+    "history": "Riwayat",
+    "actions": {
+      "change": "Ganti gambar",
+      "copy": "Salin",
+      "copied": "Tersalin!"
+    },
+    "errors": {
+      "notImage": "{name} bukan gambar yang valid."
     }
   },
   "pixely": {

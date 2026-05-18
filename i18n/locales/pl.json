@@ -166,6 +166,11 @@
       "tagline": "Czas między dwiema datami",
       "description": "Oblicz czas między dwiema datami lub od daty do teraz (na żywo). Pokazuje lata, miesiące, dni, godziny, minuty i sekundy."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Próbnik kolorów z obrazu",
+      "description": "Wczytaj obraz, najedź kursorem, aby sprawdzić, i kliknij, aby wybrać kolor. HEX, RGB i HSL z kopiowaniem do schowka. Wszystko w Twojej przeglądarce."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatuj i waliduj JSON",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Nie udało się skopiować do schowka."
+    }
+  },
+  "picky": {
+    "dropzone": "Przeciągnij tutaj obraz lub kliknij, aby go wybrać",
+    "hint": "Najedź kursorem, aby zobaczyć podgląd, i kliknij, aby wybrać kolor.",
+    "radius": "Promień próbkowania (średnia)",
+    "hover": "Pod kursorem",
+    "picked": "Wybrany kolor",
+    "history": "Historia",
+    "actions": {
+      "change": "Zmień obraz",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!"
+    },
+    "errors": {
+      "notImage": "{name} nie jest prawidłowym obrazem."
     }
   },
   "pixely": {

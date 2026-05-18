@@ -166,6 +166,11 @@
       "tagline": "Tid mellan två datum",
       "description": "Beräkna tiden mellan två datum eller från ett datum fram till nu (live). Visar år, månader, dagar, timmar, minuter och sekunder."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Färgpipett från en bild",
+      "description": "Ladda en bild, hovra för att inspektera och klicka för att välja en färg. HEX, RGB och HSL med kopiera till urklipp. Allt i din webbläsare."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatera och validera JSON",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Kunde inte kopiera till urklipp."
+    }
+  },
+  "picky": {
+    "dropzone": "Dra en bild hit eller klicka för att välja en",
+    "hint": "Hovra för att förhandsgranska och klicka för att välja en färg.",
+    "radius": "Samplingsradie (medelvärde)",
+    "hover": "Under markören",
+    "picked": "Vald färg",
+    "history": "Historik",
+    "actions": {
+      "change": "Byt bild",
+      "copy": "Kopiera",
+      "copied": "Kopierad!"
+    },
+    "errors": {
+      "notImage": "{name} är inte en giltig bild."
     }
   },
   "pixely": {

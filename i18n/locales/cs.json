@@ -166,6 +166,11 @@
       "tagline": "Čas mezi dvěma daty",
       "description": "Vypočítejte čas mezi dvěma daty nebo od data do nynějška (živě). Zobrazí roky, měsíce, dny, hodiny, minuty a sekundy."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Kapátko barvy z obrázku",
+      "description": "Načtěte obrázek, najeďte myší pro náhled a klikněte pro výběr barvy. HEX, RGB a HSL s kopírováním do schránky. Vše ve vašem prohlížeči."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formátování a validace JSON",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "picky": {
+    "dropzone": "Přetáhněte sem obrázek nebo klikněte pro výběr",
+    "hint": "Najeďte myší pro náhled a klikněte pro výběr barvy.",
+    "radius": "Poloměr vzorkování (průměr)",
+    "hover": "Pod kurzorem",
+    "picked": "Vybraná barva",
+    "history": "Historie",
+    "actions": {
+      "change": "Změnit obrázek",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!"
+    },
+    "errors": {
+      "notImage": "{name} není platný obrázek."
     }
   },
   "pixely": {

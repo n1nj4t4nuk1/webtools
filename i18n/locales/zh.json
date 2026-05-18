@@ -161,6 +161,11 @@
       "tagline": "两个日期之间的时间",
       "description": "计算两个日期之间或从某个日期到现在的时间（实时）。显示年、月、日、时、分、秒。"
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "从图片中拾取颜色",
+      "description": "加载图片，悬停查看并点击拾取颜色。支持 HEX、RGB 和 HSL，可一键复制到剪贴板。全部在您的浏览器中完成。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
@@ -892,6 +897,22 @@
     },
     "errors": {
       "clipboard": "无法复制到剪贴板。"
+    }
+  },
+  "picky": {
+    "dropzone": "将图片拖到此处，或点击选择",
+    "hint": "悬停以预览，点击以拾取颜色。",
+    "radius": "采样半径（平均）",
+    "hover": "光标下",
+    "picked": "已拾取颜色",
+    "history": "历史记录",
+    "actions": {
+      "change": "更换图片",
+      "copy": "复制",
+      "copied": "已复制！"
+    },
+    "errors": {
+      "notImage": "{name} 不是有效的图片。"
     }
   },
   "pixely": {

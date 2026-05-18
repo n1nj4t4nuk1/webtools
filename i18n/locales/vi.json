@@ -166,6 +166,11 @@
       "tagline": "Khoảng thời gian giữa hai ngày",
       "description": "Tính khoảng thời gian giữa hai ngày hoặc từ một ngày đến hiện tại (trực tiếp). Hiển thị năm, tháng, ngày, giờ, phút và giây."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Công cụ chọn màu từ hình ảnh",
+      "description": "Tải một hình ảnh, di chuột để xem và nhấp để chọn màu. HEX, RGB và HSL với chức năng sao chép vào clipboard. Tất cả trong trình duyệt của bạn."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Định dạng và xác thực JSON",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Không thể sao chép vào clipboard."
+    }
+  },
+  "picky": {
+    "dropzone": "Kéo ảnh vào đây hoặc nhấp để chọn",
+    "hint": "Di chuột để xem trước và nhấp để chọn màu.",
+    "radius": "Bán kính lấy mẫu (trung bình)",
+    "hover": "Dưới con trỏ",
+    "picked": "Màu đã chọn",
+    "history": "Lịch sử",
+    "actions": {
+      "change": "Đổi ảnh",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!"
+    },
+    "errors": {
+      "notImage": "{name} không phải là ảnh hợp lệ."
     }
   },
   "pixely": {

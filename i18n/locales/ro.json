@@ -166,6 +166,11 @@
       "tagline": "Timpul dintre două date",
       "description": "Calculează timpul dintre două date sau de la o dată până în prezent (în timp real). Afișează ani, luni, zile, ore, minute și secunde."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Pipetă de culoare dintr-o imagine",
+      "description": "Încarcă o imagine, plasează cursorul pentru a inspecta și apasă pentru a alege o culoare. HEX, RGB și HSL cu copiere în clipboard. Totul în browserul tău."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatează și validează JSON",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Nu s-a putut copia în clipboard."
+    }
+  },
+  "picky": {
+    "dropzone": "Trage o imagine aici sau apasă pentru a selecta una",
+    "hint": "Plasează cursorul pentru previzualizare și apasă pentru a alege o culoare.",
+    "radius": "Raza de eșantionare (medie)",
+    "hover": "Sub cursor",
+    "picked": "Culoare aleasă",
+    "history": "Istoric",
+    "actions": {
+      "change": "Schimbă imaginea",
+      "copy": "Copiază",
+      "copied": "Copiat!"
+    },
+    "errors": {
+      "notImage": "{name} nu este o imagine validă."
     }
   },
   "pixely": {

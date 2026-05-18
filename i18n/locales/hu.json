@@ -166,6 +166,11 @@
       "tagline": "Két dátum közötti idő",
       "description": "Számítsa ki az időt két dátum között, vagy egy dátumtól a jelenlegi időpontig (élőben). Évek, hónapok, napok, órák, percek és másodpercek formájában mutatja."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Színpipetta képből",
+      "description": "Töltsön be egy képet, vigye fölé a kurzort a vizsgálathoz, és kattintson egy szín kiválasztásához. HEX, RGB és HSL vágólapra másolással. Mindez a böngészőben."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formázása és érvényesítése",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Nem sikerült a vágólapra másolni."
+    }
+  },
+  "picky": {
+    "dropzone": "Húzzon ide egy képet, vagy kattintson a kiválasztáshoz",
+    "hint": "Vigye fölé a kurzort az előnézethez, és kattintson egy szín kiválasztásához.",
+    "radius": "Mintavételi sugár (átlag)",
+    "hover": "A kurzor alatt",
+    "picked": "Kiválasztott szín",
+    "history": "Előzmények",
+    "actions": {
+      "change": "Kép cseréje",
+      "copy": "Másolás",
+      "copied": "Másolva!"
+    },
+    "errors": {
+      "notImage": "A(z) {name} nem érvényes kép."
     }
   },
   "pixely": {

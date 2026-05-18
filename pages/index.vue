@@ -8,7 +8,7 @@ const categoriesRaw = [
   { id: 'privacy', tools: ['metaimg', 'createpass', 'hashy'] },
   { id: 'generators', tools: ['createpass', 'idkun', 'combiny', 'lorempad', 'qrgen'] },
   { id: 'dev', tools: ['csvjson', 'jsonpad', 'regexpad', 'yamljson', 'urlpad', 'codecpad', 'jwtdecoder', 'diffy', 'idkun'] },
-  { id: 'design', tools: ['gradienty', 'shadowy', 'colory', 'unity'] },
+  { id: 'design', tools: ['gradienty', 'shadowy', 'colory', 'picky', 'unity'] },
   { id: 'calculators', tools: ['timely', 'basey', 'lapsy'] },
 ] as const
 
@@ -40,6 +40,7 @@ const toolPaths: Record<string, string> = {
   gradienty: '/gradienty',
   shadowy: '/shadowy',
   colory: '/colory',
+  picky: '/picky',
   unity: '/unity',
   timely: '/timely',
   basey: '/basey',

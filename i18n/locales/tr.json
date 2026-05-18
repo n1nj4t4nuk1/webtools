@@ -166,6 +166,11 @@
       "tagline": "İki tarih arasındaki süre",
       "description": "İki tarih arasındaki veya bir tarihten şimdiye kadar olan süreyi hesaplayın (canlı). Yıl, ay, gün, saat, dakika ve saniye olarak gösterir."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Bir görüntüden renk damlalığı",
+      "description": "Bir görüntü yükleyin, incelemek için üzerine gelin ve bir rengi seçmek için tıklayın. HEX, RGB ve HSL ile panoya kopyalama. Hepsi tarayıcınızda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON'u biçimlendir ve doğrula",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Panoya kopyalanamadı."
+    }
+  },
+  "picky": {
+    "dropzone": "Buraya bir görüntü sürükleyin veya seçmek için tıklayın",
+    "hint": "Önizlemek için üzerine gelin ve bir rengi seçmek için tıklayın.",
+    "radius": "Örnekleme yarıçapı (ortalama)",
+    "hover": "İmleç altında",
+    "picked": "Seçilen renk",
+    "history": "Geçmiş",
+    "actions": {
+      "change": "Görüntüyü değiştir",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "errors": {
+      "notImage": "{name} geçerli bir görüntü değil."
     }
   },
   "pixely": {

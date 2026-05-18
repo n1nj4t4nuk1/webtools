@@ -166,6 +166,11 @@
       "tagline": "Tiempo entre dos fechas",
       "description": "Calcula el tiempo entre dos fechas o desde una fecha hasta ahora (en vivo). Muestra años, meses, días, horas, minutos y segundos."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Cuentagotas de color desde una imagen",
+      "description": "Carga una imagen, mueve el ratón para inspeccionar y haz clic para fijar un color. HEX, RGB y HSL con copia al portapapeles. Todo en tu navegador."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatea y valida JSON",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "No se pudo copiar al portapapeles."
+    }
+  },
+  "picky": {
+    "dropzone": "Arrastra una imagen aquí o haz clic para seleccionarla",
+    "hint": "Mueve el ratón para previsualizar y haz clic para fijar un color.",
+    "radius": "Radio de muestreo (promedio)",
+    "hover": "Bajo el cursor",
+    "picked": "Color fijado",
+    "history": "Historial",
+    "actions": {
+      "change": "Cambiar imagen",
+      "copy": "Copiar",
+      "copied": "¡Copiado!"
+    },
+    "errors": {
+      "notImage": "{name} no es una imagen válida."
     }
   },
   "pixely": {

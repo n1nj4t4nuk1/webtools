@@ -166,6 +166,11 @@
       "tagline": "Tid mellem to datoer",
       "description": "Beregn tiden mellem to datoer eller fra en dato indtil nu (live). Viser år, måneder, dage, timer, minutter og sekunder."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Farvepipette fra et billede",
+      "description": "Indlæs et billede, hold musen over for at inspicere, og klik for at vælge en farve. HEX, RGB og HSL med kopiér-til-udklipsholder. Alt i din browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatér og valider JSON",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Kunne ikke kopiere til udklipsholderen."
+    }
+  },
+  "picky": {
+    "dropzone": "Træk et billede hertil, eller klik for at vælge et",
+    "hint": "Hold musen over for at få vist, og klik for at vælge en farve.",
+    "radius": "Samplingsradius (gennemsnit)",
+    "hover": "Under markøren",
+    "picked": "Valgt farve",
+    "history": "Historik",
+    "actions": {
+      "change": "Skift billede",
+      "copy": "Kopiér",
+      "copied": "Kopieret!"
+    },
+    "errors": {
+      "notImage": "{name} er ikke et gyldigt billede."
     }
   },
   "pixely": {

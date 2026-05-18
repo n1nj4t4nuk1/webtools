@@ -166,6 +166,11 @@
       "tagline": "Aika kahden päivämäärän välillä",
       "description": "Laske aika kahden päivämäärän välillä tai päivämäärästä nykyhetkeen (live). Näyttää vuodet, kuukaudet, päivät, tunnit, minuutit ja sekunnit."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Värin pipetti kuvasta",
+      "description": "Lataa kuva, vie hiiri päälle tarkastellaksesi ja napsauta poimiaksesi värin. HEX, RGB ja HSL kopioi-leikepöydälle-toiminnolla. Kaikki selaimessasi."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Muotoile ja validoi JSON",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Leikepöydälle ei voitu kopioida."
+    }
+  },
+  "picky": {
+    "dropzone": "Vedä kuva tähän tai napsauta valitaksesi yhden",
+    "hint": "Vie hiiri päälle esikatsellaksesi ja napsauta poimiaksesi värin.",
+    "radius": "Näytteenottosäde (keskiarvo)",
+    "hover": "Kursorin alla",
+    "picked": "Poimittu väri",
+    "history": "Historia",
+    "actions": {
+      "change": "Vaihda kuva",
+      "copy": "Kopioi",
+      "copied": "Kopioitu!"
+    },
+    "errors": {
+      "notImage": "{name} ei ole kelvollinen kuva."
     }
   },
   "pixely": {

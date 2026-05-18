@@ -166,6 +166,11 @@
       "tagline": "Temps entre deux dates",
       "description": "Calculez le temps entre deux dates ou d'une date jusqu'à maintenant (en direct). Affiche les années, mois, jours, heures, minutes et secondes."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Pipette de couleur depuis une image",
+      "description": "Chargez une image, survolez pour inspecter et cliquez pour fixer une couleur. HEX, RGB et HSL avec copie dans le presse-papiers. Tout dans votre navigateur."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater et valider du JSON",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Impossible de copier dans le presse-papiers."
+    }
+  },
+  "picky": {
+    "dropzone": "Glissez une image ici ou cliquez pour en sélectionner une",
+    "hint": "Survolez pour prévisualiser et cliquez pour fixer une couleur.",
+    "radius": "Rayon d'échantillonnage (moyenne)",
+    "hover": "Sous le curseur",
+    "picked": "Couleur fixée",
+    "history": "Historique",
+    "actions": {
+      "change": "Changer d'image",
+      "copy": "Copier",
+      "copied": "Copié !"
+    },
+    "errors": {
+      "notImage": "{name} n'est pas une image valide."
     }
   },
   "pixely": {

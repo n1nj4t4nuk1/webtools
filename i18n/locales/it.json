@@ -161,6 +161,11 @@
       "tagline": "Tempo tra due date",
       "description": "Calcola il tempo tra due date o da una data fino ad ora (in tempo reale). Mostra anni, mesi, giorni, ore, minuti e secondi."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Contagocce di colore da un'immagine",
+      "description": "Carica un'immagine, passa il mouse per ispezionare e fai clic per fissare un colore. HEX, RGB e HSL con copia negli appunti. Tutto nel tuo browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatta e valida JSON",
@@ -892,6 +897,22 @@
     },
     "errors": {
       "clipboard": "Impossibile copiare negli appunti."
+    }
+  },
+  "picky": {
+    "dropzone": "Trascina un'immagine qui o clicca per selezionarla",
+    "hint": "Passa il mouse per l'anteprima e clicca per fissare un colore.",
+    "radius": "Raggio di campionamento (media)",
+    "hover": "Sotto il cursore",
+    "picked": "Colore fissato",
+    "history": "Cronologia",
+    "actions": {
+      "change": "Cambia immagine",
+      "copy": "Copia",
+      "copied": "Copiato!"
+    },
+    "errors": {
+      "notImage": "{name} non è un'immagine valida."
     }
   },
   "pixely": {

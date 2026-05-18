@@ -166,6 +166,11 @@
       "tagline": "Zeit zwischen zwei Daten",
       "description": "Berechnen Sie die Zeit zwischen zwei Daten oder von einem Datum bis jetzt (live). Zeigt Jahre, Monate, Tage, Stunden, Minuten und Sekunden."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Farb-Pipette aus einem Bild",
+      "description": "Laden Sie ein Bild, fahren Sie zum Inspizieren darüber und klicken Sie, um eine Farbe auszuwählen. HEX, RGB und HSL mit Kopieren in die Zwischenablage. Alles im Browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatieren und validieren",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Konnte nicht in die Zwischenablage kopiert werden."
+    }
+  },
+  "picky": {
+    "dropzone": "Ziehen Sie ein Bild hierher oder klicken Sie, um eines auszuwählen",
+    "hint": "Fahren Sie zur Vorschau darüber und klicken Sie, um eine Farbe auszuwählen.",
+    "radius": "Sampling-Radius (Mittelwert)",
+    "hover": "Unter dem Cursor",
+    "picked": "Ausgewählte Farbe",
+    "history": "Verlauf",
+    "actions": {
+      "change": "Bild ändern",
+      "copy": "Kopieren",
+      "copied": "Kopiert!"
+    },
+    "errors": {
+      "notImage": "{name} ist kein gültiges Bild."
     }
   },
   "pixely": {

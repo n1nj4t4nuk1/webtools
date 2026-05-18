@@ -166,6 +166,11 @@
       "tagline": "Tijd tussen twee datums",
       "description": "Bereken de tijd tussen twee datums of vanaf een datum tot nu (live). Toont jaren, maanden, dagen, uren, minuten en seconden."
     },
+    "picky": {
+      "name": "Picky",
+      "tagline": "Kleurpipet uit een afbeelding",
+      "description": "Laad een afbeelding, beweeg eroverheen om te bekijken en klik om een kleur te kiezen. HEX, RGB en HSL met kopiëren naar klembord. Alles in uw browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatteren en valideren",
@@ -927,6 +932,22 @@
     },
     "errors": {
       "clipboard": "Kon niet naar het klembord kopiëren."
+    }
+  },
+  "picky": {
+    "dropzone": "Sleep een afbeelding hierheen of klik om er een te selecteren",
+    "hint": "Beweeg eroverheen voor voorbeeld en klik om een kleur te kiezen.",
+    "radius": "Bemonsteringsradius (gemiddelde)",
+    "hover": "Onder cursor",
+    "picked": "Gekozen kleur",
+    "history": "Geschiedenis",
+    "actions": {
+      "change": "Afbeelding wijzigen",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!"
+    },
+    "errors": {
+      "notImage": "{name} is geen geldige afbeelding."
     }
   },
   "pixely": {
