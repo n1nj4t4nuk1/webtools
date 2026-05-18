@@ -1,8 +1,22 @@
-# webtools
+# TanukiBox · WebTools
 
-Source code of [tanukibox.com](https://tanukibox.com) — a collection of
-small web utilities that run **entirely in the browser**. No backend, no
-uploads: files never leave the user's device.
+Source code of [tanukibox.com](https://tanukibox.com) — a growing collection
+of small web utilities that run **entirely in the browser**. No backend,
+no uploads, no telemetry: files never leave the user's device.
+
+**34 tools** across **7 categories**, available in **25 languages**.
+
+## Philosophy
+
+- **Privacy by construction.** If a tool needs a server to do its job, it
+  doesn't belong here. Everything runs against `File`, `ArrayBuffer`,
+  Canvas, Web Crypto, Web Audio and a handful of small client libraries.
+- **One tool per page.** Each utility is a self-contained composable + UI
+  component + thin page. Nothing shares state across tools.
+- **i18n is not optional.** Every user-visible string is translated into
+  all 25 locales before a tool ships. The contract is enforced in
+  [`docs/conventions.md`](docs/conventions.md).
+- **No build-time configuration.** Clone, `npm install`, `npm run dev`.
 
 ## Tools
 
@@ -47,6 +61,10 @@ uploads: files never leave the user's device.
 | Calculators | `/timely` | Timely | Convert timestamps and dates |
 | Legal | `/privacy` `/terms` `/cookies` | — | Legal pages |
 
+A few tools intentionally appear under more than one category on the
+landing page (e.g. `Metaimg` under both *Image editing* and *Privacy*).
+The route is the same in both cases.
+
 ## Quick start
 
 ```bash
@@ -55,33 +73,43 @@ npm run dev      # http://localhost:3000
 npm run generate # static build → dist/
 ```
 
+Requires Node.js 20 (pinned in `netlify.toml`).
+
 ## Documentation
 
-The `docs/` folder contains everything you need to start contributing or to
-brief an LLM on the project:
+The `docs/` folder contains everything you need to start contributing or
+to brief an LLM on the project:
 
-- [`docs/getting-started.md`](docs/getting-started.md) — local setup, dev,
-  build, deploy.
+- [`docs/getting-started.md`](docs/getting-started.md) — local setup,
+  scripts, build, deploy, common gotchas.
 - [`docs/architecture.md`](docs/architecture.md) — stack, folder layout,
-  why decisions were made.
-- [`docs/adding-a-tool.md`](docs/adding-a-tool.md) — step-by-step guide to
-  add a new tool from scratch.
-- [`docs/i18n.md`](docs/i18n.md) — how the 25 locales work, vue-i18n
-  pitfalls (the `@` and `{}` traps), what to do when adding strings.
-- [`docs/conventions.md`](docs/conventions.md) — naming, commit cadence,
-  git flow, branding.
+  rationale behind the client-side-only constraint.
+- [`docs/adding-a-tool.md`](docs/adding-a-tool.md) — step-by-step guide
+  to add a new tool from scratch (composable + component + page +
+  landing entry + 25 locales).
+- [`docs/i18n.md`](docs/i18n.md) — the full locale list, vue-i18n
+  pitfalls (the `@`, `{}` and HTML traps) and the parallel-translation
+  workflow.
+- [`docs/conventions.md`](docs/conventions.md) — naming, tool ordering,
+  commit cadence, git flow, branding rules.
 
 ## Stack at a glance
 
-- **Nuxt 3 + TypeScript** in SPA mode (`ssr: false`), static-generated to `dist/`.
-- **Vue 3** with the Composition API, file-based routing.
+- **Nuxt 3 + TypeScript** in SPA mode (`ssr: false`), static-generated
+  to `dist/` via `nuxt generate`.
+- **Vue 3** with the Composition API and file-based routing.
 - **`@nuxtjs/i18n`** with 25 locales lazy-loaded
-  (cs, da, de, el, en, es, fi, fr, hi, hu, id, it, ja, ko, nl, no, pl, pt,
-  ro, ru, sv, th, tr, vi, zh).
+  (cs, da, de, el, en, es, fi, fr, hi, hu, id, it, ja, ko, nl, no, pl,
+  pt, ro, ru, sv, th, tr, vi, zh). Default `es`, fallback `en`.
 - **No runtime backend.** Browser APIs (Canvas, Web Crypto, File,
-  Web Audio, `Intl`, `BigInt`) + a few small client libraries
-  (`pdf-lib`, `piexifjs`, `js-yaml`, `qrcode`, `diff`) do all the work.
-- **Netlify** auto-deploys from the `main` branch.
+  Web Audio, `Intl`, `BigInt`) plus a handful of small client libraries:
+  - `pdf-lib` — Stapler, Scissor, PdfSpinner, Albumy, Metapdf, Markpdf
+  - `piexifjs` — Metaimg
+  - `js-yaml` — YamlJson
+  - `qrcode` — Qrgen
+  - `diff` — Diffy
+- **Netlify** auto-deploys from the `main` branch (`npm run generate` →
+  `dist/`).
 
 ## Branches
 
