@@ -171,6 +171,11 @@
       "tagline": "Próbnik kolorów z obrazu",
       "description": "Wczytaj obraz, najedź kursorem, aby sprawdzić, i kliknij, aby wybrać kolor. HEX, RGB i HSL z kopiowaniem do schowka. Wszystko w Twojej przeglądarce."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Znaki wodne w PDF",
+      "description": "Dodaj tekstowy znak wodny do stron PDF z konfigurowalnym kolorem, przezroczystością, rozmiarem, kątem i położeniem (w tym wzór kafelkowy). Wszystko w Twojej przeglądarce."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatuj i waliduj JSON",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Nie udało się skopiować do schowka."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Przeciągnij tutaj PDF lub kliknij, aby go wybrać",
+    "totalPages": "{n} stron",
+    "text": "Tekst znaku wodnego",
+    "textPlaceholder": "np. POUFNE",
+    "fontSize": "Rozmiar",
+    "color": "Kolor",
+    "opacity": "Przezroczystość",
+    "rotation": "Obrót",
+    "position": "Pozycja",
+    "margin": "Margines",
+    "tileGap": "Odstęp kafelków",
+    "positions": {
+      "center": "Środek",
+      "topLeft": "Lewy górny",
+      "top": "Góra",
+      "topRight": "Prawy górny",
+      "left": "Lewa",
+      "right": "Prawa",
+      "bottomLeft": "Lewy dolny",
+      "bottom": "Dół",
+      "bottomRight": "Prawy dolny",
+      "tiled": "Kafelkowo (powtórzone)"
+    },
+    "rangesLabel": "Strony (puste = wszystkie)",
+    "rangesPlaceholder": "np. 1-3, 5, 7-{max}",
+    "rangesHint": "Użyj liczb, zakresów (1-3) lub list oddzielonych przecinkami.",
+    "preview": {
+      "pages": "Strony",
+      "count": "Łącznie",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Zastosuj i pobierz",
+      "processing": "Przetwarzanie…",
+      "change": "Zmień PDF"
+    },
+    "errors": {
+      "notPdf": "{name} nie jest plikiem PDF.",
+      "invalidPdf": "Nie udało się odczytać {name}.",
+      "encrypted": "Ten PDF jest zaszyfrowany i nie można go zmodyfikować.",
+      "emptyText": "Wpisz tekst znaku wodnego.",
+      "invalidTokens": "Nieprawidłowe tokeny: {tokens}",
+      "outOfRange": "Poza zakresem (1-{max}): {tokens}",
+      "generic": "Nie udało się zastosować znaku wodnego."
     }
   },
   "picky": {

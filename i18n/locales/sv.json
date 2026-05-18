@@ -171,6 +171,11 @@
       "tagline": "Färgpipett från en bild",
       "description": "Ladda en bild, hovra för att inspektera och klicka för att välja en färg. HEX, RGB och HSL med kopiera till urklipp. Allt i din webbläsare."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Vattenstämpla PDF-filer",
+      "description": "Lägg till en textvattenstämpel på PDF-sidor med anpassningsbar färg, opacitet, storlek, vinkel och position (inklusive upprepat mönster). Allt i din webbläsare."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatera och validera JSON",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Kunde inte kopiera till urklipp."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Dra en PDF hit eller klicka för att välja en",
+    "totalPages": "{n} sidor",
+    "text": "Vattenstämpeltext",
+    "textPlaceholder": "t.ex. KONFIDENTIELLT",
+    "fontSize": "Storlek",
+    "color": "Färg",
+    "opacity": "Opacitet",
+    "rotation": "Rotation",
+    "position": "Position",
+    "margin": "Marginal",
+    "tileGap": "Avstånd mellan plattor",
+    "positions": {
+      "center": "Mitten",
+      "topLeft": "Uppe till vänster",
+      "top": "Upptill",
+      "topRight": "Uppe till höger",
+      "left": "Vänster",
+      "right": "Höger",
+      "bottomLeft": "Nere till vänster",
+      "bottom": "Nedtill",
+      "bottomRight": "Nere till höger",
+      "tiled": "Plattor (upprepad)"
+    },
+    "rangesLabel": "Sidor (tomt = alla)",
+    "rangesPlaceholder": "t.ex. 1-3, 5, 7-{max}",
+    "rangesHint": "Använd siffror, intervall (1-3) eller listor separerade med kommatecken.",
+    "preview": {
+      "pages": "Sidor",
+      "count": "Totalt",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Tillämpa och ladda ner",
+      "processing": "Bearbetar…",
+      "change": "Byt PDF"
+    },
+    "errors": {
+      "notPdf": "{name} är inte en PDF.",
+      "invalidPdf": "Kunde inte läsa {name}.",
+      "encrypted": "Den här PDF:en är krypterad och kan inte ändras.",
+      "emptyText": "Skriv in lite text för vattenstämpeln.",
+      "invalidTokens": "Ogiltiga tokens: {tokens}",
+      "outOfRange": "Utanför intervallet (1-{max}): {tokens}",
+      "generic": "Kunde inte tillämpa vattenstämpeln."
     }
   },
   "picky": {

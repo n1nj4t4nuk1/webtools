@@ -171,6 +171,11 @@
       "tagline": "Công cụ chọn màu từ hình ảnh",
       "description": "Tải một hình ảnh, di chuột để xem và nhấp để chọn màu. HEX, RGB và HSL với chức năng sao chép vào clipboard. Tất cả trong trình duyệt của bạn."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Đóng dấu watermark cho PDF",
+      "description": "Thêm watermark văn bản vào các trang PDF với màu sắc, độ mờ, kích thước, góc và vị trí (bao gồm cả mẫu lặp lại) có thể tùy chỉnh. Tất cả trong trình duyệt của bạn."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Định dạng và xác thực JSON",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Không thể sao chép vào clipboard."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Kéo PDF vào đây hoặc nhấp để chọn",
+    "totalPages": "{n} trang",
+    "text": "Văn bản watermark",
+    "textPlaceholder": "ví dụ: BẢO MẬT",
+    "fontSize": "Kích thước",
+    "color": "Màu sắc",
+    "opacity": "Độ mờ",
+    "rotation": "Xoay",
+    "position": "Vị trí",
+    "margin": "Lề",
+    "tileGap": "Khoảng cách lặp",
+    "positions": {
+      "center": "Giữa",
+      "topLeft": "Trên cùng bên trái",
+      "top": "Trên cùng",
+      "topRight": "Trên cùng bên phải",
+      "left": "Bên trái",
+      "right": "Bên phải",
+      "bottomLeft": "Dưới cùng bên trái",
+      "bottom": "Dưới cùng",
+      "bottomRight": "Dưới cùng bên phải",
+      "tiled": "Lặp lại (kiểu lát)"
+    },
+    "rangesLabel": "Trang (để trống = tất cả)",
+    "rangesPlaceholder": "ví dụ: 1-3, 5, 7-{max}",
+    "rangesHint": "Dùng số, khoảng (1-3) hoặc danh sách cách nhau bởi dấu phẩy.",
+    "preview": {
+      "pages": "Trang",
+      "count": "Tổng",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Áp dụng và tải xuống",
+      "processing": "Đang xử lý…",
+      "change": "Đổi PDF"
+    },
+    "errors": {
+      "notPdf": "{name} không phải là PDF.",
+      "invalidPdf": "Không thể đọc {name}.",
+      "encrypted": "PDF này đã được mã hóa và không thể chỉnh sửa.",
+      "emptyText": "Nhập văn bản cho watermark.",
+      "invalidTokens": "Giá trị không hợp lệ: {tokens}",
+      "outOfRange": "Ngoài khoảng (1-{max}): {tokens}",
+      "generic": "Không thể áp dụng watermark."
     }
   },
   "picky": {

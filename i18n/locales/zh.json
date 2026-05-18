@@ -166,6 +166,11 @@
       "tagline": "从图片中拾取颜色",
       "description": "加载图片，悬停查看并点击拾取颜色。支持 HEX、RGB 和 HSL，可一键复制到剪贴板。全部在您的浏览器中完成。"
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "为 PDF 添加水印",
+      "description": "为 PDF 页面添加文字水印，可自定义颜色、不透明度、大小、角度和位置（包括平铺图案）。全部在您的浏览器中完成。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
@@ -897,6 +902,53 @@
     },
     "errors": {
       "clipboard": "无法复制到剪贴板。"
+    }
+  },
+  "markpdf": {
+    "dropzone": "将 PDF 拖到此处，或点击选择",
+    "totalPages": "{n} 页",
+    "text": "水印文字",
+    "textPlaceholder": "例如：机密",
+    "fontSize": "大小",
+    "color": "颜色",
+    "opacity": "不透明度",
+    "rotation": "旋转",
+    "position": "位置",
+    "margin": "边距",
+    "tileGap": "平铺间距",
+    "positions": {
+      "center": "居中",
+      "topLeft": "左上",
+      "top": "顶部",
+      "topRight": "右上",
+      "left": "左侧",
+      "right": "右侧",
+      "bottomLeft": "左下",
+      "bottom": "底部",
+      "bottomRight": "右下",
+      "tiled": "平铺（重复）"
+    },
+    "rangesLabel": "页码（留空 = 全部）",
+    "rangesPlaceholder": "例如：1-3, 5, 7-{max}",
+    "rangesHint": "使用数字、范围（1-3）或以逗号分隔的列表。",
+    "preview": {
+      "pages": "页码",
+      "count": "总计",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "应用并下载",
+      "processing": "处理中…",
+      "change": "更换 PDF"
+    },
+    "errors": {
+      "notPdf": "{name} 不是 PDF。",
+      "invalidPdf": "无法读取 {name}。",
+      "encrypted": "此 PDF 已加密，无法修改。",
+      "emptyText": "请输入水印文字。",
+      "invalidTokens": "无效的值：{tokens}",
+      "outOfRange": "超出范围 (1-{max})：{tokens}",
+      "generic": "无法应用水印。"
     }
   },
   "picky": {

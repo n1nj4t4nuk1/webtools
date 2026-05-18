@@ -171,6 +171,11 @@
       "tagline": "Värin pipetti kuvasta",
       "description": "Lataa kuva, vie hiiri päälle tarkastellaksesi ja napsauta poimiaksesi värin. HEX, RGB ja HSL kopioi-leikepöydälle-toiminnolla. Kaikki selaimessasi."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Vesileimaa PDF-tiedostot",
+      "description": "Lisää PDF-sivuille tekstivesileima, jonka väri, läpinäkyvyys, koko, kulma ja sijainti (myös toistuva kuvio) ovat mukautettavissa. Kaikki selaimessasi."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Muotoile ja validoi JSON",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Leikepöydälle ei voitu kopioida."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Vedä PDF tähän tai napsauta valitaksesi yhden",
+    "totalPages": "{n} sivua",
+    "text": "Vesileiman teksti",
+    "textPlaceholder": "esim. LUOTTAMUKSELLINEN",
+    "fontSize": "Koko",
+    "color": "Väri",
+    "opacity": "Läpinäkyvyys",
+    "rotation": "Kierto",
+    "position": "Sijainti",
+    "margin": "Marginaali",
+    "tileGap": "Ruudukon väli",
+    "positions": {
+      "center": "Keskellä",
+      "topLeft": "Ylävasen",
+      "top": "Ylhäällä",
+      "topRight": "Yläoikea",
+      "left": "Vasen",
+      "right": "Oikea",
+      "bottomLeft": "Alavasen",
+      "bottom": "Alhaalla",
+      "bottomRight": "Alaoikea",
+      "tiled": "Ruudukko (toistuva)"
+    },
+    "rangesLabel": "Sivut (tyhjä = kaikki)",
+    "rangesPlaceholder": "esim. 1-3, 5, 7-{max}",
+    "rangesHint": "Käytä numeroita, alueita (1-3) tai pilkulla eroteltuja listoja.",
+    "preview": {
+      "pages": "Sivut",
+      "count": "Yhteensä",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Käytä ja lataa",
+      "processing": "Käsitellään…",
+      "change": "Vaihda PDF"
+    },
+    "errors": {
+      "notPdf": "{name} ei ole PDF-tiedosto.",
+      "invalidPdf": "Tiedostoa {name} ei voitu lukea.",
+      "encrypted": "Tämä PDF on salattu eikä sitä voida muokata.",
+      "emptyText": "Kirjoita vesileimalle tekstiä.",
+      "invalidTokens": "Virheelliset arvot: {tokens}",
+      "outOfRange": "Alueen ulkopuolella (1-{max}): {tokens}",
+      "generic": "Vesileimaa ei voitu lisätä."
     }
   },
   "picky": {

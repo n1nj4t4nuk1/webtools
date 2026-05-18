@@ -171,6 +171,11 @@
       "tagline": "Színpipetta képből",
       "description": "Töltsön be egy képet, vigye fölé a kurzort a vizsgálathoz, és kattintson egy szín kiválasztásához. HEX, RGB és HSL vágólapra másolással. Mindez a böngészőben."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Vízjelezzen PDF-eket",
+      "description": "Adjon szöveges vízjelet a PDF oldalakhoz testreszabható színnel, átlátszósággal, mérettel, szöggel és pozícióval (csempézett mintázattal együtt). Mindez a böngészőben."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formázása és érvényesítése",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Nem sikerült a vágólapra másolni."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Húzzon ide egy PDF-et, vagy kattintson a kiválasztáshoz",
+    "totalPages": "{n} oldal",
+    "text": "Vízjel szövege",
+    "textPlaceholder": "pl. BIZALMAS",
+    "fontSize": "Méret",
+    "color": "Szín",
+    "opacity": "Átlátszóság",
+    "rotation": "Elforgatás",
+    "position": "Pozíció",
+    "margin": "Margó",
+    "tileGap": "Csempék közötti távolság",
+    "positions": {
+      "center": "Középen",
+      "topLeft": "Fent balra",
+      "top": "Fent",
+      "topRight": "Fent jobbra",
+      "left": "Balra",
+      "right": "Jobbra",
+      "bottomLeft": "Lent balra",
+      "bottom": "Lent",
+      "bottomRight": "Lent jobbra",
+      "tiled": "Csempézett (ismétlődő)"
+    },
+    "rangesLabel": "Oldalak (üres = összes)",
+    "rangesPlaceholder": "pl. 1-3, 5, 7-{max}",
+    "rangesHint": "Használjon számokat, tartományokat (1-3) vagy vesszővel elválasztott listákat.",
+    "preview": {
+      "pages": "Oldalak",
+      "count": "Összesen",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Alkalmazás és letöltés",
+      "processing": "Feldolgozás…",
+      "change": "PDF cseréje"
+    },
+    "errors": {
+      "notPdf": "A(z) {name} nem PDF.",
+      "invalidPdf": "A(z) {name} nem olvasható.",
+      "encrypted": "Ez a PDF titkosított, és nem módosítható.",
+      "emptyText": "Írjon be valamilyen szöveget a vízjelhez.",
+      "invalidTokens": "Érvénytelen tokenek: {tokens}",
+      "outOfRange": "Tartományon kívül (1-{max}): {tokens}",
+      "generic": "A vízjelet nem sikerült alkalmazni."
     }
   },
   "picky": {

@@ -171,6 +171,11 @@
       "tagline": "Pipetă de culoare dintr-o imagine",
       "description": "Încarcă o imagine, plasează cursorul pentru a inspecta și apasă pentru a alege o culoare. HEX, RGB și HSL cu copiere în clipboard. Totul în browserul tău."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Filigran pentru PDF-uri",
+      "description": "Adaugă un filigran text pe paginile PDF cu culoare, opacitate, dimensiune, unghi și poziție personalizabile (inclusiv model în mozaic). Totul în browserul tău."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatează și validează JSON",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Nu s-a putut copia în clipboard."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Trage un PDF aici sau apasă pentru a selecta unul",
+    "totalPages": "{n} pagini",
+    "text": "Text filigran",
+    "textPlaceholder": "ex. CONFIDENȚIAL",
+    "fontSize": "Dimensiune",
+    "color": "Culoare",
+    "opacity": "Opacitate",
+    "rotation": "Rotație",
+    "position": "Poziție",
+    "margin": "Margine",
+    "tileGap": "Spațiere mozaic",
+    "positions": {
+      "center": "Centru",
+      "topLeft": "Sus stânga",
+      "top": "Sus",
+      "topRight": "Sus dreapta",
+      "left": "Stânga",
+      "right": "Dreapta",
+      "bottomLeft": "Jos stânga",
+      "bottom": "Jos",
+      "bottomRight": "Jos dreapta",
+      "tiled": "Mozaic (repetat)"
+    },
+    "rangesLabel": "Pagini (gol = toate)",
+    "rangesPlaceholder": "ex. 1-3, 5, 7-{max}",
+    "rangesHint": "Folosește numere, intervale (1-3) sau liste separate prin virgulă.",
+    "preview": {
+      "pages": "Pagini",
+      "count": "Total",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Aplică și descarcă",
+      "processing": "Se procesează…",
+      "change": "Schimbă PDF-ul"
+    },
+    "errors": {
+      "notPdf": "{name} nu este un PDF.",
+      "invalidPdf": "Nu s-a putut citi {name}.",
+      "encrypted": "Acest PDF este criptat și nu poate fi modificat.",
+      "emptyText": "Scrie un text pentru filigran.",
+      "invalidTokens": "Tokenuri invalide: {tokens}",
+      "outOfRange": "În afara intervalului (1-{max}): {tokens}",
+      "generic": "Nu s-a putut aplica filigranul."
     }
   },
   "picky": {

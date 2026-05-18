@@ -171,6 +171,11 @@
       "tagline": "Bir görüntüden renk damlalığı",
       "description": "Bir görüntü yükleyin, incelemek için üzerine gelin ve bir rengi seçmek için tıklayın. HEX, RGB ve HSL ile panoya kopyalama. Hepsi tarayıcınızda."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "PDF'lere filigran ekleyin",
+      "description": "PDF sayfalarına özelleştirilebilir renk, opaklık, boyut, açı ve konum (döşenmiş desen dahil) ile metin filigranı ekleyin. Hepsi tarayıcınızda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON'u biçimlendir ve doğrula",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Panoya kopyalanamadı."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Buraya bir PDF sürükleyin veya seçmek için tıklayın",
+    "totalPages": "{n} sayfa",
+    "text": "Filigran metni",
+    "textPlaceholder": "örn. GİZLİ",
+    "fontSize": "Boyut",
+    "color": "Renk",
+    "opacity": "Opaklık",
+    "rotation": "Döndürme",
+    "position": "Konum",
+    "margin": "Kenar boşluğu",
+    "tileGap": "Döşeme aralığı",
+    "positions": {
+      "center": "Orta",
+      "topLeft": "Sol üst",
+      "top": "Üst",
+      "topRight": "Sağ üst",
+      "left": "Sol",
+      "right": "Sağ",
+      "bottomLeft": "Sol alt",
+      "bottom": "Alt",
+      "bottomRight": "Sağ alt",
+      "tiled": "Döşenmiş (tekrarlı)"
+    },
+    "rangesLabel": "Sayfalar (boş = tümü)",
+    "rangesPlaceholder": "örn. 1-3, 5, 7-{max}",
+    "rangesHint": "Sayıları, aralıkları (1-3) veya virgülle ayrılmış listeleri kullanın.",
+    "preview": {
+      "pages": "Sayfalar",
+      "count": "Toplam",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Uygula ve indir",
+      "processing": "İşleniyor…",
+      "change": "PDF'yi değiştir"
+    },
+    "errors": {
+      "notPdf": "{name} bir PDF değil.",
+      "invalidPdf": "{name} okunamadı.",
+      "encrypted": "Bu PDF şifrelenmiş ve değiştirilemez.",
+      "emptyText": "Filigran için bir metin yazın.",
+      "invalidTokens": "Geçersiz değerler: {tokens}",
+      "outOfRange": "Aralık dışında (1-{max}): {tokens}",
+      "generic": "Filigran uygulanamadı."
     }
   },
   "picky": {

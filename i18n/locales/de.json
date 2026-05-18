@@ -171,6 +171,11 @@
       "tagline": "Farb-Pipette aus einem Bild",
       "description": "Laden Sie ein Bild, fahren Sie zum Inspizieren darüber und klicken Sie, um eine Farbe auszuwählen. HEX, RGB und HSL mit Kopieren in die Zwischenablage. Alles im Browser."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Wasserzeichen für PDFs",
+      "description": "Fügen Sie PDF-Seiten ein Text-Wasserzeichen mit anpassbarer Farbe, Deckkraft, Größe, Winkel und Position hinzu (inklusive Kachelmuster). Alles im Browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatieren und validieren",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Konnte nicht in die Zwischenablage kopiert werden."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Ziehen Sie ein PDF hierher oder klicken Sie, um eines auszuwählen",
+    "totalPages": "{n} Seiten",
+    "text": "Wasserzeichen-Text",
+    "textPlaceholder": "z. B. VERTRAULICH",
+    "fontSize": "Größe",
+    "color": "Farbe",
+    "opacity": "Deckkraft",
+    "rotation": "Drehung",
+    "position": "Position",
+    "margin": "Rand",
+    "tileGap": "Kachelabstand",
+    "positions": {
+      "center": "Mitte",
+      "topLeft": "Oben links",
+      "top": "Oben",
+      "topRight": "Oben rechts",
+      "left": "Links",
+      "right": "Rechts",
+      "bottomLeft": "Unten links",
+      "bottom": "Unten",
+      "bottomRight": "Unten rechts",
+      "tiled": "Kachel (wiederholt)"
+    },
+    "rangesLabel": "Seiten (leer = alle)",
+    "rangesPlaceholder": "z. B. 1-3, 5, 7-{max}",
+    "rangesHint": "Verwenden Sie Zahlen, Bereiche (1-3) oder kommagetrennte Listen.",
+    "preview": {
+      "pages": "Seiten",
+      "count": "Gesamt",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Anwenden und herunterladen",
+      "processing": "Verarbeitung…",
+      "change": "PDF wechseln"
+    },
+    "errors": {
+      "notPdf": "{name} ist kein PDF.",
+      "invalidPdf": "{name} konnte nicht gelesen werden.",
+      "encrypted": "Dieses PDF ist verschlüsselt und kann nicht geändert werden.",
+      "emptyText": "Geben Sie einen Text für das Wasserzeichen ein.",
+      "invalidTokens": "Ungültige Token: {tokens}",
+      "outOfRange": "Außerhalb des Bereichs (1-{max}): {tokens}",
+      "generic": "Wasserzeichen konnte nicht angewendet werden."
     }
   },
   "picky": {

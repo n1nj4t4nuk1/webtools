@@ -166,6 +166,11 @@
       "tagline": "画像からの色スポイト",
       "description": "画像を読み込み、ホバーして確認し、クリックして色を選択。HEX、RGB、HSLをクリップボードにコピー可能。すべてブラウザで処理。"
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "PDFにウォーターマーク",
+      "description": "PDFのページに色、不透明度、サイズ、角度、位置（タイルパターンを含む）をカスタマイズしたテキストウォーターマークを追加。すべてブラウザで処理。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSONをフォーマット・検証",
@@ -897,6 +902,53 @@
     },
     "errors": {
       "clipboard": "クリップボードにコピーできませんでした。"
+    }
+  },
+  "markpdf": {
+    "dropzone": "PDFをここにドラッグするか、クリックして選択",
+    "totalPages": "{n}ページ",
+    "text": "ウォーターマークのテキスト",
+    "textPlaceholder": "例: 機密",
+    "fontSize": "サイズ",
+    "color": "色",
+    "opacity": "不透明度",
+    "rotation": "回転",
+    "position": "位置",
+    "margin": "余白",
+    "tileGap": "タイル間隔",
+    "positions": {
+      "center": "中央",
+      "topLeft": "左上",
+      "top": "上",
+      "topRight": "右上",
+      "left": "左",
+      "right": "右",
+      "bottomLeft": "左下",
+      "bottom": "下",
+      "bottomRight": "右下",
+      "tiled": "タイル（繰り返し）"
+    },
+    "rangesLabel": "ページ（空 = すべて）",
+    "rangesPlaceholder": "例: 1-3, 5, 7-{max}",
+    "rangesHint": "数字、範囲（1-3）、カンマ区切りのリストを使用します。",
+    "preview": {
+      "pages": "ページ",
+      "count": "合計",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "適用してダウンロード",
+      "processing": "処理中…",
+      "change": "PDFを変更"
+    },
+    "errors": {
+      "notPdf": "{name}はPDFではありません。",
+      "invalidPdf": "{name}を読み込めませんでした。",
+      "encrypted": "このPDFは暗号化されているため変更できません。",
+      "emptyText": "ウォーターマーク用のテキストを入力してください。",
+      "invalidTokens": "無効なトークン: {tokens}",
+      "outOfRange": "範囲外 (1-{max}): {tokens}",
+      "generic": "ウォーターマークを適用できませんでした。"
     }
   },
   "picky": {

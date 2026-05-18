@@ -171,6 +171,11 @@
       "tagline": "Pipet warna dari gambar",
       "description": "Muat gambar, arahkan kursor untuk memeriksa dan klik untuk memilih warna. HEX, RGB dan HSL dengan salin ke clipboard. Semua di peramban Anda."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Beri tanda air pada PDF",
+      "description": "Tambahkan tanda air teks pada halaman PDF dengan warna, opasitas, ukuran, sudut, dan posisi yang dapat disesuaikan (termasuk pola berulang). Semua di peramban Anda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format dan validasi JSON",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Tidak dapat menyalin ke clipboard."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Seret PDF ke sini atau klik untuk memilihnya",
+    "totalPages": "{n} halaman",
+    "text": "Teks tanda air",
+    "textPlaceholder": "mis. RAHASIA",
+    "fontSize": "Ukuran",
+    "color": "Warna",
+    "opacity": "Opasitas",
+    "rotation": "Rotasi",
+    "position": "Posisi",
+    "margin": "Margin",
+    "tileGap": "Jarak antar ubin",
+    "positions": {
+      "center": "Tengah",
+      "topLeft": "Kiri atas",
+      "top": "Atas",
+      "topRight": "Kanan atas",
+      "left": "Kiri",
+      "right": "Kanan",
+      "bottomLeft": "Kiri bawah",
+      "bottom": "Bawah",
+      "bottomRight": "Kanan bawah",
+      "tiled": "Berulang (pola)"
+    },
+    "rangesLabel": "Halaman (kosong = semua)",
+    "rangesPlaceholder": "mis. 1-3, 5, 7-{max}",
+    "rangesHint": "Gunakan angka, rentang (1-3), atau daftar yang dipisahkan koma.",
+    "preview": {
+      "pages": "Halaman",
+      "count": "Total",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Terapkan dan unduh",
+      "processing": "Memproses…",
+      "change": "Ganti PDF"
+    },
+    "errors": {
+      "notPdf": "{name} bukan PDF.",
+      "invalidPdf": "Tidak dapat membaca {name}.",
+      "encrypted": "PDF ini terenkripsi dan tidak dapat diubah.",
+      "emptyText": "Ketik teks untuk tanda air.",
+      "invalidTokens": "Token tidak valid: {tokens}",
+      "outOfRange": "Di luar rentang (1-{max}): {tokens}",
+      "generic": "Tidak dapat menerapkan tanda air."
     }
   },
   "picky": {

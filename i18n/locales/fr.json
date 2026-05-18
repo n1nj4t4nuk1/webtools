@@ -171,6 +171,11 @@
       "tagline": "Pipette de couleur depuis une image",
       "description": "Chargez une image, survolez pour inspecter et cliquez pour fixer une couleur. HEX, RGB et HSL avec copie dans le presse-papiers. Tout dans votre navigateur."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Filigrane sur PDF",
+      "description": "Ajoutez un filigrane texte aux pages d'un PDF avec couleur, opacité, taille, angle et position personnalisables (motif en mosaïque inclus). Tout dans votre navigateur."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater et valider du JSON",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Impossible de copier dans le presse-papiers."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Glissez un PDF ici ou cliquez pour le sélectionner",
+    "totalPages": "{n} pages",
+    "text": "Texte du filigrane",
+    "textPlaceholder": "ex. CONFIDENTIEL",
+    "fontSize": "Taille",
+    "color": "Couleur",
+    "opacity": "Opacité",
+    "rotation": "Rotation",
+    "position": "Position",
+    "margin": "Marge",
+    "tileGap": "Espacement de la mosaïque",
+    "positions": {
+      "center": "Centre",
+      "topLeft": "Haut gauche",
+      "top": "Haut",
+      "topRight": "Haut droite",
+      "left": "Gauche",
+      "right": "Droite",
+      "bottomLeft": "Bas gauche",
+      "bottom": "Bas",
+      "bottomRight": "Bas droite",
+      "tiled": "Mosaïque (répétée)"
+    },
+    "rangesLabel": "Pages (vide = toutes)",
+    "rangesPlaceholder": "ex. 1-3, 5, 7-{max}",
+    "rangesHint": "Utilisez des nombres, des plages (1-3) ou des listes séparées par des virgules.",
+    "preview": {
+      "pages": "Pages",
+      "count": "Total",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Appliquer et télécharger",
+      "processing": "Traitement…",
+      "change": "Changer de PDF"
+    },
+    "errors": {
+      "notPdf": "{name} n'est pas un PDF.",
+      "invalidPdf": "Impossible de lire {name}.",
+      "encrypted": "Ce PDF est chiffré et ne peut pas être modifié.",
+      "emptyText": "Saisissez un texte pour le filigrane.",
+      "invalidTokens": "Jetons invalides : {tokens}",
+      "outOfRange": "Hors plage (1-{max}) : {tokens}",
+      "generic": "Impossible d'appliquer le filigrane."
     }
   },
   "picky": {

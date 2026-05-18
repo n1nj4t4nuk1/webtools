@@ -171,6 +171,11 @@
       "tagline": "Kapátko barvy z obrázku",
       "description": "Načtěte obrázek, najeďte myší pro náhled a klikněte pro výběr barvy. HEX, RGB a HSL s kopírováním do schránky. Vše ve vašem prohlížeči."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Vodoznak v PDF",
+      "description": "Přidejte textový vodoznak na stránky PDF s přizpůsobitelnou barvou, krytím, velikostí, úhlem a polohou (včetně dlážděného vzoru). Vše ve vašem prohlížeči."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formátování a validace JSON",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Přetáhněte sem PDF nebo klikněte pro výběr",
+    "totalPages": "{n} stran",
+    "text": "Text vodoznaku",
+    "textPlaceholder": "např. DŮVĚRNÉ",
+    "fontSize": "Velikost",
+    "color": "Barva",
+    "opacity": "Krytí",
+    "rotation": "Otočení",
+    "position": "Pozice",
+    "margin": "Okraj",
+    "tileGap": "Rozestup dlaždic",
+    "positions": {
+      "center": "Střed",
+      "topLeft": "Vlevo nahoře",
+      "top": "Nahoře",
+      "topRight": "Vpravo nahoře",
+      "left": "Vlevo",
+      "right": "Vpravo",
+      "bottomLeft": "Vlevo dole",
+      "bottom": "Dole",
+      "bottomRight": "Vpravo dole",
+      "tiled": "Dlážděné (opakované)"
+    },
+    "rangesLabel": "Stránky (prázdné = všechny)",
+    "rangesPlaceholder": "např. 1-3, 5, 7-{max}",
+    "rangesHint": "Použijte čísla, rozsahy (1-3) nebo seznamy oddělené čárkami.",
+    "preview": {
+      "pages": "Stránky",
+      "count": "Celkem",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Použít a stáhnout",
+      "processing": "Zpracovává se…",
+      "change": "Změnit PDF"
+    },
+    "errors": {
+      "notPdf": "{name} není PDF.",
+      "invalidPdf": "Nelze přečíst {name}.",
+      "encrypted": "Toto PDF je šifrované a nelze jej upravit.",
+      "emptyText": "Napište nějaký text pro vodoznak.",
+      "invalidTokens": "Neplatné tokeny: {tokens}",
+      "outOfRange": "Mimo rozsah (1-{max}): {tokens}",
+      "generic": "Nelze použít vodoznak."
     }
   },
   "picky": {

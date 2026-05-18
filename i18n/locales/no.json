@@ -171,6 +171,11 @@
       "tagline": "Fargepipette fra et bilde",
       "description": "Last opp et bilde, hold musepekeren over for å inspisere og klikk for å velge en farge. HEX, RGB og HSL med kopier-til-utklippstavle. Alt i nettleseren din."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Vannmerke PDF-er",
+      "description": "Legg til et tekstvannmerke på PDF-sider med tilpassbar farge, gjennomsiktighet, størrelse, vinkel og posisjon (inkludert flislagt mønster). Alt i nettleseren din."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater og valider JSON",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Kunne ikke kopiere til utklippstavlen."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Dra en PDF hit eller klikk for å velge en",
+    "totalPages": "{n} sider",
+    "text": "Vannmerketekst",
+    "textPlaceholder": "f.eks. KONFIDENSIELT",
+    "fontSize": "Størrelse",
+    "color": "Farge",
+    "opacity": "Gjennomsiktighet",
+    "rotation": "Rotasjon",
+    "position": "Posisjon",
+    "margin": "Marg",
+    "tileGap": "Flisavstand",
+    "positions": {
+      "center": "Midten",
+      "topLeft": "Øverst til venstre",
+      "top": "Øverst",
+      "topRight": "Øverst til høyre",
+      "left": "Venstre",
+      "right": "Høyre",
+      "bottomLeft": "Nederst til venstre",
+      "bottom": "Nederst",
+      "bottomRight": "Nederst til høyre",
+      "tiled": "Flislagt (gjentatt)"
+    },
+    "rangesLabel": "Sider (tomt = alle)",
+    "rangesPlaceholder": "f.eks. 1-3, 5, 7-{max}",
+    "rangesHint": "Bruk tall, intervaller (1-3) eller kommaseparerte lister.",
+    "preview": {
+      "pages": "Sider",
+      "count": "Totalt",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Bruk og last ned",
+      "processing": "Behandler…",
+      "change": "Bytt PDF"
+    },
+    "errors": {
+      "notPdf": "{name} er ikke en PDF.",
+      "invalidPdf": "Kunne ikke lese {name}.",
+      "encrypted": "Denne PDF-en er kryptert og kan ikke endres.",
+      "emptyText": "Skriv inn tekst for vannmerket.",
+      "invalidTokens": "Ugyldige tokens: {tokens}",
+      "outOfRange": "Utenfor område (1-{max}): {tokens}",
+      "generic": "Kunne ikke bruke vannmerket."
     }
   },
   "picky": {

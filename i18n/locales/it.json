@@ -166,6 +166,11 @@
       "tagline": "Contagocce di colore da un'immagine",
       "description": "Carica un'immagine, passa il mouse per ispezionare e fai clic per fissare un colore. HEX, RGB e HSL con copia negli appunti. Tutto nel tuo browser."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Filigrana su PDF",
+      "description": "Aggiungi una filigrana di testo alle pagine di un PDF con colore, opacità, dimensione, angolo e posizione personalizzabili (incluso pattern a mosaico). Tutto nel tuo browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatta e valida JSON",
@@ -897,6 +902,53 @@
     },
     "errors": {
       "clipboard": "Impossibile copiare negli appunti."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Trascina un PDF qui o clicca per selezionarlo",
+    "totalPages": "{n} pagine",
+    "text": "Testo della filigrana",
+    "textPlaceholder": "es. RISERVATO",
+    "fontSize": "Dimensione",
+    "color": "Colore",
+    "opacity": "Opacità",
+    "rotation": "Rotazione",
+    "position": "Posizione",
+    "margin": "Margine",
+    "tileGap": "Spaziatura mosaico",
+    "positions": {
+      "center": "Centro",
+      "topLeft": "Alto sinistra",
+      "top": "Alto",
+      "topRight": "Alto destra",
+      "left": "Sinistra",
+      "right": "Destra",
+      "bottomLeft": "Basso sinistra",
+      "bottom": "Basso",
+      "bottomRight": "Basso destra",
+      "tiled": "Mosaico (ripetuto)"
+    },
+    "rangesLabel": "Pagine (vuoto = tutte)",
+    "rangesPlaceholder": "es. 1-3, 5, 7-{max}",
+    "rangesHint": "Usa numeri, intervalli (1-3) o liste separate da virgole.",
+    "preview": {
+      "pages": "Pagine",
+      "count": "Totale",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Applica e scarica",
+      "processing": "Elaborazione…",
+      "change": "Cambia PDF"
+    },
+    "errors": {
+      "notPdf": "{name} non è un PDF.",
+      "invalidPdf": "Impossibile leggere {name}.",
+      "encrypted": "Questo PDF è cifrato e non può essere modificato.",
+      "emptyText": "Scrivi un testo per la filigrana.",
+      "invalidTokens": "Token non validi: {tokens}",
+      "outOfRange": "Fuori intervallo (1-{max}): {tokens}",
+      "generic": "Impossibile applicare la filigrana."
     }
   },
   "picky": {

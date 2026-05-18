@@ -171,6 +171,11 @@
       "tagline": "Farvepipette fra et billede",
       "description": "Indlæs et billede, hold musen over for at inspicere, og klik for at vælge en farve. HEX, RGB og HSL med kopiér-til-udklipsholder. Alt i din browser."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Vandmærk PDF'er",
+      "description": "Tilføj et tekstvandmærke til PDF-sider med tilpasselig farve, gennemsigtighed, størrelse, vinkel og placering (inklusive flisemønster). Alt i din browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatér og valider JSON",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Kunne ikke kopiere til udklipsholderen."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Træk en PDF hertil, eller klik for at vælge en",
+    "totalPages": "{n} sider",
+    "text": "Vandmærketekst",
+    "textPlaceholder": "f.eks. FORTROLIGT",
+    "fontSize": "Størrelse",
+    "color": "Farve",
+    "opacity": "Gennemsigtighed",
+    "rotation": "Rotation",
+    "position": "Placering",
+    "margin": "Margen",
+    "tileGap": "Flisemellemrum",
+    "positions": {
+      "center": "Midten",
+      "topLeft": "Øverst til venstre",
+      "top": "Øverst",
+      "topRight": "Øverst til højre",
+      "left": "Venstre",
+      "right": "Højre",
+      "bottomLeft": "Nederst til venstre",
+      "bottom": "Nederst",
+      "bottomRight": "Nederst til højre",
+      "tiled": "Fliselagt (gentaget)"
+    },
+    "rangesLabel": "Sider (tom = alle)",
+    "rangesPlaceholder": "f.eks. 1-3, 5, 7-{max}",
+    "rangesHint": "Brug tal, intervaller (1-3) eller kommaadskilte lister.",
+    "preview": {
+      "pages": "Sider",
+      "count": "I alt",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Anvend og download",
+      "processing": "Behandler…",
+      "change": "Skift PDF"
+    },
+    "errors": {
+      "notPdf": "{name} er ikke en PDF.",
+      "invalidPdf": "Kunne ikke læse {name}.",
+      "encrypted": "Denne PDF er krypteret og kan ikke ændres.",
+      "emptyText": "Skriv noget tekst til vandmærket.",
+      "invalidTokens": "Ugyldige tokens: {tokens}",
+      "outOfRange": "Uden for intervallet (1-{max}): {tokens}",
+      "generic": "Kunne ikke anvende vandmærket."
     }
   },
   "picky": {

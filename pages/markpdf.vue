@@ -1,0 +1,19 @@
+<script setup lang="ts">
+const { t } = useI18n()
+
+useHead({
+  title: () => `TanukiBox · ${t('tools.markpdf.name')}`,
+  meta: [{ name: 'description', content: () => t('tools.markpdf.description') }],
+})
+</script>
+
+<template>
+  <section class="page">
+    <header class="page-header">
+      <h1>{{ t('tools.markpdf.tagline') }}</h1>
+      <p class="lead">{{ t('tools.markpdf.description') }}</p>
+    </header>
+
+    <Markpdf />
+  </section>
+</template>

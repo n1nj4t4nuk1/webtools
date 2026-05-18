@@ -166,6 +166,11 @@
       "tagline": "Conta-gotas de cor a partir de uma imagem",
       "description": "Carregue uma imagem, passe o mouse para inspecionar e clique para fixar uma cor. HEX, RGB e HSL com cópia para a área de transferência. Tudo no seu navegador."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "Marca d'água em PDFs",
+      "description": "Adicione uma marca d'água de texto às páginas de um PDF com cor, opacidade, tamanho, ângulo e posição personalizáveis (incluindo padrão em mosaico). Tudo no seu navegador."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formate e valide JSON",
@@ -897,6 +902,53 @@
     },
     "errors": {
       "clipboard": "Não foi possível copiar para a área de transferência."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Arraste um PDF aqui ou clique para selecioná-lo",
+    "totalPages": "{n} páginas",
+    "text": "Texto da marca d'água",
+    "textPlaceholder": "ex. CONFIDENCIAL",
+    "fontSize": "Tamanho",
+    "color": "Cor",
+    "opacity": "Opacidade",
+    "rotation": "Rotação",
+    "position": "Posição",
+    "margin": "Margem",
+    "tileGap": "Espaçamento do mosaico",
+    "positions": {
+      "center": "Centro",
+      "topLeft": "Cima esquerda",
+      "top": "Cima",
+      "topRight": "Cima direita",
+      "left": "Esquerda",
+      "right": "Direita",
+      "bottomLeft": "Baixo esquerda",
+      "bottom": "Baixo",
+      "bottomRight": "Baixo direita",
+      "tiled": "Mosaico (repetido)"
+    },
+    "rangesLabel": "Páginas (vazio = todas)",
+    "rangesPlaceholder": "ex. 1-3, 5, 7-{max}",
+    "rangesHint": "Use números, intervalos (1-3) ou listas separadas por vírgula.",
+    "preview": {
+      "pages": "Páginas",
+      "count": "Total",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Aplicar e baixar",
+      "processing": "Processando…",
+      "change": "Trocar PDF"
+    },
+    "errors": {
+      "notPdf": "{name} não é um PDF.",
+      "invalidPdf": "Não foi possível ler {name}.",
+      "encrypted": "Este PDF está criptografado e não pode ser modificado.",
+      "emptyText": "Digite um texto para a marca d'água.",
+      "invalidTokens": "Tokens inválidos: {tokens}",
+      "outOfRange": "Fora do intervalo (1-{max}): {tokens}",
+      "generic": "Não foi possível aplicar a marca d'água."
     }
   },
   "picky": {

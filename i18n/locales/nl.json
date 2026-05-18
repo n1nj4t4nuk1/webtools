@@ -171,6 +171,11 @@
       "tagline": "Kleurpipet uit een afbeelding",
       "description": "Laad een afbeelding, beweeg eroverheen om te bekijken en klik om een kleur te kiezen. HEX, RGB en HSL met kopiëren naar klembord. Alles in uw browser."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "PDF's van een watermerk voorzien",
+      "description": "Voeg een tekstwatermerk toe aan PDF-pagina's met aanpasbare kleur, dekking, grootte, hoek en positie (inclusief herhalend patroon). Alles in uw browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatteren en valideren",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "Kon niet naar het klembord kopiëren."
+    }
+  },
+  "markpdf": {
+    "dropzone": "Sleep een PDF hierheen of klik om er een te selecteren",
+    "totalPages": "{n} pagina's",
+    "text": "Watermerktekst",
+    "textPlaceholder": "bijv. VERTROUWELIJK",
+    "fontSize": "Grootte",
+    "color": "Kleur",
+    "opacity": "Dekking",
+    "rotation": "Rotatie",
+    "position": "Positie",
+    "margin": "Marge",
+    "tileGap": "Tegelafstand",
+    "positions": {
+      "center": "Midden",
+      "topLeft": "Linksboven",
+      "top": "Boven",
+      "topRight": "Rechtsboven",
+      "left": "Links",
+      "right": "Rechts",
+      "bottomLeft": "Linksonder",
+      "bottom": "Onder",
+      "bottomRight": "Rechtsonder",
+      "tiled": "Herhalend (patroon)"
+    },
+    "rangesLabel": "Pagina's (leeg = alle)",
+    "rangesPlaceholder": "bijv. 1-3, 5, 7-{max}",
+    "rangesHint": "Gebruik getallen, bereiken (1-3) of door komma's gescheiden lijsten.",
+    "preview": {
+      "pages": "Pagina's",
+      "count": "Totaal",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "Toepassen en downloaden",
+      "processing": "Bezig met verwerken…",
+      "change": "PDF wijzigen"
+    },
+    "errors": {
+      "notPdf": "{name} is geen PDF.",
+      "invalidPdf": "Kon {name} niet lezen.",
+      "encrypted": "Deze PDF is versleuteld en kan niet worden gewijzigd.",
+      "emptyText": "Typ tekst voor het watermerk.",
+      "invalidTokens": "Ongeldige tokens: {tokens}",
+      "outOfRange": "Buiten bereik (1-{max}): {tokens}",
+      "generic": "Kon het watermerk niet toepassen."
     }
   },
   "picky": {

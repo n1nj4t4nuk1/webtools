@@ -171,6 +171,11 @@
       "tagline": "이미지에서 색상 추출 스포이트",
       "description": "이미지를 불러오고, 마우스를 올려 확인한 뒤 클릭하여 색상을 선택하세요. HEX, RGB, HSL과 클립보드 복사 기능을 제공합니다. 모두 브라우저에서 처리됩니다."
     },
+    "markpdf": {
+      "name": "Markpdf",
+      "tagline": "PDF에 워터마크 추가",
+      "description": "사용자 정의 가능한 색상, 불투명도, 크기, 각도 및 위치(타일 패턴 포함)로 PDF 페이지에 텍스트 워터마크를 추가합니다. 모두 브라우저에서 처리됩니다."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON 포맷 및 검증",
@@ -932,6 +937,53 @@
     },
     "errors": {
       "clipboard": "클립보드에 복사할 수 없습니다."
+    }
+  },
+  "markpdf": {
+    "dropzone": "여기에 PDF를 끌어 놓거나 클릭해 선택하세요",
+    "totalPages": "{n}페이지",
+    "text": "워터마크 텍스트",
+    "textPlaceholder": "예: 기밀",
+    "fontSize": "크기",
+    "color": "색상",
+    "opacity": "불투명도",
+    "rotation": "회전",
+    "position": "위치",
+    "margin": "여백",
+    "tileGap": "타일 간격",
+    "positions": {
+      "center": "중앙",
+      "topLeft": "왼쪽 위",
+      "top": "위",
+      "topRight": "오른쪽 위",
+      "left": "왼쪽",
+      "right": "오른쪽",
+      "bottomLeft": "왼쪽 아래",
+      "bottom": "아래",
+      "bottomRight": "오른쪽 아래",
+      "tiled": "타일 (반복)"
+    },
+    "rangesLabel": "페이지 (비어 있음 = 전체)",
+    "rangesPlaceholder": "예: 1-3, 5, 7-{max}",
+    "rangesHint": "숫자, 범위(1-3) 또는 쉼표로 구분된 목록을 사용하세요.",
+    "preview": {
+      "pages": "페이지",
+      "count": "총합",
+      "none": "—"
+    },
+    "actions": {
+      "apply": "적용 및 다운로드",
+      "processing": "처리 중…",
+      "change": "PDF 변경"
+    },
+    "errors": {
+      "notPdf": "{name}은(는) PDF가 아닙니다.",
+      "invalidPdf": "{name}을(를) 읽을 수 없습니다.",
+      "encrypted": "이 PDF는 암호화되어 있어 수정할 수 없습니다.",
+      "emptyText": "워터마크에 사용할 텍스트를 입력하세요.",
+      "invalidTokens": "잘못된 토큰: {tokens}",
+      "outOfRange": "범위를 벗어났습니다 (1-{max}): {tokens}",
+      "generic": "워터마크를 적용할 수 없습니다."
     }
   },
   "picky": {
