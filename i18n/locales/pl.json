@@ -181,6 +181,11 @@
       "tagline": "Wyjaśnij wyrażenia cron",
       "description": "Przetłumacz wyrażenie cron na zrozumiały język, zwaliduj jego składnię i zobacz podgląd następnych uruchomień. Obsługuje skróty takie jak @daily i @hourly. Wszystko w Twojej przeglądarce."
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV na tabelę Markdown",
+      "description": "Zamień CSV w idealnie wyrównaną tabelę Markdown z konfigurowalnym wyrównaniem każdej kolumny. Automatycznie wykrywa separator i obsługuje dane bez nagłówka. Wszystko w Twojej przeglądarce."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatuj i waliduj JSON",
@@ -942,6 +947,32 @@
     },
     "errors": {
       "clipboard": "Nie udało się skopiować do schowka."
+    }
+  },
+  "mdtably": {
+    "input": { "label": "Wejście CSV", "placeholder": "Wklej CSV lub kliknij przykład…" },
+    "delimiter": {
+      "label": "Separator",
+      "auto": "Automatycznie ({char})",
+      "comma": "Przecinek (,)",
+      "semicolon": "Średnik (;)",
+      "tab": "Tabulator",
+      "pipe": "Pionowa kreska (|)"
+    },
+    "hasHeader": "Pierwszy wiersz to nagłówek",
+    "columns": { "title": "Wyrównanie każdej kolumny", "column": "Kolumna {n}" },
+    "alignment": { "none": "Domyślne", "left": "Do lewej", "center": "Wyśrodkowane", "right": "Do prawej" },
+    "output": {
+      "label": "Markdown",
+      "empty": "Wklej CSV powyżej, aby zobaczyć tabelę.",
+      "copy": "Kopiuj",
+      "copied": "Skopiowano!"
+    },
+    "examples": {
+      "label": "Przykłady:",
+      "simple": "Prosty",
+      "users": "Użytkownicy",
+      "stats": "Statystyki"
     }
   },
   "cronpad": {

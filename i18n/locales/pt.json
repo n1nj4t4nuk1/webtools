@@ -176,6 +176,11 @@
       "tagline": "Explica expressões cron",
       "description": "Traduz uma expressão cron para linguagem natural, valida a sintaxe e mostra as próximas execuções. Suporta presets como @daily e @hourly. Tudo no seu navegador."
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV para tabela Markdown",
+      "description": "Converta CSV em uma tabela Markdown perfeitamente alinhada com alinhamento por coluna à sua escolha. Detecta o separador automaticamente e aceita entrada sem cabeçalho. Tudo no seu navegador."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formate e valide JSON",
@@ -907,6 +912,43 @@
     },
     "errors": {
       "clipboard": "Não foi possível copiar para a área de transferência."
+    }
+  },
+  "mdtably": {
+    "input": {
+      "label": "CSV de entrada",
+      "placeholder": "Cole CSV ou clique em um exemplo…"
+    },
+    "delimiter": {
+      "label": "Separador",
+      "auto": "Auto ({char})",
+      "comma": "Vírgula (,)",
+      "semicolon": "Ponto e vírgula (;)",
+      "tab": "Tabulação",
+      "pipe": "Barra (|)"
+    },
+    "hasHeader": "A primeira linha é o cabeçalho",
+    "columns": {
+      "title": "Alinhamento por coluna",
+      "column": "Coluna {n}"
+    },
+    "alignment": {
+      "none": "Padrão",
+      "left": "Esquerda",
+      "center": "Centro",
+      "right": "Direita"
+    },
+    "output": {
+      "label": "Markdown",
+      "empty": "Cole CSV acima para ver a tabela.",
+      "copy": "Copiar",
+      "copied": "Copiado!"
+    },
+    "examples": {
+      "label": "Exemplos:",
+      "simple": "Simples",
+      "users": "Usuários",
+      "stats": "Estatísticas"
     }
   },
   "cronpad": {

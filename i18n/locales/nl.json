@@ -181,6 +181,11 @@
       "tagline": "Cron-expressies uitleggen",
       "description": "Vertaal een cron-expressie naar gewone taal, valideer de syntaxis en bekijk een voorvertoning van de volgende uitvoeringen. Ondersteunt presets zoals @daily en @hourly. Alles in uw browser."
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV naar Markdown-tabel",
+      "description": "Zet CSV om in een perfect uitgelijnde Markdown-tabel met uitlijning per kolom. Detecteert het scheidingsteken automatisch en ondersteunt invoer zonder kopregel. Alles in uw browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatteren en valideren",
@@ -942,6 +947,32 @@
     },
     "errors": {
       "clipboard": "Kon niet naar het klembord kopiëren."
+    }
+  },
+  "mdtably": {
+    "input": { "label": "CSV-invoer", "placeholder": "Plak CSV of klik op een voorbeeld…" },
+    "delimiter": {
+      "label": "Scheidingsteken",
+      "auto": "Auto ({char})",
+      "comma": "Komma (,)",
+      "semicolon": "Puntkomma (;)",
+      "tab": "Tab",
+      "pipe": "Pipe (|)"
+    },
+    "hasHeader": "Eerste rij is de kopregel",
+    "columns": { "title": "Uitlijning per kolom", "column": "Kolom {n}" },
+    "alignment": { "none": "Standaard", "left": "Links", "center": "Midden", "right": "Rechts" },
+    "output": {
+      "label": "Markdown",
+      "empty": "Plak hierboven CSV om de tabel te zien.",
+      "copy": "Kopiëren",
+      "copied": "Gekopieerd!"
+    },
+    "examples": {
+      "label": "Voorbeelden:",
+      "simple": "Eenvoudig",
+      "users": "Gebruikers",
+      "stats": "Statistieken"
     }
   },
   "cronpad": {

@@ -176,6 +176,11 @@
       "tagline": "解释 cron 表达式",
       "description": "将 cron 表达式翻译为易懂的文字，验证其语法并预览接下来的运行时间。支持 @daily 和 @hourly 等预设。全部在您的浏览器中完成。"
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV 转 Markdown 表格",
+      "description": "将 CSV 转换为完美对齐的 Markdown 表格，可按列设置对齐方式。自动检测分隔符，支持无表头输入。全部在您的浏览器中完成。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
@@ -907,6 +912,32 @@
     },
     "errors": {
       "clipboard": "无法复制到剪贴板。"
+    }
+  },
+  "mdtably": {
+    "input": { "label": "CSV 输入", "placeholder": "粘贴 CSV 或点击示例…" },
+    "delimiter": {
+      "label": "分隔符",
+      "auto": "自动 ({char})",
+      "comma": "逗号 (,)",
+      "semicolon": "分号 (;)",
+      "tab": "制表符",
+      "pipe": "竖线 (|)"
+    },
+    "hasHeader": "首行为表头",
+    "columns": { "title": "按列对齐", "column": "列 {n}" },
+    "alignment": { "none": "默认", "left": "左对齐", "center": "居中", "right": "右对齐" },
+    "output": {
+      "label": "Markdown",
+      "empty": "在上方粘贴 CSV 以查看表格。",
+      "copy": "复制",
+      "copied": "已复制！"
+    },
+    "examples": {
+      "label": "示例：",
+      "simple": "简单",
+      "users": "用户",
+      "stats": "统计"
     }
   },
   "cronpad": {

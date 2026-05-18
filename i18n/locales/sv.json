@@ -181,6 +181,11 @@
       "tagline": "Förklara cron-uttryck",
       "description": "Översätt ett cron-uttryck till begriplig text, validera syntaxen och förhandsgranska kommande körningar. Stöder förinställningar som @daily och @hourly. Allt i din webbläsare."
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV till Markdown-tabell",
+      "description": "Förvandla CSV till en perfekt justerad Markdown-tabell med justering per kolumn. Identifierar avgränsaren automatiskt och stöder indata utan rubrik. Allt i din webbläsare."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatera och validera JSON",
@@ -942,6 +947,32 @@
     },
     "errors": {
       "clipboard": "Kunde inte kopiera till urklipp."
+    }
+  },
+  "mdtably": {
+    "input": { "label": "CSV-indata", "placeholder": "Klistra in CSV eller klicka på ett exempel…" },
+    "delimiter": {
+      "label": "Avgränsare",
+      "auto": "Auto ({char})",
+      "comma": "Kommatecken (,)",
+      "semicolon": "Semikolon (;)",
+      "tab": "Tabb",
+      "pipe": "Lodrätt streck (|)"
+    },
+    "hasHeader": "Första raden är rubrik",
+    "columns": { "title": "Justering per kolumn", "column": "Kolumn {n}" },
+    "alignment": { "none": "Standard", "left": "Vänster", "center": "Centrerad", "right": "Höger" },
+    "output": {
+      "label": "Markdown",
+      "empty": "Klistra in CSV ovan för att se tabellen.",
+      "copy": "Kopiera",
+      "copied": "Kopierat!"
+    },
+    "examples": {
+      "label": "Exempel:",
+      "simple": "Enkel",
+      "users": "Användare",
+      "stats": "Statistik"
     }
   },
   "cronpad": {

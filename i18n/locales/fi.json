@@ -181,6 +181,11 @@
       "tagline": "Selitä cron-lausekkeet",
       "description": "Käännä cron-lauseke selkokielelle, validoi sen syntaksi ja esikatsele seuraavat ajoajat. Tukee esiasetuksia kuten @daily ja @hourly. Kaikki selaimessasi."
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV Markdown-taulukoksi",
+      "description": "Muunna CSV täydellisesti tasatuksi Markdown-taulukoksi sarakekohtaisella tasauksella. Tunnistaa erottimen automaattisesti ja tukee otsikotonta syötettä. Kaikki selaimessasi."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Muotoile ja validoi JSON",
@@ -942,6 +947,32 @@
     },
     "errors": {
       "clipboard": "Leikepöydälle ei voitu kopioida."
+    }
+  },
+  "mdtably": {
+    "input": { "label": "CSV-syöte", "placeholder": "Liitä CSV tai napsauta esimerkkiä…" },
+    "delimiter": {
+      "label": "Erotin",
+      "auto": "Automaattinen ({char})",
+      "comma": "Pilkku (,)",
+      "semicolon": "Puolipiste (;)",
+      "tab": "Sarkain",
+      "pipe": "Pipe (|)"
+    },
+    "hasHeader": "Ensimmäinen rivi on otsikko",
+    "columns": { "title": "Sarakekohtainen tasaus", "column": "Sarake {n}" },
+    "alignment": { "none": "Oletus", "left": "Vasen", "center": "Keskitetty", "right": "Oikea" },
+    "output": {
+      "label": "Markdown",
+      "empty": "Liitä CSV yllä nähdäksesi taulukon.",
+      "copy": "Kopioi",
+      "copied": "Kopioitu!"
+    },
+    "examples": {
+      "label": "Esimerkkejä:",
+      "simple": "Yksinkertainen",
+      "users": "Käyttäjät",
+      "stats": "Tilastot"
     }
   },
   "cronpad": {

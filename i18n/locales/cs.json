@@ -181,6 +181,11 @@
       "tagline": "Vysvětlení cron výrazů",
       "description": "Přeložte cron výraz do srozumitelné češtiny, ověřte jeho syntaxi a zobrazte náhled dalších spuštění. Podporuje předvolby jako @daily a @hourly. Vše ve vašem prohlížeči."
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV na tabulku Markdown",
+      "description": "Převeďte CSV na dokonale zarovnanou tabulku Markdown s nastavením zarovnání pro každý sloupec. Automaticky detekuje oddělovač a podporuje vstup bez hlavičky. Vše ve vašem prohlížeči."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formátování a validace JSON",
@@ -942,6 +947,43 @@
     },
     "errors": {
       "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "mdtably": {
+    "input": {
+      "label": "Vstup CSV",
+      "placeholder": "Vložte CSV nebo klikněte na příklad…"
+    },
+    "delimiter": {
+      "label": "Oddělovač",
+      "auto": "Auto ({char})",
+      "comma": "Čárka (,)",
+      "semicolon": "Středník (;)",
+      "tab": "Tabulátor",
+      "pipe": "Svislá čára (|)"
+    },
+    "hasHeader": "První řádek je hlavička",
+    "columns": {
+      "title": "Zarovnání jednotlivých sloupců",
+      "column": "Sloupec {n}"
+    },
+    "alignment": {
+      "none": "Výchozí",
+      "left": "Vlevo",
+      "center": "Na střed",
+      "right": "Vpravo"
+    },
+    "output": {
+      "label": "Markdown",
+      "empty": "Vložte CSV výše a uvidíte tabulku.",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!"
+    },
+    "examples": {
+      "label": "Příklady:",
+      "simple": "Jednoduchý",
+      "users": "Uživatelé",
+      "stats": "Statistiky"
     }
   },
   "cronpad": {

@@ -176,6 +176,11 @@
       "tagline": "cron式を説明",
       "description": "cron式を自然言語に変換し、構文を検証して次の実行予定を表示。@dailyや@hourlyなどのプリセットに対応。すべてブラウザで処理。"
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSVをMarkdownテーブルに変換",
+      "description": "CSVを列ごとに配置を選べる、完全に整列したMarkdownテーブルに変換。区切り文字を自動検出し、ヘッダーなしの入力にも対応。すべてブラウザで処理。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSONをフォーマット・検証",
@@ -907,6 +912,43 @@
     },
     "errors": {
       "clipboard": "クリップボードにコピーできませんでした。"
+    }
+  },
+  "mdtably": {
+    "input": {
+      "label": "CSV入力",
+      "placeholder": "CSVを貼り付けるか、例をクリック…"
+    },
+    "delimiter": {
+      "label": "区切り文字",
+      "auto": "自動 ({char})",
+      "comma": "カンマ (,)",
+      "semicolon": "セミコロン (;)",
+      "tab": "タブ",
+      "pipe": "パイプ (|)"
+    },
+    "hasHeader": "最初の行をヘッダーにする",
+    "columns": {
+      "title": "列ごとの配置",
+      "column": "列 {n}"
+    },
+    "alignment": {
+      "none": "デフォルト",
+      "left": "左",
+      "center": "中央",
+      "right": "右"
+    },
+    "output": {
+      "label": "Markdown",
+      "empty": "上にCSVを貼り付けるとテーブルが表示されます。",
+      "copy": "コピー",
+      "copied": "コピーしました！"
+    },
+    "examples": {
+      "label": "例:",
+      "simple": "シンプル",
+      "users": "ユーザー",
+      "stats": "統計"
     }
   },
   "cronpad": {

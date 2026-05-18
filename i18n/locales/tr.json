@@ -181,6 +181,11 @@
       "tagline": "Cron ifadelerini açıklayın",
       "description": "Bir cron ifadesini anlaşılır metne çevirin, söz dizimini doğrulayın ve sonraki çalışmaları önizleyin. @daily ve @hourly gibi ön ayarları destekler. Hepsi tarayıcınızda."
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV'den Markdown tablosuna",
+      "description": "CSV'yi sütun başına hizalama ile mükemmel şekilde hizalanmış bir Markdown tablosuna dönüştürün. Ayırıcıyı otomatik algılar ve başlıksız girişleri destekler. Hepsi tarayıcınızda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON'u biçimlendir ve doğrula",
@@ -942,6 +947,32 @@
     },
     "errors": {
       "clipboard": "Panoya kopyalanamadı."
+    }
+  },
+  "mdtably": {
+    "input": { "label": "CSV girişi", "placeholder": "CSV'yi yapıştırın veya bir örneğe tıklayın…" },
+    "delimiter": {
+      "label": "Ayırıcı",
+      "auto": "Otomatik ({char})",
+      "comma": "Virgül (,)",
+      "semicolon": "Noktalı virgül (;)",
+      "tab": "Sekme",
+      "pipe": "Dikey çubuk (|)"
+    },
+    "hasHeader": "İlk satır başlıktır",
+    "columns": { "title": "Sütun başına hizalama", "column": "Sütun {n}" },
+    "alignment": { "none": "Varsayılan", "left": "Sol", "center": "Orta", "right": "Sağ" },
+    "output": {
+      "label": "Markdown",
+      "empty": "Tabloyu görmek için yukarıya CSV yapıştırın.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "examples": {
+      "label": "Örnekler:",
+      "simple": "Basit",
+      "users": "Kullanıcılar",
+      "stats": "İstatistikler"
     }
   },
   "cronpad": {

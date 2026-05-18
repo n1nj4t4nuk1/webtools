@@ -181,6 +181,11 @@
       "tagline": "Jelaskan ekspresi cron",
       "description": "Terjemahkan ekspresi cron ke dalam bahasa alami, validasi sintaksisnya, dan pratinjau jadwal berikutnya. Mendukung preset seperti @daily dan @hourly. Semua di peramban Anda."
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV ke tabel Markdown",
+      "description": "Ubah CSV menjadi tabel Markdown yang tersusun rapi dengan perataan per kolom. Deteksi pembatas secara otomatis dan mendukung input tanpa header. Semua di peramban Anda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format dan validasi JSON",
@@ -942,6 +947,32 @@
     },
     "errors": {
       "clipboard": "Tidak dapat menyalin ke clipboard."
+    }
+  },
+  "mdtably": {
+    "input": { "label": "Input CSV", "placeholder": "Tempel CSV atau klik contoh…" },
+    "delimiter": {
+      "label": "Pembatas",
+      "auto": "Otomatis ({char})",
+      "comma": "Koma (,)",
+      "semicolon": "Titik koma (;)",
+      "tab": "Tab",
+      "pipe": "Pipa (|)"
+    },
+    "hasHeader": "Baris pertama adalah header",
+    "columns": { "title": "Perataan per kolom", "column": "Kolom {n}" },
+    "alignment": { "none": "Default", "left": "Kiri", "center": "Tengah", "right": "Kanan" },
+    "output": {
+      "label": "Markdown",
+      "empty": "Tempel CSV di atas untuk melihat tabelnya.",
+      "copy": "Salin",
+      "copied": "Tersalin!"
+    },
+    "examples": {
+      "label": "Contoh:",
+      "simple": "Sederhana",
+      "users": "Pengguna",
+      "stats": "Statistik"
     }
   },
   "cronpad": {

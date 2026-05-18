@@ -181,6 +181,11 @@
       "tagline": "Explică expresii cron",
       "description": "Tradu o expresie cron în limbaj natural, validează-i sintaxa și previzualizează următoarele rulări. Suportă preseturi precum @daily și @hourly. Totul în browserul tău."
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV în tabel Markdown",
+      "description": "Transformă CSV într-un tabel Markdown aliniat perfect, cu aliniere configurabilă pe fiecare coloană. Detectează automat separatorul și suportă date fără antet. Totul în browserul tău."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatează și validează JSON",
@@ -942,6 +947,32 @@
     },
     "errors": {
       "clipboard": "Nu s-a putut copia în clipboard."
+    }
+  },
+  "mdtably": {
+    "input": { "label": "Intrare CSV", "placeholder": "Lipește CSV sau apasă un exemplu…" },
+    "delimiter": {
+      "label": "Separator",
+      "auto": "Automat ({char})",
+      "comma": "Virgulă (,)",
+      "semicolon": "Punct și virgulă (;)",
+      "tab": "Tab",
+      "pipe": "Bară verticală (|)"
+    },
+    "hasHeader": "Primul rând este antetul",
+    "columns": { "title": "Aliniere pe coloană", "column": "Coloana {n}" },
+    "alignment": { "none": "Implicit", "left": "Stânga", "center": "Centru", "right": "Dreapta" },
+    "output": {
+      "label": "Markdown",
+      "empty": "Lipește CSV mai sus pentru a vedea tabelul.",
+      "copy": "Copiază",
+      "copied": "Copiat!"
+    },
+    "examples": {
+      "label": "Exemple:",
+      "simple": "Simplu",
+      "users": "Utilizatori",
+      "stats": "Statistici"
     }
   },
   "cronpad": {

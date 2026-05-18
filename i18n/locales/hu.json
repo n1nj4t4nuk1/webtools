@@ -181,6 +181,11 @@
       "tagline": "Cron kifejezések magyarázata",
       "description": "Fordítson egy cron kifejezést egyszerű nyelvre, ellenőrizze a szintaxisát, és tekintse meg a következő futtatásokat. Támogatja az olyan előbeállításokat, mint a @daily és a @hourly. Mindez a böngészőben."
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV Markdown táblázattá",
+      "description": "Alakítsa át a CSV-t tökéletesen igazított Markdown táblázattá oszloponkénti igazítással. Automatikusan felismeri az elválasztót, és támogatja a fejléc nélküli bemenetet. Mindez a böngészőben."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formázása és érvényesítése",
@@ -942,6 +947,32 @@
     },
     "errors": {
       "clipboard": "Nem sikerült a vágólapra másolni."
+    }
+  },
+  "mdtably": {
+    "input": { "label": "CSV bemenet", "placeholder": "Illesszen be CSV-t vagy kattintson egy példára…" },
+    "delimiter": {
+      "label": "Elválasztó",
+      "auto": "Automatikus ({char})",
+      "comma": "Vessző (,)",
+      "semicolon": "Pontosvessző (;)",
+      "tab": "Tabulátor",
+      "pipe": "Cső (|)"
+    },
+    "hasHeader": "Az első sor a fejléc",
+    "columns": { "title": "Oszloponkénti igazítás", "column": "{n}. oszlop" },
+    "alignment": { "none": "Alapértelmezett", "left": "Balra", "center": "Középre", "right": "Jobbra" },
+    "output": {
+      "label": "Markdown",
+      "empty": "Illessze be a CSV-t fent a táblázat megtekintéséhez.",
+      "copy": "Másolás",
+      "copied": "Másolva!"
+    },
+    "examples": {
+      "label": "Példák:",
+      "simple": "Egyszerű",
+      "users": "Felhasználók",
+      "stats": "Statisztikák"
     }
   },
   "cronpad": {

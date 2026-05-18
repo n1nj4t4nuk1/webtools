@@ -181,6 +181,11 @@
       "tagline": "cron 표현식 설명",
       "description": "cron 표현식을 자연어로 번역하고 구문을 검증하며 다음 실행 시간을 미리 봅니다. @daily 및 @hourly 같은 프리셋을 지원합니다. 모두 브라우저에서 처리됩니다."
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV를 Markdown 표로",
+      "description": "CSV를 열별 정렬이 적용된 완벽하게 정돈된 Markdown 표로 변환합니다. 구분자를 자동으로 감지하고 헤더 없는 입력도 지원합니다. 모두 브라우저에서 처리됩니다."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON 포맷 및 검증",
@@ -942,6 +947,32 @@
     },
     "errors": {
       "clipboard": "클립보드에 복사할 수 없습니다."
+    }
+  },
+  "mdtably": {
+    "input": { "label": "CSV 입력", "placeholder": "CSV를 붙여넣거나 예시를 클릭하세요…" },
+    "delimiter": {
+      "label": "구분자",
+      "auto": "자동 ({char})",
+      "comma": "쉼표 (,)",
+      "semicolon": "세미콜론 (;)",
+      "tab": "탭",
+      "pipe": "파이프 (|)"
+    },
+    "hasHeader": "첫 번째 행이 헤더입니다",
+    "columns": { "title": "열별 정렬", "column": "열 {n}" },
+    "alignment": { "none": "기본값", "left": "왼쪽", "center": "가운데", "right": "오른쪽" },
+    "output": {
+      "label": "Markdown",
+      "empty": "위에 CSV를 붙여넣으면 표가 표시됩니다.",
+      "copy": "복사",
+      "copied": "복사됨!"
+    },
+    "examples": {
+      "label": "예시:",
+      "simple": "단순",
+      "users": "사용자",
+      "stats": "통계"
     }
   },
   "cronpad": {

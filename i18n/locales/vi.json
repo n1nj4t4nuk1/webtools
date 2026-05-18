@@ -181,6 +181,11 @@
       "tagline": "Giải thích biểu thức cron",
       "description": "Dịch biểu thức cron sang văn bản dễ hiểu, kiểm tra cú pháp và xem trước các lần chạy tiếp theo. Hỗ trợ các mẫu có sẵn như @daily và @hourly. Tất cả trong trình duyệt của bạn."
     },
+    "mdtably": {
+      "name": "Mdtably",
+      "tagline": "CSV sang bảng Markdown",
+      "description": "Chuyển CSV thành bảng Markdown được căn chỉnh hoàn hảo với căn lề tùy theo từng cột. Tự động phát hiện dấu phân cách và hỗ trợ đầu vào không có tiêu đề. Tất cả trong trình duyệt của bạn."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Định dạng và xác thực JSON",
@@ -942,6 +947,32 @@
     },
     "errors": {
       "clipboard": "Không thể sao chép vào clipboard."
+    }
+  },
+  "mdtably": {
+    "input": { "label": "Đầu vào CSV", "placeholder": "Dán CSV hoặc nhấp vào một ví dụ…" },
+    "delimiter": {
+      "label": "Dấu phân cách",
+      "auto": "Tự động ({char})",
+      "comma": "Dấu phẩy (,)",
+      "semicolon": "Dấu chấm phẩy (;)",
+      "tab": "Tab",
+      "pipe": "Dấu sổ đứng (|)"
+    },
+    "hasHeader": "Hàng đầu tiên là tiêu đề",
+    "columns": { "title": "Căn lề theo từng cột", "column": "Cột {n}" },
+    "alignment": { "none": "Mặc định", "left": "Trái", "center": "Giữa", "right": "Phải" },
+    "output": {
+      "label": "Markdown",
+      "empty": "Dán CSV ở trên để xem bảng.",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!"
+    },
+    "examples": {
+      "label": "Ví dụ:",
+      "simple": "Đơn giản",
+      "users": "Người dùng",
+      "stats": "Thống kê"
     }
   },
   "cronpad": {
