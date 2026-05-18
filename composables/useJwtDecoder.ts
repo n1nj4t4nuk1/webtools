@@ -1,9 +1,24 @@
+/**
+ * useJwtDecoder
+ *
+ * Composable powering the JwtDecoder tool: splits a JWT into its three
+ * dot-separated segments (header, payload, signature), base64url-decodes
+ * the first two and JSON-parses them. It never *verifies* signatures —
+ * that would require the signing key.
+ *
+ * Also helps render the standard time-based claims (`exp`, `nbf`,
+ * `iat`) as both formatted absolute timestamps and relative time
+ * ("in 2 hours") using the user's locale via `Intl`.
+ */
+
+/** Possible parse-time failures, surfaced to the UI as i18n keys. */
 export type JwtErrorCode =
   | 'EMPTY'
   | 'INVALID_FORMAT'
   | 'INVALID_HEADER'
   | 'INVALID_PAYLOAD'
 
+/** Discriminated result returned by {@link useJwtDecoder.parse}. */
 export interface JwtResult {
   valid: boolean
   header: unknown
@@ -12,6 +27,11 @@ export interface JwtResult {
   error: JwtErrorCode | null
 }
 
+/**
+ * Decode a base64url-encoded string to UTF-8 text. Adds back the
+ * stripped padding before delegating to `atob`. Returns `null` on any
+ * malformed input (illegal char, invalid UTF-8, etc.).
+ */
 const base64UrlDecode = (str: string): string | null => {
   const cleaned = str.trim().replace(/\s+/g, '')
   if (!/^[A-Za-z0-9_-]*$/.test(cleaned)) return null
@@ -27,6 +47,7 @@ const base64UrlDecode = (str: string): string | null => {
   }
 }
 
+/** Base64url-decode one JWT segment and JSON-parse it; null on failure. */
 const parsePart = (part: string): unknown | null => {
   const text = base64UrlDecode(part)
   if (text === null) return null
@@ -37,10 +58,18 @@ const parsePart = (part: string): unknown | null => {
   }
 }
 
+/** Reserved registered claim names defined by RFC 7519. */
 export const STANDARD_CLAIMS = ['iss', 'sub', 'aud', 'exp', 'nbf', 'iat', 'jti']
+/** Claims whose numeric value is a Unix timestamp (seconds). */
 const TIME_CLAIMS = new Set(['exp', 'nbf', 'iat'])
 
 export const useJwtDecoder = () => {
+  /**
+   * Decode a JWT (`<header>.<payload>.<signature>`). The signature is
+   * returned verbatim — verification is out of scope. Empty input
+   * surfaces a separate code so the UI can stay silent rather than
+   * showing an error on a blank screen.
+   */
   const parse = (token: string): JwtResult => {
     const trimmed = token.trim()
     if (trimmed.length === 0) {
@@ -61,8 +90,10 @@ export const useJwtDecoder = () => {
     return { valid: true, header, payload, signature: parts[2], error: null }
   }
 
+  /** True if the claim name is one of `exp`/`nbf`/`iat`. */
   const isTimeClaim = (key: string): boolean => TIME_CLAIMS.has(key)
 
+  /** Format a JWT time claim (seconds since Unix epoch) as a localized date. */
   const formatTimestamp = (value: unknown, locale: string): string => {
     if (typeof value !== 'number') return String(value)
     const ms = value * 1000
@@ -72,6 +103,11 @@ export const useJwtDecoder = () => {
     }).format(new Date(ms))
   }
 
+  /**
+   * Convert a JWT time claim to a relative-time phrase like "in 2 hours"
+   * or "5 minutes ago", picking the most appropriate unit based on the
+   * distance from now.
+   */
   const relativeTime = (value: unknown, locale: string): string | null => {
     if (typeof value !== 'number') return null
     const ms = value * 1000
@@ -87,6 +123,10 @@ export const useJwtDecoder = () => {
     return rtf.format(sign * Math.round(abs / 31_536_000_000), 'year')
   }
 
+  /**
+   * Classify a token's lifecycle state by inspecting `exp` and `nbf`.
+   * Returns `'unknown'` when the payload doesn't carry enough info.
+   */
   const tokenStatus = (
     payload: unknown,
   ): 'valid' | 'expired' | 'notYet' | 'unknown' => {
