@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Jsonpad tool: sets the tab title and mounts <Jsonpad />. */
 const { t } = useI18n()
 
 useHead({

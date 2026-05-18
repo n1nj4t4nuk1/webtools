@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Idkun tool: sets the tab title and mounts <IdGenerator />. */
 const { t } = useI18n()
 
 useHead({

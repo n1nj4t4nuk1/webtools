@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Lapsy tool: sets the tab title and mounts <Lapsy />. */
 const { t } = useI18n()
 
 useHead({

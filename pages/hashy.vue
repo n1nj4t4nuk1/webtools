@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Hashy tool: sets the tab title and mounts <HashCalculator />. */
 const { t } = useI18n()
 
 useHead({

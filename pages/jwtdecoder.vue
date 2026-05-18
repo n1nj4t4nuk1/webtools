@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the JwtDecoder tool: sets the tab title and mounts <JwtDecoder />. */
 const { t } = useI18n()
 
 useHead({
