@@ -176,6 +176,11 @@
       "tagline": "Vízjelezzen PDF-eket",
       "description": "Adjon szöveges vízjelet a PDF oldalakhoz testreszabható színnel, átlátszósággal, mérettel, szöggel és pozícióval (csempézett mintázattal együtt). Mindez a böngészőben."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Cron kifejezések magyarázata",
+      "description": "Fordítson egy cron kifejezést egyszerű nyelvre, ellenőrizze a szintaxisát, és tekintse meg a következő futtatásokat. Támogatja az olyan előbeállításokat, mint a @daily és a @hourly. Mindez a böngészőben."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formázása és érvényesítése",
@@ -937,6 +942,46 @@
     },
     "errors": {
       "clipboard": "Nem sikerült a vágólapra másolni."
+    }
+  },
+  "cronpad": {
+    "input": { "label": "Cron kifejezés", "placeholder": "pl. 0 */5 * * *" },
+    "examples": { "label": "Példák:" },
+    "validation": { "valid": "Érvényes", "invalid": "Érvénytelen" },
+    "expandedAs": "Kibontva: {expr}",
+    "and": "és",
+    "nextRuns": { "title": "Következő futtatások", "useUTC": "Megjelenítés UTC-ben" },
+    "fieldNames": { "minute": "perc", "hour": "óra", "dom": "hónap napja", "month": "hónap", "dow": "hét napja" },
+    "dow": { "0":"vasárnap","1":"hétfő","2":"kedd","3":"szerda","4":"csütörtök","5":"péntek","6":"szombat" },
+    "month": { "1":"január","2":"február","3":"március","4":"április","5":"május","6":"június","7":"július","8":"augusztus","9":"szeptember","10":"október","11":"november","12":"december" },
+    "desc": {
+      "everyMinute": "Minden percben",
+      "everyNMinutes": "Minden {n}. percben",
+      "everyHour": "Minden órában, egész órakor",
+      "everyNHours": "Minden {n}. órában, egész órakor",
+      "everyHourAtMin": "Minden órában a {m}. percben",
+      "dailyAt": "Minden nap {time}-kor",
+      "weeklyAt": "Minden {day} {time}-kor",
+      "weekdayAt": "Hétköznapokon {time}-kor",
+      "onDomAt": "Minden hónap {d}. napján {time}-kor",
+      "onDateAt": "{month} {d}. {time}-kor",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": { "every":"minden percben","everyN":"minden {n}. percben","value":"a {n}. percben","range":"a {from}. perctől a {to}. percig","rangeStep":"a {from}. perctől a {to}. percig minden {step}. percben","fromStep":"a {from}. perctől kezdve minden {step}. percben","list":"a következő percekben: {list}" },
+      "hour":   { "every":"minden órában","everyN":"minden {n}. órában","value":"a {n}. órában","range":"a {from}. órától a {to}. óráig","rangeStep":"a {from}. órától a {to}. óráig minden {step}. órában","fromStep":"a {from}. órától kezdve minden {step}. órában","list":"a következő órákban: {list}" },
+      "dom":    { "every":"minden nap","everyN":"minden {n}. napon","value":"a {n}. napon","range":"a {from}. naptól a {to}. napig","rangeStep":"a {from}. naptól a {to}. napig minden {step}. napon","fromStep":"a {from}. naptól kezdve minden {step}. napon","list":"a következő napokon: {list}" },
+      "month":  { "every":"minden hónapban","everyN":"minden {n}. hónapban","value":"{name}ban","range":"{from}-tól {to}-ig","rangeStep":"minden {step}. hónapban","fromStep":"a {from}. hónaptól kezdve minden {step}. hónapban","list":"{list}-ban" },
+      "dow":    { "every":"bármely napon","everyN":"minden {n}. hétköznap","value":"{name}on","range":"{from}-tól {to}-ig","rangeStep":"{from}-tól {to}-ig minden {step}. napon","fromStep":"{from}-tól kezdve minden {step}. napon","list":"{list}-on" }
+    },
+    "errors": {
+      "fieldCount": "Egy cron kifejezéshez 5 szóközzel elválasztott mező szükséges.",
+      "rebootUnsupported": "A @reboot nem ütemezés — a rendszer indulásakor fut.",
+      "emptyField": "A {field} mező üres.",
+      "invalidStep": "Érvénytelen lépés a(z) {field} mezőben: {value}",
+      "invalidRange": "Érvénytelen tartomány a(z) {field} mezőben: {value} (várt {min}-{max})",
+      "invalidValue": "Érvénytelen érték a(z) {field} mezőben: {value} (várt {min}-{max})",
+      "generic": "A kifejezést nem sikerült értelmezni."
     }
   },
   "markpdf": {

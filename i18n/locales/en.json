@@ -176,6 +176,11 @@
       "tagline": "Watermark PDFs",
       "description": "Add a text watermark to PDF pages with customizable color, opacity, size, angle and position (including tiled pattern). All in your browser."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Explain cron expressions",
+      "description": "Translate a cron expression to plain English, validate its syntax and preview the next runs. Supports presets like @daily and @hourly. All in your browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format and validate JSON",
@@ -937,6 +942,124 @@
     },
     "errors": {
       "clipboard": "Could not copy to clipboard."
+    }
+  },
+  "cronpad": {
+    "input": {
+      "label": "Cron expression",
+      "placeholder": "e.g. 0 */5 * * *"
+    },
+    "examples": {
+      "label": "Examples:"
+    },
+    "validation": {
+      "valid": "Valid",
+      "invalid": "Invalid"
+    },
+    "expandedAs": "Expanded as: {expr}",
+    "and": "and",
+    "nextRuns": {
+      "title": "Next runs",
+      "useUTC": "Show in UTC"
+    },
+    "fieldNames": {
+      "minute": "minute",
+      "hour": "hour",
+      "dom": "day of month",
+      "month": "month",
+      "dow": "day of week"
+    },
+    "dow": {
+      "0": "Sunday",
+      "1": "Monday",
+      "2": "Tuesday",
+      "3": "Wednesday",
+      "4": "Thursday",
+      "5": "Friday",
+      "6": "Saturday"
+    },
+    "month": {
+      "1": "January",
+      "2": "February",
+      "3": "March",
+      "4": "April",
+      "5": "May",
+      "6": "June",
+      "7": "July",
+      "8": "August",
+      "9": "September",
+      "10": "October",
+      "11": "November",
+      "12": "December"
+    },
+    "desc": {
+      "everyMinute": "Every minute",
+      "everyNMinutes": "Every {n} minutes",
+      "everyHour": "Every hour, on the hour",
+      "everyNHours": "Every {n} hours, on the hour",
+      "everyHourAtMin": "Every hour at minute {m}",
+      "dailyAt": "Every day at {time}",
+      "weeklyAt": "Every {day} at {time}",
+      "weekdayAt": "Weekdays at {time}",
+      "onDomAt": "On day {d} of every month at {time}",
+      "onDateAt": "On {month} {d} at {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": {
+        "every": "every minute",
+        "everyN": "every {n} minutes",
+        "value": "at minute {n}",
+        "range": "from minute {from} to {to}",
+        "rangeStep": "every {step} minutes from {from} to {to}",
+        "fromStep": "every {step} minutes starting at minute {from}",
+        "list": "at minutes {list}"
+      },
+      "hour": {
+        "every": "every hour",
+        "everyN": "every {n} hours",
+        "value": "at hour {n}",
+        "range": "from hour {from} to {to}",
+        "rangeStep": "every {step} hours from {from} to {to}",
+        "fromStep": "every {step} hours starting at hour {from}",
+        "list": "at hours {list}"
+      },
+      "dom": {
+        "every": "every day",
+        "everyN": "every {n} days",
+        "value": "on day {n}",
+        "range": "from day {from} to {to}",
+        "rangeStep": "every {step} days from {from} to {to}",
+        "fromStep": "every {step} days starting day {from}",
+        "list": "on days {list}"
+      },
+      "month": {
+        "every": "every month",
+        "everyN": "every {n} months",
+        "value": "in {name}",
+        "range": "from {from} to {to}",
+        "rangeStep": "every {step} months",
+        "fromStep": "every {step} months starting month {from}",
+        "list": "in {list}"
+      },
+      "dow": {
+        "every": "any day",
+        "everyN": "every {n} weekdays",
+        "value": "on {name}",
+        "range": "from {from} to {to}",
+        "rangeStep": "every {step} days from {from} to {to}",
+        "fromStep": "every {step} days starting {from}",
+        "list": "on {list}"
+      }
+    },
+    "errors": {
+      "fieldCount": "A cron expression needs 5 space-separated fields.",
+      "rebootUnsupported": "@reboot is not a schedule — it runs at system startup.",
+      "emptyField": "Field {field} is empty.",
+      "invalidStep": "Invalid step in {field}: {value}",
+      "invalidRange": "Invalid range in {field}: {value} (expected {min}-{max})",
+      "invalidValue": "Invalid value in {field}: {value} (expected {min}-{max})",
+      "generic": "Could not parse the expression."
     }
   },
   "markpdf": {

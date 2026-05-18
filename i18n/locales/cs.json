@@ -176,6 +176,11 @@
       "tagline": "Vodoznak v PDF",
       "description": "Přidejte textový vodoznak na stránky PDF s přizpůsobitelnou barvou, krytím, velikostí, úhlem a polohou (včetně dlážděného vzoru). Vše ve vašem prohlížeči."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Vysvětlení cron výrazů",
+      "description": "Přeložte cron výraz do srozumitelné češtiny, ověřte jeho syntaxi a zobrazte náhled dalších spuštění. Podporuje předvolby jako @daily a @hourly. Vše ve vašem prohlížeči."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formátování a validace JSON",
@@ -937,6 +942,124 @@
     },
     "errors": {
       "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "cronpad": {
+    "input": {
+      "label": "Cron výraz",
+      "placeholder": "např. 0 */5 * * *"
+    },
+    "examples": {
+      "label": "Příklady:"
+    },
+    "validation": {
+      "valid": "Platný",
+      "invalid": "Neplatný"
+    },
+    "expandedAs": "Rozepsáno jako: {expr}",
+    "and": "a",
+    "nextRuns": {
+      "title": "Další spuštění",
+      "useUTC": "Zobrazit v UTC"
+    },
+    "fieldNames": {
+      "minute": "minuta",
+      "hour": "hodina",
+      "dom": "den v měsíci",
+      "month": "měsíc",
+      "dow": "den v týdnu"
+    },
+    "dow": {
+      "0": "neděle",
+      "1": "pondělí",
+      "2": "úterý",
+      "3": "středa",
+      "4": "čtvrtek",
+      "5": "pátek",
+      "6": "sobota"
+    },
+    "month": {
+      "1": "leden",
+      "2": "únor",
+      "3": "březen",
+      "4": "duben",
+      "5": "květen",
+      "6": "červen",
+      "7": "červenec",
+      "8": "srpen",
+      "9": "září",
+      "10": "říjen",
+      "11": "listopad",
+      "12": "prosinec"
+    },
+    "desc": {
+      "everyMinute": "Každou minutu",
+      "everyNMinutes": "Každých {n} minut",
+      "everyHour": "Každou hodinu, v celou hodinu",
+      "everyNHours": "Každých {n} hodin, v celou hodinu",
+      "everyHourAtMin": "Každou hodinu v minutě {m}",
+      "dailyAt": "Každý den v {time}",
+      "weeklyAt": "Každé {day} v {time}",
+      "weekdayAt": "Ve všední dny v {time}",
+      "onDomAt": "{d}. den každého měsíce v {time}",
+      "onDateAt": "{d}. {month} v {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": {
+        "every": "každou minutu",
+        "everyN": "každých {n} minut",
+        "value": "v minutě {n}",
+        "range": "od minuty {from} do {to}",
+        "rangeStep": "každých {step} minut od {from} do {to}",
+        "fromStep": "každých {step} minut počínaje minutou {from}",
+        "list": "v minutách {list}"
+      },
+      "hour": {
+        "every": "každou hodinu",
+        "everyN": "každých {n} hodin",
+        "value": "v hodině {n}",
+        "range": "od hodiny {from} do {to}",
+        "rangeStep": "každých {step} hodin od {from} do {to}",
+        "fromStep": "každých {step} hodin počínaje hodinou {from}",
+        "list": "v hodinách {list}"
+      },
+      "dom": {
+        "every": "každý den",
+        "everyN": "každých {n} dní",
+        "value": "{n}. den",
+        "range": "od dne {from} do {to}",
+        "rangeStep": "každých {step} dní od {from} do {to}",
+        "fromStep": "každých {step} dní počínaje dnem {from}",
+        "list": "ve dnech {list}"
+      },
+      "month": {
+        "every": "každý měsíc",
+        "everyN": "každých {n} měsíců",
+        "value": "v {name}",
+        "range": "od {from} do {to}",
+        "rangeStep": "každých {step} měsíců",
+        "fromStep": "každých {step} měsíců počínaje měsícem {from}",
+        "list": "v {list}"
+      },
+      "dow": {
+        "every": "kterýkoli den",
+        "everyN": "každých {n} dní v týdnu",
+        "value": "v {name}",
+        "range": "od {from} do {to}",
+        "rangeStep": "každých {step} dní od {from} do {to}",
+        "fromStep": "každých {step} dní počínaje {from}",
+        "list": "v {list}"
+      }
+    },
+    "errors": {
+      "fieldCount": "Cron výraz musí obsahovat 5 polí oddělených mezerou.",
+      "rebootUnsupported": "@reboot není plán — spouští se při startu systému.",
+      "emptyField": "Pole {field} je prázdné.",
+      "invalidStep": "Neplatný krok v poli {field}: {value}",
+      "invalidRange": "Neplatný rozsah v poli {field}: {value} (očekáváno {min}-{max})",
+      "invalidValue": "Neplatná hodnota v poli {field}: {value} (očekáváno {min}-{max})",
+      "generic": "Nelze rozpoznat výraz."
     }
   },
   "markpdf": {

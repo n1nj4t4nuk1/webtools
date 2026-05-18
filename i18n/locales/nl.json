@@ -176,6 +176,11 @@
       "tagline": "PDF's van een watermerk voorzien",
       "description": "Voeg een tekstwatermerk toe aan PDF-pagina's met aanpasbare kleur, dekking, grootte, hoek en positie (inclusief herhalend patroon). Alles in uw browser."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Cron-expressies uitleggen",
+      "description": "Vertaal een cron-expressie naar gewone taal, valideer de syntaxis en bekijk een voorvertoning van de volgende uitvoeringen. Ondersteunt presets zoals @daily en @hourly. Alles in uw browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatteren en valideren",
@@ -937,6 +942,46 @@
     },
     "errors": {
       "clipboard": "Kon niet naar het klembord kopiëren."
+    }
+  },
+  "cronpad": {
+    "input": { "label": "Cron-expressie", "placeholder": "bijv. 0 */5 * * *" },
+    "examples": { "label": "Voorbeelden:" },
+    "validation": { "valid": "Geldig", "invalid": "Ongeldig" },
+    "expandedAs": "Uitgebreid als: {expr}",
+    "and": "en",
+    "nextRuns": { "title": "Volgende uitvoeringen", "useUTC": "Tonen in UTC" },
+    "fieldNames": { "minute": "minuut", "hour": "uur", "dom": "dag van de maand", "month": "maand", "dow": "dag van de week" },
+    "dow": { "0":"zondag","1":"maandag","2":"dinsdag","3":"woensdag","4":"donderdag","5":"vrijdag","6":"zaterdag" },
+    "month": { "1":"januari","2":"februari","3":"maart","4":"april","5":"mei","6":"juni","7":"juli","8":"augustus","9":"september","10":"oktober","11":"november","12":"december" },
+    "desc": {
+      "everyMinute": "Elke minuut",
+      "everyNMinutes": "Elke {n} minuten",
+      "everyHour": "Elk uur, op het hele uur",
+      "everyNHours": "Elke {n} uur, op het hele uur",
+      "everyHourAtMin": "Elk uur op minuut {m}",
+      "dailyAt": "Elke dag om {time}",
+      "weeklyAt": "Elke {day} om {time}",
+      "weekdayAt": "Op weekdagen om {time}",
+      "onDomAt": "Op dag {d} van elke maand om {time}",
+      "onDateAt": "Op {month} {d} om {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": { "every":"elke minuut","everyN":"elke {n} minuten","value":"op minuut {n}","range":"van minuut {from} tot {to}","rangeStep":"elke {step} minuten van {from} tot {to}","fromStep":"elke {step} minuten vanaf minuut {from}","list":"op minuten {list}" },
+      "hour":   { "every":"elk uur","everyN":"elke {n} uur","value":"op uur {n}","range":"van uur {from} tot {to}","rangeStep":"elke {step} uur van {from} tot {to}","fromStep":"elke {step} uur vanaf uur {from}","list":"op uren {list}" },
+      "dom":    { "every":"elke dag","everyN":"elke {n} dagen","value":"op dag {n}","range":"van dag {from} tot {to}","rangeStep":"elke {step} dagen van {from} tot {to}","fromStep":"elke {step} dagen vanaf dag {from}","list":"op dagen {list}" },
+      "month":  { "every":"elke maand","everyN":"elke {n} maanden","value":"in {name}","range":"van {from} tot {to}","rangeStep":"elke {step} maanden","fromStep":"elke {step} maanden vanaf maand {from}","list":"in {list}" },
+      "dow":    { "every":"elke dag","everyN":"elke {n} weekdagen","value":"op {name}","range":"van {from} tot {to}","rangeStep":"elke {step} dagen van {from} tot {to}","fromStep":"elke {step} dagen vanaf {from}","list":"op {list}" }
+    },
+    "errors": {
+      "fieldCount": "Een cron-expressie heeft 5 door spaties gescheiden velden nodig.",
+      "rebootUnsupported": "@reboot is geen planning — het wordt uitgevoerd bij het opstarten van het systeem.",
+      "emptyField": "Veld {field} is leeg.",
+      "invalidStep": "Ongeldige stap in {field}: {value}",
+      "invalidRange": "Ongeldig bereik in {field}: {value} (verwacht {min}-{max})",
+      "invalidValue": "Ongeldige waarde in {field}: {value} (verwacht {min}-{max})",
+      "generic": "Kon de expressie niet verwerken."
     }
   },
   "markpdf": {

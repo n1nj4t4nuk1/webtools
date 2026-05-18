@@ -176,6 +176,11 @@
       "tagline": "Vesileimaa PDF-tiedostot",
       "description": "Lisää PDF-sivuille tekstivesileima, jonka väri, läpinäkyvyys, koko, kulma ja sijainti (myös toistuva kuvio) ovat mukautettavissa. Kaikki selaimessasi."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Selitä cron-lausekkeet",
+      "description": "Käännä cron-lauseke selkokielelle, validoi sen syntaksi ja esikatsele seuraavat ajoajat. Tukee esiasetuksia kuten @daily ja @hourly. Kaikki selaimessasi."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Muotoile ja validoi JSON",
@@ -937,6 +942,46 @@
     },
     "errors": {
       "clipboard": "Leikepöydälle ei voitu kopioida."
+    }
+  },
+  "cronpad": {
+    "input": { "label": "Cron-lauseke", "placeholder": "esim. 0 */5 * * *" },
+    "examples": { "label": "Esimerkkejä:" },
+    "validation": { "valid": "Kelvollinen", "invalid": "Virheellinen" },
+    "expandedAs": "Laajennettu muotoon: {expr}",
+    "and": "ja",
+    "nextRuns": { "title": "Seuraavat ajot", "useUTC": "Näytä UTC-ajassa" },
+    "fieldNames": { "minute": "minuutti", "hour": "tunti", "dom": "kuukauden päivä", "month": "kuukausi", "dow": "viikonpäivä" },
+    "dow": { "0":"sunnuntai","1":"maanantai","2":"tiistai","3":"keskiviikko","4":"torstai","5":"perjantai","6":"lauantai" },
+    "month": { "1":"tammikuu","2":"helmikuu","3":"maaliskuu","4":"huhtikuu","5":"toukokuu","6":"kesäkuu","7":"heinäkuu","8":"elokuu","9":"syyskuu","10":"lokakuu","11":"marraskuu","12":"joulukuu" },
+    "desc": {
+      "everyMinute": "Joka minuutti",
+      "everyNMinutes": "Joka {n}. minuutti",
+      "everyHour": "Joka tunti, tasatunnein",
+      "everyNHours": "Joka {n}. tunti, tasatunnein",
+      "everyHourAtMin": "Joka tunti minuutilla {m}",
+      "dailyAt": "Joka päivä kello {time}",
+      "weeklyAt": "Joka {day} kello {time}",
+      "weekdayAt": "Arkipäivisin kello {time}",
+      "onDomAt": "Joka kuukauden {d}. päivänä kello {time}",
+      "onDateAt": "{month} {d}. kello {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": { "every":"joka minuutti","everyN":"joka {n}. minuutti","value":"minuutilla {n}","range":"minuutista {from} minuuttiin {to}","rangeStep":"joka {step}. minuutti välillä {from}-{to}","fromStep":"joka {step}. minuutti alkaen minuutista {from}","list":"minuuteilla {list}" },
+      "hour":   { "every":"joka tunti","everyN":"joka {n}. tunti","value":"tunnilla {n}","range":"tunnista {from} tuntiin {to}","rangeStep":"joka {step}. tunti välillä {from}-{to}","fromStep":"joka {step}. tunti alkaen tunnista {from}","list":"tunneilla {list}" },
+      "dom":    { "every":"joka päivä","everyN":"joka {n}. päivä","value":"päivänä {n}","range":"päivästä {from} päivään {to}","rangeStep":"joka {step}. päivä välillä {from}-{to}","fromStep":"joka {step}. päivä alkaen päivästä {from}","list":"päivinä {list}" },
+      "month":  { "every":"joka kuukausi","everyN":"joka {n}. kuukausi","value":"{name}ssa","range":"kuukaudesta {from} kuukauteen {to}","rangeStep":"joka {step}. kuukausi","fromStep":"joka {step}. kuukausi alkaen kuukaudesta {from}","list":"kuukausina {list}" },
+      "dow":    { "every":"mikä tahansa päivä","everyN":"joka {n}. viikonpäivä","value":"{name}isin","range":"päivästä {from} päivään {to}","rangeStep":"joka {step}. päivä välillä {from}-{to}","fromStep":"joka {step}. päivä alkaen {from}","list":"päivinä {list}" }
+    },
+    "errors": {
+      "fieldCount": "Cron-lauseke tarvitsee 5 välilyönnillä eroteltua kenttää.",
+      "rebootUnsupported": "@reboot ei ole aikataulu — se suoritetaan järjestelmän käynnistyessä.",
+      "emptyField": "Kenttä {field} on tyhjä.",
+      "invalidStep": "Virheellinen askel kentässä {field}: {value}",
+      "invalidRange": "Virheellinen alue kentässä {field}: {value} (odotettu {min}-{max})",
+      "invalidValue": "Virheellinen arvo kentässä {field}: {value} (odotettu {min}-{max})",
+      "generic": "Lauseketta ei voitu jäsentää."
     }
   },
   "markpdf": {

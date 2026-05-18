@@ -176,6 +176,11 @@
       "tagline": "Vattenstämpla PDF-filer",
       "description": "Lägg till en textvattenstämpel på PDF-sidor med anpassningsbar färg, opacitet, storlek, vinkel och position (inklusive upprepat mönster). Allt i din webbläsare."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Förklara cron-uttryck",
+      "description": "Översätt ett cron-uttryck till begriplig text, validera syntaxen och förhandsgranska kommande körningar. Stöder förinställningar som @daily och @hourly. Allt i din webbläsare."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatera och validera JSON",
@@ -937,6 +942,46 @@
     },
     "errors": {
       "clipboard": "Kunde inte kopiera till urklipp."
+    }
+  },
+  "cronpad": {
+    "input": { "label": "Cron-uttryck", "placeholder": "t.ex. 0 */5 * * *" },
+    "examples": { "label": "Exempel:" },
+    "validation": { "valid": "Giltigt", "invalid": "Ogiltigt" },
+    "expandedAs": "Expanderat som: {expr}",
+    "and": "och",
+    "nextRuns": { "title": "Kommande körningar", "useUTC": "Visa i UTC" },
+    "fieldNames": { "minute": "minut", "hour": "timme", "dom": "dag i månaden", "month": "månad", "dow": "veckodag" },
+    "dow": { "0":"söndag","1":"måndag","2":"tisdag","3":"onsdag","4":"torsdag","5":"fredag","6":"lördag" },
+    "month": { "1":"januari","2":"februari","3":"mars","4":"april","5":"maj","6":"juni","7":"juli","8":"augusti","9":"september","10":"oktober","11":"november","12":"december" },
+    "desc": {
+      "everyMinute": "Varje minut",
+      "everyNMinutes": "Var {n}:e minut",
+      "everyHour": "Varje timme, vid hel timme",
+      "everyNHours": "Var {n}:e timme, vid hel timme",
+      "everyHourAtMin": "Varje timme vid minut {m}",
+      "dailyAt": "Varje dag kl. {time}",
+      "weeklyAt": "Varje {day} kl. {time}",
+      "weekdayAt": "Vardagar kl. {time}",
+      "onDomAt": "Den {d}:e varje månad kl. {time}",
+      "onDateAt": "Den {d} {month} kl. {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": { "every":"varje minut","everyN":"var {n}:e minut","value":"vid minut {n}","range":"från minut {from} till {to}","rangeStep":"var {step}:e minut från {from} till {to}","fromStep":"var {step}:e minut med start vid minut {from}","list":"vid minuterna {list}" },
+      "hour":   { "every":"varje timme","everyN":"var {n}:e timme","value":"vid timme {n}","range":"från timme {from} till {to}","rangeStep":"var {step}:e timme från {from} till {to}","fromStep":"var {step}:e timme med start vid timme {from}","list":"vid timmarna {list}" },
+      "dom":    { "every":"varje dag","everyN":"var {n}:e dag","value":"den {n}:e","range":"från den {from}:e till den {to}:e","rangeStep":"var {step}:e dag från {from} till {to}","fromStep":"var {step}:e dag med start den {from}:e","list":"på dagarna {list}" },
+      "month":  { "every":"varje månad","everyN":"var {n}:e månad","value":"i {name}","range":"från {from} till {to}","rangeStep":"var {step}:e månad","fromStep":"var {step}:e månad med start månad {from}","list":"i {list}" },
+      "dow":    { "every":"valfri dag","everyN":"var {n}:e veckodag","value":"på {name}","range":"från {from} till {to}","rangeStep":"var {step}:e dag från {from} till {to}","fromStep":"var {step}:e dag med start {from}","list":"på {list}" }
+    },
+    "errors": {
+      "fieldCount": "Ett cron-uttryck behöver 5 mellanslagsseparerade fält.",
+      "rebootUnsupported": "@reboot är inget schema — det körs vid systemstart.",
+      "emptyField": "Fältet {field} är tomt.",
+      "invalidStep": "Ogiltigt steg i {field}: {value}",
+      "invalidRange": "Ogiltigt intervall i {field}: {value} (förväntat {min}-{max})",
+      "invalidValue": "Ogiltigt värde i {field}: {value} (förväntat {min}-{max})",
+      "generic": "Kunde inte tolka uttrycket."
     }
   },
   "markpdf": {

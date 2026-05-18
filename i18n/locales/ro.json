@@ -176,6 +176,11 @@
       "tagline": "Filigran pentru PDF-uri",
       "description": "Adaugă un filigran text pe paginile PDF cu culoare, opacitate, dimensiune, unghi și poziție personalizabile (inclusiv model în mozaic). Totul în browserul tău."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Explică expresii cron",
+      "description": "Tradu o expresie cron în limbaj natural, validează-i sintaxa și previzualizează următoarele rulări. Suportă preseturi precum @daily și @hourly. Totul în browserul tău."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatează și validează JSON",
@@ -937,6 +942,46 @@
     },
     "errors": {
       "clipboard": "Nu s-a putut copia în clipboard."
+    }
+  },
+  "cronpad": {
+    "input": { "label": "Expresie cron", "placeholder": "ex. 0 */5 * * *" },
+    "examples": { "label": "Exemple:" },
+    "validation": { "valid": "Validă", "invalid": "Invalidă" },
+    "expandedAs": "Extinsă ca: {expr}",
+    "and": "și",
+    "nextRuns": { "title": "Următoarele rulări", "useUTC": "Afișează în UTC" },
+    "fieldNames": { "minute": "minut", "hour": "oră", "dom": "zi a lunii", "month": "lună", "dow": "zi a săptămânii" },
+    "dow": { "0":"duminică","1":"luni","2":"marți","3":"miercuri","4":"joi","5":"vineri","6":"sâmbătă" },
+    "month": { "1":"ianuarie","2":"februarie","3":"martie","4":"aprilie","5":"mai","6":"iunie","7":"iulie","8":"august","9":"septembrie","10":"octombrie","11":"noiembrie","12":"decembrie" },
+    "desc": {
+      "everyMinute": "În fiecare minut",
+      "everyNMinutes": "La fiecare {n} minute",
+      "everyHour": "În fiecare oră, la oră fixă",
+      "everyNHours": "La fiecare {n} ore, la oră fixă",
+      "everyHourAtMin": "În fiecare oră la minutul {m}",
+      "dailyAt": "În fiecare zi la {time}",
+      "weeklyAt": "În fiecare {day} la {time}",
+      "weekdayAt": "În zilele lucrătoare la {time}",
+      "onDomAt": "În ziua {d} a fiecărei luni la {time}",
+      "onDateAt": "Pe {d} {month} la {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": { "every":"în fiecare minut","everyN":"la fiecare {n} minute","value":"la minutul {n}","range":"de la minutul {from} la {to}","rangeStep":"la fiecare {step} minute de la {from} la {to}","fromStep":"la fiecare {step} minute începând cu minutul {from}","list":"la minutele {list}" },
+      "hour":   { "every":"în fiecare oră","everyN":"la fiecare {n} ore","value":"la ora {n}","range":"de la ora {from} la {to}","rangeStep":"la fiecare {step} ore de la {from} la {to}","fromStep":"la fiecare {step} ore începând cu ora {from}","list":"la orele {list}" },
+      "dom":    { "every":"în fiecare zi","everyN":"la fiecare {n} zile","value":"în ziua {n}","range":"din ziua {from} până în ziua {to}","rangeStep":"la fiecare {step} zile de la {from} la {to}","fromStep":"la fiecare {step} zile începând cu ziua {from}","list":"în zilele {list}" },
+      "month":  { "every":"în fiecare lună","everyN":"la fiecare {n} luni","value":"în {name}","range":"din {from} până în {to}","rangeStep":"la fiecare {step} luni","fromStep":"la fiecare {step} luni începând cu luna {from}","list":"în {list}" },
+      "dow":    { "every":"orice zi","everyN":"la fiecare {n} zile lucrătoare","value":"în {name}","range":"de la {from} la {to}","rangeStep":"la fiecare {step} zile de la {from} la {to}","fromStep":"la fiecare {step} zile începând cu {from}","list":"în {list}" }
+    },
+    "errors": {
+      "fieldCount": "O expresie cron necesită 5 câmpuri separate prin spațiu.",
+      "rebootUnsupported": "@reboot nu este o programare — rulează la pornirea sistemului.",
+      "emptyField": "Câmpul {field} este gol.",
+      "invalidStep": "Pas invalid în {field}: {value}",
+      "invalidRange": "Interval invalid în {field}: {value} (așteptat {min}-{max})",
+      "invalidValue": "Valoare invalidă în {field}: {value} (așteptat {min}-{max})",
+      "generic": "Nu s-a putut interpreta expresia."
     }
   },
   "markpdf": {

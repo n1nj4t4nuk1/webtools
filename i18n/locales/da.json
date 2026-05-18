@@ -176,6 +176,11 @@
       "tagline": "Vandmærk PDF'er",
       "description": "Tilføj et tekstvandmærke til PDF-sider med tilpasselig farve, gennemsigtighed, størrelse, vinkel og placering (inklusive flisemønster). Alt i din browser."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Forklar cron-udtryk",
+      "description": "Oversæt et cron-udtryk til almindeligt sprog, valider syntaksen og se en forhåndsvisning af de næste kørsler. Understøtter forudindstillinger som @daily og @hourly. Alt i din browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatér og valider JSON",
@@ -937,6 +942,124 @@
     },
     "errors": {
       "clipboard": "Kunne ikke kopiere til udklipsholderen."
+    }
+  },
+  "cronpad": {
+    "input": {
+      "label": "Cron-udtryk",
+      "placeholder": "f.eks. 0 */5 * * *"
+    },
+    "examples": {
+      "label": "Eksempler:"
+    },
+    "validation": {
+      "valid": "Gyldigt",
+      "invalid": "Ugyldigt"
+    },
+    "expandedAs": "Udvidet til: {expr}",
+    "and": "og",
+    "nextRuns": {
+      "title": "Næste kørsler",
+      "useUTC": "Vis i UTC"
+    },
+    "fieldNames": {
+      "minute": "minut",
+      "hour": "time",
+      "dom": "dag i måneden",
+      "month": "måned",
+      "dow": "ugedag"
+    },
+    "dow": {
+      "0": "søndag",
+      "1": "mandag",
+      "2": "tirsdag",
+      "3": "onsdag",
+      "4": "torsdag",
+      "5": "fredag",
+      "6": "lørdag"
+    },
+    "month": {
+      "1": "januar",
+      "2": "februar",
+      "3": "marts",
+      "4": "april",
+      "5": "maj",
+      "6": "juni",
+      "7": "juli",
+      "8": "august",
+      "9": "september",
+      "10": "oktober",
+      "11": "november",
+      "12": "december"
+    },
+    "desc": {
+      "everyMinute": "Hvert minut",
+      "everyNMinutes": "Hvert {n}. minut",
+      "everyHour": "Hver time, på hel time",
+      "everyNHours": "Hver {n}. time, på hel time",
+      "everyHourAtMin": "Hver time på minut {m}",
+      "dailyAt": "Hver dag kl. {time}",
+      "weeklyAt": "Hver {day} kl. {time}",
+      "weekdayAt": "Hverdage kl. {time}",
+      "onDomAt": "Den {d}. i hver måned kl. {time}",
+      "onDateAt": "Den {d}. {month} kl. {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": {
+        "every": "hvert minut",
+        "everyN": "hvert {n}. minut",
+        "value": "på minut {n}",
+        "range": "fra minut {from} til {to}",
+        "rangeStep": "hvert {step}. minut fra {from} til {to}",
+        "fromStep": "hvert {step}. minut startende ved minut {from}",
+        "list": "på minutterne {list}"
+      },
+      "hour": {
+        "every": "hver time",
+        "everyN": "hver {n}. time",
+        "value": "på time {n}",
+        "range": "fra time {from} til {to}",
+        "rangeStep": "hver {step}. time fra {from} til {to}",
+        "fromStep": "hver {step}. time startende ved time {from}",
+        "list": "på timerne {list}"
+      },
+      "dom": {
+        "every": "hver dag",
+        "everyN": "hver {n}. dag",
+        "value": "den {n}.",
+        "range": "fra dag {from} til {to}",
+        "rangeStep": "hver {step}. dag fra {from} til {to}",
+        "fromStep": "hver {step}. dag startende dag {from}",
+        "list": "på dagene {list}"
+      },
+      "month": {
+        "every": "hver måned",
+        "everyN": "hver {n}. måned",
+        "value": "i {name}",
+        "range": "fra {from} til {to}",
+        "rangeStep": "hver {step}. måned",
+        "fromStep": "hver {step}. måned startende måned {from}",
+        "list": "i {list}"
+      },
+      "dow": {
+        "every": "enhver dag",
+        "everyN": "hver {n}. ugedag",
+        "value": "om {name}",
+        "range": "fra {from} til {to}",
+        "rangeStep": "hver {step}. dag fra {from} til {to}",
+        "fromStep": "hver {step}. dag startende {from}",
+        "list": "om {list}"
+      }
+    },
+    "errors": {
+      "fieldCount": "Et cron-udtryk skal indeholde 5 felter adskilt af mellemrum.",
+      "rebootUnsupported": "@reboot er ikke en tidsplan — den kører ved systemstart.",
+      "emptyField": "Feltet {field} er tomt.",
+      "invalidStep": "Ugyldigt trin i {field}: {value}",
+      "invalidRange": "Ugyldigt interval i {field}: {value} (forventet {min}-{max})",
+      "invalidValue": "Ugyldig værdi i {field}: {value} (forventet {min}-{max})",
+      "generic": "Kunne ikke fortolke udtrykket."
     }
   },
   "markpdf": {

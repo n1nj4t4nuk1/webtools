@@ -176,6 +176,11 @@
       "tagline": "ใส่ลายน้ำใน PDF",
       "description": "เพิ่มลายน้ำข้อความลงในหน้า PDF พร้อมปรับแต่งสี ความทึบ ขนาด มุม และตำแหน่งได้ (รวมถึงรูปแบบเรียงต่อกัน) ทั้งหมดในเบราว์เซอร์ของคุณ"
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "อธิบายนิพจน์ cron",
+      "description": "แปลนิพจน์ cron เป็นภาษาที่เข้าใจง่าย ตรวจสอบไวยากรณ์ และดูตัวอย่างการรันครั้งถัดไป รองรับค่ากำหนดล่วงหน้าอย่าง @daily และ @hourly ทั้งหมดในเบราว์เซอร์ของคุณ"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "จัดรูปแบบและตรวจสอบ JSON",
@@ -937,6 +942,46 @@
     },
     "errors": {
       "clipboard": "ไม่สามารถคัดลอกไปยังคลิปบอร์ดได้"
+    }
+  },
+  "cronpad": {
+    "input": { "label": "นิพจน์ cron", "placeholder": "เช่น 0 */5 * * *" },
+    "examples": { "label": "ตัวอย่าง:" },
+    "validation": { "valid": "ถูกต้อง", "invalid": "ไม่ถูกต้อง" },
+    "expandedAs": "ขยายเป็น: {expr}",
+    "and": "และ",
+    "nextRuns": { "title": "การรันครั้งถัดไป", "useUTC": "แสดงเป็น UTC" },
+    "fieldNames": { "minute": "นาที", "hour": "ชั่วโมง", "dom": "วันของเดือน", "month": "เดือน", "dow": "วันของสัปดาห์" },
+    "dow": { "0":"วันอาทิตย์","1":"วันจันทร์","2":"วันอังคาร","3":"วันพุธ","4":"วันพฤหัสบดี","5":"วันศุกร์","6":"วันเสาร์" },
+    "month": { "1":"มกราคม","2":"กุมภาพันธ์","3":"มีนาคม","4":"เมษายน","5":"พฤษภาคม","6":"มิถุนายน","7":"กรกฎาคม","8":"สิงหาคม","9":"กันยายน","10":"ตุลาคม","11":"พฤศจิกายน","12":"ธันวาคม" },
+    "desc": {
+      "everyMinute": "ทุกนาที",
+      "everyNMinutes": "ทุก {n} นาที",
+      "everyHour": "ทุกชั่วโมง ตรงต้นชั่วโมง",
+      "everyNHours": "ทุก {n} ชั่วโมง ตรงต้นชั่วโมง",
+      "everyHourAtMin": "ทุกชั่วโมง ที่นาที {m}",
+      "dailyAt": "ทุกวัน เวลา {time}",
+      "weeklyAt": "ทุก{day} เวลา {time}",
+      "weekdayAt": "วันธรรมดา เวลา {time}",
+      "onDomAt": "วันที่ {d} ของทุกเดือน เวลา {time}",
+      "onDateAt": "วันที่ {d} {month} เวลา {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": { "every":"ทุกนาที","everyN":"ทุก {n} นาที","value":"ที่นาที {n}","range":"ตั้งแต่นาที {from} ถึง {to}","rangeStep":"ทุก {step} นาที ตั้งแต่ {from} ถึง {to}","fromStep":"ทุก {step} นาที เริ่มที่นาที {from}","list":"ที่นาที {list}" },
+      "hour":   { "every":"ทุกชั่วโมง","everyN":"ทุก {n} ชั่วโมง","value":"ที่ชั่วโมง {n}","range":"ตั้งแต่ชั่วโมง {from} ถึง {to}","rangeStep":"ทุก {step} ชั่วโมง ตั้งแต่ {from} ถึง {to}","fromStep":"ทุก {step} ชั่วโมง เริ่มที่ชั่วโมง {from}","list":"ที่ชั่วโมง {list}" },
+      "dom":    { "every":"ทุกวัน","everyN":"ทุก {n} วัน","value":"ในวันที่ {n}","range":"ตั้งแต่วันที่ {from} ถึง {to}","rangeStep":"ทุก {step} วัน ตั้งแต่ {from} ถึง {to}","fromStep":"ทุก {step} วัน เริ่มวันที่ {from}","list":"ในวันที่ {list}" },
+      "month":  { "every":"ทุกเดือน","everyN":"ทุก {n} เดือน","value":"ใน{name}","range":"ตั้งแต่ {from} ถึง {to}","rangeStep":"ทุก {step} เดือน","fromStep":"ทุก {step} เดือน เริ่มเดือน {from}","list":"ใน {list}" },
+      "dow":    { "every":"วันใดก็ได้","everyN":"ทุก {n} วันของสัปดาห์","value":"ใน{name}","range":"ตั้งแต่ {from} ถึง {to}","rangeStep":"ทุก {step} วัน ตั้งแต่ {from} ถึง {to}","fromStep":"ทุก {step} วัน เริ่มจาก {from}","list":"ใน {list}" }
+    },
+    "errors": {
+      "fieldCount": "นิพจน์ cron ต้องมี 5 ฟิลด์ คั่นด้วยช่องว่าง",
+      "rebootUnsupported": "@reboot ไม่ใช่กำหนดเวลา แต่จะรันเมื่อระบบเริ่มทำงาน",
+      "emptyField": "ฟิลด์ {field} ว่างเปล่า",
+      "invalidStep": "ค่าขั้นที่ไม่ถูกต้องใน {field}: {value}",
+      "invalidRange": "ช่วงที่ไม่ถูกต้องใน {field}: {value} (คาดหวัง {min}-{max})",
+      "invalidValue": "ค่าที่ไม่ถูกต้องใน {field}: {value} (คาดหวัง {min}-{max})",
+      "generic": "ไม่สามารถวิเคราะห์นิพจน์ได้"
     }
   },
   "markpdf": {

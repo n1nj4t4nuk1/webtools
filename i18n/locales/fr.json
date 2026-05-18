@@ -176,6 +176,11 @@
       "tagline": "Filigrane sur PDF",
       "description": "Ajoutez un filigrane texte aux pages d'un PDF avec couleur, opacité, taille, angle et position personnalisables (motif en mosaïque inclus). Tout dans votre navigateur."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Explique les expressions cron",
+      "description": "Traduit une expression cron en langage clair, valide la syntaxe et affiche les prochaines exécutions. Prend en charge les presets comme @daily ou @hourly. Tout dans votre navigateur."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater et valider du JSON",
@@ -937,6 +942,124 @@
     },
     "errors": {
       "clipboard": "Impossible de copier dans le presse-papiers."
+    }
+  },
+  "cronpad": {
+    "input": {
+      "label": "Expression cron",
+      "placeholder": "ex. 0 */5 * * *"
+    },
+    "examples": {
+      "label": "Exemples :"
+    },
+    "validation": {
+      "valid": "Valide",
+      "invalid": "Non valide"
+    },
+    "expandedAs": "Interprétée comme : {expr}",
+    "and": "et",
+    "nextRuns": {
+      "title": "Prochaines exécutions",
+      "useUTC": "Afficher en UTC"
+    },
+    "fieldNames": {
+      "minute": "minute",
+      "hour": "heure",
+      "dom": "jour du mois",
+      "month": "mois",
+      "dow": "jour de la semaine"
+    },
+    "dow": {
+      "0": "dimanche",
+      "1": "lundi",
+      "2": "mardi",
+      "3": "mercredi",
+      "4": "jeudi",
+      "5": "vendredi",
+      "6": "samedi"
+    },
+    "month": {
+      "1": "janvier",
+      "2": "février",
+      "3": "mars",
+      "4": "avril",
+      "5": "mai",
+      "6": "juin",
+      "7": "juillet",
+      "8": "août",
+      "9": "septembre",
+      "10": "octobre",
+      "11": "novembre",
+      "12": "décembre"
+    },
+    "desc": {
+      "everyMinute": "Chaque minute",
+      "everyNMinutes": "Toutes les {n} minutes",
+      "everyHour": "Chaque heure, à la minute 0",
+      "everyNHours": "Toutes les {n} heures, à la minute 0",
+      "everyHourAtMin": "Chaque heure à la minute {m}",
+      "dailyAt": "Chaque jour à {time}",
+      "weeklyAt": "Chaque {day} à {time}",
+      "weekdayAt": "Du lundi au vendredi à {time}",
+      "onDomAt": "Le {d} de chaque mois à {time}",
+      "onDateAt": "Le {d} {month} à {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": {
+        "every": "chaque minute",
+        "everyN": "toutes les {n} minutes",
+        "value": "à la minute {n}",
+        "range": "de la minute {from} à {to}",
+        "rangeStep": "toutes les {step} minutes de {from} à {to}",
+        "fromStep": "toutes les {step} minutes à partir de la minute {from}",
+        "list": "aux minutes {list}"
+      },
+      "hour": {
+        "every": "chaque heure",
+        "everyN": "toutes les {n} heures",
+        "value": "à {n}h",
+        "range": "de {from}h à {to}h",
+        "rangeStep": "toutes les {step} heures de {from} à {to}",
+        "fromStep": "toutes les {step} heures à partir de {from}h",
+        "list": "à {list}h"
+      },
+      "dom": {
+        "every": "chaque jour",
+        "everyN": "tous les {n} jours",
+        "value": "le {n}",
+        "range": "du {from} au {to}",
+        "rangeStep": "tous les {step} jours du {from} au {to}",
+        "fromStep": "tous les {step} jours à partir du {from}",
+        "list": "les jours {list}"
+      },
+      "month": {
+        "every": "chaque mois",
+        "everyN": "tous les {n} mois",
+        "value": "en {name}",
+        "range": "de {from} à {to}",
+        "rangeStep": "tous les {step} mois",
+        "fromStep": "tous les {step} mois à partir de {from}",
+        "list": "en {list}"
+      },
+      "dow": {
+        "every": "n'importe quel jour",
+        "everyN": "tous les {n} jours de la semaine",
+        "value": "le {name}",
+        "range": "de {from} à {to}",
+        "rangeStep": "tous les {step} jours de {from} à {to}",
+        "fromStep": "tous les {step} jours à partir de {from}",
+        "list": "le {list}"
+      }
+    },
+    "errors": {
+      "fieldCount": "Une expression cron nécessite 5 champs séparés par des espaces.",
+      "rebootUnsupported": "@reboot n'est pas un horaire, il s'exécute au démarrage du système.",
+      "emptyField": "Le champ {field} est vide.",
+      "invalidStep": "Pas non valide dans {field} : {value}",
+      "invalidRange": "Plage non valide dans {field} : {value} (attendu {min}-{max})",
+      "invalidValue": "Valeur non valide dans {field} : {value} (attendu {min}-{max})",
+      "generic": "Impossible d'interpréter l'expression."
     }
   },
   "markpdf": {

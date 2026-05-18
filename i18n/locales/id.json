@@ -176,6 +176,11 @@
       "tagline": "Beri tanda air pada PDF",
       "description": "Tambahkan tanda air teks pada halaman PDF dengan warna, opasitas, ukuran, sudut, dan posisi yang dapat disesuaikan (termasuk pola berulang). Semua di peramban Anda."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Jelaskan ekspresi cron",
+      "description": "Terjemahkan ekspresi cron ke dalam bahasa alami, validasi sintaksisnya, dan pratinjau jadwal berikutnya. Mendukung preset seperti @daily dan @hourly. Semua di peramban Anda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format dan validasi JSON",
@@ -937,6 +942,46 @@
     },
     "errors": {
       "clipboard": "Tidak dapat menyalin ke clipboard."
+    }
+  },
+  "cronpad": {
+    "input": { "label": "Ekspresi cron", "placeholder": "mis. 0 */5 * * *" },
+    "examples": { "label": "Contoh:" },
+    "validation": { "valid": "Valid", "invalid": "Tidak valid" },
+    "expandedAs": "Diperluas sebagai: {expr}",
+    "and": "dan",
+    "nextRuns": { "title": "Jadwal berikutnya", "useUTC": "Tampilkan dalam UTC" },
+    "fieldNames": { "minute": "menit", "hour": "jam", "dom": "hari dalam bulan", "month": "bulan", "dow": "hari dalam minggu" },
+    "dow": { "0":"Minggu","1":"Senin","2":"Selasa","3":"Rabu","4":"Kamis","5":"Jumat","6":"Sabtu" },
+    "month": { "1":"Januari","2":"Februari","3":"Maret","4":"April","5":"Mei","6":"Juni","7":"Juli","8":"Agustus","9":"September","10":"Oktober","11":"November","12":"Desember" },
+    "desc": {
+      "everyMinute": "Setiap menit",
+      "everyNMinutes": "Setiap {n} menit",
+      "everyHour": "Setiap jam, tepat di awal jam",
+      "everyNHours": "Setiap {n} jam, tepat di awal jam",
+      "everyHourAtMin": "Setiap jam pada menit ke-{m}",
+      "dailyAt": "Setiap hari pukul {time}",
+      "weeklyAt": "Setiap {day} pukul {time}",
+      "weekdayAt": "Pada hari kerja pukul {time}",
+      "onDomAt": "Pada tanggal {d} setiap bulan pukul {time}",
+      "onDateAt": "Pada {month} {d} pukul {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": { "every":"setiap menit","everyN":"setiap {n} menit","value":"pada menit ke-{n}","range":"dari menit ke-{from} hingga ke-{to}","rangeStep":"setiap {step} menit dari {from} hingga {to}","fromStep":"setiap {step} menit mulai dari menit ke-{from}","list":"pada menit {list}" },
+      "hour":   { "every":"setiap jam","everyN":"setiap {n} jam","value":"pada jam ke-{n}","range":"dari jam ke-{from} hingga ke-{to}","rangeStep":"setiap {step} jam dari {from} hingga {to}","fromStep":"setiap {step} jam mulai dari jam ke-{from}","list":"pada jam {list}" },
+      "dom":    { "every":"setiap hari","everyN":"setiap {n} hari","value":"pada tanggal {n}","range":"dari tanggal {from} hingga {to}","rangeStep":"setiap {step} hari dari {from} hingga {to}","fromStep":"setiap {step} hari mulai tanggal {from}","list":"pada tanggal {list}" },
+      "month":  { "every":"setiap bulan","everyN":"setiap {n} bulan","value":"pada bulan {name}","range":"dari {from} hingga {to}","rangeStep":"setiap {step} bulan","fromStep":"setiap {step} bulan mulai bulan {from}","list":"pada {list}" },
+      "dow":    { "every":"hari apa pun","everyN":"setiap {n} hari kerja","value":"pada hari {name}","range":"dari {from} hingga {to}","rangeStep":"setiap {step} hari dari {from} hingga {to}","fromStep":"setiap {step} hari mulai {from}","list":"pada {list}" }
+    },
+    "errors": {
+      "fieldCount": "Ekspresi cron memerlukan 5 kolom yang dipisahkan spasi.",
+      "rebootUnsupported": "@reboot bukan jadwal — dijalankan saat sistem mulai.",
+      "emptyField": "Kolom {field} kosong.",
+      "invalidStep": "Langkah tidak valid pada {field}: {value}",
+      "invalidRange": "Rentang tidak valid pada {field}: {value} (diharapkan {min}-{max})",
+      "invalidValue": "Nilai tidak valid pada {field}: {value} (diharapkan {min}-{max})",
+      "generic": "Tidak dapat menguraikan ekspresi."
     }
   },
   "markpdf": {

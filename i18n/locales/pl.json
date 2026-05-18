@@ -176,6 +176,11 @@
       "tagline": "Znaki wodne w PDF",
       "description": "Dodaj tekstowy znak wodny do stron PDF z konfigurowalnym kolorem, przezroczystością, rozmiarem, kątem i położeniem (w tym wzór kafelkowy). Wszystko w Twojej przeglądarce."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Wyjaśnij wyrażenia cron",
+      "description": "Przetłumacz wyrażenie cron na zrozumiały język, zwaliduj jego składnię i zobacz podgląd następnych uruchomień. Obsługuje skróty takie jak @daily i @hourly. Wszystko w Twojej przeglądarce."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatuj i waliduj JSON",
@@ -937,6 +942,46 @@
     },
     "errors": {
       "clipboard": "Nie udało się skopiować do schowka."
+    }
+  },
+  "cronpad": {
+    "input": { "label": "Wyrażenie cron", "placeholder": "np. 0 */5 * * *" },
+    "examples": { "label": "Przykłady:" },
+    "validation": { "valid": "Poprawne", "invalid": "Niepoprawne" },
+    "expandedAs": "Rozwinięte jako: {expr}",
+    "and": "oraz",
+    "nextRuns": { "title": "Następne uruchomienia", "useUTC": "Pokaż w UTC" },
+    "fieldNames": { "minute": "minuta", "hour": "godzina", "dom": "dzień miesiąca", "month": "miesiąc", "dow": "dzień tygodnia" },
+    "dow": { "0":"niedziela","1":"poniedziałek","2":"wtorek","3":"środa","4":"czwartek","5":"piątek","6":"sobota" },
+    "month": { "1":"styczeń","2":"luty","3":"marzec","4":"kwiecień","5":"maj","6":"czerwiec","7":"lipiec","8":"sierpień","9":"wrzesień","10":"październik","11":"listopad","12":"grudzień" },
+    "desc": {
+      "everyMinute": "Co minutę",
+      "everyNMinutes": "Co {n} minut",
+      "everyHour": "Co godzinę, o pełnej godzinie",
+      "everyNHours": "Co {n} godzin, o pełnej godzinie",
+      "everyHourAtMin": "Co godzinę o minucie {m}",
+      "dailyAt": "Codziennie o {time}",
+      "weeklyAt": "W każdy {day} o {time}",
+      "weekdayAt": "W dni robocze o {time}",
+      "onDomAt": "{d}. dnia każdego miesiąca o {time}",
+      "onDateAt": "{d} {month} o {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": { "every":"co minutę","everyN":"co {n} minut","value":"o minucie {n}","range":"od minuty {from} do {to}","rangeStep":"co {step} minut od {from} do {to}","fromStep":"co {step} minut zaczynając od minuty {from}","list":"o minutach {list}" },
+      "hour":   { "every":"co godzinę","everyN":"co {n} godzin","value":"o godzinie {n}","range":"od godziny {from} do {to}","rangeStep":"co {step} godzin od {from} do {to}","fromStep":"co {step} godzin zaczynając od godziny {from}","list":"o godzinach {list}" },
+      "dom":    { "every":"każdego dnia","everyN":"co {n} dni","value":"{n}. dnia","range":"od dnia {from} do {to}","rangeStep":"co {step} dni od {from} do {to}","fromStep":"co {step} dni zaczynając od dnia {from}","list":"w dniach {list}" },
+      "month":  { "every":"każdego miesiąca","everyN":"co {n} miesięcy","value":"w {name}","range":"od {from} do {to}","rangeStep":"co {step} miesięcy","fromStep":"co {step} miesięcy zaczynając od miesiąca {from}","list":"w {list}" },
+      "dow":    { "every":"dowolny dzień","everyN":"co {n} dni tygodnia","value":"w {name}","range":"od {from} do {to}","rangeStep":"co {step} dni od {from} do {to}","fromStep":"co {step} dni zaczynając od {from}","list":"w {list}" }
+    },
+    "errors": {
+      "fieldCount": "Wyrażenie cron wymaga 5 pól oddzielonych spacją.",
+      "rebootUnsupported": "@reboot nie jest harmonogramem — uruchamia się przy starcie systemu.",
+      "emptyField": "Pole {field} jest puste.",
+      "invalidStep": "Nieprawidłowy krok w {field}: {value}",
+      "invalidRange": "Nieprawidłowy zakres w {field}: {value} (oczekiwano {min}-{max})",
+      "invalidValue": "Nieprawidłowa wartość w {field}: {value} (oczekiwano {min}-{max})",
+      "generic": "Nie udało się przetworzyć wyrażenia."
     }
   },
   "markpdf": {

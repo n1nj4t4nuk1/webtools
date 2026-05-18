@@ -171,6 +171,11 @@
       "tagline": "Marca d'água em PDFs",
       "description": "Adicione uma marca d'água de texto às páginas de um PDF com cor, opacidade, tamanho, ângulo e posição personalizáveis (incluindo padrão em mosaico). Tudo no seu navegador."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Explica expressões cron",
+      "description": "Traduz uma expressão cron para linguagem natural, valida a sintaxe e mostra as próximas execuções. Suporta presets como @daily e @hourly. Tudo no seu navegador."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formate e valide JSON",
@@ -902,6 +907,124 @@
     },
     "errors": {
       "clipboard": "Não foi possível copiar para a área de transferência."
+    }
+  },
+  "cronpad": {
+    "input": {
+      "label": "Expressão cron",
+      "placeholder": "ex. 0 */5 * * *"
+    },
+    "examples": {
+      "label": "Exemplos:"
+    },
+    "validation": {
+      "valid": "Válida",
+      "invalid": "Inválida"
+    },
+    "expandedAs": "Interpretada como: {expr}",
+    "and": "e",
+    "nextRuns": {
+      "title": "Próximas execuções",
+      "useUTC": "Mostrar em UTC"
+    },
+    "fieldNames": {
+      "minute": "minuto",
+      "hour": "hora",
+      "dom": "dia do mês",
+      "month": "mês",
+      "dow": "dia da semana"
+    },
+    "dow": {
+      "0": "domingo",
+      "1": "segunda",
+      "2": "terça",
+      "3": "quarta",
+      "4": "quinta",
+      "5": "sexta",
+      "6": "sábado"
+    },
+    "month": {
+      "1": "janeiro",
+      "2": "fevereiro",
+      "3": "março",
+      "4": "abril",
+      "5": "maio",
+      "6": "junho",
+      "7": "julho",
+      "8": "agosto",
+      "9": "setembro",
+      "10": "outubro",
+      "11": "novembro",
+      "12": "dezembro"
+    },
+    "desc": {
+      "everyMinute": "A cada minuto",
+      "everyNMinutes": "A cada {n} minutos",
+      "everyHour": "A cada hora, no minuto 0",
+      "everyNHours": "A cada {n} horas, no minuto 0",
+      "everyHourAtMin": "A cada hora no minuto {m}",
+      "dailyAt": "Todos os dias às {time}",
+      "weeklyAt": "Toda {day} às {time}",
+      "weekdayAt": "De segunda a sexta às {time}",
+      "onDomAt": "No dia {d} de cada mês às {time}",
+      "onDateAt": "Em {d} de {month} às {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": {
+        "every": "a cada minuto",
+        "everyN": "a cada {n} minutos",
+        "value": "no minuto {n}",
+        "range": "do minuto {from} ao {to}",
+        "rangeStep": "a cada {step} minutos de {from} a {to}",
+        "fromStep": "a cada {step} minutos a partir do minuto {from}",
+        "list": "nos minutos {list}"
+      },
+      "hour": {
+        "every": "a cada hora",
+        "everyN": "a cada {n} horas",
+        "value": "às {n}h",
+        "range": "das {from}h às {to}h",
+        "rangeStep": "a cada {step} horas das {from} às {to}",
+        "fromStep": "a cada {step} horas a partir de {from}h",
+        "list": "às {list}h"
+      },
+      "dom": {
+        "every": "todos os dias",
+        "everyN": "a cada {n} dias",
+        "value": "no dia {n}",
+        "range": "do dia {from} ao {to}",
+        "rangeStep": "a cada {step} dias de {from} a {to}",
+        "fromStep": "a cada {step} dias a partir do dia {from}",
+        "list": "nos dias {list}"
+      },
+      "month": {
+        "every": "todos os meses",
+        "everyN": "a cada {n} meses",
+        "value": "em {name}",
+        "range": "de {from} a {to}",
+        "rangeStep": "a cada {step} meses",
+        "fromStep": "a cada {step} meses a partir de {from}",
+        "list": "em {list}"
+      },
+      "dow": {
+        "every": "qualquer dia",
+        "everyN": "a cada {n} dias da semana",
+        "value": "toda {name}",
+        "range": "de {from} a {to}",
+        "rangeStep": "a cada {step} dias de {from} a {to}",
+        "fromStep": "a cada {step} dias a partir de {from}",
+        "list": "toda {list}"
+      }
+    },
+    "errors": {
+      "fieldCount": "Uma expressão cron precisa de 5 campos separados por espaços.",
+      "rebootUnsupported": "@reboot não é uma agenda, é executado na inicialização do sistema.",
+      "emptyField": "O campo {field} está vazio.",
+      "invalidStep": "Passo inválido em {field}: {value}",
+      "invalidRange": "Intervalo inválido em {field}: {value} (esperado {min}-{max})",
+      "invalidValue": "Valor inválido em {field}: {value} (esperado {min}-{max})",
+      "generic": "Não foi possível interpretar a expressão."
     }
   },
   "markpdf": {

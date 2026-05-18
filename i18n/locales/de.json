@@ -176,6 +176,11 @@
       "tagline": "Wasserzeichen für PDFs",
       "description": "Fügen Sie PDF-Seiten ein Text-Wasserzeichen mit anpassbarer Farbe, Deckkraft, Größe, Winkel und Position hinzu (inklusive Kachelmuster). Alles im Browser."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Cron-Ausdrücke erklären",
+      "description": "Übersetzt einen Cron-Ausdruck in einfache Sprache, validiert die Syntax und zeigt die nächsten Ausführungen. Unterstützt Presets wie @daily und @hourly. Alles im Browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatieren und validieren",
@@ -937,6 +942,124 @@
     },
     "errors": {
       "clipboard": "Konnte nicht in die Zwischenablage kopiert werden."
+    }
+  },
+  "cronpad": {
+    "input": {
+      "label": "Cron-Ausdruck",
+      "placeholder": "z. B. 0 */5 * * *"
+    },
+    "examples": {
+      "label": "Beispiele:"
+    },
+    "validation": {
+      "valid": "Gültig",
+      "invalid": "Ungültig"
+    },
+    "expandedAs": "Interpretiert als: {expr}",
+    "and": "und",
+    "nextRuns": {
+      "title": "Nächste Ausführungen",
+      "useUTC": "In UTC anzeigen"
+    },
+    "fieldNames": {
+      "minute": "Minute",
+      "hour": "Stunde",
+      "dom": "Tag des Monats",
+      "month": "Monat",
+      "dow": "Wochentag"
+    },
+    "dow": {
+      "0": "Sonntag",
+      "1": "Montag",
+      "2": "Dienstag",
+      "3": "Mittwoch",
+      "4": "Donnerstag",
+      "5": "Freitag",
+      "6": "Samstag"
+    },
+    "month": {
+      "1": "Januar",
+      "2": "Februar",
+      "3": "März",
+      "4": "April",
+      "5": "Mai",
+      "6": "Juni",
+      "7": "Juli",
+      "8": "August",
+      "9": "September",
+      "10": "Oktober",
+      "11": "November",
+      "12": "Dezember"
+    },
+    "desc": {
+      "everyMinute": "Jede Minute",
+      "everyNMinutes": "Alle {n} Minuten",
+      "everyHour": "Jede Stunde, zur vollen Stunde",
+      "everyNHours": "Alle {n} Stunden, zur vollen Stunde",
+      "everyHourAtMin": "Jede Stunde in Minute {m}",
+      "dailyAt": "Täglich um {time}",
+      "weeklyAt": "Jeden {day} um {time}",
+      "weekdayAt": "Werktags um {time}",
+      "onDomAt": "Am {d}. jedes Monats um {time}",
+      "onDateAt": "Am {d}. {month} um {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": {
+        "every": "jede Minute",
+        "everyN": "alle {n} Minuten",
+        "value": "in Minute {n}",
+        "range": "von Minute {from} bis {to}",
+        "rangeStep": "alle {step} Minuten von {from} bis {to}",
+        "fromStep": "alle {step} Minuten ab Minute {from}",
+        "list": "in Minuten {list}"
+      },
+      "hour": {
+        "every": "jede Stunde",
+        "everyN": "alle {n} Stunden",
+        "value": "um {n} Uhr",
+        "range": "von {from} bis {to} Uhr",
+        "rangeStep": "alle {step} Stunden von {from} bis {to}",
+        "fromStep": "alle {step} Stunden ab {from} Uhr",
+        "list": "um {list} Uhr"
+      },
+      "dom": {
+        "every": "jeden Tag",
+        "everyN": "alle {n} Tage",
+        "value": "am {n}.",
+        "range": "vom {from}. bis {to}.",
+        "rangeStep": "alle {step} Tage vom {from}. bis {to}.",
+        "fromStep": "alle {step} Tage ab dem {from}.",
+        "list": "an den Tagen {list}"
+      },
+      "month": {
+        "every": "jeden Monat",
+        "everyN": "alle {n} Monate",
+        "value": "im {name}",
+        "range": "von {from} bis {to}",
+        "rangeStep": "alle {step} Monate",
+        "fromStep": "alle {step} Monate ab {from}",
+        "list": "im {list}"
+      },
+      "dow": {
+        "every": "an jedem Tag",
+        "everyN": "alle {n} Wochentage",
+        "value": "am {name}",
+        "range": "von {from} bis {to}",
+        "rangeStep": "alle {step} Tage von {from} bis {to}",
+        "fromStep": "alle {step} Tage ab {from}",
+        "list": "am {list}"
+      }
+    },
+    "errors": {
+      "fieldCount": "Ein Cron-Ausdruck benötigt 5 durch Leerzeichen getrennte Felder.",
+      "rebootUnsupported": "@reboot ist kein Zeitplan, sondern läuft beim Systemstart.",
+      "emptyField": "Das Feld {field} ist leer.",
+      "invalidStep": "Ungültiger Schritt in {field}: {value}",
+      "invalidRange": "Ungültiger Bereich in {field}: {value} (erwartet {min}-{max})",
+      "invalidValue": "Ungültiger Wert in {field}: {value} (erwartet {min}-{max})",
+      "generic": "Ausdruck konnte nicht interpretiert werden."
     }
   },
   "markpdf": {

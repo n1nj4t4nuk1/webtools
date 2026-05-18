@@ -176,6 +176,11 @@
       "tagline": "PDF에 워터마크 추가",
       "description": "사용자 정의 가능한 색상, 불투명도, 크기, 각도 및 위치(타일 패턴 포함)로 PDF 페이지에 텍스트 워터마크를 추가합니다. 모두 브라우저에서 처리됩니다."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "cron 표현식 설명",
+      "description": "cron 표현식을 자연어로 번역하고 구문을 검증하며 다음 실행 시간을 미리 봅니다. @daily 및 @hourly 같은 프리셋을 지원합니다. 모두 브라우저에서 처리됩니다."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON 포맷 및 검증",
@@ -937,6 +942,46 @@
     },
     "errors": {
       "clipboard": "클립보드에 복사할 수 없습니다."
+    }
+  },
+  "cronpad": {
+    "input": { "label": "cron 표현식", "placeholder": "예: 0 */5 * * *" },
+    "examples": { "label": "예시:" },
+    "validation": { "valid": "유효함", "invalid": "유효하지 않음" },
+    "expandedAs": "확장됨: {expr}",
+    "and": "그리고",
+    "nextRuns": { "title": "다음 실행", "useUTC": "UTC로 표시" },
+    "fieldNames": { "minute": "분", "hour": "시", "dom": "일", "month": "월", "dow": "요일" },
+    "dow": { "0":"일요일","1":"월요일","2":"화요일","3":"수요일","4":"목요일","5":"금요일","6":"토요일" },
+    "month": { "1":"1월","2":"2월","3":"3월","4":"4월","5":"5월","6":"6월","7":"7월","8":"8월","9":"9월","10":"10월","11":"11월","12":"12월" },
+    "desc": {
+      "everyMinute": "매분",
+      "everyNMinutes": "{n}분마다",
+      "everyHour": "매시 정각",
+      "everyNHours": "{n}시간마다, 정각에",
+      "everyHourAtMin": "매시 {m}분",
+      "dailyAt": "매일 {time}",
+      "weeklyAt": "매주 {day} {time}",
+      "weekdayAt": "평일 {time}",
+      "onDomAt": "매월 {d}일 {time}",
+      "onDateAt": "{month} {d}일 {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": { "every":"매분","everyN":"{n}분마다","value":"{n}분에","range":"{from}분부터 {to}분까지","rangeStep":"{from}부터 {to}까지 {step}분마다","fromStep":"{from}분부터 {step}분마다","list":"{list}분에" },
+      "hour":   { "every":"매시","everyN":"{n}시간마다","value":"{n}시에","range":"{from}시부터 {to}시까지","rangeStep":"{from}부터 {to}까지 {step}시간마다","fromStep":"{from}시부터 {step}시간마다","list":"{list}시에" },
+      "dom":    { "every":"매일","everyN":"{n}일마다","value":"{n}일에","range":"{from}일부터 {to}일까지","rangeStep":"{from}부터 {to}까지 {step}일마다","fromStep":"{from}일부터 {step}일마다","list":"{list}일에" },
+      "month":  { "every":"매월","everyN":"{n}개월마다","value":"{name}에","range":"{from}부터 {to}까지","rangeStep":"{step}개월마다","fromStep":"{from}월부터 {step}개월마다","list":"{list}에" },
+      "dow":    { "every":"아무 요일","everyN":"{n}일 평일마다","value":"{name}에","range":"{from}부터 {to}까지","rangeStep":"{from}부터 {to}까지 {step}일마다","fromStep":"{from}부터 {step}일마다","list":"{list}에" }
+    },
+    "errors": {
+      "fieldCount": "cron 표현식은 공백으로 구분된 5개의 필드가 필요합니다.",
+      "rebootUnsupported": "@reboot는 일정이 아닙니다 — 시스템 시작 시 실행됩니다.",
+      "emptyField": "{field} 필드가 비어 있습니다.",
+      "invalidStep": "{field}의 잘못된 스텝: {value}",
+      "invalidRange": "{field}의 잘못된 범위: {value} (예상 범위 {min}-{max})",
+      "invalidValue": "{field}의 잘못된 값: {value} (예상 범위 {min}-{max})",
+      "generic": "표현식을 분석할 수 없습니다."
     }
   },
   "markpdf": {

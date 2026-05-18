@@ -171,6 +171,11 @@
       "tagline": "为 PDF 添加水印",
       "description": "为 PDF 页面添加文字水印，可自定义颜色、不透明度、大小、角度和位置（包括平铺图案）。全部在您的浏览器中完成。"
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "解释 cron 表达式",
+      "description": "将 cron 表达式翻译为易懂的文字，验证其语法并预览接下来的运行时间。支持 @daily 和 @hourly 等预设。全部在您的浏览器中完成。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
@@ -902,6 +907,46 @@
     },
     "errors": {
       "clipboard": "无法复制到剪贴板。"
+    }
+  },
+  "cronpad": {
+    "input": { "label": "Cron 表达式", "placeholder": "例如：0 */5 * * *" },
+    "examples": { "label": "示例：" },
+    "validation": { "valid": "有效", "invalid": "无效" },
+    "expandedAs": "展开为：{expr}",
+    "and": "和",
+    "nextRuns": { "title": "接下来的运行", "useUTC": "以 UTC 显示" },
+    "fieldNames": { "minute": "分钟", "hour": "小时", "dom": "日（月中）", "month": "月", "dow": "星期" },
+    "dow": { "0":"星期日","1":"星期一","2":"星期二","3":"星期三","4":"星期四","5":"星期五","6":"星期六" },
+    "month": { "1":"一月","2":"二月","3":"三月","4":"四月","5":"五月","6":"六月","7":"七月","8":"八月","9":"九月","10":"十月","11":"十一月","12":"十二月" },
+    "desc": {
+      "everyMinute": "每分钟",
+      "everyNMinutes": "每 {n} 分钟",
+      "everyHour": "每小时整点",
+      "everyNHours": "每 {n} 小时整点",
+      "everyHourAtMin": "每小时的第 {m} 分钟",
+      "dailyAt": "每天 {time}",
+      "weeklyAt": "每{day} {time}",
+      "weekdayAt": "工作日 {time}",
+      "onDomAt": "每月 {d} 日 {time}",
+      "onDateAt": "{month} {d} 日 {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": { "every":"每分钟","everyN":"每 {n} 分钟","value":"在第 {n} 分钟","range":"从第 {from} 分钟到第 {to} 分钟","rangeStep":"从第 {from} 分钟到第 {to} 分钟每 {step} 分钟","fromStep":"从第 {from} 分钟开始每 {step} 分钟","list":"在第 {list} 分钟" },
+      "hour":   { "every":"每小时","everyN":"每 {n} 小时","value":"在第 {n} 小时","range":"从第 {from} 小时到第 {to} 小时","rangeStep":"从第 {from} 小时到第 {to} 小时每 {step} 小时","fromStep":"从第 {from} 小时开始每 {step} 小时","list":"在第 {list} 小时" },
+      "dom":    { "every":"每天","everyN":"每 {n} 天","value":"在 {n} 日","range":"从 {from} 日到 {to} 日","rangeStep":"从 {from} 日到 {to} 日每 {step} 天","fromStep":"从 {from} 日开始每 {step} 天","list":"在 {list} 日" },
+      "month":  { "every":"每月","everyN":"每 {n} 个月","value":"在 {name}","range":"从 {from} 到 {to}","rangeStep":"每 {step} 个月","fromStep":"从第 {from} 个月开始每 {step} 个月","list":"在 {list}" },
+      "dow":    { "every":"任意一天","everyN":"每 {n} 个工作日","value":"在 {name}","range":"从 {from} 到 {to}","rangeStep":"从 {from} 到 {to} 每 {step} 天","fromStep":"从 {from} 开始每 {step} 天","list":"在 {list}" }
+    },
+    "errors": {
+      "fieldCount": "cron 表达式需要 5 个以空格分隔的字段。",
+      "rebootUnsupported": "@reboot 不是一个时间表 — 它在系统启动时运行。",
+      "emptyField": "字段 {field} 为空。",
+      "invalidStep": "{field} 中的步长无效：{value}",
+      "invalidRange": "{field} 中的范围无效：{value}（应为 {min}-{max}）",
+      "invalidValue": "{field} 中的值无效：{value}（应为 {min}-{max}）",
+      "generic": "无法解析该表达式。"
     }
   },
   "markpdf": {

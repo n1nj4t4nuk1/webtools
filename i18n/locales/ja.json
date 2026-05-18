@@ -171,6 +171,11 @@
       "tagline": "PDFにウォーターマーク",
       "description": "PDFのページに色、不透明度、サイズ、角度、位置（タイルパターンを含む）をカスタマイズしたテキストウォーターマークを追加。すべてブラウザで処理。"
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "cron式を説明",
+      "description": "cron式を自然言語に変換し、構文を検証して次の実行予定を表示。@dailyや@hourlyなどのプリセットに対応。すべてブラウザで処理。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSONをフォーマット・検証",
@@ -902,6 +907,124 @@
     },
     "errors": {
       "clipboard": "クリップボードにコピーできませんでした。"
+    }
+  },
+  "cronpad": {
+    "input": {
+      "label": "cron式",
+      "placeholder": "例: 0 */5 * * *"
+    },
+    "examples": {
+      "label": "例:"
+    },
+    "validation": {
+      "valid": "有効",
+      "invalid": "無効"
+    },
+    "expandedAs": "解釈: {expr}",
+    "and": "と",
+    "nextRuns": {
+      "title": "次の実行予定",
+      "useUTC": "UTCで表示"
+    },
+    "fieldNames": {
+      "minute": "分",
+      "hour": "時",
+      "dom": "日",
+      "month": "月",
+      "dow": "曜日"
+    },
+    "dow": {
+      "0": "日曜日",
+      "1": "月曜日",
+      "2": "火曜日",
+      "3": "水曜日",
+      "4": "木曜日",
+      "5": "金曜日",
+      "6": "土曜日"
+    },
+    "month": {
+      "1": "1月",
+      "2": "2月",
+      "3": "3月",
+      "4": "4月",
+      "5": "5月",
+      "6": "6月",
+      "7": "7月",
+      "8": "8月",
+      "9": "9月",
+      "10": "10月",
+      "11": "11月",
+      "12": "12月"
+    },
+    "desc": {
+      "everyMinute": "毎分",
+      "everyNMinutes": "{n}分ごと",
+      "everyHour": "毎時0分",
+      "everyNHours": "{n}時間ごと、0分に",
+      "everyHourAtMin": "毎時{m}分",
+      "dailyAt": "毎日{time}",
+      "weeklyAt": "毎週{day}の{time}",
+      "weekdayAt": "平日の{time}",
+      "onDomAt": "毎月{d}日の{time}",
+      "onDateAt": "{month}{d}日の{time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": {
+        "every": "毎分",
+        "everyN": "{n}分ごと",
+        "value": "{n}分",
+        "range": "{from}分から{to}分",
+        "rangeStep": "{from}分から{to}分まで{step}分ごと",
+        "fromStep": "{from}分から{step}分ごと",
+        "list": "{list}分"
+      },
+      "hour": {
+        "every": "毎時",
+        "everyN": "{n}時間ごと",
+        "value": "{n}時",
+        "range": "{from}時から{to}時",
+        "rangeStep": "{from}時から{to}時まで{step}時間ごと",
+        "fromStep": "{from}時から{step}時間ごと",
+        "list": "{list}時"
+      },
+      "dom": {
+        "every": "毎日",
+        "everyN": "{n}日ごと",
+        "value": "{n}日",
+        "range": "{from}日から{to}日",
+        "rangeStep": "{from}日から{to}日まで{step}日ごと",
+        "fromStep": "{from}日から{step}日ごと",
+        "list": "{list}日"
+      },
+      "month": {
+        "every": "毎月",
+        "everyN": "{n}か月ごと",
+        "value": "{name}",
+        "range": "{from}から{to}",
+        "rangeStep": "{step}か月ごと",
+        "fromStep": "{from}から{step}か月ごと",
+        "list": "{list}"
+      },
+      "dow": {
+        "every": "毎日",
+        "everyN": "{n}曜日ごと",
+        "value": "{name}",
+        "range": "{from}から{to}",
+        "rangeStep": "{from}から{to}まで{step}日ごと",
+        "fromStep": "{from}から{step}日ごと",
+        "list": "{list}"
+      }
+    },
+    "errors": {
+      "fieldCount": "cron式はスペースで区切られた5つのフィールドが必要です。",
+      "rebootUnsupported": "@rebootはスケジュールではなく、システム起動時に実行されます。",
+      "emptyField": "{field}フィールドが空です。",
+      "invalidStep": "{field}の無効なステップ: {value}",
+      "invalidRange": "{field}の無効な範囲: {value}（期待値 {min}-{max}）",
+      "invalidValue": "{field}の無効な値: {value}（期待値 {min}-{max}）",
+      "generic": "式を解釈できませんでした。"
     }
   },
   "markpdf": {

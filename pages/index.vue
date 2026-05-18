@@ -7,7 +7,7 @@ const categoriesRaw = [
   { id: 'documents', tools: ['stapler', 'scissor', 'pdfspinner', 'albumy', 'metapdf', 'markpdf', 'wordy'] },
   { id: 'privacy', tools: ['metaimg', 'createpass', 'hashy'] },
   { id: 'generators', tools: ['createpass', 'idkun', 'combiny', 'lorempad', 'qrgen'] },
-  { id: 'dev', tools: ['csvjson', 'jsonpad', 'regexpad', 'yamljson', 'urlpad', 'codecpad', 'jwtdecoder', 'diffy', 'idkun'] },
+  { id: 'dev', tools: ['csvjson', 'jsonpad', 'regexpad', 'yamljson', 'urlpad', 'codecpad', 'jwtdecoder', 'diffy', 'cronpad', 'idkun'] },
   { id: 'design', tools: ['gradienty', 'shadowy', 'colory', 'picky', 'unity'] },
   { id: 'calculators', tools: ['timely', 'basey', 'lapsy'] },
 ] as const
@@ -38,6 +38,7 @@ const toolPaths: Record<string, string> = {
   codecpad: '/codecpad',
   jwtdecoder: '/jwtdecoder',
   diffy: '/diffy',
+  cronpad: '/cronpad',
   gradienty: '/gradienty',
   shadowy: '/shadowy',
   colory: '/colory',

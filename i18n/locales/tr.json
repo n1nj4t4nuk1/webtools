@@ -176,6 +176,11 @@
       "tagline": "PDF'lere filigran ekleyin",
       "description": "PDF sayfalarına özelleştirilebilir renk, opaklık, boyut, açı ve konum (döşenmiş desen dahil) ile metin filigranı ekleyin. Hepsi tarayıcınızda."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Cron ifadelerini açıklayın",
+      "description": "Bir cron ifadesini anlaşılır metne çevirin, söz dizimini doğrulayın ve sonraki çalışmaları önizleyin. @daily ve @hourly gibi ön ayarları destekler. Hepsi tarayıcınızda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON'u biçimlendir ve doğrula",
@@ -937,6 +942,46 @@
     },
     "errors": {
       "clipboard": "Panoya kopyalanamadı."
+    }
+  },
+  "cronpad": {
+    "input": { "label": "Cron ifadesi", "placeholder": "örn. 0 */5 * * *" },
+    "examples": { "label": "Örnekler:" },
+    "validation": { "valid": "Geçerli", "invalid": "Geçersiz" },
+    "expandedAs": "Şu şekilde genişletildi: {expr}",
+    "and": "ve",
+    "nextRuns": { "title": "Sonraki çalışmalar", "useUTC": "UTC olarak göster" },
+    "fieldNames": { "minute": "dakika", "hour": "saat", "dom": "ayın günü", "month": "ay", "dow": "haftanın günü" },
+    "dow": { "0":"Pazar","1":"Pazartesi","2":"Salı","3":"Çarşamba","4":"Perşembe","5":"Cuma","6":"Cumartesi" },
+    "month": { "1":"Ocak","2":"Şubat","3":"Mart","4":"Nisan","5":"Mayıs","6":"Haziran","7":"Temmuz","8":"Ağustos","9":"Eylül","10":"Ekim","11":"Kasım","12":"Aralık" },
+    "desc": {
+      "everyMinute": "Her dakika",
+      "everyNMinutes": "Her {n} dakikada bir",
+      "everyHour": "Her saat başı",
+      "everyNHours": "Her {n} saatte bir, saat başında",
+      "everyHourAtMin": "Her saatin {m}. dakikasında",
+      "dailyAt": "Her gün {time}",
+      "weeklyAt": "Her {day} {time}",
+      "weekdayAt": "Hafta içi her gün {time}",
+      "onDomAt": "Her ayın {d}. günü {time}",
+      "onDateAt": "{month} {d} tarihinde {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": { "every":"her dakika","everyN":"her {n} dakikada bir","value":"{n}. dakikada","range":"{from}. dakikadan {to}. dakikaya","rangeStep":"{from}. dakikadan {to}. dakikaya her {step} dakikada bir","fromStep":"{from}. dakikadan başlayarak her {step} dakikada bir","list":"{list} dakikalarında" },
+      "hour":   { "every":"her saat","everyN":"her {n} saatte bir","value":"{n}. saatte","range":"{from}. saatten {to}. saate","rangeStep":"{from}. saatten {to}. saate her {step} saatte bir","fromStep":"{from}. saatten başlayarak her {step} saatte bir","list":"{list} saatlerinde" },
+      "dom":    { "every":"her gün","everyN":"her {n} günde bir","value":"{n}. günde","range":"{from}. günden {to}. güne","rangeStep":"{from}. günden {to}. güne her {step} günde bir","fromStep":"{from}. günden başlayarak her {step} günde bir","list":"{list} günlerinde" },
+      "month":  { "every":"her ay","everyN":"her {n} ayda bir","value":"{name} ayında","range":"{from} ayından {to} ayına","rangeStep":"her {step} ayda bir","fromStep":"{from}. aydan başlayarak her {step} ayda bir","list":"{list} aylarında" },
+      "dow":    { "every":"herhangi bir gün","everyN":"her {n} haftada bir","value":"{name} günü","range":"{from} ile {to} arası","rangeStep":"{from} ile {to} arası her {step} günde bir","fromStep":"{from} gününden başlayarak her {step} günde bir","list":"{list} günlerinde" }
+    },
+    "errors": {
+      "fieldCount": "Bir cron ifadesi boşlukla ayrılmış 5 alan gerektirir.",
+      "rebootUnsupported": "@reboot bir zamanlama değildir — sistem başlangıcında çalışır.",
+      "emptyField": "{field} alanı boş.",
+      "invalidStep": "{field} alanında geçersiz adım: {value}",
+      "invalidRange": "{field} alanında geçersiz aralık: {value} (beklenen {min}-{max})",
+      "invalidValue": "{field} alanında geçersiz değer: {value} (beklenen {min}-{max})",
+      "generic": "İfade ayrıştırılamadı."
     }
   },
   "markpdf": {

@@ -176,6 +176,11 @@
       "tagline": "Đóng dấu watermark cho PDF",
       "description": "Thêm watermark văn bản vào các trang PDF với màu sắc, độ mờ, kích thước, góc và vị trí (bao gồm cả mẫu lặp lại) có thể tùy chỉnh. Tất cả trong trình duyệt của bạn."
     },
+    "cronpad": {
+      "name": "Cronpad",
+      "tagline": "Giải thích biểu thức cron",
+      "description": "Dịch biểu thức cron sang văn bản dễ hiểu, kiểm tra cú pháp và xem trước các lần chạy tiếp theo. Hỗ trợ các mẫu có sẵn như @daily và @hourly. Tất cả trong trình duyệt của bạn."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Định dạng và xác thực JSON",
@@ -937,6 +942,46 @@
     },
     "errors": {
       "clipboard": "Không thể sao chép vào clipboard."
+    }
+  },
+  "cronpad": {
+    "input": { "label": "Biểu thức cron", "placeholder": "ví dụ: 0 */5 * * *" },
+    "examples": { "label": "Ví dụ:" },
+    "validation": { "valid": "Hợp lệ", "invalid": "Không hợp lệ" },
+    "expandedAs": "Được mở rộng thành: {expr}",
+    "and": "và",
+    "nextRuns": { "title": "Các lần chạy tiếp theo", "useUTC": "Hiển thị theo UTC" },
+    "fieldNames": { "minute": "phút", "hour": "giờ", "dom": "ngày trong tháng", "month": "tháng", "dow": "ngày trong tuần" },
+    "dow": { "0":"Chủ Nhật","1":"Thứ Hai","2":"Thứ Ba","3":"Thứ Tư","4":"Thứ Năm","5":"Thứ Sáu","6":"Thứ Bảy" },
+    "month": { "1":"Tháng Một","2":"Tháng Hai","3":"Tháng Ba","4":"Tháng Tư","5":"Tháng Năm","6":"Tháng Sáu","7":"Tháng Bảy","8":"Tháng Tám","9":"Tháng Chín","10":"Tháng Mười","11":"Tháng Mười Một","12":"Tháng Mười Hai" },
+    "desc": {
+      "everyMinute": "Mỗi phút",
+      "everyNMinutes": "Mỗi {n} phút",
+      "everyHour": "Mỗi giờ, vào đầu giờ",
+      "everyNHours": "Mỗi {n} giờ, vào đầu giờ",
+      "everyHourAtMin": "Mỗi giờ vào phút thứ {m}",
+      "dailyAt": "Mỗi ngày lúc {time}",
+      "weeklyAt": "Mỗi {day} lúc {time}",
+      "weekdayAt": "Các ngày trong tuần lúc {time}",
+      "onDomAt": "Vào ngày {d} hàng tháng lúc {time}",
+      "onDateAt": "Vào ngày {d} {month} lúc {time}",
+      "verbosePrefix": "{phrase}"
+    },
+    "field": {
+      "minute": { "every":"mỗi phút","everyN":"mỗi {n} phút","value":"vào phút {n}","range":"từ phút {from} đến phút {to}","rangeStep":"mỗi {step} phút từ phút {from} đến phút {to}","fromStep":"mỗi {step} phút bắt đầu từ phút {from}","list":"vào các phút {list}" },
+      "hour":   { "every":"mỗi giờ","everyN":"mỗi {n} giờ","value":"vào giờ {n}","range":"từ giờ {from} đến giờ {to}","rangeStep":"mỗi {step} giờ từ giờ {from} đến giờ {to}","fromStep":"mỗi {step} giờ bắt đầu từ giờ {from}","list":"vào các giờ {list}" },
+      "dom":    { "every":"mỗi ngày","everyN":"mỗi {n} ngày","value":"vào ngày {n}","range":"từ ngày {from} đến ngày {to}","rangeStep":"mỗi {step} ngày từ ngày {from} đến ngày {to}","fromStep":"mỗi {step} ngày bắt đầu từ ngày {from}","list":"vào các ngày {list}" },
+      "month":  { "every":"mỗi tháng","everyN":"mỗi {n} tháng","value":"vào {name}","range":"từ {from} đến {to}","rangeStep":"mỗi {step} tháng","fromStep":"mỗi {step} tháng bắt đầu từ tháng {from}","list":"vào {list}" },
+      "dow":    { "every":"bất kỳ ngày nào","everyN":"mỗi {n} ngày trong tuần","value":"vào {name}","range":"từ {from} đến {to}","rangeStep":"mỗi {step} ngày từ {from} đến {to}","fromStep":"mỗi {step} ngày bắt đầu từ {from}","list":"vào {list}" }
+    },
+    "errors": {
+      "fieldCount": "Biểu thức cron cần 5 trường được phân cách bằng dấu cách.",
+      "rebootUnsupported": "@reboot không phải là lịch trình — nó chạy khi khởi động hệ thống.",
+      "emptyField": "Trường {field} bị trống.",
+      "invalidStep": "Bước không hợp lệ trong {field}: {value}",
+      "invalidRange": "Phạm vi không hợp lệ trong {field}: {value} (mong đợi {min}-{max})",
+      "invalidValue": "Giá trị không hợp lệ trong {field}: {value} (mong đợi {min}-{max})",
+      "generic": "Không thể phân tích biểu thức."
     }
   },
   "markpdf": {
