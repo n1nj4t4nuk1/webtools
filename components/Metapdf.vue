@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * Metapdf.vue
+ *
+ * PDF dropzone followed by a form with one input per metadata field
+ * (title, author, subject, comma-separated keywords, producer, creator,
+ * creation / modification dates). The "now" button next to the date
+ * fields stamps the current timestamp. Calls `useMetapdf.read` to populate
+ * the form and `write` to emit a `<original>-metadata.pdf` download.
+ */
 import type { PdfFileInfo } from '~/composables/useMetapdf'
 
 const { t } = useI18n()

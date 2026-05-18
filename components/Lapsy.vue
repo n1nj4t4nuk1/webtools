@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * Lapsy.vue
+ *
+ * Two `datetime-local` inputs (with an optional "use current time" toggle
+ * on the second that ticks once a second), a calendar-style breakdown
+ * (years/months/days/hours/min/sec) from `useLapsy.calendarDiff` and a
+ * totals grid from `useLapsy.totalsDiff`. Shows a relative-status badge
+ * (past / future / now) based on the diff's direction.
+ */
 const { t } = useI18n()
 const { calendarDiff, totalsDiff } = useLapsy()
 

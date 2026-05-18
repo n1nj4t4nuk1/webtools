@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * MetaimgEditor.vue (Metaimg)
+ *
+ * JPEG dropzone followed by a searchable, editable table of every EXIF tag
+ * surfaced by `useExif.read`. Lets the user edit values, remove tags,
+ * add either a standard tag (picked from `allDefinedTags`) or a fully
+ * custom one (`newCustomTag`), and download the modified JPEG or a clean
+ * "strip everything" copy.
+ */
 import type { ExifIfdName, ExifTag, ExifTagDef } from '~/composables/useExif'
 
 const { t } = useI18n()

@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * Markpdf.vue
+ *
+ * PDF dropzone, watermark text input, full set of styling controls (font
+ * size, color, opacity, rotation), position selector (9 anchors plus
+ * tiled), margin / tile-gap slider and a page-range input (reusing
+ * `usePdfSpinner.parseRanges` for the parser). Calls `useMarkpdf.apply`
+ * and triggers a download with `<original>-watermark.pdf`.
+ */
 import type { Position } from '~/composables/useMarkpdf'
 import { POSITIONS, hexToRgb01 } from '~/composables/useMarkpdf'
 

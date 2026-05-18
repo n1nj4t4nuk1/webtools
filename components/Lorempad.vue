@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * Lorempad.vue
+ *
+ * Mode selector (paragraphs / sentences / words), count input, optional
+ * "start with the classic Lorem ipsum opener" toggle and HTML / plain
+ * output. The optional `wordsPerUnit` input forces every sentence or
+ * paragraph to a fixed length when set. Delegates to `useLorempad.generate`
+ * and offers a copy-to-clipboard action.
+ */
 import type { LorempadMode, OutputFormat } from '~/composables/useLorempad'
 
 const { t } = useI18n()
