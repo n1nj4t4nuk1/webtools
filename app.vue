@@ -1,4 +1,14 @@
 <script setup lang="ts">
+/**
+ * app.vue — root SPA shell.
+ *
+ * Renders the persistent chrome around every page: the TanukiBox · WebTools
+ * brand link, the language switcher (driven by `useI18n().locales`) and
+ * the `<NuxtPage />` slot where every route mounts. The locale switcher
+ * triggers `setLocale`, which routes the user to the equivalent localised
+ * URL and persists the choice via the i18n cookie configured in
+ * `nuxt.config.ts`.
+ */
 const { locale, locales, setLocale, t } = useI18n()
 const localePath = useLocalePath()
 

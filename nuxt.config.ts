@@ -1,4 +1,16 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+/**
+ * nuxt.config.ts — global Nuxt configuration.
+ *
+ * Configures the project as a fully static SPA (`ssr: false`,
+ * `nitro.output.publicDir: 'dist'`) with `@nuxtjs/i18n` set to 25 locales
+ * lazy-loaded from `i18n/locales/*.json`. The default locale is `es` and
+ * `en` is the fallback; route prefixes are added for every locale except
+ * the default (`prefix_except_default`). The 📦 favicon is embedded as an
+ * inline SVG data URI so no extra binary asset is required.
+ *
+ * See https://nuxt.com/docs/api/configuration/nuxt-config for the full
+ * option reference.
+ */
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-01',
 
