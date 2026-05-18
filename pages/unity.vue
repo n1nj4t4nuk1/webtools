@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Unity tool: sets the tab title and mounts <Unity />. */
 const { t } = useI18n()
 
 useHead({

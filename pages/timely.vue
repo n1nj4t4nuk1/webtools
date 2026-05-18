@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Timely tool: sets the tab title and mounts <Timely />. */
 const { t } = useI18n()
 
 useHead({

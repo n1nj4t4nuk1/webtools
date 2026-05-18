@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Shadowy tool: sets the tab title and mounts <Shadowy />. */
 const { t } = useI18n()
 
 useHead({

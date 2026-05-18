@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Scissor tool: sets the tab title and mounts <PdfScissor />. */
 const { t } = useI18n()
 
 useHead({

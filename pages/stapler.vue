@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Stapler tool: sets the tab title and mounts <PdfStapler />. */
 const { t } = useI18n()
 
 useHead({
