@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * Codecpad.vue
+ *
+ * Stack of textareas, one per visible codec, all reflecting the same byte
+ * payload. Edits propagate through `useCodecpad`: the edited codec decodes
+ * to bytes, then every other codec re-encodes from those bytes. Codecs can
+ * be added or removed by the user from a checklist.
+ */
 import type { CodecId } from '~/composables/useCodecpad'
 import { ALL_CODECS, DEFAULT_ACTIVE } from '~/composables/useCodecpad'
 

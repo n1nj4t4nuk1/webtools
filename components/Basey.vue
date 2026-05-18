@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * Basey.vue
+ *
+ * Row of editable inputs — one per active numeric base — backed by a shared
+ * BigInt source-of-truth. Editing any input re-runs `useBasey.convertAll`
+ * from that base; if the value is invalid only that row shows an error and
+ * the others keep their previous content. Allows adding custom bases on the
+ * fly via the `+` action.
+ */
 import type { BaseSpec } from '~/composables/useBasey'
 import { DEFAULT_BASES } from '~/composables/useBasey'
 

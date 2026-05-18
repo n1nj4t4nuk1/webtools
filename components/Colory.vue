@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * Colory.vue
+ *
+ * Color workbench built around a single source color. Renders a color
+ * picker, synchronised HEX/RGB/HSL inputs, an 11-stop tonal palette and
+ * WCAG contrast ratios against pure white and pure black. Uses the helpers
+ * from `useColory` and never holds state for the derived representations —
+ * they are recomputed on every change.
+ */
 import { hexToRgb, rgbToHex, rgbToHsl, hslToRgb } from '~/composables/useColory'
 
 const { t } = useI18n()

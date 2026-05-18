@@ -1,4 +1,12 @@
 <script setup lang="ts">
+/**
+ * Albumy.vue
+ *
+ * Multi-image dropzone with a reorderable list (up / down buttons), per-page
+ * size, orientation, margin and JPEG quality controls. Delegates the PDF
+ * assembly to `useAlbumy` and triggers a browser download once `buildPdf`
+ * resolves. Keeps inspected dimensions alongside each item for the preview.
+ */
 import type { Orientation, PageSize } from '~/composables/useAlbumy'
 
 interface ImageItem {

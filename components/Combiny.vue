@@ -1,4 +1,13 @@
 <script setup lang="ts">
+/**
+ * Combiny.vue
+ *
+ * Dynamic list of named fields, each with a value and a token-selection
+ * mode. Two toggles control whether `useCombiny.generate` permutes the
+ * field order and whether it also enumerates strict subsets. Results are
+ * either rendered as a grid of chips or, if the count is high, hidden
+ * behind a `download as .txt` button to keep the page snappy.
+ */
 import type { CombinyField, FieldMode } from '~/composables/useCombiny'
 import { MAX_RESULTS } from '~/composables/useCombiny'
 
