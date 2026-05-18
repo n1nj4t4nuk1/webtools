@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the Urlpad tool: sets the tab title and mounts <Urlpad />. */
 const { t } = useI18n()
 
 useHead({

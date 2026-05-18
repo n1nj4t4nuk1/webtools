@@ -1,4 +1,5 @@
 <script setup lang="ts">
+/** Route wrapper for the YamlJson tool: sets the tab title and mounts <YamlJson />. */
 const { t } = useI18n()
 
 useHead({
