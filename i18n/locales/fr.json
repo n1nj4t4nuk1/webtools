@@ -186,6 +186,11 @@
       "tagline": "CSV vers tableau Markdown",
       "description": "Convertit un CSV en tableau Markdown parfaitement aligné avec l'alignement de votre choix par colonne. Détecte le séparateur automatiquement et accepte les entrées sans en-tête. Tout dans votre navigateur."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Filigrane sur images",
+      "description": "Appliquez un filigrane texte ou image sur une photo avec position, opacité, rotation, taille et motif en mosaïque. Aperçu en direct. Tout dans votre navigateur."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater et valider du JSON",
@@ -947,6 +952,63 @@
     },
     "errors": {
       "clipboard": "Impossible de copier dans le presse-papiers."
+    }
+  },
+  "brandy": {
+    "dropzone": {
+      "base": "Glissez une image ici ou cliquez pour la sélectionner",
+      "watermark": "Glissez une image à utiliser comme filigrane"
+    },
+    "kind": {
+      "text": "Texte",
+      "image": "Image"
+    },
+    "text": {
+      "text": "Texte du filigrane",
+      "placeholder": "ex. © TanukiBox",
+      "font": "Police",
+      "size": "Taille",
+      "color": "Couleur",
+      "bold": "Gras",
+      "italic": "Italique"
+    },
+    "image": {
+      "width": "Largeur"
+    },
+    "shared": {
+      "position": "Position",
+      "rotation": "Rotation",
+      "opacity": "Opacité",
+      "margin": "Marge",
+      "tileGap": "Espacement de la mosaïque"
+    },
+    "positions": {
+      "center": "Centre",
+      "topLeft": "Haut gauche",
+      "top": "Haut",
+      "topRight": "Haut droite",
+      "left": "Gauche",
+      "right": "Droite",
+      "bottomLeft": "Bas gauche",
+      "bottom": "Bas",
+      "bottomRight": "Bas droite",
+      "tiled": "Mosaïque (répétée)"
+    },
+    "format": {
+      "label": "Format",
+      "png": "PNG",
+      "jpeg": "JPG",
+      "webp": "WebP",
+      "quality": "Qualité"
+    },
+    "actions": {
+      "download": "Télécharger",
+      "processing": "Traitement…",
+      "change": "Changer"
+    },
+    "errors": {
+      "notImage": "{name} n'est pas une image valide.",
+      "generic": "Impossible de traiter l'image."
     }
   },
   "mdtably": {

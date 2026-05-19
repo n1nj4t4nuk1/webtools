@@ -186,6 +186,11 @@
       "tagline": "CSV Markdown táblázattá",
       "description": "Alakítsa át a CSV-t tökéletesen igazított Markdown táblázattá oszloponkénti igazítással. Automatikusan felismeri az elválasztót, és támogatja a fejléc nélküli bemenetet. Mindez a böngészőben."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Vízjelezzen képeket",
+      "description": "Helyezzen szöveges vagy képes vízjelet egy fényképre pozícióval, átlátszósággal, elforgatással, mérettel és csempézett mintával. Élő előnézet. Mindez a böngészőben."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formázása és érvényesítése",
@@ -948,6 +953,46 @@
     "errors": {
       "clipboard": "Nem sikerült a vágólapra másolni."
     }
+  },
+  "brandy": {
+    "dropzone": { "base": "Húzzon ide egy képet, vagy kattintson a kiválasztáshoz", "watermark": "Húzzon ide egy képet vízjelként való használathoz" },
+    "kind": { "text": "Szöveg", "image": "Kép" },
+    "text": {
+      "text": "Vízjel szövege",
+      "placeholder": "pl. © TanukiBox",
+      "font": "Betűtípus",
+      "size": "Méret",
+      "color": "Szín",
+      "bold": "Félkövér",
+      "italic": "Dőlt"
+    },
+    "image": { "width": "Szélesség" },
+    "shared": {
+      "position": "Pozíció",
+      "rotation": "Elforgatás",
+      "opacity": "Átlátszóság",
+      "margin": "Margó",
+      "tileGap": "Csempeköz"
+    },
+    "positions": {
+      "center": "Közép",
+      "topLeft": "Bal felső",
+      "top": "Fent",
+      "topRight": "Jobb felső",
+      "left": "Bal",
+      "right": "Jobb",
+      "bottomLeft": "Bal alsó",
+      "bottom": "Lent",
+      "bottomRight": "Jobb alsó",
+      "tiled": "Csempézett (ismétlődő)"
+    },
+    "format": {
+      "label": "Formátum",
+      "png": "PNG", "jpeg": "JPG", "webp": "WebP",
+      "quality": "Minőség"
+    },
+    "actions": { "download": "Letöltés", "processing": "Feldolgozás…", "change": "Csere" },
+    "errors": { "notImage": "{name} nem érvényes kép.", "generic": "A képet nem sikerült feldolgozni." }
   },
   "mdtably": {
     "input": { "label": "CSV bemenet", "placeholder": "Illesszen be CSV-t vagy kattintson egy példára…" },

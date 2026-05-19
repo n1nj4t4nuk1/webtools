@@ -186,6 +186,11 @@
       "tagline": "CSV ke tabel Markdown",
       "description": "Ubah CSV menjadi tabel Markdown yang tersusun rapi dengan perataan per kolom. Deteksi pembatas secara otomatis dan mendukung input tanpa header. Semua di peramban Anda."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Beri tanda air pada gambar",
+      "description": "Stempel tanda air teks atau gambar pada foto dengan posisi, opasitas, rotasi, ukuran, dan pola berulang. Pratinjau langsung. Semua di peramban Anda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format dan validasi JSON",
@@ -948,6 +953,26 @@
     "errors": {
       "clipboard": "Tidak dapat menyalin ke clipboard."
     }
+  },
+  "brandy": {
+    "dropzone": { "base": "Seret gambar ke sini atau klik untuk memilih", "watermark": "Seret gambar untuk digunakan sebagai tanda air" },
+    "kind": { "text": "Teks", "image": "Gambar" },
+    "text": {
+      "text": "Teks tanda air",
+      "placeholder": "mis. © TanukiBox",
+      "font": "Font", "size": "Ukuran", "color": "Warna", "bold": "Tebal", "italic": "Miring"
+    },
+    "image": { "width": "Lebar" },
+    "shared": { "position": "Posisi", "rotation": "Rotasi", "opacity": "Opasitas", "margin": "Margin", "tileGap": "Jarak antar ubin" },
+    "positions": {
+      "center": "Tengah", "topLeft": "Kiri atas", "top": "Atas", "topRight": "Kanan atas",
+      "left": "Kiri", "right": "Kanan",
+      "bottomLeft": "Kiri bawah", "bottom": "Bawah", "bottomRight": "Kanan bawah",
+      "tiled": "Berulang (pola)"
+    },
+    "format": { "label": "Format", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "Kualitas" },
+    "actions": { "download": "Unduh", "processing": "Memproses…", "change": "Ganti" },
+    "errors": { "notImage": "{name} bukan gambar yang valid.", "generic": "Tidak dapat memproses gambar." }
   },
   "mdtably": {
     "input": { "label": "Input CSV", "placeholder": "Tempel CSV atau klik contoh…" },

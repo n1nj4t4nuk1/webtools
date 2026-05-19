@@ -186,6 +186,11 @@
       "tagline": "CSV na tabelę Markdown",
       "description": "Zamień CSV w idealnie wyrównaną tabelę Markdown z konfigurowalnym wyrównaniem każdej kolumny. Automatycznie wykrywa separator i obsługuje dane bez nagłówka. Wszystko w Twojej przeglądarce."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Znaki wodne na obrazach",
+      "description": "Dodaj tekstowy lub graficzny znak wodny do zdjęcia z pozycją, przezroczystością, obrotem, rozmiarem i wzorem kafelkowym. Podgląd na żywo. Wszystko w Twojej przeglądarce."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatuj i waliduj JSON",
@@ -948,6 +953,26 @@
     "errors": {
       "clipboard": "Nie udało się skopiować do schowka."
     }
+  },
+  "brandy": {
+    "dropzone": { "base": "Przeciągnij tutaj obraz lub kliknij, aby go wybrać", "watermark": "Przeciągnij obraz, który ma być użyty jako znak wodny" },
+    "kind": { "text": "Tekst", "image": "Obraz" },
+    "text": {
+      "text": "Tekst znaku wodnego",
+      "placeholder": "np. © TanukiBox",
+      "font": "Czcionka", "size": "Rozmiar", "color": "Kolor", "bold": "Pogrubienie", "italic": "Kursywa"
+    },
+    "image": { "width": "Szerokość" },
+    "shared": { "position": "Pozycja", "rotation": "Obrót", "opacity": "Przezroczystość", "margin": "Margines", "tileGap": "Odstęp kafelków" },
+    "positions": {
+      "center": "Środek", "topLeft": "Lewy górny", "top": "Góra", "topRight": "Prawy górny",
+      "left": "Lewa", "right": "Prawa",
+      "bottomLeft": "Lewy dolny", "bottom": "Dół", "bottomRight": "Prawy dolny",
+      "tiled": "Kafelkowo (powtórzone)"
+    },
+    "format": { "label": "Format", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "Jakość" },
+    "actions": { "download": "Pobierz", "processing": "Przetwarzanie…", "change": "Zmień" },
+    "errors": { "notImage": "{name} nie jest prawidłowym obrazem.", "generic": "Nie udało się przetworzyć obrazu." }
   },
   "mdtably": {
     "input": { "label": "Wejście CSV", "placeholder": "Wklej CSV lub kliknij przykład…" },

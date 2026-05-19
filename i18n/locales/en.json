@@ -186,6 +186,11 @@
       "tagline": "CSV to Markdown table",
       "description": "Turn CSV into a perfectly aligned Markdown table with per-column alignment. Auto-detects the delimiter and supports headerless input. All in your browser."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Watermark images",
+      "description": "Stamp a text or image watermark on a photo with position, opacity, rotation, size and tiled pattern. Live preview. All in your browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format and validate JSON",
@@ -947,6 +952,63 @@
     },
     "errors": {
       "clipboard": "Could not copy to clipboard."
+    }
+  },
+  "brandy": {
+    "dropzone": {
+      "base": "Drag an image here or click to select one",
+      "watermark": "Drag an image to use as the watermark"
+    },
+    "kind": {
+      "text": "Text",
+      "image": "Image"
+    },
+    "text": {
+      "text": "Watermark text",
+      "placeholder": "e.g. © TanukiBox",
+      "font": "Font",
+      "size": "Size",
+      "color": "Color",
+      "bold": "Bold",
+      "italic": "Italic"
+    },
+    "image": {
+      "width": "Width"
+    },
+    "shared": {
+      "position": "Position",
+      "rotation": "Rotation",
+      "opacity": "Opacity",
+      "margin": "Margin",
+      "tileGap": "Tile spacing"
+    },
+    "positions": {
+      "center": "Center",
+      "topLeft": "Top left",
+      "top": "Top",
+      "topRight": "Top right",
+      "left": "Left",
+      "right": "Right",
+      "bottomLeft": "Bottom left",
+      "bottom": "Bottom",
+      "bottomRight": "Bottom right",
+      "tiled": "Tiled (repeated)"
+    },
+    "format": {
+      "label": "Format",
+      "png": "PNG",
+      "jpeg": "JPG",
+      "webp": "WebP",
+      "quality": "Quality"
+    },
+    "actions": {
+      "download": "Download",
+      "processing": "Processing…",
+      "change": "Change"
+    },
+    "errors": {
+      "notImage": "{name} is not a valid image.",
+      "generic": "Could not process the image."
     }
   },
   "mdtably": {

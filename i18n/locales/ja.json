@@ -181,6 +181,11 @@
       "tagline": "CSVをMarkdownテーブルに変換",
       "description": "CSVを列ごとに配置を選べる、完全に整列したMarkdownテーブルに変換。区切り文字を自動検出し、ヘッダーなしの入力にも対応。すべてブラウザで処理。"
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "画像にウォーターマーク",
+      "description": "写真にテキストまたは画像のウォーターマークを位置、不透明度、回転、サイズ、タイルパターンで適用。リアルタイムプレビュー。すべてブラウザで処理。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSONをフォーマット・検証",
@@ -912,6 +917,63 @@
     },
     "errors": {
       "clipboard": "クリップボードにコピーできませんでした。"
+    }
+  },
+  "brandy": {
+    "dropzone": {
+      "base": "画像をここにドラッグするか、クリックして選択",
+      "watermark": "ウォーターマークとして使う画像をドラッグ"
+    },
+    "kind": {
+      "text": "テキスト",
+      "image": "画像"
+    },
+    "text": {
+      "text": "ウォーターマークのテキスト",
+      "placeholder": "例: © TanukiBox",
+      "font": "フォント",
+      "size": "サイズ",
+      "color": "色",
+      "bold": "太字",
+      "italic": "斜体"
+    },
+    "image": {
+      "width": "幅"
+    },
+    "shared": {
+      "position": "位置",
+      "rotation": "回転",
+      "opacity": "不透明度",
+      "margin": "余白",
+      "tileGap": "タイル間隔"
+    },
+    "positions": {
+      "center": "中央",
+      "topLeft": "左上",
+      "top": "上",
+      "topRight": "右上",
+      "left": "左",
+      "right": "右",
+      "bottomLeft": "左下",
+      "bottom": "下",
+      "bottomRight": "右下",
+      "tiled": "タイル（繰り返し）"
+    },
+    "format": {
+      "label": "フォーマット",
+      "png": "PNG",
+      "jpeg": "JPG",
+      "webp": "WebP",
+      "quality": "品質"
+    },
+    "actions": {
+      "download": "ダウンロード",
+      "processing": "処理中…",
+      "change": "変更"
+    },
+    "errors": {
+      "notImage": "{name}は有効な画像ではありません。",
+      "generic": "画像を処理できませんでした。"
     }
   },
   "mdtably": {

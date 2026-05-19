@@ -181,6 +181,11 @@
       "tagline": "CSV 转 Markdown 表格",
       "description": "将 CSV 转换为完美对齐的 Markdown 表格，可按列设置对齐方式。自动检测分隔符，支持无表头输入。全部在您的浏览器中完成。"
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "为图片添加水印",
+      "description": "在照片上添加文字或图片水印，可设置位置、不透明度、旋转、大小和平铺图案。实时预览。全部在您的浏览器中完成。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
@@ -913,6 +918,26 @@
     "errors": {
       "clipboard": "无法复制到剪贴板。"
     }
+  },
+  "brandy": {
+    "dropzone": { "base": "将图片拖到此处或点击选择", "watermark": "拖入一张图片作为水印" },
+    "kind": { "text": "文本", "image": "图片" },
+    "text": {
+      "text": "水印文本",
+      "placeholder": "例如 © TanukiBox",
+      "font": "字体", "size": "大小", "color": "颜色", "bold": "粗体", "italic": "斜体"
+    },
+    "image": { "width": "宽度" },
+    "shared": { "position": "位置", "rotation": "旋转", "opacity": "不透明度", "margin": "边距", "tileGap": "平铺间距" },
+    "positions": {
+      "center": "居中", "topLeft": "左上", "top": "顶部", "topRight": "右上",
+      "left": "左侧", "right": "右侧",
+      "bottomLeft": "左下", "bottom": "底部", "bottomRight": "右下",
+      "tiled": "平铺（重复）"
+    },
+    "format": { "label": "格式", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "质量" },
+    "actions": { "download": "下载", "processing": "处理中…", "change": "更换" },
+    "errors": { "notImage": "{name} 不是有效的图片。", "generic": "无法处理图片。" }
   },
   "mdtably": {
     "input": { "label": "CSV 输入", "placeholder": "粘贴 CSV 或点击示例…" },

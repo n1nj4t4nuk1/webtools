@@ -186,6 +186,11 @@
       "tagline": "CSV naar Markdown-tabel",
       "description": "Zet CSV om in een perfect uitgelijnde Markdown-tabel met uitlijning per kolom. Detecteert het scheidingsteken automatisch en ondersteunt invoer zonder kopregel. Alles in uw browser."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Afbeeldingen van een watermerk voorzien",
+      "description": "Stempel een tekst- of afbeeldingswatermerk op een foto met positie, dekking, rotatie, grootte en herhalend patroon. Live voorvertoning. Alles in uw browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatteren en valideren",
@@ -948,6 +953,26 @@
     "errors": {
       "clipboard": "Kon niet naar het klembord kopiëren."
     }
+  },
+  "brandy": {
+    "dropzone": { "base": "Sleep een afbeelding hierheen of klik om er een te selecteren", "watermark": "Sleep een afbeelding om als watermerk te gebruiken" },
+    "kind": { "text": "Tekst", "image": "Afbeelding" },
+    "text": {
+      "text": "Watermerktekst",
+      "placeholder": "bijv. © TanukiBox",
+      "font": "Lettertype", "size": "Grootte", "color": "Kleur", "bold": "Vet", "italic": "Cursief"
+    },
+    "image": { "width": "Breedte" },
+    "shared": { "position": "Positie", "rotation": "Rotatie", "opacity": "Dekking", "margin": "Marge", "tileGap": "Tegelafstand" },
+    "positions": {
+      "center": "Midden", "topLeft": "Linksboven", "top": "Boven", "topRight": "Rechtsboven",
+      "left": "Links", "right": "Rechts",
+      "bottomLeft": "Linksonder", "bottom": "Onder", "bottomRight": "Rechtsonder",
+      "tiled": "Herhalend (patroon)"
+    },
+    "format": { "label": "Formaat", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "Kwaliteit" },
+    "actions": { "download": "Downloaden", "processing": "Bezig met verwerken…", "change": "Wijzigen" },
+    "errors": { "notImage": "{name} is geen geldige afbeelding.", "generic": "Kon de afbeelding niet verwerken." }
   },
   "mdtably": {
     "input": { "label": "CSV-invoer", "placeholder": "Plak CSV of klik op een voorbeeld…" },

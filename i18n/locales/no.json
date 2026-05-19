@@ -186,6 +186,11 @@
       "tagline": "CSV til Markdown-tabell",
       "description": "Gjør CSV om til en perfekt justert Markdown-tabell med justering per kolonne. Oppdager skilletegnet automatisk og støtter inndata uten overskrift. Alt i nettleseren din."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Vannmerke bilder",
+      "description": "Sett et tekst- eller bildevannmerke på et foto med posisjon, gjennomsiktighet, rotasjon, størrelse og flislagt mønster. Live forhåndsvisning. Alt i nettleseren din."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater og valider JSON",
@@ -948,6 +953,26 @@
     "errors": {
       "clipboard": "Kunne ikke kopiere til utklippstavlen."
     }
+  },
+  "brandy": {
+    "dropzone": { "base": "Dra et bilde hit eller klikk for å velge et", "watermark": "Dra et bilde som skal brukes som vannmerke" },
+    "kind": { "text": "Tekst", "image": "Bilde" },
+    "text": {
+      "text": "Vannmerketekst",
+      "placeholder": "f.eks. © TanukiBox",
+      "font": "Skrift", "size": "Størrelse", "color": "Farge", "bold": "Fet", "italic": "Kursiv"
+    },
+    "image": { "width": "Bredde" },
+    "shared": { "position": "Posisjon", "rotation": "Rotasjon", "opacity": "Gjennomsiktighet", "margin": "Marg", "tileGap": "Flisavstand" },
+    "positions": {
+      "center": "Midten", "topLeft": "Øverst til venstre", "top": "Øverst", "topRight": "Øverst til høyre",
+      "left": "Venstre", "right": "Høyre",
+      "bottomLeft": "Nederst til venstre", "bottom": "Nederst", "bottomRight": "Nederst til høyre",
+      "tiled": "Flislagt (gjentatt)"
+    },
+    "format": { "label": "Format", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "Kvalitet" },
+    "actions": { "download": "Last ned", "processing": "Behandler…", "change": "Bytt" },
+    "errors": { "notImage": "{name} er ikke et gyldig bilde.", "generic": "Kunne ikke behandle bildet." }
   },
   "mdtably": {
     "input": { "label": "CSV-inndata", "placeholder": "Lim inn CSV eller klikk et eksempel…" },

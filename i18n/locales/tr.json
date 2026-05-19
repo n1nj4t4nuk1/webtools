@@ -186,6 +186,11 @@
       "tagline": "CSV'den Markdown tablosuna",
       "description": "CSV'yi sütun başına hizalama ile mükemmel şekilde hizalanmış bir Markdown tablosuna dönüştürün. Ayırıcıyı otomatik algılar ve başlıksız girişleri destekler. Hepsi tarayıcınızda."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Görsellere filigran ekleyin",
+      "description": "Bir fotoğrafa metin veya görsel filigranı; konum, opaklık, döndürme, boyut ve döşeli desen ile ekleyin. Canlı önizleme. Hepsi tarayıcınızda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON'u biçimlendir ve doğrula",
@@ -948,6 +953,26 @@
     "errors": {
       "clipboard": "Panoya kopyalanamadı."
     }
+  },
+  "brandy": {
+    "dropzone": { "base": "Buraya bir görsel sürükleyin veya seçmek için tıklayın", "watermark": "Filigran olarak kullanmak için bir görsel sürükleyin" },
+    "kind": { "text": "Metin", "image": "Görsel" },
+    "text": {
+      "text": "Filigran metni",
+      "placeholder": "örn. © TanukiBox",
+      "font": "Yazı tipi", "size": "Boyut", "color": "Renk", "bold": "Kalın", "italic": "İtalik"
+    },
+    "image": { "width": "Genişlik" },
+    "shared": { "position": "Konum", "rotation": "Döndürme", "opacity": "Opaklık", "margin": "Kenar boşluğu", "tileGap": "Döşeme aralığı" },
+    "positions": {
+      "center": "Merkez", "topLeft": "Sol üst", "top": "Üst", "topRight": "Sağ üst",
+      "left": "Sol", "right": "Sağ",
+      "bottomLeft": "Sol alt", "bottom": "Alt", "bottomRight": "Sağ alt",
+      "tiled": "Döşeli (tekrarlanan)"
+    },
+    "format": { "label": "Biçim", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "Kalite" },
+    "actions": { "download": "İndir", "processing": "İşleniyor…", "change": "Değiştir" },
+    "errors": { "notImage": "{name} geçerli bir görsel değil.", "generic": "Görsel işlenemedi." }
   },
   "mdtably": {
     "input": { "label": "CSV girişi", "placeholder": "CSV'yi yapıştırın veya bir örneğe tıklayın…" },

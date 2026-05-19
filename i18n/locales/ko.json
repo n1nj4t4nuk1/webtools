@@ -186,6 +186,11 @@
       "tagline": "CSV를 Markdown 표로",
       "description": "CSV를 열별 정렬이 적용된 완벽하게 정돈된 Markdown 표로 변환합니다. 구분자를 자동으로 감지하고 헤더 없는 입력도 지원합니다. 모두 브라우저에서 처리됩니다."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "이미지에 워터마크 추가",
+      "description": "사진에 텍스트나 이미지 워터마크를 위치, 불투명도, 회전, 크기 및 타일 패턴으로 찍습니다. 실시간 미리보기. 모두 브라우저에서 처리됩니다."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON 포맷 및 검증",
@@ -948,6 +953,26 @@
     "errors": {
       "clipboard": "클립보드에 복사할 수 없습니다."
     }
+  },
+  "brandy": {
+    "dropzone": { "base": "여기에 이미지를 끌어 놓거나 클릭해 선택하세요", "watermark": "워터마크로 사용할 이미지를 끌어 놓으세요" },
+    "kind": { "text": "텍스트", "image": "이미지" },
+    "text": {
+      "text": "워터마크 텍스트",
+      "placeholder": "예: © TanukiBox",
+      "font": "글꼴", "size": "크기", "color": "색상", "bold": "굵게", "italic": "기울임"
+    },
+    "image": { "width": "너비" },
+    "shared": { "position": "위치", "rotation": "회전", "opacity": "불투명도", "margin": "여백", "tileGap": "타일 간격" },
+    "positions": {
+      "center": "중앙", "topLeft": "왼쪽 위", "top": "위", "topRight": "오른쪽 위",
+      "left": "왼쪽", "right": "오른쪽",
+      "bottomLeft": "왼쪽 아래", "bottom": "아래", "bottomRight": "오른쪽 아래",
+      "tiled": "타일 (반복)"
+    },
+    "format": { "label": "형식", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "품질" },
+    "actions": { "download": "다운로드", "processing": "처리 중…", "change": "변경" },
+    "errors": { "notImage": "{name}은(는) 유효한 이미지가 아닙니다.", "generic": "이미지를 처리할 수 없습니다." }
   },
   "mdtably": {
     "input": { "label": "CSV 입력", "placeholder": "CSV를 붙여넣거나 예시를 클릭하세요…" },

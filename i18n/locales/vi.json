@@ -186,6 +186,11 @@
       "tagline": "CSV sang bảng Markdown",
       "description": "Chuyển CSV thành bảng Markdown được căn chỉnh hoàn hảo với căn lề tùy theo từng cột. Tự động phát hiện dấu phân cách và hỗ trợ đầu vào không có tiêu đề. Tất cả trong trình duyệt của bạn."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Đóng dấu hình mờ lên ảnh",
+      "description": "Đóng dấu hình mờ bằng văn bản hoặc hình ảnh lên ảnh với vị trí, độ mờ, xoay, kích thước và kiểu lát gạch. Xem trước trực tiếp. Tất cả trong trình duyệt của bạn."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Định dạng và xác thực JSON",
@@ -948,6 +953,26 @@
     "errors": {
       "clipboard": "Không thể sao chép vào clipboard."
     }
+  },
+  "brandy": {
+    "dropzone": { "base": "Kéo một hình ảnh vào đây hoặc nhấp để chọn", "watermark": "Kéo một hình ảnh để dùng làm hình mờ" },
+    "kind": { "text": "Văn bản", "image": "Hình ảnh" },
+    "text": {
+      "text": "Văn bản hình mờ",
+      "placeholder": "ví dụ © TanukiBox",
+      "font": "Phông chữ", "size": "Kích thước", "color": "Màu sắc", "bold": "Đậm", "italic": "Nghiêng"
+    },
+    "image": { "width": "Chiều rộng" },
+    "shared": { "position": "Vị trí", "rotation": "Xoay", "opacity": "Độ mờ", "margin": "Lề", "tileGap": "Khoảng cách lát" },
+    "positions": {
+      "center": "Giữa", "topLeft": "Trên trái", "top": "Trên", "topRight": "Trên phải",
+      "left": "Trái", "right": "Phải",
+      "bottomLeft": "Dưới trái", "bottom": "Dưới", "bottomRight": "Dưới phải",
+      "tiled": "Lát (lặp lại)"
+    },
+    "format": { "label": "Định dạng", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "Chất lượng" },
+    "actions": { "download": "Tải xuống", "processing": "Đang xử lý…", "change": "Thay đổi" },
+    "errors": { "notImage": "{name} không phải là hình ảnh hợp lệ.", "generic": "Không thể xử lý hình ảnh." }
   },
   "mdtably": {
     "input": { "label": "Đầu vào CSV", "placeholder": "Dán CSV hoặc nhấp vào một ví dụ…" },

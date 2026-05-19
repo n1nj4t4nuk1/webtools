@@ -186,6 +186,11 @@
       "tagline": "CSV na tabulku Markdown",
       "description": "Převeďte CSV na dokonale zarovnanou tabulku Markdown s nastavením zarovnání pro každý sloupec. Automaticky detekuje oddělovač a podporuje vstup bez hlavičky. Vše ve vašem prohlížeči."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Vodoznak na obrázky",
+      "description": "Vyrazte textový nebo obrazový vodoznak na fotografii s nastavením polohy, krytí, otočení, velikosti a dlaždicového vzoru. Živý náhled. Vše ve vašem prohlížeči."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formátování a validace JSON",
@@ -947,6 +952,63 @@
     },
     "errors": {
       "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "brandy": {
+    "dropzone": {
+      "base": "Přetáhněte sem obrázek nebo klikněte pro výběr",
+      "watermark": "Přetáhněte obrázek, který se použije jako vodoznak"
+    },
+    "kind": {
+      "text": "Text",
+      "image": "Obrázek"
+    },
+    "text": {
+      "text": "Text vodoznaku",
+      "placeholder": "např. © TanukiBox",
+      "font": "Písmo",
+      "size": "Velikost",
+      "color": "Barva",
+      "bold": "Tučné",
+      "italic": "Kurzíva"
+    },
+    "image": {
+      "width": "Šířka"
+    },
+    "shared": {
+      "position": "Poloha",
+      "rotation": "Otočení",
+      "opacity": "Krytí",
+      "margin": "Okraj",
+      "tileGap": "Rozestup dlaždic"
+    },
+    "positions": {
+      "center": "Střed",
+      "topLeft": "Vlevo nahoře",
+      "top": "Nahoře",
+      "topRight": "Vpravo nahoře",
+      "left": "Vlevo",
+      "right": "Vpravo",
+      "bottomLeft": "Vlevo dole",
+      "bottom": "Dole",
+      "bottomRight": "Vpravo dole",
+      "tiled": "Dlaždicově (opakovaně)"
+    },
+    "format": {
+      "label": "Formát",
+      "png": "PNG",
+      "jpeg": "JPG",
+      "webp": "WebP",
+      "quality": "Kvalita"
+    },
+    "actions": {
+      "download": "Stáhnout",
+      "processing": "Zpracovává se…",
+      "change": "Změnit"
+    },
+    "errors": {
+      "notImage": "{name} není platný obrázek.",
+      "generic": "Nelze zpracovat obrázek."
     }
   },
   "mdtably": {

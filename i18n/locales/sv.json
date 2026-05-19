@@ -186,6 +186,11 @@
       "tagline": "CSV till Markdown-tabell",
       "description": "Förvandla CSV till en perfekt justerad Markdown-tabell med justering per kolumn. Identifierar avgränsaren automatiskt och stöder indata utan rubrik. Allt i din webbläsare."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Vattenmärk bilder",
+      "description": "Stämpla en text- eller bildvattenstämpel på ett foto med position, opacitet, rotation, storlek och kakelmönster. Live-förhandsgranskning. Allt i din webbläsare."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatera och validera JSON",
@@ -948,6 +953,26 @@
     "errors": {
       "clipboard": "Kunde inte kopiera till urklipp."
     }
+  },
+  "brandy": {
+    "dropzone": { "base": "Dra en bild hit eller klicka för att välja en", "watermark": "Dra en bild som ska användas som vattenstämpel" },
+    "kind": { "text": "Text", "image": "Bild" },
+    "text": {
+      "text": "Vattenstämpeltext",
+      "placeholder": "t.ex. © TanukiBox",
+      "font": "Typsnitt", "size": "Storlek", "color": "Färg", "bold": "Fet", "italic": "Kursiv"
+    },
+    "image": { "width": "Bredd" },
+    "shared": { "position": "Position", "rotation": "Rotation", "opacity": "Opacitet", "margin": "Marginal", "tileGap": "Kakelmellanrum" },
+    "positions": {
+      "center": "Mitten", "topLeft": "Uppe till vänster", "top": "Uppe", "topRight": "Uppe till höger",
+      "left": "Vänster", "right": "Höger",
+      "bottomLeft": "Nere till vänster", "bottom": "Nere", "bottomRight": "Nere till höger",
+      "tiled": "Kaklad (upprepad)"
+    },
+    "format": { "label": "Format", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "Kvalitet" },
+    "actions": { "download": "Ladda ner", "processing": "Bearbetar…", "change": "Byt" },
+    "errors": { "notImage": "{name} är inte en giltig bild.", "generic": "Kunde inte bearbeta bilden." }
   },
   "mdtably": {
     "input": { "label": "CSV-indata", "placeholder": "Klistra in CSV eller klicka på ett exempel…" },

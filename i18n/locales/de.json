@@ -186,6 +186,11 @@
       "tagline": "CSV zu Markdown-Tabelle",
       "description": "Verwandelt CSV in eine perfekt ausgerichtete Markdown-Tabelle mit wählbarer Ausrichtung pro Spalte. Trennzeichen wird automatisch erkannt, Eingaben ohne Kopfzeile werden unterstützt. Alles im Browser."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Wasserzeichen für Bilder",
+      "description": "Versehen Sie ein Foto mit einem Text- oder Bild-Wasserzeichen mit Position, Deckkraft, Drehung, Größe und Kachelmuster. Live-Vorschau. Alles im Browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatieren und validieren",
@@ -947,6 +952,63 @@
     },
     "errors": {
       "clipboard": "Konnte nicht in die Zwischenablage kopiert werden."
+    }
+  },
+  "brandy": {
+    "dropzone": {
+      "base": "Ziehen Sie ein Bild hierher oder klicken Sie, um eines auszuwählen",
+      "watermark": "Ziehen Sie ein Bild als Wasserzeichen hierher"
+    },
+    "kind": {
+      "text": "Text",
+      "image": "Bild"
+    },
+    "text": {
+      "text": "Wasserzeichen-Text",
+      "placeholder": "z. B. © TanukiBox",
+      "font": "Schriftart",
+      "size": "Größe",
+      "color": "Farbe",
+      "bold": "Fett",
+      "italic": "Kursiv"
+    },
+    "image": {
+      "width": "Breite"
+    },
+    "shared": {
+      "position": "Position",
+      "rotation": "Drehung",
+      "opacity": "Deckkraft",
+      "margin": "Rand",
+      "tileGap": "Kachelabstand"
+    },
+    "positions": {
+      "center": "Mitte",
+      "topLeft": "Oben links",
+      "top": "Oben",
+      "topRight": "Oben rechts",
+      "left": "Links",
+      "right": "Rechts",
+      "bottomLeft": "Unten links",
+      "bottom": "Unten",
+      "bottomRight": "Unten rechts",
+      "tiled": "Kachel (wiederholt)"
+    },
+    "format": {
+      "label": "Format",
+      "png": "PNG",
+      "jpeg": "JPG",
+      "webp": "WebP",
+      "quality": "Qualität"
+    },
+    "actions": {
+      "download": "Herunterladen",
+      "processing": "Verarbeitung…",
+      "change": "Ändern"
+    },
+    "errors": {
+      "notImage": "{name} ist kein gültiges Bild.",
+      "generic": "Bild konnte nicht verarbeitet werden."
     }
   },
   "mdtably": {

@@ -181,6 +181,11 @@
       "tagline": "Da CSV a tabella Markdown",
       "description": "Converti CSV in una tabella Markdown perfettamente allineata, con allineamento per colonna a tua scelta. Rileva automaticamente il separatore e supporta input senza intestazione. Tutto nel tuo browser."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Filigrana sulle immagini",
+      "description": "Applica una filigrana di testo o immagine su una foto con posizione, opacità, rotazione, dimensione e pattern a mosaico. Anteprima in tempo reale. Tutto nel tuo browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatta e valida JSON",
@@ -912,6 +917,63 @@
     },
     "errors": {
       "clipboard": "Impossibile copiare negli appunti."
+    }
+  },
+  "brandy": {
+    "dropzone": {
+      "base": "Trascina un'immagine qui o clicca per selezionarla",
+      "watermark": "Trascina un'immagine da usare come filigrana"
+    },
+    "kind": {
+      "text": "Testo",
+      "image": "Immagine"
+    },
+    "text": {
+      "text": "Testo della filigrana",
+      "placeholder": "es. © TanukiBox",
+      "font": "Font",
+      "size": "Dimensione",
+      "color": "Colore",
+      "bold": "Grassetto",
+      "italic": "Corsivo"
+    },
+    "image": {
+      "width": "Larghezza"
+    },
+    "shared": {
+      "position": "Posizione",
+      "rotation": "Rotazione",
+      "opacity": "Opacità",
+      "margin": "Margine",
+      "tileGap": "Spaziatura mosaico"
+    },
+    "positions": {
+      "center": "Centro",
+      "topLeft": "Alto sinistra",
+      "top": "Alto",
+      "topRight": "Alto destra",
+      "left": "Sinistra",
+      "right": "Destra",
+      "bottomLeft": "Basso sinistra",
+      "bottom": "Basso",
+      "bottomRight": "Basso destra",
+      "tiled": "Mosaico (ripetuto)"
+    },
+    "format": {
+      "label": "Formato",
+      "png": "PNG",
+      "jpeg": "JPG",
+      "webp": "WebP",
+      "quality": "Qualità"
+    },
+    "actions": {
+      "download": "Scarica",
+      "processing": "Elaborazione…",
+      "change": "Cambia"
+    },
+    "errors": {
+      "notImage": "{name} non è un'immagine valida.",
+      "generic": "Impossibile elaborare l'immagine."
     }
   },
   "mdtably": {

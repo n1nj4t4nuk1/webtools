@@ -186,6 +186,11 @@
       "tagline": "CSV în tabel Markdown",
       "description": "Transformă CSV într-un tabel Markdown aliniat perfect, cu aliniere configurabilă pe fiecare coloană. Detectează automat separatorul și suportă date fără antet. Totul în browserul tău."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Filigran pentru imagini",
+      "description": "Aplică un filigran text sau imagine pe o fotografie cu poziție, opacitate, rotație, dimensiune și model mozaic. Previzualizare live. Totul în browserul tău."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatează și validează JSON",
@@ -948,6 +953,26 @@
     "errors": {
       "clipboard": "Nu s-a putut copia în clipboard."
     }
+  },
+  "brandy": {
+    "dropzone": { "base": "Trage o imagine aici sau apasă pentru a selecta una", "watermark": "Trage o imagine pentru a o folosi ca filigran" },
+    "kind": { "text": "Text", "image": "Imagine" },
+    "text": {
+      "text": "Text filigran",
+      "placeholder": "ex. © TanukiBox",
+      "font": "Font", "size": "Dimensiune", "color": "Culoare", "bold": "Aldin", "italic": "Cursiv"
+    },
+    "image": { "width": "Lățime" },
+    "shared": { "position": "Poziție", "rotation": "Rotație", "opacity": "Opacitate", "margin": "Margine", "tileGap": "Spațiere mozaic" },
+    "positions": {
+      "center": "Centru", "topLeft": "Sus stânga", "top": "Sus", "topRight": "Sus dreapta",
+      "left": "Stânga", "right": "Dreapta",
+      "bottomLeft": "Jos stânga", "bottom": "Jos", "bottomRight": "Jos dreapta",
+      "tiled": "Mozaic (repetat)"
+    },
+    "format": { "label": "Format", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "Calitate" },
+    "actions": { "download": "Descarcă", "processing": "Se procesează…", "change": "Schimbă" },
+    "errors": { "notImage": "{name} nu este o imagine validă.", "generic": "Nu s-a putut procesa imaginea." }
   },
   "mdtably": {
     "input": { "label": "Intrare CSV", "placeholder": "Lipește CSV sau apasă un exemplu…" },

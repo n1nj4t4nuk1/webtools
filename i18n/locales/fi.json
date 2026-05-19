@@ -186,6 +186,11 @@
       "tagline": "CSV Markdown-taulukoksi",
       "description": "Muunna CSV täydellisesti tasatuksi Markdown-taulukoksi sarakekohtaisella tasauksella. Tunnistaa erottimen automaattisesti ja tukee otsikotonta syötettä. Kaikki selaimessasi."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Vesileimaa kuvia",
+      "description": "Lisää teksti- tai kuvavesileima valokuvaan: sijainti, läpinäkyvyys, kierto, koko ja toistuva kuviointi. Live-esikatselu. Kaikki selaimessasi."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Muotoile ja validoi JSON",
@@ -948,6 +953,46 @@
     "errors": {
       "clipboard": "Leikepöydälle ei voitu kopioida."
     }
+  },
+  "brandy": {
+    "dropzone": { "base": "Vedä kuva tähän tai napsauta valitaksesi", "watermark": "Vedä kuva käytettäväksi vesileimana" },
+    "kind": { "text": "Teksti", "image": "Kuva" },
+    "text": {
+      "text": "Vesileiman teksti",
+      "placeholder": "esim. © TanukiBox",
+      "font": "Fontti",
+      "size": "Koko",
+      "color": "Väri",
+      "bold": "Lihavoitu",
+      "italic": "Kursiivi"
+    },
+    "image": { "width": "Leveys" },
+    "shared": {
+      "position": "Sijainti",
+      "rotation": "Kierto",
+      "opacity": "Läpinäkyvyys",
+      "margin": "Marginaali",
+      "tileGap": "Ruudukon väli"
+    },
+    "positions": {
+      "center": "Keskellä",
+      "topLeft": "Ylhäällä vasemmalla",
+      "top": "Ylhäällä",
+      "topRight": "Ylhäällä oikealla",
+      "left": "Vasemmalla",
+      "right": "Oikealla",
+      "bottomLeft": "Alhaalla vasemmalla",
+      "bottom": "Alhaalla",
+      "bottomRight": "Alhaalla oikealla",
+      "tiled": "Toistettu (ruudukko)"
+    },
+    "format": {
+      "label": "Muoto",
+      "png": "PNG", "jpeg": "JPG", "webp": "WebP",
+      "quality": "Laatu"
+    },
+    "actions": { "download": "Lataa", "processing": "Käsitellään…", "change": "Vaihda" },
+    "errors": { "notImage": "{name} ei ole kelvollinen kuva.", "generic": "Kuvaa ei voitu käsitellä." }
   },
   "mdtably": {
     "input": { "label": "CSV-syöte", "placeholder": "Liitä CSV tai napsauta esimerkkiä…" },

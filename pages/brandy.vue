@@ -1,0 +1,20 @@
+<script setup lang="ts">
+/** Route wrapper for the Brandy tool: sets the tab title and mounts <Brandy />. */
+const { t } = useI18n()
+
+useHead({
+  title: () => `TanukiBox · ${t('tools.brandy.name')}`,
+  meta: [{ name: 'description', content: () => t('tools.brandy.description') }],
+})
+</script>
+
+<template>
+  <section class="page">
+    <header class="page-header">
+      <h1>{{ t('tools.brandy.tagline') }}</h1>
+      <p class="lead">{{ t('tools.brandy.description') }}</p>
+    </header>
+
+    <Brandy />
+  </section>
+</template>

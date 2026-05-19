@@ -186,6 +186,11 @@
       "tagline": "CSV til Markdown-tabel",
       "description": "Forvandl CSV til en perfekt justeret Markdown-tabel med justering pr. kolonne. Registrerer automatisk skilletegnet og understøtter input uden overskrift. Alt i din browser."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Vandmærke på billeder",
+      "description": "Stempl et tekst- eller billedvandmærke på et foto med position, gennemsigtighed, rotation, størrelse og fliselagt mønster. Live forhåndsvisning. Alt i din browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatér og valider JSON",
@@ -947,6 +952,63 @@
     },
     "errors": {
       "clipboard": "Kunne ikke kopiere til udklipsholderen."
+    }
+  },
+  "brandy": {
+    "dropzone": {
+      "base": "Træk et billede hertil eller klik for at vælge",
+      "watermark": "Træk et billede, der skal bruges som vandmærke"
+    },
+    "kind": {
+      "text": "Tekst",
+      "image": "Billede"
+    },
+    "text": {
+      "text": "Vandmærketekst",
+      "placeholder": "f.eks. © TanukiBox",
+      "font": "Skrifttype",
+      "size": "Størrelse",
+      "color": "Farve",
+      "bold": "Fed",
+      "italic": "Kursiv"
+    },
+    "image": {
+      "width": "Bredde"
+    },
+    "shared": {
+      "position": "Placering",
+      "rotation": "Rotation",
+      "opacity": "Gennemsigtighed",
+      "margin": "Margen",
+      "tileGap": "Flise-afstand"
+    },
+    "positions": {
+      "center": "Centreret",
+      "topLeft": "Øverst til venstre",
+      "top": "Øverst",
+      "topRight": "Øverst til højre",
+      "left": "Venstre",
+      "right": "Højre",
+      "bottomLeft": "Nederst til venstre",
+      "bottom": "Nederst",
+      "bottomRight": "Nederst til højre",
+      "tiled": "Fliselagt (gentaget)"
+    },
+    "format": {
+      "label": "Format",
+      "png": "PNG",
+      "jpeg": "JPG",
+      "webp": "WebP",
+      "quality": "Kvalitet"
+    },
+    "actions": {
+      "download": "Download",
+      "processing": "Behandler…",
+      "change": "Skift"
+    },
+    "errors": {
+      "notImage": "{name} er ikke et gyldigt billede.",
+      "generic": "Kunne ikke behandle billedet."
     }
   },
   "mdtably": {

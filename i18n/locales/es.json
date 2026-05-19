@@ -186,6 +186,11 @@
       "tagline": "CSV a tabla Markdown",
       "description": "Convierte CSV en una tabla Markdown perfectamente alineada con la alineación que elijas por columna. Auto-detecta el separador y soporta cabecera o no. Todo en tu navegador."
     },
+    "brandy": {
+      "name": "Brandy",
+      "tagline": "Marca de agua en imágenes",
+      "description": "Aplica una marca de agua de texto o imagen sobre una foto con posición, opacidad, rotación, tamaño y patrón en mosaico. Vista previa en vivo. Todo en tu navegador."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatea y valida JSON",
@@ -947,6 +952,63 @@
     },
     "errors": {
       "clipboard": "No se pudo copiar al portapapeles."
+    }
+  },
+  "brandy": {
+    "dropzone": {
+      "base": "Arrastra una imagen aquí o haz clic para seleccionarla",
+      "watermark": "Arrastra una imagen para usar como marca de agua"
+    },
+    "kind": {
+      "text": "Texto",
+      "image": "Imagen"
+    },
+    "text": {
+      "text": "Texto de la marca de agua",
+      "placeholder": "p. ej. © TanukiBox",
+      "font": "Fuente",
+      "size": "Tamaño",
+      "color": "Color",
+      "bold": "Negrita",
+      "italic": "Cursiva"
+    },
+    "image": {
+      "width": "Ancho"
+    },
+    "shared": {
+      "position": "Posición",
+      "rotation": "Rotación",
+      "opacity": "Opacidad",
+      "margin": "Margen",
+      "tileGap": "Espaciado del mosaico"
+    },
+    "positions": {
+      "center": "Centro",
+      "topLeft": "Arriba izquierda",
+      "top": "Arriba",
+      "topRight": "Arriba derecha",
+      "left": "Izquierda",
+      "right": "Derecha",
+      "bottomLeft": "Abajo izquierda",
+      "bottom": "Abajo",
+      "bottomRight": "Abajo derecha",
+      "tiled": "Mosaico (repetido)"
+    },
+    "format": {
+      "label": "Formato",
+      "png": "PNG",
+      "jpeg": "JPG",
+      "webp": "WebP",
+      "quality": "Calidad"
+    },
+    "actions": {
+      "download": "Descargar",
+      "processing": "Procesando…",
+      "change": "Cambiar"
+    },
+    "errors": {
+      "notImage": "{name} no es una imagen válida.",
+      "generic": "No se pudo procesar la imagen."
     }
   },
   "mdtably": {
