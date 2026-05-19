@@ -191,6 +191,11 @@
       "tagline": "Números aleatórios com seed",
       "description": "Gerador pseudoaleatório reproduzível: mesmo seed = mesma sequência. Inteiros, decimais ou sorteio de uma lista, com ou sem reposição. Algoritmos mulberry32 e xoshiro128**. Tudo no seu navegador."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Recortar imagens",
+      "description": "Selecione a região arrastando ou com valores exatos em pixels. Trave a proporção (1:1, 4:3, 16:9…). Exporte sem perdas em PNG ou recodifique em JPG/WebP. Tudo no seu navegador."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formate e valide JSON",
@@ -922,6 +927,46 @@
     },
     "errors": {
       "clipboard": "Não foi possível copiar para a área de transferência."
+    }
+  },
+  "croppy": {
+    "dropzone": "Arraste uma imagem aqui ou clique para selecionar",
+    "hint": "Arraste para criar, mova o retângulo ou use as alças. Também é possível editar X, Y, largura e altura.",
+    "aspect": {
+      "label": "Proporção",
+      "free": "Livre",
+      "square": "1:1 (quadrado)",
+      "r4_3": "4:3",
+      "r3_4": "3:4",
+      "r16_9": "16:9",
+      "r9_16": "9:16",
+      "r3_2": "3:2",
+      "r2_3": "2:3"
+    },
+    "dim": {
+      "width": "Largura",
+      "height": "Altura"
+    },
+    "format": {
+      "label": "Formato",
+      "png": "PNG (sem perda)",
+      "jpeg": "JPG (com perda)",
+      "webp": "WebP",
+      "quality": "Qualidade"
+    },
+    "quality": {
+      "lossless": "PNG preserva os pixels exatamente (sem perda).",
+      "lossy": "JPG e WebP recodificam a imagem, adicionando uma perda mínima."
+    },
+    "actions": {
+      "download": "Baixar recorte",
+      "processing": "Processando…",
+      "change": "Trocar imagem",
+      "reset": "Redefinir seleção"
+    },
+    "errors": {
+      "notImage": "{name} não é uma imagem válida.",
+      "generic": "Não foi possível processar a imagem."
     }
   },
   "randy": {

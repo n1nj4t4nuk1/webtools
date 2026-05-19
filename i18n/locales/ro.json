@@ -196,6 +196,11 @@
       "tagline": "Numere aleatorii cu seed",
       "description": "Generator pseudoaleator reproductibil: același seed = aceeași secvență. Numere întregi, zecimale sau alegere dintr-o listă, cu sau fără repetare. Algoritmi mulberry32 și xoshiro128**. Totul în browserul tău."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Decupează imagini",
+      "description": "Selectează zona prin tragere sau cu valori exacte în pixeli. Blochează raportul de aspect (1:1, 4:3, 16:9…). Exportă PNG fără pierderi sau recodează ca JPG/WebP. Totul în browserul tău."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatează și validează JSON",
@@ -958,6 +963,27 @@
     "errors": {
       "clipboard": "Nu s-a putut copia în clipboard."
     }
+  },
+  "croppy": {
+    "dropzone": "Trage o imagine aici sau dă clic pentru a selecta una",
+    "hint": "Trage pentru a crea, mută dreptunghiul sau apucă mânerele. Poți edita și X, Y, lățime și înălțime.",
+    "aspect": {
+      "label": "Raport de aspect",
+      "free": "Liber", "square": "1:1 (pătrat)",
+      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+    },
+    "dim": { "width": "Lățime", "height": "Înălțime" },
+    "format": {
+      "label": "Format", "png": "PNG (fără pierderi)", "jpeg": "JPG (cu pierderi)", "webp": "WebP", "quality": "Calitate"
+    },
+    "quality": {
+      "lossless": "PNG păstrează pixelii exact (fără pierderi de calitate).",
+      "lossy": "JPG și WebP recodează imaginea, adăugând o pierdere minimă de calitate."
+    },
+    "actions": {
+      "download": "Descarcă decupajul", "processing": "Se procesează…", "change": "Schimbă imaginea", "reset": "Resetează selecția"
+    },
+    "errors": { "notImage": "{name} nu este o imagine validă.", "generic": "Imaginea nu a putut fi procesată." }
   },
   "randy": {
     "seed": {

@@ -196,6 +196,11 @@
       "tagline": "Zufallszahlen mit Seed",
       "description": "Reproduzierbarer Pseudozufallsgenerator: gleicher Seed = gleiche Folge. Ganzzahlen, Dezimalzahlen oder Zufallsauswahl aus einer Liste, mit oder ohne Zurücklegen. Algorithmen mulberry32 und xoshiro128**. Alles im Browser."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Bilder zuschneiden",
+      "description": "Wählen Sie den Bereich durch Ziehen oder mit exakten Pixelwerten. Sperren Sie das Seitenverhältnis (1:1, 4:3, 16:9…). Verlustfrei als PNG exportieren oder als JPG/WebP neu kodieren. Alles im Browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatieren und validieren",
@@ -957,6 +962,46 @@
     },
     "errors": {
       "clipboard": "Konnte nicht in die Zwischenablage kopiert werden."
+    }
+  },
+  "croppy": {
+    "dropzone": "Ziehen Sie ein Bild hierher oder klicken Sie, um eines auszuwählen",
+    "hint": "Ziehen zum Erstellen, das Rechteck verschieben oder an den Griffen ziehen. X, Y, Breite und Höhe lassen sich auch direkt bearbeiten.",
+    "aspect": {
+      "label": "Seitenverhältnis",
+      "free": "Frei",
+      "square": "1:1 (quadratisch)",
+      "r4_3": "4:3",
+      "r3_4": "3:4",
+      "r16_9": "16:9",
+      "r9_16": "9:16",
+      "r3_2": "3:2",
+      "r2_3": "2:3"
+    },
+    "dim": {
+      "width": "Breite",
+      "height": "Höhe"
+    },
+    "format": {
+      "label": "Format",
+      "png": "PNG (verlustfrei)",
+      "jpeg": "JPG (verlustbehaftet)",
+      "webp": "WebP",
+      "quality": "Qualität"
+    },
+    "quality": {
+      "lossless": "PNG bewahrt die Pixel exakt (kein Qualitätsverlust).",
+      "lossy": "JPG und WebP kodieren neu, was minimalen Qualitätsverlust bedeutet."
+    },
+    "actions": {
+      "download": "Zuschnitt herunterladen",
+      "processing": "Verarbeitung…",
+      "change": "Bild ändern",
+      "reset": "Auswahl zurücksetzen"
+    },
+    "errors": {
+      "notImage": "{name} ist kein gültiges Bild.",
+      "generic": "Bild konnte nicht verarbeitet werden."
     }
   },
   "randy": {

@@ -191,6 +191,11 @@
       "tagline": "带种子的随机数",
       "description": "可重现的伪随机生成器：相同种子 = 相同序列。整数、浮点数或从列表中选取，可有放回或无放回。mulberry32 和 xoshiro128** 算法。全部在您的浏览器中完成。"
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "裁剪图片",
+      "description": "通过拖动或精确像素值选择区域。锁定宽高比（1:1、4:3、16:9…）。导出无损 PNG 或重新编码为 JPG/WebP。全部在您的浏览器中完成。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
@@ -923,6 +928,27 @@
     "errors": {
       "clipboard": "无法复制到剪贴板。"
     }
+  },
+  "croppy": {
+    "dropzone": "将图片拖到此处或点击选择",
+    "hint": "拖动以创建，移动矩形或抓住手柄。您也可以编辑 X、Y、宽度和高度。",
+    "aspect": {
+      "label": "宽高比",
+      "free": "自由", "square": "1:1（正方形）",
+      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+    },
+    "dim": { "width": "宽度", "height": "高度" },
+    "format": {
+      "label": "格式", "png": "PNG（无损）", "jpeg": "JPG（有损）", "webp": "WebP", "quality": "质量"
+    },
+    "quality": {
+      "lossless": "PNG 完全保留像素（无质量损失）。",
+      "lossy": "JPG 和 WebP 会重新编码图片，带来极小的质量损失。"
+    },
+    "actions": {
+      "download": "下载裁剪", "processing": "处理中…", "change": "更换图片", "reset": "重置选区"
+    },
+    "errors": { "notImage": "{name} 不是有效的图片。", "generic": "无法处理图片。" }
   },
   "randy": {
     "seed": {

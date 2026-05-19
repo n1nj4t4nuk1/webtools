@@ -196,6 +196,11 @@
       "tagline": "Số ngẫu nhiên có seed",
       "description": "Bộ tạo giả ngẫu nhiên có thể tái lập: cùng seed = cùng chuỗi. Số nguyên, số thực hoặc chọn từ danh sách, có hoặc không có lặp lại. Thuật toán mulberry32 và xoshiro128**. Tất cả trong trình duyệt của bạn."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Cắt ảnh",
+      "description": "Chọn vùng bằng cách kéo hoặc bằng giá trị pixel chính xác. Khóa tỉ lệ khung hình (1:1, 4:3, 16:9…). Xuất PNG không mất dữ liệu hoặc mã hóa lại thành JPG/WebP. Tất cả trong trình duyệt của bạn."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Định dạng và xác thực JSON",
@@ -958,6 +963,27 @@
     "errors": {
       "clipboard": "Không thể sao chép vào clipboard."
     }
+  },
+  "croppy": {
+    "dropzone": "Kéo một hình ảnh vào đây hoặc nhấp để chọn",
+    "hint": "Kéo để tạo, di chuyển hình chữ nhật hoặc nắm các tay cầm. Bạn cũng có thể chỉnh sửa X, Y, chiều rộng và chiều cao.",
+    "aspect": {
+      "label": "Tỉ lệ khung hình",
+      "free": "Tự do", "square": "1:1 (vuông)",
+      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+    },
+    "dim": { "width": "Chiều rộng", "height": "Chiều cao" },
+    "format": {
+      "label": "Định dạng", "png": "PNG (không mất dữ liệu)", "jpeg": "JPG (mất dữ liệu)", "webp": "WebP", "quality": "Chất lượng"
+    },
+    "quality": {
+      "lossless": "PNG bảo toàn các pixel chính xác (không mất chất lượng).",
+      "lossy": "JPG và WebP mã hóa lại hình ảnh, thêm mất mát chất lượng tối thiểu."
+    },
+    "actions": {
+      "download": "Tải xuống phần đã cắt", "processing": "Đang xử lý…", "change": "Đổi hình ảnh", "reset": "Đặt lại vùng chọn"
+    },
+    "errors": { "notImage": "{name} không phải là hình ảnh hợp lệ.", "generic": "Không thể xử lý hình ảnh." }
   },
   "randy": {
     "seed": {

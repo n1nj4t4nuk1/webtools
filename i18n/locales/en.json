@@ -196,6 +196,11 @@
       "tagline": "Seeded random numbers",
       "description": "Reproducible pseudo-random generator: same seed = same sequence. Integers, floats or pick from a list, with or without replacement. mulberry32 and xoshiro128** algorithms. All in your browser."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Crop images",
+      "description": "Select the region by dragging or with exact pixel values. Lock the aspect ratio (1:1, 4:3, 16:9…). Export lossless PNG or re-encode as JPG/WebP. All in your browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format and validate JSON",
@@ -957,6 +962,46 @@
     },
     "errors": {
       "clipboard": "Could not copy to clipboard."
+    }
+  },
+  "croppy": {
+    "dropzone": "Drag an image here or click to select one",
+    "hint": "Drag to create, move the rectangle or grab the handles. You can also edit X, Y, width and height.",
+    "aspect": {
+      "label": "Aspect ratio",
+      "free": "Free",
+      "square": "1:1 (square)",
+      "r4_3": "4:3",
+      "r3_4": "3:4",
+      "r16_9": "16:9",
+      "r9_16": "9:16",
+      "r3_2": "3:2",
+      "r2_3": "2:3"
+    },
+    "dim": {
+      "width": "Width",
+      "height": "Height"
+    },
+    "format": {
+      "label": "Format",
+      "png": "PNG (lossless)",
+      "jpeg": "JPG (lossy)",
+      "webp": "WebP",
+      "quality": "Quality"
+    },
+    "quality": {
+      "lossless": "PNG preserves the pixels exactly (no quality loss).",
+      "lossy": "JPG and WebP re-encode the image, adding minimal quality loss."
+    },
+    "actions": {
+      "download": "Download crop",
+      "processing": "Processing…",
+      "change": "Change image",
+      "reset": "Reset selection"
+    },
+    "errors": {
+      "notImage": "{name} is not a valid image.",
+      "generic": "Could not process the image."
     }
   },
   "randy": {

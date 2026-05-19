@@ -196,6 +196,11 @@
       "tagline": "Willekeurige getallen met seed",
       "description": "Reproduceerbare pseudo-willekeurige generator: dezelfde seed = dezelfde reeks. Gehele getallen, decimalen of kiezen uit een lijst, met of zonder herhaling. mulberry32 en xoshiro128** algoritmen. Alles in uw browser."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Afbeeldingen bijsnijden",
+      "description": "Selecteer het gebied door te slepen of met exacte pixelwaarden. Vergrendel de beeldverhouding (1:1, 4:3, 16:9…). Exporteer verliesvrije PNG of codeer opnieuw als JPG/WebP. Alles in uw browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatteren en valideren",
@@ -958,6 +963,27 @@
     "errors": {
       "clipboard": "Kon niet naar het klembord kopiëren."
     }
+  },
+  "croppy": {
+    "dropzone": "Sleep een afbeelding hierheen of klik om er een te selecteren",
+    "hint": "Sleep om te tekenen, verplaats de rechthoek of pak de handgrepen. U kunt ook X, Y, breedte en hoogte bewerken.",
+    "aspect": {
+      "label": "Beeldverhouding",
+      "free": "Vrij", "square": "1:1 (vierkant)",
+      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+    },
+    "dim": { "width": "Breedte", "height": "Hoogte" },
+    "format": {
+      "label": "Formaat", "png": "PNG (verliesvrij)", "jpeg": "JPG (met verlies)", "webp": "WebP", "quality": "Kwaliteit"
+    },
+    "quality": {
+      "lossless": "PNG behoudt de pixels exact (geen kwaliteitsverlies).",
+      "lossy": "JPG en WebP coderen de afbeelding opnieuw, met minimaal kwaliteitsverlies."
+    },
+    "actions": {
+      "download": "Bijsnede downloaden", "processing": "Bezig met verwerken…", "change": "Afbeelding wijzigen", "reset": "Selectie resetten"
+    },
+    "errors": { "notImage": "{name} is geen geldige afbeelding.", "generic": "Kon de afbeelding niet verwerken." }
   },
   "randy": {
     "seed": {

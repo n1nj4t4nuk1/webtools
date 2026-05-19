@@ -196,6 +196,11 @@
       "tagline": "Tilfeldige tall med seed",
       "description": "Reproduserbar pseudotilfeldig generator: samme seed = samme sekvens. Heltall, desimaltall eller plukk fra en liste, med eller uten tilbakelegging. Algoritmer mulberry32 og xoshiro128**. Alt i nettleseren din."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Beskjær bilder",
+      "description": "Velg området ved å dra eller med eksakte pikselverdier. Lås sideforholdet (1:1, 4:3, 16:9…). Eksporter tapsfri PNG eller omkod til JPG/WebP. Alt i nettleseren din."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater og valider JSON",
@@ -958,6 +963,27 @@
     "errors": {
       "clipboard": "Kunne ikke kopiere til utklippstavlen."
     }
+  },
+  "croppy": {
+    "dropzone": "Dra et bilde hit eller klikk for å velge et",
+    "hint": "Dra for å opprette, flytt rektangelet eller ta tak i håndtakene. Du kan også redigere X, Y, bredde og høyde.",
+    "aspect": {
+      "label": "Sideforhold",
+      "free": "Fritt", "square": "1:1 (kvadrat)",
+      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+    },
+    "dim": { "width": "Bredde", "height": "Høyde" },
+    "format": {
+      "label": "Format", "png": "PNG (tapsfri)", "jpeg": "JPG (med tap)", "webp": "WebP", "quality": "Kvalitet"
+    },
+    "quality": {
+      "lossless": "PNG bevarer pikslene nøyaktig (ingen kvalitetstap).",
+      "lossy": "JPG og WebP omkoder bildet og legger til minimalt kvalitetstap."
+    },
+    "actions": {
+      "download": "Last ned utsnitt", "processing": "Behandler…", "change": "Bytt bilde", "reset": "Nullstill utvalg"
+    },
+    "errors": { "notImage": "{name} er ikke et gyldig bilde.", "generic": "Kunne ikke behandle bildet." }
   },
   "randy": {
     "seed": {

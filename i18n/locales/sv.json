@@ -196,6 +196,11 @@
       "tagline": "Slumptal med seed",
       "description": "Reproducerbar pseudoslumpgenerator: samma seed = samma sekvens. Heltal, flyttal eller val från en lista, med eller utan återläggning. Algoritmerna mulberry32 och xoshiro128**. Allt i din webbläsare."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Beskär bilder",
+      "description": "Välj området genom att dra eller med exakta pixelvärden. Lås bildförhållandet (1:1, 4:3, 16:9…). Exportera förlustfritt som PNG eller koda om till JPG/WebP. Allt i din webbläsare."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatera och validera JSON",
@@ -957,6 +962,46 @@
     },
     "errors": {
       "clipboard": "Kunde inte kopiera till urklipp."
+    }
+  },
+  "croppy": {
+    "dropzone": "Dra en bild hit eller klicka för att välja en",
+    "hint": "Dra för att skapa, flytta rektangeln eller ta tag i handtagen. Du kan också redigera X, Y, bredd och höjd.",
+    "aspect": {
+      "label": "Bildförhållande",
+      "free": "Fritt",
+      "square": "1:1 (kvadrat)",
+      "r4_3": "4:3",
+      "r3_4": "3:4",
+      "r16_9": "16:9",
+      "r9_16": "9:16",
+      "r3_2": "3:2",
+      "r2_3": "2:3"
+    },
+    "dim": {
+      "width": "Bredd",
+      "height": "Höjd"
+    },
+    "format": {
+      "label": "Format",
+      "png": "PNG (förlustfritt)",
+      "jpeg": "JPG (förlustbehäftat)",
+      "webp": "WebP",
+      "quality": "Kvalitet"
+    },
+    "quality": {
+      "lossless": "PNG bevarar pixlarna exakt (ingen kvalitetsförlust).",
+      "lossy": "JPG och WebP kodar om bilden och lägger till minimal kvalitetsförlust."
+    },
+    "actions": {
+      "download": "Ladda ner beskärning",
+      "processing": "Bearbetar…",
+      "change": "Byt bild",
+      "reset": "Återställ markering"
+    },
+    "errors": {
+      "notImage": "{name} är inte en giltig bild.",
+      "generic": "Kunde inte bearbeta bilden."
     }
   },
   "randy": {

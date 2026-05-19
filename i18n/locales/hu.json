@@ -196,6 +196,11 @@
       "tagline": "Mag alapú véletlen számok",
       "description": "Reprodukálható pszeudo-véletlen generátor: ugyanaz a mag = ugyanaz a sorozat. Egész számok, lebegőpontos számok vagy választás listából, visszatevéssel vagy anélkül. mulberry32 és xoshiro128** algoritmusok. Mindez a böngészőben."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Képek körülvágása",
+      "description": "Válassza ki a területet húzással vagy pontos pixelértékekkel. Rögzítse a képarányt (1:1, 4:3, 16:9…). Exportáljon veszteségmentes PNG-t, vagy kódolja át JPG/WebP formátumba. Mindez a böngészőben."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formázása és érvényesítése",
@@ -958,6 +963,29 @@
     "errors": {
       "clipboard": "Nem sikerült a vágólapra másolni."
     }
+  },
+  "croppy": {
+    "dropzone": "Húzzon ide egy képet, vagy kattintson a kiválasztáshoz",
+    "hint": "Húzva hozza létre, mozgassa a téglalapot, vagy fogja meg a fogantyúkat. Szerkesztheti az X-, Y-, szélesség- és magasság-értékeket is.",
+    "aspect": {
+      "label": "Képarány",
+      "free": "Szabad", "square": "1:1 (négyzet)",
+      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+    },
+    "dim": { "width": "Szélesség", "height": "Magasság" },
+    "format": {
+      "label": "Formátum",
+      "png": "PNG (veszteségmentes)", "jpeg": "JPG (veszteséges)", "webp": "WebP",
+      "quality": "Minőség"
+    },
+    "quality": {
+      "lossless": "A PNG pontosan megőrzi a pixeleket (nincs minőségvesztés).",
+      "lossy": "A JPG és a WebP újrakódolja a képet, ami minimális minőségvesztéssel jár."
+    },
+    "actions": {
+      "download": "Kivágás letöltése", "processing": "Feldolgozás…", "change": "Kép cseréje", "reset": "Kijelölés visszaállítása"
+    },
+    "errors": { "notImage": "A(z) {name} nem érvényes kép.", "generic": "A képet nem sikerült feldolgozni." }
   },
   "randy": {
     "seed": {

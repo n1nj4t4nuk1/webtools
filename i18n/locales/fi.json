@@ -196,6 +196,11 @@
       "tagline": "Siemenistä satunnaislukuja",
       "description": "Toistettava pseudosatunnaisgeneraattori: sama siemen = sama jono. Kokonaislukuja, liukulukuja tai poimintaa listasta, takaisinpanolla tai ilman. Algoritmit mulberry32 ja xoshiro128**. Kaikki selaimessasi."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Rajaa kuvia",
+      "description": "Valitse alue raahaamalla tai tarkoilla pikseliarvoilla. Lukitse kuvasuhde (1:1, 4:3, 16:9…). Vie häviötön PNG tai koodaa uudelleen JPG- tai WebP-muotoon. Kaikki selaimessasi."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Muotoile ja validoi JSON",
@@ -958,6 +963,29 @@
     "errors": {
       "clipboard": "Leikepöydälle ei voitu kopioida."
     }
+  },
+  "croppy": {
+    "dropzone": "Vedä kuva tähän tai napsauta valitaksesi",
+    "hint": "Vedä luodaksesi, siirrä suorakulmiota tai tartu kahvoihin. Voit myös muokata X-, Y-, leveys- ja korkeusarvoja.",
+    "aspect": {
+      "label": "Kuvasuhde",
+      "free": "Vapaa", "square": "1:1 (neliö)",
+      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+    },
+    "dim": { "width": "Leveys", "height": "Korkeus" },
+    "format": {
+      "label": "Muoto",
+      "png": "PNG (häviötön)", "jpeg": "JPG (häviöllinen)", "webp": "WebP",
+      "quality": "Laatu"
+    },
+    "quality": {
+      "lossless": "PNG säilyttää pikselit täsmälleen (ei laadun heikkenemistä).",
+      "lossy": "JPG ja WebP koodaavat kuvan uudelleen, mikä aiheuttaa pienen laadun heikkenemisen."
+    },
+    "actions": {
+      "download": "Lataa rajaus", "processing": "Käsitellään…", "change": "Vaihda kuva", "reset": "Nollaa valinta"
+    },
+    "errors": { "notImage": "{name} ei ole kelvollinen kuva.", "generic": "Kuvaa ei voitu käsitellä." }
   },
   "randy": {
     "seed": {

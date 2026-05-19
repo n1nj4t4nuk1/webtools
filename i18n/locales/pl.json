@@ -196,6 +196,11 @@
       "tagline": "Liczby losowe z ziarnem",
       "description": "Powtarzalny generator pseudolosowy: to samo ziarno = ta sama sekwencja. Liczby całkowite, zmiennoprzecinkowe lub wybór z listy, z powtórzeniami lub bez. Algorytmy mulberry32 i xoshiro128**. Wszystko w Twojej przeglądarce."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Przycinaj obrazy",
+      "description": "Wybierz obszar przeciągając lub podając dokładne wartości w pikselach. Zablokuj proporcje (1:1, 4:3, 16:9…). Eksportuj bezstratny PNG lub przekoduj na JPG/WebP. Wszystko w Twojej przeglądarce."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatuj i waliduj JSON",
@@ -958,6 +963,27 @@
     "errors": {
       "clipboard": "Nie udało się skopiować do schowka."
     }
+  },
+  "croppy": {
+    "dropzone": "Przeciągnij obraz tutaj lub kliknij, aby wybrać",
+    "hint": "Przeciągnij, aby utworzyć, przesuń prostokąt lub chwyć uchwyty. Możesz też edytować X, Y, szerokość i wysokość.",
+    "aspect": {
+      "label": "Proporcje",
+      "free": "Dowolne", "square": "1:1 (kwadrat)",
+      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+    },
+    "dim": { "width": "Szerokość", "height": "Wysokość" },
+    "format": {
+      "label": "Format", "png": "PNG (bezstratny)", "jpeg": "JPG (stratny)", "webp": "WebP", "quality": "Jakość"
+    },
+    "quality": {
+      "lossless": "PNG zachowuje piksele dokładnie (bez utraty jakości).",
+      "lossy": "JPG i WebP przekodowują obraz, dodając minimalną utratę jakości."
+    },
+    "actions": {
+      "download": "Pobierz wycinek", "processing": "Przetwarzanie…", "change": "Zmień obraz", "reset": "Zresetuj zaznaczenie"
+    },
+    "errors": { "notImage": "{name} nie jest prawidłowym obrazem.", "generic": "Nie można przetworzyć obrazu." }
   },
   "randy": {
     "seed": {

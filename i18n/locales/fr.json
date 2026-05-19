@@ -196,6 +196,11 @@
       "tagline": "Nombres aléatoires avec graine",
       "description": "Générateur pseudo-aléatoire reproductible : même graine = même séquence. Entiers, décimaux ou tirage dans une liste, avec ou sans remise. Algorithmes mulberry32 et xoshiro128**. Tout dans votre navigateur."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Recadrer des images",
+      "description": "Sélectionnez la zone en glissant ou avec des valeurs exactes en pixels. Verrouillez le ratio (1:1, 4:3, 16:9…). Exportez en PNG sans perte ou réencodez en JPG/WebP. Tout dans votre navigateur."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater et valider du JSON",
@@ -957,6 +962,46 @@
     },
     "errors": {
       "clipboard": "Impossible de copier dans le presse-papiers."
+    }
+  },
+  "croppy": {
+    "dropzone": "Glissez une image ici ou cliquez pour la sélectionner",
+    "hint": "Glissez pour créer, déplacez le rectangle ou attrapez les poignées. Vous pouvez aussi éditer X, Y, largeur et hauteur.",
+    "aspect": {
+      "label": "Ratio",
+      "free": "Libre",
+      "square": "1:1 (carré)",
+      "r4_3": "4:3",
+      "r3_4": "3:4",
+      "r16_9": "16:9",
+      "r9_16": "9:16",
+      "r3_2": "3:2",
+      "r2_3": "2:3"
+    },
+    "dim": {
+      "width": "Largeur",
+      "height": "Hauteur"
+    },
+    "format": {
+      "label": "Format",
+      "png": "PNG (sans perte)",
+      "jpeg": "JPG (avec perte)",
+      "webp": "WebP",
+      "quality": "Qualité"
+    },
+    "quality": {
+      "lossless": "PNG préserve les pixels à l'identique (sans perte).",
+      "lossy": "JPG et WebP réencodent l'image, ajoutant une perte minimale."
+    },
+    "actions": {
+      "download": "Télécharger le recadrage",
+      "processing": "Traitement…",
+      "change": "Changer d'image",
+      "reset": "Réinitialiser la sélection"
+    },
+    "errors": {
+      "notImage": "{name} n'est pas une image valide.",
+      "generic": "Impossible de traiter l'image."
     }
   },
   "randy": {

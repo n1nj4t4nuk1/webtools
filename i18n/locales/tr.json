@@ -196,6 +196,11 @@
       "tagline": "Tohumlu rastgele sayılar",
       "description": "Yeniden üretilebilir sözde rastgele üretici: aynı tohum = aynı dizi. Tam sayılar, ondalık sayılar veya bir listeden seçim, tekrarlı veya tekrarsız. mulberry32 ve xoshiro128** algoritmaları. Hepsi tarayıcınızda."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Görselleri kırpın",
+      "description": "Bölgeyi sürükleyerek veya tam piksel değerleriyle seçin. En boy oranını kilitleyin (1:1, 4:3, 16:9…). Kayıpsız PNG dışa aktarın veya JPG/WebP olarak yeniden kodlayın. Hepsi tarayıcınızda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON'u biçimlendir ve doğrula",
@@ -958,6 +963,27 @@
     "errors": {
       "clipboard": "Panoya kopyalanamadı."
     }
+  },
+  "croppy": {
+    "dropzone": "Buraya bir görsel sürükleyin veya seçmek için tıklayın",
+    "hint": "Oluşturmak için sürükleyin, dikdörtgeni hareket ettirin veya tutamaçlardan tutun. X, Y, genişlik ve yüksekliği de düzenleyebilirsiniz.",
+    "aspect": {
+      "label": "En boy oranı",
+      "free": "Serbest", "square": "1:1 (kare)",
+      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+    },
+    "dim": { "width": "Genişlik", "height": "Yükseklik" },
+    "format": {
+      "label": "Format", "png": "PNG (kayıpsız)", "jpeg": "JPG (kayıplı)", "webp": "WebP", "quality": "Kalite"
+    },
+    "quality": {
+      "lossless": "PNG pikselleri tam olarak korur (kalite kaybı yoktur).",
+      "lossy": "JPG ve WebP görseli yeniden kodlar, minimum kalite kaybı ekler."
+    },
+    "actions": {
+      "download": "Kırpılmış görseli indir", "processing": "İşleniyor…", "change": "Görseli değiştir", "reset": "Seçimi sıfırla"
+    },
+    "errors": { "notImage": "{name} geçerli bir görsel değil.", "generic": "Görsel işlenemedi." }
   },
   "randy": {
     "seed": {

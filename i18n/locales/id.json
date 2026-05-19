@@ -196,6 +196,11 @@
       "tagline": "Angka acak dengan seed",
       "description": "Generator pseudo-acak yang dapat direproduksi: seed yang sama menghasilkan urutan yang sama. Bilangan bulat, desimal, atau pilih dari daftar, dengan atau tanpa pengulangan. Algoritma mulberry32 dan xoshiro128**. Semua di peramban Anda."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Pangkas gambar",
+      "description": "Pilih area dengan menyeret atau dengan nilai piksel yang tepat. Kunci rasio aspek (1:1, 4:3, 16:9…). Ekspor PNG tanpa kehilangan atau enkode ulang sebagai JPG/WebP. Semua di peramban Anda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format dan validasi JSON",
@@ -958,6 +963,27 @@
     "errors": {
       "clipboard": "Tidak dapat menyalin ke clipboard."
     }
+  },
+  "croppy": {
+    "dropzone": "Seret gambar ke sini atau klik untuk memilih",
+    "hint": "Seret untuk membuat, pindahkan persegi panjang atau tarik gagangnya. Anda juga dapat mengedit X, Y, lebar, dan tinggi.",
+    "aspect": {
+      "label": "Rasio aspek",
+      "free": "Bebas", "square": "1:1 (persegi)",
+      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+    },
+    "dim": { "width": "Lebar", "height": "Tinggi" },
+    "format": {
+      "label": "Format", "png": "PNG (tanpa kehilangan)", "jpeg": "JPG (dengan kehilangan)", "webp": "WebP", "quality": "Kualitas"
+    },
+    "quality": {
+      "lossless": "PNG mempertahankan piksel dengan tepat (tanpa kehilangan kualitas).",
+      "lossy": "JPG dan WebP mengenkode ulang gambar, menambahkan kehilangan kualitas minimal."
+    },
+    "actions": {
+      "download": "Unduh pangkasan", "processing": "Memproses…", "change": "Ganti gambar", "reset": "Atur ulang pilihan"
+    },
+    "errors": { "notImage": "{name} bukan gambar yang valid.", "generic": "Tidak dapat memproses gambar." }
   },
   "randy": {
     "seed": {

@@ -196,6 +196,11 @@
       "tagline": "Náhodná čísla se seedem",
       "description": "Reprodukovatelný pseudonáhodný generátor: stejný seed = stejná posloupnost. Celá čísla, desetinná čísla nebo výběr ze seznamu, s opakováním nebo bez. Algoritmy mulberry32 a xoshiro128**. Vše ve vašem prohlížeči."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Oříznutí obrázků",
+      "description": "Vyberte oblast tažením nebo přesnými hodnotami v pixelech. Uzamkněte poměr stran (1:1, 4:3, 16:9…). Exportujte jako bezeztrátový PNG nebo překódujte na JPG/WebP. Vše ve vašem prohlížeči."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formátování a validace JSON",
@@ -957,6 +962,38 @@
     },
     "errors": {
       "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "croppy": {
+    "dropzone": "Přetáhněte sem obrázek nebo klikněte pro výběr",
+    "hint": "Tažením vytvoříte výběr, posunete obdélník nebo uchopíte úchyty. Můžete také upravit X, Y, šířku a výšku.",
+    "aspect": {
+      "label": "Poměr stran",
+      "free": "Volný",
+      "square": "1:1 (čtverec)",
+      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+    },
+    "dim": { "width": "Šířka", "height": "Výška" },
+    "format": {
+      "label": "Formát",
+      "png": "PNG (bezeztrátový)",
+      "jpeg": "JPG (ztrátový)",
+      "webp": "WebP",
+      "quality": "Kvalita"
+    },
+    "quality": {
+      "lossless": "PNG zachovává pixely přesně (žádná ztráta kvality).",
+      "lossy": "JPG a WebP překódují obrázek, což přidává minimální ztrátu kvality."
+    },
+    "actions": {
+      "download": "Stáhnout výřez",
+      "processing": "Zpracovává se…",
+      "change": "Změnit obrázek",
+      "reset": "Resetovat výběr"
+    },
+    "errors": {
+      "notImage": "{name} není platný obrázek.",
+      "generic": "Nelze zpracovat obrázek."
     }
   },
   "randy": {

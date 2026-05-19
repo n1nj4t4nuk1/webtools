@@ -12,7 +12,7 @@ const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
 const categoriesRaw = [
-  { id: 'imageEdit', tools: ['mochi', 'metaimg', 'convy', 'pixely', 'brandy'] },
+  { id: 'imageEdit', tools: ['mochi', 'metaimg', 'convy', 'pixely', 'brandy', 'croppy'] },
   { id: 'documents', tools: ['stapler', 'scissor', 'pdfspinner', 'albumy', 'metapdf', 'markpdf', 'wordy'] },
   { id: 'privacy', tools: ['metaimg', 'createpass', 'hashy'] },
   { id: 'generators', tools: ['createpass', 'idkun', 'combiny', 'lorempad', 'mdtably', 'qrgen', 'randy'] },
@@ -27,6 +27,7 @@ const toolPaths: Record<string, string> = {
   convy: '/convy',
   pixely: '/pixely',
   brandy: '/brandy',
+  croppy: '/croppy',
   createpass: '/createpass',
   hashy: '/hashy',
   idkun: '/idkun',

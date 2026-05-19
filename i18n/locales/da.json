@@ -196,6 +196,11 @@
       "tagline": "Tilfældige tal med seed",
       "description": "Reproducerbar pseudo-tilfældig generator: samme seed = samme sekvens. Heltal, decimaltal eller udvælgelse fra en liste, med eller uden gentagelser. mulberry32- og xoshiro128**-algoritmer. Alt i din browser."
     },
+    "croppy": {
+      "name": "Croppy",
+      "tagline": "Beskær billeder",
+      "description": "Vælg området ved at trække eller med præcise pixelværdier. Lås billedformatet (1:1, 4:3, 16:9…). Eksportér tabsfrit PNG eller omkod til JPG/WebP. Alt i din browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatér og valider JSON",
@@ -957,6 +962,38 @@
     },
     "errors": {
       "clipboard": "Kunne ikke kopiere til udklipsholderen."
+    }
+  },
+  "croppy": {
+    "dropzone": "Træk et billede her, eller klik for at vælge et",
+    "hint": "Træk for at oprette, flyt rektanglet eller tag fat i håndtagene. Du kan også redigere X, Y, bredde og højde.",
+    "aspect": {
+      "label": "Billedformat",
+      "free": "Frit",
+      "square": "1:1 (kvadrat)",
+      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+    },
+    "dim": { "width": "Bredde", "height": "Højde" },
+    "format": {
+      "label": "Format",
+      "png": "PNG (tabsfri)",
+      "jpeg": "JPG (tabsgivende)",
+      "webp": "WebP",
+      "quality": "Kvalitet"
+    },
+    "quality": {
+      "lossless": "PNG bevarer pixlerne nøjagtigt (intet kvalitetstab).",
+      "lossy": "JPG og WebP omkoder billedet og tilføjer et minimalt kvalitetstab."
+    },
+    "actions": {
+      "download": "Download udsnit",
+      "processing": "Behandler…",
+      "change": "Skift billede",
+      "reset": "Nulstil valg"
+    },
+    "errors": {
+      "notImage": "{name} er ikke et gyldigt billede.",
+      "generic": "Kunne ikke behandle billedet."
     }
   },
   "randy": {
