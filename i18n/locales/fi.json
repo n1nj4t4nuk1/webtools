@@ -191,6 +191,11 @@
       "tagline": "Vesileimaa kuvia",
       "description": "Lisää teksti- tai kuvavesileima valokuvaan: sijainti, läpinäkyvyys, kierto, koko ja toistuva kuviointi. Live-esikatselu. Kaikki selaimessasi."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Siemenistä satunnaislukuja",
+      "description": "Toistettava pseudosatunnaisgeneraattori: sama siemen = sama jono. Kokonaislukuja, liukulukuja tai poimintaa listasta, takaisinpanolla tai ilman. Algoritmit mulberry32 ja xoshiro128**. Kaikki selaimessasi."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Muotoile ja validoi JSON",
@@ -953,6 +958,31 @@
     "errors": {
       "clipboard": "Leikepöydälle ei voitu kopioida."
     }
+  },
+  "randy": {
+    "seed": {
+      "label": "Siemen",
+      "placeholder": "esim. tanukibox",
+      "hint": "Sama siemen tuottaa aina saman jonon. Ei kryptografisesti turvallinen.",
+      "randomTitle": "Uusi satunnainen siemen"
+    },
+    "algorithm": {
+      "label": "Algoritmi",
+      "mulberry32": "mulberry32 (32-bittinen, nopea)",
+      "xoshiro128ss": "xoshiro128** (128-bittinen, parempi laatu)"
+    },
+    "kind": { "integers": "Kokonaisluvut", "floats": "Liukuluvut", "pick": "Poimi listasta" },
+    "range": {
+      "min": "Vähimmäisarvo", "max": "Enimmäisarvo", "count": "Määrä", "decimals": "Desimaalit",
+      "inclusive": "Molemmat rajat mukaan lukien."
+    },
+    "pick": {
+      "items": "Kohteet (yksi riviä kohden)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Salli toistot"
+    },
+    "actions": { "generate": "Generoi" },
+    "output": { "label": "Tulos ({n})", "copy": "Kopioi", "copied": "Kopioitu!" }
   },
   "brandy": {
     "dropzone": { "base": "Vedä kuva tähän tai napsauta valitaksesi", "watermark": "Vedä kuva käytettäväksi vesileimana" },

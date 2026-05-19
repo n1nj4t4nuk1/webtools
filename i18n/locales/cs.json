@@ -191,6 +191,11 @@
       "tagline": "Vodoznak na obrázky",
       "description": "Vyrazte textový nebo obrazový vodoznak na fotografii s nastavením polohy, krytí, otočení, velikosti a dlaždicového vzoru. Živý náhled. Vše ve vašem prohlížeči."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Náhodná čísla se seedem",
+      "description": "Reprodukovatelný pseudonáhodný generátor: stejný seed = stejná posloupnost. Celá čísla, desetinná čísla nebo výběr ze seznamu, s opakováním nebo bez. Algoritmy mulberry32 a xoshiro128**. Vše ve vašem prohlížeči."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formátování a validace JSON",
@@ -952,6 +957,44 @@
     },
     "errors": {
       "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "randy": {
+    "seed": {
+      "label": "Seed",
+      "placeholder": "např. tanukibox",
+      "hint": "Stejný seed vždy generuje stejnou posloupnost. Není kryptograficky bezpečné.",
+      "randomTitle": "Nový náhodný seed"
+    },
+    "algorithm": {
+      "label": "Algoritmus",
+      "mulberry32": "mulberry32 (32bitový, rychlý)",
+      "xoshiro128ss": "xoshiro128** (128bitový, vyšší kvalita)"
+    },
+    "kind": {
+      "integers": "Celá čísla",
+      "floats": "Desetinná čísla",
+      "pick": "Výběr ze seznamu"
+    },
+    "range": {
+      "min": "Minimum",
+      "max": "Maximum",
+      "count": "Počet",
+      "decimals": "Desetinná místa",
+      "inclusive": "Obě meze jsou zahrnuty."
+    },
+    "pick": {
+      "items": "Položky (jedna na řádek)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Povolit opakování"
+    },
+    "actions": {
+      "generate": "Generovat"
+    },
+    "output": {
+      "label": "Výstup ({n})",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno!"
     }
   },
   "brandy": {

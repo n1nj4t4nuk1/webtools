@@ -191,6 +191,11 @@
       "tagline": "Filigrane sur images",
       "description": "Appliquez un filigrane texte ou image sur une photo avec position, opacité, rotation, taille et motif en mosaïque. Aperçu en direct. Tout dans votre navigateur."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Nombres aléatoires avec graine",
+      "description": "Générateur pseudo-aléatoire reproductible : même graine = même séquence. Entiers, décimaux ou tirage dans une liste, avec ou sans remise. Algorithmes mulberry32 et xoshiro128**. Tout dans votre navigateur."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater et valider du JSON",
@@ -952,6 +957,44 @@
     },
     "errors": {
       "clipboard": "Impossible de copier dans le presse-papiers."
+    }
+  },
+  "randy": {
+    "seed": {
+      "label": "Graine",
+      "placeholder": "ex. tanukibox",
+      "hint": "La même graine produit toujours la même séquence. Pas cryptographiquement sécurisé.",
+      "randomTitle": "Nouvelle graine aléatoire"
+    },
+    "algorithm": {
+      "label": "Algorithme",
+      "mulberry32": "mulberry32 (32 bits, rapide)",
+      "xoshiro128ss": "xoshiro128** (128 bits, meilleure qualité)"
+    },
+    "kind": {
+      "integers": "Entiers",
+      "floats": "Décimaux",
+      "pick": "Tirer dans une liste"
+    },
+    "range": {
+      "min": "Minimum",
+      "max": "Maximum",
+      "count": "Quantité",
+      "decimals": "Décimales",
+      "inclusive": "Les deux bornes incluses."
+    },
+    "pick": {
+      "items": "Éléments (un par ligne)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Avec remise"
+    },
+    "actions": {
+      "generate": "Générer"
+    },
+    "output": {
+      "label": "Sortie ({n})",
+      "copy": "Copier",
+      "copied": "Copié !"
     }
   },
   "brandy": {

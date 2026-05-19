@@ -191,6 +191,11 @@
       "tagline": "Marca de agua en imágenes",
       "description": "Aplica una marca de agua de texto o imagen sobre una foto con posición, opacidad, rotación, tamaño y patrón en mosaico. Vista previa en vivo. Todo en tu navegador."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Números aleatorios con semilla",
+      "description": "Generador pseudoaleatorio reproducible: misma semilla = misma secuencia. Enteros, decimales o elección de una lista, con o sin reemplazo. Algoritmos mulberry32 y xoshiro128**. Todo en tu navegador."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatea y valida JSON",
@@ -952,6 +957,44 @@
     },
     "errors": {
       "clipboard": "No se pudo copiar al portapapeles."
+    }
+  },
+  "randy": {
+    "seed": {
+      "label": "Semilla",
+      "placeholder": "p. ej. tanukibox",
+      "hint": "La misma semilla siempre produce la misma secuencia. No es criptográficamente segura.",
+      "randomTitle": "Nueva semilla aleatoria"
+    },
+    "algorithm": {
+      "label": "Algoritmo",
+      "mulberry32": "mulberry32 (32-bit, rápido)",
+      "xoshiro128ss": "xoshiro128** (128-bit, mejor calidad)"
+    },
+    "kind": {
+      "integers": "Enteros",
+      "floats": "Decimales",
+      "pick": "Elegir de una lista"
+    },
+    "range": {
+      "min": "Mínimo",
+      "max": "Máximo",
+      "count": "Cantidad",
+      "decimals": "Decimales",
+      "inclusive": "Ambos límites incluidos."
+    },
+    "pick": {
+      "items": "Elementos (uno por línea)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Con repetición"
+    },
+    "actions": {
+      "generate": "Generar"
+    },
+    "output": {
+      "label": "Salida ({n})",
+      "copy": "Copiar",
+      "copied": "¡Copiado!"
     }
   },
   "brandy": {

@@ -191,6 +191,11 @@
       "tagline": "Beri tanda air pada gambar",
       "description": "Stempel tanda air teks atau gambar pada foto dengan posisi, opasitas, rotasi, ukuran, dan pola berulang. Pratinjau langsung. Semua di peramban Anda."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Angka acak dengan seed",
+      "description": "Generator pseudo-acak yang dapat direproduksi: seed yang sama menghasilkan urutan yang sama. Bilangan bulat, desimal, atau pilih dari daftar, dengan atau tanpa pengulangan. Algoritma mulberry32 dan xoshiro128**. Semua di peramban Anda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format dan validasi JSON",
@@ -953,6 +958,31 @@
     "errors": {
       "clipboard": "Tidak dapat menyalin ke clipboard."
     }
+  },
+  "randy": {
+    "seed": {
+      "label": "Seed",
+      "placeholder": "mis. tanukibox",
+      "hint": "Seed yang sama selalu menghasilkan urutan yang sama. Tidak aman secara kriptografis.",
+      "randomTitle": "Seed acak baru"
+    },
+    "algorithm": {
+      "label": "Algoritma",
+      "mulberry32": "mulberry32 (32-bit, cepat)",
+      "xoshiro128ss": "xoshiro128** (128-bit, kualitas lebih baik)"
+    },
+    "kind": { "integers": "Bilangan bulat", "floats": "Desimal", "pick": "Pilih dari daftar" },
+    "range": {
+      "min": "Minimum", "max": "Maksimum", "count": "Jumlah", "decimals": "Desimal",
+      "inclusive": "Kedua batas inklusif."
+    },
+    "pick": {
+      "items": "Item (satu per baris)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Izinkan pengulangan"
+    },
+    "actions": { "generate": "Hasilkan" },
+    "output": { "label": "Hasil ({n})", "copy": "Salin", "copied": "Tersalin!" }
   },
   "brandy": {
     "dropzone": { "base": "Seret gambar ke sini atau klik untuk memilih", "watermark": "Seret gambar untuk digunakan sebagai tanda air" },

@@ -191,6 +191,11 @@
       "tagline": "Wasserzeichen für Bilder",
       "description": "Versehen Sie ein Foto mit einem Text- oder Bild-Wasserzeichen mit Position, Deckkraft, Drehung, Größe und Kachelmuster. Live-Vorschau. Alles im Browser."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Zufallszahlen mit Seed",
+      "description": "Reproduzierbarer Pseudozufallsgenerator: gleicher Seed = gleiche Folge. Ganzzahlen, Dezimalzahlen oder Zufallsauswahl aus einer Liste, mit oder ohne Zurücklegen. Algorithmen mulberry32 und xoshiro128**. Alles im Browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatieren und validieren",
@@ -952,6 +957,44 @@
     },
     "errors": {
       "clipboard": "Konnte nicht in die Zwischenablage kopiert werden."
+    }
+  },
+  "randy": {
+    "seed": {
+      "label": "Seed",
+      "placeholder": "z. B. tanukibox",
+      "hint": "Derselbe Seed erzeugt immer dieselbe Folge. Nicht kryptografisch sicher.",
+      "randomTitle": "Neuer zufälliger Seed"
+    },
+    "algorithm": {
+      "label": "Algorithmus",
+      "mulberry32": "mulberry32 (32-Bit, schnell)",
+      "xoshiro128ss": "xoshiro128** (128-Bit, bessere Qualität)"
+    },
+    "kind": {
+      "integers": "Ganzzahlen",
+      "floats": "Dezimalzahlen",
+      "pick": "Aus Liste wählen"
+    },
+    "range": {
+      "min": "Minimum",
+      "max": "Maximum",
+      "count": "Anzahl",
+      "decimals": "Dezimalstellen",
+      "inclusive": "Beide Grenzen inklusive."
+    },
+    "pick": {
+      "items": "Elemente (eines pro Zeile)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Mit Wiederholungen"
+    },
+    "actions": {
+      "generate": "Generieren"
+    },
+    "output": {
+      "label": "Ausgabe ({n})",
+      "copy": "Kopieren",
+      "copied": "Kopiert!"
     }
   },
   "brandy": {

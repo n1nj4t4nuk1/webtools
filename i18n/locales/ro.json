@@ -191,6 +191,11 @@
       "tagline": "Filigran pentru imagini",
       "description": "Aplică un filigran text sau imagine pe o fotografie cu poziție, opacitate, rotație, dimensiune și model mozaic. Previzualizare live. Totul în browserul tău."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Numere aleatorii cu seed",
+      "description": "Generator pseudoaleator reproductibil: același seed = aceeași secvență. Numere întregi, zecimale sau alegere dintr-o listă, cu sau fără repetare. Algoritmi mulberry32 și xoshiro128**. Totul în browserul tău."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatează și validează JSON",
@@ -953,6 +958,31 @@
     "errors": {
       "clipboard": "Nu s-a putut copia în clipboard."
     }
+  },
+  "randy": {
+    "seed": {
+      "label": "Seed",
+      "placeholder": "ex. tanukibox",
+      "hint": "Același seed produce mereu aceeași secvență. Nu este sigur criptografic.",
+      "randomTitle": "Seed aleator nou"
+    },
+    "algorithm": {
+      "label": "Algoritm",
+      "mulberry32": "mulberry32 (32-bit, rapid)",
+      "xoshiro128ss": "xoshiro128** (128-bit, calitate mai bună)"
+    },
+    "kind": { "integers": "Numere întregi", "floats": "Numere zecimale", "pick": "Alege din listă" },
+    "range": {
+      "min": "Minim", "max": "Maxim", "count": "Cantitate", "decimals": "Zecimale",
+      "inclusive": "Ambele limite incluse."
+    },
+    "pick": {
+      "items": "Elemente (unul pe linie)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Permite repetări"
+    },
+    "actions": { "generate": "Generează" },
+    "output": { "label": "Rezultat ({n})", "copy": "Copiază", "copied": "Copiat!" }
   },
   "brandy": {
     "dropzone": { "base": "Trage o imagine aici sau apasă pentru a selecta una", "watermark": "Trage o imagine pentru a o folosi ca filigran" },

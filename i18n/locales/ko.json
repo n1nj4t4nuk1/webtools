@@ -191,6 +191,11 @@
       "tagline": "이미지에 워터마크 추가",
       "description": "사진에 텍스트나 이미지 워터마크를 위치, 불투명도, 회전, 크기 및 타일 패턴으로 찍습니다. 실시간 미리보기. 모두 브라우저에서 처리됩니다."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "시드 기반 난수",
+      "description": "재현 가능한 의사 난수 생성기: 같은 시드는 같은 시퀀스를 만듭니다. 정수, 실수 또는 목록에서 선택, 중복 허용 또는 비허용. mulberry32 및 xoshiro128** 알고리즘. 모두 브라우저에서 처리됩니다."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON 포맷 및 검증",
@@ -953,6 +958,31 @@
     "errors": {
       "clipboard": "클립보드에 복사할 수 없습니다."
     }
+  },
+  "randy": {
+    "seed": {
+      "label": "시드",
+      "placeholder": "예: tanukibox",
+      "hint": "같은 시드는 항상 같은 시퀀스를 생성합니다. 암호학적으로 안전하지 않습니다.",
+      "randomTitle": "새 무작위 시드"
+    },
+    "algorithm": {
+      "label": "알고리즘",
+      "mulberry32": "mulberry32 (32비트, 빠름)",
+      "xoshiro128ss": "xoshiro128** (128비트, 더 좋은 품질)"
+    },
+    "kind": { "integers": "정수", "floats": "실수", "pick": "목록에서 선택" },
+    "range": {
+      "min": "최소", "max": "최대", "count": "개수", "decimals": "소수 자릿수",
+      "inclusive": "양쪽 경계 모두 포함."
+    },
+    "pick": {
+      "items": "항목 (한 줄에 하나)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "중복 허용"
+    },
+    "actions": { "generate": "생성" },
+    "output": { "label": "결과 ({n})", "copy": "복사", "copied": "복사됨!" }
   },
   "brandy": {
     "dropzone": { "base": "여기에 이미지를 끌어 놓거나 클릭해 선택하세요", "watermark": "워터마크로 사용할 이미지를 끌어 놓으세요" },

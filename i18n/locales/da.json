@@ -191,6 +191,11 @@
       "tagline": "Vandmærke på billeder",
       "description": "Stempl et tekst- eller billedvandmærke på et foto med position, gennemsigtighed, rotation, størrelse og fliselagt mønster. Live forhåndsvisning. Alt i din browser."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Tilfældige tal med seed",
+      "description": "Reproducerbar pseudo-tilfældig generator: samme seed = samme sekvens. Heltal, decimaltal eller udvælgelse fra en liste, med eller uden gentagelser. mulberry32- og xoshiro128**-algoritmer. Alt i din browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatér og valider JSON",
@@ -952,6 +957,44 @@
     },
     "errors": {
       "clipboard": "Kunne ikke kopiere til udklipsholderen."
+    }
+  },
+  "randy": {
+    "seed": {
+      "label": "Seed",
+      "placeholder": "f.eks. tanukibox",
+      "hint": "Samme seed giver altid den samme sekvens. Ikke kryptografisk sikker.",
+      "randomTitle": "Ny tilfældig seed"
+    },
+    "algorithm": {
+      "label": "Algoritme",
+      "mulberry32": "mulberry32 (32-bit, hurtig)",
+      "xoshiro128ss": "xoshiro128** (128-bit, bedre kvalitet)"
+    },
+    "kind": {
+      "integers": "Heltal",
+      "floats": "Decimaltal",
+      "pick": "Vælg fra liste"
+    },
+    "range": {
+      "min": "Minimum",
+      "max": "Maksimum",
+      "count": "Antal",
+      "decimals": "Decimaler",
+      "inclusive": "Begge grænser er inkluderet."
+    },
+    "pick": {
+      "items": "Elementer (ét pr. linje)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Tillad gentagelser"
+    },
+    "actions": {
+      "generate": "Generér"
+    },
+    "output": {
+      "label": "Output ({n})",
+      "copy": "Kopiér",
+      "copied": "Kopieret!"
     }
   },
   "brandy": {

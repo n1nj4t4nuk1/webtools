@@ -191,6 +191,11 @@
       "tagline": "Đóng dấu hình mờ lên ảnh",
       "description": "Đóng dấu hình mờ bằng văn bản hoặc hình ảnh lên ảnh với vị trí, độ mờ, xoay, kích thước và kiểu lát gạch. Xem trước trực tiếp. Tất cả trong trình duyệt của bạn."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Số ngẫu nhiên có seed",
+      "description": "Bộ tạo giả ngẫu nhiên có thể tái lập: cùng seed = cùng chuỗi. Số nguyên, số thực hoặc chọn từ danh sách, có hoặc không có lặp lại. Thuật toán mulberry32 và xoshiro128**. Tất cả trong trình duyệt của bạn."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Định dạng và xác thực JSON",
@@ -953,6 +958,31 @@
     "errors": {
       "clipboard": "Không thể sao chép vào clipboard."
     }
+  },
+  "randy": {
+    "seed": {
+      "label": "Seed",
+      "placeholder": "ví dụ tanukibox",
+      "hint": "Cùng một seed luôn cho ra cùng một chuỗi. Không an toàn về mặt mật mã.",
+      "randomTitle": "Seed ngẫu nhiên mới"
+    },
+    "algorithm": {
+      "label": "Thuật toán",
+      "mulberry32": "mulberry32 (32-bit, nhanh)",
+      "xoshiro128ss": "xoshiro128** (128-bit, chất lượng tốt hơn)"
+    },
+    "kind": { "integers": "Số nguyên", "floats": "Số thực", "pick": "Chọn từ danh sách" },
+    "range": {
+      "min": "Tối thiểu", "max": "Tối đa", "count": "Số lượng", "decimals": "Số thập phân",
+      "inclusive": "Bao gồm cả hai cận."
+    },
+    "pick": {
+      "items": "Mục (mỗi dòng một mục)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Cho phép lặp lại"
+    },
+    "actions": { "generate": "Tạo" },
+    "output": { "label": "Kết quả ({n})", "copy": "Sao chép", "copied": "Đã sao chép!" }
   },
   "brandy": {
     "dropzone": { "base": "Kéo một hình ảnh vào đây hoặc nhấp để chọn", "watermark": "Kéo một hình ảnh để dùng làm hình mờ" },

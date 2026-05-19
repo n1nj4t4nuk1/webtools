@@ -191,6 +191,11 @@
       "tagline": "Watermark images",
       "description": "Stamp a text or image watermark on a photo with position, opacity, rotation, size and tiled pattern. Live preview. All in your browser."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Seeded random numbers",
+      "description": "Reproducible pseudo-random generator: same seed = same sequence. Integers, floats or pick from a list, with or without replacement. mulberry32 and xoshiro128** algorithms. All in your browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format and validate JSON",
@@ -952,6 +957,44 @@
     },
     "errors": {
       "clipboard": "Could not copy to clipboard."
+    }
+  },
+  "randy": {
+    "seed": {
+      "label": "Seed",
+      "placeholder": "e.g. tanukibox",
+      "hint": "Same seed always yields the same sequence. Not cryptographically secure.",
+      "randomTitle": "New random seed"
+    },
+    "algorithm": {
+      "label": "Algorithm",
+      "mulberry32": "mulberry32 (32-bit, fast)",
+      "xoshiro128ss": "xoshiro128** (128-bit, better quality)"
+    },
+    "kind": {
+      "integers": "Integers",
+      "floats": "Floats",
+      "pick": "Pick from list"
+    },
+    "range": {
+      "min": "Minimum",
+      "max": "Maximum",
+      "count": "Count",
+      "decimals": "Decimals",
+      "inclusive": "Both bounds inclusive."
+    },
+    "pick": {
+      "items": "Items (one per line)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Allow repeats"
+    },
+    "actions": {
+      "generate": "Generate"
+    },
+    "output": {
+      "label": "Output ({n})",
+      "copy": "Copy",
+      "copied": "Copied!"
     }
   },
   "brandy": {

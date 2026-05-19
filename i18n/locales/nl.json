@@ -191,6 +191,11 @@
       "tagline": "Afbeeldingen van een watermerk voorzien",
       "description": "Stempel een tekst- of afbeeldingswatermerk op een foto met positie, dekking, rotatie, grootte en herhalend patroon. Live voorvertoning. Alles in uw browser."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Willekeurige getallen met seed",
+      "description": "Reproduceerbare pseudo-willekeurige generator: dezelfde seed = dezelfde reeks. Gehele getallen, decimalen of kiezen uit een lijst, met of zonder herhaling. mulberry32 en xoshiro128** algoritmen. Alles in uw browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatteren en valideren",
@@ -953,6 +958,31 @@
     "errors": {
       "clipboard": "Kon niet naar het klembord kopiëren."
     }
+  },
+  "randy": {
+    "seed": {
+      "label": "Seed",
+      "placeholder": "bijv. tanukibox",
+      "hint": "Dezelfde seed levert altijd dezelfde reeks op. Niet cryptografisch veilig.",
+      "randomTitle": "Nieuwe willekeurige seed"
+    },
+    "algorithm": {
+      "label": "Algoritme",
+      "mulberry32": "mulberry32 (32-bits, snel)",
+      "xoshiro128ss": "xoshiro128** (128-bits, betere kwaliteit)"
+    },
+    "kind": { "integers": "Gehele getallen", "floats": "Decimalen", "pick": "Kiezen uit lijst" },
+    "range": {
+      "min": "Minimum", "max": "Maximum", "count": "Aantal", "decimals": "Decimalen",
+      "inclusive": "Beide grenzen inclusief."
+    },
+    "pick": {
+      "items": "Items (één per regel)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Herhalingen toestaan"
+    },
+    "actions": { "generate": "Genereren" },
+    "output": { "label": "Uitvoer ({n})", "copy": "Kopiëren", "copied": "Gekopieerd!" }
   },
   "brandy": {
     "dropzone": { "base": "Sleep een afbeelding hierheen of klik om er een te selecteren", "watermark": "Sleep een afbeelding om als watermerk te gebruiken" },

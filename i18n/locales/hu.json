@@ -191,6 +191,11 @@
       "tagline": "Vízjelezzen képeket",
       "description": "Helyezzen szöveges vagy képes vízjelet egy fényképre pozícióval, átlátszósággal, elforgatással, mérettel és csempézett mintával. Élő előnézet. Mindez a böngészőben."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Mag alapú véletlen számok",
+      "description": "Reprodukálható pszeudo-véletlen generátor: ugyanaz a mag = ugyanaz a sorozat. Egész számok, lebegőpontos számok vagy választás listából, visszatevéssel vagy anélkül. mulberry32 és xoshiro128** algoritmusok. Mindez a böngészőben."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formázása és érvényesítése",
@@ -953,6 +958,31 @@
     "errors": {
       "clipboard": "Nem sikerült a vágólapra másolni."
     }
+  },
+  "randy": {
+    "seed": {
+      "label": "Mag",
+      "placeholder": "pl. tanukibox",
+      "hint": "Ugyanaz a mag mindig ugyanazt a sorozatot adja. Kriptográfiailag nem biztonságos.",
+      "randomTitle": "Új véletlen mag"
+    },
+    "algorithm": {
+      "label": "Algoritmus",
+      "mulberry32": "mulberry32 (32 bites, gyors)",
+      "xoshiro128ss": "xoshiro128** (128 bites, jobb minőség)"
+    },
+    "kind": { "integers": "Egész számok", "floats": "Lebegőpontos számok", "pick": "Választás listából" },
+    "range": {
+      "min": "Minimum", "max": "Maximum", "count": "Darabszám", "decimals": "Tizedesjegyek",
+      "inclusive": "Mindkét határ beleértve."
+    },
+    "pick": {
+      "items": "Elemek (soronként egy)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Ismétlések engedélyezése"
+    },
+    "actions": { "generate": "Generálás" },
+    "output": { "label": "Kimenet ({n})", "copy": "Másolás", "copied": "Másolva!" }
   },
   "brandy": {
     "dropzone": { "base": "Húzzon ide egy képet, vagy kattintson a kiválasztáshoz", "watermark": "Húzzon ide egy képet vízjelként való használathoz" },

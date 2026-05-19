@@ -191,6 +191,11 @@
       "tagline": "Znaki wodne na obrazach",
       "description": "Dodaj tekstowy lub graficzny znak wodny do zdjęcia z pozycją, przezroczystością, obrotem, rozmiarem i wzorem kafelkowym. Podgląd na żywo. Wszystko w Twojej przeglądarce."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Liczby losowe z ziarnem",
+      "description": "Powtarzalny generator pseudolosowy: to samo ziarno = ta sama sekwencja. Liczby całkowite, zmiennoprzecinkowe lub wybór z listy, z powtórzeniami lub bez. Algorytmy mulberry32 i xoshiro128**. Wszystko w Twojej przeglądarce."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatuj i waliduj JSON",
@@ -953,6 +958,31 @@
     "errors": {
       "clipboard": "Nie udało się skopiować do schowka."
     }
+  },
+  "randy": {
+    "seed": {
+      "label": "Ziarno",
+      "placeholder": "np. tanukibox",
+      "hint": "To samo ziarno zawsze daje tę samą sekwencję. Nie jest bezpieczne kryptograficznie.",
+      "randomTitle": "Nowe losowe ziarno"
+    },
+    "algorithm": {
+      "label": "Algorytm",
+      "mulberry32": "mulberry32 (32-bit, szybki)",
+      "xoshiro128ss": "xoshiro128** (128-bit, lepsza jakość)"
+    },
+    "kind": { "integers": "Liczby całkowite", "floats": "Liczby zmiennoprzecinkowe", "pick": "Wybór z listy" },
+    "range": {
+      "min": "Minimum", "max": "Maksimum", "count": "Ilość", "decimals": "Miejsca dziesiętne",
+      "inclusive": "Obie granice włącznie."
+    },
+    "pick": {
+      "items": "Elementy (po jednym w wierszu)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Zezwól na powtórzenia"
+    },
+    "actions": { "generate": "Generuj" },
+    "output": { "label": "Wynik ({n})", "copy": "Kopiuj", "copied": "Skopiowano!" }
   },
   "brandy": {
     "dropzone": { "base": "Przeciągnij tutaj obraz lub kliknij, aby go wybrać", "watermark": "Przeciągnij obraz, który ma być użyty jako znak wodny" },

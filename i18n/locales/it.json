@@ -186,6 +186,11 @@
       "tagline": "Filigrana sulle immagini",
       "description": "Applica una filigrana di testo o immagine su una foto con posizione, opacità, rotazione, dimensione e pattern a mosaico. Anteprima in tempo reale. Tutto nel tuo browser."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Numeri casuali con seed",
+      "description": "Generatore pseudo-casuale riproducibile: stesso seed = stessa sequenza. Interi, decimali o estrazione da una lista, con o senza reinserimento. Algoritmi mulberry32 e xoshiro128**. Tutto nel tuo browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatta e valida JSON",
@@ -917,6 +922,44 @@
     },
     "errors": {
       "clipboard": "Impossibile copiare negli appunti."
+    }
+  },
+  "randy": {
+    "seed": {
+      "label": "Seed",
+      "placeholder": "es. tanukibox",
+      "hint": "Lo stesso seed produce sempre la stessa sequenza. Non è crittograficamente sicuro.",
+      "randomTitle": "Nuovo seed casuale"
+    },
+    "algorithm": {
+      "label": "Algoritmo",
+      "mulberry32": "mulberry32 (32-bit, veloce)",
+      "xoshiro128ss": "xoshiro128** (128-bit, qualità migliore)"
+    },
+    "kind": {
+      "integers": "Interi",
+      "floats": "Decimali",
+      "pick": "Estrai da lista"
+    },
+    "range": {
+      "min": "Minimo",
+      "max": "Massimo",
+      "count": "Quantità",
+      "decimals": "Decimali",
+      "inclusive": "Entrambi i limiti inclusi."
+    },
+    "pick": {
+      "items": "Elementi (uno per riga)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Con ripetizione"
+    },
+    "actions": {
+      "generate": "Genera"
+    },
+    "output": {
+      "label": "Output ({n})",
+      "copy": "Copia",
+      "copied": "Copiato!"
     }
   },
   "brandy": {

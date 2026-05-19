@@ -191,6 +191,11 @@
       "tagline": "Görsellere filigran ekleyin",
       "description": "Bir fotoğrafa metin veya görsel filigranı; konum, opaklık, döndürme, boyut ve döşeli desen ile ekleyin. Canlı önizleme. Hepsi tarayıcınızda."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Tohumlu rastgele sayılar",
+      "description": "Yeniden üretilebilir sözde rastgele üretici: aynı tohum = aynı dizi. Tam sayılar, ondalık sayılar veya bir listeden seçim, tekrarlı veya tekrarsız. mulberry32 ve xoshiro128** algoritmaları. Hepsi tarayıcınızda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON'u biçimlendir ve doğrula",
@@ -953,6 +958,31 @@
     "errors": {
       "clipboard": "Panoya kopyalanamadı."
     }
+  },
+  "randy": {
+    "seed": {
+      "label": "Tohum",
+      "placeholder": "örn. tanukibox",
+      "hint": "Aynı tohum her zaman aynı diziyi üretir. Kriptografik olarak güvenli değildir.",
+      "randomTitle": "Yeni rastgele tohum"
+    },
+    "algorithm": {
+      "label": "Algoritma",
+      "mulberry32": "mulberry32 (32-bit, hızlı)",
+      "xoshiro128ss": "xoshiro128** (128-bit, daha iyi kalite)"
+    },
+    "kind": { "integers": "Tam sayılar", "floats": "Ondalık sayılar", "pick": "Listeden seç" },
+    "range": {
+      "min": "Minimum", "max": "Maksimum", "count": "Adet", "decimals": "Ondalık basamak",
+      "inclusive": "Her iki sınır da dahildir."
+    },
+    "pick": {
+      "items": "Öğeler (satır başına bir tane)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Tekrarlara izin ver"
+    },
+    "actions": { "generate": "Üret" },
+    "output": { "label": "Çıktı ({n})", "copy": "Kopyala", "copied": "Kopyalandı!" }
   },
   "brandy": {
     "dropzone": { "base": "Buraya bir görsel sürükleyin veya seçmek için tıklayın", "watermark": "Filigran olarak kullanmak için bir görsel sürükleyin" },

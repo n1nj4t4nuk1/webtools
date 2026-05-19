@@ -191,6 +191,11 @@
       "tagline": "Vannmerke bilder",
       "description": "Sett et tekst- eller bildevannmerke på et foto med posisjon, gjennomsiktighet, rotasjon, størrelse og flislagt mønster. Live forhåndsvisning. Alt i nettleseren din."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Tilfeldige tall med seed",
+      "description": "Reproduserbar pseudotilfeldig generator: samme seed = samme sekvens. Heltall, desimaltall eller plukk fra en liste, med eller uten tilbakelegging. Algoritmer mulberry32 og xoshiro128**. Alt i nettleseren din."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater og valider JSON",
@@ -953,6 +958,31 @@
     "errors": {
       "clipboard": "Kunne ikke kopiere til utklippstavlen."
     }
+  },
+  "randy": {
+    "seed": {
+      "label": "Seed",
+      "placeholder": "f.eks. tanukibox",
+      "hint": "Samme seed gir alltid samme sekvens. Ikke kryptografisk sikker.",
+      "randomTitle": "Ny tilfeldig seed"
+    },
+    "algorithm": {
+      "label": "Algoritme",
+      "mulberry32": "mulberry32 (32-bit, rask)",
+      "xoshiro128ss": "xoshiro128** (128-bit, bedre kvalitet)"
+    },
+    "kind": { "integers": "Heltall", "floats": "Desimaltall", "pick": "Plukk fra liste" },
+    "range": {
+      "min": "Minimum", "max": "Maksimum", "count": "Antall", "decimals": "Desimaler",
+      "inclusive": "Begge grenser inkludert."
+    },
+    "pick": {
+      "items": "Elementer (ett per linje)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Tillat gjentakelser"
+    },
+    "actions": { "generate": "Generer" },
+    "output": { "label": "Resultat ({n})", "copy": "Kopier", "copied": "Kopiert!" }
   },
   "brandy": {
     "dropzone": { "base": "Dra et bilde hit eller klikk for å velge et", "watermark": "Dra et bilde som skal brukes som vannmerke" },

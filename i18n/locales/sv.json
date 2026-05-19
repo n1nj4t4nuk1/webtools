@@ -191,6 +191,11 @@
       "tagline": "Vattenmärk bilder",
       "description": "Stämpla en text- eller bildvattenstämpel på ett foto med position, opacitet, rotation, storlek och kakelmönster. Live-förhandsgranskning. Allt i din webbläsare."
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "Slumptal med seed",
+      "description": "Reproducerbar pseudoslumpgenerator: samma seed = samma sekvens. Heltal, flyttal eller val från en lista, med eller utan återläggning. Algoritmerna mulberry32 och xoshiro128**. Allt i din webbläsare."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatera och validera JSON",
@@ -953,6 +958,31 @@
     "errors": {
       "clipboard": "Kunde inte kopiera till urklipp."
     }
+  },
+  "randy": {
+    "seed": {
+      "label": "Seed",
+      "placeholder": "t.ex. tanukibox",
+      "hint": "Samma seed ger alltid samma sekvens. Inte kryptografiskt säker.",
+      "randomTitle": "Ny slumpmässig seed"
+    },
+    "algorithm": {
+      "label": "Algoritm",
+      "mulberry32": "mulberry32 (32-bitars, snabb)",
+      "xoshiro128ss": "xoshiro128** (128-bitars, bättre kvalitet)"
+    },
+    "kind": { "integers": "Heltal", "floats": "Flyttal", "pick": "Välj från lista" },
+    "range": {
+      "min": "Minimum", "max": "Maximum", "count": "Antal", "decimals": "Decimaler",
+      "inclusive": "Båda gränserna inklusive."
+    },
+    "pick": {
+      "items": "Element (ett per rad)",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "Tillåt upprepningar"
+    },
+    "actions": { "generate": "Generera" },
+    "output": { "label": "Resultat ({n})", "copy": "Kopiera", "copied": "Kopierat!" }
   },
   "brandy": {
     "dropzone": { "base": "Dra en bild hit eller klicka för att välja en", "watermark": "Dra en bild som ska användas som vattenstämpel" },

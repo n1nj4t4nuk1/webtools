@@ -186,6 +186,11 @@
       "tagline": "画像にウォーターマーク",
       "description": "写真にテキストまたは画像のウォーターマークを位置、不透明度、回転、サイズ、タイルパターンで適用。リアルタイムプレビュー。すべてブラウザで処理。"
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "シード付き乱数生成",
+      "description": "再現可能な擬似乱数ジェネレーター：同じシードは同じ列を生成。整数・小数・リストからの抽選（重複あり/なし）に対応。mulberry32とxoshiro128**アルゴリズム。すべてブラウザで処理。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSONをフォーマット・検証",
@@ -917,6 +922,44 @@
     },
     "errors": {
       "clipboard": "クリップボードにコピーできませんでした。"
+    }
+  },
+  "randy": {
+    "seed": {
+      "label": "シード",
+      "placeholder": "例: tanukibox",
+      "hint": "同じシードは常に同じ列を生成します。暗号学的に安全ではありません。",
+      "randomTitle": "新しいランダムシード"
+    },
+    "algorithm": {
+      "label": "アルゴリズム",
+      "mulberry32": "mulberry32（32ビット、高速）",
+      "xoshiro128ss": "xoshiro128**（128ビット、高品質）"
+    },
+    "kind": {
+      "integers": "整数",
+      "floats": "小数",
+      "pick": "リストから抽選"
+    },
+    "range": {
+      "min": "最小",
+      "max": "最大",
+      "count": "個数",
+      "decimals": "小数点以下",
+      "inclusive": "両端を含みます。"
+    },
+    "pick": {
+      "items": "項目（1行1つ）",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "重複を許可"
+    },
+    "actions": {
+      "generate": "生成"
+    },
+    "output": {
+      "label": "出力 ({n})",
+      "copy": "コピー",
+      "copied": "コピーしました！"
     }
   },
   "brandy": {

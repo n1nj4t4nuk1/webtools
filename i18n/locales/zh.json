@@ -186,6 +186,11 @@
       "tagline": "为图片添加水印",
       "description": "在照片上添加文字或图片水印，可设置位置、不透明度、旋转、大小和平铺图案。实时预览。全部在您的浏览器中完成。"
     },
+    "randy": {
+      "name": "Randy",
+      "tagline": "带种子的随机数",
+      "description": "可重现的伪随机生成器：相同种子 = 相同序列。整数、浮点数或从列表中选取，可有放回或无放回。mulberry32 和 xoshiro128** 算法。全部在您的浏览器中完成。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
@@ -918,6 +923,31 @@
     "errors": {
       "clipboard": "无法复制到剪贴板。"
     }
+  },
+  "randy": {
+    "seed": {
+      "label": "种子",
+      "placeholder": "例如 tanukibox",
+      "hint": "相同的种子总是产生相同的序列。非加密安全。",
+      "randomTitle": "新的随机种子"
+    },
+    "algorithm": {
+      "label": "算法",
+      "mulberry32": "mulberry32（32 位，快速）",
+      "xoshiro128ss": "xoshiro128**（128 位，质量更好）"
+    },
+    "kind": { "integers": "整数", "floats": "浮点数", "pick": "从列表中选取" },
+    "range": {
+      "min": "最小值", "max": "最大值", "count": "数量", "decimals": "小数位",
+      "inclusive": "两个边界都包含在内。"
+    },
+    "pick": {
+      "items": "项目（每行一个）",
+      "placeholder": "alpha\nbravo\ncharlie",
+      "withReplacement": "允许重复"
+    },
+    "actions": { "generate": "生成" },
+    "output": { "label": "输出（{n}）", "copy": "复制", "copied": "已复制！" }
   },
   "brandy": {
     "dropzone": { "base": "将图片拖到此处或点击选择", "watermark": "拖入一张图片作为水印" },
