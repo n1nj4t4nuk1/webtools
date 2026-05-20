@@ -201,6 +201,11 @@
       "tagline": "Képek körülvágása",
       "description": "Válassza ki a területet húzással vagy pontos pixelértékekkel. Rögzítse a képarányt (1:1, 4:3, 16:9…). Exportáljon veszteségmentes PNG-t, vagy kódolja át JPG/WebP formátumba. Mindez a böngészőben."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Kamatos kamat kalkulátor",
+      "description": "Szimulálja a tőke növekedését kamatos kamattal és rendszeres befizetésekkel. Évről évre eredmények az Ön által választott pénznemben. Mindez a böngészőben."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formázása és érvényesítése",
@@ -962,6 +967,35 @@
     },
     "errors": {
       "clipboard": "Nem sikerült a vágólapra másolni."
+    }
+  },
+  "yieldy": {
+    "principal": "Kezdőtőke",
+    "rate": "Éves kamatláb",
+    "years": "Évek",
+    "contribution": "Periódusonkénti befizetés",
+    "currency": "Pénznem",
+    "hint": "Minden befizetés a kamatperiódus végén kerül jóváírásra.",
+    "frequency": {
+      "label": "Kamatozás gyakorisága",
+      "annually": "Évente",
+      "semiAnnually": "Félévente",
+      "quarterly": "Negyedévente",
+      "monthly": "Havonta",
+      "weekly": "Hetente",
+      "daily": "Naponta"
+    },
+    "results": {
+      "finalBalance": "Záróegyenleg",
+      "totalContributed": "Összes befizetés",
+      "totalInterest": "Szerzett kamat"
+    },
+    "table": {
+      "title": "Évről évre részletezés",
+      "year": "Év",
+      "balance": "Egyenleg",
+      "contributed": "Befizetve",
+      "interest": "Kamat"
     }
   },
   "croppy": {

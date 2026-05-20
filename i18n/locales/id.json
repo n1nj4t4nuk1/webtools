@@ -201,6 +201,11 @@
       "tagline": "Pangkas gambar",
       "description": "Pilih area dengan menyeret atau dengan nilai piksel yang tepat. Kunci rasio aspek (1:1, 4:3, 16:9…). Ekspor PNG tanpa kehilangan atau enkode ulang sebagai JPG/WebP. Semua di peramban Anda."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Kalkulator bunga majemuk",
+      "description": "Simulasikan pertumbuhan modal pokok dengan bunga majemuk dan setoran berkala. Hasil tahun demi tahun dalam mata uang pilihan Anda. Semua di peramban Anda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format dan validasi JSON",
@@ -962,6 +967,25 @@
     },
     "errors": {
       "clipboard": "Tidak dapat menyalin ke clipboard."
+    }
+  },
+  "yieldy": {
+    "principal": "Modal awal",
+    "rate": "Suku bunga tahunan",
+    "years": "Tahun",
+    "contribution": "Setoran per periode",
+    "currency": "Mata uang",
+    "hint": "Setiap setoran masuk pada akhir setiap periode penggabungan.",
+    "frequency": {
+      "label": "Frekuensi penggabungan",
+      "annually": "Tahunan", "semiAnnually": "Setengah tahunan", "quarterly": "Triwulanan",
+      "monthly": "Bulanan", "weekly": "Mingguan", "daily": "Harian"
+    },
+    "results": {
+      "finalBalance": "Saldo akhir", "totalContributed": "Total disetor", "totalInterest": "Bunga diperoleh"
+    },
+    "table": {
+      "title": "Rincian tahun demi tahun", "year": "Tahun", "balance": "Saldo", "contributed": "Disetor", "interest": "Bunga"
     }
   },
   "croppy": {

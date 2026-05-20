@@ -201,6 +201,11 @@
       "tagline": "Beskär bilder",
       "description": "Välj området genom att dra eller med exakta pixelvärden. Lås bildförhållandet (1:1, 4:3, 16:9…). Exportera förlustfritt som PNG eller koda om till JPG/WebP. Allt i din webbläsare."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Ränta-på-ränta-kalkylator",
+      "description": "Simulera tillväxten av ett kapital med ränta på ränta och regelbundna insättningar. Resultat år för år i valfri valuta. Allt i din webbläsare."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatera och validera JSON",
@@ -962,6 +967,25 @@
     },
     "errors": {
       "clipboard": "Kunde inte kopiera till urklipp."
+    }
+  },
+  "yieldy": {
+    "principal": "Startkapital",
+    "rate": "Årlig ränta",
+    "years": "År",
+    "contribution": "Insättning per period",
+    "currency": "Valuta",
+    "hint": "Varje insättning sker i slutet av varje kapitaliseringsperiod.",
+    "frequency": {
+      "label": "Kapitaliseringsfrekvens",
+      "annually": "Årligen", "semiAnnually": "Halvårsvis", "quarterly": "Kvartalsvis",
+      "monthly": "Månadsvis", "weekly": "Veckovis", "daily": "Dagligen"
+    },
+    "results": {
+      "finalBalance": "Slutsaldo", "totalContributed": "Totalt insatt", "totalInterest": "Intjänad ränta"
+    },
+    "table": {
+      "title": "Uppdelning år för år", "year": "År", "balance": "Saldo", "contributed": "Insatt", "interest": "Ränta"
     }
   },
   "croppy": {

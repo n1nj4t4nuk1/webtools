@@ -201,6 +201,11 @@
       "tagline": "Rajaa kuvia",
       "description": "Valitse alue raahaamalla tai tarkoilla pikseliarvoilla. Lukitse kuvasuhde (1:1, 4:3, 16:9…). Vie häviötön PNG tai koodaa uudelleen JPG- tai WebP-muotoon. Kaikki selaimessasi."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Koronkorkolaskuri",
+      "description": "Simuloi pääoman kasvua koronkorolla ja säännöllisillä lisäsijoituksilla. Vuosi vuodelta -tulokset valitsemassasi valuutassa. Kaikki selaimessasi."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Muotoile ja validoi JSON",
@@ -962,6 +967,35 @@
     },
     "errors": {
       "clipboard": "Leikepöydälle ei voitu kopioida."
+    }
+  },
+  "yieldy": {
+    "principal": "Alkupääoma",
+    "rate": "Vuosikorko",
+    "years": "Vuodet",
+    "contribution": "Lisäsijoitus per jakso",
+    "currency": "Valuutta",
+    "hint": "Jokainen lisäsijoitus tehdään kunkin korkojakson lopussa.",
+    "frequency": {
+      "label": "Korkojakson tiheys",
+      "annually": "Vuosittain",
+      "semiAnnually": "Puolivuosittain",
+      "quarterly": "Neljännesvuosittain",
+      "monthly": "Kuukausittain",
+      "weekly": "Viikoittain",
+      "daily": "Päivittäin"
+    },
+    "results": {
+      "finalBalance": "Loppusaldo",
+      "totalContributed": "Sijoitettu yhteensä",
+      "totalInterest": "Ansaitut korot"
+    },
+    "table": {
+      "title": "Vuosi vuodelta -erittely",
+      "year": "Vuosi",
+      "balance": "Saldo",
+      "contributed": "Sijoitettu",
+      "interest": "Korko"
     }
   },
   "croppy": {

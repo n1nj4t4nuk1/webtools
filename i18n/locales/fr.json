@@ -201,6 +201,11 @@
       "tagline": "Recadrer des images",
       "description": "Sélectionnez la zone en glissant ou avec des valeurs exactes en pixels. Verrouillez le ratio (1:1, 4:3, 16:9…). Exportez en PNG sans perte ou réencodez en JPG/WebP. Tout dans votre navigateur."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Calculateur d'intérêts composés",
+      "description": "Simulez la croissance d'un capital avec des intérêts composés et des versements périodiques. Résultats année par année dans la devise de votre choix. Tout dans votre navigateur."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater et valider du JSON",
@@ -962,6 +967,35 @@
     },
     "errors": {
       "clipboard": "Impossible de copier dans le presse-papiers."
+    }
+  },
+  "yieldy": {
+    "principal": "Capital initial",
+    "rate": "Taux annuel",
+    "years": "Années",
+    "contribution": "Versement par période",
+    "currency": "Devise",
+    "hint": "Chaque versement est ajouté à la fin de chaque période de capitalisation.",
+    "frequency": {
+      "label": "Fréquence de capitalisation",
+      "annually": "Annuelle",
+      "semiAnnually": "Semestrielle",
+      "quarterly": "Trimestrielle",
+      "monthly": "Mensuelle",
+      "weekly": "Hebdomadaire",
+      "daily": "Quotidienne"
+    },
+    "results": {
+      "finalBalance": "Solde final",
+      "totalContributed": "Total versé",
+      "totalInterest": "Intérêts gagnés"
+    },
+    "table": {
+      "title": "Évolution année par année",
+      "year": "Année",
+      "balance": "Solde",
+      "contributed": "Versé",
+      "interest": "Intérêts"
     }
   },
   "croppy": {

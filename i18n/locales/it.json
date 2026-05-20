@@ -196,6 +196,11 @@
       "tagline": "Ritaglia immagini",
       "description": "Seleziona l'area trascinando o con valori esatti in pixel. Blocca le proporzioni (1:1, 4:3, 16:9…). Esporta senza perdita in PNG o ricodifica in JPG/WebP. Tutto nel tuo browser."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Calcolatore di interesse composto",
+      "description": "Simula la crescita di un capitale con interesse composto e versamenti periodici. Risultati anno per anno nella valuta scelta. Tutto nel tuo browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatta e valida JSON",
@@ -927,6 +932,35 @@
     },
     "errors": {
       "clipboard": "Impossibile copiare negli appunti."
+    }
+  },
+  "yieldy": {
+    "principal": "Capitale iniziale",
+    "rate": "Tasso annuo",
+    "years": "Anni",
+    "contribution": "Versamento per periodo",
+    "currency": "Valuta",
+    "hint": "Ogni versamento viene aggiunto alla fine di ogni periodo di capitalizzazione.",
+    "frequency": {
+      "label": "Frequenza di capitalizzazione",
+      "annually": "Annuale",
+      "semiAnnually": "Semestrale",
+      "quarterly": "Trimestrale",
+      "monthly": "Mensile",
+      "weekly": "Settimanale",
+      "daily": "Giornaliera"
+    },
+    "results": {
+      "finalBalance": "Saldo finale",
+      "totalContributed": "Totale versato",
+      "totalInterest": "Interessi maturati"
+    },
+    "table": {
+      "title": "Andamento anno per anno",
+      "year": "Anno",
+      "balance": "Saldo",
+      "contributed": "Versato",
+      "interest": "Interessi"
     }
   },
   "croppy": {

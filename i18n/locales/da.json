@@ -201,6 +201,11 @@
       "tagline": "Beskær billeder",
       "description": "Vælg området ved at trække eller med præcise pixelværdier. Lås billedformatet (1:1, 4:3, 16:9…). Eksportér tabsfrit PNG eller omkod til JPG/WebP. Alt i din browser."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Beregner til renters rente",
+      "description": "Simuler væksten af en hovedstol med renters rente og regelmæssige indbetalinger. Resultater år for år i din valgte valuta. Alt i din browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatér og valider JSON",
@@ -962,6 +967,35 @@
     },
     "errors": {
       "clipboard": "Kunne ikke kopiere til udklipsholderen."
+    }
+  },
+  "yieldy": {
+    "principal": "Startkapital",
+    "rate": "Årlig rente",
+    "years": "År",
+    "contribution": "Indbetaling pr. periode",
+    "currency": "Valuta",
+    "hint": "Hver indbetaling tilføjes i slutningen af hver renteperiode.",
+    "frequency": {
+      "label": "Rentetilskrivningsfrekvens",
+      "annually": "Årligt",
+      "semiAnnually": "Halvårligt",
+      "quarterly": "Kvartalsvis",
+      "monthly": "Månedligt",
+      "weekly": "Ugentligt",
+      "daily": "Dagligt"
+    },
+    "results": {
+      "finalBalance": "Slutsaldo",
+      "totalContributed": "Samlet indbetalt",
+      "totalInterest": "Optjente renter"
+    },
+    "table": {
+      "title": "Oversigt år for år",
+      "year": "År",
+      "balance": "Saldo",
+      "contributed": "Indbetalt",
+      "interest": "Renter"
     }
   },
   "croppy": {

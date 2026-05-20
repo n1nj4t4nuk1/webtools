@@ -201,6 +201,11 @@
       "tagline": "Decupează imagini",
       "description": "Selectează zona prin tragere sau cu valori exacte în pixeli. Blochează raportul de aspect (1:1, 4:3, 16:9…). Exportă PNG fără pierderi sau recodează ca JPG/WebP. Totul în browserul tău."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Calculator de dobândă compusă",
+      "description": "Simulează creșterea unui capital cu dobândă compusă și contribuții regulate. Rezultate an de an în moneda aleasă. Totul în browserul tău."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatează și validează JSON",
@@ -962,6 +967,25 @@
     },
     "errors": {
       "clipboard": "Nu s-a putut copia în clipboard."
+    }
+  },
+  "yieldy": {
+    "principal": "Capital inițial",
+    "rate": "Rată anuală",
+    "years": "Ani",
+    "contribution": "Contribuție pe perioadă",
+    "currency": "Monedă",
+    "hint": "Fiecare contribuție este adăugată la sfârșitul fiecărei perioade de capitalizare.",
+    "frequency": {
+      "label": "Frecvență de capitalizare",
+      "annually": "Anuală", "semiAnnually": "Semestrială", "quarterly": "Trimestrială",
+      "monthly": "Lunară", "weekly": "Săptămânală", "daily": "Zilnică"
+    },
+    "results": {
+      "finalBalance": "Sold final", "totalContributed": "Total contribuit", "totalInterest": "Dobândă obținută"
+    },
+    "table": {
+      "title": "Detaliere an cu an", "year": "An", "balance": "Sold", "contributed": "Contribuit", "interest": "Dobândă"
     }
   },
   "croppy": {

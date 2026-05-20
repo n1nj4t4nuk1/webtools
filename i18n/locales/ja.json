@@ -196,6 +196,11 @@
       "tagline": "画像をトリミング",
       "description": "ドラッグまたは正確なピクセル値で範囲を選択。アスペクト比（1:1, 4:3, 16:9…）をロック可能。PNGで無劣化エクスポートまたはJPG/WebPで再エンコード。すべてブラウザで処理。"
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "複利計算機",
+      "description": "複利と定期積立による資本の成長をシミュレーション。選択した通貨で年単位の結果を表示。すべてブラウザで処理。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSONをフォーマット・検証",
@@ -927,6 +932,35 @@
     },
     "errors": {
       "clipboard": "クリップボードにコピーできませんでした。"
+    }
+  },
+  "yieldy": {
+    "principal": "初期資本",
+    "rate": "年利",
+    "years": "年数",
+    "contribution": "期間ごとの積立額",
+    "currency": "通貨",
+    "hint": "各積立は各複利期間の最後に加算されます。",
+    "frequency": {
+      "label": "複利の頻度",
+      "annually": "年次",
+      "semiAnnually": "半年ごと",
+      "quarterly": "四半期ごと",
+      "monthly": "月次",
+      "weekly": "週次",
+      "daily": "日次"
+    },
+    "results": {
+      "finalBalance": "最終残高",
+      "totalContributed": "総積立額",
+      "totalInterest": "獲得利息"
+    },
+    "table": {
+      "title": "年次推移",
+      "year": "年",
+      "balance": "残高",
+      "contributed": "積立",
+      "interest": "利息"
     }
   },
   "croppy": {

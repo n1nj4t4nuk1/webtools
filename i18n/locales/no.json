@@ -201,6 +201,11 @@
       "tagline": "Beskjær bilder",
       "description": "Velg området ved å dra eller med eksakte pikselverdier. Lås sideforholdet (1:1, 4:3, 16:9…). Eksporter tapsfri PNG eller omkod til JPG/WebP. Alt i nettleseren din."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Rentes rente-kalkulator",
+      "description": "Simuler veksten av en hovedstol med rentes rente og regelmessige innskudd. År-for-år-resultater i den valgte valutaen. Alt i nettleseren din."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formater og valider JSON",
@@ -962,6 +967,25 @@
     },
     "errors": {
       "clipboard": "Kunne ikke kopiere til utklippstavlen."
+    }
+  },
+  "yieldy": {
+    "principal": "Startkapital",
+    "rate": "Årlig rente",
+    "years": "År",
+    "contribution": "Innskudd per periode",
+    "currency": "Valuta",
+    "hint": "Hvert innskudd legges til på slutten av hver renteperiode.",
+    "frequency": {
+      "label": "Renteperiode",
+      "annually": "Årlig", "semiAnnually": "Halvårlig", "quarterly": "Kvartalsvis",
+      "monthly": "Månedlig", "weekly": "Ukentlig", "daily": "Daglig"
+    },
+    "results": {
+      "finalBalance": "Sluttbeløp", "totalContributed": "Totalt innskutt", "totalInterest": "Opptjent rente"
+    },
+    "table": {
+      "title": "Oppdeling år for år", "year": "År", "balance": "Saldo", "contributed": "Innskutt", "interest": "Rente"
     }
   },
   "croppy": {

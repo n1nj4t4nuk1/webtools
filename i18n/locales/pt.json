@@ -196,6 +196,11 @@
       "tagline": "Recortar imagens",
       "description": "Selecione a região arrastando ou com valores exatos em pixels. Trave a proporção (1:1, 4:3, 16:9…). Exporte sem perdas em PNG ou recodifique em JPG/WebP. Tudo no seu navegador."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Calculadora de juros compostos",
+      "description": "Simule o crescimento de um capital com juros compostos e aportes periódicos. Resultados ano a ano na moeda escolhida. Tudo no seu navegador."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formate e valide JSON",
@@ -927,6 +932,35 @@
     },
     "errors": {
       "clipboard": "Não foi possível copiar para a área de transferência."
+    }
+  },
+  "yieldy": {
+    "principal": "Capital inicial",
+    "rate": "Taxa anual",
+    "years": "Anos",
+    "contribution": "Aporte por período",
+    "currency": "Moeda",
+    "hint": "Cada aporte é adicionado ao final de cada período de capitalização.",
+    "frequency": {
+      "label": "Frequência de capitalização",
+      "annually": "Anual",
+      "semiAnnually": "Semestral",
+      "quarterly": "Trimestral",
+      "monthly": "Mensal",
+      "weekly": "Semanal",
+      "daily": "Diária"
+    },
+    "results": {
+      "finalBalance": "Saldo final",
+      "totalContributed": "Total aportado",
+      "totalInterest": "Juros gerados"
+    },
+    "table": {
+      "title": "Evolução ano a ano",
+      "year": "Ano",
+      "balance": "Saldo",
+      "contributed": "Aportado",
+      "interest": "Juros"
     }
   },
   "croppy": {

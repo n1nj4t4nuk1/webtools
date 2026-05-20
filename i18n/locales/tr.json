@@ -201,6 +201,11 @@
       "tagline": "Görselleri kırpın",
       "description": "Bölgeyi sürükleyerek veya tam piksel değerleriyle seçin. En boy oranını kilitleyin (1:1, 4:3, 16:9…). Kayıpsız PNG dışa aktarın veya JPG/WebP olarak yeniden kodlayın. Hepsi tarayıcınızda."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Bileşik faiz hesaplayıcı",
+      "description": "Bir anaparanın bileşik faiz ve düzenli katkılarla büyümesini simüle edin. Seçtiğiniz para biriminde yıl yıl sonuçlar. Hepsi tarayıcınızda."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON'u biçimlendir ve doğrula",
@@ -962,6 +967,25 @@
     },
     "errors": {
       "clipboard": "Panoya kopyalanamadı."
+    }
+  },
+  "yieldy": {
+    "principal": "Başlangıç sermayesi",
+    "rate": "Yıllık oran",
+    "years": "Yıl",
+    "contribution": "Dönem başına katkı",
+    "currency": "Para birimi",
+    "hint": "Her katkı, her bileşik dönemin sonunda eklenir.",
+    "frequency": {
+      "label": "Bileşik sıklığı",
+      "annually": "Yıllık", "semiAnnually": "Altı aylık", "quarterly": "Üç aylık",
+      "monthly": "Aylık", "weekly": "Haftalık", "daily": "Günlük"
+    },
+    "results": {
+      "finalBalance": "Nihai bakiye", "totalContributed": "Toplam katkı", "totalInterest": "Kazanılan faiz"
+    },
+    "table": {
+      "title": "Yıl yıl döküm", "year": "Yıl", "balance": "Bakiye", "contributed": "Katkı", "interest": "Faiz"
     }
   },
   "croppy": {

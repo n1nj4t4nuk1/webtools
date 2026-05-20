@@ -201,6 +201,11 @@
       "tagline": "이미지 자르기",
       "description": "드래그하거나 정확한 픽셀 값으로 영역을 선택합니다. 화면비를 고정할 수 있습니다 (1:1, 4:3, 16:9…). 무손실 PNG로 내보내거나 JPG/WebP로 다시 인코딩하세요. 모두 브라우저에서 처리됩니다."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "복리 계산기",
+      "description": "복리와 정기 납입으로 원금이 성장하는 과정을 시뮬레이션합니다. 선택한 통화로 연도별 결과를 확인할 수 있습니다. 모두 브라우저에서 처리됩니다."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON 포맷 및 검증",
@@ -962,6 +967,25 @@
     },
     "errors": {
       "clipboard": "클립보드에 복사할 수 없습니다."
+    }
+  },
+  "yieldy": {
+    "principal": "초기 자본",
+    "rate": "연이율",
+    "years": "연수",
+    "contribution": "기간당 납입금",
+    "currency": "통화",
+    "hint": "각 납입은 매 복리 기간이 끝날 때 적용됩니다.",
+    "frequency": {
+      "label": "복리 주기",
+      "annually": "연간", "semiAnnually": "반기", "quarterly": "분기",
+      "monthly": "월간", "weekly": "주간", "daily": "일간"
+    },
+    "results": {
+      "finalBalance": "최종 잔액", "totalContributed": "총 납입액", "totalInterest": "획득 이자"
+    },
+    "table": {
+      "title": "연도별 상세", "year": "연도", "balance": "잔액", "contributed": "납입액", "interest": "이자"
     }
   },
   "croppy": {

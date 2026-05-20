@@ -196,6 +196,11 @@
       "tagline": "裁剪图片",
       "description": "通过拖动或精确像素值选择区域。锁定宽高比（1:1、4:3、16:9…）。导出无损 PNG 或重新编码为 JPG/WebP。全部在您的浏览器中完成。"
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "复利计算器",
+      "description": "模拟本金在复利和定期投入下的增长。以您选择的货币逐年显示结果。全部在您的浏览器中完成。"
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "格式化和验证 JSON",
@@ -927,6 +932,25 @@
     },
     "errors": {
       "clipboard": "无法复制到剪贴板。"
+    }
+  },
+  "yieldy": {
+    "principal": "初始资本",
+    "rate": "年利率",
+    "years": "年数",
+    "contribution": "每期投入",
+    "currency": "货币",
+    "hint": "每次投入在每个复利周期结束时计入。",
+    "frequency": {
+      "label": "复利频率",
+      "annually": "每年", "semiAnnually": "每半年", "quarterly": "每季度",
+      "monthly": "每月", "weekly": "每周", "daily": "每日"
+    },
+    "results": {
+      "finalBalance": "最终余额", "totalContributed": "投入总额", "totalInterest": "所得利息"
+    },
+    "table": {
+      "title": "逐年明细", "year": "年", "balance": "余额", "contributed": "已投入", "interest": "利息"
     }
   },
   "croppy": {

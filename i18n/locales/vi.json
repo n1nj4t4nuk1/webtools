@@ -201,6 +201,11 @@
       "tagline": "Cắt ảnh",
       "description": "Chọn vùng bằng cách kéo hoặc bằng giá trị pixel chính xác. Khóa tỉ lệ khung hình (1:1, 4:3, 16:9…). Xuất PNG không mất dữ liệu hoặc mã hóa lại thành JPG/WebP. Tất cả trong trình duyệt của bạn."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Máy tính lãi kép",
+      "description": "Mô phỏng sự tăng trưởng của một khoản vốn với lãi kép và các khoản đóng góp định kỳ. Kết quả từng năm bằng đơn vị tiền tệ bạn chọn. Tất cả trong trình duyệt của bạn."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Định dạng và xác thực JSON",
@@ -962,6 +967,25 @@
     },
     "errors": {
       "clipboard": "Không thể sao chép vào clipboard."
+    }
+  },
+  "yieldy": {
+    "principal": "Vốn ban đầu",
+    "rate": "Lãi suất hàng năm",
+    "years": "Số năm",
+    "contribution": "Đóng góp mỗi kỳ",
+    "currency": "Tiền tệ",
+    "hint": "Mỗi khoản đóng góp được thêm vào cuối mỗi kỳ tính lãi kép.",
+    "frequency": {
+      "label": "Tần suất tính lãi kép",
+      "annually": "Hàng năm", "semiAnnually": "Nửa năm", "quarterly": "Hàng quý",
+      "monthly": "Hàng tháng", "weekly": "Hàng tuần", "daily": "Hàng ngày"
+    },
+    "results": {
+      "finalBalance": "Số dư cuối", "totalContributed": "Tổng đã đóng góp", "totalInterest": "Lãi kiếm được"
+    },
+    "table": {
+      "title": "Phân tích từng năm", "year": "Năm", "balance": "Số dư", "contributed": "Đã đóng góp", "interest": "Lãi"
     }
   },
   "croppy": {

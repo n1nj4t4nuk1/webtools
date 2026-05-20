@@ -201,6 +201,11 @@
       "tagline": "Afbeeldingen bijsnijden",
       "description": "Selecteer het gebied door te slepen of met exacte pixelwaarden. Vergrendel de beeldverhouding (1:1, 4:3, 16:9…). Exporteer verliesvrije PNG of codeer opnieuw als JPG/WebP. Alles in uw browser."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Samengestelde-rentecalculator",
+      "description": "Simuleer de groei van een hoofdsom met samengestelde rente en periodieke stortingen. Resultaten jaar voor jaar in de door u gekozen valuta. Alles in uw browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatteren en valideren",
@@ -962,6 +967,25 @@
     },
     "errors": {
       "clipboard": "Kon niet naar het klembord kopiëren."
+    }
+  },
+  "yieldy": {
+    "principal": "Beginkapitaal",
+    "rate": "Jaarlijkse rente",
+    "years": "Jaren",
+    "contribution": "Storting per periode",
+    "currency": "Valuta",
+    "hint": "Elke storting wordt aan het einde van elke samenstellingsperiode bijgeschreven.",
+    "frequency": {
+      "label": "Samenstellingsfrequentie",
+      "annually": "Jaarlijks", "semiAnnually": "Halfjaarlijks", "quarterly": "Per kwartaal",
+      "monthly": "Maandelijks", "weekly": "Wekelijks", "daily": "Dagelijks"
+    },
+    "results": {
+      "finalBalance": "Eindsaldo", "totalContributed": "Totaal gestort", "totalInterest": "Verdiende rente"
+    },
+    "table": {
+      "title": "Uitsplitsing per jaar", "year": "Jaar", "balance": "Saldo", "contributed": "Gestort", "interest": "Rente"
     }
   },
   "croppy": {

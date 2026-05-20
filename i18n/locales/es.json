@@ -201,6 +201,11 @@
       "tagline": "Recorta imágenes",
       "description": "Selecciona la zona arrastrando o con valores exactos en píxeles. Bloquea la proporción (1:1, 4:3, 16:9…). Exporta sin pérdida en PNG o reencode JPG/WebP. Todo en tu navegador."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Calculadora de interés compuesto",
+      "description": "Simula el crecimiento de un capital con interés compuesto y aportaciones periódicas. Resultados año a año en la moneda que elijas. Todo en tu navegador."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatea y valida JSON",
@@ -962,6 +967,35 @@
     },
     "errors": {
       "clipboard": "No se pudo copiar al portapapeles."
+    }
+  },
+  "yieldy": {
+    "principal": "Capital inicial",
+    "rate": "Tasa anual",
+    "years": "Años",
+    "contribution": "Aportación por periodo",
+    "currency": "Moneda",
+    "hint": "Cada aportación se añade al final de cada periodo de capitalización.",
+    "frequency": {
+      "label": "Frecuencia de capitalización",
+      "annually": "Anual",
+      "semiAnnually": "Semestral",
+      "quarterly": "Trimestral",
+      "monthly": "Mensual",
+      "weekly": "Semanal",
+      "daily": "Diaria"
+    },
+    "results": {
+      "finalBalance": "Balance final",
+      "totalContributed": "Total aportado",
+      "totalInterest": "Intereses generados"
+    },
+    "table": {
+      "title": "Evolución año a año",
+      "year": "Año",
+      "balance": "Balance",
+      "contributed": "Aportado",
+      "interest": "Intereses"
     }
   },
   "croppy": {

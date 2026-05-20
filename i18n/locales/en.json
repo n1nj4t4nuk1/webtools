@@ -201,6 +201,11 @@
       "tagline": "Crop images",
       "description": "Select the region by dragging or with exact pixel values. Lock the aspect ratio (1:1, 4:3, 16:9…). Export lossless PNG or re-encode as JPG/WebP. All in your browser."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Compound interest calculator",
+      "description": "Simulate the growth of a principal with compound interest and regular contributions. Year-by-year results in your chosen currency. All in your browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Format and validate JSON",
@@ -962,6 +967,35 @@
     },
     "errors": {
       "clipboard": "Could not copy to clipboard."
+    }
+  },
+  "yieldy": {
+    "principal": "Initial capital",
+    "rate": "Annual rate",
+    "years": "Years",
+    "contribution": "Contribution per period",
+    "currency": "Currency",
+    "hint": "Each contribution lands at the end of every compounding period.",
+    "frequency": {
+      "label": "Compounding frequency",
+      "annually": "Annually",
+      "semiAnnually": "Semi-annually",
+      "quarterly": "Quarterly",
+      "monthly": "Monthly",
+      "weekly": "Weekly",
+      "daily": "Daily"
+    },
+    "results": {
+      "finalBalance": "Final balance",
+      "totalContributed": "Total contributed",
+      "totalInterest": "Interest earned"
+    },
+    "table": {
+      "title": "Year-by-year breakdown",
+      "year": "Year",
+      "balance": "Balance",
+      "contributed": "Contributed",
+      "interest": "Interest"
     }
   },
   "croppy": {

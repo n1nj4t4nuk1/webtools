@@ -201,6 +201,11 @@
       "tagline": "Oříznutí obrázků",
       "description": "Vyberte oblast tažením nebo přesnými hodnotami v pixelech. Uzamkněte poměr stran (1:1, 4:3, 16:9…). Exportujte jako bezeztrátový PNG nebo překódujte na JPG/WebP. Vše ve vašem prohlížeči."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Kalkulačka složeného úročení",
+      "description": "Simulujte růst kapitálu se složeným úročením a pravidelnými vklady. Výsledky rok po roce ve zvolené měně. Vše ve vašem prohlížeči."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formátování a validace JSON",
@@ -962,6 +967,35 @@
     },
     "errors": {
       "clipboard": "Nelze zkopírovat do schránky."
+    }
+  },
+  "yieldy": {
+    "principal": "Počáteční kapitál",
+    "rate": "Roční sazba",
+    "years": "Roky",
+    "contribution": "Vklad za období",
+    "currency": "Měna",
+    "hint": "Každý vklad je připsán na konci každého úročícího období.",
+    "frequency": {
+      "label": "Frekvence úročení",
+      "annually": "Ročně",
+      "semiAnnually": "Pololetně",
+      "quarterly": "Čtvrtletně",
+      "monthly": "Měsíčně",
+      "weekly": "Týdně",
+      "daily": "Denně"
+    },
+    "results": {
+      "finalBalance": "Konečný zůstatek",
+      "totalContributed": "Celkem vloženo",
+      "totalInterest": "Získané úroky"
+    },
+    "table": {
+      "title": "Přehled rok po roce",
+      "year": "Rok",
+      "balance": "Zůstatek",
+      "contributed": "Vloženo",
+      "interest": "Úroky"
     }
   },
   "croppy": {

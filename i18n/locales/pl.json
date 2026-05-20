@@ -201,6 +201,11 @@
       "tagline": "Przycinaj obrazy",
       "description": "Wybierz obszar przeciągając lub podając dokładne wartości w pikselach. Zablokuj proporcje (1:1, 4:3, 16:9…). Eksportuj bezstratny PNG lub przekoduj na JPG/WebP. Wszystko w Twojej przeglądarce."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Kalkulator procentu składanego",
+      "description": "Symuluj wzrost kapitału z procentem składanym i regularnymi wpłatami. Wyniki rok po roku w wybranej walucie. Wszystko w Twojej przeglądarce."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "Formatuj i waliduj JSON",
@@ -962,6 +967,25 @@
     },
     "errors": {
       "clipboard": "Nie udało się skopiować do schowka."
+    }
+  },
+  "yieldy": {
+    "principal": "Kapitał początkowy",
+    "rate": "Stopa roczna",
+    "years": "Lata",
+    "contribution": "Wpłata na okres",
+    "currency": "Waluta",
+    "hint": "Każda wpłata jest dodawana na końcu każdego okresu kapitalizacji.",
+    "frequency": {
+      "label": "Częstotliwość kapitalizacji",
+      "annually": "Roczna", "semiAnnually": "Półroczna", "quarterly": "Kwartalna",
+      "monthly": "Miesięczna", "weekly": "Tygodniowa", "daily": "Dzienna"
+    },
+    "results": {
+      "finalBalance": "Saldo końcowe", "totalContributed": "Suma wpłat", "totalInterest": "Uzyskane odsetki"
+    },
+    "table": {
+      "title": "Podział rok po roku", "year": "Rok", "balance": "Saldo", "contributed": "Wpłacone", "interest": "Odsetki"
     }
   },
   "croppy": {

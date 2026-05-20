@@ -201,6 +201,11 @@
       "tagline": "Bilder zuschneiden",
       "description": "Wählen Sie den Bereich durch Ziehen oder mit exakten Pixelwerten. Sperren Sie das Seitenverhältnis (1:1, 4:3, 16:9…). Verlustfrei als PNG exportieren oder als JPG/WebP neu kodieren. Alles im Browser."
     },
+    "yieldy": {
+      "name": "Yieldy",
+      "tagline": "Zinseszins-Rechner",
+      "description": "Simulieren Sie das Wachstum eines Kapitals mit Zinseszinsen und regelmäßigen Einzahlungen. Jährliche Ergebnisse in der Währung Ihrer Wahl. Alles im Browser."
+    },
     "jsonpad": {
       "name": "Jsonpad",
       "tagline": "JSON formatieren und validieren",
@@ -962,6 +967,35 @@
     },
     "errors": {
       "clipboard": "Konnte nicht in die Zwischenablage kopiert werden."
+    }
+  },
+  "yieldy": {
+    "principal": "Anfangskapital",
+    "rate": "Jährlicher Zinssatz",
+    "years": "Jahre",
+    "contribution": "Einzahlung pro Periode",
+    "currency": "Währung",
+    "hint": "Jede Einzahlung erfolgt am Ende jeder Verzinsungsperiode.",
+    "frequency": {
+      "label": "Verzinsungsfrequenz",
+      "annually": "Jährlich",
+      "semiAnnually": "Halbjährlich",
+      "quarterly": "Quartalsweise",
+      "monthly": "Monatlich",
+      "weekly": "Wöchentlich",
+      "daily": "Täglich"
+    },
+    "results": {
+      "finalBalance": "Endsaldo",
+      "totalContributed": "Gesamt eingezahlt",
+      "totalInterest": "Erwirtschaftete Zinsen"
+    },
+    "table": {
+      "title": "Jährliche Entwicklung",
+      "year": "Jahr",
+      "balance": "Saldo",
+      "contributed": "Eingezahlt",
+      "interest": "Zinsen"
     }
   },
   "croppy": {
