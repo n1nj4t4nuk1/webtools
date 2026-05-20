@@ -179,7 +179,7 @@
     "cronpad": {
       "name": "Cronpad",
       "tagline": "Explique les expressions cron",
-      "description": "Traduit une expression cron en langage clair, valide la syntaxe et affiche les prochaines exécutions. Prend en charge les presets comme @daily ou @hourly. Tout dans votre navigateur."
+      "description": "Traduit une expression cron en langage clair, valide la syntaxe et affiche les prochaines exécutions. Prend en charge les presets comme {'@'}daily ou {'@'}hourly. Tout dans votre navigateur."
     },
     "mdtably": {
       "name": "Mdtably",
@@ -1280,7 +1280,7 @@
     },
     "errors": {
       "fieldCount": "Une expression cron nécessite 5 champs séparés par des espaces.",
-      "rebootUnsupported": "@reboot n'est pas un horaire, il s'exécute au démarrage du système.",
+      "rebootUnsupported": "{'@'}reboot n'est pas un horaire, il s'exécute au démarrage du système.",
       "emptyField": "Le champ {field} est vide.",
       "invalidStep": "Pas non valide dans {field} : {value}",
       "invalidRange": "Plage non valide dans {field} : {value} (attendu {min}-{max})",

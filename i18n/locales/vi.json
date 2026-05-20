@@ -179,7 +179,7 @@
     "cronpad": {
       "name": "Cronpad",
       "tagline": "Giải thích biểu thức cron",
-      "description": "Dịch biểu thức cron sang văn bản dễ hiểu, kiểm tra cú pháp và xem trước các lần chạy tiếp theo. Hỗ trợ các mẫu có sẵn như @daily và @hourly. Tất cả trong trình duyệt của bạn."
+      "description": "Dịch biểu thức cron sang văn bản dễ hiểu, kiểm tra cú pháp và xem trước các lần chạy tiếp theo. Hỗ trợ các mẫu có sẵn như {'@'}daily và {'@'}hourly. Tất cả trong trình duyệt của bạn."
     },
     "mdtably": {
       "name": "Mdtably",
@@ -978,14 +978,24 @@
     "hint": "Mỗi khoản đóng góp được thêm vào cuối mỗi kỳ tính lãi kép.",
     "frequency": {
       "label": "Tần suất tính lãi kép",
-      "annually": "Hàng năm", "semiAnnually": "Nửa năm", "quarterly": "Hàng quý",
-      "monthly": "Hàng tháng", "weekly": "Hàng tuần", "daily": "Hàng ngày"
+      "annually": "Hàng năm",
+      "semiAnnually": "Nửa năm",
+      "quarterly": "Hàng quý",
+      "monthly": "Hàng tháng",
+      "weekly": "Hàng tuần",
+      "daily": "Hàng ngày"
     },
     "results": {
-      "finalBalance": "Số dư cuối", "totalContributed": "Tổng đã đóng góp", "totalInterest": "Lãi kiếm được"
+      "finalBalance": "Số dư cuối",
+      "totalContributed": "Tổng đã đóng góp",
+      "totalInterest": "Lãi kiếm được"
     },
     "table": {
-      "title": "Phân tích từng năm", "year": "Năm", "balance": "Số dư", "contributed": "Đã đóng góp", "interest": "Lãi"
+      "title": "Phân tích từng năm",
+      "year": "Năm",
+      "balance": "Số dư",
+      "contributed": "Đã đóng góp",
+      "interest": "Lãi"
     }
   },
   "croppy": {
@@ -993,21 +1003,40 @@
     "hint": "Kéo để tạo, di chuyển hình chữ nhật hoặc nắm các tay cầm. Bạn cũng có thể chỉnh sửa X, Y, chiều rộng và chiều cao.",
     "aspect": {
       "label": "Tỉ lệ khung hình",
-      "free": "Tự do", "square": "1:1 (vuông)",
-      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+      "free": "Tự do",
+      "square": "1:1 (vuông)",
+      "r4_3": "4:3",
+      "r3_4": "3:4",
+      "r16_9": "16:9",
+      "r9_16": "9:16",
+      "r3_2": "3:2",
+      "r2_3": "2:3"
     },
-    "dim": { "width": "Chiều rộng", "height": "Chiều cao" },
+    "dim": {
+      "width": "Chiều rộng",
+      "height": "Chiều cao"
+    },
     "format": {
-      "label": "Định dạng", "png": "PNG (không mất dữ liệu)", "jpeg": "JPG (mất dữ liệu)", "webp": "WebP", "quality": "Chất lượng"
+      "label": "Định dạng",
+      "png": "PNG (không mất dữ liệu)",
+      "jpeg": "JPG (mất dữ liệu)",
+      "webp": "WebP",
+      "quality": "Chất lượng"
     },
     "quality": {
       "lossless": "PNG bảo toàn các pixel chính xác (không mất chất lượng).",
       "lossy": "JPG và WebP mã hóa lại hình ảnh, thêm mất mát chất lượng tối thiểu."
     },
     "actions": {
-      "download": "Tải xuống phần đã cắt", "processing": "Đang xử lý…", "change": "Đổi hình ảnh", "reset": "Đặt lại vùng chọn"
+      "download": "Tải xuống phần đã cắt",
+      "processing": "Đang xử lý…",
+      "change": "Đổi hình ảnh",
+      "reset": "Đặt lại vùng chọn"
     },
-    "errors": { "notImage": "{name} không phải là hình ảnh hợp lệ.", "generic": "Không thể xử lý hình ảnh." }
+    "errors": {
+      "notImage": "{name} không phải là hình ảnh hợp lệ.",
+      "generic": "Không thể xử lý hình ảnh."
+    }
   },
   "randy": {
     "seed": {
@@ -1021,9 +1050,16 @@
       "mulberry32": "mulberry32 (32-bit, nhanh)",
       "xoshiro128ss": "xoshiro128** (128-bit, chất lượng tốt hơn)"
     },
-    "kind": { "integers": "Số nguyên", "floats": "Số thực", "pick": "Chọn từ danh sách" },
+    "kind": {
+      "integers": "Số nguyên",
+      "floats": "Số thực",
+      "pick": "Chọn từ danh sách"
+    },
     "range": {
-      "min": "Tối thiểu", "max": "Tối đa", "count": "Số lượng", "decimals": "Số thập phân",
+      "min": "Tối thiểu",
+      "max": "Tối đa",
+      "count": "Số lượng",
+      "decimals": "Số thập phân",
       "inclusive": "Bao gồm cả hai cận."
     },
     "pick": {
@@ -1031,31 +1067,77 @@
       "placeholder": "alpha\nbravo\ncharlie",
       "withReplacement": "Cho phép lặp lại"
     },
-    "actions": { "generate": "Tạo" },
-    "output": { "label": "Kết quả ({n})", "copy": "Sao chép", "copied": "Đã sao chép!" }
+    "actions": {
+      "generate": "Tạo"
+    },
+    "output": {
+      "label": "Kết quả ({n})",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép!"
+    }
   },
   "brandy": {
-    "dropzone": { "base": "Kéo một hình ảnh vào đây hoặc nhấp để chọn", "watermark": "Kéo một hình ảnh để dùng làm hình mờ" },
-    "kind": { "text": "Văn bản", "image": "Hình ảnh" },
+    "dropzone": {
+      "base": "Kéo một hình ảnh vào đây hoặc nhấp để chọn",
+      "watermark": "Kéo một hình ảnh để dùng làm hình mờ"
+    },
+    "kind": {
+      "text": "Văn bản",
+      "image": "Hình ảnh"
+    },
     "text": {
       "text": "Văn bản hình mờ",
       "placeholder": "ví dụ © TanukiBox",
-      "font": "Phông chữ", "size": "Kích thước", "color": "Màu sắc", "bold": "Đậm", "italic": "Nghiêng"
+      "font": "Phông chữ",
+      "size": "Kích thước",
+      "color": "Màu sắc",
+      "bold": "Đậm",
+      "italic": "Nghiêng"
     },
-    "image": { "width": "Chiều rộng" },
-    "shared": { "position": "Vị trí", "rotation": "Xoay", "opacity": "Độ mờ", "margin": "Lề", "tileGap": "Khoảng cách lát" },
+    "image": {
+      "width": "Chiều rộng"
+    },
+    "shared": {
+      "position": "Vị trí",
+      "rotation": "Xoay",
+      "opacity": "Độ mờ",
+      "margin": "Lề",
+      "tileGap": "Khoảng cách lát"
+    },
     "positions": {
-      "center": "Giữa", "topLeft": "Trên trái", "top": "Trên", "topRight": "Trên phải",
-      "left": "Trái", "right": "Phải",
-      "bottomLeft": "Dưới trái", "bottom": "Dưới", "bottomRight": "Dưới phải",
+      "center": "Giữa",
+      "topLeft": "Trên trái",
+      "top": "Trên",
+      "topRight": "Trên phải",
+      "left": "Trái",
+      "right": "Phải",
+      "bottomLeft": "Dưới trái",
+      "bottom": "Dưới",
+      "bottomRight": "Dưới phải",
       "tiled": "Lát (lặp lại)"
     },
-    "format": { "label": "Định dạng", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "Chất lượng" },
-    "actions": { "download": "Tải xuống", "processing": "Đang xử lý…", "change": "Thay đổi" },
-    "errors": { "notImage": "{name} không phải là hình ảnh hợp lệ.", "generic": "Không thể xử lý hình ảnh." }
+    "format": {
+      "label": "Định dạng",
+      "png": "PNG",
+      "jpeg": "JPG",
+      "webp": "WebP",
+      "quality": "Chất lượng"
+    },
+    "actions": {
+      "download": "Tải xuống",
+      "processing": "Đang xử lý…",
+      "change": "Thay đổi"
+    },
+    "errors": {
+      "notImage": "{name} không phải là hình ảnh hợp lệ.",
+      "generic": "Không thể xử lý hình ảnh."
+    }
   },
   "mdtably": {
-    "input": { "label": "Đầu vào CSV", "placeholder": "Dán CSV hoặc nhấp vào một ví dụ…" },
+    "input": {
+      "label": "Đầu vào CSV",
+      "placeholder": "Dán CSV hoặc nhấp vào một ví dụ…"
+    },
     "delimiter": {
       "label": "Dấu phân cách",
       "auto": "Tự động ({char})",
@@ -1065,8 +1147,16 @@
       "pipe": "Dấu sổ đứng (|)"
     },
     "hasHeader": "Hàng đầu tiên là tiêu đề",
-    "columns": { "title": "Căn lề theo từng cột", "column": "Cột {n}" },
-    "alignment": { "none": "Mặc định", "left": "Trái", "center": "Giữa", "right": "Phải" },
+    "columns": {
+      "title": "Căn lề theo từng cột",
+      "column": "Cột {n}"
+    },
+    "alignment": {
+      "none": "Mặc định",
+      "left": "Trái",
+      "center": "Giữa",
+      "right": "Phải"
+    },
     "output": {
       "label": "Markdown",
       "empty": "Dán CSV ở trên để xem bảng.",
@@ -1081,15 +1171,53 @@
     }
   },
   "cronpad": {
-    "input": { "label": "Biểu thức cron", "placeholder": "ví dụ: 0 */5 * * *" },
-    "examples": { "label": "Ví dụ:" },
-    "validation": { "valid": "Hợp lệ", "invalid": "Không hợp lệ" },
+    "input": {
+      "label": "Biểu thức cron",
+      "placeholder": "ví dụ: 0 */5 * * *"
+    },
+    "examples": {
+      "label": "Ví dụ:"
+    },
+    "validation": {
+      "valid": "Hợp lệ",
+      "invalid": "Không hợp lệ"
+    },
     "expandedAs": "Được mở rộng thành: {expr}",
     "and": "và",
-    "nextRuns": { "title": "Các lần chạy tiếp theo", "useUTC": "Hiển thị theo UTC" },
-    "fieldNames": { "minute": "phút", "hour": "giờ", "dom": "ngày trong tháng", "month": "tháng", "dow": "ngày trong tuần" },
-    "dow": { "0":"Chủ Nhật","1":"Thứ Hai","2":"Thứ Ba","3":"Thứ Tư","4":"Thứ Năm","5":"Thứ Sáu","6":"Thứ Bảy" },
-    "month": { "1":"Tháng Một","2":"Tháng Hai","3":"Tháng Ba","4":"Tháng Tư","5":"Tháng Năm","6":"Tháng Sáu","7":"Tháng Bảy","8":"Tháng Tám","9":"Tháng Chín","10":"Tháng Mười","11":"Tháng Mười Một","12":"Tháng Mười Hai" },
+    "nextRuns": {
+      "title": "Các lần chạy tiếp theo",
+      "useUTC": "Hiển thị theo UTC"
+    },
+    "fieldNames": {
+      "minute": "phút",
+      "hour": "giờ",
+      "dom": "ngày trong tháng",
+      "month": "tháng",
+      "dow": "ngày trong tuần"
+    },
+    "dow": {
+      "0": "Chủ Nhật",
+      "1": "Thứ Hai",
+      "2": "Thứ Ba",
+      "3": "Thứ Tư",
+      "4": "Thứ Năm",
+      "5": "Thứ Sáu",
+      "6": "Thứ Bảy"
+    },
+    "month": {
+      "1": "Tháng Một",
+      "2": "Tháng Hai",
+      "3": "Tháng Ba",
+      "4": "Tháng Tư",
+      "5": "Tháng Năm",
+      "6": "Tháng Sáu",
+      "7": "Tháng Bảy",
+      "8": "Tháng Tám",
+      "9": "Tháng Chín",
+      "10": "Tháng Mười",
+      "11": "Tháng Mười Một",
+      "12": "Tháng Mười Hai"
+    },
     "desc": {
       "everyMinute": "Mỗi phút",
       "everyNMinutes": "Mỗi {n} phút",
@@ -1104,15 +1232,55 @@
       "verbosePrefix": "{phrase}"
     },
     "field": {
-      "minute": { "every":"mỗi phút","everyN":"mỗi {n} phút","value":"vào phút {n}","range":"từ phút {from} đến phút {to}","rangeStep":"mỗi {step} phút từ phút {from} đến phút {to}","fromStep":"mỗi {step} phút bắt đầu từ phút {from}","list":"vào các phút {list}" },
-      "hour":   { "every":"mỗi giờ","everyN":"mỗi {n} giờ","value":"vào giờ {n}","range":"từ giờ {from} đến giờ {to}","rangeStep":"mỗi {step} giờ từ giờ {from} đến giờ {to}","fromStep":"mỗi {step} giờ bắt đầu từ giờ {from}","list":"vào các giờ {list}" },
-      "dom":    { "every":"mỗi ngày","everyN":"mỗi {n} ngày","value":"vào ngày {n}","range":"từ ngày {from} đến ngày {to}","rangeStep":"mỗi {step} ngày từ ngày {from} đến ngày {to}","fromStep":"mỗi {step} ngày bắt đầu từ ngày {from}","list":"vào các ngày {list}" },
-      "month":  { "every":"mỗi tháng","everyN":"mỗi {n} tháng","value":"vào {name}","range":"từ {from} đến {to}","rangeStep":"mỗi {step} tháng","fromStep":"mỗi {step} tháng bắt đầu từ tháng {from}","list":"vào {list}" },
-      "dow":    { "every":"bất kỳ ngày nào","everyN":"mỗi {n} ngày trong tuần","value":"vào {name}","range":"từ {from} đến {to}","rangeStep":"mỗi {step} ngày từ {from} đến {to}","fromStep":"mỗi {step} ngày bắt đầu từ {from}","list":"vào {list}" }
+      "minute": {
+        "every": "mỗi phút",
+        "everyN": "mỗi {n} phút",
+        "value": "vào phút {n}",
+        "range": "từ phút {from} đến phút {to}",
+        "rangeStep": "mỗi {step} phút từ phút {from} đến phút {to}",
+        "fromStep": "mỗi {step} phút bắt đầu từ phút {from}",
+        "list": "vào các phút {list}"
+      },
+      "hour": {
+        "every": "mỗi giờ",
+        "everyN": "mỗi {n} giờ",
+        "value": "vào giờ {n}",
+        "range": "từ giờ {from} đến giờ {to}",
+        "rangeStep": "mỗi {step} giờ từ giờ {from} đến giờ {to}",
+        "fromStep": "mỗi {step} giờ bắt đầu từ giờ {from}",
+        "list": "vào các giờ {list}"
+      },
+      "dom": {
+        "every": "mỗi ngày",
+        "everyN": "mỗi {n} ngày",
+        "value": "vào ngày {n}",
+        "range": "từ ngày {from} đến ngày {to}",
+        "rangeStep": "mỗi {step} ngày từ ngày {from} đến ngày {to}",
+        "fromStep": "mỗi {step} ngày bắt đầu từ ngày {from}",
+        "list": "vào các ngày {list}"
+      },
+      "month": {
+        "every": "mỗi tháng",
+        "everyN": "mỗi {n} tháng",
+        "value": "vào {name}",
+        "range": "từ {from} đến {to}",
+        "rangeStep": "mỗi {step} tháng",
+        "fromStep": "mỗi {step} tháng bắt đầu từ tháng {from}",
+        "list": "vào {list}"
+      },
+      "dow": {
+        "every": "bất kỳ ngày nào",
+        "everyN": "mỗi {n} ngày trong tuần",
+        "value": "vào {name}",
+        "range": "từ {from} đến {to}",
+        "rangeStep": "mỗi {step} ngày từ {from} đến {to}",
+        "fromStep": "mỗi {step} ngày bắt đầu từ {from}",
+        "list": "vào {list}"
+      }
     },
     "errors": {
       "fieldCount": "Biểu thức cron cần 5 trường được phân cách bằng dấu cách.",
-      "rebootUnsupported": "@reboot không phải là lịch trình — nó chạy khi khởi động hệ thống.",
+      "rebootUnsupported": "{'@'}reboot không phải là lịch trình — nó chạy khi khởi động hệ thống.",
       "emptyField": "Trường {field} bị trống.",
       "invalidStep": "Bước không hợp lệ trong {field}: {value}",
       "invalidRange": "Phạm vi không hợp lệ trong {field}: {value} (mong đợi {min}-{max})",

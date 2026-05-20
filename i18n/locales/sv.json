@@ -179,7 +179,7 @@
     "cronpad": {
       "name": "Cronpad",
       "tagline": "Förklara cron-uttryck",
-      "description": "Översätt ett cron-uttryck till begriplig text, validera syntaxen och förhandsgranska kommande körningar. Stöder förinställningar som @daily och @hourly. Allt i din webbläsare."
+      "description": "Översätt ett cron-uttryck till begriplig text, validera syntaxen och förhandsgranska kommande körningar. Stöder förinställningar som {'@'}daily och {'@'}hourly. Allt i din webbläsare."
     },
     "mdtably": {
       "name": "Mdtably",
@@ -978,14 +978,24 @@
     "hint": "Varje insättning sker i slutet av varje kapitaliseringsperiod.",
     "frequency": {
       "label": "Kapitaliseringsfrekvens",
-      "annually": "Årligen", "semiAnnually": "Halvårsvis", "quarterly": "Kvartalsvis",
-      "monthly": "Månadsvis", "weekly": "Veckovis", "daily": "Dagligen"
+      "annually": "Årligen",
+      "semiAnnually": "Halvårsvis",
+      "quarterly": "Kvartalsvis",
+      "monthly": "Månadsvis",
+      "weekly": "Veckovis",
+      "daily": "Dagligen"
     },
     "results": {
-      "finalBalance": "Slutsaldo", "totalContributed": "Totalt insatt", "totalInterest": "Intjänad ränta"
+      "finalBalance": "Slutsaldo",
+      "totalContributed": "Totalt insatt",
+      "totalInterest": "Intjänad ränta"
     },
     "table": {
-      "title": "Uppdelning år för år", "year": "År", "balance": "Saldo", "contributed": "Insatt", "interest": "Ränta"
+      "title": "Uppdelning år för år",
+      "year": "År",
+      "balance": "Saldo",
+      "contributed": "Insatt",
+      "interest": "Ränta"
     }
   },
   "croppy": {
@@ -1040,9 +1050,16 @@
       "mulberry32": "mulberry32 (32-bitars, snabb)",
       "xoshiro128ss": "xoshiro128** (128-bitars, bättre kvalitet)"
     },
-    "kind": { "integers": "Heltal", "floats": "Flyttal", "pick": "Välj från lista" },
+    "kind": {
+      "integers": "Heltal",
+      "floats": "Flyttal",
+      "pick": "Välj från lista"
+    },
     "range": {
-      "min": "Minimum", "max": "Maximum", "count": "Antal", "decimals": "Decimaler",
+      "min": "Minimum",
+      "max": "Maximum",
+      "count": "Antal",
+      "decimals": "Decimaler",
       "inclusive": "Båda gränserna inklusive."
     },
     "pick": {
@@ -1050,31 +1067,77 @@
       "placeholder": "alpha\nbravo\ncharlie",
       "withReplacement": "Tillåt upprepningar"
     },
-    "actions": { "generate": "Generera" },
-    "output": { "label": "Resultat ({n})", "copy": "Kopiera", "copied": "Kopierat!" }
+    "actions": {
+      "generate": "Generera"
+    },
+    "output": {
+      "label": "Resultat ({n})",
+      "copy": "Kopiera",
+      "copied": "Kopierat!"
+    }
   },
   "brandy": {
-    "dropzone": { "base": "Dra en bild hit eller klicka för att välja en", "watermark": "Dra en bild som ska användas som vattenstämpel" },
-    "kind": { "text": "Text", "image": "Bild" },
+    "dropzone": {
+      "base": "Dra en bild hit eller klicka för att välja en",
+      "watermark": "Dra en bild som ska användas som vattenstämpel"
+    },
+    "kind": {
+      "text": "Text",
+      "image": "Bild"
+    },
     "text": {
       "text": "Vattenstämpeltext",
       "placeholder": "t.ex. © TanukiBox",
-      "font": "Typsnitt", "size": "Storlek", "color": "Färg", "bold": "Fet", "italic": "Kursiv"
+      "font": "Typsnitt",
+      "size": "Storlek",
+      "color": "Färg",
+      "bold": "Fet",
+      "italic": "Kursiv"
     },
-    "image": { "width": "Bredd" },
-    "shared": { "position": "Position", "rotation": "Rotation", "opacity": "Opacitet", "margin": "Marginal", "tileGap": "Kakelmellanrum" },
+    "image": {
+      "width": "Bredd"
+    },
+    "shared": {
+      "position": "Position",
+      "rotation": "Rotation",
+      "opacity": "Opacitet",
+      "margin": "Marginal",
+      "tileGap": "Kakelmellanrum"
+    },
     "positions": {
-      "center": "Mitten", "topLeft": "Uppe till vänster", "top": "Uppe", "topRight": "Uppe till höger",
-      "left": "Vänster", "right": "Höger",
-      "bottomLeft": "Nere till vänster", "bottom": "Nere", "bottomRight": "Nere till höger",
+      "center": "Mitten",
+      "topLeft": "Uppe till vänster",
+      "top": "Uppe",
+      "topRight": "Uppe till höger",
+      "left": "Vänster",
+      "right": "Höger",
+      "bottomLeft": "Nere till vänster",
+      "bottom": "Nere",
+      "bottomRight": "Nere till höger",
       "tiled": "Kaklad (upprepad)"
     },
-    "format": { "label": "Format", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "Kvalitet" },
-    "actions": { "download": "Ladda ner", "processing": "Bearbetar…", "change": "Byt" },
-    "errors": { "notImage": "{name} är inte en giltig bild.", "generic": "Kunde inte bearbeta bilden." }
+    "format": {
+      "label": "Format",
+      "png": "PNG",
+      "jpeg": "JPG",
+      "webp": "WebP",
+      "quality": "Kvalitet"
+    },
+    "actions": {
+      "download": "Ladda ner",
+      "processing": "Bearbetar…",
+      "change": "Byt"
+    },
+    "errors": {
+      "notImage": "{name} är inte en giltig bild.",
+      "generic": "Kunde inte bearbeta bilden."
+    }
   },
   "mdtably": {
-    "input": { "label": "CSV-indata", "placeholder": "Klistra in CSV eller klicka på ett exempel…" },
+    "input": {
+      "label": "CSV-indata",
+      "placeholder": "Klistra in CSV eller klicka på ett exempel…"
+    },
     "delimiter": {
       "label": "Avgränsare",
       "auto": "Auto ({char})",
@@ -1084,8 +1147,16 @@
       "pipe": "Lodrätt streck (|)"
     },
     "hasHeader": "Första raden är rubrik",
-    "columns": { "title": "Justering per kolumn", "column": "Kolumn {n}" },
-    "alignment": { "none": "Standard", "left": "Vänster", "center": "Centrerad", "right": "Höger" },
+    "columns": {
+      "title": "Justering per kolumn",
+      "column": "Kolumn {n}"
+    },
+    "alignment": {
+      "none": "Standard",
+      "left": "Vänster",
+      "center": "Centrerad",
+      "right": "Höger"
+    },
     "output": {
       "label": "Markdown",
       "empty": "Klistra in CSV ovan för att se tabellen.",
@@ -1100,15 +1171,53 @@
     }
   },
   "cronpad": {
-    "input": { "label": "Cron-uttryck", "placeholder": "t.ex. 0 */5 * * *" },
-    "examples": { "label": "Exempel:" },
-    "validation": { "valid": "Giltigt", "invalid": "Ogiltigt" },
+    "input": {
+      "label": "Cron-uttryck",
+      "placeholder": "t.ex. 0 */5 * * *"
+    },
+    "examples": {
+      "label": "Exempel:"
+    },
+    "validation": {
+      "valid": "Giltigt",
+      "invalid": "Ogiltigt"
+    },
     "expandedAs": "Expanderat som: {expr}",
     "and": "och",
-    "nextRuns": { "title": "Kommande körningar", "useUTC": "Visa i UTC" },
-    "fieldNames": { "minute": "minut", "hour": "timme", "dom": "dag i månaden", "month": "månad", "dow": "veckodag" },
-    "dow": { "0":"söndag","1":"måndag","2":"tisdag","3":"onsdag","4":"torsdag","5":"fredag","6":"lördag" },
-    "month": { "1":"januari","2":"februari","3":"mars","4":"april","5":"maj","6":"juni","7":"juli","8":"augusti","9":"september","10":"oktober","11":"november","12":"december" },
+    "nextRuns": {
+      "title": "Kommande körningar",
+      "useUTC": "Visa i UTC"
+    },
+    "fieldNames": {
+      "minute": "minut",
+      "hour": "timme",
+      "dom": "dag i månaden",
+      "month": "månad",
+      "dow": "veckodag"
+    },
+    "dow": {
+      "0": "söndag",
+      "1": "måndag",
+      "2": "tisdag",
+      "3": "onsdag",
+      "4": "torsdag",
+      "5": "fredag",
+      "6": "lördag"
+    },
+    "month": {
+      "1": "januari",
+      "2": "februari",
+      "3": "mars",
+      "4": "april",
+      "5": "maj",
+      "6": "juni",
+      "7": "juli",
+      "8": "augusti",
+      "9": "september",
+      "10": "oktober",
+      "11": "november",
+      "12": "december"
+    },
     "desc": {
       "everyMinute": "Varje minut",
       "everyNMinutes": "Var {n}:e minut",
@@ -1123,15 +1232,55 @@
       "verbosePrefix": "{phrase}"
     },
     "field": {
-      "minute": { "every":"varje minut","everyN":"var {n}:e minut","value":"vid minut {n}","range":"från minut {from} till {to}","rangeStep":"var {step}:e minut från {from} till {to}","fromStep":"var {step}:e minut med start vid minut {from}","list":"vid minuterna {list}" },
-      "hour":   { "every":"varje timme","everyN":"var {n}:e timme","value":"vid timme {n}","range":"från timme {from} till {to}","rangeStep":"var {step}:e timme från {from} till {to}","fromStep":"var {step}:e timme med start vid timme {from}","list":"vid timmarna {list}" },
-      "dom":    { "every":"varje dag","everyN":"var {n}:e dag","value":"den {n}:e","range":"från den {from}:e till den {to}:e","rangeStep":"var {step}:e dag från {from} till {to}","fromStep":"var {step}:e dag med start den {from}:e","list":"på dagarna {list}" },
-      "month":  { "every":"varje månad","everyN":"var {n}:e månad","value":"i {name}","range":"från {from} till {to}","rangeStep":"var {step}:e månad","fromStep":"var {step}:e månad med start månad {from}","list":"i {list}" },
-      "dow":    { "every":"valfri dag","everyN":"var {n}:e veckodag","value":"på {name}","range":"från {from} till {to}","rangeStep":"var {step}:e dag från {from} till {to}","fromStep":"var {step}:e dag med start {from}","list":"på {list}" }
+      "minute": {
+        "every": "varje minut",
+        "everyN": "var {n}:e minut",
+        "value": "vid minut {n}",
+        "range": "från minut {from} till {to}",
+        "rangeStep": "var {step}:e minut från {from} till {to}",
+        "fromStep": "var {step}:e minut med start vid minut {from}",
+        "list": "vid minuterna {list}"
+      },
+      "hour": {
+        "every": "varje timme",
+        "everyN": "var {n}:e timme",
+        "value": "vid timme {n}",
+        "range": "från timme {from} till {to}",
+        "rangeStep": "var {step}:e timme från {from} till {to}",
+        "fromStep": "var {step}:e timme med start vid timme {from}",
+        "list": "vid timmarna {list}"
+      },
+      "dom": {
+        "every": "varje dag",
+        "everyN": "var {n}:e dag",
+        "value": "den {n}:e",
+        "range": "från den {from}:e till den {to}:e",
+        "rangeStep": "var {step}:e dag från {from} till {to}",
+        "fromStep": "var {step}:e dag med start den {from}:e",
+        "list": "på dagarna {list}"
+      },
+      "month": {
+        "every": "varje månad",
+        "everyN": "var {n}:e månad",
+        "value": "i {name}",
+        "range": "från {from} till {to}",
+        "rangeStep": "var {step}:e månad",
+        "fromStep": "var {step}:e månad med start månad {from}",
+        "list": "i {list}"
+      },
+      "dow": {
+        "every": "valfri dag",
+        "everyN": "var {n}:e veckodag",
+        "value": "på {name}",
+        "range": "från {from} till {to}",
+        "rangeStep": "var {step}:e dag från {from} till {to}",
+        "fromStep": "var {step}:e dag med start {from}",
+        "list": "på {list}"
+      }
     },
     "errors": {
       "fieldCount": "Ett cron-uttryck behöver 5 mellanslagsseparerade fält.",
-      "rebootUnsupported": "@reboot är inget schema — det körs vid systemstart.",
+      "rebootUnsupported": "{'@'}reboot är inget schema — det körs vid systemstart.",
       "emptyField": "Fältet {field} är tomt.",
       "invalidStep": "Ogiltigt steg i {field}: {value}",
       "invalidRange": "Ogiltigt intervall i {field}: {value} (förväntat {min}-{max})",

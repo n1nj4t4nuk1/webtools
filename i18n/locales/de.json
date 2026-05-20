@@ -179,7 +179,7 @@
     "cronpad": {
       "name": "Cronpad",
       "tagline": "Cron-Ausdrücke erklären",
-      "description": "Übersetzt einen Cron-Ausdruck in einfache Sprache, validiert die Syntax und zeigt die nächsten Ausführungen. Unterstützt Presets wie @daily und @hourly. Alles im Browser."
+      "description": "Übersetzt einen Cron-Ausdruck in einfache Sprache, validiert die Syntax und zeigt die nächsten Ausführungen. Unterstützt Presets wie {'@'}daily und {'@'}hourly. Alles im Browser."
     },
     "mdtably": {
       "name": "Mdtably",
@@ -1280,7 +1280,7 @@
     },
     "errors": {
       "fieldCount": "Ein Cron-Ausdruck benötigt 5 durch Leerzeichen getrennte Felder.",
-      "rebootUnsupported": "@reboot ist kein Zeitplan, sondern läuft beim Systemstart.",
+      "rebootUnsupported": "{'@'}reboot ist kein Zeitplan, sondern läuft beim Systemstart.",
       "emptyField": "Das Feld {field} ist leer.",
       "invalidStep": "Ungültiger Schritt in {field}: {value}",
       "invalidRange": "Ungültiger Bereich in {field}: {value} (erwartet {min}-{max})",

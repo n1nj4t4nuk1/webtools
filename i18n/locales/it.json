@@ -174,7 +174,7 @@
     "cronpad": {
       "name": "Cronpad",
       "tagline": "Spiega le espressioni cron",
-      "description": "Traduci un'espressione cron in linguaggio naturale, valida la sintassi e mostra le prossime esecuzioni. Supporta preset come @daily e @hourly. Tutto nel tuo browser."
+      "description": "Traduci un'espressione cron in linguaggio naturale, valida la sintassi e mostra le prossime esecuzioni. Supporta preset come {'@'}daily e {'@'}hourly. Tutto nel tuo browser."
     },
     "mdtably": {
       "name": "Mdtably",
@@ -1245,7 +1245,7 @@
     },
     "errors": {
       "fieldCount": "Un'espressione cron richiede 5 campi separati da spazi.",
-      "rebootUnsupported": "@reboot non è una pianificazione, viene eseguito all'avvio del sistema.",
+      "rebootUnsupported": "{'@'}reboot non è una pianificazione, viene eseguito all'avvio del sistema.",
       "emptyField": "Il campo {field} è vuoto.",
       "invalidStep": "Passo non valido in {field}: {value}",
       "invalidRange": "Intervallo non valido in {field}: {value} (atteso {min}-{max})",

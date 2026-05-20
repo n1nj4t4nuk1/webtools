@@ -179,7 +179,7 @@
     "cronpad": {
       "name": "Cronpad",
       "tagline": "Explică expresii cron",
-      "description": "Tradu o expresie cron în limbaj natural, validează-i sintaxa și previzualizează următoarele rulări. Suportă preseturi precum @daily și @hourly. Totul în browserul tău."
+      "description": "Tradu o expresie cron în limbaj natural, validează-i sintaxa și previzualizează următoarele rulări. Suportă preseturi precum {'@'}daily și {'@'}hourly. Totul în browserul tău."
     },
     "mdtably": {
       "name": "Mdtably",
@@ -978,14 +978,24 @@
     "hint": "Fiecare contribuție este adăugată la sfârșitul fiecărei perioade de capitalizare.",
     "frequency": {
       "label": "Frecvență de capitalizare",
-      "annually": "Anuală", "semiAnnually": "Semestrială", "quarterly": "Trimestrială",
-      "monthly": "Lunară", "weekly": "Săptămânală", "daily": "Zilnică"
+      "annually": "Anuală",
+      "semiAnnually": "Semestrială",
+      "quarterly": "Trimestrială",
+      "monthly": "Lunară",
+      "weekly": "Săptămânală",
+      "daily": "Zilnică"
     },
     "results": {
-      "finalBalance": "Sold final", "totalContributed": "Total contribuit", "totalInterest": "Dobândă obținută"
+      "finalBalance": "Sold final",
+      "totalContributed": "Total contribuit",
+      "totalInterest": "Dobândă obținută"
     },
     "table": {
-      "title": "Detaliere an cu an", "year": "An", "balance": "Sold", "contributed": "Contribuit", "interest": "Dobândă"
+      "title": "Detaliere an cu an",
+      "year": "An",
+      "balance": "Sold",
+      "contributed": "Contribuit",
+      "interest": "Dobândă"
     }
   },
   "croppy": {
@@ -993,21 +1003,40 @@
     "hint": "Trage pentru a crea, mută dreptunghiul sau apucă mânerele. Poți edita și X, Y, lățime și înălțime.",
     "aspect": {
       "label": "Raport de aspect",
-      "free": "Liber", "square": "1:1 (pătrat)",
-      "r4_3": "4:3", "r3_4": "3:4", "r16_9": "16:9", "r9_16": "9:16", "r3_2": "3:2", "r2_3": "2:3"
+      "free": "Liber",
+      "square": "1:1 (pătrat)",
+      "r4_3": "4:3",
+      "r3_4": "3:4",
+      "r16_9": "16:9",
+      "r9_16": "9:16",
+      "r3_2": "3:2",
+      "r2_3": "2:3"
     },
-    "dim": { "width": "Lățime", "height": "Înălțime" },
+    "dim": {
+      "width": "Lățime",
+      "height": "Înălțime"
+    },
     "format": {
-      "label": "Format", "png": "PNG (fără pierderi)", "jpeg": "JPG (cu pierderi)", "webp": "WebP", "quality": "Calitate"
+      "label": "Format",
+      "png": "PNG (fără pierderi)",
+      "jpeg": "JPG (cu pierderi)",
+      "webp": "WebP",
+      "quality": "Calitate"
     },
     "quality": {
       "lossless": "PNG păstrează pixelii exact (fără pierderi de calitate).",
       "lossy": "JPG și WebP recodează imaginea, adăugând o pierdere minimă de calitate."
     },
     "actions": {
-      "download": "Descarcă decupajul", "processing": "Se procesează…", "change": "Schimbă imaginea", "reset": "Resetează selecția"
+      "download": "Descarcă decupajul",
+      "processing": "Se procesează…",
+      "change": "Schimbă imaginea",
+      "reset": "Resetează selecția"
     },
-    "errors": { "notImage": "{name} nu este o imagine validă.", "generic": "Imaginea nu a putut fi procesată." }
+    "errors": {
+      "notImage": "{name} nu este o imagine validă.",
+      "generic": "Imaginea nu a putut fi procesată."
+    }
   },
   "randy": {
     "seed": {
@@ -1021,9 +1050,16 @@
       "mulberry32": "mulberry32 (32-bit, rapid)",
       "xoshiro128ss": "xoshiro128** (128-bit, calitate mai bună)"
     },
-    "kind": { "integers": "Numere întregi", "floats": "Numere zecimale", "pick": "Alege din listă" },
+    "kind": {
+      "integers": "Numere întregi",
+      "floats": "Numere zecimale",
+      "pick": "Alege din listă"
+    },
     "range": {
-      "min": "Minim", "max": "Maxim", "count": "Cantitate", "decimals": "Zecimale",
+      "min": "Minim",
+      "max": "Maxim",
+      "count": "Cantitate",
+      "decimals": "Zecimale",
       "inclusive": "Ambele limite incluse."
     },
     "pick": {
@@ -1031,31 +1067,77 @@
       "placeholder": "alpha\nbravo\ncharlie",
       "withReplacement": "Permite repetări"
     },
-    "actions": { "generate": "Generează" },
-    "output": { "label": "Rezultat ({n})", "copy": "Copiază", "copied": "Copiat!" }
+    "actions": {
+      "generate": "Generează"
+    },
+    "output": {
+      "label": "Rezultat ({n})",
+      "copy": "Copiază",
+      "copied": "Copiat!"
+    }
   },
   "brandy": {
-    "dropzone": { "base": "Trage o imagine aici sau apasă pentru a selecta una", "watermark": "Trage o imagine pentru a o folosi ca filigran" },
-    "kind": { "text": "Text", "image": "Imagine" },
+    "dropzone": {
+      "base": "Trage o imagine aici sau apasă pentru a selecta una",
+      "watermark": "Trage o imagine pentru a o folosi ca filigran"
+    },
+    "kind": {
+      "text": "Text",
+      "image": "Imagine"
+    },
     "text": {
       "text": "Text filigran",
       "placeholder": "ex. © TanukiBox",
-      "font": "Font", "size": "Dimensiune", "color": "Culoare", "bold": "Aldin", "italic": "Cursiv"
+      "font": "Font",
+      "size": "Dimensiune",
+      "color": "Culoare",
+      "bold": "Aldin",
+      "italic": "Cursiv"
     },
-    "image": { "width": "Lățime" },
-    "shared": { "position": "Poziție", "rotation": "Rotație", "opacity": "Opacitate", "margin": "Margine", "tileGap": "Spațiere mozaic" },
+    "image": {
+      "width": "Lățime"
+    },
+    "shared": {
+      "position": "Poziție",
+      "rotation": "Rotație",
+      "opacity": "Opacitate",
+      "margin": "Margine",
+      "tileGap": "Spațiere mozaic"
+    },
     "positions": {
-      "center": "Centru", "topLeft": "Sus stânga", "top": "Sus", "topRight": "Sus dreapta",
-      "left": "Stânga", "right": "Dreapta",
-      "bottomLeft": "Jos stânga", "bottom": "Jos", "bottomRight": "Jos dreapta",
+      "center": "Centru",
+      "topLeft": "Sus stânga",
+      "top": "Sus",
+      "topRight": "Sus dreapta",
+      "left": "Stânga",
+      "right": "Dreapta",
+      "bottomLeft": "Jos stânga",
+      "bottom": "Jos",
+      "bottomRight": "Jos dreapta",
       "tiled": "Mozaic (repetat)"
     },
-    "format": { "label": "Format", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "Calitate" },
-    "actions": { "download": "Descarcă", "processing": "Se procesează…", "change": "Schimbă" },
-    "errors": { "notImage": "{name} nu este o imagine validă.", "generic": "Nu s-a putut procesa imaginea." }
+    "format": {
+      "label": "Format",
+      "png": "PNG",
+      "jpeg": "JPG",
+      "webp": "WebP",
+      "quality": "Calitate"
+    },
+    "actions": {
+      "download": "Descarcă",
+      "processing": "Se procesează…",
+      "change": "Schimbă"
+    },
+    "errors": {
+      "notImage": "{name} nu este o imagine validă.",
+      "generic": "Nu s-a putut procesa imaginea."
+    }
   },
   "mdtably": {
-    "input": { "label": "Intrare CSV", "placeholder": "Lipește CSV sau apasă un exemplu…" },
+    "input": {
+      "label": "Intrare CSV",
+      "placeholder": "Lipește CSV sau apasă un exemplu…"
+    },
     "delimiter": {
       "label": "Separator",
       "auto": "Automat ({char})",
@@ -1065,8 +1147,16 @@
       "pipe": "Bară verticală (|)"
     },
     "hasHeader": "Primul rând este antetul",
-    "columns": { "title": "Aliniere pe coloană", "column": "Coloana {n}" },
-    "alignment": { "none": "Implicit", "left": "Stânga", "center": "Centru", "right": "Dreapta" },
+    "columns": {
+      "title": "Aliniere pe coloană",
+      "column": "Coloana {n}"
+    },
+    "alignment": {
+      "none": "Implicit",
+      "left": "Stânga",
+      "center": "Centru",
+      "right": "Dreapta"
+    },
     "output": {
       "label": "Markdown",
       "empty": "Lipește CSV mai sus pentru a vedea tabelul.",
@@ -1081,15 +1171,53 @@
     }
   },
   "cronpad": {
-    "input": { "label": "Expresie cron", "placeholder": "ex. 0 */5 * * *" },
-    "examples": { "label": "Exemple:" },
-    "validation": { "valid": "Validă", "invalid": "Invalidă" },
+    "input": {
+      "label": "Expresie cron",
+      "placeholder": "ex. 0 */5 * * *"
+    },
+    "examples": {
+      "label": "Exemple:"
+    },
+    "validation": {
+      "valid": "Validă",
+      "invalid": "Invalidă"
+    },
     "expandedAs": "Extinsă ca: {expr}",
     "and": "și",
-    "nextRuns": { "title": "Următoarele rulări", "useUTC": "Afișează în UTC" },
-    "fieldNames": { "minute": "minut", "hour": "oră", "dom": "zi a lunii", "month": "lună", "dow": "zi a săptămânii" },
-    "dow": { "0":"duminică","1":"luni","2":"marți","3":"miercuri","4":"joi","5":"vineri","6":"sâmbătă" },
-    "month": { "1":"ianuarie","2":"februarie","3":"martie","4":"aprilie","5":"mai","6":"iunie","7":"iulie","8":"august","9":"septembrie","10":"octombrie","11":"noiembrie","12":"decembrie" },
+    "nextRuns": {
+      "title": "Următoarele rulări",
+      "useUTC": "Afișează în UTC"
+    },
+    "fieldNames": {
+      "minute": "minut",
+      "hour": "oră",
+      "dom": "zi a lunii",
+      "month": "lună",
+      "dow": "zi a săptămânii"
+    },
+    "dow": {
+      "0": "duminică",
+      "1": "luni",
+      "2": "marți",
+      "3": "miercuri",
+      "4": "joi",
+      "5": "vineri",
+      "6": "sâmbătă"
+    },
+    "month": {
+      "1": "ianuarie",
+      "2": "februarie",
+      "3": "martie",
+      "4": "aprilie",
+      "5": "mai",
+      "6": "iunie",
+      "7": "iulie",
+      "8": "august",
+      "9": "septembrie",
+      "10": "octombrie",
+      "11": "noiembrie",
+      "12": "decembrie"
+    },
     "desc": {
       "everyMinute": "În fiecare minut",
       "everyNMinutes": "La fiecare {n} minute",
@@ -1104,15 +1232,55 @@
       "verbosePrefix": "{phrase}"
     },
     "field": {
-      "minute": { "every":"în fiecare minut","everyN":"la fiecare {n} minute","value":"la minutul {n}","range":"de la minutul {from} la {to}","rangeStep":"la fiecare {step} minute de la {from} la {to}","fromStep":"la fiecare {step} minute începând cu minutul {from}","list":"la minutele {list}" },
-      "hour":   { "every":"în fiecare oră","everyN":"la fiecare {n} ore","value":"la ora {n}","range":"de la ora {from} la {to}","rangeStep":"la fiecare {step} ore de la {from} la {to}","fromStep":"la fiecare {step} ore începând cu ora {from}","list":"la orele {list}" },
-      "dom":    { "every":"în fiecare zi","everyN":"la fiecare {n} zile","value":"în ziua {n}","range":"din ziua {from} până în ziua {to}","rangeStep":"la fiecare {step} zile de la {from} la {to}","fromStep":"la fiecare {step} zile începând cu ziua {from}","list":"în zilele {list}" },
-      "month":  { "every":"în fiecare lună","everyN":"la fiecare {n} luni","value":"în {name}","range":"din {from} până în {to}","rangeStep":"la fiecare {step} luni","fromStep":"la fiecare {step} luni începând cu luna {from}","list":"în {list}" },
-      "dow":    { "every":"orice zi","everyN":"la fiecare {n} zile lucrătoare","value":"în {name}","range":"de la {from} la {to}","rangeStep":"la fiecare {step} zile de la {from} la {to}","fromStep":"la fiecare {step} zile începând cu {from}","list":"în {list}" }
+      "minute": {
+        "every": "în fiecare minut",
+        "everyN": "la fiecare {n} minute",
+        "value": "la minutul {n}",
+        "range": "de la minutul {from} la {to}",
+        "rangeStep": "la fiecare {step} minute de la {from} la {to}",
+        "fromStep": "la fiecare {step} minute începând cu minutul {from}",
+        "list": "la minutele {list}"
+      },
+      "hour": {
+        "every": "în fiecare oră",
+        "everyN": "la fiecare {n} ore",
+        "value": "la ora {n}",
+        "range": "de la ora {from} la {to}",
+        "rangeStep": "la fiecare {step} ore de la {from} la {to}",
+        "fromStep": "la fiecare {step} ore începând cu ora {from}",
+        "list": "la orele {list}"
+      },
+      "dom": {
+        "every": "în fiecare zi",
+        "everyN": "la fiecare {n} zile",
+        "value": "în ziua {n}",
+        "range": "din ziua {from} până în ziua {to}",
+        "rangeStep": "la fiecare {step} zile de la {from} la {to}",
+        "fromStep": "la fiecare {step} zile începând cu ziua {from}",
+        "list": "în zilele {list}"
+      },
+      "month": {
+        "every": "în fiecare lună",
+        "everyN": "la fiecare {n} luni",
+        "value": "în {name}",
+        "range": "din {from} până în {to}",
+        "rangeStep": "la fiecare {step} luni",
+        "fromStep": "la fiecare {step} luni începând cu luna {from}",
+        "list": "în {list}"
+      },
+      "dow": {
+        "every": "orice zi",
+        "everyN": "la fiecare {n} zile lucrătoare",
+        "value": "în {name}",
+        "range": "de la {from} la {to}",
+        "rangeStep": "la fiecare {step} zile de la {from} la {to}",
+        "fromStep": "la fiecare {step} zile începând cu {from}",
+        "list": "în {list}"
+      }
     },
     "errors": {
       "fieldCount": "O expresie cron necesită 5 câmpuri separate prin spațiu.",
-      "rebootUnsupported": "@reboot nu este o programare — rulează la pornirea sistemului.",
+      "rebootUnsupported": "{'@'}reboot nu este o programare — rulează la pornirea sistemului.",
       "emptyField": "Câmpul {field} este gol.",
       "invalidStep": "Pas invalid în {field}: {value}",
       "invalidRange": "Interval invalid în {field}: {value} (așteptat {min}-{max})",

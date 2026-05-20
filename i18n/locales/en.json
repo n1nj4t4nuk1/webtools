@@ -179,7 +179,7 @@
     "cronpad": {
       "name": "Cronpad",
       "tagline": "Explain cron expressions",
-      "description": "Translate a cron expression to plain English, validate its syntax and preview the next runs. Supports presets like @daily and @hourly. All in your browser."
+      "description": "Translate a cron expression to plain English, validate its syntax and preview the next runs. Supports presets like {'@'}daily and {'@'}hourly. All in your browser."
     },
     "mdtably": {
       "name": "Mdtably",
@@ -1280,7 +1280,7 @@
     },
     "errors": {
       "fieldCount": "A cron expression needs 5 space-separated fields.",
-      "rebootUnsupported": "@reboot is not a schedule — it runs at system startup.",
+      "rebootUnsupported": "{'@'}reboot is not a schedule — it runs at system startup.",
       "emptyField": "Field {field} is empty.",
       "invalidStep": "Invalid step in {field}: {value}",
       "invalidRange": "Invalid range in {field}: {value} (expected {min}-{max})",

@@ -179,7 +179,7 @@
     "cronpad": {
       "name": "Cronpad",
       "tagline": "อธิบายนิพจน์ cron",
-      "description": "แปลนิพจน์ cron เป็นภาษาที่เข้าใจง่าย ตรวจสอบไวยากรณ์ และดูตัวอย่างการรันครั้งถัดไป รองรับค่ากำหนดล่วงหน้าอย่าง @daily และ @hourly ทั้งหมดในเบราว์เซอร์ของคุณ"
+      "description": "แปลนิพจน์ cron เป็นภาษาที่เข้าใจง่าย ตรวจสอบไวยากรณ์ และดูตัวอย่างการรันครั้งถัดไป รองรับค่ากำหนดล่วงหน้าอย่าง {'@'}daily และ {'@'}hourly ทั้งหมดในเบราว์เซอร์ของคุณ"
     },
     "mdtably": {
       "name": "Mdtably",
@@ -978,14 +978,24 @@
     "hint": "เงินสมทบแต่ละครั้งจะเข้าในช่วงท้ายของทุกงวดการทบต้น",
     "frequency": {
       "label": "ความถี่ในการทบต้น",
-      "annually": "รายปี", "semiAnnually": "ทุกครึ่งปี", "quarterly": "รายไตรมาส",
-      "monthly": "รายเดือน", "weekly": "รายสัปดาห์", "daily": "รายวัน"
+      "annually": "รายปี",
+      "semiAnnually": "ทุกครึ่งปี",
+      "quarterly": "รายไตรมาส",
+      "monthly": "รายเดือน",
+      "weekly": "รายสัปดาห์",
+      "daily": "รายวัน"
     },
     "results": {
-      "finalBalance": "ยอดสุดท้าย", "totalContributed": "รวมที่สมทบ", "totalInterest": "ดอกเบี้ยที่ได้รับ"
+      "finalBalance": "ยอดสุดท้าย",
+      "totalContributed": "รวมที่สมทบ",
+      "totalInterest": "ดอกเบี้ยที่ได้รับ"
     },
     "table": {
-      "title": "รายละเอียดปีต่อปี", "year": "ปี", "balance": "ยอดคงเหลือ", "contributed": "สมทบ", "interest": "ดอกเบี้ย"
+      "title": "รายละเอียดปีต่อปี",
+      "year": "ปี",
+      "balance": "ยอดคงเหลือ",
+      "contributed": "สมทบ",
+      "interest": "ดอกเบี้ย"
     }
   },
   "croppy": {
@@ -1040,9 +1050,16 @@
       "mulberry32": "mulberry32 (32 บิต เร็ว)",
       "xoshiro128ss": "xoshiro128** (128 บิต คุณภาพดีกว่า)"
     },
-    "kind": { "integers": "จำนวนเต็ม", "floats": "จำนวนทศนิยม", "pick": "เลือกจากรายการ" },
+    "kind": {
+      "integers": "จำนวนเต็ม",
+      "floats": "จำนวนทศนิยม",
+      "pick": "เลือกจากรายการ"
+    },
     "range": {
-      "min": "ค่าต่ำสุด", "max": "ค่าสูงสุด", "count": "จำนวน", "decimals": "ทศนิยม",
+      "min": "ค่าต่ำสุด",
+      "max": "ค่าสูงสุด",
+      "count": "จำนวน",
+      "decimals": "ทศนิยม",
       "inclusive": "รวมขอบเขตทั้งสองด้าน"
     },
     "pick": {
@@ -1050,31 +1067,77 @@
       "placeholder": "alpha\nbravo\ncharlie",
       "withReplacement": "อนุญาตให้ซ้ำ"
     },
-    "actions": { "generate": "สร้าง" },
-    "output": { "label": "ผลลัพธ์ ({n})", "copy": "คัดลอก", "copied": "คัดลอกแล้ว!" }
+    "actions": {
+      "generate": "สร้าง"
+    },
+    "output": {
+      "label": "ผลลัพธ์ ({n})",
+      "copy": "คัดลอก",
+      "copied": "คัดลอกแล้ว!"
+    }
   },
   "brandy": {
-    "dropzone": { "base": "ลากรูปภาพมาที่นี่หรือคลิกเพื่อเลือก", "watermark": "ลากรูปภาพมาเพื่อใช้เป็นลายน้ำ" },
-    "kind": { "text": "ข้อความ", "image": "รูปภาพ" },
+    "dropzone": {
+      "base": "ลากรูปภาพมาที่นี่หรือคลิกเพื่อเลือก",
+      "watermark": "ลากรูปภาพมาเพื่อใช้เป็นลายน้ำ"
+    },
+    "kind": {
+      "text": "ข้อความ",
+      "image": "รูปภาพ"
+    },
     "text": {
       "text": "ข้อความลายน้ำ",
       "placeholder": "เช่น © TanukiBox",
-      "font": "ฟอนต์", "size": "ขนาด", "color": "สี", "bold": "ตัวหนา", "italic": "ตัวเอียง"
+      "font": "ฟอนต์",
+      "size": "ขนาด",
+      "color": "สี",
+      "bold": "ตัวหนา",
+      "italic": "ตัวเอียง"
     },
-    "image": { "width": "ความกว้าง" },
-    "shared": { "position": "ตำแหน่ง", "rotation": "การหมุน", "opacity": "ความทึบ", "margin": "ระยะขอบ", "tileGap": "ระยะห่างระหว่างไทล์" },
+    "image": {
+      "width": "ความกว้าง"
+    },
+    "shared": {
+      "position": "ตำแหน่ง",
+      "rotation": "การหมุน",
+      "opacity": "ความทึบ",
+      "margin": "ระยะขอบ",
+      "tileGap": "ระยะห่างระหว่างไทล์"
+    },
     "positions": {
-      "center": "กึ่งกลาง", "topLeft": "บนซ้าย", "top": "บน", "topRight": "บนขวา",
-      "left": "ซ้าย", "right": "ขวา",
-      "bottomLeft": "ล่างซ้าย", "bottom": "ล่าง", "bottomRight": "ล่างขวา",
+      "center": "กึ่งกลาง",
+      "topLeft": "บนซ้าย",
+      "top": "บน",
+      "topRight": "บนขวา",
+      "left": "ซ้าย",
+      "right": "ขวา",
+      "bottomLeft": "ล่างซ้าย",
+      "bottom": "ล่าง",
+      "bottomRight": "ล่างขวา",
       "tiled": "เรียงต่อกัน (ทำซ้ำ)"
     },
-    "format": { "label": "รูปแบบ", "png": "PNG", "jpeg": "JPG", "webp": "WebP", "quality": "คุณภาพ" },
-    "actions": { "download": "ดาวน์โหลด", "processing": "กำลังประมวลผล…", "change": "เปลี่ยน" },
-    "errors": { "notImage": "{name} ไม่ใช่รูปภาพที่ถูกต้อง", "generic": "ไม่สามารถประมวลผลรูปภาพได้" }
+    "format": {
+      "label": "รูปแบบ",
+      "png": "PNG",
+      "jpeg": "JPG",
+      "webp": "WebP",
+      "quality": "คุณภาพ"
+    },
+    "actions": {
+      "download": "ดาวน์โหลด",
+      "processing": "กำลังประมวลผล…",
+      "change": "เปลี่ยน"
+    },
+    "errors": {
+      "notImage": "{name} ไม่ใช่รูปภาพที่ถูกต้อง",
+      "generic": "ไม่สามารถประมวลผลรูปภาพได้"
+    }
   },
   "mdtably": {
-    "input": { "label": "อินพุต CSV", "placeholder": "วาง CSV หรือคลิกตัวอย่าง…" },
+    "input": {
+      "label": "อินพุต CSV",
+      "placeholder": "วาง CSV หรือคลิกตัวอย่าง…"
+    },
     "delimiter": {
       "label": "ตัวคั่น",
       "auto": "อัตโนมัติ ({char})",
@@ -1084,8 +1147,16 @@
       "pipe": "ขีดตั้ง (|)"
     },
     "hasHeader": "แถวแรกเป็นหัวตาราง",
-    "columns": { "title": "การจัดแนวรายคอลัมน์", "column": "คอลัมน์ {n}" },
-    "alignment": { "none": "ค่าเริ่มต้น", "left": "ซ้าย", "center": "กลาง", "right": "ขวา" },
+    "columns": {
+      "title": "การจัดแนวรายคอลัมน์",
+      "column": "คอลัมน์ {n}"
+    },
+    "alignment": {
+      "none": "ค่าเริ่มต้น",
+      "left": "ซ้าย",
+      "center": "กลาง",
+      "right": "ขวา"
+    },
     "output": {
       "label": "Markdown",
       "empty": "วาง CSV ด้านบนเพื่อดูตาราง",
@@ -1100,15 +1171,53 @@
     }
   },
   "cronpad": {
-    "input": { "label": "นิพจน์ cron", "placeholder": "เช่น 0 */5 * * *" },
-    "examples": { "label": "ตัวอย่าง:" },
-    "validation": { "valid": "ถูกต้อง", "invalid": "ไม่ถูกต้อง" },
+    "input": {
+      "label": "นิพจน์ cron",
+      "placeholder": "เช่น 0 */5 * * *"
+    },
+    "examples": {
+      "label": "ตัวอย่าง:"
+    },
+    "validation": {
+      "valid": "ถูกต้อง",
+      "invalid": "ไม่ถูกต้อง"
+    },
     "expandedAs": "ขยายเป็น: {expr}",
     "and": "และ",
-    "nextRuns": { "title": "การรันครั้งถัดไป", "useUTC": "แสดงเป็น UTC" },
-    "fieldNames": { "minute": "นาที", "hour": "ชั่วโมง", "dom": "วันของเดือน", "month": "เดือน", "dow": "วันของสัปดาห์" },
-    "dow": { "0":"วันอาทิตย์","1":"วันจันทร์","2":"วันอังคาร","3":"วันพุธ","4":"วันพฤหัสบดี","5":"วันศุกร์","6":"วันเสาร์" },
-    "month": { "1":"มกราคม","2":"กุมภาพันธ์","3":"มีนาคม","4":"เมษายน","5":"พฤษภาคม","6":"มิถุนายน","7":"กรกฎาคม","8":"สิงหาคม","9":"กันยายน","10":"ตุลาคม","11":"พฤศจิกายน","12":"ธันวาคม" },
+    "nextRuns": {
+      "title": "การรันครั้งถัดไป",
+      "useUTC": "แสดงเป็น UTC"
+    },
+    "fieldNames": {
+      "minute": "นาที",
+      "hour": "ชั่วโมง",
+      "dom": "วันของเดือน",
+      "month": "เดือน",
+      "dow": "วันของสัปดาห์"
+    },
+    "dow": {
+      "0": "วันอาทิตย์",
+      "1": "วันจันทร์",
+      "2": "วันอังคาร",
+      "3": "วันพุธ",
+      "4": "วันพฤหัสบดี",
+      "5": "วันศุกร์",
+      "6": "วันเสาร์"
+    },
+    "month": {
+      "1": "มกราคม",
+      "2": "กุมภาพันธ์",
+      "3": "มีนาคม",
+      "4": "เมษายน",
+      "5": "พฤษภาคม",
+      "6": "มิถุนายน",
+      "7": "กรกฎาคม",
+      "8": "สิงหาคม",
+      "9": "กันยายน",
+      "10": "ตุลาคม",
+      "11": "พฤศจิกายน",
+      "12": "ธันวาคม"
+    },
     "desc": {
       "everyMinute": "ทุกนาที",
       "everyNMinutes": "ทุก {n} นาที",
@@ -1123,15 +1232,55 @@
       "verbosePrefix": "{phrase}"
     },
     "field": {
-      "minute": { "every":"ทุกนาที","everyN":"ทุก {n} นาที","value":"ที่นาที {n}","range":"ตั้งแต่นาที {from} ถึง {to}","rangeStep":"ทุก {step} นาที ตั้งแต่ {from} ถึง {to}","fromStep":"ทุก {step} นาที เริ่มที่นาที {from}","list":"ที่นาที {list}" },
-      "hour":   { "every":"ทุกชั่วโมง","everyN":"ทุก {n} ชั่วโมง","value":"ที่ชั่วโมง {n}","range":"ตั้งแต่ชั่วโมง {from} ถึง {to}","rangeStep":"ทุก {step} ชั่วโมง ตั้งแต่ {from} ถึง {to}","fromStep":"ทุก {step} ชั่วโมง เริ่มที่ชั่วโมง {from}","list":"ที่ชั่วโมง {list}" },
-      "dom":    { "every":"ทุกวัน","everyN":"ทุก {n} วัน","value":"ในวันที่ {n}","range":"ตั้งแต่วันที่ {from} ถึง {to}","rangeStep":"ทุก {step} วัน ตั้งแต่ {from} ถึง {to}","fromStep":"ทุก {step} วัน เริ่มวันที่ {from}","list":"ในวันที่ {list}" },
-      "month":  { "every":"ทุกเดือน","everyN":"ทุก {n} เดือน","value":"ใน{name}","range":"ตั้งแต่ {from} ถึง {to}","rangeStep":"ทุก {step} เดือน","fromStep":"ทุก {step} เดือน เริ่มเดือน {from}","list":"ใน {list}" },
-      "dow":    { "every":"วันใดก็ได้","everyN":"ทุก {n} วันของสัปดาห์","value":"ใน{name}","range":"ตั้งแต่ {from} ถึง {to}","rangeStep":"ทุก {step} วัน ตั้งแต่ {from} ถึง {to}","fromStep":"ทุก {step} วัน เริ่มจาก {from}","list":"ใน {list}" }
+      "minute": {
+        "every": "ทุกนาที",
+        "everyN": "ทุก {n} นาที",
+        "value": "ที่นาที {n}",
+        "range": "ตั้งแต่นาที {from} ถึง {to}",
+        "rangeStep": "ทุก {step} นาที ตั้งแต่ {from} ถึง {to}",
+        "fromStep": "ทุก {step} นาที เริ่มที่นาที {from}",
+        "list": "ที่นาที {list}"
+      },
+      "hour": {
+        "every": "ทุกชั่วโมง",
+        "everyN": "ทุก {n} ชั่วโมง",
+        "value": "ที่ชั่วโมง {n}",
+        "range": "ตั้งแต่ชั่วโมง {from} ถึง {to}",
+        "rangeStep": "ทุก {step} ชั่วโมง ตั้งแต่ {from} ถึง {to}",
+        "fromStep": "ทุก {step} ชั่วโมง เริ่มที่ชั่วโมง {from}",
+        "list": "ที่ชั่วโมง {list}"
+      },
+      "dom": {
+        "every": "ทุกวัน",
+        "everyN": "ทุก {n} วัน",
+        "value": "ในวันที่ {n}",
+        "range": "ตั้งแต่วันที่ {from} ถึง {to}",
+        "rangeStep": "ทุก {step} วัน ตั้งแต่ {from} ถึง {to}",
+        "fromStep": "ทุก {step} วัน เริ่มวันที่ {from}",
+        "list": "ในวันที่ {list}"
+      },
+      "month": {
+        "every": "ทุกเดือน",
+        "everyN": "ทุก {n} เดือน",
+        "value": "ใน{name}",
+        "range": "ตั้งแต่ {from} ถึง {to}",
+        "rangeStep": "ทุก {step} เดือน",
+        "fromStep": "ทุก {step} เดือน เริ่มเดือน {from}",
+        "list": "ใน {list}"
+      },
+      "dow": {
+        "every": "วันใดก็ได้",
+        "everyN": "ทุก {n} วันของสัปดาห์",
+        "value": "ใน{name}",
+        "range": "ตั้งแต่ {from} ถึง {to}",
+        "rangeStep": "ทุก {step} วัน ตั้งแต่ {from} ถึง {to}",
+        "fromStep": "ทุก {step} วัน เริ่มจาก {from}",
+        "list": "ใน {list}"
+      }
     },
     "errors": {
       "fieldCount": "นิพจน์ cron ต้องมี 5 ฟิลด์ คั่นด้วยช่องว่าง",
-      "rebootUnsupported": "@reboot ไม่ใช่กำหนดเวลา แต่จะรันเมื่อระบบเริ่มทำงาน",
+      "rebootUnsupported": "{'@'}reboot ไม่ใช่กำหนดเวลา แต่จะรันเมื่อระบบเริ่มทำงาน",
       "emptyField": "ฟิลด์ {field} ว่างเปล่า",
       "invalidStep": "ค่าขั้นที่ไม่ถูกต้องใน {field}: {value}",
       "invalidRange": "ช่วงที่ไม่ถูกต้องใน {field}: {value} (คาดหวัง {min}-{max})",

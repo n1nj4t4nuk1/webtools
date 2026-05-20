@@ -174,7 +174,7 @@
     "cronpad": {
       "name": "Cronpad",
       "tagline": "cron式を説明",
-      "description": "cron式を自然言語に変換し、構文を検証して次の実行予定を表示。@dailyや@hourlyなどのプリセットに対応。すべてブラウザで処理。"
+      "description": "cron式を自然言語に変換し、構文を検証して次の実行予定を表示。{'@'}dailyや{'@'}hourlyなどのプリセットに対応。すべてブラウザで処理。"
     },
     "mdtably": {
       "name": "Mdtably",
@@ -1245,7 +1245,7 @@
     },
     "errors": {
       "fieldCount": "cron式はスペースで区切られた5つのフィールドが必要です。",
-      "rebootUnsupported": "@rebootはスケジュールではなく、システム起動時に実行されます。",
+      "rebootUnsupported": "{'@'}rebootはスケジュールではなく、システム起動時に実行されます。",
       "emptyField": "{field}フィールドが空です。",
       "invalidStep": "{field}の無効なステップ: {value}",
       "invalidRange": "{field}の無効な範囲: {value}（期待値 {min}-{max}）",
